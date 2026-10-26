@@ -18,14 +18,14 @@ where wrong numbers come from. Pick a primary source:
 patch-level values for rankings, C for strategy text. Whatever you choose, mark every entry
 `verified` honestly. You can upgrade entries to `"in-game"` as you confirm them while playing.
 
-> Status: **undecided.** Claude Code must not start Phase 2 data entry until this is set.
+> Status: **Option B chosen by owner (2026-10-26), pending license outcome below.** Claude Code must not start Phase 2 data entry until this is set.
 > Licenses and terms above have **not** been verified. Do it in Phase 0 and record the results.
 
 ## Source register
 
 | Dataset | Source | License / terms | Retrieved | Verified level | Notes |
 |---|---|---|---|---|---|
-| (fill in during Phase 0/2) | | | | | |
+| Candidate base: kirilloid/valheim (valheim.kirilloid.ru) | https://github.com/kirilloid/valheim | **No LICENSE file; GitHub reports no license (all rights reserved by default).** README: content used under fair use, non-commercial; to re-use content, refer to the game EULA. Code and data are in TS under `src/data`, not a published dataset. | 2026-10-26 | n/a (nothing copied) | **Not cleared for copying.** Allowed use for now: read-only cross-check of values we enter ourselves. Owner to decide: ask the author for written permission, or use as cross-check only. |
 
 ## Game version
 
