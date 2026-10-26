@@ -118,6 +118,7 @@ export const WeaponSchema = z
     skill: z.string().min(1),
     twoHanded: z.boolean().optional(),
     damage,
+    damagePerLevel: damage.optional(),
     blockPower: z.number().nonnegative().optional(),
     parryForce: z.number().nonnegative().optional(),
     knockback: z.number().nonnegative().optional(),

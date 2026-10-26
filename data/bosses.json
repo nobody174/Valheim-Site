@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "id": "Eikthyr",
+    "name": "Eikthyr",
+    "health": 500.0,
+    "drops": [
+      {
+        "item": "TrophyEikthyr",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "HardAntler",
+        "min": 3,
+        "max": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "biome": "meadows",
+    "summonItems": [
+      {
+        "item": "TrophyDeer",
+        "qty": 2
+      }
+    ],
+    "trophy": "TrophyEikthyr",
+    "note": "Health and drops from game files; summon items curated, not in extracted data."
+  },
+  {
+    "id": "gd_king",
+    "name": "The Elder",
+    "health": 2500.0,
+    "drops": [
+      {
+        "item": "TrophyTheElder",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "CryptKey",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "biome": "blackforest",
+    "summonItems": [
+      {
+        "item": "AncientSeed",
+        "qty": 3
+      }
+    ],
+    "trophy": "TrophyTheElder",
+    "note": "Health and drops from game files; summon items curated, not in extracted data."
+  }
+]

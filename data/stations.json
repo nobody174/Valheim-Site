@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "forge",
+    "name": "Forge",
+    "levels": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Upgrade levels and their requirements are not extracted yet."
+  },
+  {
+    "id": "piece_MeadCauldron",
+    "name": "Mead Ketill",
+    "levels": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Upgrade levels and their requirements are not extracted yet."
+  },
+  {
+    "id": "piece_cauldron",
+    "name": "Cauldron",
+    "levels": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Upgrade levels and their requirements are not extracted yet."
+  },
+  {
+    "id": "piece_workbench",
+    "name": "Workbench",
+    "levels": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Upgrade levels and their requirements are not extracted yet."
+  }
+]

@@ -1,1 +1,2028 @@
-[]
+[
+  {
+    "id": "Acorn",
+    "name": "Acorns",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Amber",
+    "name": "Amber",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AmberPearl",
+    "name": "Amber Pearl",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AncientSeed",
+    "name": "Ancient Seed",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Elite"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorBronzeChest",
+    "name": "Bronze Plate Tunic",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorBronzeChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorBronzeLegs",
+    "name": "Bronze Plate Leggings",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorBronzeLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorLeatherChest",
+    "name": "Leather Tunic",
+    "category": "armor",
+    "biome": "meadows",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorLeatherChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorLeatherLegs",
+    "name": "Leather Trousers",
+    "category": "armor",
+    "biome": "meadows",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorLeatherLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorRagsChest",
+    "name": "Rag Tunic",
+    "category": "armor",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorRagsChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorRagsLegs",
+    "name": "Rag Trousers",
+    "category": "armor",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorRagsLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorTrollLeatherChest",
+    "name": "Troll Leather Tunic",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorTrollLeatherChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorTrollLeatherLegs",
+    "name": "Troll Leather Trousers",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorTrollLeatherLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArrowBronze",
+    "name": "Bronzehead Arrow",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArrowFlint",
+    "name": "Flinthead Arrow",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowFlint"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArrowWood",
+    "name": "Wood Arrow",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowWood"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AtgeirBronze",
+    "name": "Bronze Atgeir",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AtgeirBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AxeBronze",
+    "name": "Bronze Axe",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AxeFlint",
+    "name": "Flint Axe",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeFlint"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AxeStone",
+    "name": "Stone Axe",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeStone"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Blueberries",
+    "name": "Blueberries",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick wild bushes"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "BoarJerky",
+    "name": "Boar Jerky",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BoarJerky"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BoneFragments",
+    "name": "Bone Fragments",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 30,
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Skeleton"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Bow",
+    "name": "Crude Bow",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Bow"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BowFineWood",
+    "name": "Finewood Bow",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BowFineWood"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Bronze",
+    "name": "Bronze",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 12.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Bronze"
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.Bronze5"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BronzeNails",
+    "name": "Bronze Nails",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.5,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BronzeNails"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CapeDeerHide",
+    "name": "Deer Hide Cape",
+    "category": "armor",
+    "biome": "meadows",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeDeerHide"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CapeTrollHide",
+    "name": "Troll Hide Cape",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeTrollHide"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Carrot",
+    "name": "Carrot",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Grow from Carrot Seeds"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "CarrotSeeds",
+    "name": "Carrot Seeds",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CarrotSoup",
+    "name": "Carrot Soup",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CarrotSoup"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Club",
+    "name": "Club",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Club"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Coal",
+    "name": "Coal",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 50,
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Burn Wood in a charcoal kiln"
+      },
+      {
+        "type": "drop",
+        "creature": "Surtling"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "Coins",
+    "name": "Coins",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 999,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Troll"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CookedDeerMeat",
+    "name": "Cooked Deer Meat",
+    "category": "food",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Cook Deer Meat on a cooking station"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "CookedMeat",
+    "name": "Cooked Boar Meat",
+    "category": "food",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Cook Raw Meat on a cooking station"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "Copper",
+    "name": "Copper",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 12.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Smelt Copper Ore in a smelter"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "CopperOre",
+    "name": "Copper Ore",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 10.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine copper deposits"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "CryptKey",
+    "name": "Swamp Key",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "gd_king"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Cultivator",
+    "name": "Cultivator",
+    "category": "tool",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Cultivator"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Dandelion",
+    "name": "Dandelion",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick wild plants"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Elite"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "DeerHide",
+    "name": "Deer Hide",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 20,
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Deer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "DeerMeat",
+    "name": "Deer Meat",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Deer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "DeerStew",
+    "name": "Deer Stew",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.DeerStew"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ElderBark",
+    "name": "Ancient Bark",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Entrails",
+    "name": "Entrails",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Feathers",
+    "name": "Feathers",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 20,
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "FineWood",
+    "name": "Finewood",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 50,
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "FishingBait",
+    "name": "Fishing Bait",
+    "category": "tool",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "FishingRod",
+    "name": "Fishing Rod",
+    "category": "tool",
+    "biome": "meadows",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Flint",
+    "name": "Flint",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 50,
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Loose flint on the ground, mainly near water"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "GreydwarfEye",
+    "name": "Greydwarf Eye",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.20000000298023224,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Greydwarf"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Elite"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Shaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Hammer",
+    "name": "Hammer",
+    "category": "tool",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Hammer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HardAntler",
+    "name": "Hard Antler",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Eikthyr"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HelmetBronze",
+    "name": "Bronze Helmet",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HelmetLeather",
+    "name": "Leather Helmet",
+    "category": "armor",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetLeather"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HelmetTrollLeather",
+    "name": "Troll Leather Hood",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetTrollLeather"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Hoe",
+    "name": "Hoe",
+    "category": "tool",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Hoe"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Honey",
+    "name": "Honey",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.20000000298023224,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Beehive"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "KnifeCopper",
+    "name": "Copper Knife",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.KnifeCopper"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "KnifeFlint",
+    "name": "Flint Knife",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.KnifeFlint"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "LeatherScraps",
+    "name": "Leather Scraps",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 30,
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Boar"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MaceBronze",
+    "name": "Bronze Mace",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MaceBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadBaseHealthMinor",
+    "name": "Mead Base: Minor Healing",
+    "category": "mead",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseHealthMinor"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadBaseStaminaMinor",
+    "name": "Mead Base: Minor Stamina",
+    "category": "mead",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseStaminaMinor"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadBaseTasty",
+    "name": "Mead Base: Tasty",
+    "category": "mead",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseTasty"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadHealthMinor",
+    "name": "Minor Healing Mead",
+    "category": "mead",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadStaminaMinor",
+    "name": "Minor Stamina Mead",
+    "category": "mead",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadTasty",
+    "name": "Tasty Mead",
+    "category": "mead",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MinceMeatSauce",
+    "name": "Minced Meat Sauce",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MinceMeatSauce"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Mushroom",
+    "name": "Mushroom",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the ground"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "MushroomYellow",
+    "name": "Yellow Mushroom",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the ground"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "NeckTail",
+    "name": "Neck Tail",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Neck"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "NeckTailGrilled",
+    "name": "Grilled Neck Tail",
+    "category": "food",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Cook Neck Tail on a cooking station"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "Needle",
+    "name": "Needle",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "PickaxeAntler",
+    "name": "Antler Pickaxe",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.PickaxeAntler"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "PickaxeBronze",
+    "name": "Bronze Pickaxe",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.PickaxeBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "PickaxeStone",
+    "name": "Stone Pickaxe",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Pukeberries",
+    "name": "Bukeperries",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Shaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "QueensJam",
+    "name": "Queen's Jam",
+    "category": "food",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.QueensJam"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Raspberry",
+    "name": "Raspberries",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick wild bushes"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "RawMeat",
+    "name": "Boar Meat",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Boar"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Resin",
+    "name": "Resin",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 50,
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Chop trees or destroy tree stumps"
+      },
+      {
+        "type": "drop",
+        "creature": "Greyling"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Shaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "RoundLog",
+    "name": "Corewood",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Ruby",
+    "name": "Ruby",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Sausages",
+    "name": "Sausages",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Sausages"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldBronzeBuckler",
+    "name": "Bronze Buckler",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldBronzeBuckler"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldWood",
+    "name": "Wood Shield",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldWood"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldWoodTower",
+    "name": "Wood Tower Shield",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldWoodTower"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SledgeStagbreaker",
+    "name": "Stagbreaker",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SledgeStagbreaker"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SpearBronze",
+    "name": "Bronze Spear",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpearBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SpearFlint",
+    "name": "Flint Spear",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpearFlint"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Stone",
+    "name": "Stone",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 100,
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick up or mine stones and rock"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Elite"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "SurtlingCore",
+    "name": "Surtling Core",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 5.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Surtling"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SwordBronze",
+    "name": "Bronze Sword",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 0.800000011920929,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Thistle",
+    "name": "Thistle",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the ground"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "Tin",
+    "name": "Tin",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 8.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Smelt Tin Ore in a smelter"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "TinOre",
+    "name": "Tin Ore",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 8.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine tin deposits in shallow water"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  },
+  {
+    "id": "Torch",
+    "name": "Torch",
+    "category": "tool",
+    "biome": "meadows",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Torch"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrollHide",
+    "name": "Troll Hide",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Troll"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyBoar",
+    "name": "Boar Trophy",
+    "category": "trophy",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Boar"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyDeer",
+    "name": "Deer Trophy",
+    "category": "trophy",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Deer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyEikthyr",
+    "name": "Eikthyr Trophy",
+    "category": "trophy",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Eikthyr"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyFrostTroll",
+    "name": "Troll Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 4.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Troll"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyGreydwarf",
+    "name": "Greydwarf Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Greydwarf"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyGreydwarfBrute",
+    "name": "Greydwarf Brute Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 1.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Elite"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyGreydwarfShaman",
+    "name": "Greydwarf Shaman Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Shaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyNeck",
+    "name": "Neck Trophy",
+    "category": "trophy",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Neck"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophySkeleton",
+    "name": "Skeleton Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Skeleton"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophySurtling",
+    "name": "Surtling Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Surtling"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyTheElder",
+    "name": "The Elder Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 4.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "gd_king"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Turnip",
+    "name": "Turnip",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Wood",
+    "name": "Wood",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 200,
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Chop trees"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Elite"
+      },
+      {
+        "type": "drop",
+        "creature": "Greydwarf_Shaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Stats from game files; acquisition source curated by hand."
+  }
+]

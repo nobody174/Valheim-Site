@@ -1,1 +1,155 @@
-[]
+[
+  {
+    "item": "Blueberries",
+    "kind": "food",
+    "health": 8.0,
+    "stamina": 25.0,
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "BoarJerky",
+    "kind": "food",
+    "health": 23.0,
+    "stamina": 23.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "Carrot",
+    "kind": "food",
+    "health": 10.0,
+    "stamina": 32.0,
+    "durationSec": 900.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "CarrotSoup",
+    "kind": "food",
+    "health": 15.0,
+    "stamina": 45.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "CookedDeerMeat",
+    "kind": "food",
+    "health": 35.0,
+    "stamina": 12.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "CookedMeat",
+    "kind": "food",
+    "health": 30.0,
+    "stamina": 10.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "DeerMeat",
+    "kind": "food",
+    "health": 20.0,
+    "stamina": 20.0,
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "DeerStew",
+    "kind": "food",
+    "health": 45.0,
+    "stamina": 15.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "Honey",
+    "kind": "food",
+    "health": 8.0,
+    "stamina": 35.0,
+    "durationSec": 900.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "MinceMeatSauce",
+    "kind": "food",
+    "health": 40.0,
+    "stamina": 13.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "Mushroom",
+    "kind": "food",
+    "health": 15.0,
+    "stamina": 15.0,
+    "durationSec": 900.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "MushroomYellow",
+    "kind": "food",
+    "health": 10.0,
+    "stamina": 30.0,
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "NeckTailGrilled",
+    "kind": "food",
+    "health": 25.0,
+    "stamina": 8.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "QueensJam",
+    "kind": "food",
+    "health": 14.0,
+    "stamina": 40.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "Raspberry",
+    "kind": "food",
+    "health": 7.0,
+    "stamina": 20.0,
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "RawMeat",
+    "kind": "food",
+    "health": 20.0,
+    "stamina": 20.0,
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "Sausages",
+    "kind": "food",
+    "health": 55.0,
+    "stamina": 18.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  }
+]

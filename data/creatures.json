@@ -1,1 +1,282 @@
-[]
+[
+  {
+    "id": "Boar",
+    "name": "Boar",
+    "biome": "meadows",
+    "health": 10.0,
+    "drops": [
+      {
+        "item": "RawMeat",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "LeatherScraps",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "TrophyBoar",
+        "min": 1,
+        "max": 1,
+        "chance": 0.15
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Deer",
+    "name": "Deer",
+    "biome": "meadows",
+    "health": 10.0,
+    "drops": [
+      {
+        "item": "DeerMeat",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "item": "DeerHide",
+        "min": 1,
+        "max": 3
+      },
+      {
+        "item": "TrophyDeer",
+        "min": 1,
+        "max": 1,
+        "chance": 0.5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Neck",
+    "name": "Neck",
+    "biome": "meadows",
+    "health": 5.0,
+    "drops": [
+      {
+        "item": "NeckTail",
+        "min": 1,
+        "max": 1,
+        "chance": 0.7
+      },
+      {
+        "item": "TrophyNeck",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Greyling",
+    "name": "Greyling",
+    "biome": "meadows",
+    "health": 20.0,
+    "drops": [
+      {
+        "item": "Resin",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Greydwarf",
+    "name": "Greydwarf",
+    "biome": "blackforest",
+    "health": 40.0,
+    "drops": [
+      {
+        "item": "GreydwarfEye",
+        "min": 1,
+        "max": 1,
+        "chance": 0.5
+      },
+      {
+        "item": "Stone",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "Wood",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "Resin",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "TrophyGreydwarf",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Greydwarf_Elite",
+    "name": "Greydwarf Brute",
+    "biome": "blackforest",
+    "health": 150.0,
+    "drops": [
+      {
+        "item": "GreydwarfEye",
+        "min": 2,
+        "max": 2,
+        "chance": 0.5
+      },
+      {
+        "item": "Stone",
+        "min": 2,
+        "max": 2
+      },
+      {
+        "item": "Wood",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "item": "Dandelion",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "AncientSeed",
+        "min": 1,
+        "max": 1,
+        "chance": 0.33
+      },
+      {
+        "item": "TrophyGreydwarfBrute",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Greydwarf_Shaman",
+    "name": "Greydwarf Shaman",
+    "biome": "blackforest",
+    "health": 60.0,
+    "drops": [
+      {
+        "item": "GreydwarfEye",
+        "min": 1,
+        "max": 1,
+        "chance": 0.5
+      },
+      {
+        "item": "Wood",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "Resin",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "TrophyGreydwarfShaman",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "Pukeberries",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Skeleton",
+    "name": "Skeleton",
+    "biome": "blackforest",
+    "health": 40.0,
+    "drops": [
+      {
+        "item": "TrophySkeleton",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "BoneFragments",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Troll",
+    "name": "Troll",
+    "biome": "blackforest",
+    "health": 600.0,
+    "drops": [
+      {
+        "item": "Coins",
+        "min": 20,
+        "max": 30
+      },
+      {
+        "item": "TrophyFrostTroll",
+        "min": 1,
+        "max": 1,
+        "chance": 0.5
+      },
+      {
+        "item": "TrollHide",
+        "min": 5,
+        "max": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Surtling",
+    "name": "Surtling",
+    "biome": "blackforest",
+    "health": 20.0,
+    "drops": [
+      {
+        "item": "Coal",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "item": "SurtlingCore",
+        "min": 1,
+        "max": 1,
+        "chance": 0.5
+      },
+      {
+        "item": "TrophySurtling",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  }
+]
