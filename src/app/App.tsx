@@ -1,4 +1,5 @@
 import { HashRouter, NavLink, Route, Routes } from 'react-router';
+import { gameData } from '../data/load';
 import { ROUTES } from './routes';
 import styles from './App.module.css';
 
@@ -36,6 +37,11 @@ export function App() {
               {r.label}
             </NavLink>
           ))}
+          <p className={styles.dataInfo}>
+            Data: {gameData.meta.gameVersion}
+            <br />
+            Reviewed {gameData.meta.lastReviewed}
+          </p>
         </nav>
         <main className={styles.main}>
           <Routes>
