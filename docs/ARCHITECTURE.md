@@ -22,7 +22,7 @@
 | Styling | CSS variables + CSS Modules | No framework lock-in, full control of the look |
 | Fonts | `@fontsource` packages, self-hosted | Must work offline, no Google Fonts requests |
 
-Vite `base` must be `/valheim-site/`. Confirm the exact repo name casing with `git remote -v`.
+Vite `base` must be `/Valheim-Site/` (the repo's canonical name as shown on GitHub; the casing in a clone URL can differ, so do not trust `git remote -v` for this).
 
 ## Folder layout
 

@@ -7,7 +7,7 @@ guide, rankings, build planner and checklists. Static site, hosted free on GitHu
 
 ## Live site
 
-`https://nobody174.github.io/valheim-site/` (after the first deploy)
+`https://nobody174.github.io/Valheim-Site/` (after the first deploy)
 
 ## One-time GitHub setup
 
