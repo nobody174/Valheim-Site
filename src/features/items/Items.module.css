@@ -1,0 +1,123 @@
+.page {
+  max-width: 820px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.title h1 {
+  margin: 0;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.dim {
+  color: var(--text-dim);
+}
+.warn {
+  padding: 0.5rem 0.75rem;
+  color: var(--amber);
+  border-left: 3px solid var(--amber);
+  background: var(--bg-1);
+}
+.section {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0;
+}
+.facts dt {
+  color: var(--text-dim);
+}
+.facts dd {
+  margin: 0;
+}
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.25rem 0;
+  padding: 0;
+  list-style: none;
+}
+.recipe {
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--border);
+}
+.recipe:first-of-type {
+  border-top: 0;
+}
+.recipeHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.upgrades {
+  margin: 0.25rem 0 0;
+}
+.upgrades div {
+  display: flex;
+  gap: 1rem;
+}
+.upgrades dt {
+  min-width: 5.5rem;
+  color: var(--text-dim);
+}
+.upgrades dd {
+  margin: 0;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.table th {
+  color: var(--text-dim);
+  font-weight: 600;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.filters select,
+.filters input {
+  padding: 0.4rem 0.6rem;
+  background: var(--bg-0);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.tableWrap {
+  overflow-x: auto;
+}

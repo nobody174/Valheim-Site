@@ -1,0 +1,270 @@
+import { useEffect } from 'react';
+import { useParams } from 'react-router';
+import { EntityLink } from '../../components/EntityLink';
+import { HoardBadge, VerifiedBadge } from '../../components/Badges';
+import { CategoryGlyph } from '../../components/CategoryGlyph';
+import { graph, lookup } from '../../data/lookup';
+import { pushRecent } from '../../state/recent';
+import { RecipeBlock } from './RecipeBlock';
+import styles from './Items.module.css';
+
+const num = (n: number) => String(Math.round(n * 100) / 100);
+const label = (key: string) => key.charAt(0).toUpperCase() + key.slice(1);
+
+function DamageList({ damage }: { damage: Record<string, number> }) {
+  const entries = Object.entries(damage);
+  if (entries.length === 0) return <>none</>;
+  return <>{entries.map(([k, v]) => `${label(k)} ${num(v)}`).join(', ')}</>;
+}
+
+function Stats({ id }: { id: string }) {
+  const weapon = lookup.weapon(id);
+  const armor = lookup.armor(id);
+  const food = lookup.food(id);
+  const trophy = lookup.trophy(id);
+  if (!weapon && !armor && !food && !trophy) return null;
+  return (
+    <section className={styles.section}>
+      <h2>Stats</h2>
+      <dl className={styles.facts}>
+        {weapon && (
+          <>
+            <dt>Skill</dt>
+            <dd>{weapon.skill}</dd>
+            <dt>Damage</dt>
+            <dd>
+              <DamageList damage={weapon.damage} />
+            </dd>
+            {weapon.damagePerLevel && (
+              <>
+                <dt>Per upgrade level</dt>
+                <dd>
+                  <DamageList damage={weapon.damagePerLevel} />
+                </dd>
+              </>
+            )}
+            {weapon.blockPower !== undefined && (
+              <>
+                <dt>Block power</dt>
+                <dd>{num(weapon.blockPower)}</dd>
+              </>
+            )}
+            {weapon.parryForce !== undefined && (
+              <>
+                <dt>Parry force</dt>
+                <dd>{num(weapon.parryForce)}</dd>
+              </>
+            )}
+            {weapon.knockback !== undefined && (
+              <>
+                <dt>Knockback</dt>
+                <dd>{num(weapon.knockback)}</dd>
+              </>
+            )}
+            {weapon.durability !== undefined && (
+              <>
+                <dt>Durability</dt>
+                <dd>{num(weapon.durability)}</dd>
+              </>
+            )}
+          </>
+        )}
+        {armor && (
+          <>
+            <dt>Slot</dt>
+            <dd>{label(armor.slot)}</dd>
+            <dt>Armor</dt>
+            <dd>{num(armor.armor)}</dd>
+            {armor.durability !== undefined && (
+              <>
+                <dt>Durability</dt>
+                <dd>{num(armor.durability)}</dd>
+              </>
+            )}
+            {armor.setName && (
+              <>
+                <dt>Set</dt>
+                <dd>{armor.setName}</dd>
+              </>
+            )}
+          </>
+        )}
+        {food && (
+          <>
+            {food.health !== undefined && (
+              <>
+                <dt>Health</dt>
+                <dd>{num(food.health)}</dd>
+              </>
+            )}
+            {food.stamina !== undefined && (
+              <>
+                <dt>Stamina</dt>
+                <dd>{num(food.stamina)}</dd>
+              </>
+            )}
+            {food.durationSec !== undefined && (
+              <>
+                <dt>Duration</dt>
+                <dd>{num(food.durationSec / 60)} min</dd>
+              </>
+            )}
+          </>
+        )}
+        {trophy && (
+          <>
+            <dt>Trophy of</dt>
+            <dd>
+              <EntityLink id={trophy.creature} />
+            </dd>
+          </>
+        )}
+      </dl>
+    </section>
+  );
+}
+
+function WhereFound({ id }: { id: string }) {
+  const sources = graph.obtainedFrom(id).filter((s) => s.type !== 'recipe');
+  const summons = lookup.summonsFor(id);
+  if (sources.length === 0 && summons.length === 0) return null;
+  return (
+    <section className={styles.section}>
+      <h2>Where found</h2>
+      <ul>
+        {sources.map((s, i) => {
+          if (s.type === 'gather') return <li key={i}>Gathered from: {s.node}</li>;
+          if (s.type === 'other') return <li key={i}>{s.note}</li>;
+          if (s.type === 'drop') {
+            const monster = lookup.creature(s.creature) ?? lookup.boss(s.creature);
+            const drop = monster?.drops.find((d) => d.item === id);
+            const amount = drop
+              ? drop.min === drop.max
+                ? `${drop.min}`
+                : `${drop.min}–${drop.max}`
+              : '';
+            const chance =
+              drop?.chance !== undefined ? `, ${Math.round(drop.chance * 100)}% chance` : '';
+            return (
+              <li key={i}>
+                Dropped by <EntityLink id={s.creature} />
+                {amount && (
+                  <span className={styles.dim}>
+                    {' '}
+                    ({amount}
+                    {chance})
+                  </span>
+                )}
+              </li>
+            );
+          }
+          return null;
+        })}
+        {summons.map((b) => (
+          <li key={b.id}>
+            Used to summon <EntityLink id={b.id} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+export function ItemPage() {
+  const { id = '' } = useParams();
+  const item = lookup.item(id);
+
+  useEffect(() => {
+    if (item) pushRecent(item.id);
+  }, [item]);
+
+  if (!item) {
+    return (
+      <section className={styles.page}>
+        <h1>Unknown item</h1>
+        <p>No item with id &quot;{id}&quot;.</p>
+      </section>
+    );
+  }
+
+  const craftedFrom = graph.recipesFor(id);
+  const usedIn = graph.usedIn(id);
+  const canCraft = [...new Set(usedIn.map((r) => r.output.item))];
+  const biome = lookup.biomeName(item.biome);
+
+  return (
+    <article className={styles.page}>
+      <header className={styles.title}>
+        <CategoryGlyph category={item.category} />
+        <div>
+          <h1>{item.name}</h1>
+          <div className={styles.badges}>
+            <span className={styles.dim}>{label(item.category)}</span>
+            {biome && <span className={styles.dim}>· {biome}</span>}
+            <HoardBadge hoard={item.hoard} qty={item.recommendedQty} />
+            <VerifiedBadge level={item.verified} note={item.note} />
+          </div>
+        </div>
+      </header>
+
+      {item.verified === 'unverified' && (
+        <p className={styles.warn}>
+          Unverified: {item.note ?? 'not yet checked against the game.'}
+        </p>
+      )}
+
+      <section className={styles.section}>
+        <dl className={styles.facts}>
+          <dt>Weight</dt>
+          <dd>{item.weight === null ? 'unknown' : num(item.weight)}</dd>
+          <dt>Stack size</dt>
+          <dd>{item.stackSize === null ? 'unknown' : item.stackSize}</dd>
+          <dt>Tags</dt>
+          <dd>{item.tags.length ? item.tags.join(', ') : 'none'}</dd>
+          <dt>Internal id</dt>
+          <dd>{item.id}</dd>
+          {item.hoardNote && (
+            <>
+              <dt>Hoard note</dt>
+              <dd>{item.hoardNote}</dd>
+            </>
+          )}
+        </dl>
+      </section>
+
+      <Stats id={id} />
+      <WhereFound id={id} />
+
+      {craftedFrom.length > 0 && (
+        <section className={styles.section}>
+          <h2>Crafted from</h2>
+          {craftedFrom.map((r) => (
+            <RecipeBlock key={r.id} recipe={r} />
+          ))}
+        </section>
+      )}
+
+      {usedIn.length > 0 && (
+        <section className={styles.section}>
+          <h2>Used in</h2>
+          {usedIn.map((r) => (
+            <RecipeBlock key={r.id} recipe={r} />
+          ))}
+        </section>
+      )}
+
+      {canCraft.length > 0 && (
+        <section className={styles.section}>
+          <h2>Can craft into</h2>
+          <ul className={styles.inline}>
+            {canCraft.map((c) => (
+              <li key={c}>
+                <EntityLink id={c} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </article>
+  );
+}
