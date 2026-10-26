@@ -121,3 +121,97 @@
 .tableWrap {
   overflow-x: auto;
 }
+
+.lead {
+  max-width: 60ch;
+  color: var(--text-dim);
+}
+.empty {
+  padding: 1rem;
+  color: var(--text-dim);
+  background: var(--bg-1);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+.count {
+  margin-left: 0.4rem;
+  padding: 0 0.45rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.reset {
+  align-self: flex-end;
+  padding: 0.4rem 0.8rem;
+  color: var(--amber);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.reset:hover {
+  border-color: var(--amber);
+}
+.table tbody tr:hover {
+  background: var(--bg-1);
+}
+.recipe {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--t-fast);
+}
+.recipe:hover {
+  border-color: var(--bronze);
+}
+.recipeHead {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.recipeHead .dim {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.recipe .inline li {
+  padding: 0.1rem 0.6rem;
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.recipe summary {
+  margin-top: 0.4rem;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.recipe summary:hover {
+  color: var(--text);
+}
+.recipe:first-of-type {
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 700px) {
+  .title h1 {
+    font-size: 1.4rem;
+  }
+  .facts {
+    grid-template-columns: 1fr;
+  }
+  .facts dt {
+    margin-top: 0.4rem;
+  }
+}
+
+.recipe a,
+.table a,
+.section li a {
+  text-decoration: none;
+}
+.recipe a:hover,
+.table a:hover,
+.section li a:hover {
+  text-decoration: underline;
+}

@@ -1,25 +1,84 @@
 import { useMemo, useState } from 'react';
+import { Link } from 'react-router';
+import { entityPath } from '../../components/EntityLink';
+import { CATEGORY_LABELS } from '../items/ItemsPage';
+import { lookup } from '../../data/lookup';
+import { getRecent } from '../../state/recent';
 import { search } from './instance';
 import { SearchResults } from './SearchResults';
 import styles from './Search.module.css';
 
+const QUICK = ['weapon', 'armor', 'food', 'material', 'trophy', 'tool'];
+
+/** Landing page: a big search box, then shortcuts so there is something to click right away. */
 export function SearchPage() {
   const [query, setQuery] = useState('');
   const groups = useMemo(() => search(query, 20), [query]);
+  const searching = query.trim().length > 0;
+  const recent = useMemo(
+    () =>
+      getRecent()
+        .map((id) => lookup.item(id))
+        .filter((i) => i !== undefined),
+    [],
+  );
+
   return (
     <section>
-      <h1>Search</h1>
+      <h1>What are you looking for?</h1>
       <input
-        className={styles.input}
+        className={styles.bigInput}
         type="search"
         value={query}
         placeholder="Search items, creatures, bosses, stations"
         aria-label="Search"
+        autoFocus
         onChange={(e) => setQuery(e.target.value)}
       />
-      <p className={styles.hint}>Press Ctrl+K or / on any page to search.</p>
-      <SearchResults groups={groups} />
-      {query.trim() && groups.length === 0 && <p className={styles.empty}>No matches.</p>}
+      <p className={styles.hint}>
+        Tip: press <kbd>Ctrl</kbd>+<kbd>K</kbd> or <kbd>/</kbd> on any page to search.
+      </p>
+
+      {searching ? (
+        <>
+          <SearchResults groups={groups} />
+          {groups.length === 0 && (
+            <p className={styles.empty}>
+              Nothing found for &quot;{query.trim()}&quot;. Try a shorter word, or{' '}
+              <Link to="/items">browse all items</Link>.
+            </p>
+          )}
+        </>
+      ) : (
+        <>
+          <h2 className={styles.sectionTitle}>Browse</h2>
+          <div className={styles.chips}>
+            {QUICK.map((c) => (
+              <Link key={c} to={`/items?category=${c}`} className={styles.chip}>
+                {CATEGORY_LABELS[c]}
+              </Link>
+            ))}
+            <Link to="/recipes" className={styles.chip}>
+              Recipes
+            </Link>
+            <Link to="/items?hoard=must_keep" className={styles.chip}>
+              Must keep
+            </Link>
+          </div>
+          {recent.length > 0 && (
+            <>
+              <h2 className={styles.sectionTitle}>Recently viewed</h2>
+              <div className={styles.chips}>
+                {recent.map((i) => (
+                  <Link key={i.id} to={entityPath('item', i.id)} className={styles.chip}>
+                    {i.name}
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
+        </>
+      )}
     </section>
   );
 }

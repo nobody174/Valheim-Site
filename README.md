@@ -17,7 +17,8 @@ GitHub Pages, Source: GitHub Actions. Pushing to `main` runs `.github/workflows/
 ## Using it
 
 Press **Ctrl+K** or **/** on any page to search. Every item, creature, boss and station name is a link
-to its page. `/items` lists all items, filterable by hoard category and biome.
+to its page. `/items` lists all items, filterable by name, category, hoard and biome (filters live in the URL).
+`/recipes` lists every recipe grouped by station, searchable by output or ingredient.
 
 ## Develop
 

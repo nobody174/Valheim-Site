@@ -69,3 +69,49 @@
   padding: 0.5rem 0.9rem;
   color: var(--text-dim);
 }
+
+.bigInput {
+  width: 100%;
+  max-width: 640px;
+  padding: 0.9rem 1.1rem;
+  font-size: 1.15rem;
+  color: var(--text);
+  background: var(--bg-1);
+  border: 1px solid var(--bronze);
+  border-radius: var(--radius);
+}
+.bigInput:focus {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+.sectionTitle {
+  margin: 1.75rem 0 0.6rem;
+  font-size: 0.95rem;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.chip {
+  padding: 0.45rem 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition:
+    border-color var(--t-fast),
+    color var(--t-fast);
+}
+.chip:hover {
+  color: var(--amber);
+  border-color: var(--amber);
+}
+.hint kbd {
+  padding: 0.05rem 0.4rem;
+  font-size: 0.8rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}

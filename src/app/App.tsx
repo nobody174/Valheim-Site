@@ -4,6 +4,7 @@ import { gameData } from '../data/load';
 import { CreaturePage, StationPage } from '../features/items/EntityPage';
 import { ItemPage } from '../features/items/ItemPage';
 import { ItemsPage } from '../features/items/ItemsPage';
+import { RecipesPage } from '../features/items/RecipesPage';
 import { CommandPalette } from '../features/search/CommandPalette';
 import { SearchPage } from '../features/search/SearchPage';
 import { ROUTES } from './routes';
@@ -22,6 +23,7 @@ function ComingSoon({ label, phase }: { label: string; phase: number }) {
 const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
   '/items': <ItemsPage />,
+  '/recipes': <RecipesPage />,
 };
 
 function isTyping(target: EventTarget | null): boolean {
@@ -48,6 +50,9 @@ function Shell() {
 
   return (
     <div className={styles.shell}>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
       <header className={styles.header}>
         <span className={styles.brand}>Valheim Companion</span>
         <input
@@ -66,9 +71,14 @@ function Shell() {
             key={r.path}
             to={r.path}
             end
-            className={({ isActive }) => (isActive ? styles.active : undefined)}
+            className={({ isActive }) =>
+              [isActive ? styles.active : '', PAGES[r.path] ? '' : styles.dimmed]
+                .join(' ')
+                .trim() || undefined
+            }
           >
             {r.label}
+            {!PAGES[r.path] && <span className={styles.soon}>soon</span>}
           </NavLink>
         ))}
         <p className={styles.dataInfo}>
@@ -77,7 +87,7 @@ function Shell() {
           Reviewed {gameData.meta.lastReviewed}
         </p>
       </nav>
-      <main className={styles.main}>
+      <main id="main" className={styles.main}>
         <Routes>
           {ROUTES.map((r) => (
             <Route

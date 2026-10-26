@@ -62,6 +62,7 @@ export function createLookup(data: GameData) {
     biomeName: (id: string | null): string | null => (id ? (biomes.get(id)?.name ?? id) : null),
     allItems: () => data.items,
     allBiomes: () => data.biomes,
+    allRecipes: () => data.recipes,
     /** Creatures and bosses that drop this item, by id. */
     droppedBy: (itemId: string) =>
       [...data.creatures, ...data.bosses].filter((m) => m.drops.some((d) => d.item === itemId)),

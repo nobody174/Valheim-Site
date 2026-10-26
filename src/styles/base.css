@@ -31,3 +31,23 @@ a {
     animation: none !important;
   }
 }
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+a:hover {
+  color: var(--gold);
+}
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 20;
+  padding: 0.5rem 1rem;
+  background: var(--bg-2);
+  color: var(--amber);
+}
+.skip-link:focus {
+  left: 0;
+}
