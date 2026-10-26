@@ -1,0 +1,351 @@
+[
+  {
+    "item": "ArrowBronze",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 32.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
+    "item": "ArrowFlint",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 27.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
+    "item": "ArrowWood",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 22.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 5.0
+    },
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
+    "item": "AtgeirBronze",
+    "skill": "Polearms",
+    "damage": {
+      "pierce": 45.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 6.0
+    },
+    "blockPower": 16.0,
+    "parryForce": 40.0,
+    "knockback": 30.0,
+    "durability": 125.0
+  },
+  {
+    "item": "AxeBronze",
+    "skill": "Axes",
+    "damage": {
+      "slash": 40.0,
+      "chop": 40.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 5.0,
+      "chop": 3.0
+    },
+    "blockPower": 12.0,
+    "parryForce": 20.0,
+    "knockback": 50.0,
+    "durability": 125.0
+  },
+  {
+    "item": "AxeFlint",
+    "skill": "Axes",
+    "damage": {
+      "slash": 20.0,
+      "chop": 30.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 5.0,
+      "chop": 3.0
+    },
+    "blockPower": 4.0,
+    "parryForce": 20.0,
+    "knockback": 50.0,
+    "durability": 100.0
+  },
+  {
+    "item": "AxeStone",
+    "skill": "Axes",
+    "damage": {
+      "slash": 15.0,
+      "chop": 20.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 5.0,
+      "chop": 3.0
+    },
+    "blockPower": 3.0,
+    "parryForce": 20.0,
+    "knockback": 50.0,
+    "durability": 100.0
+  },
+  {
+    "item": "Bow",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 22.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 3.0
+    },
+    "blockPower": 3.0,
+    "durability": 50.0
+  },
+  {
+    "item": "BowFineWood",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 32.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 3.0
+    },
+    "blockPower": 3.0,
+    "knockback": 5.0,
+    "durability": 100.0
+  },
+  {
+    "item": "Club",
+    "skill": "Clubs",
+    "damage": {
+      "blunt": 12.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "blunt": 6.0
+    },
+    "blockPower": 3.0,
+    "parryForce": 20.0,
+    "knockback": 30.0,
+    "durability": 100.0
+  },
+  {
+    "item": "KnifeCopper",
+    "skill": "Knives",
+    "damage": {
+      "slash": 12.0,
+      "pierce": 12.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 1.0,
+      "pierce": 1.0
+    },
+    "blockPower": 2.0,
+    "parryForce": 10.0,
+    "knockback": 10.0,
+    "durability": 200.0
+  },
+  {
+    "item": "KnifeFlint",
+    "skill": "Knives",
+    "damage": {
+      "slash": 5.0,
+      "pierce": 5.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 1.0,
+      "pierce": 1.0
+    },
+    "blockPower": 2.0,
+    "parryForce": 10.0,
+    "knockback": 10.0,
+    "durability": 200.0
+  },
+  {
+    "item": "MaceBronze",
+    "skill": "Clubs",
+    "damage": {
+      "blunt": 35.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "blunt": 6.0
+    },
+    "blockPower": 12.0,
+    "parryForce": 30.0,
+    "knockback": 80.0,
+    "durability": 200.0
+  },
+  {
+    "item": "PickaxeAntler",
+    "skill": "Pickaxes",
+    "damage": {
+      "pierce": 18.0,
+      "pickaxe": 18.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 2.0,
+    "parryForce": 20.0,
+    "knockback": 50.0,
+    "durability": 100.0
+  },
+  {
+    "item": "PickaxeBronze",
+    "skill": "Pickaxes",
+    "damage": {
+      "pierce": 25.0,
+      "pickaxe": 25.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 5.0,
+      "pickaxe": 4.0
+    },
+    "blockPower": 2.0,
+    "parryForce": 20.0,
+    "knockback": 50.0,
+    "durability": 120.0
+  },
+  {
+    "item": "PickaxeStone",
+    "skill": "Pickaxes",
+    "damage": {
+      "pierce": 15.0,
+      "pickaxe": 15.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 2.0,
+    "knockback": 50.0,
+    "durability": 100.0
+  },
+  {
+    "item": "ShieldBronzeBuckler",
+    "skill": "Blocking",
+    "damage": {},
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 16.0,
+    "parryForce": 30.0,
+    "knockback": 40.0,
+    "durability": 200.0
+  },
+  {
+    "item": "ShieldWood",
+    "skill": "Blocking",
+    "damage": {},
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 6.0,
+    "parryForce": 20.0,
+    "knockback": 40.0,
+    "durability": 200.0
+  },
+  {
+    "item": "ShieldWoodTower",
+    "skill": "Blocking",
+    "damage": {},
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "parryForce": 100.0,
+    "knockback": 40.0,
+    "durability": 200.0
+  },
+  {
+    "item": "SledgeStagbreaker",
+    "skill": "Clubs",
+    "damage": {
+      "blunt": 20.0,
+      "pierce": 5.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "blunt": 6.0
+    },
+    "blockPower": 4.0,
+    "parryForce": 50.0,
+    "knockback": 150.0,
+    "durability": 100.0
+  },
+  {
+    "item": "SpearBronze",
+    "skill": "Spears",
+    "damage": {
+      "pierce": 35.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 6.0
+    },
+    "blockPower": 12.0,
+    "parryForce": 20.0,
+    "knockback": 20.0,
+    "durability": 100.0
+  },
+  {
+    "item": "SpearFlint",
+    "skill": "Spears",
+    "damage": {
+      "pierce": 20.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 6.0
+    },
+    "blockPower": 4.0,
+    "parryForce": 20.0,
+    "knockback": 20.0,
+    "durability": 100.0
+  },
+  {
+    "item": "SwordBronze",
+    "skill": "Swords",
+    "damage": {
+      "slash": 35.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 6.0
+    },
+    "blockPower": 12.0,
+    "parryForce": 20.0,
+    "knockback": 40.0,
+    "durability": 200.0
+  }
+]

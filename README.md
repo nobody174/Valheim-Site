@@ -3,17 +3,16 @@
 A personal, offline-capable Valheim companion: search, recipes, crafting graph, progression
 guide, rankings, build planner and checklists. Static site, hosted free on GitHub Pages.
 
-**Status:** planning complete, implementation starting. See `docs/ROADMAP.md`.
+**Status:** Phase 0 (foundation) in review. See `docs/ROADMAP.md`.
 
 ## Live site
 
-`https://nobody174.github.io/Valheim-Site/` (after the first deploy)
+`https://nobody174.github.io/Valheim-Site/` 
 
-## One-time GitHub setup
+## Deploy
 
-1. Repo must be **public** (GitHub Pages is free for public repos on a free account).
-2. Repo **Settings > Pages > Build and deployment > Source: GitHub Actions**.
-3. Push to `main`. The workflow in `.github/workflows/deploy.yml` builds and deploys.
+GitHub Pages, Source: GitHub Actions. Pushing to `main` runs `.github/workflows/deploy.yml`
+(lint, validate, test, build, deploy). Pull requests run the same checks without deploying.
 
 ## Develop
 
@@ -21,8 +20,14 @@ guide, rankings, build planner and checklists. Static site, hosted free on GitHu
 npm install
 npm run dev
 npm run validate   # check /data
+npm run test
 npm run build
 ```
+
+## Data
+
+Game data is in `/data/*.json`, extracted from a local game install with `tools/extract/`
+and validated against Zod schemas. See `docs/DATA_SOURCES.md`.
 
 ## Project layout
 

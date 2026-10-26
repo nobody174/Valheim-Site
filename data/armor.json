@@ -1,0 +1,110 @@
+[
+  {
+    "item": "ArmorBronzeChest",
+    "slot": "chest",
+    "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0
+  },
+  {
+    "item": "ArmorBronzeLegs",
+    "slot": "legs",
+    "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0
+  },
+  {
+    "item": "ArmorLeatherChest",
+    "slot": "chest",
+    "armor": 2.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 400.0
+  },
+  {
+    "item": "ArmorLeatherLegs",
+    "slot": "legs",
+    "armor": 2.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 400.0
+  },
+  {
+    "item": "ArmorRagsChest",
+    "slot": "chest",
+    "armor": 1.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 200.0
+  },
+  {
+    "item": "ArmorRagsLegs",
+    "slot": "legs",
+    "armor": 1.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 200.0
+  },
+  {
+    "item": "ArmorTrollLeatherChest",
+    "slot": "chest",
+    "armor": 6.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 500.0,
+    "setName": "troll"
+  },
+  {
+    "item": "ArmorTrollLeatherLegs",
+    "slot": "legs",
+    "armor": 6.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 500.0,
+    "setName": "troll"
+  },
+  {
+    "item": "CapeDeerHide",
+    "slot": "cape",
+    "armor": 1.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 400.0
+  },
+  {
+    "item": "CapeTrollHide",
+    "slot": "cape",
+    "armor": 1.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 500.0,
+    "setName": "troll"
+  },
+  {
+    "item": "HelmetBronze",
+    "slot": "helmet",
+    "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0
+  },
+  {
+    "item": "HelmetLeather",
+    "slot": "helmet",
+    "armor": 2.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 400.0
+  },
+  {
+    "item": "HelmetTrollLeather",
+    "slot": "helmet",
+    "armor": 6.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 500.0,
+    "setName": "troll"
+  }
+]

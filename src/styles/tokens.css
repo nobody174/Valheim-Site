@@ -1,0 +1,19 @@
+:root {
+  --bg-0: #111111;
+  --bg-1: #161616;
+  --bg-2: #1a1a1a;
+  --iron: #3a3d42;
+  --black-metal: #0c0d0e;
+  --bronze: #a97142;
+  --silver: #b8bcc2;
+  --gold: #c9a227;
+  --amber: #d98e04;
+  --parchment: #d9c9a3;
+  --text: #e4e4e4;
+  --text-dim: #9a9da2;
+  --border: #2a2c30;
+  --font-heading: 'Cinzel', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --radius: 6px;
+  --t-fast: 150ms ease;
+}

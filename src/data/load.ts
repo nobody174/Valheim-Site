@@ -1,0 +1,39 @@
+import { z } from 'zod';
+import biomes from '../../data/biomes.json';
+import items from '../../data/items.json';
+import recipes from '../../data/recipes.json';
+import stations from '../../data/stations.json';
+import weapons from '../../data/weapons.json';
+import armor from '../../data/armor.json';
+import foods from '../../data/foods.json';
+import trophies from '../../data/trophies.json';
+import creatures from '../../data/creatures.json';
+import bosses from '../../data/bosses.json';
+import pieces from '../../data/pieces.json';
+import meta from '../../data/meta.json';
+import { FILE_SCHEMAS, MetaSchema, type GameData } from './schemas';
+
+const raw = {
+  biomes,
+  items,
+  recipes,
+  stations,
+  weapons,
+  armor,
+  foods,
+  trophies,
+  creatures,
+  bosses,
+  pieces,
+};
+
+/** The only place JSON is imported. Parsed with the same schemas the validate script uses. */
+export const gameData: GameData = {
+  meta: MetaSchema.parse(meta),
+  ...(Object.fromEntries(
+    Object.entries(FILE_SCHEMAS).map(([k, schema]) => [
+      k,
+      z.array(schema).parse(raw[k as keyof typeof raw]),
+    ]),
+  ) as Omit<GameData, 'meta'>),
+};

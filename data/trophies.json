@@ -1,0 +1,68 @@
+[
+  {
+    "item": "TrophyBoar",
+    "creature": "Boar",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyDeer",
+    "creature": "Deer",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyEikthyr",
+    "creature": "Eikthyr",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyFrostTroll",
+    "creature": "Troll",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyGreydwarf",
+    "creature": "Greydwarf",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyGreydwarfBrute",
+    "creature": "Greydwarf_Elite",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyGreydwarfShaman",
+    "creature": "Greydwarf_Shaman",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyNeck",
+    "creature": "Neck",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophySkeleton",
+    "creature": "Skeleton",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophySurtling",
+    "creature": "Surtling",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyTheElder",
+    "creature": "gd_king",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  }
+]

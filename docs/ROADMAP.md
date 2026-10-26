@@ -7,7 +7,7 @@ reviews the live site before the next phase starts.
 
 | Phase | Name | Status | Sessions | Notes |
 |---|---|---|---|---|
-| 0 | Foundation | not started | 1 | Scaffold, schemas, validation, CI/deploy, seed data |
+| 0 | Foundation | in review (PR open) | 1 | Scaffold, schemas, validation, CI/deploy, seed data (Meadows + Black Forest from local game files) |
 | 1 | MVP | not started | 2-3 | Search, item pages, recipe explorer, checklist, favorites, PWA |
 | 2 | Core database | not started | 6-8 | Full data, one biome per session, all browse pages |
 | 3 | Advanced tools | not started | 3-4 | Crafting graph, build planner, rankings, optimizer |
