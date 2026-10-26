@@ -1,0 +1,24 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+coverage/
+
+# Local-only game icons (never commit game art)
+public/icons-local/
+
+# Raw extracted game data (commit only cleaned JSON in /data)
+data-raw/
+extracted/
+
+# Editor and OS
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Env and logs
+.env
+.env.*
+*.log
