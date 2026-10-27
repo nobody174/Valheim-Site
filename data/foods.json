@@ -1,10 +1,35 @@
 [
   {
+    "item": "BarleyWine",
+    "kind": "mead",
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "You take less damage from burning."
+  },
+  {
+    "item": "BarleyWineBase",
+    "kind": "mead",
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "You take less damage from burning."
+  },
+  {
     "item": "BlackSoup",
     "kind": "food",
     "health": 50.0,
     "stamina": 17.0,
     "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "BloodPudding",
+    "kind": "food",
+    "health": 25.0,
+    "stamina": 75.0,
+    "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -23,6 +48,15 @@
     "health": 23.0,
     "stamina": 23.0,
     "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "Bread",
+    "kind": "food",
+    "health": 23.0,
+    "stamina": 70.0,
+    "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -58,6 +92,15 @@
     "kind": "food",
     "health": 35.0,
     "stamina": 12.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "CookedLoxMeat",
+    "kind": "food",
+    "health": 50.0,
+    "stamina": 16.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -117,11 +160,29 @@
     "verified": "cross-checked"
   },
   {
+    "item": "FishWraps",
+    "kind": "food",
+    "health": 70.0,
+    "stamina": 23.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "Honey",
     "kind": "food",
     "health": 8.0,
     "stamina": 35.0,
     "durationSec": 900.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "LoxPie",
+    "kind": "food",
+    "health": 75.0,
+    "stamina": 24.0,
+    "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -158,6 +219,15 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "effect": "You take less damage from poison."
+  },
+  {
+    "item": "MeadStaminaMedium",
+    "kind": "mead",
+    "durationSec": 120.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "stamina": 160.0,
+    "effect": "Regenerate stamina fast."
   },
   {
     "item": "MeadStaminaMinor",
@@ -208,6 +278,15 @@
     "kind": "food",
     "health": 25.0,
     "stamina": 8.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "OnionSoup",
+    "kind": "food",
+    "health": 20.0,
+    "stamina": 60.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"

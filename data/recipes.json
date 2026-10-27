@@ -178,6 +178,84 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArrowNeedle",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowNeedle",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "Needle",
+        "qty": 4
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.CapeLox",
+    "kind": "craft",
+    "output": {
+      "item": "CapeLox",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LoxPelt",
+        "qty": 6
+      },
+      {
+        "item": "Silver",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 12
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorLeatherChest",
     "kind": "craft",
     "output": {
@@ -231,6 +309,75 @@
           {
             "item": "BoneFragments",
             "qty": 15
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.Battleaxe_Blackmetal",
+    "kind": "craft",
+    "output": {
+      "item": "BattleaxeBlackmetal",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 30
+      },
+      {
+        "item": "LinenThread",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 45
+          },
+          {
+            "item": "LinenThread",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 60
+          },
+          {
+            "item": "LinenThread",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 75
+          },
+          {
+            "item": "LinenThread",
+            "qty": 20
           }
         ]
       }
@@ -339,6 +486,35 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.BloodPudding",
+    "kind": "craft",
+    "output": {
+      "item": "BloodPudding",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "Thistle",
+        "qty": 2
+      },
+      {
+        "item": "Bloodbag",
+        "qty": 2
+      },
+      {
+        "item": "BarleyFlour",
+        "qty": 4
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -637,6 +813,35 @@
       {
         "item": "Resin",
         "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.LoxPie",
+    "kind": "craft",
+    "output": {
+      "item": "LoxPieUncooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Cloudberry",
+        "qty": 2
+      },
+      {
+        "item": "LoxMeat",
+        "qty": 2
+      },
+      {
+        "item": "BarleyFlour",
+        "qty": 4
       }
     ],
     "upgrades": [],
@@ -1164,6 +1369,87 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArmorLoxChest",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorLoxChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LoxPelt",
+        "qty": 5
+      },
+      {
+        "item": "BoneFragments",
+        "qty": 8
+      },
+      {
+        "item": "Root",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 11
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 12
+          },
+          {
+            "item": "Root",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 17
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 16
+          },
+          {
+            "item": "Root",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 23
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 20
+          },
+          {
+            "item": "Root",
+            "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.PickaxeIron",
     "kind": "craft",
     "output": {
@@ -1498,6 +1784,31 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FishWraps",
+    "kind": "craft",
+    "output": {
+      "item": "FishWraps",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "FishCooked",
+        "qty": 2
+      },
+      {
+        "item": "BarleyFlour",
+        "qty": 4
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -2070,6 +2381,75 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.AtgeirBlackmetal",
+    "kind": "craft",
+    "output": {
+      "item": "AtgeirBlackmetal",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 30
+      },
+      {
+        "item": "LinenThread",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 45
+          },
+          {
+            "item": "LinenThread",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 60
+          },
+          {
+            "item": "LinenThread",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 75
+          },
+          {
+            "item": "LinenThread",
+            "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.Hammer",
     "kind": "craft",
     "output": {
@@ -2345,6 +2725,100 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.Onionsoup",
+    "kind": "craft",
+    "output": {
+      "item": "OnionSoup",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Onion",
+        "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.MaceNeedle",
+    "kind": "craft",
+    "output": {
+      "item": "MaceNeedle",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 5
+      },
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "Needle",
+        "qty": 5
+      },
+      {
+        "item": "LinenThread",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 22
+          },
+          {
+            "item": "Needle",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 24
+          },
+          {
+            "item": "Needle",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 26
+          },
+          {
+            "item": "Needle",
+            "qty": 11
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.HelmetBerserker",
     "kind": "craft",
     "output": {
@@ -2451,6 +2925,70 @@
           {
             "item": "BoneFragments",
             "qty": 15
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldBlackmetalTower",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldBlackmetalTower",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 15
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 10
+      },
+      {
+        "item": "Chain",
+        "qty": 7
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 25
+          },
+          {
+            "item": "BlackMetal",
+            "qty": 14
+          },
+          {
+            "item": "Chain",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 35
+          },
+          {
+            "item": "BlackMetal",
+            "qty": 18
+          },
+          {
+            "item": "Chain",
+            "qty": 11
           }
         ]
       }
@@ -2862,6 +3400,71 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArmorPaddedCuirass",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorPaddedCuirass",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 10
+      },
+      {
+        "item": "LinenThread",
+        "qty": 20
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 13
+          },
+          {
+            "item": "LinenThread",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 16
+          },
+          {
+            "item": "LinenThread",
+            "qty": 40
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 19
+          },
+          {
+            "item": "LinenThread",
+            "qty": 50
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SpearFlint",
     "kind": "craft",
     "output": {
@@ -3089,6 +3692,27 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.Bread",
+    "kind": "craft",
+    "output": {
+      "item": "BreadDough",
+      "qty": 2
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BarleyFlour",
+        "qty": 10
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArrowFire",
     "kind": "craft",
     "output": {
@@ -3188,6 +3812,71 @@
           {
             "item": "Bronze",
             "qty": 14
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HelmetPadded",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetPadded",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 10
+      },
+      {
+        "item": "LinenThread",
+        "qty": 15
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 15
+          },
+          {
+            "item": "LinenThread",
+            "qty": 25
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 20
+          },
+          {
+            "item": "LinenThread",
+            "qty": 35
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 25
+          },
+          {
+            "item": "LinenThread",
+            "qty": 45
           }
         ]
       }
@@ -3440,6 +4129,75 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.AxeBlackMetal",
+    "kind": "craft",
+    "output": {
+      "item": "AxeBlackMetal",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 6
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 20
+      },
+      {
+        "item": "LinenThread",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 30
+          },
+          {
+            "item": "LinenThread",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 40
+          },
+          {
+            "item": "LinenThread",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 50
+          },
+          {
+            "item": "LinenThread",
+            "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.FistBjornClaw",
     "kind": "craft",
     "output": {
@@ -3587,6 +4345,87 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HelmetLox",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetLox",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LoxPelt",
+        "qty": 4
+      },
+      {
+        "item": "BoneFragments",
+        "qty": 4
+      },
+      {
+        "item": "WrithanRoots",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 6
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 6
+          },
+          {
+            "item": "WrithanRoots",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 8
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 8
+          },
+          {
+            "item": "WrithanRoots",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 10
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 10
+          },
+          {
+            "item": "WrithanRoots",
+            "qty": 5
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -3934,6 +4773,70 @@
           {
             "item": "WrithanRoots",
             "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldBlackmetal",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldBlackmetal",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 8
+      },
+      {
+        "item": "Chain",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 20
+          },
+          {
+            "item": "BlackMetal",
+            "qty": 12
+          },
+          {
+            "item": "Chain",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 30
+          },
+          {
+            "item": "BlackMetal",
+            "qty": 16
+          },
+          {
+            "item": "Chain",
+            "qty": 9
           }
         ]
       }
@@ -4438,6 +5341,75 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.KnifeBlackmetal",
+    "kind": "craft",
+    "output": {
+      "item": "KnifeBlackMetal",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 4
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 10
+      },
+      {
+        "item": "LinenThread",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 14
+          },
+          {
+            "item": "LinenThread",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 18
+          },
+          {
+            "item": "LinenThread",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 22
+          },
+          {
+            "item": "LinenThread",
+            "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.Bronze5",
     "kind": "craft",
     "output": {
@@ -4746,6 +5718,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.MeadBaseStaminaMedium",
+    "kind": "craft",
+    "output": {
+      "item": "MeadBaseStaminaMedium",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_MeadCauldron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Honey",
+        "qty": 10
+      },
+      {
+        "item": "Cloudberry",
+        "qty": 10
+      },
+      {
+        "item": "MushroomYellow",
+        "qty": 10
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.CarrotSoup",
     "kind": "craft",
     "output": {
@@ -4792,6 +5793,87 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorLoxLegs",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorLoxLegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LoxPelt",
+        "qty": 5
+      },
+      {
+        "item": "BoneFragments",
+        "qty": 8
+      },
+      {
+        "item": "Root",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 8
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 12
+          },
+          {
+            "item": "Root",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 11
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 16
+          },
+          {
+            "item": "Root",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LoxPelt",
+            "qty": 14
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 20
+          },
+          {
+            "item": "Root",
+            "qty": 5
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -4890,6 +5972,59 @@
           {
             "item": "LeatherScraps",
             "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.CapeLinen",
+    "kind": "craft",
+    "output": {
+      "item": "CapeLinen",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LinenThread",
+        "qty": 20
+      },
+      {
+        "item": "Silver",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 24
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 28
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 32
           }
         ]
       }
@@ -5638,6 +6773,71 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArmorPaddedGreaves",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorPaddedGreaves",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 10
+      },
+      {
+        "item": "LinenThread",
+        "qty": 20
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 13
+          },
+          {
+            "item": "LinenThread",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 16
+          },
+          {
+            "item": "LinenThread",
+            "qty": 40
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 19
+          },
+          {
+            "item": "LinenThread",
+            "qty": 50
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.MeadBaseStaminaMinor",
     "kind": "craft",
     "output": {
@@ -5728,6 +6928,100 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.BarleyWineBase",
+    "kind": "craft",
+    "output": {
+      "item": "BarleyWineBase",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_MeadCauldron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Barley",
+        "qty": 10
+      },
+      {
+        "item": "Cloudberry",
+        "qty": 10
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.SwordBlackmetal",
+    "kind": "craft",
+    "output": {
+      "item": "SwordBlackmetal",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 20
+      },
+      {
+        "item": "LinenThread",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 30
+          },
+          {
+            "item": "LinenThread",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 40
+          },
+          {
+            "item": "LinenThread",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BlackMetal",
+            "qty": 50
+          },
+          {
+            "item": "LinenThread",
+            "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "conv.fermenter.MeadBaseHealthMinor",
     "kind": "ferment",
     "output": {
@@ -5794,6 +7088,28 @@
     "timeSec": 2400.0
   },
   {
+    "id": "conv.fermenter.MeadBaseStaminaMedium",
+    "kind": "ferment",
+    "output": {
+      "item": "MeadStaminaMedium",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MeadBaseStaminaMedium",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
     "id": "conv.fermenter.MeadBasePoisonResist",
     "kind": "ferment",
     "output": {
@@ -5829,6 +7145,28 @@
     "inputs": [
       {
         "item": "MeadBaseFrostResist",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
+    "id": "conv.fermenter.BarleyWineBase",
+    "kind": "ferment",
+    "output": {
+      "item": "BarleyWine",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BarleyWineBase",
         "qty": 1
       }
     ],
@@ -6139,6 +7477,49 @@
     "timeSec": 25.0
   },
   {
+    "id": "conv.windmill.Barley",
+    "kind": "smelt",
+    "output": {
+      "item": "BarleyFlour",
+      "qty": 1
+    },
+    "station": {
+      "id": "windmill",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Barley",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.LoxMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedLoxMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "LoxMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 60.0
+  },
+  {
     "id": "conv.piece_cookingstation_iron.FishRaw",
     "kind": "cook",
     "output": {
@@ -6269,5 +7650,91 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "timeSec": 25.0
+  },
+  {
+    "id": "conv.blastfurnace.BlackMetalScrap",
+    "kind": "smelt",
+    "output": {
+      "item": "BlackMetal",
+      "qty": 1
+    },
+    "station": {
+      "id": "blastfurnace",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BlackMetalScrap",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.piece_oven.LoxPieUncooked",
+    "kind": "smelt",
+    "output": {
+      "item": "LoxPie",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_oven",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "LoxPieUncooked",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 50.0
+  },
+  {
+    "id": "conv.piece_oven.BreadDough",
+    "kind": "smelt",
+    "output": {
+      "item": "Bread",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_oven",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BreadDough",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 50.0
+  },
+  {
+    "id": "conv.piece_spinningwheel.Flax",
+    "kind": "smelt",
+    "output": {
+      "item": "LinenThread",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_spinningwheel",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Flax",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   }
 ]

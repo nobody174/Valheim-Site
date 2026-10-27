@@ -26,5 +26,12 @@
     "order": 4,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "plains",
+    "name": "Plains",
+    "order": 5,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   }
 ]
