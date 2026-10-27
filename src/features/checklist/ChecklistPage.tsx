@@ -74,6 +74,12 @@ export function ChecklistPage() {
         <strong>{profile.name}</strong>).
       </p>
 
+      <p className={styles.dim}>
+        <strong>Collected</strong>: you have found it. <strong>Crafted</strong>: you have made it.{' '}
+        <strong>Completed</strong>: you are done with it. <strong>Farmed</strong>: you have enough
+        stocked up.
+      </p>
+
       <div className={styles.bars}>
         {bars.map((b) => (
           <div key={b.biome.id}>

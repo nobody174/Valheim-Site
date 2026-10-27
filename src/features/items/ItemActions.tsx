@@ -68,7 +68,7 @@ export function ItemActions({ item }: { item: Item }) {
         })}
       </div>
       <label className={styles.override}>
-        Hoard category
+        Keep, stock up or throw away?
         <select
           value={override ?? ''}
           onChange={(e) => setOverride(item.id, (e.target.value || null) as Item['hoard'] | null)}
@@ -81,6 +81,9 @@ export function ItemActions({ item }: { item: Item }) {
           ))}
         </select>
       </label>
+      <p className={styles.dim}>
+        The default is a suggestion. Pick your own if you disagree; it is saved for this profile.
+      </p>
       {override && (
         <button type="button" className={styles.reset} onClick={() => setOverride(item.id, null)}>
           Reset to default

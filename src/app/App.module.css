@@ -168,3 +168,24 @@
   border-radius: var(--radius);
   cursor: pointer;
 }
+
+@media (max-width: 700px) {
+  .profile {
+    margin-left: 0;
+  }
+  .profile select {
+    max-width: 5.5rem;
+  }
+  .search {
+    flex: 1 1 0;
+  }
+  .brand {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile select {
+    max-width: 7rem;
+  }
+}

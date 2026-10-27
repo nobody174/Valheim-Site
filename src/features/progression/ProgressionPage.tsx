@@ -18,7 +18,6 @@ export function ProgressionPage() {
   if (!biome) return <p className={styles.empty}>No biome data.</p>;
 
   const guide = buildGuide(gameData, biome.id);
-  const bossNames = guide.bosses.map((b) => b.name).join(', ');
   const owned = (id: string) => profile.progress[id]?.collected === true;
   const mustKeepMissing = guide.mustKeep.filter((id) => !owned(id)).length;
 
@@ -26,8 +25,8 @@ export function ProgressionPage() {
     <section>
       <h1>Progression guide</h1>
       <p className={styles.lead}>
-        What to know about each biome, built from the game data. Boss before biome: beat{' '}
-        {bossNames || 'the boss'} when you are ready to move on.
+        What to know about each biome, built from the game data: the boss, what lives there, what to
+        keep, and a few gear and food picks. Choose a biome below.
       </p>
       <nav className={styles.tabs} aria-label="Biomes">
         {biomes.map((b, i) => (

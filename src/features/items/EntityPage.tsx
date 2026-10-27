@@ -48,12 +48,12 @@ function Attacks({ attacks }: { attacks: Creature['attacks'] }) {
         <p className={styles.dim}>No attack damage in the data (it may be passive).</p>
       ) : (
         <ul>
-          {attacks.map((a) => (
-            <li key={a.id}>
+          {attacks.map((a, i) => (
+            <li key={a.id} title={a.id}>
+              Attack {i + 1}:{' '}
               {Object.entries(a.damage)
                 .map(([k, v]) => `${label(k)} ${Math.round(v)}`)
                 .join(', ')}
-              <span className={styles.dim}> ({a.id})</span>
             </li>
           ))}
         </ul>

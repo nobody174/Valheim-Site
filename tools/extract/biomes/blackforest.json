@@ -85,18 +85,6 @@
     ]
   },
   "gather": {
-    "Copper": [
-      [
-        "other",
-        "Smelt Copper Ore in a smelter"
-      ]
-    ],
-    "Tin": [
-      [
-        "other",
-        "Smelt Tin Ore in a smelter"
-      ]
-    ],
     "CopperOre": [
       [
         "gather",

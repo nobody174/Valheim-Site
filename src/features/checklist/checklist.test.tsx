@@ -73,7 +73,7 @@ describe('item actions', () => {
   it('overrides the hoard category and resets it', async () => {
     const user = userEvent.setup();
     renderItem('Wood');
-    await user.selectOptions(screen.getByLabelText('Hoard category'), 'sell');
+    await user.selectOptions(screen.getByLabelText('Keep, stock up or throw away?'), 'sell');
     expect(profile().hoardOverrides.Wood).toBe('sell');
     expect(screen.getAllByText(/custom/).length).toBeGreaterThan(0);
     await user.click(screen.getByRole('button', { name: 'Reset to default' }));

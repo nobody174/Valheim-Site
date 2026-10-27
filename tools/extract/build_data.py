@@ -315,13 +315,15 @@ def main(raw, out, build_id, reviewed=None):
         d = row['data']
         ext = go_name.get(comp_go.get(row['pathId']))
         owner = comp_name(d['m_craftingStation'])
-        if not ext or not owner or ext in ext_by_station[owner]:
+        if not ext or not owner:
             continue
         cost = piece_cost(ext)
         if cost is None:
             warnings.append(f'extension {ext} of {owner}: needs items outside the configured biomes; skipped')
             continue
         name = english(pieces[ext].get('m_name', ''), ext)
+        if name in {e['name'] for e in ext_by_station[owner].values()}:
+            continue  # variants of the same extension
         ext_by_station[owner][ext] = {'id': ext, 'name': name, 'rangeM': d['m_maxStationDistance'] or None,
                                       'requirements': cost}
 
@@ -372,7 +374,7 @@ def main(raw, out, build_id, reviewed=None):
         }
         if curated:
             item['verified'] = 'unverified'
-            item['note'] = 'Stats from game files; acquisition source curated by hand.'
+            item['note'] = 'Weight and stack size come from the game files. Where to find it was written by hand and not checked.'
         items.append(item)
 
         dur = s.get('m_maxDurability')

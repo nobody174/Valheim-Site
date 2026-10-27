@@ -216,29 +216,6 @@
             "qty": 3
           }
         ]
-      },
-      {
-        "id": "piece_workbench_ext2 (1)",
-        "name": "Tanning Rack",
-        "rangeM": 5.0,
-        "requirements": [
-          {
-            "item": "Wood",
-            "qty": 10
-          },
-          {
-            "item": "Flint",
-            "qty": 15
-          },
-          {
-            "item": "LeatherScraps",
-            "qty": 20
-          },
-          {
-            "item": "DeerHide",
-            "qty": 5
-          }
-        ]
       }
     ],
     "source": "game-files:steam-build-25909357",

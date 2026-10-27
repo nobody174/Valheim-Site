@@ -369,7 +369,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "BoarJerky",
@@ -537,7 +537,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "CarrotSeeds",
@@ -600,10 +600,6 @@
     "recommendedQty": 50,
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Burn Wood in a charcoal kiln"
-      },
-      {
         "type": "recipe",
         "recipe": "conv.charcoal_kiln.Wood"
       },
@@ -617,8 +613,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "Coins",
@@ -693,17 +688,12 @@
     "hoard": "must_keep",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Smelt Copper Ore in a smelter"
-      },
-      {
         "type": "recipe",
         "recipe": "conv.smelter.CopperOre"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "CopperOre",
@@ -722,7 +712,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "CryptKey",
@@ -781,7 +771,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "DeerHide",
@@ -949,7 +939,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "GreydwarfEye",
@@ -1102,7 +1092,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "KnifeCopper",
@@ -1320,7 +1310,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "MushroomYellow",
@@ -1339,7 +1329,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "NeckTail",
@@ -1509,7 +1499,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "RawMeat",
@@ -1559,7 +1549,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "RoundLog",
@@ -1739,7 +1729,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "SwordBronze",
@@ -1776,7 +1766,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Tin",
@@ -1789,17 +1779,12 @@
     "hoard": "must_keep",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Smelt Tin Ore in a smelter"
-      },
-      {
         "type": "recipe",
         "recipe": "conv.smelter.TinOre"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "TinOre",
@@ -1818,7 +1803,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Torch",
@@ -2066,6 +2051,6 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   }
 ]
