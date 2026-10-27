@@ -215,3 +215,121 @@
 .section li a:hover {
   text-decoration: underline;
 }
+
+.toggles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.toggle {
+  padding: 0.4rem 0.9rem;
+  color: var(--text);
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    border-color var(--t-fast),
+    color var(--t-fast);
+}
+.toggle:hover {
+  border-color: var(--bronze);
+}
+.toggleOn {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.star {
+  padding: 0 0.3rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--text-dim);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.star:hover,
+.starOn {
+  color: var(--gold);
+}
+.override {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: max-content;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.override select {
+  padding: 0.4rem 0.6rem;
+  color: var(--text);
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.checkCell {
+  text-align: center;
+}
+.checkCell input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+.bars {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.bar {
+  height: 0.6rem;
+  overflow: hidden;
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.barFill {
+  height: 100%;
+  background: var(--bronze);
+  transition: width var(--t-fast);
+}
+.barMeta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.row input[type='text'] {
+  padding: 0.4rem 0.6rem;
+  color: var(--text);
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.danger {
+  color: #e08a8a;
+  border-color: #6b3434;
+}
+.error {
+  color: #e08a8a;
+}
+.ok {
+  color: var(--gold);
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}

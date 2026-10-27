@@ -16,4 +16,6 @@ export const ROUTES: RouteDef[] = [
   { path: '/rankings', label: 'Rankings', phase: 3 },
   { path: '/planner', label: 'Planner', phase: 3 },
   { path: '/checklist', label: 'Checklist', phase: 1 },
+  { path: '/favorites', label: 'Favorites', phase: 1 },
+  { path: '/profile', label: 'Profile & data', phase: 1 },
 ];

@@ -1,5 +1,6 @@
 import { EntityLink } from '../../components/EntityLink';
 import type { Recipe } from '../../data/schemas';
+import { FavoriteStar } from './ItemActions';
 import styles from './Items.module.css';
 
 function Ingredients({ list }: { list: { item: string; qty: number }[] }) {
@@ -21,6 +22,7 @@ export function RecipeBlock({ recipe }: { recipe: Recipe }) {
     <div className={styles.recipe}>
       <div className={styles.recipeHead}>
         <span>
+          <FavoriteStar kind="recipes" id={recipe.id} label={`recipe for ${recipe.output.item}`} />
           Makes {recipe.output.qty} × <EntityLink id={recipe.output.item} />
         </span>
         <span className={styles.dim}>

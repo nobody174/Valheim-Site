@@ -123,3 +123,26 @@
 .panel p {
   color: var(--text-dim);
 }
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+.profile select {
+  max-width: 10rem;
+  padding: 0.4rem 0.5rem;
+  color: var(--text);
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.profile a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.profile a:hover {
+  color: var(--amber);
+}

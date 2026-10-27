@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import { HashRouter, NavLink, Route, Routes } from 'react-router';
 import { gameData } from '../data/load';
+import { ChecklistPage } from '../features/checklist/ChecklistPage';
+import { FavoritesPage } from '../features/checklist/FavoritesPage';
+import { ProfilePage } from '../features/profile/ProfilePage';
+import { ProfileSwitcher } from './ProfileSwitcher';
 import { CreaturePage, StationPage } from '../features/items/EntityPage';
 import { ItemPage } from '../features/items/ItemPage';
 import { ItemsPage } from '../features/items/ItemsPage';
@@ -24,6 +28,9 @@ const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
   '/items': <ItemsPage />,
   '/recipes': <RecipesPage />,
+  '/checklist': <ChecklistPage />,
+  '/favorites': <FavoritesPage />,
+  '/profile': <ProfilePage />,
 };
 
 function isTyping(target: EventTarget | null): boolean {
@@ -64,6 +71,7 @@ function Shell() {
           onFocus={() => setPaletteOpen(true)}
           onClick={() => setPaletteOpen(true)}
         />
+        <ProfileSwitcher />
       </header>
       <nav className={styles.nav} aria-label="Main">
         {ROUTES.map((r) => (
