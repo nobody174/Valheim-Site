@@ -5,7 +5,9 @@
     "armor": 8.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 1000.0
+    "durability": 1000.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
   },
   {
     "item": "ArmorBronzeLegs",
@@ -13,7 +15,9 @@
     "armor": 8.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 1000.0
+    "durability": 1000.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
   },
   {
     "item": "ArmorLeatherChest",
@@ -21,7 +25,8 @@
     "armor": 2.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 400.0
+    "durability": 400.0,
+    "maxQuality": 4
   },
   {
     "item": "ArmorLeatherLegs",
@@ -29,7 +34,8 @@
     "armor": 2.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 400.0
+    "durability": 400.0,
+    "maxQuality": 4
   },
   {
     "item": "ArmorRagsChest",
@@ -37,7 +43,8 @@
     "armor": 1.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 2
   },
   {
     "item": "ArmorRagsLegs",
@@ -45,7 +52,8 @@
     "armor": 1.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 2
   },
   {
     "item": "ArmorTrollLeatherChest",
@@ -54,7 +62,10 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 500.0,
-    "setName": "troll"
+    "setName": "troll",
+    "setSize": 4,
+    "setEffect": "Makes you more sneaky.",
+    "maxQuality": 4
   },
   {
     "item": "ArmorTrollLeatherLegs",
@@ -63,7 +74,10 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 500.0,
-    "setName": "troll"
+    "setName": "troll",
+    "setSize": 4,
+    "setEffect": "Makes you more sneaky.",
+    "maxQuality": 4
   },
   {
     "item": "CapeDeerHide",
@@ -71,7 +85,8 @@
     "armor": 1.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 400.0
+    "durability": 400.0,
+    "maxQuality": 4
   },
   {
     "item": "CapeTrollHide",
@@ -80,7 +95,10 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 500.0,
-    "setName": "troll"
+    "setName": "troll",
+    "setSize": 4,
+    "setEffect": "Makes you more sneaky.",
+    "maxQuality": 4
   },
   {
     "item": "HelmetBronze",
@@ -88,7 +106,8 @@
     "armor": 8.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 1000.0
+    "durability": 1000.0,
+    "maxQuality": 4
   },
   {
     "item": "HelmetLeather",
@@ -96,7 +115,8 @@
     "armor": 2.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "durability": 400.0
+    "durability": 400.0,
+    "maxQuality": 4
   },
   {
     "item": "HelmetTrollLeather",
@@ -105,6 +125,9 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 500.0,
-    "setName": "troll"
+    "setName": "troll",
+    "setSize": 4,
+    "setEffect": "Makes you more sneaky.",
+    "maxQuality": 4
   }
 ]

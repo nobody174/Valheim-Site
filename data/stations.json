@@ -1,34 +1,258 @@
 [
   {
-    "id": "forge",
-    "name": "Forge",
+    "id": "charcoal_kiln",
+    "name": "Charcoal Kiln",
+    "buildRequirements": [],
     "levels": [],
+    "extensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Upgrade levels and their requirements are not extracted yet."
+    "note": "Station level rises with the extensions built near it. Build cost not shown: it needs items from biomes not added yet."
+  },
+  {
+    "id": "fermenter",
+    "name": "Fermenter",
+    "buildRequirements": [
+      {
+        "item": "FineWood",
+        "qty": 30
+      },
+      {
+        "item": "Bronze",
+        "qty": 5
+      },
+      {
+        "item": "Resin",
+        "qty": 10
+      }
+    ],
+    "levels": [],
+    "extensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level rises with the extensions built near it."
+  },
+  {
+    "id": "forge",
+    "name": "Forge",
+    "buildRequirements": [
+      {
+        "item": "Stone",
+        "qty": 4
+      },
+      {
+        "item": "Coal",
+        "qty": 4
+      },
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "Copper",
+        "qty": 6
+      }
+    ],
+    "levels": [],
+    "extensions": [
+      {
+        "id": "forge_ext5",
+        "name": "Forge Cooler",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "FineWood",
+            "qty": 25
+          },
+          {
+            "item": "Copper",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "id": "forge_ext2",
+        "name": "Anvils",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "Wood",
+            "qty": 5
+          },
+          {
+            "item": "Bronze",
+            "qty": 2
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level rises with the extensions built near it."
   },
   {
     "id": "piece_MeadCauldron",
     "name": "Mead Ketill",
+    "buildRequirements": [
+      {
+        "item": "Tin",
+        "qty": 4
+      },
+      {
+        "item": "Copper",
+        "qty": 6
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 2
+      }
+    ],
     "levels": [],
+    "extensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Upgrade levels and their requirements are not extracted yet."
+    "note": "Station level rises with the extensions built near it."
   },
   {
     "id": "piece_cauldron",
     "name": "Cauldron",
+    "buildRequirements": [
+      {
+        "item": "Tin",
+        "qty": 10
+      }
+    ],
     "levels": [],
+    "extensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Upgrade levels and their requirements are not extracted yet."
+    "note": "Station level rises with the extensions built near it."
+  },
+  {
+    "id": "piece_cookingstation",
+    "name": "Cooking Station",
+    "buildRequirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      }
+    ],
+    "levels": [],
+    "extensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level rises with the extensions built near it."
+  },
+  {
+    "id": "piece_cookingstation_iron",
+    "name": "Iron Cooking Station",
+    "buildRequirements": [],
+    "levels": [],
+    "extensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level rises with the extensions built near it. Build cost not shown: it needs items from biomes not added yet."
   },
   {
     "id": "piece_workbench",
     "name": "Workbench",
+    "buildRequirements": [
+      {
+        "item": "Wood",
+        "qty": 10
+      }
+    ],
     "levels": [],
+    "extensions": [
+      {
+        "id": "piece_workbench_ext1",
+        "name": "Chopping Block",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "Wood",
+            "qty": 10
+          },
+          {
+            "item": "Flint",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "id": "piece_workbench_ext2",
+        "name": "Tanning Rack",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "Wood",
+            "qty": 10
+          },
+          {
+            "item": "Flint",
+            "qty": 15
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 20
+          },
+          {
+            "item": "DeerHide",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "id": "piece_workbench_ext3",
+        "name": "Adze",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "FineWood",
+            "qty": 10
+          },
+          {
+            "item": "Bronze",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "id": "piece_workbench_ext2 (1)",
+        "name": "Tanning Rack",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "Wood",
+            "qty": 10
+          },
+          {
+            "item": "Flint",
+            "qty": 15
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 20
+          },
+          {
+            "item": "DeerHide",
+            "qty": 5
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Upgrade levels and their requirements are not extracted yet."
+    "note": "Station level rises with the extensions built near it."
+  },
+  {
+    "id": "smelter",
+    "name": "Smelter",
+    "buildRequirements": [],
+    "levels": [],
+    "extensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level rises with the extensions built near it. Build cost not shown: it needs items from biomes not added yet."
   }
 ]

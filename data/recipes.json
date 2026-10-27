@@ -2491,5 +2491,308 @@
     "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "conv.fermenter.MeadBaseHealthMinor",
+    "kind": "ferment",
+    "output": {
+      "item": "MeadHealthMinor",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MeadBaseHealthMinor",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
+    "id": "conv.fermenter.MeadBaseStaminaMinor",
+    "kind": "ferment",
+    "output": {
+      "item": "MeadStaminaMinor",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MeadBaseStaminaMinor",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
+    "id": "conv.fermenter.MeadBaseTasty",
+    "kind": "ferment",
+    "output": {
+      "item": "MeadTasty",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MeadBaseTasty",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
+    "id": "conv.smelter.CopperOre",
+    "kind": "smelt",
+    "output": {
+      "item": "Copper",
+      "qty": 1
+    },
+    "station": {
+      "id": "smelter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "CopperOre",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.smelter.TinOre",
+    "kind": "smelt",
+    "output": {
+      "item": "Tin",
+      "qty": 1
+    },
+    "station": {
+      "id": "smelter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "TinOre",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.charcoal_kiln.Wood",
+    "kind": "smelt",
+    "output": {
+      "item": "Coal",
+      "qty": 1
+    },
+    "station": {
+      "id": "charcoal_kiln",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.charcoal_kiln.FineWood",
+    "kind": "smelt",
+    "output": {
+      "item": "Coal",
+      "qty": 1
+    },
+    "station": {
+      "id": "charcoal_kiln",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.charcoal_kiln.RoundLog",
+    "kind": "smelt",
+    "output": {
+      "item": "Coal",
+      "qty": 1
+    },
+    "station": {
+      "id": "charcoal_kiln",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "RoundLog",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.piece_cookingstation.RawMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "RawMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation.NeckTail",
+    "kind": "cook",
+    "output": {
+      "item": "NeckTailGrilled",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "NeckTail",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation.DeerMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedDeerMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "DeerMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.RawMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "RawMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.NeckTail",
+    "kind": "cook",
+    "output": {
+      "item": "NeckTailGrilled",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "NeckTail",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.DeerMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedDeerMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "DeerMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
   }
 ]

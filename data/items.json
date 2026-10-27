@@ -327,6 +327,32 @@
     "verified": "cross-checked"
   },
   {
+    "id": "BeechSeeds",
+    "name": "Beech Seeds",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BirchSeeds",
+    "name": "Birch Seeds",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Blueberries",
     "name": "Blueberries",
     "category": "material",
@@ -578,8 +604,16 @@
         "note": "Burn Wood in a charcoal kiln"
       },
       {
-        "type": "drop",
-        "creature": "Surtling"
+        "type": "recipe",
+        "recipe": "conv.charcoal_kiln.Wood"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.charcoal_kiln.FineWood"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.charcoal_kiln.RoundLog"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -615,13 +649,16 @@
     "hoard": "safe_discard",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Cook Deer Meat on a cooking station"
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.DeerMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.DeerMeat"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "CookedMeat",
@@ -634,13 +671,16 @@
     "hoard": "safe_discard",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Cook Raw Meat on a cooking station"
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.RawMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.RawMeat"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "Copper",
@@ -655,6 +695,10 @@
       {
         "type": "other",
         "note": "Smelt Copper Ore in a smelter"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.smelter.CopperOre"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -844,6 +888,19 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 50,
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "FirCone",
+    "name": "Fir Cone",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
     "obtainedFrom": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -1183,7 +1240,12 @@
     "stackSize": 10,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseHealthMinor"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1196,7 +1258,12 @@
     "stackSize": 10,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseStaminaMinor"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1209,7 +1276,12 @@
     "stackSize": 10,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseTasty"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1298,13 +1370,16 @@
     "hoard": "safe_discard",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Cook Neck Tail on a cooking station"
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.NeckTail"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.NeckTail"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "Needle",
@@ -1362,6 +1437,19 @@
     "biome": "meadows",
     "weight": 2.0,
     "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "PineCone",
+    "name": "Pine Cone",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
     "obtainedFrom": [],
@@ -1654,24 +1742,6 @@
     "note": "Stats from game files; acquisition source curated by hand."
   },
   {
-    "id": "SurtlingCore",
-    "name": "Surtling Core",
-    "category": "material",
-    "biome": "blackforest",
-    "weight": 5.0,
-    "stackSize": 10,
-    "tags": [],
-    "hoard": "must_keep",
-    "obtainedFrom": [
-      {
-        "type": "drop",
-        "creature": "Surtling"
-      }
-    ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
-  },
-  {
     "id": "SwordBronze",
     "name": "Bronze Sword",
     "category": "weapon",
@@ -1721,6 +1791,10 @@
       {
         "type": "other",
         "note": "Smelt Tin Ore in a smelter"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.smelter.TinOre"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1945,24 +2019,6 @@
     "verified": "cross-checked"
   },
   {
-    "id": "TrophySurtling",
-    "name": "Surtling Trophy",
-    "category": "trophy",
-    "biome": "blackforest",
-    "weight": 1.0,
-    "stackSize": 20,
-    "tags": [],
-    "hoard": "decorative",
-    "obtainedFrom": [
-      {
-        "type": "drop",
-        "creature": "Surtling"
-      }
-    ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
-  },
-  {
     "id": "TrophyTheElder",
     "name": "The Elder Trophy",
     "category": "trophy",
@@ -1977,19 +2033,6 @@
         "creature": "gd_king"
       }
     ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
-  },
-  {
-    "id": "Turnip",
-    "name": "Turnip",
-    "category": "food",
-    "biome": "blackforest",
-    "weight": 0.30000001192092896,
-    "stackSize": 50,
-    "tags": [],
-    "hoard": "safe_discard",
-    "obtainedFrom": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },

@@ -16,21 +16,25 @@ import time
 
 import UnityPy
 
-# A MonoBehaviour is classified by fields only that script has.
-KINDS = {
-    'item': 'm_itemData',  # ItemDrop
-    'recipe': 'm_resources',  # Recipe (ScriptableObject)
-    'station': 'm_rangeBuild',  # CraftingStation
-    'character': 'm_faction',  # Character / Humanoid / MonsterAI owner
-    'drops': 'm_drops',  # CharacterDrop
-}
+# A MonoBehaviour is classified by fields only that script has. First match wins.
+KINDS = [
+    ('recipe', lambda d: 'm_resources' in d and 'm_item' in d),  # Recipe (ScriptableObject)
+    ('item', lambda d: 'm_itemData' in d),  # ItemDrop
+    ('stationext', lambda d: 'm_maxStationDistance' in d),  # StationExtension
+    ('station', lambda d: 'm_rangeBuild' in d),  # CraftingStation
+    ('piece', lambda d: 'm_resources' in d and 'm_category' in d),  # Piece
+    ('character', lambda d: 'm_faction' in d),  # Character / Humanoid
+    ('drops', lambda d: 'm_drops' in d and 'm_spawnOffset' in d),  # CharacterDrop
+    ('statuseffect', lambda d: 'm_ttl' in d and 'm_name' in d),  # StatusEffect
+    ('conversion', lambda d: 'm_conversion' in d),  # Fermenter / Smelter / CookingStation
+    ('spawnsystem', lambda d: 'm_spawners' in d),  # SpawnSystemList
+    ('vegetation', lambda d: 'm_vegetation' in d),  # ZoneSystem vegetation list
+]
 
 
 def classify(data):
-    if 'm_resources' in data and 'm_item' in data:
-        return 'recipe'
-    for kind, key in KINDS.items():
-        if kind != 'recipe' and key in data:
+    for kind, test in KINDS:
+        if test(data):
             return kind
     return None
 
@@ -38,7 +42,7 @@ def classify(data):
 def main(game_dir, out_dir):
     bundles_dir = os.path.join(game_dir, 'valheim_Data', 'StreamingAssets', 'SoftRef', 'Bundles')
     os.makedirs(out_dir, exist_ok=True)
-    out = {k: [] for k in KINDS}
+    out = {k: [] for k, _ in KINDS}
     game_objects = {}  # pathId -> name
     components = {}  # component pathId -> game object pathId
     names = sorted(os.listdir(bundles_dir))

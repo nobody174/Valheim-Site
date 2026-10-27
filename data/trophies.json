@@ -54,12 +54,6 @@
     "verified": "cross-checked"
   },
   {
-    "item": "TrophySurtling",
-    "creature": "Surtling",
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
-  },
-  {
     "item": "TrophyTheElder",
     "creature": "gd_king",
     "source": "game-files:steam-build-25909357",

@@ -12,6 +12,7 @@ import { RecipeBlock } from './RecipeBlock';
 import styles from './Items.module.css';
 
 const num = (n: number) => String(Math.round(n * 100) / 100);
+const percent = (n: number) => `${n > 0 ? '+' : ''}${Math.round(n * 100)}%`;
 const label = (key: string) => key.charAt(0).toUpperCase() + key.slice(1);
 
 function DamageList({ damage }: { damage: Record<string, number> }) {
@@ -70,6 +71,12 @@ function Stats({ id }: { id: string }) {
                 <dd>{num(weapon.durability)}</dd>
               </>
             )}
+            {weapon.maxQuality !== undefined && (
+              <>
+                <dt>Max upgrade quality</dt>
+                <dd>{weapon.maxQuality}</dd>
+              </>
+            )}
           </>
         )}
         {armor && (
@@ -84,10 +91,25 @@ function Stats({ id }: { id: string }) {
                 <dd>{num(armor.durability)}</dd>
               </>
             )}
+            {armor.movementModifier !== undefined && (
+              <>
+                <dt>Movement speed</dt>
+                <dd>{percent(armor.movementModifier)}</dd>
+              </>
+            )}
+            {armor.maxQuality !== undefined && (
+              <>
+                <dt>Max upgrade quality</dt>
+                <dd>{armor.maxQuality}</dd>
+              </>
+            )}
             {armor.setName && (
               <>
-                <dt>Set</dt>
-                <dd>{armor.setName}</dd>
+                <dt>Set bonus</dt>
+                <dd>
+                  {armor.setSize ? `${armor.setSize} pieces: ` : ''}
+                  {armor.setEffect ?? 'unknown effect'}
+                </dd>
               </>
             )}
           </>
@@ -110,6 +132,12 @@ function Stats({ id }: { id: string }) {
               <>
                 <dt>Duration</dt>
                 <dd>{num(food.durationSec / 60)} min</dd>
+              </>
+            )}
+            {food.effect && (
+              <>
+                <dt>Effect</dt>
+                <dd>{food.effect}</dd>
               </>
             )}
           </>

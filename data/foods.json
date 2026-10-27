@@ -81,6 +81,32 @@
     "verified": "cross-checked"
   },
   {
+    "item": "MeadHealthMinor",
+    "kind": "mead",
+    "durationSec": 120.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "health": 50.0,
+    "effect": "Health over time."
+  },
+  {
+    "item": "MeadStaminaMinor",
+    "kind": "mead",
+    "durationSec": 120.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "stamina": 80.0,
+    "effect": "Regenerate stamina fast."
+  },
+  {
+    "item": "MeadTasty",
+    "kind": "mead",
+    "durationSec": 10.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "Lower health regeneration, but increased stamina regeneration."
+  },
+  {
     "item": "MinceMeatSauce",
     "kind": "food",
     "health": 40.0,

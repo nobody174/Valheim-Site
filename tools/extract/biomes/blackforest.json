@@ -1,0 +1,153 @@
+{
+  "id": "blackforest",
+  "name": "Black Forest",
+  "order": 2,
+  "materials": [
+    "Carrot",
+    "CarrotSeeds",
+    "Thistle",
+    "MushroomYellow",
+    "GreydwarfEye",
+    "AncientSeed",
+    "ElderBark",
+    "FineWood",
+    "RoundLog",
+    "Pukeberries",
+    "CopperOre",
+    "Copper",
+    "TinOre",
+    "Tin",
+    "Bronze",
+    "BronzeNails",
+    "TrollHide",
+    "CryptKey",
+    "Ruby",
+    "PineCone"
+  ],
+  "tools": [],
+  "weapons": [
+    "BowFineWood",
+    "ArrowBronze",
+    "ShieldWoodTower",
+    "ShieldBronzeBuckler",
+    "AxeBronze",
+    "PickaxeBronze",
+    "MaceBronze",
+    "SwordBronze",
+    "SpearBronze",
+    "AtgeirBronze",
+    "KnifeCopper",
+    "SledgeStagbreaker"
+  ],
+  "armor": {
+    "ArmorTrollLeatherChest": "chest",
+    "ArmorTrollLeatherLegs": "legs",
+    "HelmetTrollLeather": "helmet",
+    "CapeTrollHide": "cape",
+    "ArmorBronzeChest": "chest",
+    "ArmorBronzeLegs": "legs",
+    "HelmetBronze": "helmet"
+  },
+  "foods": [
+    "Carrot",
+    "MushroomYellow",
+    "CarrotSoup",
+    "DeerStew",
+    "MinceMeatSauce",
+    "Sausages",
+    "BoarJerky"
+  ],
+  "meads": [],
+  "trophies": [
+    "TrophyGreydwarf",
+    "TrophyGreydwarfBrute",
+    "TrophyGreydwarfShaman",
+    "TrophySkeleton",
+    "TrophyFrostTroll",
+    "TrophyTheElder"
+  ],
+  "creatures": [
+    "Greydwarf",
+    "Greydwarf_Elite",
+    "Greydwarf_Shaman",
+    "Skeleton",
+    "Troll"
+  ],
+  "bosses": [
+    "gd_king"
+  ],
+  "bossSummon": {
+    "gd_king": [
+      [
+        "AncientSeed",
+        3
+      ]
+    ]
+  },
+  "gather": {
+    "Copper": [
+      [
+        "other",
+        "Smelt Copper Ore in a smelter"
+      ]
+    ],
+    "Tin": [
+      [
+        "other",
+        "Smelt Tin Ore in a smelter"
+      ]
+    ],
+    "CopperOre": [
+      [
+        "gather",
+        "Mine copper deposits"
+      ]
+    ],
+    "TinOre": [
+      [
+        "gather",
+        "Mine tin deposits in shallow water"
+      ]
+    ],
+    "Thistle": [
+      [
+        "gather",
+        "Pick from the ground"
+      ]
+    ],
+    "MushroomYellow": [
+      [
+        "gather",
+        "Pick from the ground"
+      ]
+    ],
+    "Carrot": [
+      [
+        "gather",
+        "Grow from Carrot Seeds"
+      ]
+    ]
+  },
+  "hoard": {
+    "keepSome": {
+      "FineWood": 50
+    },
+    "mustKeep": [
+      "Copper",
+      "Tin",
+      "Bronze",
+      "CopperOre",
+      "TinOre",
+      "AncientSeed",
+      "TrollHide",
+      "ElderBark",
+      "CryptKey",
+      "Ruby",
+      "GreydwarfEye",
+      "BronzeNails"
+    ]
+  },
+  "guide": {
+    "notes": []
+  }
+}
