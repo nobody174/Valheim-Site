@@ -3,6 +3,7 @@ import { HashRouter, NavLink, Route, Routes } from 'react-router';
 import { gameData } from '../data/load';
 import { ChecklistPage } from '../features/checklist/ChecklistPage';
 import { FavoritesPage } from '../features/checklist/FavoritesPage';
+import { ProgressionPage } from '../features/progression/ProgressionPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
 import { CreaturePage, StationPage } from '../features/items/EntityPage';
@@ -28,6 +29,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
   '/items': <ItemsPage />,
   '/recipes': <RecipesPage />,
+  '/progression': <ProgressionPage />,
   '/checklist': <ChecklistPage />,
   '/favorites': <FavoritesPage />,
   '/profile': <ProfilePage />,
@@ -104,6 +106,7 @@ function Shell() {
               element={PAGES[r.path] ?? <ComingSoon label={r.label} phase={r.phase} />}
             />
           ))}
+          <Route path="/progression/:biome" element={<ProgressionPage />} />
           <Route path="/item/:id" element={<ItemPage />} />
           <Route path="/creature/:id" element={<CreaturePage />} />
           <Route path="/boss/:id" element={<CreaturePage boss />} />

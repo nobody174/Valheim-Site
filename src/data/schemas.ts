@@ -41,7 +41,17 @@ export const MetaSchema = z
   .strict();
 
 export const BiomeSchema = z
-  .object({ id, name: z.string().min(1), order: z.number().int().nonnegative(), ...provenance })
+  .object({
+    id,
+    name: z.string().min(1),
+    order: z.number().int().nonnegative(),
+    /** Hand-written guide text shown on the progression page. Optional; never required. */
+    guide: z
+      .object({ notes: z.array(z.string().min(1)) })
+      .strict()
+      .optional(),
+    ...provenance,
+  })
   .strict();
 
 const ObtainedFromSchema = z.discriminatedUnion('type', [
