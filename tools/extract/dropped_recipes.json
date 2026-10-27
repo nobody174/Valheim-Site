@@ -1,11 +1,12 @@
 {
   "outputNotConfigured": [
     {
-      "recipe": "Recipe_ArrowNeedle",
-      "output": "ArrowNeedle",
-      "station": "piece_workbench",
+      "recipe": "Recipe_BoltBlackmetal",
+      "output": "BoltBlackmetal",
+      "station": "blackforge",
       "inputs": [
-        "Needle",
+        "BlackMetal",
+        "Wood",
         "Feathers"
       ]
     },
@@ -75,6 +76,24 @@
       ]
     },
     {
+      "recipe": "Recipe_FishingBaitMistlands",
+      "output": "FishingBaitMistlands",
+      "station": "piece_preptable",
+      "inputs": [
+        "FishingBait",
+        "TrophyLox"
+      ]
+    },
+    {
+      "recipe": "Recipe_FishingBaitPlains",
+      "output": "FishingBaitPlains",
+      "station": "piece_preptable",
+      "inputs": [
+        "FishingBait",
+        "TrophyGoblin"
+      ]
+    },
+    {
       "recipe": "Recipe_FishingBaitSwamp",
       "output": "FishingBaitSwamp",
       "station": "piece_preptable",
@@ -101,6 +120,26 @@
       "inputs": [
         "LeatherScraps",
         "Coal"
+      ]
+    },
+    {
+      "recipe": "Recipe_KnifeSkollAndHati",
+      "output": "KnifeSkollAndHati",
+      "station": "blackforge",
+      "inputs": [
+        "FineWood",
+        "Iron",
+        "BlackMetal"
+      ]
+    },
+    {
+      "recipe": "Recipe_SadleLox",
+      "output": "SaddleLox",
+      "station": "piece_workbench",
+      "inputs": [
+        "LeatherScraps",
+        "LinenThread",
+        "BlackMetal"
       ]
     },
     {
@@ -148,6 +187,26 @@
         "FineWood",
         "TrophyDeer",
         "Resin"
+      ]
+    },
+    {
+      "recipe": "Recipe_TrinketBlackDamageHealth",
+      "output": "TrinketBlackDamageHealth",
+      "station": "forge",
+      "inputs": [
+        "BlackMetal",
+        "LoxPelt",
+        "TrophyLox"
+      ]
+    },
+    {
+      "recipe": "Recipe_TrinketBlackStamina",
+      "output": "TrinketBlackStamina",
+      "station": "forge",
+      "inputs": [
+        "BlackMetal",
+        "TrophyGoblinBrute",
+        "LinenThread"
       ]
     },
     {
@@ -201,12 +260,31 @@
       ]
     },
     {
+      "recipe": "Recipe_TurretBolt",
+      "output": "TurretBolt",
+      "station": "piece_artisanstation",
+      "inputs": [
+        "Wood",
+        "BlackMetal"
+      ]
+    },
+    {
       "recipe": "Recipe_TurretBoltWood",
       "output": "TurretBoltWood",
       "station": "piece_artisanstation",
       "inputs": [
         "RoundLog",
         "Feathers"
+      ]
+    },
+    {
+      "recipe": "Recipe_WolfSkewer",
+      "output": "WolfMeatSkewer",
+      "station": "piece_cauldron",
+      "inputs": [
+        "WolfMeat",
+        "Mushroom",
+        "Onion"
       ]
     }
   ],

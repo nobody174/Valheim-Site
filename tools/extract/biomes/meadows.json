@@ -17,7 +17,6 @@
     "LeatherScraps",
     "BoneFragments",
     "Feathers",
-    "Needle",
     "RawMeat",
     "DeerMeat",
     "NeckTail",
@@ -217,12 +216,6 @@
       [
         "found",
         "In chests in Burial Chambers and Troll Caves, and buried treasure."
-      ]
-    ],
-    "Needle": [
-      [
-        "other",
-        "Dropped by Deathsquitos on the Plains (the game files list it; the zone is not in the data yet)."
       ]
     ],
     "FishingRod": [

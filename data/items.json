@@ -255,6 +255,78 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArmorLoxChest",
+    "name": "Lox Fur Jacket",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorLoxChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorLoxLegs",
+    "name": "Lox Fur Trousers",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorLoxLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorPaddedCuirass",
+    "name": "Padded Cuirass",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorPaddedCuirass"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorPaddedGreaves",
+    "name": "Padded Greaves",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorPaddedGreaves"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArmorRagsChest",
     "name": "Rag Tunic",
     "category": "armor",
@@ -489,6 +561,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArrowNeedle",
+    "name": "Needle Arrow",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowNeedle"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArrowObsidian",
     "name": "Obsidian Arrow",
     "category": "weapon",
@@ -561,6 +651,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "AtgeirBlackmetal",
+    "name": "Black Metal Atgeir",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AtgeirBlackmetal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "AtgeirBronze",
     "name": "Bronze Atgeir",
     "category": "weapon",
@@ -591,6 +699,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.AtgeirIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AxeBlackMetal",
+    "name": "Black Metal Axe",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeBlackMetal"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -725,6 +851,83 @@
     "verified": "cross-checked"
   },
   {
+    "id": "Barley",
+    "name": "Barley",
+    "category": "material",
+    "biome": "plains",
+    "weight": 0.20000000298023224,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick wild barley on the Plains (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "BarleyFlour",
+    "name": "Barley Flour",
+    "category": "material",
+    "biome": "plains",
+    "weight": 0.20000000298023224,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting BloodPudding, crafting BreadDough, crafting FishWraps and 1 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.windmill.Barley"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BarleyWine",
+    "name": "Fire Resistance Barley Wine",
+    "category": "mead",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.BarleyWineBase"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BarleyWineBase",
+    "name": "Barley Wine Base: Fire Resistance",
+    "category": "mead",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting BarleyWine. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BarleyWineBase"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Battleaxe",
     "name": "Battleaxe",
     "category": "weapon",
@@ -737,6 +940,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.Battleaxe"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BattleaxeBlackmetal",
+    "name": "Black Metal Battleaxe",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Battleaxe_Blackmetal"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -859,6 +1080,59 @@
     "verified": "cross-checked"
   },
   {
+    "id": "BlackMetal",
+    "name": "Black Metal",
+    "category": "material",
+    "biome": "plains",
+    "weight": 12.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.blastfurnace.BlackMetalScrap"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BlackMetalScrap",
+    "name": "Black Metal Scrap",
+    "category": "material",
+    "biome": "plains",
+    "weight": 10.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine scrap piles in Fuling villages and take it from Fuling loot (guides). Smelt it into Black Metal."
+      },
+      {
+        "type": "drop",
+        "creature": "Goblin"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinArcher"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinBrute"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinShaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "BlackSoup",
     "name": "Black Soup",
     "category": "food",
@@ -877,6 +1151,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "BloodPudding",
+    "name": "Blood Pudding",
+    "category": "food",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BloodPudding"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Bloodbag",
     "name": "Bloodbag",
     "category": "material",
@@ -886,7 +1178,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 4,
-    "hoardNote": "Used for crafting BlackSoup, crafting MeadBaseFrostResist, crafting MeadBaseHealthMedium. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting BlackSoup, crafting BloodPudding, crafting MeadBaseFrostResist and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -1045,6 +1337,44 @@
     "verified": "cross-checked"
   },
   {
+    "id": "Bread",
+    "name": "Bread",
+    "category": "food",
+    "biome": "plains",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.BreadDough"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BreadDough",
+    "name": "Bread Dough",
+    "category": "material",
+    "biome": "plains",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Bread. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Bread"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Bronze",
     "name": "Bronze",
     "category": "material",
@@ -1097,6 +1427,42 @@
       {
         "type": "recipe",
         "recipe": "recipe.CapeDeerHide"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CapeLinen",
+    "name": "Linen Cape",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeLinen"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CapeLox",
+    "name": "Lox Cape",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeLox"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1209,6 +1575,27 @@
     "verified": "cross-checked"
   },
   {
+    "id": "Cloudberry",
+    "name": "Cloudberries",
+    "category": "material",
+    "biome": "plains",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting BarleyWineBase, crafting LoxPieUncooked, crafting MeadBaseStaminaMedium. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from wild cloudberry bushes on the Plains (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Club",
     "name": "Club",
     "category": "weapon",
@@ -1266,6 +1653,22 @@
       {
         "type": "drop",
         "creature": "Troll"
+      },
+      {
+        "type": "drop",
+        "creature": "Goblin"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinArcher"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinBrute"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinShaman"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1314,6 +1717,24 @@
       {
         "type": "recipe",
         "recipe": "conv.piece_cookingstation_iron.DeerMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CookedLoxMeat",
+    "name": "Cooked Lox Meat",
+    "category": "food",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.LoxMeat"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1737,7 +2158,9 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 2,
+    "hoardNote": "Used for crafting FishWraps. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1771,6 +2194,24 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishWraps",
+    "name": "Fish Wraps",
+    "category": "food",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishWraps"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "FishingBait",
@@ -1848,6 +2289,25 @@
     "verified": "cross-checked"
   },
   {
+    "id": "Flax",
+    "name": "Flax",
+    "category": "material",
+    "biome": "plains",
+    "weight": 0.20000000298023224,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick wild flax on the Plains (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Flint",
     "name": "Flint",
     "category": "material",
@@ -1880,6 +2340,24 @@
       {
         "type": "drop",
         "creature": "Hatchling"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "GoblinTotem",
+    "name": "Fuling Totem",
+    "category": "material",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "GoblinBrute"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2059,6 +2537,42 @@
     "verified": "cross-checked"
   },
   {
+    "id": "HelmetLox",
+    "name": "Lox Fur Hood",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetLox"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HelmetPadded",
+    "name": "Padded Helmet",
+    "category": "armor",
+    "biome": "plains",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetPadded"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "HelmetRoot",
     "name": "Root Mask",
     "category": "armor",
@@ -2123,7 +2637,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting BlackSoup, crafting BoarJerky, crafting MeadBaseFrostResist and 6 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting BlackSoup, crafting BoarJerky, crafting MeadBaseFrostResist and 7 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -2160,7 +2674,9 @@
     "weight": 0.5,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 30,
+    "hoardNote": "Used for building Spinning Wheel, building Windmill. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2192,6 +2708,24 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "KnifeBlackMetal",
+    "name": "Black Metal Knife",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.KnifeBlackmetal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "KnifeButcher",
@@ -2285,6 +2819,102 @@
     "verified": "cross-checked"
   },
   {
+    "id": "LinenThread",
+    "name": "Linen Thread",
+    "category": "material",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_spinningwheel.Flax"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "LoxMeat",
+    "name": "Lox Meat",
+    "category": "material",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 2,
+    "hoardNote": "Used for crafting CookedLoxMeat, crafting LoxPieUncooked. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Lox"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "LoxPelt",
+    "name": "Lox Pelt",
+    "category": "material",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 23,
+    "hoardNote": "Used for crafting ArmorLoxChest, crafting ArmorLoxLegs, crafting CapeLox and 5 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Lox"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "LoxPie",
+    "name": "Lox Meat Pie",
+    "category": "food",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.LoxPieUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "LoxPieUncooked",
+    "name": "Unbaked Lox Pie",
+    "category": "material",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting LoxPie. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.LoxPie"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "MaceBronze",
     "name": "Bronze Mace",
     "category": "weapon",
@@ -2315,6 +2945,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.MaceIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MaceNeedle",
+    "name": "Porcupine",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MaceNeedle"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2413,6 +3061,26 @@
       {
         "type": "recipe",
         "recipe": "recipe.MeadBasePoisonResist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadBaseStaminaMedium",
+    "name": "Mead Base: Medium Stamina",
+    "category": "mead",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadStaminaMedium. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseStaminaMedium"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2531,6 +3199,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "MeadStaminaMedium",
+    "name": "Medium Stamina Mead",
+    "category": "mead",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseStaminaMedium"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "MeadStaminaMinor",
     "name": "Minor Stamina Mead",
     "category": "mead",
@@ -2615,7 +3301,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting MeadBaseStaminaMinor. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting MeadBaseStaminaMedium, crafting MeadBaseStaminaMinor. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -2672,15 +3358,19 @@
     "id": "Needle",
     "name": "Needle",
     "category": "material",
-    "biome": "meadows",
+    "biome": "plains",
     "weight": 0.5,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "must_keep",
     "obtainedFrom": [
       {
         "type": "other",
-        "note": "Dropped by Deathsquitos on the Plains (the game files list it; the zone is not in the data yet)."
+        "note": "Dropped by Deathsquitos."
+      },
+      {
+        "type": "drop",
+        "creature": "Deathsquito"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2705,6 +3395,45 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Onion",
+    "name": "Onion",
+    "category": "material",
+    "biome": "plains",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 3,
+    "hoardNote": "Used for crafting OnionSoup. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick wild onions (guides disagree on where); grown from Onion Seeds."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "OnionSoup",
+    "name": "Onion Soup",
+    "category": "food",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Onionsoup"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "Ooze",
@@ -2836,6 +3565,10 @@
       {
         "type": "drop",
         "creature": "Greydwarf_Shaman"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinShaman"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3039,6 +3772,42 @@
       {
         "type": "recipe",
         "recipe": "recipe.ShieldBanded"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldBlackmetal",
+    "name": "Black Metal Shield",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldBlackmetal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldBlackmetalTower",
+    "name": "Black Metal Tower Shield",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldBlackmetalTower"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3384,6 +4153,24 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "SwordBlackmetal",
+    "name": "Black Metal Sword",
+    "category": "weapon",
+    "biome": "plains",
+    "weight": 0.800000011920929,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordBlackmetal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "SwordBronze",
     "name": "Bronze Sword",
     "category": "weapon",
@@ -3438,6 +4225,25 @@
     "verified": "cross-checked"
   },
   {
+    "id": "Tar",
+    "name": "Tar",
+    "category": "material",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Dig in tar pits on the Plains (guides); Growths may also drop it."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Thistle",
     "name": "Thistle",
     "category": "material",
@@ -3447,7 +4253,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 5,
-    "hoardNote": "Used for building Spice Rack, crafting MeadBaseFrostResist, crafting MeadBasePoisonResist and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for building Spice Rack, crafting BloodPudding, crafting MeadBaseFrostResist and 2 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -3629,6 +4435,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "TrophyDeathsquito",
+    "name": "Deathsquito Trophy",
+    "category": "trophy",
+    "biome": "plains",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Deathsquito"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "TrophyDeer",
     "name": "Deer Trophy",
     "category": "trophy",
@@ -3758,6 +4582,82 @@
     "verified": "cross-checked"
   },
   {
+    "id": "TrophyGoblin",
+    "name": "Fuling Trophy",
+    "category": "trophy",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Goblin"
+      },
+      {
+        "type": "drop",
+        "creature": "GoblinArcher"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyGoblinBrute",
+    "name": "Fuling Berserker Trophy",
+    "category": "trophy",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "GoblinBrute"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyGoblinKing",
+    "name": "Yagluth Trophy",
+    "category": "trophy",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "GoblinKing"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyGoblinShaman",
+    "name": "Fuling Shaman Trophy",
+    "category": "trophy",
+    "biome": "plains",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "GoblinShaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "TrophyGreydwarf",
     "name": "Greydwarf Trophy",
     "category": "trophy",
@@ -3844,6 +4744,24 @@
       {
         "type": "drop",
         "creature": "Leech"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyLox",
+    "name": "Lox Trophy",
+    "category": "trophy",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Lox"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -4236,11 +5154,29 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 5,
-    "hoardNote": "Used for crafting ShieldRoots, upgrading ShieldRoots. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting HelmetLox, crafting ShieldRoots, upgrading HelmetLox and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
         "creature": "Writhan"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "YagluthDrop",
+    "name": "Torn Spirit",
+    "category": "material",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "GoblinKing"
       }
     ],
     "source": "game-files:steam-build-25909357",

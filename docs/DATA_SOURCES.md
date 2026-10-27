@@ -119,3 +119,13 @@ Config: `tools/extract/biomes/mountain.json`. Creature drops, recipes, stats and
 - Fenris Hair and Fenris Claw: no creature drops them in the game files, so their source says "not confirmed". The Fenring armor and Flesh Rippers need them.
 - Left out for now: Silver and Bronze trinkets (a trinket category is not modelled), Fishing Bait variants, Wolf Skewer (needs Onion), Fenring Helmet (needs a Cultist trophy), the Lantern and other Black Forge items.
 - Mountain spawn tables also list Fuling, Jotun, Seeker, Elaking and Charred; those are event or late-game spawns and are not added.
+
+## Plains pass (not checked in game)
+
+Config: `tools/extract/biomes/plains.json`. Creature drops, recipes, stats and costs come from the game files. Hand-written and unverified:
+
+- Where-to-get notes for Barley, Flax, Cloudberry, Onion, Tar and Black Metal Scrap (guides; wild plants and Fuling villages).
+- Yagluth summon: 5 Goblin Totems (guides agree; the altar cost is not in the extracted data). Totems drop from Fuling Brutes at 10%.
+- Needle moved here from Meadows (Deathsquito drop).
+- Left out for now: Black Forge items (Bolt, Skoll and Hati knife, Saddle, Arbalest), trinkets, fishing bait variants, Viking Cupcake (needs Chicken Egg), Wolf Skewer, Feasts. Growths (Tar) are not added as creatures: no spawn-table entry was found.
+- Fuling raids also appear in other zones' spawn tables; they are treated as Plains creatures.

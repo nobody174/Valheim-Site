@@ -982,5 +982,308 @@
       "fire": "weak",
       "poison": "resistant"
     }
+  },
+  {
+    "id": "Goblin",
+    "name": "Fuling",
+    "biome": "plains",
+    "health": 175.0,
+    "drops": [
+      {
+        "item": "Coins",
+        "min": 5,
+        "max": 10,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMetalScrap",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "TrophyGoblin",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "GoblinClub",
+        "damage": {
+          "blunt": 85.0
+        }
+      },
+      {
+        "id": "GoblinSpear",
+        "damage": {
+          "pierce": 85.0
+        }
+      },
+      {
+        "id": "GoblinSword",
+        "damage": {
+          "slash": 85.0
+        }
+      },
+      {
+        "id": "GoblinTorch",
+        "damage": {
+          "blunt": 45.0,
+          "fire": 45.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "GoblinArcher",
+    "name": "Fuling",
+    "biome": "plains",
+    "health": 175.0,
+    "drops": [
+      {
+        "item": "Coins",
+        "min": 5,
+        "max": 10,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMetalScrap",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "TrophyGoblin",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "GoblinSpear",
+        "damage": {
+          "pierce": 85.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "GoblinBrute",
+    "name": "Fuling Berserker",
+    "biome": "plains",
+    "health": 800.0,
+    "drops": [
+      {
+        "item": "Coins",
+        "min": 5,
+        "max": 20
+      },
+      {
+        "item": "BlackMetalScrap",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "item": "GoblinTotem",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "TrophyGoblinBrute",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "GoblinBrute_Attack",
+        "damage": {
+          "blunt": 130.0
+        }
+      },
+      {
+        "id": "GoblinBrute_RageAttack",
+        "damage": {
+          "blunt": 130.0
+        }
+      },
+      {
+        "id": "GoblinBrute_Taunt",
+        "damage": {
+          "slash": 80.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "GoblinShaman",
+    "name": "Fuling Shaman",
+    "biome": "plains",
+    "health": 100.0,
+    "drops": [
+      {
+        "item": "Coins",
+        "min": 20,
+        "max": 40,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMetalScrap",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "Pukeberries",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "TrophyGoblinShaman",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "GoblinShaman_attack_poke",
+        "damage": {
+          "blunt": 100.0
+        }
+      },
+      {
+        "id": "GoblinShaman_attack_fireball",
+        "damage": {
+          "blunt": 20.0,
+          "fire": 100.0
+        }
+      },
+      {
+        "id": "GoblinShaman_Staff_Bones",
+        "damage": {
+          "blunt": 80.0
+        }
+      },
+      {
+        "id": "GoblinShaman_Headdress_antlers",
+        "damage": {
+          "blunt": 80.0
+        }
+      },
+      {
+        "id": "GoblinShaman_Staff_Feathers",
+        "damage": {
+          "blunt": 80.0
+        }
+      },
+      {
+        "id": "GoblinShaman_Headdress_feathers",
+        "damage": {
+          "blunt": 80.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Lox",
+    "name": "Lox",
+    "biome": "plains",
+    "health": 1000.0,
+    "drops": [
+      {
+        "item": "LoxMeat",
+        "min": 4,
+        "max": 6
+      },
+      {
+        "item": "TrophyLox",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "LoxPelt",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "attacks": [
+      {
+        "id": "lox_bite",
+        "damage": {
+          "slash": 130.0
+        }
+      },
+      {
+        "id": "lox_stomp",
+        "damage": {
+          "blunt": 120.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "slash": "resistant",
+      "fire": "weak",
+      "frost": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Deathsquito",
+    "name": "Deathsquito",
+    "biome": "plains",
+    "health": 10.0,
+    "drops": [
+      {
+        "item": "Needle",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "TrophyDeathsquito",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Deathsquito_sting",
+        "damage": {
+          "pierce": 90.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
   }
 ]

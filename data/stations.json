@@ -1,5 +1,15 @@
 [
   {
+    "id": "blastfurnace",
+    "name": "Blast Furnace",
+    "buildRequirements": [],
+    "extensions": [],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
+  },
+  {
     "id": "charcoal_kiln",
     "name": "Charcoal Kiln",
     "buildRequirements": [],
@@ -205,6 +215,29 @@
         ]
       },
       {
+        "id": "cauldron_ext4_pots",
+        "name": "Pots and Pans",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "Iron",
+            "qty": 5
+          },
+          {
+            "item": "Copper",
+            "qty": 5
+          },
+          {
+            "item": "BlackMetal",
+            "qty": 5
+          },
+          {
+            "item": "FineWood",
+            "qty": 10
+          }
+        ]
+      },
+      {
         "id": "cauldron_ext1_spice",
         "name": "Spice Rack",
         "rangeM": 5.0,
@@ -240,14 +273,6 @@
         "needs": [
           "Ashwood",
           "Flametal"
-        ]
-      },
-      {
-        "id": "cauldron_ext4_pots",
-        "name": "Pots and Pans",
-        "rangeM": 5.0,
-        "needs": [
-          "Black Metal"
         ]
       },
       {
@@ -290,6 +315,62 @@
       {
         "item": "Chain",
         "qty": 3
+      }
+    ],
+    "extensions": [],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
+  },
+  {
+    "id": "piece_oven",
+    "name": "Stone Oven",
+    "buildRequirements": [],
+    "extensions": [],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
+  },
+  {
+    "id": "piece_preptable",
+    "name": "Food Preparation Table",
+    "buildRequirements": [
+      {
+        "item": "Iron",
+        "qty": 5
+      },
+      {
+        "item": "FineWood",
+        "qty": 20
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 15
+      }
+    ],
+    "extensions": [],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
+  },
+  {
+    "id": "piece_spinningwheel",
+    "name": "Spinning Wheel",
+    "buildRequirements": [
+      {
+        "item": "FineWood",
+        "qty": 20
+      },
+      {
+        "item": "IronNails",
+        "qty": 10
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 5
       }
     ],
     "extensions": [],
@@ -395,5 +476,28 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
+  },
+  {
+    "id": "windmill",
+    "name": "Windmill",
+    "buildRequirements": [
+      {
+        "item": "Stone",
+        "qty": 20
+      },
+      {
+        "item": "Wood",
+        "qty": 30
+      },
+      {
+        "item": "IronNails",
+        "qty": 30
+      }
+    ],
+    "extensions": [],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
   }
 ]

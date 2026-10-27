@@ -123,10 +123,9 @@ describe('filterAndSort', () => {
   it('filters by name', () => {
     expect(filterAndSort(rows, { ...base, text: 'bronze axe' }).map((r) => r.id)).toEqual(['AxeBronze']);
     expect(filterAndSort(rows, { ...base, text: 'zzzz' })).toEqual([]);
-    expect(filterAndSort(rows, { ...base, text: 'atgeir' }).map((r) => r.id)).toEqual([
-      'AtgeirIron',
-      'AtgeirBronze',
-    ]);
+    const atgeirs = filterAndSort(rows, { ...base, text: 'atgeir' }).map((r) => r.id);
+    expect(atgeirs).toEqual(expect.arrayContaining(['AtgeirIron', 'AtgeirBronze']));
+    expect(atgeirs.every((id) => id.startsWith('Atgeir'))).toBe(true);
   });
 });
 

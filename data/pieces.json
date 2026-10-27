@@ -1,5 +1,171 @@
 [
   {
+    "id": "darkwood_decowall",
+    "name": "Carved Darkwood Divider",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_arch",
+    "name": "Darkwood Arch",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_beam",
+    "name": "Darkwood Beam 2 m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_beam_26",
+    "name": "Darkwood Beam 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_beam4x4",
+    "name": "Darkwood Beam 4 m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 4
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_beam_45",
+    "name": "Darkwood Beam 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_gate",
+    "name": "Darkwood Gate",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 16
+      },
+      {
+        "item": "Iron",
+        "qty": 4
+      },
+      {
+        "item": "Tar",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "darkwood_pole",
+    "name": "Darkwood Pole 2m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_pole4",
+    "name": "Darkwood Pole 4m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 4
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "wood_wall_log",
     "name": "Log Beam 2 m",
     "category": "Building",
@@ -113,6 +279,222 @@
       {
         "item": "RoundLog",
         "qty": 10
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof",
+    "name": "Shingle Roof 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_45",
+    "name": "Shingle Roof 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_67",
+    "name": "Shingle Roof 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_icorner",
+    "name": "Shingle Roof Inner Corner 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_icorner_45",
+    "name": "Shingle Roof Inner Corner 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_icorner_67",
+    "name": "Shingle Roof Inner Corner 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_ocorner",
+    "name": "Shingle Roof Outer Corner 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_ocorner_45",
+    "name": "Shingle Roof Outer Corner 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_ocorner_67",
+    "name": "Shingle Roof Outer Corner 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_top",
+    "name": "Shingle Roof Ridge 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_top_45",
+    "name": "Shingle Roof Ridge 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "darkwood_roof_top_67",
+    "name": "Shingle Roof Ridge 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -732,6 +1114,24 @@
     "station": "piece_workbench"
   },
   {
+    "id": "darkwood_beam_67",
+    "name": "darkwood_beam_67",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "iron_floor_1x1_v2",
     "name": "Cage Floor 1x1",
     "category": "Building (stone)",
@@ -855,28 +1255,6 @@
     "station": "piece_workbench"
   },
   {
-    "id": "piece_preptable",
-    "name": "Food Preparation Table",
-    "category": "Crafting",
-    "requirements": [
-      {
-        "item": "Iron",
-        "qty": 5
-      },
-      {
-        "item": "FineWood",
-        "qty": 20
-      },
-      {
-        "item": "LeatherScraps",
-        "qty": 15
-      }
-    ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
-    "station": "piece_workbench"
-  },
-  {
     "id": "piece_stonecutter",
     "name": "Stonecutter",
     "category": "Crafting",
@@ -983,6 +1361,28 @@
     "comfort": 1
   },
   {
+    "id": "piece_chest_blackmetal",
+    "name": "Black Metal Chest",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "Tar",
+        "qty": 2
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "piece_banner02",
     "name": "Blue Banner",
     "category": "Furniture",
@@ -1029,6 +1429,37 @@
     "comfort": 1
   },
   {
+    "id": "piece_banner06",
+    "name": "Blue, Red and White Banner",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "LeatherScraps",
+        "qty": 6
+      },
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "Blueberries",
+        "qty": 2
+      },
+      {
+        "item": "Raspberry",
+        "qty": 2
+      },
+      {
+        "item": "Cloudberry",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
     "id": "piece_chest_wood",
     "name": "Chest",
     "category": "Furniture",
@@ -1041,6 +1472,33 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench"
+  },
+  {
+    "id": "piece_chair03",
+    "name": "Darkwood Chair",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 4
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      },
+      {
+        "item": "IronNails",
+        "qty": 5
+      },
+      {
+        "item": "DeerHide",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
   },
   {
     "id": "rug_deer",
@@ -1173,6 +1631,33 @@
     "comfort": 1
   },
   {
+    "id": "piece_bathtub",
+    "name": "Hot Tub",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 20
+      },
+      {
+        "item": "Tar",
+        "qty": 6
+      },
+      {
+        "item": "Iron",
+        "qty": 10
+      },
+      {
+        "item": "Stone",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
+  },
+  {
     "id": "itemstand",
     "name": "Item Stand",
     "category": "Furniture",
@@ -1203,6 +1688,71 @@
       {
         "item": "BronzeNails",
         "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "piece_table_oak",
+    "name": "Long Heavy Table",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 20
+      },
+      {
+        "item": "Tar",
+        "qty": 2
+      },
+      {
+        "item": "IronNails",
+        "qty": 20
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
+  },
+  {
+    "id": "rug_fur",
+    "name": "Lox Rug",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "LoxPelt",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
+  },
+  {
+    "id": "piece_banner10",
+    "name": "Orange Banner",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "LeatherScraps",
+        "qty": 6
+      },
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "Carrot",
+        "qty": 2
+      },
+      {
+        "item": "Cloudberry",
+        "qty": 3
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1314,6 +1864,29 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench"
+  },
+  {
+    "id": "piece_table_round",
+    "name": "Round Table",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Tar",
+        "qty": 2
+      },
+      {
+        "item": "IronNails",
+        "qty": 20
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
   },
   {
     "id": "piece_walltorch",
@@ -1479,6 +2052,25 @@
     "comfort": 1
   },
   {
+    "id": "rug_straw",
+    "name": "Straw",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Barley",
+        "qty": 1
+      },
+      {
+        "item": "Flax",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
     "id": "piece_table",
     "name": "Table",
     "category": "Furniture",
@@ -1486,6 +2078,60 @@
       {
         "item": "FineWood",
         "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "piece_banner11",
+    "name": "White Banner",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "LeatherScraps",
+        "qty": 6
+      },
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "Coal",
+        "qty": 2
+      },
+      {
+        "item": "Cloudberry",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "piece_banner07",
+    "name": "White and Blue Striped Banner",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "LeatherScraps",
+        "qty": 6
+      },
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "Blueberries",
+        "qty": 2
+      },
+      {
+        "item": "Cloudberry",
+        "qty": 3
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1605,6 +2251,19 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench"
+  },
+  {
+    "id": "bar_blackmetal_stack",
+    "name": "Black Metal Stack",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "BlackMetal",
+        "qty": 30
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "bone_stack",
@@ -1877,6 +2536,24 @@
     "station": "piece_workbench"
   },
   {
+    "id": "darkwood_raven",
+    "name": "Raven Adornment",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "wood_fence",
     "name": "Roundpole Fence",
     "category": "Misc",
@@ -1988,6 +2665,24 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "darkwood_wolf",
+    "name": "Wolf Adornment",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Tar",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
   },
   {
     "id": "wood_dragon1",

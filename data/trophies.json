@@ -30,6 +30,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyDeathsquito",
+    "creature": "Deathsquito",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyDeer",
     "creature": "Deer",
     "source": "game-files:steam-build-25909357",
@@ -72,6 +78,30 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyGoblin",
+    "creature": "Goblin",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyGoblinBrute",
+    "creature": "GoblinBrute",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyGoblinKing",
+    "creature": "GoblinKing",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyGoblinShaman",
+    "creature": "GoblinShaman",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyGreydwarf",
     "creature": "Greydwarf",
     "source": "game-files:steam-build-25909357",
@@ -98,6 +128,12 @@
   {
     "item": "TrophyLeech",
     "creature": "Leech",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyLox",
+    "creature": "Lox",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },

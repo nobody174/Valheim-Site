@@ -1,0 +1,145 @@
+{
+  "id": "plains",
+  "name": "Plains",
+  "order": 5,
+  "materials": [
+    "Barley",
+    "BarleyFlour",
+    "Flax",
+    "LinenThread",
+    "Cloudberry",
+    "Tar",
+    "Onion",
+    "BlackMetalScrap",
+    "BlackMetal",
+    "LoxMeat",
+    "LoxPelt",
+    "GoblinTotem",
+    "Needle",
+    "BreadDough",
+    "YagluthDrop",
+    "LoxPieUncooked"
+  ],
+  "tools": [],
+  "weapons": [
+    "SwordBlackmetal",
+    "AxeBlackMetal",
+    "KnifeBlackMetal",
+    "AtgeirBlackmetal",
+    "BattleaxeBlackmetal",
+    "MaceNeedle",
+    "ShieldBlackmetal",
+    "ShieldBlackmetalTower",
+    "ArrowNeedle"
+  ],
+  "armor": {
+    "ArmorPaddedCuirass": "chest",
+    "ArmorPaddedGreaves": "legs",
+    "HelmetPadded": "helmet",
+    "ArmorLoxChest": "chest",
+    "ArmorLoxLegs": "legs",
+    "HelmetLox": "helmet",
+    "CapeLox": "cape",
+    "CapeLinen": "cape"
+  },
+  "foods": [
+    "CookedLoxMeat",
+    "OnionSoup",
+    "Bread",
+    "LoxPie",
+    "BloodPudding",
+    "FishWraps"
+  ],
+  "meads": [
+    "MeadBaseStaminaMedium",
+    "MeadStaminaMedium",
+    "BarleyWineBase",
+    "BarleyWine"
+  ],
+  "trophies": [
+    "TrophyGoblin",
+    "TrophyGoblinBrute",
+    "TrophyGoblinShaman",
+    "TrophyGoblinKing",
+    "TrophyLox",
+    "TrophyDeathsquito"
+  ],
+  "creatures": [
+    "Goblin",
+    "GoblinArcher",
+    "GoblinBrute",
+    "GoblinShaman",
+    "Lox",
+    "Deathsquito"
+  ],
+  "bosses": [
+    "GoblinKing"
+  ],
+  "bossSummon": {
+    "GoblinKing": [
+      [
+        "GoblinTotem",
+        5
+      ]
+    ]
+  },
+  "gather": {
+    "Barley": [
+      [
+        "gather",
+        "Pick wild barley on the Plains (guides)."
+      ]
+    ],
+    "Flax": [
+      [
+        "gather",
+        "Pick wild flax on the Plains (guides)."
+      ]
+    ],
+    "Cloudberry": [
+      [
+        "gather",
+        "Pick from wild cloudberry bushes on the Plains (guides)."
+      ]
+    ],
+    "Onion": [
+      [
+        "gather",
+        "Pick wild onions (guides disagree on where); grown from Onion Seeds."
+      ]
+    ],
+    "Tar": [
+      [
+        "gather",
+        "Dig in tar pits on the Plains (guides); Growths may also drop it."
+      ]
+    ],
+    "BlackMetalScrap": [
+      [
+        "gather",
+        "Mine scrap piles in Fuling villages and take it from Fuling loot (guides). Smelt it into Black Metal."
+      ]
+    ],
+    "Needle": [
+      [
+        "other",
+        "Dropped by Deathsquitos."
+      ]
+    ]
+  },
+  "hoard": {
+    "keepSome": {},
+    "mustKeep": [
+      "BlackMetal",
+      "BlackMetalScrap",
+      "GoblinTotem",
+      "Needle",
+      "LinenThread",
+      "Flax",
+      "Barley"
+    ]
+  },
+  "guide": {
+    "notes": []
+  }
+}

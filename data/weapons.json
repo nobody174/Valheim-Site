@@ -62,6 +62,18 @@
     "durability": 100.0
   },
   {
+    "item": "ArrowNeedle",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 62.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 15.0,
+    "durability": 100.0
+  },
+  {
     "item": "ArrowObsidian",
     "skill": "Bows",
     "damage": {
@@ -113,6 +125,60 @@
     "blockPower": 10.0,
     "knockback": 10.0,
     "durability": 100.0
+  },
+  {
+    "item": "AtgeirBlackmetal",
+    "skill": "Polearms",
+    "damage": {
+      "pierce": 105.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 6.0
+    },
+    "blockPower": 52.0,
+    "parryForce": 40.0,
+    "knockback": 30.0,
+    "durability": 175.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "atgeir_attack",
+      "chainLevels": 3,
+      "staminaPerHit": 18.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 3.2,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.6667,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": []
+          },
+          {
+            "lengthSec": 0.7,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": []
+          },
+          {
+            "lengthSec": 0.7333,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.6296,
+                "factor": 0.2
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "AtgeirBronze",
@@ -213,6 +279,86 @@
               {
                 "at": 0.6296,
                 "factor": 0.2
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
+    "item": "AxeBlackMetal",
+    "skill": "Axes",
+    "damage": {
+      "slash": 100.0,
+      "chop": 60.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 5.0,
+      "chop": 3.0
+    },
+    "blockPower": 39.0,
+    "parryForce": 20.0,
+    "knockback": 60.0,
+    "durability": 175.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_axe",
+      "chainLevels": 3,
+      "staminaPerHit": 14.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.2,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "chainAt": 0.8698,
+            "speedEvents": [
+              {
+                "at": 0.456,
+                "factor": 1.5
+              },
+              {
+                "at": 0.7517,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9,
+            "stateSpeed": 1.399999976158142,
+            "exitTime": 0.99,
+            "chainAt": 0.9,
+            "speedEvents": [
+              {
+                "at": 0.4852,
+                "factor": 1.7
+              },
+              {
+                "at": 0.8237,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.5935,
+                "factor": 2.0
+              },
+              {
+                "at": 0.84,
+                "factor": 0.4
               }
             ]
           }
@@ -685,6 +831,88 @@
     }
   },
   {
+    "item": "BattleaxeBlackmetal",
+    "skill": "Axes",
+    "damage": {
+      "slash": 110.0,
+      "chop": 60.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 6.0,
+      "chop": 2.5
+    },
+    "blockPower": 52.0,
+    "parryForce": 70.0,
+    "knockback": 70.0,
+    "durability": 200.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "battleaxe_attack",
+      "chainLevels": 3,
+      "staminaPerHit": 20.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.5,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 2.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "speedEvents": [
+              {
+                "at": 0.0786,
+                "factor": 1.3
+              },
+              {
+                "at": 1.1177,
+                "factor": 2.0
+              },
+              {
+                "at": 1.6325,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 1.2667,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "speedEvents": [
+              {
+                "at": 0.2124,
+                "factor": 1.5
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.1545,
+                "factor": 0.5
+              },
+              {
+                "at": 0.2129,
+                "factor": 2.0
+              },
+              {
+                "at": 0.5339,
+                "factor": 0.4
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
     "item": "BattleaxeCrystal",
     "skill": "Axes",
     "damage": {
@@ -1051,6 +1279,86 @@
               {
                 "at": 0.6733,
                 "factor": 2.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
+    "item": "KnifeBlackMetal",
+    "skill": "Knives",
+    "damage": {
+      "slash": 34.0,
+      "pierce": 34.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 1.0,
+      "pierce": 1.0
+    },
+    "blockPower": 2.0,
+    "parryForce": 10.0,
+    "knockback": 10.0,
+    "durability": 200.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "knife_stab",
+      "chainLevels": 3,
+      "staminaPerHit": 12.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 1.0,
+      "rangeM": 1.8,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.4667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.3646,
+            "speedEvents": [
+              {
+                "at": 0.1574,
+                "factor": 1.5
+              },
+              {
+                "at": 0.3396,
+                "factor": 0.5
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.6,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.4846,
+            "speedEvents": [
+              {
+                "at": 0.1529,
+                "factor": 2.0
+              },
+              {
+                "at": 0.4047,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.2082,
+                "factor": 2.5
+              },
+              {
+                "at": 0.5676,
+                "factor": 1.0
               }
             ]
           }
@@ -1476,6 +1784,89 @@
     }
   },
   {
+    "item": "MaceNeedle",
+    "skill": "Clubs",
+    "damage": {
+      "blunt": 50.0,
+      "pierce": 45.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 6.0
+    },
+    "blockPower": 39.0,
+    "parryForce": 30.0,
+    "knockback": 100.0,
+    "durability": 150.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_longsword",
+      "chainLevels": 3,
+      "staminaPerHit": 14.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.4,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.73,
+            "speedEvents": [
+              {
+                "at": 0.3724,
+                "factor": 1.2
+              },
+              {
+                "at": 0.6011,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5566,
+            "speedEvents": [
+              {
+                "at": 0.2143,
+                "factor": 1.1
+              },
+              {
+                "at": 0.4424,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9209,
+            "speedEvents": [
+              {
+                "at": 0.0238,
+                "factor": 0.5
+              },
+              {
+                "at": 0.1397,
+                "factor": 1.5
+              },
+              {
+                "at": 0.5485,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
     "item": "MaceSilver",
     "skill": "Clubs",
     "damage": {
@@ -1699,6 +2090,32 @@
     "verified": "cross-checked",
     "blockPower": 42.0,
     "parryForce": 40.0,
+    "knockback": 50.0,
+    "durability": 200.0,
+    "maxQuality": 3
+  },
+  {
+    "item": "ShieldBlackmetal",
+    "skill": "Blocking",
+    "damage": {
+      "blunt": 10.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 78.0,
+    "parryForce": 50.0,
+    "knockback": 50.0,
+    "durability": 200.0,
+    "maxQuality": 3
+  },
+  {
+    "item": "ShieldBlackmetalTower",
+    "skill": "Blocking",
+    "damage": {},
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 104.0,
+    "parryForce": 150.0,
     "knockback": 50.0,
     "durability": 200.0,
     "maxQuality": 3
@@ -2062,6 +2479,88 @@
               },
               {
                 "at": 0.1389,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
+    "item": "SwordBlackmetal",
+    "skill": "Swords",
+    "damage": {
+      "slash": 95.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 6.0
+    },
+    "blockPower": 39.0,
+    "parryForce": 20.0,
+    "knockback": 40.0,
+    "durability": 200.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_longsword",
+      "chainLevels": 3,
+      "staminaPerHit": 14.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.4,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.73,
+            "speedEvents": [
+              {
+                "at": 0.3724,
+                "factor": 1.2
+              },
+              {
+                "at": 0.6011,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5566,
+            "speedEvents": [
+              {
+                "at": 0.2143,
+                "factor": 1.1
+              },
+              {
+                "at": 0.4424,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9209,
+            "speedEvents": [
+              {
+                "at": 0.0238,
+                "factor": 0.5
+              },
+              {
+                "at": 0.1397,
+                "factor": 1.5
+              },
+              {
+                "at": 0.5485,
                 "factor": 1.0
               }
             ]
