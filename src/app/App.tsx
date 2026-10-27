@@ -91,8 +91,13 @@ function Shell() {
           readOnly
           placeholder="Search (Ctrl+K or /)"
           aria-label="Open search"
-          onFocus={() => setPaletteOpen(true)}
           onClick={() => setPaletteOpen(true)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              setPaletteOpen(true);
+            }
+          }}
         />
         <ProfileSwitcher />
       </header>
