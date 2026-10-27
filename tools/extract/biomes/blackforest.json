@@ -21,6 +21,7 @@
     "BronzeNails",
     "TrollHide",
     "CryptKey",
+    "SurtlingCore",
     "Ruby",
     "PineCone",
     "Coins",
@@ -150,6 +151,12 @@
       [
         "found",
         "In chests: Stone Graves and Viking graveyards in the Meadows, Burial Chambers in the Black Forest, and other dungeons and ruins."
+      ]
+    ],
+    "SurtlingCore": [
+      [
+        "found",
+        "Found on stands inside crypts (the dungeon caves around the world); the owner found theirs in the Black Forest. Surtlings, the fire creatures of the Swamp, are another guide-reported source. Not checked against the game's loot tables."
       ]
     ]
   },

@@ -141,7 +141,7 @@ function HowToGet({ station }: { station: Station }) {
     <section className={styles.section}>
       <h2>How to get it</h2>
       {reqs.length === 0 ? (
-        <p className={styles.dim}>Unknown for now (it needs items from biomes not added yet).</p>
+        <p className={styles.dim}>No build cost in the data. Its materials come from a zone that is not added yet, or the game files list none.</p>
       ) : (
         <>
           <p className={styles.dim}>Build cost:</p>

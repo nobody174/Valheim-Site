@@ -2,22 +2,48 @@
   {
     "id": "blastfurnace",
     "name": "Blast Furnace",
-    "buildRequirements": [],
+    "buildRequirements": [
+      {
+        "item": "Stone",
+        "qty": 20
+      },
+      {
+        "item": "SurtlingCore",
+        "qty": 5
+      },
+      {
+        "item": "Iron",
+        "qty": 10
+      },
+      {
+        "item": "FineWood",
+        "qty": 20
+      }
+    ],
     "extensions": [],
     "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "charcoal_kiln",
     "name": "Charcoal Kiln",
-    "buildRequirements": [],
+    "buildRequirements": [
+      {
+        "item": "Stone",
+        "qty": 20
+      },
+      {
+        "item": "SurtlingCore",
+        "qty": 5
+      }
+    ],
     "extensions": [],
     "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "fermenter",
@@ -326,12 +352,25 @@
   {
     "id": "piece_oven",
     "name": "Stone Oven",
-    "buildRequirements": [],
+    "buildRequirements": [
+      {
+        "item": "Iron",
+        "qty": 15
+      },
+      {
+        "item": "Stone",
+        "qty": 20
+      },
+      {
+        "item": "SurtlingCore",
+        "qty": 4
+      }
+    ],
     "extensions": [],
     "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "piece_preptable",
@@ -470,12 +509,21 @@
   {
     "id": "smelter",
     "name": "Smelter",
-    "buildRequirements": [],
+    "buildRequirements": [
+      {
+        "item": "Stone",
+        "qty": 20
+      },
+      {
+        "item": "SurtlingCore",
+        "qty": 5
+      }
+    ],
     "extensions": [],
     "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "windmill",

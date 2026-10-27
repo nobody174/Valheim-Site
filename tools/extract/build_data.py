@@ -431,6 +431,9 @@ def main(raw, out, build_id, reviewed=None):
         notes = ['Station level is 1 plus the number of different extensions built within range.']
         if cost is None and s in pieces:
             notes.append('Build cost not shown: it needs items from biomes not added yet.')
+        if not cost:
+            warnings.append(f'station {s} has an empty build cost'
+                            + (f' (needs {", ".join(missing_items(s))})' if s in pieces else ' (no piece in the dump)'))
         entry['note'] = ' '.join(notes)
         stations.append(entry)
 

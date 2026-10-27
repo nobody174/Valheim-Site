@@ -1625,6 +1625,10 @@
     "recommendedQty": 50,
     "obtainedFrom": [
       {
+        "type": "drop",
+        "creature": "Surtling"
+      },
+      {
         "type": "recipe",
         "recipe": "conv.charcoal_kiln.Wood"
       },
@@ -4146,6 +4150,31 @@
       {
         "type": "drop",
         "creature": "StoneGolem"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "SurtlingCore",
+    "name": "Surtling Core",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 5.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 5,
+    "hoardNote": "Used for building Blast Furnace, building Charcoal Kiln, building Smelter and 1 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "found",
+        "note": "Found on stands inside crypts (the dungeon caves around the world); the owner found theirs in the Black Forest. Surtlings, the fire creatures of the Swamp, are another guide-reported source. Not checked against the game's loot tables."
+      },
+      {
+        "type": "drop",
+        "creature": "Surtling"
       }
     ],
     "source": "game-files:steam-build-25909357",
