@@ -378,6 +378,96 @@
     "station": "piece_workbench"
   },
   {
+    "id": "woodiron_beam",
+    "name": "Wood Iron Beam",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "woodiron_beam_26",
+    "name": "Wood Iron Beam 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "woodiron_beam_45",
+    "name": "Wood Iron Beam 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "woodiron_beam_67",
+    "name": "Wood Iron Beam 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "woodiron_pole",
+    "name": "Wood Iron Pole",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
     "id": "wood_stepladder",
     "name": "Wood Ladder",
     "category": "Building",
@@ -620,6 +710,165 @@
     "station": "piece_workbench"
   },
   {
+    "id": "iron_floor_1x1_v2",
+    "name": "Cage Floor 1x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "iron_floor_2x2",
+    "name": "Cage Floor 2x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "iron_wall_1x1",
+    "name": "Cage Wall 1x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "iron_wall_2x2",
+    "name": "Cage Wall 2x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "iron_grate",
+    "name": "Iron Gate",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "piece_birdnest",
+    "name": "Birds' Nest",
+    "category": "Crafting",
+    "requirements": [
+      {
+        "item": "WrithanRoots",
+        "qty": 2
+      },
+      {
+        "item": "Acorn",
+        "qty": 3
+      },
+      {
+        "item": "Thistle",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "piece_preptable",
+    "name": "Food Preparation Table",
+    "category": "Crafting",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 5
+      },
+      {
+        "item": "FineWood",
+        "qty": 20
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 15
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "piece_stonecutter",
+    "name": "Stonecutter",
+    "category": "Crafting",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 2
+      },
+      {
+        "item": "Stone",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ArmorStand",
+    "name": "Armour Stand",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 8
+      },
+      {
+        "item": "IronNails",
+        "qty": 4
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
     "id": "bed",
     "name": "Bed",
     "category": "Furniture",
@@ -748,6 +997,52 @@
     "comfort": 1
   },
   {
+    "id": "piece_banner05",
+    "name": "Green Banner",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "LeatherScraps",
+        "qty": 6
+      },
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "Guck",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "piece_brazierceiling01",
+    "name": "Hanging Brazier",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Bronze",
+        "qty": 5
+      },
+      {
+        "item": "Coal",
+        "qty": 2
+      },
+      {
+        "item": "Chain",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge",
+    "comfort": 1
+  },
+  {
     "id": "itemstand",
     "name": "Item Stand",
     "category": "Furniture",
@@ -786,6 +1081,24 @@
     "comfort": 1
   },
   {
+    "id": "piece_chest_private",
+    "name": "Personal Chest",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "piece_banner09",
     "name": "Purple Banner",
     "category": "Furniture",
@@ -811,6 +1124,66 @@
     "verified": "cross-checked",
     "station": "piece_workbench",
     "comfort": 1
+  },
+  {
+    "id": "piece_throne01",
+    "name": "Raven Throne",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 20
+      },
+      {
+        "item": "IronNails",
+        "qty": 10
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 3
+  },
+  {
+    "id": "piece_banner04",
+    "name": "Red Banner",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "LeatherScraps",
+        "qty": 6
+      },
+      {
+        "item": "FineWood",
+        "qty": 2
+      },
+      {
+        "item": "Bloodbag",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "piece_chest",
+    "name": "Reinforced Chest",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
   },
   {
     "id": "piece_walltorch",
@@ -864,6 +1237,60 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "comfort": 1
+  },
+  {
+    "id": "piece_groundtorch_blue",
+    "name": "Standing Blue-burning Iron Torch",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 2
+      },
+      {
+        "item": "GreydwarfEye",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "piece_groundtorch_green",
+    "name": "Standing Green-burning Iron Torch",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 2
+      },
+      {
+        "item": "Guck",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
+  },
+  {
+    "id": "piece_groundtorch",
+    "name": "Standing Iron Torch",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 2
+      },
+      {
+        "item": "Resin",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge"
   },
   {
     "id": "piece_groundtorch_wood",
@@ -1195,6 +1622,19 @@
     "verified": "cross-checked"
   },
   {
+    "id": "bar_iron_stack",
+    "name": "Iron Stack",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 30
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Karve",
     "name": "Karve",
     "category": "Misc",
@@ -1214,6 +1654,32 @@
       {
         "item": "BronzeNails",
         "qty": 80
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "VikingShip",
+    "name": "Longship",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "IronNails",
+        "qty": 100
+      },
+      {
+        "item": "DeerHide",
+        "qty": 10
+      },
+      {
+        "item": "FineWood",
+        "qty": 40
+      },
+      {
+        "item": "ElderBark",
+        "qty": 40
       }
     ],
     "source": "game-files:steam-build-25909357",

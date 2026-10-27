@@ -22,6 +22,28 @@
     "maxQuality": 4
   },
   {
+    "item": "ArmorIronChest",
+    "slot": "chest",
+    "armor": 14.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorIronLegs",
+    "slot": "legs",
+    "armor": 14.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
     "item": "ArmorLeatherChest",
     "slot": "chest",
     "armor": 2.0,
@@ -60,6 +82,34 @@
     "durability": 200.0,
     "armorPerLevel": 1.0,
     "maxQuality": 2
+  },
+  {
+    "item": "ArmorRootChest",
+    "slot": "chest",
+    "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 800.0,
+    "setName": "root_armor",
+    "setSize": 3,
+    "setEffect": "The ancient roots help you focus your bow skill.",
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.02,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorRootLegs",
+    "slot": "legs",
+    "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 800.0,
+    "setName": "root_armor",
+    "setSize": 3,
+    "setEffect": "The ancient roots help you focus your bow skill.",
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.02,
+    "maxQuality": 4
   },
   {
     "item": "ArmorTrollLeatherChest",
@@ -121,12 +171,35 @@
     "maxQuality": 4
   },
   {
+    "item": "HelmetIron",
+    "slot": "helmet",
+    "armor": 14.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
     "item": "HelmetLeather",
     "slot": "helmet",
     "armor": 2.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 400.0,
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "HelmetRoot",
+    "slot": "helmet",
+    "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 800.0,
+    "setName": "root_armor",
+    "setSize": 3,
+    "setEffect": "The ancient roots help you focus your bow skill.",
     "armorPerLevel": 2.0,
     "maxQuality": 4
   },

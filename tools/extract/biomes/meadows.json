@@ -18,14 +18,12 @@
     "BoneFragments",
     "Feathers",
     "Needle",
-    "Entrails",
     "RawMeat",
     "DeerMeat",
     "NeckTail",
     "HardAntler",
     "Amber",
     "AmberPearl",
-    "Coins",
     "Acorn",
     "BeechSeeds",
     "BirchSeeds",
@@ -209,12 +207,6 @@
         "Drops when you chop fir trees"
       ]
     ],
-    "Entrails": [
-      [
-        "other",
-        "Dropped by Draugr and Draugr Elite in the Swamp (not in the data yet)."
-      ]
-    ],
     "Amber": [
       [
         "found",
@@ -286,7 +278,6 @@
       "Amber",
       "AmberPearl",
       "HardAntler",
-      "Entrails",
       "AxeHead1",
       "AxeHead2"
     ]

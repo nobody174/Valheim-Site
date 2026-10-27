@@ -28,7 +28,7 @@ const names = () =>
 describe('weapon rankings page', () => {
   it('lists the strongest weapon first', () => {
     renderPage();
-    expect(names()[0]).toBe('Bronze Atgeir');
+    expect(names()[0]).toBe('Battleaxe');
     expect(screen.getByText(/DPS ≈ is an estimate/)).toBeTruthy();
   });
 

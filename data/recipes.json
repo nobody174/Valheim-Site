@@ -57,6 +57,58 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ShieldIronTower",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldIronTower",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 15
+      },
+      {
+        "item": "Iron",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 25
+          },
+          {
+            "item": "Iron",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 35
+          },
+          {
+            "item": "Iron",
+            "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorLeatherChest",
     "kind": "craft",
     "output": {
@@ -311,6 +363,63 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.MaceIron",
+    "kind": "craft",
+    "output": {
+      "item": "MaceIron",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 4
+      },
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 3
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 40
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 50
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.Sausages",
     "kind": "craft",
     "output": {
@@ -336,6 +445,104 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.BombOoze",
+    "kind": "craft",
+    "output": {
+      "item": "BombOoze",
+      "qty": 5
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "LeatherScraps",
+        "qty": 5
+      },
+      {
+        "item": "Ooze",
+        "qty": 5
+      },
+      {
+        "item": "Resin",
+        "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HelmetRoot",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetRoot",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Root",
+        "qty": 10
+      },
+      {
+        "item": "ElderBark",
+        "qty": 10
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 12
+          },
+          {
+            "item": "ElderBark",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 14
+          },
+          {
+            "item": "ElderBark",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 16
+          },
+          {
+            "item": "ElderBark",
+            "qty": 25
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -603,6 +810,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ShocklateSmoothie",
+    "kind": "craft",
+    "output": {
+      "item": "ShocklateSmoothie",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Ooze",
+        "qty": 1
+      },
+      {
+        "item": "Raspberry",
+        "qty": 2
+      },
+      {
+        "item": "Blueberries",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArrowBronze",
     "kind": "craft",
     "output": {
@@ -685,6 +921,71 @@
           {
             "item": "BoneFragments",
             "qty": 15
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.PickaxeIron",
+    "kind": "craft",
+    "output": {
+      "item": "PickaxeIron",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "RoundLog",
+        "qty": 3
+      },
+      {
+        "item": "Iron",
+        "qty": 20
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "RoundLog",
+            "qty": 4
+          },
+          {
+            "item": "Iron",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "RoundLog",
+            "qty": 5
+          },
+          {
+            "item": "Iron",
+            "qty": 40
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "RoundLog",
+            "qty": 6
+          },
+          {
+            "item": "Iron",
+            "qty": 50
           }
         ]
       }
@@ -1592,6 +1893,108 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.MeadBasePoisonResist",
+    "kind": "craft",
+    "output": {
+      "item": "MeadBasePoisonResist",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_MeadCauldron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Honey",
+        "qty": 10
+      },
+      {
+        "item": "Thistle",
+        "qty": 5
+      },
+      {
+        "item": "NeckTail",
+        "qty": 1
+      },
+      {
+        "item": "Coal",
+        "qty": 10
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.AxeIron",
+    "kind": "craft",
+    "output": {
+      "item": "AxeIron",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 4
+      },
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 30
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 40
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 50
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorBronzeChest",
     "kind": "craft",
     "output": {
@@ -1641,6 +2044,104 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorRootLegs",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorRootLegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Root",
+        "qty": 10
+      },
+      {
+        "item": "ElderBark",
+        "qty": 10
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 12
+          },
+          {
+            "item": "ElderBark",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 14
+          },
+          {
+            "item": "ElderBark",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 16
+          },
+          {
+            "item": "ElderBark",
+            "qty": 25
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.Blacksoup",
+    "kind": "craft",
+    "output": {
+      "item": "BlackSoup",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Bloodbag",
+        "qty": 1
+      },
+      {
+        "item": "Honey",
+        "qty": 1
+      },
+      {
+        "item": "Turnip",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1718,6 +2219,127 @@
           {
             "item": "LeatherScraps",
             "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.AtgeirIron",
+    "kind": "craft",
+    "output": {
+      "item": "AtgeirIron",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 30
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 45
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 60
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 75
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldBanded",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldBanded",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 8
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 20
+          },
+          {
+            "item": "Iron",
+            "qty": 12
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 30
+          },
+          {
+            "item": "Iron",
+            "qty": 16
           }
         ]
       }
@@ -1858,6 +2480,39 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.MeadBaseHealthMedium",
+    "kind": "craft",
+    "output": {
+      "item": "MeadBaseHealthMedium",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_MeadCauldron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Honey",
+        "qty": 10
+      },
+      {
+        "item": "Bloodbag",
+        "qty": 4
+      },
+      {
+        "item": "Raspberry",
+        "qty": 10
+      },
+      {
+        "item": "Dandelion",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.MeadBaseHealthMinor",
     "kind": "craft",
     "output": {
@@ -1887,6 +2542,192 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.SpearElderbark",
+    "kind": "craft",
+    "output": {
+      "item": "SpearElderbark",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "TrollHide",
+        "qty": 4
+      },
+      {
+        "item": "Iron",
+        "qty": 10
+      },
+      {
+        "item": "ElderBark",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "TrollHide",
+            "qty": 5
+          },
+          {
+            "item": "Iron",
+            "qty": 15
+          },
+          {
+            "item": "ElderBark",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "TrollHide",
+            "qty": 6
+          },
+          {
+            "item": "Iron",
+            "qty": 20
+          },
+          {
+            "item": "ElderBark",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "TrollHide",
+            "qty": 7
+          },
+          {
+            "item": "Iron",
+            "qty": 25
+          },
+          {
+            "item": "ElderBark",
+            "qty": 25
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HelmetIron",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetIron",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 25
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 35
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldIronBuckler",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldIronBuckler",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 10
+      },
+      {
+        "item": "ElderBark",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 15
+          },
+          {
+            "item": "ElderBark",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 20
+          },
+          {
+            "item": "ElderBark",
+            "qty": 6
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1992,6 +2833,155 @@
           {
             "item": "Stone",
             "qty": 4
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldRoots",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldRoots",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "WrithanRoots",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 15
+          },
+          {
+            "item": "WrithanRoots",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 20
+          },
+          {
+            "item": "WrithanRoots",
+            "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.BowHuntsman",
+    "kind": "craft",
+    "output": {
+      "item": "BowHuntsman",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "Feathers",
+        "qty": 10
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 15
+          },
+          {
+            "item": "Iron",
+            "qty": 30
+          },
+          {
+            "item": "Feathers",
+            "qty": 15
+          },
+          {
+            "item": "DeerHide",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 20
+          },
+          {
+            "item": "Iron",
+            "qty": 40
+          },
+          {
+            "item": "Feathers",
+            "qty": 20
+          },
+          {
+            "item": "DeerHide",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 25
+          },
+          {
+            "item": "Iron",
+            "qty": 50
+          },
+          {
+            "item": "Feathers",
+            "qty": 25
+          },
+          {
+            "item": "DeerHide",
+            "qty": 8
           }
         ]
       }
@@ -2121,6 +3111,203 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArmorIronChest",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorIronChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 25
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 35
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorRootChest",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorRootChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Root",
+        "qty": 10
+      },
+      {
+        "item": "ElderBark",
+        "qty": 10
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 12
+          },
+          {
+            "item": "ElderBark",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 14
+          },
+          {
+            "item": "ElderBark",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Root",
+            "qty": 16
+          },
+          {
+            "item": "ElderBark",
+            "qty": 25
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.TurnipStew",
+    "kind": "craft",
+    "output": {
+      "item": "TurnipStew",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "RawMeat",
+        "qty": 1
+      },
+      {
+        "item": "Turnip",
+        "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArrowIron",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowIron",
+      "qty": 20
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 8
+      },
+      {
+        "item": "Iron",
+        "qty": 1
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.IronNails",
+    "kind": "craft",
+    "output": {
+      "item": "IronNails",
+      "qty": 10
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.Bronze5",
     "kind": "craft",
     "output": {
@@ -2142,6 +3329,59 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorIronLegs",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorIronLegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 25
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Iron",
+            "qty": 35
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -2375,6 +3615,160 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.Battleaxe",
+    "kind": "craft",
+    "output": {
+      "item": "Battleaxe",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "ElderBark",
+        "qty": 30
+      },
+      {
+        "item": "Iron",
+        "qty": 35
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 35
+          },
+          {
+            "item": "Iron",
+            "qty": 50
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 40
+          },
+          {
+            "item": "Iron",
+            "qty": 65
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 45
+          },
+          {
+            "item": "Iron",
+            "qty": 80
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.SledgeIron",
+    "kind": "craft",
+    "output": {
+      "item": "SledgeIron",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "ElderBark",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 30
+      },
+      {
+        "item": "YmirRemains",
+        "qty": 4
+      },
+      {
+        "item": "TrophyDraugrElite",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 12
+          },
+          {
+            "item": "Iron",
+            "qty": 45
+          },
+          {
+            "item": "YmirRemains",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 14
+          },
+          {
+            "item": "Iron",
+            "qty": 60
+          },
+          {
+            "item": "YmirRemains",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 16
+          },
+          {
+            "item": "Iron",
+            "qty": 75
+          },
+          {
+            "item": "YmirRemains",
+            "qty": 10
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.PickaxeBronze",
     "kind": "craft",
     "output": {
@@ -2458,6 +3852,39 @@
       {
         "item": "Tin",
         "qty": 4
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.MeadBaseFrostResist",
+    "kind": "craft",
+    "output": {
+      "item": "MeadBaseFrostResist",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_MeadCauldron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Honey",
+        "qty": 10
+      },
+      {
+        "item": "Thistle",
+        "qty": 5
+      },
+      {
+        "item": "Bloodbag",
+        "qty": 2
+      },
+      {
+        "item": "GreydwarfEye",
+        "qty": 1
       }
     ],
     "upgrades": [],
@@ -2614,6 +4041,87 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.SwordIron",
+    "kind": "craft",
+    "output": {
+      "item": "SwordIron",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Iron",
+        "qty": 20
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 3
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 3
+          },
+          {
+            "item": "Iron",
+            "qty": 30
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 4
+          },
+          {
+            "item": "Iron",
+            "qty": 40
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 5
+          },
+          {
+            "item": "Iron",
+            "qty": 50
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 9
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArrowFlint",
     "kind": "craft",
     "output": {
@@ -2694,6 +4202,28 @@
     "timeSec": 2400.0
   },
   {
+    "id": "conv.fermenter.MeadBaseHealthMedium",
+    "kind": "ferment",
+    "output": {
+      "item": "MeadHealthMedium",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MeadBaseHealthMedium",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
     "id": "conv.fermenter.MeadBaseStaminaMinor",
     "kind": "ferment",
     "output": {
@@ -2707,6 +4237,50 @@
     "inputs": [
       {
         "item": "MeadBaseStaminaMinor",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
+    "id": "conv.fermenter.MeadBasePoisonResist",
+    "kind": "ferment",
+    "output": {
+      "item": "MeadPoisonResist",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MeadBasePoisonResist",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 2400.0
+  },
+  {
+    "id": "conv.fermenter.MeadBaseFrostResist",
+    "kind": "ferment",
+    "output": {
+      "item": "MeadFrostResist",
+      "qty": 1
+    },
+    "station": {
+      "id": "fermenter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MeadBaseFrostResist",
         "qty": 1
       }
     ],
@@ -2751,6 +4325,27 @@
     "inputs": [
       {
         "item": "CopperOre",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.smelter.IronScrap",
+    "kind": "smelt",
+    "output": {
+      "item": "Iron",
+      "qty": 1
+    },
+    "station": {
+      "id": "smelter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "IronScrap",
         "qty": 1
       }
     ],

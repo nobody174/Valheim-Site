@@ -401,5 +401,322 @@
       "pierce": "weak",
       "spirit": "immune"
     }
+  },
+  {
+    "id": "Draugr",
+    "name": "Draugr",
+    "biome": "swamp",
+    "health": 100.0,
+    "drops": [
+      {
+        "item": "Entrails",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "TrophyDraugr",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "draugr_axe",
+        "damage": {
+          "slash": 48.0
+        }
+      },
+      {
+        "id": "draugr_bow",
+        "damage": {
+          "pierce": 48.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "resistant",
+      "poison": "immune"
+    }
+  },
+  {
+    "id": "Draugr_Elite",
+    "name": "Draugr Elite",
+    "biome": "swamp",
+    "health": 200.0,
+    "drops": [
+      {
+        "item": "Entrails",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "item": "TrophyDraugrElite",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "draugr_sword",
+        "damage": {
+          "slash": 58.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "resistant",
+      "poison": "immune"
+    }
+  },
+  {
+    "id": "Blob",
+    "name": "Blob",
+    "biome": "swamp",
+    "health": 50.0,
+    "drops": [
+      {
+        "item": "TrophyBlob",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "Ooze",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "attacks": [
+      {
+        "id": "blob_attack_aoe",
+        "damage": {
+          "poison": 90.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "weak",
+      "slash": "resistant",
+      "pierce": "resistant",
+      "fire": "resistant",
+      "frost": "weak",
+      "lightning": "weak",
+      "poison": "immune"
+    }
+  },
+  {
+    "id": "BlobElite",
+    "name": "Oozer",
+    "biome": "swamp",
+    "health": 150.0,
+    "drops": [
+      {
+        "item": "Ooze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "item": "IronScrap",
+        "min": 1,
+        "max": 1,
+        "chance": 0.33
+      },
+      {
+        "item": "TrophyBlob",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "blobelite_attack_aoe",
+        "damage": {
+          "poison": 115.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "weak",
+      "slash": "resistant",
+      "pierce": "resistant",
+      "fire": "resistant",
+      "frost": "weak",
+      "lightning": "weak",
+      "poison": "immune"
+    }
+  },
+  {
+    "id": "Leech",
+    "name": "Leech",
+    "biome": "swamp",
+    "health": 60.0,
+    "drops": [
+      {
+        "item": "TrophyLeech",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "Bloodbag",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Leech_BiteAttack",
+        "damage": {
+          "pierce": 20.0,
+          "poison": 70.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "immune",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Wraith",
+    "name": "Wraith",
+    "biome": "swamp",
+    "health": 100.0,
+    "drops": [
+      {
+        "item": "TrophyWraith",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      },
+      {
+        "item": "Chain",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "wraith_melee",
+        "damage": {
+          "slash": 60.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "slash": "resistant",
+      "pierce": "resistant",
+      "fire": "weak",
+      "frost": "immune",
+      "poison": "immune",
+      "spirit": "weak"
+    }
+  },
+  {
+    "id": "Abomination",
+    "name": "Abomination",
+    "biome": "swamp",
+    "health": 800.0,
+    "drops": [
+      {
+        "item": "TrophyAbomination",
+        "min": 1,
+        "max": 1,
+        "chance": 0.5
+      },
+      {
+        "item": "Root",
+        "min": 5,
+        "max": 5
+      },
+      {
+        "item": "Guck",
+        "min": 3,
+        "max": 5
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Abomination_attack1",
+        "damage": {
+          "blunt": 60.0
+        }
+      },
+      {
+        "id": "Abomination_attack2",
+        "damage": {
+          "blunt": 80.0
+        }
+      },
+      {
+        "id": "Abomination_attack3",
+        "damage": {
+          "blunt": 80.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "pierce": "very resistant",
+      "fire": "weak",
+      "frost": "immune",
+      "poison": "immune",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Writhan",
+    "name": "Writhan",
+    "biome": "swamp",
+    "health": 400.0,
+    "drops": [
+      {
+        "item": "TrophyWrithan",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "WrithanRoots",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "attacks": [
+      {
+        "id": "writhan_bite",
+        "damage": {
+          "pierce": 40.0,
+          "poison": 30.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "slash": "weak",
+      "fire": "resistant",
+      "poison": "immune"
+    }
   }
 ]

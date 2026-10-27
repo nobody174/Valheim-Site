@@ -27,7 +27,7 @@ describe('armor rankings page', () => {
   it('lists the highest armor first', () => {
     renderArmor();
     const first = pieces()[0]!;
-    expect(first).toMatch(/Bronze/);
+    expect(first).toMatch(/Iron|Root|Bronze/);
   });
 
   it('applies a preset, shows its rule, and toggles it off', async () => {

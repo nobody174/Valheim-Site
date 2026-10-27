@@ -98,3 +98,14 @@ The 14 recipes the builder found but did not keep were checked against public wi
 | Bone Bolt, Bronze Health Trinket, Forest Fishing Bait, Wood Turret Bolt | Nothing found. | Not added; unconfirmed |
 
 Correction: Upgrader1Armor and Upgrader2Weapon are flagged as upgrade-only resources in the game files, not crafting ingredients, so the Early Axes recipe is just 4 Wood + the two axe heads, and the Upgrader2Weapon item was removed from the data.
+
+## Swamp pass (owner has not unlocked the Swamp yet, so nothing here is checked in game)
+
+Config: `tools/extract/biomes/swamp.json`. The creature drops, recipes, stats and build costs come from the game files. Hand-written parts, all `unverified` until the owner checks them in game:
+
+- Where-to-get notes for Scrap Iron, Withered Bone and Turnip Seeds (guides: Sunken Crypts' Muddy Scrap Piles, wild turnips in the Swamp).
+- Bonemass summon: 10 Withered Bone (guides agree; the altar cost is not in the extracted data).
+- Ymir Flesh: no creature drops it in the game files and no guide result was found, so its source says "not confirmed". It is needed by the Iron Sledge.
+- Moved to the right zone (M6): Entrails and Sausages to the Swamp, Coins to the Black Forest (Trolls drop them). Needle stays in Meadows until the Plains pass (Deathsquito drop).
+- Iron Shield (`ShieldIronSquare`) is not added: its recipe is disabled in the game files.
+- Left out for now: Iron Brooch and other trinkets, Fishing Bait (Swamp), Iron Bolt and Crossbow (Black Forge, Mistlands), Poison Arrow (Obsidian, Mountains), Blood Pudding (Barley, Plains).
