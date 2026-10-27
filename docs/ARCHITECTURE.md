@@ -126,17 +126,34 @@ owner sees how trustworthy the dataset currently is.
 
 ## Computed values (never stored)
 
-**DPS estimate (Phase 3).**
-`dps = sum(damage per type at chosen quality) * hits per attack chain / chain duration (s)`.
-Defaults: skill level 0, quality 1, no enemy resistances. Optional "vs creature" mode applies
-that creature's resistances from `creatures.json`. Needs attack timing data; until timings are
-verified the page shows an "approximate" badge. Document the formula in the UI.
+**Damage per hit.** The weapon's damage per type at the chosen upgrade level (`damage +
+damagePerLevel * (level - 1)`), keeping only types that hurt creatures (chop and pickaxe are
+tool-only). "vs creature" scales each type by the creature's resistance label: very weak x2, weak
+x1.5, resistant x0.5, very resistant x0.25, immune and ignore x0. (`src/data/weaponStats.ts`)
 
-**Stamina efficiency.** damage per stamina point for the primary attack.
+**Damage per combo.** Per hit times the combo multiplier: every swing counts the attack's
+`damageMultiplier`, and the last swing of a multi-swing combo uses `lastChainMultiplier` instead
+(bronze sword: 1 + 1 + 2 = 4 hits). (`src/data/attackModel.ts`)
 
-**Overall PvE rating.** Rank-normalized blend of DPS, stamina efficiency, reach and repair cost.
-Weights are constants in `src/features/rankings/weights.ts`, shown in the UI and editable
-locally. It is an opinion, so it is labelled as one.
+**Stamina efficiency.** Damage per combo divided by stamina per combo (`staminaPerHit * swings`).
+
+**DPS estimate (approximate, timing unverified).** `dps = damage per combo / seconds per combo`.
+A swing lasts until the next may start: inside a combo that is the clip's Chain event, for the last
+swing (or a single attack) the clip's exit point (`exitTime`, at most the clip end). Seconds are
+real time: playback starts at the state's speed and each Speed event sets the playback factor from
+its clip time on. Skill level 0, nothing but continuous attacking. Bows get no estimate. The raw
+numbers come from the player animator (`extract_attack_timing.py`); the model has not been checked
+in game, so the page labels DPS as an estimate.
+
+**Overall rating.** A 0 to 100 opinion: each weapon's percentile among the listed weapons for DPS,
+stamina efficiency and reach (weakest 0, strongest 1, ties share the average), blended with
+weights. Weights default in `src/features/rankings/weights.ts` (5, 3, 2), are editable on the
+page and kept in the URL. It only compares what is listed, so it changes with the filters. Weapons
+missing a weighted measure get no rating.
+
+**Armor views.** Armor at level = `armor + armorPerLevel * (level - 1)`. Tank: highest armor.
+Exploration: no speed penalty, then highest armor. Light: lowest weight, then highest armor. Set
+bonus: pieces of a set with a bonus first. Craft and upgrade cost count recipe items.
 
 **Build planner totals.** Recursive expansion of recipes through the graph, subtracting the
 owner's inventory, grouped by station requirement.

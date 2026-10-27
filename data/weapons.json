@@ -53,7 +53,44 @@
     "parryForce": 40.0,
     "knockback": 30.0,
     "durability": 125.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "atgeir_attack",
+      "chainLevels": 3,
+      "staminaPerHit": 12.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 3.2,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.6667,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": []
+          },
+          {
+            "lengthSec": 0.7,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": []
+          },
+          {
+            "lengthSec": 0.7333,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.6296,
+                "factor": 0.2
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "AxeBronze",
@@ -72,7 +109,68 @@
     "parryForce": 20.0,
     "knockback": 50.0,
     "durability": 125.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_axe",
+      "chainLevels": 3,
+      "staminaPerHit": 8.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.2,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "chainAt": 0.8698,
+            "speedEvents": [
+              {
+                "at": 0.456,
+                "factor": 1.5
+              },
+              {
+                "at": 0.7517,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9,
+            "stateSpeed": 1.399999976158142,
+            "exitTime": 0.99,
+            "chainAt": 0.9,
+            "speedEvents": [
+              {
+                "at": 0.4852,
+                "factor": 1.7
+              },
+              {
+                "at": 0.8237,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.5935,
+                "factor": 2.0
+              },
+              {
+                "at": 0.84,
+                "factor": 0.4
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "AxeFlint",
@@ -91,7 +189,68 @@
     "parryForce": 20.0,
     "knockback": 50.0,
     "durability": 100.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_axe",
+      "chainLevels": 3,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.2,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "chainAt": 0.8698,
+            "speedEvents": [
+              {
+                "at": 0.456,
+                "factor": 1.5
+              },
+              {
+                "at": 0.7517,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9,
+            "stateSpeed": 1.399999976158142,
+            "exitTime": 0.99,
+            "chainAt": 0.9,
+            "speedEvents": [
+              {
+                "at": 0.4852,
+                "factor": 1.7
+              },
+              {
+                "at": 0.8237,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.5935,
+                "factor": 2.0
+              },
+              {
+                "at": 0.84,
+                "factor": 0.4
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "AxeStone",
@@ -110,7 +269,68 @@
     "parryForce": 20.0,
     "knockback": 50.0,
     "durability": 100.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_axe",
+      "chainLevels": 3,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.2,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "chainAt": 0.8698,
+            "speedEvents": [
+              {
+                "at": 0.456,
+                "factor": 1.5
+              },
+              {
+                "at": 0.7517,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9,
+            "stateSpeed": 1.399999976158142,
+            "exitTime": 0.99,
+            "chainAt": 0.9,
+            "speedEvents": [
+              {
+                "at": 0.4852,
+                "factor": 1.7
+              },
+              {
+                "at": 0.8237,
+                "factor": 0.8
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.9667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.5935,
+                "factor": 2.0
+              },
+              {
+                "at": 0.84,
+                "factor": 0.4
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "Bow",
@@ -158,7 +378,72 @@
     "parryForce": 20.0,
     "knockback": 30.0,
     "durability": 100.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_longsword",
+      "chainLevels": 3,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.4,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.73,
+            "speedEvents": [
+              {
+                "at": 0.3724,
+                "factor": 1.2
+              },
+              {
+                "at": 0.6011,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5566,
+            "speedEvents": [
+              {
+                "at": 0.2143,
+                "factor": 1.1
+              },
+              {
+                "at": 0.4424,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9209,
+            "speedEvents": [
+              {
+                "at": 0.0238,
+                "factor": 0.5
+              },
+              {
+                "at": 0.1397,
+                "factor": 1.5
+              },
+              {
+                "at": 0.5485,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "KnifeCopper",
@@ -177,7 +462,68 @@
     "parryForce": 10.0,
     "knockback": 10.0,
     "durability": 200.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "knife_stab",
+      "chainLevels": 3,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 1.0,
+      "rangeM": 1.8,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.4667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.3646,
+            "speedEvents": [
+              {
+                "at": 0.1574,
+                "factor": 1.5
+              },
+              {
+                "at": 0.3396,
+                "factor": 0.5
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.6,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.4846,
+            "speedEvents": [
+              {
+                "at": 0.1529,
+                "factor": 2.0
+              },
+              {
+                "at": 0.4047,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.2082,
+                "factor": 2.5
+              },
+              {
+                "at": 0.5676,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "KnifeFlint",
@@ -196,7 +542,68 @@
     "parryForce": 10.0,
     "knockback": 10.0,
     "durability": 200.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "knife_stab",
+      "chainLevels": 3,
+      "staminaPerHit": 4.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 1.0,
+      "rangeM": 1.8,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.4667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.3646,
+            "speedEvents": [
+              {
+                "at": 0.1574,
+                "factor": 1.5
+              },
+              {
+                "at": 0.3396,
+                "factor": 0.5
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.6,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.4846,
+            "speedEvents": [
+              {
+                "at": 0.1529,
+                "factor": 2.0
+              },
+              {
+                "at": 0.4047,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.2082,
+                "factor": 2.5
+              },
+              {
+                "at": 0.5676,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "MaceBronze",
@@ -213,7 +620,72 @@
     "parryForce": 30.0,
     "knockback": 80.0,
     "durability": 200.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_longsword",
+      "chainLevels": 3,
+      "staminaPerHit": 8.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.4,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.73,
+            "speedEvents": [
+              {
+                "at": 0.3724,
+                "factor": 1.2
+              },
+              {
+                "at": 0.6011,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5566,
+            "speedEvents": [
+              {
+                "at": 0.2143,
+                "factor": 1.1
+              },
+              {
+                "at": 0.4424,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9209,
+            "speedEvents": [
+              {
+                "at": 0.0238,
+                "factor": 0.5
+              },
+              {
+                "at": 0.1397,
+                "factor": 1.5
+              },
+              {
+                "at": 0.5485,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "PickaxeAntler",
@@ -227,7 +699,35 @@
     "blockPower": 2.0,
     "parryForce": 20.0,
     "knockback": 50.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "attack": {
+      "animation": "swing_pickaxe",
+      "chainLevels": 1,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "rangeM": 1.8,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.25,
+            "stateSpeed": 1.100000023841858,
+            "exitTime": 1.2,
+            "speedEvents": [
+              {
+                "at": 0.8253,
+                "factor": 1.8
+              },
+              {
+                "at": 1.0549,
+                "factor": 1.1
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "PickaxeBronze",
@@ -246,7 +746,35 @@
     "parryForce": 20.0,
     "knockback": 50.0,
     "durability": 120.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_pickaxe",
+      "chainLevels": 1,
+      "staminaPerHit": 8.0,
+      "damageMultiplier": 1.0,
+      "rangeM": 1.8,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.25,
+            "stateSpeed": 1.100000023841858,
+            "exitTime": 1.2,
+            "speedEvents": [
+              {
+                "at": 0.8253,
+                "factor": 1.8
+              },
+              {
+                "at": 1.0549,
+                "factor": 1.1
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "PickaxeStone",
@@ -259,7 +787,35 @@
     "verified": "cross-checked",
     "blockPower": 2.0,
     "knockback": 50.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "attack": {
+      "animation": "swing_pickaxe",
+      "chainLevels": 1,
+      "staminaPerHit": 4.0,
+      "damageMultiplier": 1.0,
+      "rangeM": 1.8,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.25,
+            "stateSpeed": 1.100000023841858,
+            "exitTime": 1.2,
+            "speedEvents": [
+              {
+                "at": 0.8253,
+                "factor": 1.8
+              },
+              {
+                "at": 1.0549,
+                "factor": 1.1
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "ShieldBronzeBuckler",
@@ -313,7 +869,35 @@
     "parryForce": 50.0,
     "knockback": 150.0,
     "durability": 100.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_sledge",
+      "chainLevels": 1,
+      "staminaPerHit": 12.0,
+      "damageMultiplier": 1.0,
+      "rangeM": 2.0,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.6667,
+            "stateSpeed": 1.0,
+            "exitTime": 1.1,
+            "speedEvents": [
+              {
+                "at": 0.8441,
+                "factor": 1.5
+              },
+              {
+                "at": 1.265,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "SpearBronze",
@@ -330,7 +914,35 @@
     "parryForce": 20.0,
     "knockback": 20.0,
     "durability": 100.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "spear_poke",
+      "chainLevels": 1,
+      "staminaPerHit": 8.0,
+      "damageMultiplier": 1.0,
+      "rangeM": 1.9,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.3667,
+            "stateSpeed": 1.0,
+            "exitTime": 1.3,
+            "speedEvents": [
+              {
+                "at": 0.0,
+                "factor": 0.8
+              },
+              {
+                "at": 0.1389,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "SpearFlint",
@@ -347,7 +959,35 @@
     "parryForce": 20.0,
     "knockback": 20.0,
     "durability": 100.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "spear_poke",
+      "chainLevels": 1,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "rangeM": 1.9,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.3667,
+            "stateSpeed": 1.0,
+            "exitTime": 1.3,
+            "speedEvents": [
+              {
+                "at": 0.0,
+                "factor": 0.8
+              },
+              {
+                "at": 0.1389,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   },
   {
     "item": "SwordBronze",
@@ -364,6 +1004,71 @@
     "parryForce": 20.0,
     "knockback": 40.0,
     "durability": 200.0,
-    "maxQuality": 4
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_longsword",
+      "chainLevels": 3,
+      "staminaPerHit": 8.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.4,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.73,
+            "speedEvents": [
+              {
+                "at": 0.3724,
+                "factor": 1.2
+              },
+              {
+                "at": 0.6011,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5566,
+            "speedEvents": [
+              {
+                "at": 0.2143,
+                "factor": 1.1
+              },
+              {
+                "at": 0.4424,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9209,
+            "speedEvents": [
+              {
+                "at": 0.0238,
+                "factor": 0.5
+              },
+              {
+                "at": 0.1397,
+                "factor": 1.5
+              },
+              {
+                "at": 0.5485,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
   }
 ]

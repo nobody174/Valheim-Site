@@ -137,6 +137,41 @@ export const StationSchema = z
   })
   .strict();
 
+const speedEvent = z.object({ at: z.number().nonnegative(), factor: z.number().nonnegative() }).strict();
+
+/** One swing of a combo, as the game's animation defines it. All values are raw game numbers. */
+const attackStep = z
+  .object({
+    lengthSec: z.number().positive(),
+    /** Fraction of the clip after which the swing hands control back to movement. */
+    exitTime: z.number().positive().optional(),
+    stateSpeed: z.number().positive(),
+    /** Clip time at which the next attack of the combo may start, when the clip defines it. */
+    chainAt: z.number().nonnegative().optional(),
+    speedEvents: z.array(speedEvent).default([]),
+  })
+  .strict();
+
+const AttackSchema = z
+  .object({
+    animation: z.string().min(1),
+    chainLevels: z.number().int().positive(),
+    staminaPerHit: z.number().nonnegative(),
+    damageMultiplier: z.number().positive(),
+    /** Damage multiplier of the last swing of a combo. */
+    lastChainMultiplier: z.number().positive().optional(),
+    rangeM: z.number().positive().optional(),
+    timing: z
+      .object({
+        steps: z.array(attackStep).min(1),
+        verified: z.enum(VERIFIED_LEVELS),
+        note: z.string().min(1),
+      })
+      .strict()
+      .optional(),
+  })
+  .strict();
+
 export const WeaponSchema = z
   .object({
     item: id,
@@ -149,6 +184,7 @@ export const WeaponSchema = z
     knockback: z.number().nonnegative().optional(),
     durability: z.number().positive().optional(),
     maxQuality: z.number().int().positive().optional(),
+    attack: AttackSchema.optional(),
     ...provenance,
   })
   .strict();
@@ -158,6 +194,8 @@ export const ArmorSchema = z
     item: id,
     slot: z.enum(['helmet', 'chest', 'legs', 'cape', 'shield']),
     armor: z.number().nonnegative(),
+    /** Extra armor per upgrade level above 1. */
+    armorPerLevel: z.number().nonnegative().optional(),
     durability: z.number().positive().optional(),
     setName: z.string().optional(),
     /** Pieces needed for the set bonus, and what the bonus does. */

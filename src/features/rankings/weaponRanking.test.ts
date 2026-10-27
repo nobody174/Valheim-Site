@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { lookup } from '../../data/lookup';
 import { AMMO_GROUP, combatDamage, damageAt, totalCombatDamage } from '../../data/weaponStats';
 import {
+  addRatings,
   defaultDir,
   filterAndSort,
   groupByZone,
@@ -9,6 +10,7 @@ import {
   weaponRows,
   type RankOptions,
 } from './weaponRanking';
+import { DEFAULT_WEIGHTS, formatWeights, parseWeights } from './weights';
 
 const base: RankOptions = { group: '', zone: '', upTo: true, text: '', sort: 'damage', dir: 'desc' };
 const weapon = (id: string) => {
@@ -132,5 +134,115 @@ describe('groupByZone', () => {
         expect(g.rows[i - 1]!.total).toBeGreaterThanOrEqual(g.rows[i]!.total);
       }
     }
+  });
+});
+
+describe('combo, stamina and dps columns', () => {
+  const row = (id: string, creature = '') => weaponRows(1, creature).find((r) => r.id === id)!;
+
+  it('derives per-combo damage and stamina efficiency from the attack data', () => {
+    // Bronze sword: 35 damage, three swings counting 1 + 1 + 2 = 4 hits, 8 stamina a swing.
+    const sword = row('SwordBronze');
+    expect(sword.combo).toBe(140);
+    expect(sword.perStamina).toBeCloseTo(140 / 24);
+    expect(sword.reach).toBeCloseTo(2.4);
+    expect(sword.dps).toBeGreaterThan(20);
+  });
+
+  it('gives bows no timing-based numbers', () => {
+    expect(row('Bow').dps).toBeUndefined();
+  });
+
+  it('scales damage by the creature resistances', () => {
+    // Troll: resistant to blunt, weak to pierce.
+    expect(row('Club', 'Troll').total).toBe(6);
+    expect(row('SpearBronze', 'Troll').total).toBeCloseTo(52.5);
+    // Skeleton: weak to blunt, resistant to pierce.
+    expect(row('MaceBronze', 'Skeleton').total).toBeCloseTo(52.5);
+    expect(row('SpearBronze', 'Skeleton').total).toBeCloseTo(17.5);
+    // No creature: unchanged.
+    expect(row('Club').total).toBe(12);
+  });
+
+  it('re-ranks weapons when a creature is chosen', () => {
+    const normal = filterAndSort(weaponRows(1), base).map((r) => r.id);
+    const troll = filterAndSort(weaponRows(1, 'Troll'), base).map((r) => r.id);
+    expect(troll).not.toEqual(normal);
+    expect(troll.indexOf('SpearBronze')).toBeLessThan(normal.indexOf('SpearBronze'));
+  });
+
+  it('sorts by dps with weapons that have no estimate last', () => {
+    const list = filterAndSort(weaponRows(), { ...base, sort: 'dps', dir: 'desc' });
+    const withDps = list.filter((r) => r.dps !== undefined);
+    expect(withDps.length).toBeGreaterThan(5);
+    for (let i = 1; i < withDps.length; i++) {
+      expect(withDps[i - 1]!.dps!).toBeGreaterThanOrEqual(withDps[i]!.dps!);
+    }
+    expect(list.slice(0, withDps.length).every((r) => r.dps !== undefined)).toBe(true);
+  });
+});
+
+describe('ratings', () => {
+  const mk = (id: string, dps?: number, perStamina?: number, reach?: number) => ({
+    id,
+    name: id,
+    group: 'Swords',
+    zoneId: 'meadows',
+    zoneName: 'Meadows',
+    zoneOrder: 1,
+    total: 10,
+    damage: {},
+    dps,
+    perStamina,
+    reach,
+  });
+  const only = (key: 'dps' | 'stamina' | 'reach') => ({
+    dps: 0,
+    stamina: 0,
+    reach: 0,
+    [key]: 1,
+  });
+
+  it('scores the best on every measure 100 and the worst 0', () => {
+    const rows = addRatings([mk('a', 10, 10, 10), mk('b', 20, 20, 20), mk('c', 30, 30, 30)]);
+    expect(rows.map((r) => r.rating)).toEqual([0, 50, 100]);
+  });
+
+  it('weights the measures', () => {
+    const rows = [mk('fast', 30, 10, 10), mk('efficient', 10, 30, 10), mk('long', 10, 10, 30)];
+    const rate = (w: { dps: number; stamina: number; reach: number }) =>
+      Object.fromEntries(addRatings(rows, w).map((r) => [r.id, Math.round(r.rating!)]));
+    expect(rate(only('dps')).fast).toBe(100);
+    expect(rate(only('stamina')).efficient).toBe(100);
+    expect(rate(only('reach')).long).toBe(100);
+    const even = rate({ dps: 1, stamina: 1, reach: 1 });
+    expect(even.fast).toBe(even.long);
+  });
+
+  it('shares the average between ties', () => {
+    const rows = addRatings([mk('a', 5, 1, 1), mk('b', 5, 1, 1), mk('c', 9, 1, 1)], only('dps'));
+    expect(rows.map((r) => r.rating)).toEqual([25, 25, 100]);
+  });
+
+  it('gives no rating to a weapon missing a weighted measure', () => {
+    const rows = addRatings([mk('a', 10, 10, 10), mk('b', undefined, 5, 5)]);
+    expect(rows[1]!.rating).toBeUndefined();
+  });
+
+  it('rates only what is listed, so the score changes with the filters', () => {
+    const all = filterAndSort(weaponRows(), base);
+    const meadows = filterAndSort(weaponRows(), { ...base, zone: 'meadows', upTo: false });
+    const id = meadows.find((r) => r.rating !== undefined)!.id;
+    expect(meadows.find((r) => r.id === id)!.rating).not.toBe(all.find((r) => r.id === id)!.rating);
+  });
+
+  it('parses and formats weights from the URL, falling back on bad input', () => {
+    expect(parseWeights('1,2,3')).toEqual({ dps: 1, stamina: 2, reach: 3 });
+    expect(parseWeights('x,2,3')).toEqual(DEFAULT_WEIGHTS);
+    expect(parseWeights('1,2')).toEqual(DEFAULT_WEIGHTS);
+    expect(parseWeights('0,0,0')).toEqual(DEFAULT_WEIGHTS);
+    expect(parseWeights('-1,2,3')).toEqual(DEFAULT_WEIGHTS);
+    expect(parseWeights(null)).toEqual(DEFAULT_WEIGHTS);
+    expect(formatWeights({ dps: 1, stamina: 2, reach: 3 })).toBe('1,2,3');
   });
 });
