@@ -68,3 +68,16 @@ export function damageVs(
     ]),
   );
 }
+
+/**
+ * The share of a weapon's listed damage one hit does at a skill level (0 to 100). Each hit rolls
+ * uniformly between min and max: lerp(0.4, 1, skill / 100) give or take 0.15, clamped to 0..1
+ * (Skills.GetRandomSkillRange). The in-game "(15-27)" next to the damage is damage * min to damage * max.
+ */
+export function skillRange(level: number): { min: number; max: number; mean: number } {
+  const factor = Math.min(1, Math.max(0, level / 100));
+  const centre = 0.4 + 0.6 * factor;
+  const min = Math.min(1, Math.max(0, centre - 0.15));
+  const max = Math.min(1, Math.max(0, centre + 0.15));
+  return { min, max, mean: (min + max) / 2 };
+}

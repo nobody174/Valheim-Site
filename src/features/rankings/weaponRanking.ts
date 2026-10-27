@@ -6,6 +6,7 @@ import {
   damageVs,
   isRankable,
   maxQuality,
+  skillRange,
   weaponGroup,
 } from '../../data/weaponStats';
 import { DEFAULT_WEIGHTS, type RatingWeights } from './weights';
@@ -36,6 +37,8 @@ export interface WeaponRow {
   zoneOrder: number;
   /** Combat damage of one hit summed over all damage types, at the chosen upgrade level. */
   total: number;
+  /** With a skill level: the lowest and highest one hit can do (the game's bracketed range). */
+  range?: [number, number];
   damage: Record<string, number>;
   /** Damage of a whole combo: one hit times the combo's multipliers. */
   combo?: number;
@@ -70,7 +73,8 @@ export const defaultDir = (sort: SortKey): SortDir =>
  * Every weapon that deals combat damage, with its stats at an upgrade level. With a creature, the
  * damage of each type is scaled by that creature's resistances.
  */
-export function weaponRows(quality = 1, creatureId = ''): WeaponRow[] {
+export function weaponRows(quality = 1, creatureId = '', skill?: number): WeaponRow[] {
+  const factor = skill === undefined ? undefined : skillRange(skill);
   const order = new Map(lookup.allBiomes().map((b) => [b.id, b.order]));
   const target = creatureId ? (lookup.creature(creatureId) ?? lookup.boss(creatureId)) : undefined;
   return lookup
@@ -79,8 +83,11 @@ export function weaponRows(quality = 1, creatureId = ''): WeaponRow[] {
     .map((w) => {
       const item = lookup.item(w.item);
       const zoneId = item?.biome ?? null;
-      const damage = damageVs(combatDamage(w, quality), target?.resistances);
-      const total = Object.values(damage).reduce((a, b) => a + b, 0);
+      const full = damageVs(combatDamage(w, quality), target?.resistances);
+      const fullTotal = Object.values(full).reduce((a, b) => a + b, 0);
+      const mean = factor?.mean ?? 1;
+      const damage = Object.fromEntries(Object.entries(full).map(([t, v]) => [t, v * mean]));
+      const total = fullTotal * mean;
       const row: WeaponRow = {
         id: w.item,
         name: item?.name ?? w.item,
@@ -89,6 +96,7 @@ export function weaponRows(quality = 1, creatureId = ''): WeaponRow[] {
         zoneName: lookup.biomeName(zoneId) ?? 'Unknown zone',
         zoneOrder: zoneId ? (order.get(zoneId) ?? Infinity) : Infinity,
         total,
+        range: factor ? [fullTotal * factor.min, fullTotal * factor.max] : undefined,
         damage,
         knockback: w.knockback,
         durability: w.durability,

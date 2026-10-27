@@ -90,7 +90,15 @@ function WeaponTable({
                 <div className={styles.kind}>{r.group}</div>
               </td>
               <td>{r.zoneName}</td>
-              <td className={styles.damage}>{num(r.total)}</td>
+              <td className={styles.damage}>
+                {num(r.total)}
+                {r.range && (
+                  <span className={styles.range}>
+                    {' '}
+                    ({num(r.range[0])}-{num(r.range[1])})
+                  </span>
+                )}
+              </td>
               <td className={itemStyles.hideOnMobile}>{one(r.combo, 0)}</td>
               <td className={itemStyles.hideOnMobile}>{one(r.perStamina)}</td>
               <td className={styles.estimate}>{one(r.dps, 0)}</td>
@@ -126,6 +134,8 @@ export function WeaponRankings() {
   const sort = oneOf(params.get('sort'), SORT_KEYS, 'damage');
   const dir = oneOf(params.get('dir'), ['asc', 'desc'] as const, defaultDir(sort));
   const creature = params.get('vs') ?? '';
+  const skillParam = params.get('skill');
+  const skill = skillParam === null || skillParam === '' ? undefined : Math.min(100, Math.max(0, Number(skillParam) || 0));
   const weightsParam = params.get('w');
   const weights = useMemo(() => parseWeights(weightsParam), [weightsParam]);
   const top = topQuality();
@@ -148,11 +158,11 @@ export function WeaponRankings() {
 
   const rows = useMemo(
     () =>
-      filterAndSort(weaponRows(quality, creature), { group, zone, upTo, text, sort, dir, weights }),
-    [quality, creature, group, zone, upTo, text, sort, dir, weights],
+      filterAndSort(weaponRows(quality, creature, skill), { group, zone, upTo, text, sort, dir, weights }),
+    [quality, creature, skill, group, zone, upTo, text, sort, dir, weights],
   );
   const groups = view === 'zones' ? groupByZone(rows) : [];
-  const filtered = Boolean(zone || group || text || quality > 1 || creature || weightsParam);
+  const filtered = Boolean(zone || group || text || quality > 1 || creature || skill !== undefined || weightsParam);
   const zoneName = lookup.biomeName(zone || null);
 
   return (
@@ -201,6 +211,17 @@ export function WeaponRankings() {
               </option>
             ))}
           </select>
+        </label>
+        <label>
+          Weapon skill
+          <input
+            type="number"
+            min={0}
+            max={100}
+            placeholder="off"
+            value={skillParam ?? ''}
+            onChange={(e) => set({ skill: e.target.value })}
+          />
         </label>
         <label>
           Against
@@ -303,6 +324,13 @@ export function WeaponRankings() {
             and pickaxe damage only affect trees and rock and are left out. Against a creature, each
             type is multiplied by its resistance: very weak ×2, weak ×1.5, resistant ×0.5, very
             resistant ×0.25, immune ×0.
+          </li>
+          <li>
+            <strong>Weapon skill</strong> is off by default, so numbers are the listed damage (the
+            first number in the game&apos;s tooltip). Enter a skill level (0 to 100) and every hit
+            is scaled by a random roll between lerp(0.4, 1, skill ÷ 100) − 0.15 and + 0.15. The table
+            then shows the average and, in brackets, the lowest and highest hit, like the game&apos;s
+            &quot;(15-27)&quot;. One level is applied to every weapon type here.
           </li>
           <li>
             <strong>Per combo</strong> = per hit × the combo multiplier. Every swing counts the
