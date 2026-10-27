@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate } from 'react-router';
 import { lookup } from '../../data/lookup';
 import { getRecent } from '../../state/recent';
 import { search } from './instance';
-import { hitPath, SearchResults } from './SearchResults';
+import { SearchResults } from './SearchResults';
 import type { SearchGroup } from './search';
+import { useHitKeys } from './useHitKeys';
 import styles from './Search.module.css';
 
 /** Recent items shown as a single group when the query is empty. */
@@ -25,14 +25,12 @@ function recentGroups(): SearchGroup[] {
 
 export function CommandPalette({ onClose }: { onClose: () => void }) {
   const [query, setQuery] = useState('');
-  const [active, setActive] = useState(0);
   const input = useRef<HTMLInputElement>(null);
   const opener = useRef<Element | null>(document.activeElement);
-  const navigate = useNavigate();
 
   const groups = useMemo(() => (query.trim() ? search(query) : recentGroups()), [query]);
   const flat = groups.flatMap((g) => g.hits);
-  const activeHit = flat[Math.min(active, flat.length - 1)];
+  const { activeHit, handleKey, resetActive } = useHitKeys(flat, onClose);
 
   useEffect(() => {
     input.current?.focus();
@@ -46,16 +44,8 @@ export function CommandPalette({ onClose }: { onClose: () => void }) {
     if (e.key === 'Escape') {
       e.preventDefault();
       onClose();
-    } else if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      setActive((a) => Math.min(a + 1, flat.length - 1));
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      setActive((a) => Math.max(a - 1, 0));
-    } else if (e.key === 'Enter' && activeHit) {
-      e.preventDefault();
-      navigate(hitPath(activeHit));
-      onClose();
+    } else {
+      handleKey(e);
     }
   };
 
@@ -78,7 +68,7 @@ export function CommandPalette({ onClose }: { onClose: () => void }) {
           aria-label="Search"
           onChange={(e) => {
             setQuery(e.target.value);
-            setActive(0);
+            resetActive();
           }}
         />
         <div className={styles.results}>

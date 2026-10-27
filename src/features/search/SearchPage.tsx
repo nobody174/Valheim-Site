@@ -6,6 +6,7 @@ import { lookup } from '../../data/lookup';
 import { getRecent } from '../../state/recent';
 import { search } from './instance';
 import { SearchResults } from './SearchResults';
+import { useHitKeys } from './useHitKeys';
 import styles from './Search.module.css';
 
 const QUICK = ['weapon', 'armor', 'food', 'material', 'trophy', 'tool'];
@@ -15,6 +16,7 @@ export function SearchPage() {
   const [query, setQuery] = useState('');
   const groups = useMemo(() => search(query, 20), [query]);
   const searching = query.trim().length > 0;
+  const { activeHit, handleKey, resetActive } = useHitKeys(groups.flatMap((g) => g.hits));
   const recent = useMemo(
     () =>
       getRecent()
@@ -33,7 +35,11 @@ export function SearchPage() {
         placeholder="Search items, creatures, bosses, stations"
         aria-label="Search"
         autoFocus
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          resetActive();
+        }}
+        onKeyDown={handleKey}
       />
       <p className={styles.hint}>
         Tip: press <kbd>Ctrl</kbd>+<kbd>K</kbd> or <kbd>/</kbd> on any page to search.
@@ -41,7 +47,7 @@ export function SearchPage() {
 
       {searching ? (
         <>
-          <SearchResults groups={groups} />
+          <SearchResults groups={groups} activeKey={activeHit?.key} />
           {groups.length === 0 && (
             <p className={styles.empty}>
               Nothing found for &quot;{query.trim()}&quot;. Try a shorter word, or{' '}
