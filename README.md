@@ -47,4 +47,6 @@ See `docs/ARCHITECTURE.md`. Working agreement for Claude Code is in `CLAUDE.md`.
 ## Disclaimer
 
 Fan-made, non-commercial, for personal use. Valheim is by Iron Gate Studio and Coffee Stain
-Publishing. No game art is included in this repository.
+Publishing. The item and station icons in `src/assets/icons/` are Iron Gate's game art, exported from the
+owner's own install for this personal fan project; they are not licensed for reuse. Everything else is
+original.

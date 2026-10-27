@@ -51,5 +51,5 @@ reviews the live site before the next phase starts.
 | Scope too large for one run | Phases with checkpoints, one phase step per session |
 | Pages is public | Accepted. Progress lives only in the owner's browser. No secrets in the repo |
 | Game patch changes data | `meta.json` version, data-only update workflow, update log (Phase 5) |
-| Game art copyright | No game art committed; generated glyphs; optional git-ignored local icons |
+| Game art copyright | Owner chose to commit the real item icons (64 px) in `src/assets/icons/`; not licensed for reuse, README says so; nothing else from the game's art is committed |
 | Graph performance with full data | Show a focused neighbourhood by default (depth 2), expand on demand |

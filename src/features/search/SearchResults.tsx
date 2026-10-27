@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { EntityIcon } from '../../components/EntityIcon';
 import { entityPath } from '../../components/EntityLink';
 import type { EntityKind } from '../../data/lookup';
 import type { SearchDoc, SearchGroup, SearchGroupKey } from './search';
@@ -38,7 +39,10 @@ export function SearchResults({
               className={h.key === activeKey ? `${styles.hit} ${styles.active}` : styles.hit}
               onClick={onPick}
             >
-              {h.name}
+              <span className={styles.hitName}>
+                <EntityIcon id={h.id} size={24} />
+                {h.name}
+              </span>
               <span className={styles.id}>{h.id}</span>
             </Link>
           ))}

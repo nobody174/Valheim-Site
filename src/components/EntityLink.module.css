@@ -30,3 +30,18 @@
   color: var(--text);
   font-weight: 400;
 }
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+.headText {
+  display: flex;
+  flex-direction: column;
+}
+/* The link sits inline with its icon, which hangs to the left of the name. */
+.name {
+  margin-left: 0.3rem;
+}

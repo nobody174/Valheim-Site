@@ -1,4 +1,5 @@
 import { useParams } from 'react-router';
+import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { VerifiedBadge } from '../../components/Badges';
 import { lookup } from '../../data/lookup';
@@ -87,7 +88,10 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
   const biome = lookup.biomeName(monster.biome);
   return (
     <article className={styles.page}>
-      <h1>{monster.name}</h1>
+      <header className={styles.title}>
+        <EntityIcon id={monster.id} size={56} />
+        <h1>{monster.name}</h1>
+      </header>
       <div className={styles.badges}>
         <span className={styles.dim}>{boss ? 'Boss' : 'Creature'}</span>
         {biome && <span className={styles.dim}>· {biome}</span>}
@@ -165,7 +169,10 @@ export function StationPage() {
   const recipes = lookup.recipesAt(id);
   return (
     <article className={styles.page}>
-      <h1>{station.name}</h1>
+      <header className={styles.title}>
+        <EntityIcon id={station.id} size={56} />
+        <h1>{station.name}</h1>
+      </header>
       <div className={styles.badges}>
         <span className={styles.dim}>Crafting station</span>
         <VerifiedBadge level={station.verified} note={station.note} />

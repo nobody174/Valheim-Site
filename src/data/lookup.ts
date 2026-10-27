@@ -64,6 +64,10 @@ export function createLookup(data: GameData) {
     allBiomes: () => data.biomes,
     allRecipes: () => data.recipes,
     allWeapons: () => data.weapons,
+    allStations: () => data.stations,
+    /** The trophy item a creature drops, if the data links one. */
+    trophyOf: (creatureId: string): string | undefined =>
+      data.trophies.find((t) => t.creature === creatureId)?.item,
     /** Creatures and bosses that drop this item, by id. */
     droppedBy: (itemId: string) =>
       [...data.creatures, ...data.bosses].filter((m) => m.drops.some((d) => d.item === itemId)),
