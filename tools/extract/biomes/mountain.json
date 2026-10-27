@@ -1,0 +1,127 @@
+{
+  "id": "mountain",
+  "name": "Mountains",
+  "order": 4,
+  "materials": [
+    "SilverOre",
+    "Silver",
+    "Crystal",
+    "Obsidian",
+    "FreezeGland",
+    "WolfPelt",
+    "WolfMeat",
+    "WolfFang",
+    "WolfHairBundle",
+    "WolfClaw",
+    "DragonEgg",
+    "DragonTear"
+  ],
+  "tools": [],
+  "weapons": [
+    "SwordSilver",
+    "KnifeSilver",
+    "MaceSilver",
+    "BattleaxeCrystal",
+    "SpearWolfFang",
+    "BowDraugrFang",
+    "FistFenrirClaw",
+    "ShieldSilver",
+    "ArrowSilver",
+    "ArrowFrost",
+    "ArrowObsidian",
+    "ArrowPoison"
+  ],
+  "armor": {
+    "ArmorWolfChest": "chest",
+    "ArmorWolfLegs": "legs",
+    "HelmetDrake": "helmet",
+    "CapeWolf": "cape",
+    "ArmorFenringChest": "chest",
+    "ArmorFenringLegs": "legs"
+  },
+  "foods": [
+    "CookedWolfMeat",
+    "WolfJerky",
+    "Eyescream"
+  ],
+  "meads": [],
+  "trophies": [
+    "TrophyWolf",
+    "TrophyHatchling",
+    "TrophySGolem",
+    "TrophyFenring",
+    "TrophyDragonQueen"
+  ],
+  "creatures": [
+    "Wolf",
+    "Hatchling",
+    "StoneGolem",
+    "Fenring"
+  ],
+  "bosses": [
+    "Dragon"
+  ],
+  "bossSummon": {
+    "Dragon": [
+      [
+        "DragonEgg",
+        3
+      ]
+    ]
+  },
+  "gather": {
+    "SilverOre": [
+      [
+        "gather",
+        "Mine silver veins in the Mountains (the Wishbone, dropped by Bonemass, helps find them). Smelt it into Silver."
+      ]
+    ],
+    "Obsidian": [
+      [
+        "gather",
+        "Mine obsidian deposits in the Mountains."
+      ]
+    ],
+    "DragonEgg": [
+      [
+        "gather",
+        "Pick up from dragon nests high in the Mountains (guides). Three summon Moder; the altar cost is not in the extracted data."
+      ]
+    ],
+    "DragonTear": [
+      [
+        "other",
+        "Dropped by Moder (10)."
+      ]
+    ],
+    "WolfHairBundle": [
+      [
+        "other",
+        "Source not confirmed: no creature drops it in the game files. Check in game."
+      ]
+    ],
+    "WolfClaw": [
+      [
+        "other",
+        "Source not confirmed: no creature drops it in the game files. Check in game."
+      ]
+    ]
+  },
+  "hoard": {
+    "keepSome": {},
+    "mustKeep": [
+      "Silver",
+      "SilverOre",
+      "DragonEgg",
+      "DragonTear",
+      "Crystal",
+      "Obsidian",
+      "WolfPelt",
+      "WolfFang",
+      "FreezeGland"
+    ]
+  },
+  "guide": {
+    "notes": []
+  }
+}

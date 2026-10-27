@@ -48,6 +48,34 @@
     "maxQuality": 4
   },
   {
+    "item": "ArmorFenringChest",
+    "slot": "chest",
+    "armor": 10.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "fenring_armor",
+    "setSize": 3,
+    "setEffect": "The Fenris armour makes you quick on your feet so you can pass through fire, and your fists feel the power of the beast.",
+    "armorPerLevel": 2.0,
+    "movementModifier": 0.03,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorFenringLegs",
+    "slot": "legs",
+    "armor": 10.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "fenring_armor",
+    "setSize": 3,
+    "setEffect": "The Fenris armour makes you quick on your feet so you can pass through fire, and your fists feel the power of the beast.",
+    "armorPerLevel": 2.0,
+    "movementModifier": 0.03,
+    "maxQuality": 4
+  },
+  {
     "item": "ArmorIronChest",
     "slot": "chest",
     "armor": 14.0,
@@ -164,6 +192,28 @@
     "maxQuality": 4
   },
   {
+    "item": "ArmorWolfChest",
+    "slot": "chest",
+    "armor": 20.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorWolfLegs",
+    "slot": "legs",
+    "armor": 20.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
     "item": "CapeDeerHide",
     "slot": "cape",
     "armor": 1.0,
@@ -187,6 +237,16 @@
     "maxQuality": 4
   },
   {
+    "item": "CapeWolf",
+    "slot": "cape",
+    "armor": 1.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 1.0,
+    "maxQuality": 4
+  },
+  {
     "item": "HelmetBerserkerHood",
     "slot": "helmet",
     "armor": 7.0,
@@ -203,6 +263,16 @@
     "item": "HelmetBronze",
     "slot": "helmet",
     "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "HelmetDrake",
+    "slot": "helmet",
+    "armor": 20.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 1000.0,

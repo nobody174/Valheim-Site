@@ -19,5 +19,12 @@
     "order": 3,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "mountain",
+    "name": "Mountains",
+    "order": 4,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   }
 ]

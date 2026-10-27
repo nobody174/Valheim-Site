@@ -794,5 +794,193 @@
       "fire": "resistant",
       "poison": "immune"
     }
+  },
+  {
+    "id": "Wolf",
+    "name": "Wolf",
+    "biome": "mountain",
+    "health": 80.0,
+    "drops": [
+      {
+        "item": "TrophyWolf",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "WolfMeat",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "WolfPelt",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "WolfFang",
+        "min": 1,
+        "max": 1,
+        "chance": 0.4
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Wolf_Attack1",
+        "damage": {
+          "slash": 70.0
+        }
+      },
+      {
+        "id": "Wolf_Attack2",
+        "damage": {
+          "slash": 70.0
+        }
+      },
+      {
+        "id": "Wolf_Attack3",
+        "damage": {
+          "slash": 70.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Hatchling",
+    "name": "Drake",
+    "biome": "mountain",
+    "health": 100.0,
+    "drops": [
+      {
+        "item": "TrophyHatchling",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "FreezeGland",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "attacks": [
+      {
+        "id": "hatchling_spit_cold",
+        "damage": {
+          "frost": 90.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "weak",
+      "frost": "immune",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "StoneGolem",
+    "name": "Stone Golem",
+    "biome": "mountain",
+    "health": 800.0,
+    "drops": [
+      {
+        "item": "TrophySGolem",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      },
+      {
+        "item": "Stone",
+        "min": 5,
+        "max": 10
+      },
+      {
+        "item": "Crystal",
+        "min": 8,
+        "max": 12
+      }
+    ],
+    "attacks": [
+      {
+        "id": "stonegolem_attack1_spike",
+        "damage": {
+          "pierce": 110.0
+        }
+      },
+      {
+        "id": "stonegolem_attack3_spikesweep",
+        "damage": {
+          "blunt": 110.0
+        }
+      },
+      {
+        "id": "stonegolem_attack2_left_groundslam",
+        "damage": {
+          "blunt": 110.0
+        }
+      },
+      {
+        "id": "stonegolem_attack_doublesmash",
+        "damage": {
+          "blunt": 110.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "slash": "resistant",
+      "pierce": "resistant",
+      "fire": "immune",
+      "frost": "immune",
+      "poison": "immune",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Fenring",
+    "name": "Fenring",
+    "biome": "mountain",
+    "health": 300.0,
+    "drops": [
+      {
+        "item": "WolfFang",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "TrophyFenring",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Fenring_attack_claw",
+        "damage": {
+          "slash": 85.0
+        }
+      },
+      {
+        "id": "Fenring_attack_jump",
+        "damage": {
+          "slash": 95.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "weak",
+      "poison": "resistant"
+    }
   }
 ]

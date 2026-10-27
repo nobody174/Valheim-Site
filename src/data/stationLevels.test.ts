@@ -38,16 +38,17 @@ describe('stationLevels', () => {
     const wb = rows('piece_workbench');
     expect(wb[2]!.extensionsNeeded).toBe(2);
     expect(wb[2]!.reachable).toBe(true); // 3 known extensions
-    expect(wb[4]!.reachable).toBe(false); // level 5 needs the Tool Shelf (Iron, not added yet)
+    const known = lookup.station('piece_workbench')!.extensions.length;
+    for (const r of wb) expect(r.reachable).toBe(r.level - 1 <= known);
   });
 
   it('knows the cauldron has later-zone extensions beyond the Spice Rack', () => {
     const c = lookup.station('piece_cauldron')!;
-    expect(c.extensions.map((e) => e.name)).toEqual(['Spice Rack']);
+    expect(c.extensions.map((e) => e.name)).toContain('Spice Rack');
     expect(c.laterExtensions.map((e) => e.name)).toContain('Smoker');
     const levels = stationLevels(c, lookup.allRecipes());
     expect(levels.length).toBeGreaterThanOrEqual(6);
-    expect(levels[1]!.reachable).toBe(true);
-    expect(levels[2]!.reachable).toBe(false);
+    for (const l of levels) expect(l.reachable).toBe(l.level - 1 <= c.extensions.length);
+    expect(levels.at(-1)!.reachable).toBe(false);
   });
 });
