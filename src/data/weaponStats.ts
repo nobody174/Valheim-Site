@@ -45,3 +45,26 @@ export const isRankable = (w: Weapon): boolean => totalCombatDamage(w) > 0;
 
 /** The weapon type shown in filters: its skill, with ammunition kept apart from the bows. */
 export const weaponGroup = (w: Weapon): string => (isAmmo(w) ? AMMO_GROUP : w.skill);
+
+/** How a creature's resistance label scales damage of that type (the game's damage modifiers). */
+const RESISTANCE_FACTOR: Record<string, number> = {
+  'very weak': 2,
+  weak: 1.5,
+  resistant: 0.5,
+  'very resistant': 0.25,
+  immune: 0,
+  ignore: 0,
+};
+
+/** Damage per type after a creature's resistances; unknown or missing labels count as normal. */
+export function damageVs(
+  damage: Record<string, number>,
+  resistances: Record<string, string> | undefined,
+): Record<string, number> {
+  return Object.fromEntries(
+    Object.entries(damage).map(([type, value]) => [
+      type,
+      value * (RESISTANCE_FACTOR[resistances?.[type] ?? ''] ?? 1),
+    ]),
+  );
+}

@@ -51,12 +51,52 @@ def load_configs():
     return sorted(configs, key=lambda c: c['order'])
 
 
+def attack_of(shared, timing):
+    """Primary attack settings of a melee weapon, with the raw animation timing when it was dumped.
+
+    Timing is stored as the game's own numbers (clip length, exit time, playback-speed events, the
+    point where the next chain attack may start). Attacks per second are derived in the app.
+    """
+    at = shared['m_attack']
+    anim = at['m_attackAnimation']
+    if not anim or at['m_attackType'] == 2:  # no animation (shields, ammo) or a bow
+        return None
+    chain = max(1, at['m_attackChainLevels'])
+    out = {'animation': anim, 'chainLevels': chain, 'staminaPerHit': at['m_attackStamina'],
+           'damageMultiplier': at['m_damageMultiplier']}
+    if chain > 1:
+        out['lastChainMultiplier'] = at['m_lastChainDamageMultiplier']
+    if at['m_attackRange']:
+        out['rangeM'] = round(at['m_attackRange'], 3)
+    triggers = [f'{anim}{i}' for i in range(chain)] if chain > 1 else [anim]
+    clips = [timing.get(t) for t in triggers]
+    if timing and all(clips):
+        steps = []
+        for c in clips:
+            step = {'lengthSec': round(c['lengthSec'], 4), 'stateSpeed': c['stateSpeed']}
+            if c['exitTime']:
+                step['exitTime'] = round(c['exitTime'], 4)
+            chain_at = next((e['t'] for e in c['events'] if e['fn'] == 'Chain'), None)
+            if chain_at is not None:
+                step['chainAt'] = round(chain_at, 4)
+            step['speedEvents'] = [{'at': round(e['t'], 4), 'factor': round(e['f'], 4)}
+                                   for e in c['events'] if e['fn'] == 'Speed']
+            steps.append(step)
+        out['timing'] = {
+            'steps': steps, 'verified': 'unverified',
+            'note': 'Raw numbers from the player animation clips. How they turn into attacks per second '
+                    'is an estimate that has not been checked in game.',
+        }
+    return out
+
+
 def main(raw, out, build_id, reviewed=None):
     reviewed = reviewed or date.today().isoformat()
     configs = load_configs()
     warnings = []
 
     refs = load(raw, 'refs.json')
+    timing = load(raw, 'attack_timing.json') if os.path.exists(os.path.join(raw, 'attack_timing.json')) else {}
     go_name = {int(k): v for k, v in refs['gameObjects'].items()}
     comp_go = {int(k): v for k, v in refs['components'].items()}
 
@@ -393,6 +433,10 @@ def main(raw, out, build_id, reviewed=None):
                 w['durability'] = dur
             if s.get('m_maxQuality', 1) > 1:
                 w['maxQuality'] = s['m_maxQuality']
+            if any(k not in ('chop', 'pickaxe') for k in dmg):
+                attack = attack_of(s, timing)
+                if attack:
+                    w['attack'] = attack
             weapons.append(w)
         elif cat == 'armor':
             a = {'item': iid, 'slot': armor_slot[iid], 'armor': s['m_armor'], **prov}
@@ -406,6 +450,8 @@ def main(raw, out, build_id, reviewed=None):
                 effect = english(set_se.get('m_tooltip', ''), '') if set_se else ''
                 if effect:
                     a['setEffect'] = effect
+            if s.get('m_armorPerLevel'):
+                a['armorPerLevel'] = s['m_armorPerLevel']
             if s['m_movementModifier']:
                 a['movementModifier'] = round(s['m_movementModifier'], 4)
             if s.get('m_maxQuality', 1) > 1:

@@ -45,10 +45,25 @@ Acceptance:
   upgrade cost. Presets: Tank, Exploration, Mage, Light, Heavy, each with a documented rule.
 - Mark values "approximate" where attack timing or other inputs are not verified.
 
+Built (Rankings page, `/rankings`, tabs Weapons and Armor):
+- Weapons: per hit, per combo, per stamina, estimated DPS, reach, rating, damage types,
+  knockback, durability. Filters: zone (with "include earlier zones"), type, upgrade level,
+  name, "vs creature". "Best in each zone" view. Rating weights are editable and live in the URL.
+- Armor: armor at upgrade level, weight, speed, set, craft and upgrade cost. Presets: Tank,
+  Exploration, Light, Set bonus.
+- Not built, on purpose: repair cost (not in the data), Mage and Heavy presets (no Eitr armor until
+  Mistlands; Heavy would equal Tank), "tier" filter (zone is the tier in this data).
+
 Acceptance:
-- [ ] Every ranking number is derived in code from raw stats; nothing computed is stored
-- [ ] Formulas are documented in the UI and tested with known inputs
-- [ ] Filters and sorting are instant
+- [x] Every ranking number is derived in code from raw stats; nothing computed is stored
+  (`src/data/attackModel.ts`, `src/data/weaponStats.ts`, `src/features/rankings/`). The data only
+  holds the game's own clip timings and attack settings.
+- [x] Formulas are documented in the UI ("How these numbers are calculated") and tested with known
+  inputs (`attackModel.test.ts`, `weaponRanking.test.ts`, `armorRanking.test.ts`)
+- [x] Filters and sorting are instant (everything is computed in memory from a few dozen rows)
+- [ ] **Owner to verify in game:** the DPS estimate. Attack timing is `unverified`. Compare how
+  long a bronze sword, axe and spear combo takes in game with the page, and tell me which
+  weapons are off so the model can be corrected.
 
 ## Step 4 - Optimizer, upgrade calculator, compare
 

@@ -44,7 +44,8 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 - Station levels: the game defines levels by how many distinct extensions are near the station; the data lists the extensions (with cost and range) and each recipe's minimum level, but not a per-level table. Extensions that need items from biomes not added yet are skipped until those biomes are configured.
 - Station build cost is empty for stations that need items from later biomes (for example the smelter needs a Swamp item).
 - Smelting fuel and capacity, cooking overcook times, and fermenting yields are not extracted.
-- Creature damage is the raw damage of each attack at level 1 with no difficulty scaling; attack timing (for DPS, Phase 3) is not extracted.
+- Creature damage is the raw damage of each attack at level 1 with no difficulty scaling; creature attack timing is not extracted.
+- Weapon attack settings (stamina, combo length, last-swing multiplier, reach) come from the item files. Weapon attack timing (clip length, exit time, chain point, playback-speed events) is read from the player animator by `tools/extract/extract_attack_timing.py` and stored raw in `data/weapons.json` as `attack.timing`, flagged `unverified`. How the app turns it into attacks per second is an estimate (see ARCHITECTURE.md) and has not been compared with the game yet. Bows have no timing because drawing depends on skill.
 - Meads: effect text and over-time numbers are read from the status effect. Effects with several parts (resistances, regeneration multipliers) are only described by their in-game text.
 - Biome assignment of items, hoard defaults, gather sources and boss summon items are curated by hand in `tools/extract/biomes/*.json`. Creature biomes are cross-checked against the game's spawn tables on every build.
 - Creatures can spawn in more than one biome (for example Deer, Greydwarf); the data keeps one home biome per creature.

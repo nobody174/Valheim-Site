@@ -19,3 +19,7 @@ Thumbs.db
 .env
 .env.*
 *.log
+
+# Python bytecode from tools/extract
+__pycache__/
+*.pyc

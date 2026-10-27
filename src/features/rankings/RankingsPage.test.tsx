@@ -29,7 +29,7 @@ describe('weapon rankings page', () => {
   it('lists the strongest weapon first', () => {
     renderPage();
     expect(names()[0]).toBe('Bronze Atgeir');
-    expect(screen.getByText(/not damage per second/i)).toBeTruthy();
+    expect(screen.getByText(/DPS ≈ is an estimate/)).toBeTruthy();
   });
 
   it('shows the best weapon for a zone, including earlier zones by default', async () => {
@@ -71,6 +71,44 @@ describe('weapon rankings page', () => {
     expect(screen.getByRole('cell', { name: '35' })).toBeTruthy();
     await user.selectOptions(screen.getByLabelText('Upgrade level'), '4');
     expect(screen.getByRole('cell', { name: '53' })).toBeTruthy();
+  });
+
+  it('shows the estimate columns and how they are calculated', () => {
+    renderPage('/rankings?q=bronze%20sword');
+    expect(screen.getByRole('columnheader', { name: /DPS ≈/ })).toBeTruthy();
+    expect(screen.getByRole('cell', { name: '140' })).toBeTruthy(); // damage per combo
+    expect(screen.getByText('How these numbers are calculated')).toBeTruthy();
+  });
+
+  it("applies a creature's resistances", async () => {
+    const user = userEvent.setup();
+    renderPage('/rankings?q=club');
+    expect(screen.getByRole('cell', { name: '12' })).toBeTruthy();
+    await user.selectOptions(screen.getByLabelText('Against'), 'Troll');
+    expect(screen.getByRole('cell', { name: '6' })).toBeTruthy();
+  });
+
+  it('lets the rating weights be changed', async () => {
+    const user = userEvent.setup();
+    renderPage();
+    const ratings = () =>
+      within(screen.getAllByRole('table')[0]!)
+        .getAllByRole('row')
+        .slice(1)
+        .map((r) => within(r).getAllByRole('cell')[8]!.textContent);
+    const before = ratings();
+    const input = screen.getByLabelText(/Damage per second \(estimate\)/);
+    await user.clear(input);
+    await user.type(input, '0');
+    expect(ratings()).not.toEqual(before);
+  });
+
+  it('switches to the armor tab', async () => {
+    const user = userEvent.setup();
+    renderPage();
+    await user.click(screen.getByRole('tab', { name: 'Armor' }));
+    expect(screen.getByRole('button', { name: 'Tank' })).toBeTruthy();
+    expect(screen.getByText(/Armor pieces side by side/)).toBeTruthy();
   });
 
   it('says so when nothing matches', async () => {

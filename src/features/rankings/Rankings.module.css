@@ -38,3 +38,63 @@
   height: 1.1rem;
   accent-color: var(--gold);
 }
+.estimate {
+  color: var(--amber);
+  font-variant-numeric: tabular-nums;
+}
+.warn {
+  margin: 0.75rem 0;
+  padding: 0.5rem 0.75rem;
+  color: var(--amber);
+  border-left: 3px solid var(--amber);
+  background: var(--bg-1);
+}
+.weights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.weights label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+.weights input {
+  width: 6rem;
+  padding: 0.4rem 0.6rem;
+  color: var(--text);
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.formulas {
+  display: grid;
+  gap: 0.6rem;
+  padding-left: 1.2rem;
+  line-height: 1.45;
+}
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+.tab {
+  padding: 0.5rem 1rem;
+  color: var(--text);
+  font: inherit;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.tab[aria-selected='true'] {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.rule {
+  margin: 0.25rem 0 0.75rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}

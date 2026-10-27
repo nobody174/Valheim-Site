@@ -6,6 +6,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 1000.0,
+    "armorPerLevel": 2.0,
     "movementModifier": -0.05,
     "maxQuality": 4
   },
@@ -16,6 +17,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 1000.0,
+    "armorPerLevel": 2.0,
     "movementModifier": -0.05,
     "maxQuality": 4
   },
@@ -26,6 +28,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 400.0,
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   },
   {
@@ -35,6 +38,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 400.0,
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   },
   {
@@ -44,6 +48,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 200.0,
+    "armorPerLevel": 1.0,
     "maxQuality": 2
   },
   {
@@ -53,6 +58,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 200.0,
+    "armorPerLevel": 1.0,
     "maxQuality": 2
   },
   {
@@ -65,6 +71,7 @@
     "setName": "troll",
     "setSize": 4,
     "setEffect": "Makes you more sneaky.",
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   },
   {
@@ -77,6 +84,7 @@
     "setName": "troll",
     "setSize": 4,
     "setEffect": "Makes you more sneaky.",
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   },
   {
@@ -86,6 +94,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 400.0,
+    "armorPerLevel": 1.0,
     "maxQuality": 4
   },
   {
@@ -98,6 +107,7 @@
     "setName": "troll",
     "setSize": 4,
     "setEffect": "Makes you more sneaky.",
+    "armorPerLevel": 1.0,
     "maxQuality": 4
   },
   {
@@ -107,6 +117,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 1000.0,
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   },
   {
@@ -116,6 +127,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 400.0,
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   },
   {
@@ -128,6 +140,7 @@
     "setName": "troll",
     "setSize": 4,
     "setEffect": "Makes you more sneaky.",
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   }
 ]
