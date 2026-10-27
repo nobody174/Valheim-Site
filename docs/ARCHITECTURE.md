@@ -82,7 +82,10 @@ Illustrative shapes (schema examples only, **not authoritative data**):
   "obtainedFrom": [                // typed sources, all ids
     { "type": "gather", "node": "..." },
     { "type": "drop", "creature": "..." },
-    { "type": "recipe", "recipe": "recipe.Iron" }
+    { "type": "recipe", "recipe": "recipe.Iron" },
+    { "type": "trader", "note": "Haldor, about 350 coins" },   // hand-written, unverified
+    { "type": "found", "note": "In chests in Burial Chambers" }, // hand-written, unverified
+    { "type": "other", "note": "free text" }
   ],
   "source": "docs/DATA_SOURCES.md#...",
   "verified": "unverified"         // unverified | cross-checked | in-game

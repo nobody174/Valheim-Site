@@ -28,3 +28,20 @@ describe('recipe completeness', () => {
     }
   });
 });
+
+describe('item sources', () => {
+  /** Items whose source nobody could confirm (no game file lists it and no guide was found). */
+  const KNOWN_GAPS = ['CarrotSeeds', 'ElderBark'];
+
+  it('every item says where to get it, except the documented gaps', () => {
+    const none = lookup
+      .allItems()
+      .filter((i) => i.obtainedFrom.length === 0 && !KNOWN_GAPS.includes(i.id))
+      .map((i) => i.id);
+    expect(none).toEqual([]);
+  });
+
+  it('the documented gaps are still gaps', () => {
+    for (const id of KNOWN_GAPS) expect(lookup.item(id)?.obtainedFrom, id).toHaveLength(0);
+  });
+});

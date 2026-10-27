@@ -41,7 +41,9 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 
 ## Known gaps
 
-- Station levels: the game defines levels by how many distinct extensions are near the station; the data lists the extensions (with cost and range) and each recipe's minimum level, but not a per-level table. Extensions that need items from biomes not added yet are skipped until those biomes are configured.
+- Station levels are computed in code from the extensions and each recipe's minimum level (see ARCHITECTURE.md). Extensions that need items from biomes not added yet are kept as `laterExtensions` (name and the missing items) until those biomes are configured.
+- Where to get an item: drops come from the game files; gather, trader, found and other notes are written by hand from public guides and are `unverified`. Two items have no source at all: Carrot Seeds and Elder Bark (a test lists them as known gaps). Where Haldor sells the Fishing Rod and bait, and the prices, differ between guides.
+- Raw Fish is made from any one fish at a Preparation Table. The data model has no "any one of" recipes, so the builder reports it (`anyOneOfNotModelled` in `tools/extract/dropped_recipes.json`) instead of writing a wrong recipe.
 - Station build cost is empty for stations that need items from later biomes (for example the smelter needs a Swamp item).
 - Smelting fuel and capacity, cooking overcook times, and fermenting yields are not extracted.
 - Creature damage is the raw damage of each attack at level 1 with no difficulty scaling; creature attack timing is not extracted.

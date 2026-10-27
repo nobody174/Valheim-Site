@@ -116,6 +116,30 @@
         "gather",
         "Grow from Carrot Seeds"
       ]
+    ],
+    "FineWood": [
+      [
+        "gather",
+        "Drops from birch and oak logs; guides say a Bronze Axe or better is needed. Also in some world structures."
+      ]
+    ],
+    "RoundLog": [
+      [
+        "gather",
+        "Chop pine trees; some world furniture also drops it."
+      ]
+    ],
+    "PineCone": [
+      [
+        "gather",
+        "Drops when you chop pine trees, not every time."
+      ]
+    ],
+    "Ruby": [
+      [
+        "found",
+        "In chests: Stone Graves and Viking graveyards in the Meadows, Burial Chambers in the Black Forest, and other dungeons and ruins."
+      ]
     ]
   },
   "hoard": {

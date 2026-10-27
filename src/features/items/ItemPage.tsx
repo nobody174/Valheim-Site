@@ -166,6 +166,8 @@ function WhereFound({ id }: { id: string }) {
         {sources.map((s, i) => {
           if (s.type === 'gather') return <li key={i}>Gathered from: {s.node}</li>;
           if (s.type === 'other') return <li key={i}>{s.note}</li>;
+          if (s.type === 'trader') return <li key={i}>Bought from: {s.note}</li>;
+          if (s.type === 'found') return <li key={i}>Found: {s.note}</li>;
           if (s.type === 'drop') {
             const monster = lookup.creature(s.creature) ?? lookup.boss(s.creature);
             const drop = monster?.drops.find((d) => d.item === id);

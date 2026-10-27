@@ -2887,6 +2887,28 @@
     "timeSec": 25.0
   },
   {
+    "id": "conv.piece_cookingstation.FishRaw",
+    "kind": "cook",
+    "output": {
+      "item": "FishCooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishRaw",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
     "id": "conv.piece_cookingstation.DeerMeat",
     "kind": "cook",
     "output": {
@@ -2900,6 +2922,28 @@
     "inputs": [
       {
         "item": "DeerMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.FishRaw",
+    "kind": "cook",
+    "output": {
+      "item": "FishCooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishRaw",
         "qty": 1
       }
     ],
