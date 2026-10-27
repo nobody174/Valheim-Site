@@ -123,7 +123,7 @@ export function ItemsPage() {
                 <th>Category</th>
                 <th>Biome</th>
                 <th>Hoard</th>
-                <th>Data</th>
+                <th className={styles.hideOnMobile}>Data</th>
               </tr>
             </thead>
             <tbody>
@@ -141,7 +141,7 @@ export function ItemsPage() {
                       custom={i.id in profile.hoardOverrides}
                     />
                   </td>
-                  <td>
+                  <td className={styles.hideOnMobile}>
                     <VerifiedBadge level={i.verified} note={i.note} />
                   </td>
                 </tr>

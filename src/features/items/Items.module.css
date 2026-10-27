@@ -352,3 +352,9 @@
     width: 3.2rem;
   }
 }
+
+@media (max-width: 700px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
