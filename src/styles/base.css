@@ -51,3 +51,12 @@ a:hover {
 .skip-link:focus {
   left: 0;
 }
+
+:root {
+  color-scheme: dark;
+}
+button,
+select,
+input {
+  font: inherit;
+}

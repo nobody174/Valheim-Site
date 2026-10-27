@@ -22,8 +22,19 @@
         "chance": 0.15
       }
     ],
+    "attacks": [
+      {
+        "id": "boar_base_attack",
+        "damage": {
+          "blunt": 10.0
+        }
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
   },
   {
     "id": "Deer",
@@ -48,8 +59,12 @@
         "chance": 0.5
       }
     ],
+    "attacks": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
   },
   {
     "id": "Neck",
@@ -70,8 +85,21 @@
         "chance": 0.05
       }
     ],
+    "attacks": [
+      {
+        "id": "Neck_BiteAttack",
+        "damage": {
+          "slash": 6.0
+        }
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "weak",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
   },
   {
     "id": "Greyling",
@@ -85,8 +113,21 @@
         "max": 1
       }
     ],
+    "attacks": [
+      {
+        "id": "Greyling_attack",
+        "damage": {
+          "slash": 5.0
+        }
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "very weak",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
   },
   {
     "id": "Greydwarf",
@@ -122,8 +163,27 @@
         "chance": 0.05
       }
     ],
+    "attacks": [
+      {
+        "id": "Greydwarf_attack",
+        "damage": {
+          "slash": 14.0
+        }
+      },
+      {
+        "id": "Greydwarf_throw",
+        "damage": {
+          "blunt": 10.0
+        }
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "very weak",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
   },
   {
     "id": "Greydwarf_Elite",
@@ -165,8 +225,21 @@
         "chance": 0.1
       }
     ],
+    "attacks": [
+      {
+        "id": "Greydwarf_elite_attack",
+        "damage": {
+          "slash": 30.0
+        }
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "very weak",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
   },
   {
     "id": "Greydwarf_Shaman",
@@ -202,8 +275,27 @@
         "max": 2
       }
     ],
+    "attacks": [
+      {
+        "id": "Greydwarf_shaman_attack",
+        "damage": {
+          "poison": 30.0
+        }
+      },
+      {
+        "id": "Greydwarf_attack",
+        "damage": {
+          "slash": 14.0
+        }
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "very weak",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
   },
   {
     "id": "Skeleton",
@@ -223,8 +315,29 @@
         "max": 1
       }
     ],
+    "attacks": [
+      {
+        "id": "skeleton_sword",
+        "damage": {
+          "slash": 25.0
+        }
+      },
+      {
+        "id": "skeleton_bow",
+        "damage": {
+          "pierce": 20.0
+        }
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "weak",
+      "pierce": "resistant",
+      "fire": "weak",
+      "frost": "resistant",
+      "poison": "immune"
+    }
   },
   {
     "id": "Troll",
@@ -249,34 +362,44 @@
         "max": 5
       }
     ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
-  },
-  {
-    "id": "Surtling",
-    "name": "Surtling",
-    "biome": "blackforest",
-    "health": 20.0,
-    "drops": [
+    "attacks": [
       {
-        "item": "Coal",
-        "min": 4,
-        "max": 5
+        "id": "troll_punch",
+        "damage": {
+          "blunt": 60.0
+        }
       },
       {
-        "item": "SurtlingCore",
-        "min": 1,
-        "max": 1,
-        "chance": 0.5
+        "id": "troll_groundslam",
+        "damage": {
+          "blunt": 70.0
+        }
       },
       {
-        "item": "TrophySurtling",
-        "min": 1,
-        "max": 1,
-        "chance": 0.05
+        "id": "troll_throw",
+        "damage": {
+          "blunt": 50.0
+        }
+      },
+      {
+        "id": "troll_log_swing_v",
+        "damage": {
+          "blunt": 70.0
+        }
+      },
+      {
+        "id": "troll_log_swing_h",
+        "damage": {
+          "blunt": 60.0
+        }
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "pierce": "weak",
+      "spirit": "immune"
+    }
   }
 ]

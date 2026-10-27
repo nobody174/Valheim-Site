@@ -1,0 +1,185 @@
+{
+  "id": "meadows",
+  "name": "Meadows",
+  "order": 1,
+  "materials": [
+    "Wood",
+    "Stone",
+    "Flint",
+    "Resin",
+    "Coal",
+    "Dandelion",
+    "Raspberry",
+    "Blueberries",
+    "Mushroom",
+    "Honey",
+    "DeerHide",
+    "LeatherScraps",
+    "BoneFragments",
+    "Feathers",
+    "Needle",
+    "Entrails",
+    "RawMeat",
+    "DeerMeat",
+    "NeckTail",
+    "HardAntler",
+    "Amber",
+    "AmberPearl",
+    "Coins",
+    "Acorn",
+    "BeechSeeds",
+    "BirchSeeds",
+    "FirCone"
+  ],
+  "tools": [
+    "Hammer",
+    "Hoe",
+    "Torch",
+    "Cultivator",
+    "FishingRod",
+    "FishingBait"
+  ],
+  "weapons": [
+    "Club",
+    "AxeStone",
+    "AxeFlint",
+    "PickaxeStone",
+    "PickaxeAntler",
+    "KnifeFlint",
+    "SpearFlint",
+    "Bow",
+    "ArrowWood",
+    "ArrowFlint",
+    "ShieldWood"
+  ],
+  "armor": {
+    "ArmorRagsChest": "chest",
+    "ArmorRagsLegs": "legs",
+    "ArmorLeatherChest": "chest",
+    "ArmorLeatherLegs": "legs",
+    "HelmetLeather": "helmet",
+    "CapeDeerHide": "cape"
+  },
+  "foods": [
+    "Raspberry",
+    "Blueberries",
+    "Mushroom",
+    "Honey",
+    "DeerMeat",
+    "NeckTail",
+    "RawMeat",
+    "CookedMeat",
+    "CookedDeerMeat",
+    "NeckTailGrilled",
+    "QueensJam"
+  ],
+  "meads": [
+    "MeadBaseHealthMinor",
+    "MeadHealthMinor",
+    "MeadBaseStaminaMinor",
+    "MeadStaminaMinor",
+    "MeadBaseTasty",
+    "MeadTasty"
+  ],
+  "trophies": [
+    "TrophyBoar",
+    "TrophyDeer",
+    "TrophyNeck",
+    "TrophyEikthyr"
+  ],
+  "creatures": [
+    "Boar",
+    "Deer",
+    "Neck",
+    "Greyling"
+  ],
+  "bosses": [
+    "Eikthyr"
+  ],
+  "bossSummon": {
+    "Eikthyr": [
+      [
+        "TrophyDeer",
+        2
+      ]
+    ]
+  },
+  "gather": {
+    "Wood": [
+      [
+        "gather",
+        "Chop trees"
+      ]
+    ],
+    "Stone": [
+      [
+        "gather",
+        "Pick up or mine stones and rock"
+      ]
+    ],
+    "Flint": [
+      [
+        "gather",
+        "Loose flint on the ground, mainly near water"
+      ]
+    ],
+    "Resin": [
+      [
+        "gather",
+        "Chop trees or destroy tree stumps"
+      ]
+    ],
+    "Dandelion": [
+      [
+        "gather",
+        "Pick wild plants"
+      ]
+    ],
+    "Raspberry": [
+      [
+        "gather",
+        "Pick wild bushes"
+      ]
+    ],
+    "Blueberries": [
+      [
+        "gather",
+        "Pick wild bushes"
+      ]
+    ],
+    "Mushroom": [
+      [
+        "gather",
+        "Pick from the ground"
+      ]
+    ],
+    "Honey": [
+      [
+        "other",
+        "Beehive"
+      ]
+    ]
+  },
+  "hoard": {
+    "keepSome": {
+      "Wood": 200,
+      "Stone": 100,
+      "Flint": 50,
+      "Resin": 50,
+      "Coal": 50,
+      "LeatherScraps": 30,
+      "DeerHide": 20,
+      "BoneFragments": 30,
+      "Feathers": 20
+    },
+    "mustKeep": [
+      "Amber",
+      "AmberPearl",
+      "HardAntler",
+      "Entrails"
+    ]
+  },
+  "guide": {
+    "notes": []
+  }
+}

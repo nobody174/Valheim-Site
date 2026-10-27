@@ -333,3 +333,22 @@
   gap: 0.5rem;
   margin: 1rem 0;
 }
+
+.toggle,
+.reset,
+.star {
+  font: inherit;
+}
+.tabs a {
+  text-decoration: none;
+}
+@media (max-width: 700px) {
+  .table th,
+  .table td {
+    padding: 0.4rem 0.3rem;
+    font-size: 0.85rem;
+  }
+  .checkCell {
+    width: 3.2rem;
+  }
+}

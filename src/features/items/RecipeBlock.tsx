@@ -16,6 +16,18 @@ function Ingredients({ list }: { list: { item: string; qty: number }[] }) {
 }
 
 /** Direct inputs, output, station and level, upgrade costs. The full graph is Phase 3. */
+const KIND_VERB: Record<Recipe['kind'], string> = {
+  craft: 'Makes',
+  cook: 'Cooks into',
+  smelt: 'Smelts into',
+  ferment: 'Ferments into',
+  other: 'Makes',
+};
+
+function duration(sec: number): string {
+  return sec >= 120 ? `${Math.round(sec / 60)} min` : `${Math.round(sec)} s`;
+}
+
 export function RecipeBlock({ recipe }: { recipe: Recipe }) {
   const station = recipe.station;
   return (
@@ -23,7 +35,10 @@ export function RecipeBlock({ recipe }: { recipe: Recipe }) {
       <div className={styles.recipeHead}>
         <span>
           <FavoriteStar kind="recipes" id={recipe.id} label={`recipe for ${recipe.output.item}`} />
-          Makes {recipe.output.qty} × <EntityLink id={recipe.output.item} />
+          {KIND_VERB[recipe.kind]} {recipe.output.qty} × <EntityLink id={recipe.output.item} />
+          {recipe.timeSec ? (
+            <span className={styles.dim}> ({duration(recipe.timeSec)})</span>
+          ) : null}
         </span>
         <span className={styles.dim}>
           {station ? (

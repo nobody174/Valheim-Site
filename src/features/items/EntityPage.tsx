@@ -38,6 +38,51 @@ function Drops({ drops }: { drops: Creature['drops'] }) {
   );
 }
 
+const label = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
+
+function Attacks({ attacks }: { attacks: Creature['attacks'] }) {
+  return (
+    <section className={styles.section}>
+      <h2>Attacks</h2>
+      {attacks.length === 0 ? (
+        <p className={styles.dim}>No attack damage in the data (it may be passive).</p>
+      ) : (
+        <ul>
+          {attacks.map((a, i) => (
+            <li key={a.id} title={a.id}>
+              Attack {i + 1}:{' '}
+              {Object.entries(a.damage)
+                .map(([k, v]) => `${label(k)} ${Math.round(v)}`)
+                .join(', ')}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  );
+}
+
+function Resistances({ resistances }: { resistances: Creature['resistances'] }) {
+  const entries = Object.entries(resistances ?? {});
+  return (
+    <section className={styles.section}>
+      <h2>Weaknesses and resistances</h2>
+      {entries.length === 0 ? (
+        <p className={styles.dim}>No special weaknesses or resistances in the data.</p>
+      ) : (
+        <dl className={styles.facts}>
+          {entries.map(([k, v]) => (
+            <div key={k} style={{ display: 'contents' }}>
+              <dt>{label(k)}</dt>
+              <dd>{label(v)}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+    </section>
+  );
+}
+
 function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolean }) {
   const biome = lookup.biomeName(monster.biome);
   return (
@@ -66,6 +111,8 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
           </ul>
         </section>
       )}
+      <Attacks attacks={monster.attacks} />
+      <Resistances resistances={monster.resistances} />
       <Drops drops={monster.drops} />
     </article>
   );
@@ -90,6 +137,41 @@ export function StationPage() {
         <span className={styles.dim}>Crafting station</span>
         <VerifiedBadge level={station.verified} note={station.note} />
       </div>
+      <section className={styles.section}>
+        <h2>Build cost</h2>
+        {station.buildRequirements.length === 0 ? (
+          <p className={styles.dim}>Unknown for now (it needs items from biomes not added yet).</p>
+        ) : (
+          <ul className={styles.inline}>
+            {station.buildRequirements.map((g) => (
+              <li key={g.item}>
+                {g.qty} × <EntityLink id={g.item} />
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+      {station.extensions.length > 0 && (
+        <section className={styles.section}>
+          <h2>Extensions</h2>
+          <p className={styles.dim}>{station.note}</p>
+          {station.extensions.map((e) => (
+            <div key={e.id} className={styles.recipe}>
+              <div className={styles.recipeHead}>
+                <span>{e.name}</span>
+                {e.rangeM ? <span className={styles.dim}>within {e.rangeM} m</span> : null}
+              </div>
+              <ul className={styles.inline}>
+                {e.requirements.map((g) => (
+                  <li key={g.item}>
+                    {g.qty} × <EntityLink id={g.item} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      )}
       <section className={styles.section}>
         <h2>Crafts here</h2>
         {recipes.length === 0 && <p className={styles.dim}>No recipes in the seed data.</p>}

@@ -92,7 +92,9 @@ export const ItemSchema = z
 export const RecipeSchema = z
   .object({
     id,
-    kind: z.enum(['craft', 'cook', 'smelt', 'other']).default('craft'),
+    kind: z.enum(['craft', 'cook', 'smelt', 'ferment', 'other']).default('craft'),
+    /** Time the conversion takes (cooking, fermenting), when the game defines one. */
+    timeSec: z.number().positive().optional(),
     output: ingredient,
     station: z.object({ id, minLevel: z.number().int().positive() }).strict().nullable(),
     inputs: z.array(ingredient),
@@ -103,10 +105,23 @@ export const RecipeSchema = z
   })
   .strict();
 
+const extension = z
+  .object({
+    id,
+    name: z.string().min(1),
+    rangeM: z.number().positive().optional(),
+    requirements: z.array(ingredient),
+  })
+  .strict();
+
 export const StationSchema = z
   .object({
     id,
     name: z.string().min(1),
+    /** What it costs to build the station itself. */
+    buildRequirements: z.array(ingredient).default([]),
+    /** Buildable add-ons placed near the station that raise its level. */
+    extensions: z.array(extension).default([]),
     levels: z
       .array(
         z
@@ -133,6 +148,7 @@ export const WeaponSchema = z
     parryForce: z.number().nonnegative().optional(),
     knockback: z.number().nonnegative().optional(),
     durability: z.number().positive().optional(),
+    maxQuality: z.number().int().positive().optional(),
     ...provenance,
   })
   .strict();
@@ -144,6 +160,12 @@ export const ArmorSchema = z
     armor: z.number().nonnegative(),
     durability: z.number().positive().optional(),
     setName: z.string().optional(),
+    /** Pieces needed for the set bonus, and what the bonus does. */
+    setSize: z.number().int().positive().optional(),
+    setEffect: z.string().optional(),
+    /** Movement speed change, e.g. -0.05 for 5% slower. */
+    movementModifier: z.number().optional(),
+    maxQuality: z.number().int().positive().optional(),
     ...provenance,
   })
   .strict();
@@ -172,6 +194,8 @@ const drop = z
   })
   .strict();
 
+const attack = z.object({ id, damage }).strict();
+
 export const CreatureSchema = z
   .object({
     id,
@@ -180,6 +204,7 @@ export const CreatureSchema = z
     health: z.number().positive().optional(),
     drops: z.array(drop).default([]),
     resistances: z.record(z.string(), z.string()).optional(),
+    attacks: z.array(attack).default([]),
     ...provenance,
   })
   .strict();
@@ -193,6 +218,8 @@ export const BossSchema = z
     trophy: id.optional(),
     drops: z.array(drop).default([]),
     health: z.number().positive().optional(),
+    resistances: z.record(z.string(), z.string()).optional(),
+    attacks: z.array(attack).default([]),
     ...provenance,
   })
   .strict();

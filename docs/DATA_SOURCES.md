@@ -26,7 +26,7 @@ patch-level values for rankings, C for strategy text. Whatever you choose, mark 
 | Dataset | Source | License / terms | Retrieved | Verified level | Notes |
 |---|---|---|---|---|---|
 | Candidate base: kirilloid/valheim (valheim.kirilloid.ru) | https://github.com/kirilloid/valheim | **No LICENSE file; GitHub reports no license (all rights reserved by default).** README: content used under fair use, non-commercial; to re-use content, refer to the game EULA. Code and data are in TS under `src/data`, not a published dataset. | 2026-10-26 | n/a (nothing copied) | **Not cleared for copying.** Allowed use for now: read-only cross-check of values we enter ourselves. Owner to decide: ask the author for written permission, or use as cross-check only. |
-| Seed data: items, recipes, stations, weapons, armor, foods, trophies, creatures, bosses (Meadows + Black Forest) | Owner's local Valheim install, Steam build 25909357, read with `tools/extract/` (UnityPy). Reads gameplay values only; no art, audio or raw assets are committed. | Personal use of own copy; game content (c) Iron Gate. Not an open license, so keep the repo non-commercial and commit only cleaned values (see README disclaimer). | 2026-10-26 | cross-checked (single source: game files) | Weights, stacks, damage, armor, food, health, recipes and drop tables come from the files. Curated by hand and NOT from the files: biome assignment, hoard defaults, gather/smelt/cook sources (those items are `unverified`), boss summon items. |
+| Items, recipes (crafting, cooking, smelting, fermenting), stations and extensions, weapons, armor and sets, foods and meads, trophies, creatures (attacks, resistances), bosses (Meadows + Black Forest) | Owner's local Valheim install, Steam build 25909357, read with `tools/extract/` (UnityPy). Reads gameplay values only; no art, audio or raw assets are committed. | Personal use of own copy; game content (c) Iron Gate. Not an open license, so keep the repo non-commercial and commit only cleaned values (see README disclaimer). | 2026-10-26 | cross-checked (single source: game files) | Weights, stacks, damage, armor, food, health, recipes and drop tables come from the files. Curated by hand and NOT from the files: biome assignment, hoard defaults, gather/smelt/cook sources (those items are `unverified`), boss summon items. |
 
 ## Game version
 
@@ -41,17 +41,35 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 
 ## Known gaps
 
-- Station upgrade levels and their requirements (`stations.json` `levels` is empty).
-- Meads: items and recipes exist, but their effects and numbers come from status effects, which are not extracted yet (no `foods.json` rows for meads).
-- Smelting and cooking conversions (smelter, kiln, cooking station) are not extracted; curated notes only.
-- Attack timings for DPS (Phase 3), creature resistances, boss summon items, gather nodes.
-- Biome assignment is curated. Check the seed lists in `tools/extract/build_seed.py` when in doubt.
-- `kind` on every recipe is `craft`; cooking and smelting kinds are not distinguished yet.
+- Station levels: the game defines levels by how many distinct extensions are near the station; the data lists the extensions (with cost and range) and each recipe's minimum level, but not a per-level table. Extensions that need items from biomes not added yet are skipped until those biomes are configured.
+- Station build cost is empty for stations that need items from later biomes (for example the smelter needs a Swamp item).
+- Smelting fuel and capacity, cooking overcook times, and fermenting yields are not extracted.
+- Creature damage is the raw damage of each attack at level 1 with no difficulty scaling; attack timing (for DPS, Phase 3) is not extracted.
+- Meads: effect text and over-time numbers are read from the status effect. Effects with several parts (resistances, regeneration multipliers) are only described by their in-game text.
+- Biome assignment of items, hoard defaults, gather sources and boss summon items are curated by hand in `tools/extract/biomes/*.json`. Creature biomes are cross-checked against the game's spawn tables on every build.
+- Creatures can spawn in more than one biome (for example Deer, Greydwarf); the data keeps one home biome per creature.
+- `kind: smelt` also covers kilns and other conversion stations.
 
-## Regenerating the seed data
+## Spot-check list (Meadows and Black Forest, session 2.1)
+
+Entries most likely to be wrong, all curated by hand. Please check these in your game:
+
+| # | Entry | What to check |
+|---|---|---|
+| 1 | Eikthyr boss | Summon items: 2 Deer Trophies at the altar |
+| 2 | The Elder boss | Summon items: 3 Ancient Seeds at the altar |
+| 3 | Ruby | Found in Black Forest? (assigned by hand) |
+| 4 | Amber and Amber Pearl | Found in Meadows? (assigned by hand) |
+| 5 | Honey | Comes from beehives (curated source) |
+
+Everything else with `verified: cross-checked` is read straight from the game files of build 25909357.
+
+## Regenerating the data
 
 ```
 python tools/extract/extract_raw.py "<Valheim install dir>" data-raw     # needs: pip install UnityPy
-python tools/extract/build_seed.py data-raw data <steam build id>
+python tools/extract/build_data.py data-raw data <steam build id> [YYYY-MM-DD]
 npm run validate
 ```
+
+`tools/extract/biomes/<biome>.json` lists which items, creatures and bosses belong to each biome. Adding a biome means adding a file there and rerunning the build; all configs are merged on every run.

@@ -97,3 +97,30 @@ describe('link integrity', () => {
     expect(paths.flatMap(brokenLinks)).toEqual([]);
   });
 });
+
+describe('new data on pages', () => {
+  it('station page shows build cost and extensions', () => {
+    renderAt('/station/piece_workbench');
+    expect(screen.getByRole('heading', { name: 'Build cost' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Extensions' })).toBeTruthy();
+  });
+
+  it('creature page shows attacks and resistances', () => {
+    renderAt('/creature/Troll');
+    expect(screen.getByRole('heading', { name: 'Attacks' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Weaknesses and resistances' })).toBeTruthy();
+    expect(screen.getByText('Pierce')).toBeTruthy();
+  });
+
+  it('armor shows set bonus and movement change', () => {
+    renderAt('/item/ArmorTrollLeatherChest');
+    expect(screen.getByText('Set bonus')).toBeTruthy();
+    expect(screen.getByText(/4 pieces/)).toBeTruthy();
+  });
+
+  it('a mead shows its effect and a conversion recipe shows its time', () => {
+    renderAt('/item/MeadHealthMinor');
+    expect(screen.getByText('Effect')).toBeTruthy();
+    expect(screen.getByText(/Ferments into/)).toBeTruthy();
+  });
+});

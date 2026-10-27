@@ -52,7 +52,8 @@
     "blockPower": 16.0,
     "parryForce": 40.0,
     "knockback": 30.0,
-    "durability": 125.0
+    "durability": 125.0,
+    "maxQuality": 4
   },
   {
     "item": "AxeBronze",
@@ -70,7 +71,8 @@
     "blockPower": 12.0,
     "parryForce": 20.0,
     "knockback": 50.0,
-    "durability": 125.0
+    "durability": 125.0,
+    "maxQuality": 4
   },
   {
     "item": "AxeFlint",
@@ -88,7 +90,8 @@
     "blockPower": 4.0,
     "parryForce": 20.0,
     "knockback": 50.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "maxQuality": 4
   },
   {
     "item": "AxeStone",
@@ -106,7 +109,8 @@
     "blockPower": 3.0,
     "parryForce": 20.0,
     "knockback": 50.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "maxQuality": 4
   },
   {
     "item": "Bow",
@@ -120,7 +124,8 @@
       "pierce": 3.0
     },
     "blockPower": 3.0,
-    "durability": 50.0
+    "durability": 50.0,
+    "maxQuality": 4
   },
   {
     "item": "BowFineWood",
@@ -135,7 +140,8 @@
     },
     "blockPower": 3.0,
     "knockback": 5.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "maxQuality": 4
   },
   {
     "item": "Club",
@@ -151,7 +157,8 @@
     "blockPower": 3.0,
     "parryForce": 20.0,
     "knockback": 30.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "maxQuality": 4
   },
   {
     "item": "KnifeCopper",
@@ -169,7 +176,8 @@
     "blockPower": 2.0,
     "parryForce": 10.0,
     "knockback": 10.0,
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 4
   },
   {
     "item": "KnifeFlint",
@@ -187,7 +195,8 @@
     "blockPower": 2.0,
     "parryForce": 10.0,
     "knockback": 10.0,
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 4
   },
   {
     "item": "MaceBronze",
@@ -203,7 +212,8 @@
     "blockPower": 12.0,
     "parryForce": 30.0,
     "knockback": 80.0,
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 4
   },
   {
     "item": "PickaxeAntler",
@@ -235,7 +245,8 @@
     "blockPower": 2.0,
     "parryForce": 20.0,
     "knockback": 50.0,
-    "durability": 120.0
+    "durability": 120.0,
+    "maxQuality": 4
   },
   {
     "item": "PickaxeStone",
@@ -259,7 +270,8 @@
     "blockPower": 16.0,
     "parryForce": 30.0,
     "knockback": 40.0,
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 3
   },
   {
     "item": "ShieldWood",
@@ -270,7 +282,8 @@
     "blockPower": 6.0,
     "parryForce": 20.0,
     "knockback": 40.0,
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 3
   },
   {
     "item": "ShieldWoodTower",
@@ -281,7 +294,8 @@
     "blockPower": 10.0,
     "parryForce": 100.0,
     "knockback": 40.0,
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 3
   },
   {
     "item": "SledgeStagbreaker",
@@ -298,7 +312,8 @@
     "blockPower": 4.0,
     "parryForce": 50.0,
     "knockback": 150.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "maxQuality": 4
   },
   {
     "item": "SpearBronze",
@@ -314,7 +329,8 @@
     "blockPower": 12.0,
     "parryForce": 20.0,
     "knockback": 20.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "maxQuality": 4
   },
   {
     "item": "SpearFlint",
@@ -330,7 +346,8 @@
     "blockPower": 4.0,
     "parryForce": 20.0,
     "knockback": 20.0,
-    "durability": 100.0
+    "durability": 100.0,
+    "maxQuality": 4
   },
   {
     "item": "SwordBronze",
@@ -346,6 +363,7 @@
     "blockPower": 12.0,
     "parryForce": 20.0,
     "knockback": 40.0,
-    "durability": 200.0
+    "durability": 200.0,
+    "maxQuality": 4
   }
 ]

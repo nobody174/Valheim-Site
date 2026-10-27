@@ -327,6 +327,32 @@
     "verified": "cross-checked"
   },
   {
+    "id": "BeechSeeds",
+    "name": "Beech Seeds",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BirchSeeds",
+    "name": "Birch Seeds",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Blueberries",
     "name": "Blueberries",
     "category": "material",
@@ -343,7 +369,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "BoarJerky",
@@ -511,7 +537,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "CarrotSeeds",
@@ -574,17 +600,20 @@
     "recommendedQty": 50,
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Burn Wood in a charcoal kiln"
+        "type": "recipe",
+        "recipe": "conv.charcoal_kiln.Wood"
       },
       {
-        "type": "drop",
-        "creature": "Surtling"
+        "type": "recipe",
+        "recipe": "conv.charcoal_kiln.FineWood"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.charcoal_kiln.RoundLog"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "Coins",
@@ -615,13 +644,16 @@
     "hoard": "safe_discard",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Cook Deer Meat on a cooking station"
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.DeerMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.DeerMeat"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "CookedMeat",
@@ -634,13 +666,16 @@
     "hoard": "safe_discard",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Cook Raw Meat on a cooking station"
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.RawMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.RawMeat"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "Copper",
@@ -653,13 +688,12 @@
     "hoard": "must_keep",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Smelt Copper Ore in a smelter"
+        "type": "recipe",
+        "recipe": "conv.smelter.CopperOre"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "CopperOre",
@@ -678,7 +712,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "CryptKey",
@@ -737,7 +771,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "DeerHide",
@@ -849,6 +883,19 @@
     "verified": "cross-checked"
   },
   {
+    "id": "FirCone",
+    "name": "Fir Cone",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "FishingBait",
     "name": "Fishing Bait",
     "category": "tool",
@@ -892,7 +939,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "GreydwarfEye",
@@ -1045,7 +1092,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "KnifeCopper",
@@ -1183,7 +1230,12 @@
     "stackSize": 10,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseHealthMinor"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1196,7 +1248,12 @@
     "stackSize": 10,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseStaminaMinor"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1209,7 +1266,12 @@
     "stackSize": 10,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseTasty"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -1248,7 +1310,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "MushroomYellow",
@@ -1267,7 +1329,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "NeckTail",
@@ -1298,13 +1360,16 @@
     "hoard": "safe_discard",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Cook Neck Tail on a cooking station"
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.NeckTail"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.NeckTail"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "Needle",
@@ -1369,6 +1434,19 @@
     "verified": "cross-checked"
   },
   {
+    "id": "PineCone",
+    "name": "Pine Cone",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Pukeberries",
     "name": "Bukeperries",
     "category": "material",
@@ -1421,7 +1499,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "RawMeat",
@@ -1471,7 +1549,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "RoundLog",
@@ -1651,25 +1729,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
-  },
-  {
-    "id": "SurtlingCore",
-    "name": "Surtling Core",
-    "category": "material",
-    "biome": "blackforest",
-    "weight": 5.0,
-    "stackSize": 10,
-    "tags": [],
-    "hoard": "must_keep",
-    "obtainedFrom": [
-      {
-        "type": "drop",
-        "creature": "Surtling"
-      }
-    ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "SwordBronze",
@@ -1706,7 +1766,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Tin",
@@ -1719,13 +1779,12 @@
     "hoard": "must_keep",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Smelt Tin Ore in a smelter"
+        "type": "recipe",
+        "recipe": "conv.smelter.TinOre"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "verified": "cross-checked"
   },
   {
     "id": "TinOre",
@@ -1744,7 +1803,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Torch",
@@ -1945,24 +2004,6 @@
     "verified": "cross-checked"
   },
   {
-    "id": "TrophySurtling",
-    "name": "Surtling Trophy",
-    "category": "trophy",
-    "biome": "blackforest",
-    "weight": 1.0,
-    "stackSize": 20,
-    "tags": [],
-    "hoard": "decorative",
-    "obtainedFrom": [
-      {
-        "type": "drop",
-        "creature": "Surtling"
-      }
-    ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
-  },
-  {
     "id": "TrophyTheElder",
     "name": "The Elder Trophy",
     "category": "trophy",
@@ -1977,19 +2018,6 @@
         "creature": "gd_king"
       }
     ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
-  },
-  {
-    "id": "Turnip",
-    "name": "Turnip",
-    "category": "food",
-    "biome": "blackforest",
-    "weight": 0.30000001192092896,
-    "stackSize": 50,
-    "tags": [],
-    "hoard": "safe_discard",
-    "obtainedFrom": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -2023,6 +2051,6 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Stats from game files; acquisition source curated by hand."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   }
 ]
