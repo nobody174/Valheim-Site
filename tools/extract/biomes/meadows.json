@@ -29,7 +29,10 @@
     "Acorn",
     "BeechSeeds",
     "BirchSeeds",
-    "FirCone"
+    "FirCone",
+    "AxeHead1",
+    "AxeHead2",
+    "Upgrader2Weapon"
   ],
   "tools": [
     "Hammer",
@@ -50,7 +53,9 @@
     "Bow",
     "ArrowWood",
     "ArrowFlint",
-    "ShieldWood"
+    "ShieldWood",
+    "ArrowFire",
+    "AxeEarly"
   ],
   "armor": {
     "ArmorRagsChest": "chest",
@@ -158,6 +163,24 @@
         "other",
         "Beehive"
       ]
+    ],
+    "AxeHead1": [
+      [
+        "other",
+        "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+      ]
+    ],
+    "AxeHead2": [
+      [
+        "other",
+        "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+      ]
+    ],
+    "Upgrader2Weapon": [
+      [
+        "other",
+        "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+      ]
     ]
   },
   "hoard": {
@@ -176,7 +199,10 @@
       "Amber",
       "AmberPearl",
       "HardAntler",
-      "Entrails"
+      "Entrails",
+      "AxeHead1",
+      "AxeHead2",
+      "Upgrader2Weapon"
     ]
   },
   "guide": {

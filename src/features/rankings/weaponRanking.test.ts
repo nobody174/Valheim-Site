@@ -75,7 +75,7 @@ describe('filterAndSort', () => {
 
   it('lists ammunition when asked', () => {
     const list = filterAndSort(rows, { ...base, group: AMMO_GROUP });
-    expect(list.map((r) => r.id).sort()).toEqual(['ArrowBronze', 'ArrowFlint', 'ArrowWood']);
+    expect(list.map((r) => r.id).sort()).toEqual(['ArrowBronze', 'ArrowFire', 'ArrowFlint', 'ArrowWood']);
   });
 
   it('filters by weapon type', () => {

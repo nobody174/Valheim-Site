@@ -1177,6 +1177,75 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.AxeEarly",
+    "kind": "craft",
+    "output": {
+      "item": "AxeEarly",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 4
+      },
+      {
+        "item": "AxeHead1",
+        "qty": 1
+      },
+      {
+        "item": "AxeHead2",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 6
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 2
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 8
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 10
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 6
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.AxeStone",
     "kind": "craft",
     "output": {
@@ -1675,6 +1744,35 @@
       {
         "item": "HardAntler",
         "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArrowFire",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowFire",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 8
+      },
+      {
+        "item": "Resin",
+        "qty": 8
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
       }
     ],
     "upgrades": [],
