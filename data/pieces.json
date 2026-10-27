@@ -2279,6 +2279,32 @@
     "verified": "cross-checked"
   },
   {
+    "id": "bonfire",
+    "name": "Bonfire",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "SurtlingCore",
+        "qty": 1
+      },
+      {
+        "item": "ElderBark",
+        "qty": 5
+      },
+      {
+        "item": "FineWood",
+        "qty": 5
+      },
+      {
+        "item": "RoundLog",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "comfort": 1
+  },
+  {
     "id": "bar_bronze_stack",
     "name": "Bronze Stack",
     "category": "Misc",
@@ -2514,6 +2540,28 @@
     "station": "piece_workbench"
   },
   {
+    "id": "portal_wood",
+    "name": "Portal",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "GreydwarfEye",
+        "qty": 10
+      },
+      {
+        "item": "FineWood",
+        "qty": 20
+      },
+      {
+        "item": "SurtlingCore",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "Raft",
     "name": "Raft",
     "category": "Misc",
@@ -2661,6 +2709,27 @@
       {
         "item": "Tin",
         "qty": 30
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "guard_stone",
+    "name": "Ward",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 5
+      },
+      {
+        "item": "GreydwarfEye",
+        "qty": 5
+      },
+      {
+        "item": "SurtlingCore",
+        "qty": 1
       }
     ],
     "source": "game-files:steam-build-25909357",

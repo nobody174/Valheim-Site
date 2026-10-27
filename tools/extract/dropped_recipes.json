@@ -133,6 +133,16 @@
       ]
     },
     {
+      "recipe": "Recipe_Lantern",
+      "output": "Lantern",
+      "station": "blackforge",
+      "inputs": [
+        "Bronze",
+        "SurtlingCore",
+        "Crystal"
+      ]
+    },
+    {
       "recipe": "Recipe_SadleLox",
       "output": "SaddleLox",
       "station": "piece_workbench",

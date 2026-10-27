@@ -45,3 +45,26 @@ describe('item sources', () => {
     for (const id of KNOWN_GAPS) expect(lookup.item(id)?.obtainedFrom, id).toHaveLength(0);
   });
 });
+
+describe('station build costs', () => {
+  /** Stations allowed to have no build cost, each with the reason. Empty: every station has one. */
+  const NO_COST: Record<string, string> = {};
+
+  it('every station has a build cost, or is listed here with a reason', () => {
+    const empty = lookup
+      .allStations()
+      .filter((s) => s.buildRequirements.length === 0 && !(s.id in NO_COST))
+      .map((s) => s.id);
+    expect(empty).toEqual([]);
+  });
+
+  it('NO_COST lists only stations that really have no cost, each with a reason', () => {
+    const stations = new Map(lookup.allStations().map((s) => [s.id, s]));
+    for (const [id, reason] of Object.entries(NO_COST)) {
+      const station = stations.get(id);
+      expect(station, `${id} is not a station`).toBeDefined();
+      expect(station?.buildRequirements, `${id} has a cost now; remove it from NO_COST`).toHaveLength(0);
+      expect(reason.length).toBeGreaterThan(10);
+    }
+  });
+});
