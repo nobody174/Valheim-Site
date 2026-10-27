@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { HashRouter, NavLink, Route, Routes } from 'react-router';
+import { HashRouter, Link, NavLink, Route, Routes } from 'react-router';
 import { gameData } from '../data/load';
 import { ChecklistPage } from '../features/checklist/ChecklistPage';
 import { FavoritesPage } from '../features/checklist/FavoritesPage';
@@ -20,6 +20,18 @@ function ComingSoon({ label, phase }: { label: string; phase: number }) {
     <section className={styles.panel}>
       <h1>{label}</h1>
       <p>Coming in Phase {phase}.</p>
+    </section>
+  );
+}
+
+function NotFound() {
+  return (
+    <section className={styles.panel}>
+      <h1>Page not found</h1>
+      <p>
+        There is nothing at this address. Try the search box above, or go back to the{' '}
+        <Link to="/">start page</Link>.
+      </p>
     </section>
   );
 }
@@ -111,7 +123,7 @@ function Shell() {
           <Route path="/creature/:id" element={<CreaturePage />} />
           <Route path="/boss/:id" element={<CreaturePage boss />} />
           <Route path="/station/:id" element={<StationPage />} />
-          <Route path="*" element={<ComingSoon label="Not found" phase={0} />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       {paletteOpen && <CommandPalette onClose={() => setPaletteOpen(false)} />}

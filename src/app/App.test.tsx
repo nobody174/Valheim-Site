@@ -40,4 +40,11 @@ describe('command palette', () => {
     await user.keyboard('a/b');
     expect(screen.queryByRole('dialog')).toBeNull();
   });
+
+  it('shows a real not-found page for unknown addresses', () => {
+    window.location.hash = '#/definitely/not/a/page';
+    render(<App />);
+    expect(screen.getByRole('heading', { name: 'Page not found' })).toBeTruthy();
+    expect(screen.queryByText(/Coming in Phase/)).toBeNull();
+  });
 });
