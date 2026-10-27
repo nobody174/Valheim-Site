@@ -63,6 +63,7 @@ export function createLookup(data: GameData) {
     allItems: () => data.items,
     allBiomes: () => data.biomes,
     allRecipes: () => data.recipes,
+    allWeapons: () => data.weapons,
     /** Creatures and bosses that drop this item, by id. */
     droppedBy: (itemId: string) =>
       [...data.creatures, ...data.bosses].filter((m) => m.drops.some((d) => d.item === itemId)),

@@ -4,6 +4,7 @@ import { gameData } from '../data/load';
 import { ChecklistPage } from '../features/checklist/ChecklistPage';
 import { FavoritesPage } from '../features/checklist/FavoritesPage';
 import { ProgressionPage } from '../features/progression/ProgressionPage';
+import { RankingsPage } from '../features/rankings/RankingsPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
 import { CreaturePage, StationPage } from '../features/items/EntityPage';
@@ -42,6 +43,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/items': <ItemsPage />,
   '/recipes': <RecipesPage />,
   '/progression': <ProgressionPage />,
+  '/rankings': <RankingsPage />,
   '/checklist': <ChecklistPage />,
   '/favorites': <FavoritesPage />,
   '/profile': <ProfilePage />,

@@ -99,10 +99,18 @@ describe('link integrity', () => {
 });
 
 describe('new data on pages', () => {
-  it('station page shows build cost and extensions', () => {
+  it('station page shows how to get it and its extensions', () => {
     renderAt('/station/piece_workbench');
-    expect(screen.getByRole('heading', { name: 'Build cost' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'How to get it' })).toBeTruthy();
+    expect(screen.getByText('Build cost:')).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Extensions' })).toBeTruthy();
+  });
+
+  it('station page names the zones the materials come from and links each material', () => {
+    renderAt('/station/piece_cauldron');
+    const section = screen.getByRole('heading', { name: 'How to get it' }).closest('section')!;
+    expect(within(section).getByText(/Materials come from:/)).toBeTruthy();
+    expect(within(section).getAllByRole('link').length).toBeGreaterThan(0);
   });
 
   it('creature page shows attacks and resistances', () => {

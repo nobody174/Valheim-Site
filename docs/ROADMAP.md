@@ -10,7 +10,7 @@ reviews the live site before the next phase starts.
 | 0 | Foundation | done (live) | 1 | Scaffold, schemas, validation, CI/deploy, seed data (Meadows + Black Forest from local game files) |
 | 1 | MVP | Part A done; Part B in review (PR open) | 2-3 | Search, item pages, recipe explorer, checklist, favorites, PWA |
 | 2 | Core database | in progress: 2.1 done (pipeline v2, Meadows + Black Forest); next Swamp | 6-8 | Full data, one biome per session, all browse pages |
-| 3 | Advanced tools | not started | 3-4 | Crafting graph, build planner, rankings, optimizer |
+| 3 | Advanced tools | in progress: weapon damage rankings by zone shipped early (raw damage, not DPS); DPS, armor, graph, planner pending | 3-4 | Crafting graph, build planner, rankings, optimizer |
 | 4 | Polish | not started | 2 | Visual pass, mobile, a11y, performance, offline hardening |
 | 5 | Future expansion | not started | open | Backlog, picked as wanted |
 

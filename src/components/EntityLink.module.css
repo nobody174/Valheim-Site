@@ -1,0 +1,32 @@
+.tip {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 288px;
+  max-width: calc(100vw - 16px);
+  padding: 0.6rem 0.75rem;
+  color: var(--text);
+  font-size: 0.85rem;
+  line-height: 1.35;
+  background: var(--bg-2);
+  border: 1px solid var(--bronze);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  /* Never steals the hover from the link underneath. */
+  pointer-events: none;
+}
+.title {
+  color: var(--gold);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+}
+.subtitle {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+}
+.line {
+  color: var(--text);
+  font-weight: 400;
+}
