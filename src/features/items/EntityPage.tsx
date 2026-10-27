@@ -4,6 +4,7 @@ import { EntityLink } from '../../components/EntityLink';
 import { VerifiedBadge } from '../../components/Badges';
 import { lookup } from '../../data/lookup';
 import type { Boss, Creature, Station } from '../../data/schemas';
+import { stationLevels } from '../../data/stationLevels';
 import { RecipeBlock } from './RecipeBlock';
 import styles from './Items.module.css';
 
@@ -162,6 +163,64 @@ function HowToGet({ station }: { station: Station }) {
   );
 }
 
+/** What each station level needs and unlocks, computed from the extensions and recipes. */
+function StationLevels({ station }: { station: Station }) {
+  const rows = stationLevels(station, lookup.allRecipes());
+  if (rows.length < 2) return null;
+  return (
+    <section className={styles.section}>
+      <h2>Station levels</h2>
+      <p className={styles.dim}>
+        A station is level 1 plus the number of different extensions built within range of it, so
+        level N needs any N − 1 of the extensions below. An upgrade needs one level more per quality.
+      </p>
+      <div className={styles.tableWrap}>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Needs</th>
+              <th>Crafts from this level</th>
+              <th>Upgrades that need this level</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.level}>
+                <td>{r.level}</td>
+                <td>
+                  {r.extensionsNeeded === 0
+                    ? 'The station alone'
+                    : `${r.extensionsNeeded} extension${r.extensionsNeeded === 1 ? '' : 's'}`}
+                  {!r.reachable && <span className={styles.dim}> (needs a later zone)</span>}
+                </td>
+                <td>
+                  {r.crafts.length
+                    ? r.crafts.map((c) => (
+                        <span key={c.id}>
+                          <EntityLink id={c.output.item} />{' '}
+                        </span>
+                      ))
+                    : '-'}
+                </td>
+                <td>
+                  {r.upgrades.length
+                    ? r.upgrades.map((u) => (
+                        <span key={`${u.recipe.id}${u.quality}`}>
+                          <EntityLink id={u.recipe.output.item} /> → {u.quality}{' '}
+                        </span>
+                      ))
+                    : '-'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 export function StationPage() {
   const { id = '' } = useParams();
   const station = lookup.station(id);
@@ -178,7 +237,8 @@ export function StationPage() {
         <VerifiedBadge level={station.verified} note={station.note} />
       </div>
       <HowToGet station={station} />
-      {station.extensions.length > 0 && (
+      <StationLevels station={station} />
+      {station.extensions.length + station.laterExtensions.length > 0 && (
         <section className={styles.section}>
           <h2>Extensions</h2>
           <p className={styles.dim}>{station.note}</p>
@@ -195,6 +255,18 @@ export function StationPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          ))}
+          {station.laterExtensions.map((e) => (
+            <div key={e.id} className={styles.recipe}>
+              <div className={styles.recipeHead}>
+                <span>{e.name}</span>
+                {e.rangeM ? <span className={styles.dim}>within {e.rangeM} m</span> : null}
+              </div>
+              <p className={styles.dim}>
+                Needs items from a zone that is not in the data yet
+                {e.needs.length ? `: ${e.needs.join(', ')}` : ''}.
+              </p>
             </div>
           ))}
         </section>

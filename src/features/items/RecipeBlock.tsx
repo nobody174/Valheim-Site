@@ -1,5 +1,6 @@
 import { EntityLink } from '../../components/EntityLink';
 import type { Recipe } from '../../data/schemas';
+import { requiredStationLevel } from '../../data/stationLevels';
 import { FavoriteStar } from './ItemActions';
 import styles from './Items.module.css';
 
@@ -57,7 +58,15 @@ export function RecipeBlock({ recipe }: { recipe: Recipe }) {
           <dl className={styles.upgrades}>
             {recipe.upgrades.map((u) => (
               <div key={u.quality}>
-                <dt>Quality {u.quality}</dt>
+                <dt>
+                  Quality {u.quality}
+                  {station && (
+                    <span className={styles.dim}>
+                      {' '}
+                      · level {requiredStationLevel(station.minLevel, u.quality)}
+                    </span>
+                  )}
+                </dt>
                 <dd>
                   <Ingredients list={u.inputs} />
                 </dd>

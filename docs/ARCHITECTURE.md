@@ -32,7 +32,7 @@ Vite `base` must be `/Valheim-Site/` (the repo's canonical name as shown on GitH
   biomes.json
   items.json               # every item: id, name, category, biome, weight, stack, tags, hoard
   recipes.json             # crafting, cooking, smelting, upgrades (edges of the graph)
-  stations.json            # workbench, forge, cauldron... with levels and what they unlock
+  stations.json            # workbench, forge, cauldron... build cost, extensions, later-zone extensions
   weapons.json             # combat stats keyed by item id
   armor.json
   foods.json               # includes meads/potions or a sibling meads.json
@@ -133,6 +133,14 @@ owner sees how trustworthy the dataset currently is.
 damagePerLevel * (level - 1)`), keeping only types that hurt creatures (chop and pickaxe are
 tool-only). "vs creature" scales each type by the creature's resistance label: very weak x2, weak
 x1.5, resistant x0.5, very resistant x0.25, immune and ignore x0. (`src/data/weaponStats.ts`)
+
+**Station levels.** Read from the game code (`CraftingStation.GetLevel`, `Recipe.GetRequiredStationLevel`):
+a station is level 1 plus the number of *different* extensions built within range (extensions do not stack),
+so level N needs any N - 1 of the station's extensions. A craft needs the recipe's minimum level (at least 1);
+each upgrade quality needs one level more than the last (`minLevel + quality - 1`). Computed by
+`src/data/stationLevels.ts`, never stored. Extensions whose materials come from zones not in the data yet
+are kept in `laterExtensions` (name and the missing item names only) and move to `extensions` on a rebuild
+once those zones exist. A recipe with no station (Club, Stone Axe, Hammer, Torch) needs none, also to upgrade.
 
 **Weapon skill.** Optional. Each hit rolls uniformly between `lerp(0.4, 1, skill/100) - 0.15` and `+ 0.15`
 (clamped to 0..1) of the listed damage; the table shows the mean and the min-max, like the in-game

@@ -124,10 +124,8 @@ export function validateData(raw: RawData): ValidationResult {
   }
   for (const s of data.stations) {
     const w = `stations.json [${s.id}]`;
-    for (const l of s.levels) {
-      refIngredients(w, l.requirements);
-      l.unlocks.forEach((u) => ref(w, u, items, 'item'));
-    }
+    s.buildRequirements.forEach((g) => ref(w, g.item, items, 'item'));
+    s.extensions.forEach((x) => refIngredients(w, x.requirements));
   }
   for (const file of ['weapons', 'armor', 'foods', 'trophies'] as const) {
     for (const e of data[file]) ref(`${file}.json [${e.item}]`, e.item, items, 'item');
@@ -163,7 +161,6 @@ export function validateData(raw: RawData): ValidationResult {
   for (const s of data.stations) {
     need(s.buildRequirements, `building ${s.id}`);
     s.extensions.forEach((x) => need(x.requirements, `building ${x.id}`));
-    s.levels.forEach((l) => need(l.requirements, `${s.id} level ${l.level}`));
   }
   for (const b of data.bosses) need(b.summonItems, `summoning ${b.id}`);
   for (const p of data.pieces) need(p.requirements, `building ${p.id}`);

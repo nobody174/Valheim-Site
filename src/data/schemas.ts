@@ -114,6 +114,15 @@ const extension = z
   })
   .strict();
 
+const laterExtension = z
+  .object({
+    id,
+    name: z.string().min(1),
+    rangeM: z.number().positive().optional(),
+    needs: z.array(z.string().min(1)).default([]),
+  })
+  .strict();
+
 export const StationSchema = z
   .object({
     id,
@@ -122,17 +131,12 @@ export const StationSchema = z
     buildRequirements: z.array(ingredient).default([]),
     /** Buildable add-ons placed near the station that raise its level. */
     extensions: z.array(extension).default([]),
-    levels: z
-      .array(
-        z
-          .object({
-            level: z.number().int().positive(),
-            requirements: z.array(ingredient).default([]),
-            unlocks: z.array(id).default([]),
-          })
-          .strict(),
-      )
-      .default([]),
+    /**
+     * Extensions whose materials come from zones that are not in the data yet. Only the names of the
+     * missing items are kept (they are not references). They move into `extensions` on a rebuild
+     * once those zones are added. Station levels are computed from both lists, see stationLevels.ts.
+     */
+    laterExtensions: z.array(laterExtension).default([]),
     ...provenance,
   })
   .strict();
