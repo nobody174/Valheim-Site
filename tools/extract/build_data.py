@@ -571,6 +571,36 @@ def main(raw, out, build_id, reviewed=None):
                 if not iid.startswith('MeadBase'):  # base meads cannot be drunk
                     foods.append({k: v for k, v in f.items() if v is not None})
 
+    # ---- building pieces: what the Hammer's build menu offers whose whole cost is in the database
+    PIECE_CATEGORY = ['Misc', 'Crafting', 'Building', 'Building (stone)', 'Furniture', 'Building']  # 5: steep roofs
+    pieces_out = []
+    table_path = os.path.join(raw, 'piecetable.json')
+    if os.path.exists(table_path):
+        station_ids = {s['id'] for s in stations}
+        extension_ids = {e for d in (ext_by_station, later_by_station) for owner in d.values() for e in owner}
+        hammer = next((r['data'] for r in load(raw, 'piecetable.json')
+                       if go_name.get(r['data']['m_GameObject']['m_PathID']) == '_HammerPieceTable'), None)
+        for ref in (hammer['m_pieces'] if hammer else []):
+            pid = go_ref_name(ref)
+            p = pieces.get(pid)
+            if not p or not p['m_enabled'] or pid in station_ids or pid in extension_ids:
+                continue  # stations and their extensions have their own page
+            cost = piece_cost(pid)
+            if not cost:
+                continue  # free, or needs items from zones that are not in the data yet
+            st = comp_name(p['m_craftingStation'])
+            if st and st not in station_ids:
+                continue  # needs a station that is not in the data yet
+            entry = {'id': pid, 'name': english(p.get('m_name', ''), pid),
+                     'category': PIECE_CATEGORY[p['m_category']] if p['m_category'] < len(PIECE_CATEGORY) else 'Misc',
+                     'requirements': cost, **prov}
+            if st:
+                entry['station'] = st
+            if p.get('m_comfort'):
+                entry['comfort'] = p['m_comfort']
+            pieces_out.append(entry)
+        pieces_out.sort(key=lambda e: (e['category'], e['name'], e['id']))
+
     biomes = [{'id': c['id'], 'name': c['name'], 'order': c['order'],
                **({'guide': c['guide']} if c.get('guide', {}).get('notes') else {}), **prov} for c in configs]
 
@@ -578,12 +608,12 @@ def main(raw, out, build_id, reviewed=None):
     files = {'meta': {'gameVersion': f'Steam build {build_id}', 'lastReviewed': reviewed},
              'biomes': biomes, 'items': items, 'recipes': recipes, 'stations': stations, 'weapons': weapons,
              'armor': armor, 'foods': foods, 'trophies': trophies, 'creatures': creatures,
-             'bosses': bosses, 'pieces': []}
+             'bosses': bosses, 'pieces': pieces_out}
     for name, content in files.items():
         with open(os.path.join(out, f'{name}.json'), 'w', encoding='utf8', newline='\n') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)
             f.write('\n')
-    for k in ('items', 'recipes', 'stations', 'weapons', 'armor', 'foods', 'trophies', 'creatures', 'bosses'):
+    for k in ('items', 'recipes', 'stations', 'weapons', 'armor', 'foods', 'trophies', 'creatures', 'bosses', 'pieces'):
         print(k, len(files[k]))
     for w in sorted(set(warnings)):
         print('WARN', w)

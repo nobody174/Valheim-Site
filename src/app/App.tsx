@@ -3,6 +3,7 @@ import { HashRouter, Link, NavLink, Route, Routes } from 'react-router';
 import { gameData } from '../data/load';
 import { ChecklistPage } from '../features/checklist/ChecklistPage';
 import { FavoritesPage } from '../features/checklist/FavoritesPage';
+import { BuildingPage } from '../features/browse/BuildingPage';
 import { BossesPage, CreaturesPage, FoodPage, TrophiesPage } from '../features/browse/BrowsePages';
 import { ProgressionPage } from '../features/progression/ProgressionPage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
@@ -44,6 +45,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/items': <ItemsPage />,
   '/recipes': <RecipesPage />,
   '/progression': <ProgressionPage />,
+  '/building': <BuildingPage />,
   '/trophies': <TrophiesPage />,
   '/bosses': <BossesPage />,
   '/creatures': <CreaturesPage />,

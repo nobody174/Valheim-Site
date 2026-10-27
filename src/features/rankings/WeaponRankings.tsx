@@ -174,7 +174,8 @@ export function WeaponRankings() {
       <p className={styles.warn} role="note">
         <strong>DPS ≈ is an estimate.</strong> Damage per hit, per combo and per stamina are exact
         game numbers. Damage per second also needs how long each swing takes, which comes from the
-        animation files and has not been checked in game, so treat it as approximate.
+        animation files and has not been checked in game, so treat it as approximate. The list is
+        ordered by damage per hit; sort by DPS or rating and the order can change.
       </p>
       <div className={itemStyles.filters}>
         <label>

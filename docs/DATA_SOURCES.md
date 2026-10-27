@@ -41,6 +41,7 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 
 ## Known gaps
 
+- Building pieces (`data/pieces.json`) are the Hammer's build menu from the game's piece tables, limited to pieces whose whole cost is in the database and that are not stations or station extensions. Pieces that need a station or item from a later zone appear when that zone is added. Cultivator and Hoe pieces are not listed. Piece names and costs are game numbers (`cross-checked`); there is no zone or unlock info per piece.
 - Station levels are computed in code from the extensions and each recipe's minimum level (see ARCHITECTURE.md). Extensions that need items from biomes not added yet are kept as `laterExtensions` (name and the missing items) until those biomes are configured.
 - Where to get an item: drops come from the game files; gather, trader, found and other notes are written by hand from public guides and are `unverified`. Two items have no source at all: Carrot Seeds and Elder Bark (a test lists them as known gaps). Where Haldor sells the Fishing Rod and bait, and the prices, differ between guides.
 - Raw Fish is made from any one fish at a Preparation Table. The data model has no "any one of" recipes, so the builder reports it (`anyOneOfNotModelled` in `tools/extract/dropped_recipes.json`) instead of writing a wrong recipe.
@@ -71,6 +72,7 @@ Everything else with `verified: cross-checked` is read straight from the game fi
 
 ```
 python tools/extract/extract_raw.py "<Valheim install dir>" data-raw     # needs: pip install UnityPy
+python tools/extract/extract_piece_tables.py "<Valheim install dir>" data-raw   # build menus, for the Building page
 python tools/extract/build_data.py data-raw data <steam build id> [YYYY-MM-DD]
 npm run validate
 ```
