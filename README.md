@@ -3,7 +3,7 @@
 A personal, offline-capable Valheim companion: search, recipes, crafting graph, progression
 guide, rankings, build planner and checklists. Static site, hosted free on GitHub Pages.
 
-**Status:** Phase 1 Part A (lookup) in review. See `docs/ROADMAP.md`.
+**Status:** Phase 1 (MVP) in review: lookup, checklist, profiles, progression guide, offline app. See `docs/ROADMAP.md`.
 
 ## Live site
 
@@ -19,6 +19,11 @@ GitHub Pages, Source: GitHub Actions. Pushing to `main` runs `.github/workflows/
 Press **Ctrl+K** or **/** on any page to search. Every item, creature, boss and station name is a link
 to its page. `/items` lists all items, filterable by name, category, hoard and biome (filters live in the URL).
 `/recipes` lists every recipe grouped by station, searchable by output or ingredient.
+
+Progress (checklist, favorites, hoard overrides) is saved in this browser per profile. Use
+**Profile & data** to add profiles and to download or restore a JSON backup; browsers can lose
+site data, so back up now and then. The site works offline after the first visit and can be
+installed as an app from the browser menu.
 
 ## Develop
 
