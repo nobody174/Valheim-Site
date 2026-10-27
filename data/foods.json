@@ -45,6 +45,15 @@
     "verified": "cross-checked"
   },
   {
+    "item": "CookedBjornMeat",
+    "kind": "food",
+    "health": 40.0,
+    "stamina": 13.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "CookedDeerMeat",
     "kind": "food",
     "health": 35.0,
@@ -182,6 +191,15 @@
     "health": 25.0,
     "stamina": 8.0,
     "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "PulledBear",
+    "kind": "food",
+    "health": 37.0,
+    "stamina": 16.0,
+    "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },

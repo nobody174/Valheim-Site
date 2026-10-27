@@ -403,6 +403,82 @@
     }
   },
   {
+    "id": "Bjorn",
+    "name": "Bear",
+    "biome": "blackforest",
+    "health": 500.0,
+    "drops": [
+      {
+        "item": "BjornPaw",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "BjornMeat",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "item": "BjornHide",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "item": "TrophyBjorn",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "bjorn_bite",
+        "damage": {
+          "pierce": 55.0
+        }
+      },
+      {
+        "id": "bjorn_claws",
+        "damage": {
+          "slash": 50.0
+        }
+      },
+      {
+        "id": "bjorn_swipe_l",
+        "damage": {
+          "slash": 25.0
+        }
+      },
+      {
+        "id": "bjorn_swipe_r",
+        "damage": {
+          "slash": 25.0
+        }
+      },
+      {
+        "id": "bjorn_swipe_combo",
+        "damage": {
+          "slash": 25.0
+        }
+      },
+      {
+        "id": "bjorn_slam",
+        "damage": {
+          "blunt": 50.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "pierce": "resistant",
+      "fire": "weak",
+      "frost": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
     "id": "Draugr",
     "name": "Draugr",
     "biome": "swamp",

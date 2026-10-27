@@ -1,5 +1,31 @@
 [
   {
+    "item": "ArmorBerserkerChest",
+    "slot": "chest",
+    "armor": 7.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "berserker_armor",
+    "setSize": 3,
+    "setEffect": "Increases damage and regeneration, but weakens you against physical damage.",
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorBerserkerLegs",
+    "slot": "legs",
+    "armor": 7.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "berserker_armor",
+    "setSize": 3,
+    "setEffect": "Increases damage and regeneration, but weakens you against physical damage.",
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
     "item": "ArmorBronzeChest",
     "slot": "chest",
     "armor": 8.0,
@@ -158,6 +184,19 @@
     "setSize": 4,
     "setEffect": "Makes you more sneaky.",
     "armorPerLevel": 1.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "HelmetBerserkerHood",
+    "slot": "helmet",
+    "armor": 7.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "berserker_armor",
+    "setSize": 3,
+    "setEffect": "Increases damage and regeneration, but weakens you against physical damage.",
+    "armorPerLevel": 2.0,
     "maxQuality": 4
   },
   {

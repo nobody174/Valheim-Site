@@ -23,7 +23,10 @@
     "CryptKey",
     "Ruby",
     "PineCone",
-    "Coins"
+    "Coins",
+    "BjornMeat",
+    "BjornHide",
+    "BjornPaw"
   ],
   "tools": [],
   "weapons": [
@@ -40,7 +43,8 @@
     "KnifeCopper",
     "SledgeStagbreaker",
     "KnifeButcher",
-    "ShieldBoneTower"
+    "ShieldBoneTower",
+    "FistBjornClaw"
   ],
   "armor": {
     "ArmorTrollLeatherChest": "chest",
@@ -49,7 +53,10 @@
     "CapeTrollHide": "cape",
     "ArmorBronzeChest": "chest",
     "ArmorBronzeLegs": "legs",
-    "HelmetBronze": "helmet"
+    "HelmetBronze": "helmet",
+    "ArmorBerserkerChest": "chest",
+    "ArmorBerserkerLegs": "legs",
+    "HelmetBerserkerHood": "helmet"
   },
   "foods": [
     "Carrot",
@@ -57,7 +64,9 @@
     "CarrotSoup",
     "DeerStew",
     "MinceMeatSauce",
-    "BoarJerky"
+    "BoarJerky",
+    "CookedBjornMeat",
+    "PulledBear"
   ],
   "meads": [],
   "trophies": [
@@ -66,14 +75,16 @@
     "TrophyGreydwarfShaman",
     "TrophySkeleton",
     "TrophyFrostTroll",
-    "TrophyTheElder"
+    "TrophyTheElder",
+    "TrophyBjorn"
   ],
   "creatures": [
     "Greydwarf",
     "Greydwarf_Elite",
     "Greydwarf_Shaman",
     "Skeleton",
-    "Troll"
+    "Troll",
+    "Bjorn"
   ],
   "bosses": [
     "gd_king"
