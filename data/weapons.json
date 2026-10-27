@@ -12,6 +12,19 @@
     "durability": 100.0
   },
   {
+    "item": "ArrowFire",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 11.0,
+      "fire": 22.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
     "item": "ArrowFlint",
     "skill": "Bows",
     "damage": {
@@ -165,6 +178,66 @@
                 "factor": 0.4
               }
             ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
+    "item": "AxeEarly",
+    "skill": "Axes",
+    "damage": {
+      "slash": 30.0,
+      "chop": 35.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 5.0,
+      "chop": 3.0
+    },
+    "blockPower": 4.0,
+    "parryForce": 20.0,
+    "knockback": 20.0,
+    "durability": 175.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "dualaxes",
+      "chainLevels": 4,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.2,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.2667,
+            "stateSpeed": 1.0,
+            "exitTime": 0.75,
+            "chainAt": 0.2573,
+            "speedEvents": []
+          },
+          {
+            "lengthSec": 1.4333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5327,
+            "speedEvents": []
+          },
+          {
+            "lengthSec": 1.5,
+            "stateSpeed": 1.0,
+            "exitTime": 0.75,
+            "chainAt": 0.7056,
+            "speedEvents": []
+          },
+          {
+            "lengthSec": 1.5,
+            "stateSpeed": 1.0,
+            "exitTime": 0.75,
+            "speedEvents": []
           }
         ],
         "verified": "unverified",

@@ -219,6 +219,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArrowFire",
+    "name": "Fire Arrow",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowFire"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArrowFlint",
     "name": "Flinthead Arrow",
     "category": "weapon",
@@ -291,6 +309,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "AxeEarly",
+    "name": "Early Axes",
+    "category": "weapon",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeEarly"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "AxeFlint",
     "name": "Flint Axe",
     "category": "weapon",
@@ -307,6 +343,44 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "AxeHead1",
+    "name": "Curious Axe Head",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "AxeHead2",
+    "name": "Mysterious Axe Head",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "AxeStone",
@@ -2020,6 +2094,25 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "Upgrader2Weapon",
+    "name": "Upgrader2Weapon",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Wood",
