@@ -151,5 +151,30 @@ export function validateData(raw: RawData): ValidationResult {
     if (p.station) ref(w, p.station, stations, 'station');
   }
 
+  // 4. Hoard advice must agree with the recipes: anything that is needed as an ingredient, an
+  // upgrade, a station or building cost or a boss summon item can never be called safe to discard.
+  const needed = new Map<string, string>();
+  const need = (list: { item: string }[], why: string) =>
+    list.forEach((g) => needed.has(g.item) || needed.set(g.item, why));
+  for (const r of data.recipes) {
+    need(r.inputs, `crafting ${r.output.item}`);
+    r.upgrades.forEach((u) => need(u.inputs, `upgrading ${r.output.item}`));
+  }
+  for (const s of data.stations) {
+    need(s.buildRequirements, `building ${s.id}`);
+    s.extensions.forEach((x) => need(x.requirements, `building ${x.id}`));
+    s.levels.forEach((l) => need(l.requirements, `${s.id} level ${l.level}`));
+  }
+  for (const b of data.bosses) need(b.summonItems, `summoning ${b.id}`);
+  for (const p of data.pieces) need(p.requirements, `building ${p.id}`);
+  for (const it of data.items) {
+    const why = needed.get(it.id);
+    if (why && (it.hoard === 'safe_discard' || it.hoard === 'decorative')) {
+      errors.push(
+        `items.json [${it.id}]: hoard "${it.hoard}" but the item is needed for ${why}; use keep_some or must_keep`,
+      );
+    }
+  }
+
   return { errors, counts, verified };
 }
