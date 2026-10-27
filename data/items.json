@@ -434,7 +434,9 @@
     "weight": 0.10000000149011612,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 6,
+    "hoardNote": "Used for crafting DeerStew, crafting MeadBaseHealthMinor, crafting MeadBaseTasty and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -602,7 +604,9 @@
     "weight": 0.30000001192092896,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 3,
+    "hoardNote": "Used for crafting CarrotSoup, crafting DeerStew, crafting MinceMeatSauce. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -715,7 +719,9 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting DeerStew. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -814,7 +820,8 @@
     "weight": 2.0,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -832,7 +839,9 @@
     "weight": 0.10000000149011612,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadBaseHealthMinor. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -874,7 +883,9 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting CookedDeerMeat. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -990,7 +1001,8 @@
     "weight": 1.5,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
     "obtainedFrom": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -1049,7 +1061,8 @@
     "weight": 2.0,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1139,7 +1152,8 @@
     "weight": 2.0,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1157,7 +1171,9 @@
     "weight": 0.20000000298023224,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting BoarJerky, crafting MeadBaseHealthMinor, crafting MeadBaseStaminaMinor and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -1249,7 +1265,9 @@
     "weight": 1.0,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadHealthMinor. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1267,7 +1285,9 @@
     "weight": 1.0,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadStaminaMinor. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1285,7 +1305,9 @@
     "weight": 1.0,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadTasty. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1375,7 +1397,9 @@
     "weight": 0.10000000149011612,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting CarrotSoup. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1394,7 +1418,9 @@
     "weight": 0.10000000149011612,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting MeadBaseStaminaMinor. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1413,7 +1439,9 @@
     "weight": 0.5,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MinceMeatSauce, crafting NeckTailGrilled. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -1564,7 +1592,9 @@
     "weight": 0.10000000149011612,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting MeadBaseHealthMinor, crafting MeadBaseStaminaMinor, crafting MeadBaseTasty and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1583,7 +1613,9 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting BoarJerky, crafting CookedMeat, crafting MinceMeatSauce and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -1633,7 +1665,9 @@
     "weight": 2.0,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 35,
+    "hoardNote": "Used for crafting BowFineWood, crafting Coal, crafting Cultivator and 6 more. Quantity is the largest single need.",
     "obtainedFrom": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -1831,7 +1865,9 @@
     "weight": 0.10000000149011612,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Sausages. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1887,7 +1923,8 @@
     "weight": 1.0,
     "stackSize": 1,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1941,7 +1978,8 @@
     "weight": 2.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "must_keep",
+    "hoardNote": "Needed to summon Eikthyr.",
     "obtainedFrom": [
       {
         "type": "drop",

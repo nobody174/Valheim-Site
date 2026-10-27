@@ -392,6 +392,42 @@ def main(raw, out, build_id, reviewed=None):
         se = status.get(shared['m_consumeStatusEffect']['m_PathID'])
         return se, (english(se.get('m_tooltip', ''), '') if se else '')
 
+    # ---- what each item is needed for, so the hoard default follows the recipes and not a guess.
+    # Every use is (what it is for, quantity needed at once).
+    uses = defaultdict(list)
+    for r in recipes:
+        for ing in r['inputs']:
+            uses[ing['item']].append((f"crafting {r['output']['item']}", ing['qty']))
+        for up in r['upgrades']:
+            for ing in up['inputs']:
+                uses[ing['item']].append((f"upgrading {r['output']['item']}", ing['qty']))
+    for st in stations:
+        for ing in st['buildRequirements']:
+            uses[ing['item']].append((f"building {st['name']}", ing['qty']))
+        for ext in st['extensions']:
+            for ing in ext['requirements']:
+                uses[ing['item']].append((f"building {ext['name']}", ing['qty']))
+    summons = defaultdict(list)
+    for b in bosses:
+        for ing in b['summonItems']:
+            summons[ing['item']].append((b['name'], ing['qty']))
+
+    def derived_hoard(iid, cat, stack):
+        """Default hoard for an item the configs do not list: boss summon items and tools are
+        must_keep, anything used as an ingredient is keep_some at its largest single need."""
+        if iid in summons:
+            names = ', '.join(n for n, _ in summons[iid])
+            return 'must_keep', {'hoardNote': f'Needed to summon {names}.'}
+        if cat == 'tool' and stack == 1:  # bait and other stackable tools are consumed
+            return 'must_keep', {'hoardNote': 'A tool you need to own.'}
+        if iid in uses:
+            qty = max(q for _, q in uses[iid])
+            what = sorted({w for w, _ in uses[iid]})
+            shown = ', '.join(what[:3]) + (f' and {len(what) - 3} more' if len(what) > 3 else '')
+            return 'keep_some', {'recommendedQty': qty,
+                                 'hoardNote': f'Used for {shown}. Quantity is the largest single need.'}
+        return None
+
     for iid in sorted(allowed):
         s = items_raw[iid]
         cat = category_of[iid]
@@ -403,6 +439,8 @@ def main(raw, out, build_id, reviewed=None):
             hoard, extra = 'keep_some', {'recommendedQty': keep_some[iid]}
         elif iid in must_keep:
             hoard, extra = 'must_keep', {}
+        elif derived_hoard(iid, cat, s['m_maxStackSize']):
+            hoard, extra = derived_hoard(iid, cat, s['m_maxStackSize'])
         elif cat == 'trophy':
             hoard, extra = 'decorative', {}
         else:
