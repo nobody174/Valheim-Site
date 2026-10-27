@@ -118,3 +118,10 @@ describe('weapon rankings page', () => {
     expect(screen.getByText(/No weapons match/)).toBeTruthy();
   });
 });
+
+describe('weapon skill', () => {
+  it('scales damage and shows the range', () => {
+    renderPage('/rankings?q=bronze%20axe&skill=100');
+    expect(screen.getByRole('cell', { name: /^37 ?\(34-40\)$/ })).toBeTruthy(); // 40 * 0.925
+  });
+});

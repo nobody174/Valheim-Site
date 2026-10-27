@@ -131,6 +131,11 @@ damagePerLevel * (level - 1)`), keeping only types that hurt creatures (chop and
 tool-only). "vs creature" scales each type by the creature's resistance label: very weak x2, weak
 x1.5, resistant x0.5, very resistant x0.25, immune and ignore x0. (`src/data/weaponStats.ts`)
 
+**Weapon skill.** Optional. Each hit rolls uniformly between `lerp(0.4, 1, skill/100) - 0.15` and `+ 0.15`
+(clamped to 0..1) of the listed damage; the table shows the mean and the min-max, like the in-game
+"(15-27)". Read from `Skills.GetRandomSkillRange` in the game's `assembly_valheim.dll`; one level is
+applied to all weapon types. (`skillRange` in `src/data/weaponStats.ts`)
+
 **Damage per combo.** Per hit times the combo multiplier: every swing counts the attack's
 `damageMultiplier`, and the last swing of a multi-swing combo uses `lastChainMultiplier` instead
 (bronze sword: 1 + 1 + 2 = 4 hits). (`src/data/attackModel.ts`)
