@@ -8,6 +8,7 @@ export const ROUTES: RouteDef[] = [
   { path: '/', label: 'Search', phase: 1 },
   { path: '/items', label: 'Items', phase: 2 },
   { path: '/recipes', label: 'Recipes', phase: 1 },
+  { path: '/building', label: 'Building', phase: 2 },
   { path: '/progression', label: 'Progression', phase: 1 },
   { path: '/trophies', label: 'Trophies', phase: 2 },
   { path: '/bosses', label: 'Bosses', phase: 2 },

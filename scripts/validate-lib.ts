@@ -163,7 +163,7 @@ export function validateData(raw: RawData): ValidationResult {
     s.extensions.forEach((x) => need(x.requirements, `building ${x.id}`));
   }
   for (const b of data.bosses) need(b.summonItems, `summoning ${b.id}`);
-  for (const p of data.pieces) need(p.requirements, `building ${p.id}`);
+  // Building pieces are not counted: they are optional decoration (a pile of 999 coins is a piece).
   for (const it of data.items) {
     const why = needed.get(it.id);
     if (why && (it.hoard === 'safe_discard' || it.hoard === 'decorative')) {

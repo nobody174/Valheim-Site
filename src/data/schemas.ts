@@ -277,6 +277,8 @@ export const PieceSchema = z
     category: z.string().min(1),
     requirements: z.array(ingredient).default([]),
     station: id.optional(),
+    /** Comfort points toward the Rested bonus, for furniture. */
+    comfort: z.number().positive().optional(),
     ...provenance,
   })
   .strict();

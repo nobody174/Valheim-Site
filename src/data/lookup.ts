@@ -69,6 +69,7 @@ export function createLookup(data: GameData) {
     allCreatures: () => data.creatures,
     allBosses: () => data.bosses,
     allFoods: () => data.foods,
+    allPieces: () => data.pieces,
     allTrophies: () => data.trophies,
     /** The trophy item a creature drops, if the data links one. */
     trophyOf: (creatureId: string): string | undefined =>
