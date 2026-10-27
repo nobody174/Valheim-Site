@@ -77,3 +77,20 @@ npm run validate
 
 **Dropped recipes.** The build only keeps recipes whose output is listed in a biome config. Every run it prints, and writes to `tools/extract/dropped_recipes.json`, the game recipes it did not keep: `outputNotConfigured` (every input is configured, the output is not: the likeliest misses, such as Fire Arrow was) and `inputNotConfigured` (the output is configured but an input is not). Review the diff of that file in each PR. Items the player crafts but that have no recipe in the game files are listed with a reason in `tools/extract/no_recipe.json`; a test fails if a craftable item has neither a recipe nor an entry there.
 
+## Dropped-recipe research (2026-10-27)
+
+The 14 recipes the builder found but did not keep were checked against public wikis and item databases (searched by Claude; the pages are third-party and may lag the game). The numbers below also match the game files.
+
+| Recipe | Finding | Decision |
+|---|---|---|
+| Butcher Knife | Forge, 2 Wood + 4 Tin; used to kill tamed animals. Several guides agree. | Added to Black Forest (Tin) |
+| Bone Tower Shield | Workbench level 3, 10 Wood + 10 Bone Fragments + 3 Skeleton Trophies. Guides agree. | Added to Black Forest |
+| Sharpening Stone | Stonecutter, 5 Stone; only used to build the Grinding Wheel (Forge upgrade). The Stonecutter itself needs Iron. | Wait for the Swamp pass and the station work (H3) |
+| Tankard | Workbench, 5 Fine Wood + 2 Resin; cosmetic drinking cup. | Not added: no gameplay value |
+| Odin Tankard, Cape of Odin, Helmet of Odin | Beta-supporter items; recipes not confirmed (sources disagree on the helmet). | Not added |
+| Wood Sword | No source found. | Not added; unconfirmed |
+| Needle Arrow | Workbench level 4, Needles + Feathers; later zones. | Wait for its zone |
+| Poison Resistance Mead Base | Honey, Thistle, Neck Tail, Coal; Swamp-era mead. | Wait for the Swamp pass |
+| Bone Bolt, Bronze Health Trinket, Forest Fishing Bait, Wood Turret Bolt | Nothing found. | Not added; unconfirmed |
+
+Correction: Upgrader1Armor and Upgrader2Weapon are flagged as upgrade-only resources in the game files, not crafting ingredients, so the Early Axes recipe is just 4 Wood + the two axe heads, and the Upgrader2Weapon item was removed from the data.

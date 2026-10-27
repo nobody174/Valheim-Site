@@ -519,6 +519,16 @@
     }
   },
   {
+    "item": "KnifeButcher",
+    "skill": "Knives",
+    "damage": {},
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 2.0,
+    "parryForce": 10.0,
+    "durability": 200.0
+  },
+  {
     "item": "KnifeCopper",
     "skill": "Knives",
     "damage": {
@@ -889,6 +899,18 @@
         "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
       }
     }
+  },
+  {
+    "item": "ShieldBoneTower",
+    "skill": "Blocking",
+    "damage": {},
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 32.0,
+    "parryForce": 100.0,
+    "knockback": 40.0,
+    "durability": 200.0,
+    "maxQuality": 3
   },
   {
     "item": "ShieldBronzeBuckler",

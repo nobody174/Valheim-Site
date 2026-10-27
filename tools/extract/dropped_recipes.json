@@ -46,15 +46,6 @@
       ]
     },
     {
-      "recipe": "Recipe_KnifeButcher",
-      "output": "KnifeButcher",
-      "station": "forge",
-      "inputs": [
-        "Wood",
-        "Tin"
-      ]
-    },
-    {
       "recipe": "Recipe_MeadBasePoisonResist",
       "output": "MeadBasePoisonResist",
       "station": "piece_MeadCauldron",
@@ -71,16 +62,6 @@
       "station": "piece_stonecutter",
       "inputs": [
         "Stone"
-      ]
-    },
-    {
-      "recipe": "Recipe_ShieldBoneTower",
-      "output": "ShieldBoneTower",
-      "station": "piece_workbench",
-      "inputs": [
-        "Wood",
-        "BoneFragments",
-        "TrophySkeleton"
       ]
     },
     {
