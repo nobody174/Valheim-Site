@@ -382,7 +382,17 @@ def main(raw, out, build_id, reviewed=None):
             cost.append({'item': item, 'qty': r['m_amount']})
         return cost
 
+    def missing_items(name):
+        """Display names of the build items of a piece that no biome config has yet."""
+        out = []
+        for r in pieces[name]['m_resources']:
+            item = comp_name(r['m_resItem'])
+            if item not in allowed:
+                out.append(english(items_raw[item]['m_name'], item) if item in items_raw else str(item))
+        return out
+
     ext_by_station = defaultdict(dict)
+    later_by_station = defaultdict(dict)
     for row in load(raw, 'stationext.json'):
         d = row['data']
         ext = go_name.get(comp_go.get(row['pathId']))
@@ -390,12 +400,16 @@ def main(raw, out, build_id, reviewed=None):
         if not ext or not owner:
             continue
         cost = piece_cost(ext)
-        if cost is None:
-            warnings.append(f'extension {ext} of {owner}: needs items outside the configured biomes; skipped')
-            continue
-        name = english(pieces[ext].get('m_name', ''), ext)
-        if name in {e['name'] for e in ext_by_station[owner].values()}:
+        name = english(pieces[ext].get('m_name', ''), ext) if ext in pieces else ext
+        if name in {e['name'] for e in ext_by_station[owner].values()} | \
+                {e['name'] for e in later_by_station[owner].values()}:
             continue  # variants of the same extension
+        if cost is None:
+            # Kept as a name plus the items it needs, so the station page can say a level exists
+            # even though its materials come from a zone that is not in the data yet.
+            later_by_station[owner][ext] = {'id': ext, 'name': name, 'rangeM': d['m_maxStationDistance'] or None,
+                                            'needs': missing_items(ext) if ext in pieces else []}
+            continue
         ext_by_station[owner][ext] = {'id': ext, 'name': name, 'rangeM': d['m_maxStationDistance'] or None,
                                       'requirements': cost}
 
@@ -404,9 +418,10 @@ def main(raw, out, build_id, reviewed=None):
         data = station_raw.get(s, {})
         cost = piece_cost(s)
         entry = {'id': s, 'name': english(data.get('m_name', ''), conv_names.get(s, s)),
-                 'buildRequirements': cost or [], 'levels': [],
-                 'extensions': list(ext_by_station.get(s, {}).values()), **prov}
-        notes = ['Station level rises with the extensions built near it.']
+                 'buildRequirements': cost or [],
+                 'extensions': list(ext_by_station.get(s, {}).values()),
+                 'laterExtensions': list(later_by_station.get(s, {}).values()), **prov}
+        notes = ['Station level is 1 plus the number of different extensions built within range.']
         if cost is None and s in pieces:
             notes.append('Build cost not shown: it needs items from biomes not added yet.')
         entry['note'] = ' '.join(notes)

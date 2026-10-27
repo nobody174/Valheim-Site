@@ -3,11 +3,11 @@
     "id": "charcoal_kiln",
     "name": "Charcoal Kiln",
     "buildRequirements": [],
-    "levels": [],
     "extensions": [],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it. Build cost not shown: it needs items from biomes not added yet."
+    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
   },
   {
     "id": "fermenter",
@@ -26,11 +26,11 @@
         "qty": 10
       }
     ],
-    "levels": [],
     "extensions": [],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "forge",
@@ -53,7 +53,6 @@
         "qty": 6
       }
     ],
-    "levels": [],
     "extensions": [
       {
         "id": "forge_ext5",
@@ -86,9 +85,43 @@
         ]
       }
     ],
+    "laterExtensions": [
+      {
+        "id": "forge_ext1",
+        "name": "Forge Bellows",
+        "rangeM": 2.0,
+        "needs": [
+          "Chain"
+        ]
+      },
+      {
+        "id": "forge_ext6",
+        "name": "Forge Tool Rack",
+        "rangeM": 5.0,
+        "needs": [
+          "Iron"
+        ]
+      },
+      {
+        "id": "forge_ext4",
+        "name": "Smith's Anvil",
+        "rangeM": 5.0,
+        "needs": [
+          "Iron"
+        ]
+      },
+      {
+        "id": "forge_ext3",
+        "name": "Grinding Wheel",
+        "rangeM": 5.0,
+        "needs": [
+          "Sharpening Stone"
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "piece_MeadCauldron",
@@ -107,11 +140,11 @@
         "qty": 2
       }
     ],
-    "levels": [],
     "extensions": [],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "piece_cauldron",
@@ -122,11 +155,55 @@
         "qty": 10
       }
     ],
-    "levels": [],
     "extensions": [],
+    "laterExtensions": [
+      {
+        "id": "cauldron_ext3_butchertable",
+        "name": "Butcher's Table",
+        "rangeM": 5.0,
+        "needs": [
+          "Silver"
+        ]
+      },
+      {
+        "id": "cauldron_ext5_mortarandpestle",
+        "name": "Rolling Pins and Cutting Boards",
+        "rangeM": 5.0,
+        "needs": [
+          "Ashwood",
+          "Flametal"
+        ]
+      },
+      {
+        "id": "cauldron_ext4_pots",
+        "name": "Pots and Pans",
+        "rangeM": 5.0,
+        "needs": [
+          "Iron",
+          "Black Metal"
+        ]
+      },
+      {
+        "id": "cauldron_ext1_spice",
+        "name": "Spice Rack",
+        "rangeM": 5.0,
+        "needs": [
+          "Turnip"
+        ]
+      },
+      {
+        "id": "cauldron_ext7_smoker",
+        "name": "Smoker",
+        "rangeM": 5.0,
+        "needs": [
+          "Bloodgold",
+          "Timberwood"
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "piece_cookingstation",
@@ -137,21 +214,21 @@
         "qty": 2
       }
     ],
-    "levels": [],
     "extensions": [],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "piece_cookingstation_iron",
     "name": "Iron Cooking Station",
     "buildRequirements": [],
-    "levels": [],
     "extensions": [],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it. Build cost not shown: it needs items from biomes not added yet."
+    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
   },
   {
     "id": "piece_workbench",
@@ -162,7 +239,6 @@
         "qty": 10
       }
     ],
-    "levels": [],
     "extensions": [
       {
         "id": "piece_workbench_ext1",
@@ -218,18 +294,29 @@
         ]
       }
     ],
+    "laterExtensions": [
+      {
+        "id": "piece_workbench_ext4",
+        "name": "Tool Shelf",
+        "rangeM": 5.0,
+        "needs": [
+          "Iron",
+          "Obsidian"
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it."
+    "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
     "id": "smelter",
     "name": "Smelter",
     "buildRequirements": [],
-    "levels": [],
     "extensions": [],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "note": "Station level rises with the extensions built near it. Build cost not shown: it needs items from biomes not added yet."
+    "note": "Station level is 1 plus the number of different extensions built within range. Build cost not shown: it needs items from biomes not added yet."
   }
 ]
