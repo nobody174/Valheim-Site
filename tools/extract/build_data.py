@@ -90,10 +90,31 @@ def attack_of(shared, timing):
     return out
 
 
+def report_dropped(skipped_outputs, skipped_inputs, path):
+    """Print and save the game recipes the builder did not keep, so a missing craftable (a fire arrow,
+    a dual axe) shows up as a line in a reviewable file instead of vanishing silently.
+
+    - skipped_outputs: the recipe's output item is in no biome config, but every input is. These are
+      the likeliest misses: add the output to the biome it belongs to.
+    - skipped_inputs: the output is configured but an input is not, so the recipe was dropped.
+    """
+    key = lambda r: (r['recipe'], r['output'])
+    report = {'outputNotConfigured': sorted(skipped_outputs, key=key),
+              'inputNotConfigured': sorted(skipped_inputs, key=key)}
+    with open(path, 'w', encoding='utf8', newline='\n') as f:
+        json.dump(report, f, indent=2)
+        f.write('\n')
+    print(f"dropped recipes: {len(skipped_outputs)} with an unconfigured output (all inputs configured), "
+          f"{len(skipped_inputs)} with an unconfigured input; see {path}")
+    for r in report['outputNotConfigured']:
+        print(f"  MISSING? {r['recipe']}: makes {r['output']} at {r['station']} from {', '.join(r['inputs'])}")
+
+
 def main(raw, out, build_id, reviewed=None):
     reviewed = reviewed or date.today().isoformat()
     configs = load_configs()
     warnings = []
+    report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dropped_recipes.json')
 
     refs = load(raw, 'refs.json')
     timing = load(raw, 'attack_timing.json') if os.path.exists(os.path.join(raw, 'attack_timing.json')) else {}
@@ -266,10 +287,18 @@ def main(raw, out, build_id, reviewed=None):
     stations_seen = set()
     recipes, recipe_ids = [], set()
     recipe_outputs = defaultdict(list)
+    skipped_outputs, skipped_inputs = [], []  # reported at the end, see report_dropped()
     for row in load(raw, 'recipe.json'):
         d = row['data']
         out_item = comp_name(d['m_item'])
-        if out_item not in allowed or not d['m_enabled']:
+        if not d['m_enabled']:
+            continue
+        if out_item not in allowed:
+            ins = [comp_name(r['m_resItem']) for r in d['m_resources'] if not r['m_upgraderResource']]
+            if out_item and all(i in allowed for i in ins):
+                skipped_outputs.append({
+                    'recipe': d['m_Name'], 'output': out_item, 'station': comp_name(d['m_craftingStation']),
+                    'inputs': ins})
             continue
         shared = items_raw[out_item]
         station = comp_name(d['m_craftingStation'])
@@ -280,6 +309,7 @@ def main(raw, out, build_id, reviewed=None):
             rin = comp_name(r['m_resItem'])
             if rin not in allowed:
                 warnings.append(f"recipe {d['m_Name']}: input {rin} not in any biome config; skipped")
+                skipped_inputs.append({'recipe': d['m_Name'], 'output': out_item, 'missingInput': rin})
                 ok = False
                 break
             if r['m_amount'] > 0:
@@ -302,6 +332,8 @@ def main(raw, out, build_id, reviewed=None):
             'upgrades': [{'quality': q, 'inputs': v} for q, v in sorted(upgrades.items())],
             **prov,
         })
+
+    report_dropped(skipped_outputs, skipped_inputs, report_path)
 
     # ---- conversions: cooking, smelting, kilns, fermenting (from -> to, with a time)
     conv_names = {}

@@ -74,3 +74,6 @@ npm run validate
 ```
 
 `tools/extract/biomes/<biome>.json` lists which items, creatures and bosses belong to each biome. Adding a biome means adding a file there and rerunning the build; all configs are merged on every run.
+
+**Dropped recipes.** The build only keeps recipes whose output is listed in a biome config. Every run it prints, and writes to `tools/extract/dropped_recipes.json`, the game recipes it did not keep: `outputNotConfigured` (every input is configured, the output is not: the likeliest misses, such as Fire Arrow was) and `inputNotConfigured` (the output is configured but an input is not). Review the diff of that file in each PR. Items the player crafts but that have no recipe in the game files are listed with a reason in `tools/extract/no_recipe.json`; a test fails if a craftable item has neither a recipe nor an entry there.
+

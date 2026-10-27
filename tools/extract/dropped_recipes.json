@@ -1,0 +1,136 @@
+{
+  "outputNotConfigured": [
+    {
+      "recipe": "Recipe_ArrowNeedle",
+      "output": "ArrowNeedle",
+      "station": "piece_workbench",
+      "inputs": [
+        "Needle",
+        "Feathers"
+      ]
+    },
+    {
+      "recipe": "Recipe_BoltBone",
+      "output": "BoltBone",
+      "station": "blackforge",
+      "inputs": [
+        "BoneFragments",
+        "Feathers"
+      ]
+    },
+    {
+      "recipe": "Recipe_CapeOdin",
+      "output": "CapeOdin",
+      "station": "piece_workbench",
+      "inputs": [
+        "LeatherScraps",
+        "Coal"
+      ]
+    },
+    {
+      "recipe": "Recipe_FishingBaitForest",
+      "output": "FishingBaitForest",
+      "station": "piece_preptable",
+      "inputs": [
+        "FishingBait",
+        "TrophyFrostTroll"
+      ]
+    },
+    {
+      "recipe": "Recipe_HelmetOdin",
+      "output": "HelmetOdin",
+      "station": "piece_workbench",
+      "inputs": [
+        "LeatherScraps",
+        "Coal"
+      ]
+    },
+    {
+      "recipe": "Recipe_KnifeButcher",
+      "output": "KnifeButcher",
+      "station": "forge",
+      "inputs": [
+        "Wood",
+        "Tin"
+      ]
+    },
+    {
+      "recipe": "Recipe_MeadBasePoisonResist",
+      "output": "MeadBasePoisonResist",
+      "station": "piece_MeadCauldron",
+      "inputs": [
+        "Honey",
+        "Thistle",
+        "NeckTail",
+        "Coal"
+      ]
+    },
+    {
+      "recipe": "Recipe_SharpeningStone",
+      "output": "SharpeningStone",
+      "station": "piece_stonecutter",
+      "inputs": [
+        "Stone"
+      ]
+    },
+    {
+      "recipe": "Recipe_ShieldBoneTower",
+      "output": "ShieldBoneTower",
+      "station": "piece_workbench",
+      "inputs": [
+        "Wood",
+        "BoneFragments",
+        "TrophySkeleton"
+      ]
+    },
+    {
+      "recipe": "Recipe_SwordWood",
+      "output": "SwordWood",
+      "station": "piece_workbench",
+      "inputs": [
+        "Wood",
+        "FineWood",
+        "RoundLog"
+      ]
+    },
+    {
+      "recipe": "Recipe_Tankard",
+      "output": "Tankard",
+      "station": "piece_workbench",
+      "inputs": [
+        "FineWood",
+        "Resin"
+      ]
+    },
+    {
+      "recipe": "Recipe_TankardOdin",
+      "output": "TankardOdin",
+      "station": "piece_workbench",
+      "inputs": [
+        "FineWood",
+        "TrophyDeer",
+        "Resin"
+      ]
+    },
+    {
+      "recipe": "Recipe_TrinketBronzeHealth",
+      "output": "TrinketBronzeHealth",
+      "station": "forge",
+      "inputs": [
+        "Bronze",
+        "AncientSeed",
+        "TrophyGreydwarfShaman"
+      ]
+    },
+    {
+      "recipe": "Recipe_TurretBoltWood",
+      "output": "TurretBoltWood",
+      "station": "piece_artisanstation",
+      "inputs": [
+        "RoundLog",
+        "Feathers"
+      ]
+    }
+  ],
+  "inputNotConfigured": []
+}
