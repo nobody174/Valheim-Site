@@ -2440,6 +2440,87 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.KnifeButcher",
+    "kind": "craft",
+    "output": {
+      "item": "KnifeButcher",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Tin",
+        "qty": 4
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldBoneTower",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldBoneTower",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "BoneFragments",
+        "qty": 10
+      },
+      {
+        "item": "TrophySkeleton",
+        "qty": 3
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 15
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 20
+          },
+          {
+            "item": "BoneFragments",
+            "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SledgeStagbreaker",
     "kind": "craft",
     "output": {

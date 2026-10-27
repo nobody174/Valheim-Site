@@ -31,8 +31,7 @@
     "BirchSeeds",
     "FirCone",
     "AxeHead1",
-    "AxeHead2",
-    "Upgrader2Weapon"
+    "AxeHead2"
   ],
   "tools": [
     "Hammer",
@@ -175,12 +174,6 @@
         "other",
         "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
       ]
-    ],
-    "Upgrader2Weapon": [
-      [
-        "other",
-        "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
-      ]
     ]
   },
   "hoard": {
@@ -201,8 +194,7 @@
       "HardAntler",
       "Entrails",
       "AxeHead1",
-      "AxeHead2",
-      "Upgrader2Weapon"
+      "AxeHead2"
     ]
   },
   "guide": {

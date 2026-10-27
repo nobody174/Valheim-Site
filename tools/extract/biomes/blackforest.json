@@ -37,7 +37,9 @@
     "SpearBronze",
     "AtgeirBronze",
     "KnifeCopper",
-    "SledgeStagbreaker"
+    "SledgeStagbreaker",
+    "KnifeButcher",
+    "ShieldBoneTower"
   ],
   "armor": {
     "ArmorTrollLeatherChest": "chest",

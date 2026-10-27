@@ -1185,6 +1185,24 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "KnifeButcher",
+    "name": "Butcher Knife",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.KnifeButcher"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "KnifeCopper",
     "name": "Copper Knife",
     "category": "weapon",
@@ -1704,6 +1722,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ShieldBoneTower",
+    "name": "Bone Tower Shield",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldBoneTower"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ShieldBronzeBuckler",
     "name": "Bronze Buckler",
     "category": "weapon",
@@ -2105,7 +2141,9 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 3,
+    "hoardNote": "Used for crafting ShieldBoneTower. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -2132,25 +2170,6 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
-  },
-  {
-    "id": "Upgrader2Weapon",
-    "name": "Upgrader2Weapon",
-    "category": "material",
-    "biome": "meadows",
-    "weight": 0.5,
-    "stackSize": 20,
-    "tags": [],
-    "hoard": "must_keep",
-    "obtainedFrom": [
-      {
-        "type": "other",
-        "note": "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
-      }
-    ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Wood",
