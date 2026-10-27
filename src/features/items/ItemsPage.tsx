@@ -3,6 +3,8 @@ import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { HOARD_OPTIONS, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { lookup } from '../../data/lookup';
+import { effectiveHoard } from '../../state/model';
+import { useProfile } from '../../state/store';
 import styles from './Items.module.css';
 
 export const CATEGORY_LABELS: Record<string, string> = {
@@ -19,6 +21,7 @@ export const CATEGORY_LABELS: Record<string, string> = {
 
 /** Filters live in the URL, so a filtered list can be linked to and survives a refresh. */
 export function ItemsPage() {
+  const profile = useProfile();
   const [params, setParams] = useSearchParams();
   const text = params.get('q') ?? '';
   const hoard = params.get('hoard') ?? '';
@@ -36,12 +39,12 @@ export function ItemsPage() {
     const t = text.trim().toLowerCase();
     return lookup
       .allItems()
-      .filter((i) => !hoard || i.hoard === hoard)
+      .filter((i) => !hoard || effectiveHoard(i, profile) === hoard)
       .filter((i) => !biome || i.biome === biome)
       .filter((i) => !category || i.category === category)
       .filter((i) => !t || i.name.toLowerCase().includes(t))
       .sort((a, b) => a.name.localeCompare(b.name));
-  }, [hoard, biome, category, text]);
+  }, [hoard, biome, category, text, profile]);
 
   const filtered = Boolean(text || hoard || biome || category);
   const present = [...new Set(lookup.allItems().map((i) => i.category))];
@@ -132,7 +135,11 @@ export function ItemsPage() {
                   <td>{CATEGORY_LABELS[i.category] ?? i.category}</td>
                   <td>{lookup.biomeName(i.biome) ?? '-'}</td>
                   <td>
-                    <HoardBadge hoard={i.hoard} qty={i.recommendedQty} />
+                    <HoardBadge
+                      hoard={effectiveHoard(i, profile)}
+                      qty={i.recommendedQty}
+                      custom={i.id in profile.hoardOverrides}
+                    />
                   </td>
                   <td>
                     <VerifiedBadge level={i.verified} note={i.note} />

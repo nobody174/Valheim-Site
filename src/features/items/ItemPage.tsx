@@ -4,7 +4,10 @@ import { EntityLink } from '../../components/EntityLink';
 import { HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { CategoryGlyph } from '../../components/CategoryGlyph';
 import { graph, lookup } from '../../data/lookup';
+import { effectiveHoard } from '../../state/model';
 import { pushRecent } from '../../state/recent';
+import { useProfile } from '../../state/store';
+import { ItemActions } from './ItemActions';
 import { RecipeBlock } from './RecipeBlock';
 import styles from './Items.module.css';
 
@@ -173,6 +176,7 @@ function WhereFound({ id }: { id: string }) {
 export function ItemPage() {
   const { id = '' } = useParams();
   const item = lookup.item(id);
+  const profile = useProfile();
 
   useEffect(() => {
     if (item) pushRecent(item.id);
@@ -201,7 +205,11 @@ export function ItemPage() {
           <div className={styles.badges}>
             <span className={styles.dim}>{label(item.category)}</span>
             {biome && <span className={styles.dim}>· {biome}</span>}
-            <HoardBadge hoard={item.hoard} qty={item.recommendedQty} />
+            <HoardBadge
+              hoard={effectiveHoard(item, profile)}
+              qty={item.recommendedQty}
+              custom={item.id in profile.hoardOverrides}
+            />
             <VerifiedBadge level={item.verified} note={item.note} />
           </div>
         </div>
@@ -212,6 +220,8 @@ export function ItemPage() {
           Unverified: {item.note ?? 'not yet checked against the game.'}
         </p>
       )}
+
+      <ItemActions item={item} />
 
       <section className={styles.section}>
         <dl className={styles.facts}>

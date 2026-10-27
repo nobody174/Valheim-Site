@@ -25,11 +25,23 @@ const HOARD_LABEL: Record<Item['hoard'], string> = {
 
 export const HOARD_OPTIONS = Object.entries(HOARD_LABEL) as [Item['hoard'], string][];
 
-export function HoardBadge({ hoard, qty }: { hoard: Item['hoard']; qty?: number | null }) {
+export function HoardBadge({
+  hoard,
+  qty,
+  custom,
+}: {
+  hoard: Item['hoard'];
+  qty?: number | null;
+  custom?: boolean;
+}) {
   return (
-    <span className={`${styles.badge} ${styles[`h_${hoard}`]}`}>
+    <span
+      className={`${styles.badge} ${styles[`h_${hoard}`]}`}
+      title={custom ? 'You changed this from the default' : undefined}
+    >
       {HOARD_LABEL[hoard]}
       {hoard === 'keep_some' && qty ? ` (${qty})` : ''}
+      {custom ? ' · custom' : ''}
     </span>
   );
 }
