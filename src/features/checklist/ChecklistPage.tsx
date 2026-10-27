@@ -191,12 +191,14 @@ export function ChecklistPage() {
                   </td>
                   {PROGRESS_FLAGS.map((f) => (
                     <td key={f} className={styles.checkCell}>
-                      <input
-                        type="checkbox"
-                        checked={hasFlag(profile, i.id, f)}
-                        aria-label={`${FLAG_LABEL[f]}: ${i.name}`}
-                        onChange={() => toggle(i.id, f)}
-                      />
+                      <label className={styles.checkTap}>
+                        <input
+                          type="checkbox"
+                          checked={hasFlag(profile, i.id, f)}
+                          aria-label={`${FLAG_LABEL[f]}: ${i.name}`}
+                          onChange={() => toggle(i.id, f)}
+                        />
+                      </label>
                     </td>
                   ))}
                 </tr>

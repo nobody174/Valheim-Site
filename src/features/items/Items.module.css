@@ -278,6 +278,22 @@
   accent-color: var(--gold);
   cursor: pointer;
 }
+/* The label fills the cell so the whole cell is the tap target. */
+.checkTap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .checkTap {
+    min-height: 2.75rem;
+  }
+  .checkCell input {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
 .bars {
   display: grid;
   gap: 0.75rem;
