@@ -37,10 +37,61 @@
     "durability": 100.0
   },
   {
+    "item": "ArrowFrost",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 26.0,
+      "frost": 52.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
     "item": "ArrowIron",
     "skill": "Bows",
     "damage": {
       "pierce": 42.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
+    "item": "ArrowObsidian",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 52.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
+    "item": "ArrowPoison",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 26.0,
+      "poison": 52.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 10.0,
+    "knockback": 10.0,
+    "durability": 100.0
+  },
+  {
+    "item": "ArrowSilver",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 52.0,
+      "spirit": 20.0
     },
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
@@ -634,6 +685,89 @@
     }
   },
   {
+    "item": "BattleaxeCrystal",
+    "skill": "Axes",
+    "damage": {
+      "slash": 90.0,
+      "chop": 50.0,
+      "spirit": 30.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 6.0,
+      "chop": 2.5
+    },
+    "blockPower": 40.0,
+    "parryForce": 70.0,
+    "knockback": 70.0,
+    "durability": 200.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "battleaxe_attack",
+      "chainLevels": 3,
+      "staminaPerHit": 18.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.5,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 2.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "speedEvents": [
+              {
+                "at": 0.0786,
+                "factor": 1.3
+              },
+              {
+                "at": 1.1177,
+                "factor": 2.0
+              },
+              {
+                "at": 1.6325,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 1.2667,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "speedEvents": [
+              {
+                "at": 0.2124,
+                "factor": 1.5
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8,
+            "stateSpeed": 1.0,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.1545,
+                "factor": 0.5
+              },
+              {
+                "at": 0.2129,
+                "factor": 2.0
+              },
+              {
+                "at": 0.5339,
+                "factor": 0.4
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
     "item": "BombOoze",
     "skill": "skill0",
     "damage": {
@@ -658,6 +792,24 @@
     },
     "blockPower": 3.0,
     "durability": 50.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "BowDraugrFang",
+    "skill": "Bows",
+    "damage": {
+      "pierce": 47.0,
+      "poison": 5.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 3.0,
+      "poison": 5.0
+    },
+    "blockPower": 3.0,
+    "knockback": 20.0,
+    "durability": 100.0,
     "maxQuality": 4
   },
   {
@@ -794,6 +946,73 @@
       "animation": "unarmed_attack",
       "chainLevels": 2,
       "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.0,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1667,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 1.1667,
+            "speedEvents": [
+              {
+                "at": 0.0,
+                "factor": 2.0
+              },
+              {
+                "at": 0.6975,
+                "factor": 2.0
+              },
+              {
+                "at": 0.916,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 1.2,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.9926,
+            "speedEvents": [
+              {
+                "at": 0.0,
+                "factor": 2.0
+              },
+              {
+                "at": 0.6733,
+                "factor": 2.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
+    "item": "FistFenrirClaw",
+    "skill": "Unarmed",
+    "damage": {
+      "slash": 60.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 4.0
+    },
+    "blockPower": 5.0,
+    "parryForce": 10.0,
+    "knockback": 20.0,
+    "durability": 300.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "unarmed_attack",
+      "chainLevels": 2,
+      "staminaPerHit": 10.0,
       "damageMultiplier": 1.0,
       "lastChainMultiplier": 2.0,
       "rangeM": 2.0,
@@ -1012,6 +1231,87 @@
     }
   },
   {
+    "item": "KnifeSilver",
+    "skill": "Knives",
+    "damage": {
+      "slash": 25.0,
+      "pierce": 25.0,
+      "spirit": 12.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 1.0,
+      "pierce": 1.0
+    },
+    "blockPower": 2.0,
+    "parryForce": 10.0,
+    "knockback": 10.0,
+    "durability": 200.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "knife_stab",
+      "chainLevels": 3,
+      "staminaPerHit": 10.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 1.0,
+      "rangeM": 1.8,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.4667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.3646,
+            "speedEvents": [
+              {
+                "at": 0.1574,
+                "factor": 1.5
+              },
+              {
+                "at": 0.3396,
+                "factor": 0.5
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.6,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "chainAt": 0.4846,
+            "speedEvents": [
+              {
+                "at": 0.1529,
+                "factor": 2.0
+              },
+              {
+                "at": 0.4047,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8667,
+            "stateSpeed": 1.2000000476837158,
+            "exitTime": 1.0,
+            "speedEvents": [
+              {
+                "at": 0.2082,
+                "factor": 2.5
+              },
+              {
+                "at": 0.5676,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
     "item": "MaceBronze",
     "skill": "Clubs",
     "damage": {
@@ -1113,6 +1413,90 @@
       "animation": "swing_longsword",
       "chainLevels": 3,
       "staminaPerHit": 10.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.4,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.73,
+            "speedEvents": [
+              {
+                "at": 0.3724,
+                "factor": 1.2
+              },
+              {
+                "at": 0.6011,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5566,
+            "speedEvents": [
+              {
+                "at": 0.2143,
+                "factor": 1.1
+              },
+              {
+                "at": 0.4424,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9209,
+            "speedEvents": [
+              {
+                "at": 0.0238,
+                "factor": 0.5
+              },
+              {
+                "at": 0.1397,
+                "factor": 1.5
+              },
+              {
+                "at": 0.5485,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
+    "item": "MaceSilver",
+    "skill": "Clubs",
+    "damage": {
+      "blunt": 35.0,
+      "frost": 40.0,
+      "spirit": 20.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "frost": 6.0
+    },
+    "blockPower": 30.0,
+    "parryForce": 30.0,
+    "knockback": 100.0,
+    "durability": 200.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_longsword",
+      "chainLevels": 3,
+      "staminaPerHit": 12.0,
       "damageMultiplier": 1.0,
       "lastChainMultiplier": 2.0,
       "rangeM": 2.4,
@@ -1380,6 +1764,20 @@
     "maxQuality": 3
   },
   {
+    "item": "ShieldSilver",
+    "skill": "Blocking",
+    "damage": {
+      "blunt": 10.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 60.0,
+    "parryForce": 40.0,
+    "knockback": 50.0,
+    "durability": 200.0,
+    "maxQuality": 3
+  },
+  {
     "item": "ShieldWood",
     "skill": "Blocking",
     "damage": {},
@@ -1630,6 +2028,51 @@
     }
   },
   {
+    "item": "SpearWolfFang",
+    "skill": "Spears",
+    "damage": {
+      "pierce": 75.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "pierce": 6.0
+    },
+    "blockPower": 30.0,
+    "parryForce": 20.0,
+    "knockback": 20.0,
+    "durability": 100.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "spear_poke",
+      "chainLevels": 1,
+      "staminaPerHit": 12.0,
+      "damageMultiplier": 1.0,
+      "rangeM": 1.9,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 0.3667,
+            "stateSpeed": 1.0,
+            "exitTime": 1.3,
+            "speedEvents": [
+              {
+                "at": 0.0,
+                "factor": 0.8
+              },
+              {
+                "at": 0.1389,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
     "item": "SwordBronze",
     "skill": "Swords",
     "damage": {
@@ -1731,6 +2174,90 @@
       "animation": "swing_longsword",
       "chainLevels": 3,
       "staminaPerHit": 10.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.4,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.73,
+            "speedEvents": [
+              {
+                "at": 0.3724,
+                "factor": 1.2
+              },
+              {
+                "at": 0.6011,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.8,
+            "chainAt": 0.5566,
+            "speedEvents": [
+              {
+                "at": 0.2143,
+                "factor": 1.1
+              },
+              {
+                "at": 0.4424,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 0.8333,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9209,
+            "speedEvents": [
+              {
+                "at": 0.0238,
+                "factor": 0.5
+              },
+              {
+                "at": 0.1397,
+                "factor": 1.5
+              },
+              {
+                "at": 0.5485,
+                "factor": 1.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
+    "item": "SwordSilver",
+    "skill": "Swords",
+    "damage": {
+      "slash": 75.0,
+      "spirit": 30.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 6.0,
+      "spirit": 5.0
+    },
+    "blockPower": 30.0,
+    "parryForce": 20.0,
+    "knockback": 40.0,
+    "durability": 200.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "swing_longsword",
+      "chainLevels": 3,
+      "staminaPerHit": 12.0,
       "damageMultiplier": 1.0,
       "lastChainMultiplier": 2.0,
       "rangeM": 2.4,

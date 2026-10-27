@@ -182,6 +182,29 @@
     ],
     "extensions": [
       {
+        "id": "cauldron_ext3_butchertable",
+        "name": "Butcher's Table",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "ElderBark",
+            "qty": 2
+          },
+          {
+            "item": "RoundLog",
+            "qty": 4
+          },
+          {
+            "item": "FineWood",
+            "qty": 4
+          },
+          {
+            "item": "Silver",
+            "qty": 2
+          }
+        ]
+      },
+      {
         "id": "cauldron_ext1_spice",
         "name": "Spice Rack",
         "rangeM": 5.0,
@@ -210,14 +233,6 @@
       }
     ],
     "laterExtensions": [
-      {
-        "id": "cauldron_ext3_butchertable",
-        "name": "Butcher's Table",
-        "rangeM": 5.0,
-        "needs": [
-          "Silver"
-        ]
-      },
       {
         "id": "cauldron_ext5_mortarandpestle",
         "name": "Rolling Pins and Cutting Boards",
@@ -332,6 +347,25 @@
         ]
       },
       {
+        "id": "piece_workbench_ext4",
+        "name": "Tool Shelf",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "Iron",
+            "qty": 4
+          },
+          {
+            "item": "FineWood",
+            "qty": 10
+          },
+          {
+            "item": "Obsidian",
+            "qty": 4
+          }
+        ]
+      },
+      {
         "id": "piece_workbench_ext3",
         "name": "Adze",
         "rangeM": 5.0,
@@ -347,16 +381,7 @@
         ]
       }
     ],
-    "laterExtensions": [
-      {
-        "id": "piece_workbench_ext4",
-        "name": "Tool Shelf",
-        "rangeM": 5.0,
-        "needs": [
-          "Obsidian"
-        ]
-      }
-    ],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "note": "Station level is 1 plus the number of different extensions built within range."

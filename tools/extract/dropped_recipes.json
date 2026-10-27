@@ -48,6 +48,24 @@
       ]
     },
     {
+      "recipe": "Recipe_FishingBaitCave",
+      "output": "FishingBaitCave",
+      "station": "piece_preptable",
+      "inputs": [
+        "FishingBait",
+        "TrophyFenring"
+      ]
+    },
+    {
+      "recipe": "Recipe_FishingBaitDeepNorth",
+      "output": "FishingBaitDeepNorth",
+      "station": "piece_preptable",
+      "inputs": [
+        "FishingBait",
+        "TrophyHatchling"
+      ]
+    },
+    {
       "recipe": "Recipe_FishingBaitForest",
       "output": "FishingBaitForest",
       "station": "piece_preptable",
@@ -160,6 +178,26 @@
         "Iron",
         "ElderBark",
         "TrophyLeech"
+      ]
+    },
+    {
+      "recipe": "Recipe_TrinketSilverDamage",
+      "output": "TrinketSilverDamage",
+      "station": "forge",
+      "inputs": [
+        "Silver",
+        "WolfFang",
+        "TrophyFenring"
+      ]
+    },
+    {
+      "recipe": "Recipe_TrinketSilverResist",
+      "output": "TrinketSilverResist",
+      "station": "forge",
+      "inputs": [
+        "Silver",
+        "Crystal",
+        "TrophySGolem"
       ]
     },
     {

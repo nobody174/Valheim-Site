@@ -109,3 +109,13 @@ Config: `tools/extract/biomes/swamp.json`. The creature drops, recipes, stats an
 - Moved to the right zone (M6): Entrails and Sausages to the Swamp, Coins to the Black Forest (Trolls drop them). Needle stays in Meadows until the Plains pass (Deathsquito drop).
 - Iron Shield (`ShieldIronSquare`) is not added: its recipe is disabled in the game files.
 - Left out for now: Iron Brooch and other trinkets, Fishing Bait (Swamp), Iron Bolt and Crossbow (Black Forge, Mistlands), Poison Arrow (Obsidian, Mountains), Blood Pudding (Barley, Plains).
+
+## Mountains pass (not checked in game)
+
+Config: `tools/extract/biomes/mountain.json`. Creature drops, recipes, stats and costs come from the game files. Hand-written and unverified:
+
+- Where-to-get notes for Silver Ore, Obsidian and Dragon Egg (guides). Silver is smelted from Silver Ore.
+- Moder summon: 3 Dragon Eggs (guides agree; the altar cost is not in the extracted data).
+- Fenris Hair and Fenris Claw: no creature drops them in the game files, so their source says "not confirmed". The Fenring armor and Flesh Rippers need them.
+- Left out for now: Silver and Bronze trinkets (a trinket category is not modelled), Fishing Bait variants, Wolf Skewer (needs Onion), Fenring Helmet (needs a Cultist trophy), the Lantern and other Black Forge items.
+- Mountain spawn tables also list Fuling, Jotun, Seeker, Elaking and Charred; those are event or late-game spawns and are not added.

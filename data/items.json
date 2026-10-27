@@ -147,6 +147,42 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArmorFenringChest",
+    "name": "Fenris Coat",
+    "category": "armor",
+    "biome": "mountain",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorFenrirChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorFenringLegs",
+    "name": "Fenris Leggings",
+    "category": "armor",
+    "biome": "mountain",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorFenrirLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArmorIronChest",
     "name": "Iron Scale Mail",
     "category": "armor",
@@ -327,6 +363,42 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArmorWolfChest",
+    "name": "Wolf Hide Chestpiece",
+    "category": "armor",
+    "biome": "mountain",
+    "weight": 15.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorWolfChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorWolfLegs",
+    "name": "Wolf Hide Trousers",
+    "category": "armor",
+    "biome": "mountain",
+    "weight": 15.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorWolfLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArrowBronze",
     "name": "Bronzehead Arrow",
     "category": "weapon",
@@ -381,6 +453,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArrowFrost",
+    "name": "Frost Arrow",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowFrost"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArrowIron",
     "name": "Ironhead Arrow",
     "category": "weapon",
@@ -393,6 +483,60 @@
       {
         "type": "recipe",
         "recipe": "recipe.ArrowIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArrowObsidian",
+    "name": "Obsidian Arrow",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowObsidian"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArrowPoison",
+    "name": "Poison Arrow",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowPoison"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArrowSilver",
+    "name": "Silver Arrow",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowSilver"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -593,6 +737,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.Battleaxe"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BattleaxeCrystal",
+    "name": "Crystal Battleaxe",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Battleaxe_Crystal"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -829,6 +991,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "BowDraugrFang",
+    "name": "Draugr Fang",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BowDraugrFang"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "BowFineWood",
     "name": "Finewood Bow",
     "category": "weapon",
@@ -935,6 +1115,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.CapeTrollHide"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CapeWolf",
+    "name": "Wolf Fur Cape",
+    "category": "armor",
+    "biome": "mountain",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeWolf"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1144,6 +1342,28 @@
     "verified": "cross-checked"
   },
   {
+    "id": "CookedWolfMeat",
+    "name": "Cooked Wolf Meat",
+    "category": "food",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.WolfMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.WolfMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Copper",
     "name": "Copper",
     "category": "material",
@@ -1193,6 +1413,24 @@
       {
         "type": "drop",
         "creature": "gd_king"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Crystal",
+    "name": "Crystal",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "StoneGolem"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1300,6 +1538,48 @@
     "verified": "cross-checked"
   },
   {
+    "id": "DragonEgg",
+    "name": "Dragon Egg",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 200.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick up from dragon nests high in the Mountains (guides). Three summon Moder; the altar cost is not in the extracted data."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "DragonTear",
+    "name": "Dragon Tear",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Moder (10)."
+      },
+      {
+        "type": "drop",
+        "creature": "Dragon"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "ElderBark",
     "name": "Ancient Bark",
     "category": "material",
@@ -1329,6 +1609,24 @@
       {
         "type": "drop",
         "creature": "Draugr_Elite"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Eyescream",
+    "name": "Eyescream",
+    "category": "food",
+    "biome": "mountain",
+    "weight": 0.5,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Eyescream"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1532,6 +1830,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "FistFenrirClaw",
+    "name": "Flesh Rippers",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.FistFenrirClaw"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Flint",
     "name": "Flint",
     "category": "material",
@@ -1550,6 +1866,24 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FreezeGland",
+    "name": "Freeze Gland",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Hatchling"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "GreydwarfEye",
@@ -1585,7 +1919,9 @@
     "weight": 0.5,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 16,
+    "hoardNote": "Used for crafting BowDraugrFang, upgrading BowDraugrFang. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -1663,6 +1999,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.HelmetBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HelmetDrake",
+    "name": "Drake Helmet",
+    "category": "armor",
+    "biome": "mountain",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetDrake"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1769,7 +2123,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting BlackSoup, crafting BoarJerky, crafting MeadBaseFrostResist and 5 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting BlackSoup, crafting BoarJerky, crafting MeadBaseFrostResist and 6 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -1894,6 +2248,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "KnifeSilver",
+    "name": "Silver Knife",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.KnifeSilver"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "LeatherScraps",
     "name": "Leather Scraps",
     "category": "material",
@@ -1943,6 +2315,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.MaceIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MaceSilver",
+    "name": "Frostner",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MaceSilver"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2298,6 +2688,25 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "Obsidian",
+    "name": "Obsidian",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine obsidian deposits in the Mountains."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Ooze",
     "name": "Ooze",
     "category": "material",
@@ -2307,7 +2716,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 5,
-    "hoardNote": "Used for crafting BombOoze, crafting ShocklateSmoothie. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting ArrowPoison, crafting BombOoze, crafting ShocklateSmoothie. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -2569,7 +2978,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 35,
-    "hoardNote": "Used for crafting BowFineWood, crafting Coal, crafting Cultivator and 8 more. Quantity is the largest single need.",
+    "hoardNote": "Used for building Butcher's Table, crafting BowFineWood, crafting Coal and 9 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -2726,6 +3135,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ShieldSilver",
+    "name": "Silver Shield",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldSilver"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ShieldWood",
     "name": "Wood Shield",
     "category": "weapon",
@@ -2778,6 +3205,43 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "Silver",
+    "name": "Silver",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 14.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.smelter.SilverOre"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SilverOre",
+    "name": "Silver Ore",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 14.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine silver veins in the Mountains (the Wishbone, dropped by Bonemass, helps find them). Smelt it into Silver."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "SledgeIron",
@@ -2870,6 +3334,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "SpearWolfFang",
+    "name": "Fang Spear",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpearWolfFang"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Stone",
     "name": "Stone",
     "category": "material",
@@ -2891,6 +3373,10 @@
       {
         "type": "drop",
         "creature": "Greydwarf_Elite"
+      },
+      {
+        "type": "drop",
+        "creature": "StoneGolem"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2928,6 +3414,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.SwordIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SwordSilver",
+    "name": "Silver Sword",
+    "category": "weapon",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordSilver"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3144,6 +3648,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "TrophyDragonQueen",
+    "name": "Moder Trophy",
+    "category": "trophy",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Dragon"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "TrophyDraugr",
     "name": "Draugr Trophy",
     "category": "trophy",
@@ -3194,6 +3716,24 @@
       {
         "type": "drop",
         "creature": "Eikthyr"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyFenring",
+    "name": "Fenring Trophy",
+    "category": "trophy",
+    "biome": "mountain",
+    "weight": 1.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Fenring"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3272,6 +3812,26 @@
     "verified": "cross-checked"
   },
   {
+    "id": "TrophyHatchling",
+    "name": "Drake Trophy",
+    "category": "trophy",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 2,
+    "hoardNote": "Used for crafting HelmetDrake. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Hatchling"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "TrophyLeech",
     "name": "Leech Trophy",
     "category": "trophy",
@@ -3302,6 +3862,24 @@
       {
         "type": "drop",
         "creature": "Neck"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophySGolem",
+    "name": "Stone Golem Trophy",
+    "category": "trophy",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "StoneGolem"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3340,6 +3918,26 @@
       {
         "type": "drop",
         "creature": "gd_king"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyWolf",
+    "name": "Wolf Trophy",
+    "category": "trophy",
+    "biome": "mountain",
+    "weight": 1.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting CapeWolf. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Wolf"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3475,6 +4073,126 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "WolfClaw",
+    "name": "Fenris Claw",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 9,
+    "hoardNote": "Used for crafting FistFenrirClaw, upgrading FistFenrirClaw. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Source not confirmed: no creature drops it in the game files. Check in game."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "WolfFang",
+    "name": "Wolf Fang",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Wolf"
+      },
+      {
+        "type": "drop",
+        "creature": "Fenring"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "WolfHairBundle",
+    "name": "Fenris Hair",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 35,
+    "hoardNote": "Used for crafting ArmorFenringChest, crafting ArmorFenringLegs, crafting FistFenrirClaw and 3 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Source not confirmed: no creature drops it in the game files. Check in game."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "WolfJerky",
+    "name": "Wolf Jerky",
+    "category": "food",
+    "biome": "mountain",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.WolfJerky"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "WolfMeat",
+    "name": "Wolf Meat",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting CookedWolfMeat, crafting WolfJerky. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Wolf"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "WolfPelt",
+    "name": "Wolf Pelt",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Wolf"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "Wood",

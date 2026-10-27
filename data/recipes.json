@@ -109,6 +109,75 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.CapeWolf",
+    "kind": "craft",
+    "output": {
+      "item": "CapeWolf",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "WolfPelt",
+        "qty": 6
+      },
+      {
+        "item": "Silver",
+        "qty": 4
+      },
+      {
+        "item": "TrophyWolf",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "WolfPelt",
+            "qty": 10
+          },
+          {
+            "item": "Silver",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "WolfPelt",
+            "qty": 14
+          },
+          {
+            "item": "Silver",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "WolfPelt",
+            "qty": 18
+          },
+          {
+            "item": "Silver",
+            "qty": 10
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorLeatherChest",
     "kind": "craft",
     "output": {
@@ -266,6 +335,103 @@
           {
             "item": "Bronze",
             "qty": 7
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.BowDraugrFang",
+    "kind": "craft",
+    "output": {
+      "item": "BowDraugrFang",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "ElderBark",
+        "qty": 10
+      },
+      {
+        "item": "Silver",
+        "qty": 20
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      },
+      {
+        "item": "Guck",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 15
+          },
+          {
+            "item": "Silver",
+            "qty": 30
+          },
+          {
+            "item": "DeerHide",
+            "qty": 4
+          },
+          {
+            "item": "Guck",
+            "qty": 12
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 20
+          },
+          {
+            "item": "Silver",
+            "qty": 40
+          },
+          {
+            "item": "DeerHide",
+            "qty": 6
+          },
+          {
+            "item": "Guck",
+            "qty": 14
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 25
+          },
+          {
+            "item": "Silver",
+            "qty": 50
+          },
+          {
+            "item": "DeerHide",
+            "qty": 8
+          },
+          {
+            "item": "Guck",
+            "qty": 16
           }
         ]
       }
@@ -620,6 +786,75 @@
           {
             "item": "LeatherScraps",
             "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.Battleaxe_Crystal",
+    "kind": "craft",
+    "output": {
+      "item": "BattleaxeCrystal",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "ElderBark",
+        "qty": 40
+      },
+      {
+        "item": "Silver",
+        "qty": 30
+      },
+      {
+        "item": "Crystal",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 45
+          },
+          {
+            "item": "Silver",
+            "qty": 45
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 50
+          },
+          {
+            "item": "Silver",
+            "qty": 60
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 55
+          },
+          {
+            "item": "Silver",
+            "qty": 75
           }
         ]
       }
@@ -1543,6 +1778,39 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArrowFrost",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowFrost",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 4
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 8
+      },
+      {
+        "item": "Obsidian",
+        "qty": 4
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      },
+      {
+        "item": "FreezeGland",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.MeadBaseTasty",
     "kind": "craft",
     "output": {
@@ -1691,6 +1959,60 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.WolfJerky",
+    "kind": "craft",
+    "output": {
+      "item": "WolfJerky",
+      "qty": 2
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "WolfMeat",
+        "qty": 1
+      },
+      {
+        "item": "Honey",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArrowSilver",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowSilver",
+      "qty": 20
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 8
+      },
+      {
+        "item": "Silver",
+        "qty": 1
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.AtgeirBronze",
     "kind": "craft",
     "output": {
@@ -1789,6 +2111,103 @@
           {
             "item": "Stone",
             "qty": 4
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.SwordSilver",
+    "kind": "craft",
+    "output": {
+      "item": "SwordSilver",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Silver",
+        "qty": 40
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 3
+      },
+      {
+        "item": "Iron",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 3
+          },
+          {
+            "item": "Silver",
+            "qty": 60
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 4
+          },
+          {
+            "item": "Iron",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 4
+          },
+          {
+            "item": "Silver",
+            "qty": 80
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 5
+          },
+          {
+            "item": "Iron",
+            "qty": 11
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 5
+          },
+          {
+            "item": "Silver",
+            "qty": 100
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 6
+          },
+          {
+            "item": "Iron",
+            "qty": 14
           }
         ]
       }
@@ -2032,6 +2451,87 @@
           {
             "item": "BoneFragments",
             "qty": 15
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorWolfLegs",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorWolfLegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Silver",
+        "qty": 20
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 5
+      },
+      {
+        "item": "WolfFang",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 25
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 7
+          },
+          {
+            "item": "WolfFang",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 30
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 9
+          },
+          {
+            "item": "WolfFang",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 35
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 11
+          },
+          {
+            "item": "WolfFang",
+            "qty": 7
           }
         ]
       }
@@ -2762,6 +3262,103 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.SpearWolfFang",
+    "kind": "craft",
+    "output": {
+      "item": "SpearWolfFang",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "ElderBark",
+        "qty": 10
+      },
+      {
+        "item": "WolfFang",
+        "qty": 4
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 2
+      },
+      {
+        "item": "Silver",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 15
+          },
+          {
+            "item": "WolfFang",
+            "qty": 6
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 3
+          },
+          {
+            "item": "Silver",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 20
+          },
+          {
+            "item": "WolfFang",
+            "qty": 8
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 4
+          },
+          {
+            "item": "Silver",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "ElderBark",
+            "qty": 25
+          },
+          {
+            "item": "WolfFang",
+            "qty": 10
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 5
+          },
+          {
+            "item": "Silver",
+            "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SpearElderbark",
     "kind": "craft",
     "output": {
@@ -2965,6 +3562,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArrowObsidian",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowObsidian",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 8
+      },
+      {
+        "item": "Obsidian",
+        "qty": 4
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ShieldIronBuckler",
     "kind": "craft",
     "output": {
@@ -3074,6 +3700,63 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.HelmetDrake",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetDrake",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Silver",
+        "qty": 20
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 2
+      },
+      {
+        "item": "TrophyHatchling",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 25
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 35
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.Hoe",
     "kind": "craft",
     "output": {
@@ -3118,6 +3801,87 @@
           {
             "item": "Stone",
             "qty": 4
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorFenrirChest",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorFenringChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "WolfHairBundle",
+        "qty": 20
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 5
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 25
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 8
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 14
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 30
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 11
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 18
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 35
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 14
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 22
           }
         ]
       }
@@ -3361,6 +4125,87 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FistFenrirClaw",
+    "kind": "craft",
+    "output": {
+      "item": "FistFenrirClaw",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "WolfHairBundle",
+        "qty": 10
+      },
+      {
+        "item": "WolfClaw",
+        "qty": 6
+      },
+      {
+        "item": "Silver",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 11
+          },
+          {
+            "item": "WolfClaw",
+            "qty": 7
+          },
+          {
+            "item": "Silver",
+            "qty": 11
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 12
+          },
+          {
+            "item": "WolfClaw",
+            "qty": 8
+          },
+          {
+            "item": "Silver",
+            "qty": 12
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 13
+          },
+          {
+            "item": "WolfClaw",
+            "qty": 9
+          },
+          {
+            "item": "Silver",
+            "qty": 13
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -3671,6 +4516,103 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.KnifeSilver",
+    "kind": "craft",
+    "output": {
+      "item": "KnifeSilver",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 2
+      },
+      {
+        "item": "Silver",
+        "qty": 10
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 3
+      },
+      {
+        "item": "Iron",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 3
+          },
+          {
+            "item": "Silver",
+            "qty": 15
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 4
+          },
+          {
+            "item": "Iron",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 4
+          },
+          {
+            "item": "Silver",
+            "qty": 20
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 5
+          },
+          {
+            "item": "Iron",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Wood",
+            "qty": 5
+          },
+          {
+            "item": "Silver",
+            "qty": 25
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 6
+          },
+          {
+            "item": "Iron",
+            "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.BowFineWood",
     "kind": "craft",
     "output": {
@@ -3752,6 +4694,58 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ShieldSilver",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldSilver",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Silver",
+        "qty": 8
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 20
+          },
+          {
+            "item": "Silver",
+            "qty": 12
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 30
+          },
+          {
+            "item": "Silver",
+            "qty": 16
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.CarrotSoup",
     "kind": "craft",
     "output": {
@@ -3795,6 +4789,39 @@
       {
         "item": "Honey",
         "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArrowPoison",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowPoison",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Wood",
+        "qty": 8
+      },
+      {
+        "item": "Obsidian",
+        "qty": 4
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      },
+      {
+        "item": "Ooze",
+        "qty": 2
       }
     ],
     "upgrades": [],
@@ -4119,6 +5146,87 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArmorFenrirLegs",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorFenringLegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "WolfHairBundle",
+        "qty": 20
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 5
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 25
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 8
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 14
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 30
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 11
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 18
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 35
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 14
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 22
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.KnifeButcher",
     "kind": "craft",
     "output": {
@@ -4173,6 +5281,75 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorWolfChest",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorWolfChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Silver",
+        "qty": 20
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 5
+      },
+      {
+        "item": "Chain",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 25
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 30
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 35
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 11
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -4326,6 +5503,31 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.Eyescream",
+    "kind": "craft",
+    "output": {
+      "item": "Eyescream",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "GreydwarfEye",
+        "qty": 3
+      },
+      {
+        "item": "FreezeGland",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SwordIron",
     "kind": "craft",
     "output": {
@@ -4461,6 +5663,67 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.MaceSilver",
+    "kind": "craft",
+    "output": {
+      "item": "MaceSilver",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "ElderBark",
+        "qty": 10
+      },
+      {
+        "item": "Silver",
+        "qty": 30
+      },
+      {
+        "item": "YmirRemains",
+        "qty": 5
+      },
+      {
+        "item": "FreezeGland",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 45
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 60
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Silver",
+            "qty": 75
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -4660,6 +5923,27 @@
     "verified": "cross-checked"
   },
   {
+    "id": "conv.smelter.SilverOre",
+    "kind": "smelt",
+    "output": {
+      "item": "Silver",
+      "qty": 1
+    },
+    "station": {
+      "id": "smelter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "SilverOre",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "conv.charcoal_kiln.Wood",
     "kind": "smelt",
     "output": {
@@ -4811,6 +6095,28 @@
     "timeSec": 25.0
   },
   {
+    "id": "conv.piece_cookingstation.WolfMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedWolfMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "WolfMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
     "id": "conv.piece_cookingstation.BjornMeat",
     "kind": "cook",
     "output": {
@@ -4912,6 +6218,28 @@
     "inputs": [
       {
         "item": "DeerMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.WolfMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedWolfMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "WolfMeat",
         "qty": 1
       }
     ],

@@ -98,6 +98,28 @@
     "station": "piece_workbench"
   },
   {
+    "id": "piece_drawbridge_log",
+    "name": "Rustic Drawbridge",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Silver",
+        "qty": 2
+      },
+      {
+        "item": "TrophyWolf",
+        "qty": 2
+      },
+      {
+        "item": "RoundLog",
+        "qty": 10
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "wood_roof",
     "name": "Thatch Roof 26°",
     "category": "Building",
@@ -766,6 +788,20 @@
     "station": "forge"
   },
   {
+    "id": "crystal_wall_1x1",
+    "name": "Crystal Wall 1x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Crystal",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "iron_grate",
     "name": "Iron Gate",
     "category": "Building (stone)",
@@ -778,6 +814,23 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "forge"
+  },
+  {
+    "id": "piece_artisanstation",
+    "name": "Artisan Table",
+    "category": "Crafting",
+    "requirements": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "DragonTear",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "piece_birdnest",
@@ -953,6 +1006,29 @@
     "comfort": 1
   },
   {
+    "id": "piece_brazierfloor02",
+    "name": "Blue Standing Brazier",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Bronze",
+        "qty": 5
+      },
+      {
+        "item": "GreydwarfEye",
+        "qty": 5
+      },
+      {
+        "item": "WolfClaw",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge",
+    "comfort": 1
+  },
+  {
     "id": "piece_chest_wood",
     "name": "Chest",
     "category": "Furniture",
@@ -980,6 +1056,37 @@
     "verified": "cross-checked",
     "station": "piece_workbench",
     "comfort": 1
+  },
+  {
+    "id": "piece_bed02",
+    "name": "Dragon Bed",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 40
+      },
+      {
+        "item": "DeerHide",
+        "qty": 7
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 4
+      },
+      {
+        "item": "Feathers",
+        "qty": 10
+      },
+      {
+        "item": "IronNails",
+        "qty": 15
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
   },
   {
     "id": "piece_FairylightGarland",
@@ -1280,6 +1387,29 @@
     "station": "forge"
   },
   {
+    "id": "piece_brazierfloor01",
+    "name": "Standing Brazier",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Bronze",
+        "qty": 5
+      },
+      {
+        "item": "Coal",
+        "qty": 2
+      },
+      {
+        "item": "WolfClaw",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "forge",
+    "comfort": 1
+  },
+  {
     "id": "piece_groundtorch_green",
     "name": "Standing Green-burning Iron Torch",
     "category": "Furniture",
@@ -1385,6 +1515,21 @@
     "verified": "cross-checked",
     "station": "piece_workbench",
     "comfort": 1
+  },
+  {
+    "id": "rug_wolf",
+    "name": "Wolf Rug",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "WolfPelt",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
   },
   {
     "id": "piece_bench01",
@@ -1776,6 +1921,19 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench"
+  },
+  {
+    "id": "bar_silver_stack",
+    "name": "Silver Stack",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Silver",
+        "qty": 30
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "stake_wall",

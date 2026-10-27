@@ -72,6 +72,15 @@
     "verified": "cross-checked"
   },
   {
+    "item": "CookedWolfMeat",
+    "kind": "food",
+    "health": 45.0,
+    "stamina": 15.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "DeerMeat",
     "kind": "food",
     "health": 20.0,
@@ -85,6 +94,15 @@
     "kind": "food",
     "health": 45.0,
     "stamina": 15.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "Eyescream",
+    "kind": "food",
+    "health": 21.0,
+    "stamina": 65.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -254,6 +272,15 @@
     "health": 18.0,
     "stamina": 55.0,
     "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "WolfJerky",
+    "kind": "food",
+    "health": 33.0,
+    "stamina": 33.0,
+    "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   }

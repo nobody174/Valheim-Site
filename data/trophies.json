@@ -36,6 +36,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyDragonQueen",
+    "creature": "Dragon",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyDraugr",
     "creature": "Draugr",
     "source": "game-files:steam-build-25909357",
@@ -50,6 +56,12 @@
   {
     "item": "TrophyEikthyr",
     "creature": "Eikthyr",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyFenring",
+    "creature": "Fenring",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -78,6 +90,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyHatchling",
+    "creature": "Hatchling",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyLeech",
     "creature": "Leech",
     "source": "game-files:steam-build-25909357",
@@ -90,6 +108,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophySGolem",
+    "creature": "StoneGolem",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophySkeleton",
     "creature": "Skeleton",
     "source": "game-files:steam-build-25909357",
@@ -98,6 +122,12 @@
   {
     "item": "TrophyTheElder",
     "creature": "gd_king",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyWolf",
+    "creature": "Wolf",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },

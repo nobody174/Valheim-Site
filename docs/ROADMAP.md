@@ -9,7 +9,7 @@ reviews the live site before the next phase starts.
 |---|---|---|---|---|
 | 0 | Foundation | done (live) | 1 | Scaffold, schemas, validation, CI/deploy, seed data (Meadows + Black Forest from local game files) |
 | 1 | MVP | Part A done; Part B in review (PR open) | 2-3 | Search, item pages, recipe explorer, checklist, favorites, PWA |
-| 2 | Core database | in progress: 2.1 done (pipeline v2, Meadows + Black Forest); browse pages built; review fixes H1-H3 and M1-M5, M8 done (Building page added); M6 settles with the Swamp pass, M7 kept as is; Swamp data added (unverified, owner has not reached it), M6 done; next Mountains | 6-8 | Full data, one biome per session, all browse pages |
+| 2 | Core database | in progress: 2.1 done (pipeline v2, Meadows + Black Forest); browse pages built; review fixes H1-H3 and M1-M5, M8 done (Building page added); M6 settles with the Swamp pass, M7 kept as is; Swamp data added (unverified, owner has not reached it), M6 done; Mountains data added (unverified); next Plains | 6-8 | Full data, one biome per session, all browse pages |
 | 3 | Advanced tools | in progress: Step 3 Rankings done (weapons and armor, DPS is an estimate pending an in-game check); graph, planner, optimizer pending | 3-4 | Crafting graph, build planner, rankings, optimizer |
 | 4 | Polish | not started | 2 | Visual pass, mobile, a11y, performance, offline hardening |
 | 5 | Future expansion | not started | open | Backlog, picked as wanted |
