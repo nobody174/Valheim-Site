@@ -33,6 +33,19 @@ describe('command palette', () => {
     expect(screen.queryByRole('dialog')).toBeNull();
   });
 
+  it('stays closed after Esc or a click outside when opened from the header box', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    const box = screen.getByLabelText('Open search');
+    await user.click(box);
+    expect(screen.getByRole('dialog')).toBeTruthy();
+    await user.keyboard('{Escape}');
+    expect(screen.queryByRole('dialog')).toBeNull();
+    await user.click(box);
+    await user.pointer({ keys: '[MouseLeft]', target: document.querySelector('[class*="backdrop"]')! });
+    expect(screen.queryByRole('dialog')).toBeNull();
+  });
+
   it('does not open on "/" while typing in a field', async () => {
     const user = userEvent.setup();
     render(<App />);
