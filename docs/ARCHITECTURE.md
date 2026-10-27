@@ -50,7 +50,7 @@ Vite `base` must be `/Valheim-Site/` (the repo's canonical name as shown on GitH
   /features                # search, items, recipes, graph, planner, rankings, checklist...
   /state                   # persistence layer, profiles, favorites, progress
   /styles                  # tokens.css, base.css, themes
-/public                    # PWA icons, manifest assets (no game art)
+/public                    # PWA icons and manifest assets (own artwork)
 /docs
 /.github/workflows/deploy.yml
 ```
@@ -157,9 +157,15 @@ Single versioned key per profile, e.g. `vcs:v1:profile:<profileId>`:
 
 ## Assets
 
-- No Valheim icons or art in the repo. Use generated SVG glyphs per category, tinted by biome.
-- Optional local icons: if `public/icons-local/<itemId>.png` exists it is used, and the folder is in
-  `.gitignore`. This keeps personal use possible without redistributing game art.
+- **Item and station icons are the real in-game icons**, committed on purpose (owner's decision,
+  2026-10-27) as 64 px WebP files in `src/assets/icons/<id>.webp`, named after the entry id.
+  `tools/extract/extract_icons.py` exports them from the owner's install; re-run it after
+  `extract_raw.py` whenever new entries are added. Game art is (c) Iron Gate and not licensed for
+  reuse (see the README disclaimer). Nothing else from the game's art or audio is committed.
+- Creatures and bosses have no icon of their own; they show their trophy's icon.
+- Icons are loaded through `src/data/icons.ts` (a Vite glob, no manifest) and drawn by
+  `<EntityIcon>`. An id with no exported icon falls back to the generated category glyph, so a
+  missing file never breaks a page. Icons are precached with the app so pages work offline.
 
 ## Design tokens (starting point)
 

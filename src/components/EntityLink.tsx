@@ -6,6 +6,7 @@ import { lookup, type EntityKind } from '../data/lookup';
 import { effectiveHoard } from '../state/model';
 import { useProfile } from '../state/store';
 import { HoardBadge } from './Badges';
+import { EntityIcon } from './EntityIcon';
 import styles from './EntityLink.module.css';
 
 export function entityPath(kind: EntityKind, id: string): string {
@@ -29,8 +30,13 @@ function Tip({ id, anchor, tipId }: { id: string; anchor: DOMRect; tipId: string
 
   return createPortal(
     <div role="tooltip" id={tipId} className={styles.tip} style={style}>
-      <strong className={styles.title}>{info.title}</strong>
-      <span className={styles.subtitle}>{info.subtitle}</span>
+      <span className={styles.head}>
+        <EntityIcon id={id} size={40} />
+        <span className={styles.headText}>
+          <strong className={styles.title}>{info.title}</strong>
+          <span className={styles.subtitle}>{info.subtitle}</span>
+        </span>
+      </span>
       {info.lines.map((line) => (
         <span key={line} className={styles.line}>
           {line}
@@ -116,7 +122,8 @@ export function EntityLink({ id }: { id: string }) {
         }}
         onContextMenu={(e) => longPressed.current && e.preventDefault()}
       >
-        {ref.name}
+        <EntityIcon id={id} size={20} />
+        <span className={styles.name}>{ref.name}</span>
       </Link>
       {rect && <Tip id={id} anchor={rect} tipId={tipId} />}
     </>

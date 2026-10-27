@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { HoardBadge, VerifiedBadge } from '../../components/Badges';
-import { CategoryGlyph } from '../../components/CategoryGlyph';
+import { EntityIcon } from '../../components/EntityIcon';
 import { graph, lookup } from '../../data/lookup';
 import { effectiveHoard } from '../../state/model';
 import { pushRecent } from '../../state/recent';
@@ -227,7 +227,7 @@ export function ItemPage() {
   return (
     <article className={styles.page}>
       <header className={styles.title}>
-        <CategoryGlyph category={item.category} />
+        <EntityIcon id={item.id} size={56} />
         <div>
           <h1>{item.name}</h1>
           <div className={styles.badges}>

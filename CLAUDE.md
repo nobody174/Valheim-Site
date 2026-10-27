@@ -46,7 +46,8 @@ more than anything else.** Hosted on GitHub Pages. No backend, no paid services.
   derived graph), never by importing JSON inside a component.
 - Persistence goes through `src/state/` only (versioned localStorage, see ARCHITECTURE.md).
 - Every page must work offline and be usable at 1280px desktop and 390px mobile.
-- No Valheim game icons or art in the repo (see "Assets" in ARCHITECTURE.md).
+- Game icons live only in `src/assets/icons/`, exported by `tools/extract/extract_icons.py` (see
+  "Assets" in ARCHITECTURE.md). No other game art, audio or raw assets in the repo.
 
 ## Commands
 

@@ -27,7 +27,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,json,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2,json,webmanifest}'],
         // Only the Latin font subsets are needed; skip the rest to keep the first load small.
         globIgnores: ['**/*cyrillic*', '**/*greek*', '**/*vietnamese*'],
         navigateFallback: 'index.html',

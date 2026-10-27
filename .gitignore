@@ -4,9 +4,6 @@ dist/
 .vite/
 coverage/
 
-# Local-only game icons (never commit game art)
-public/icons-local/
-
 # Raw extracted game data (commit only cleaned JSON in /data)
 data-raw/
 extracted/

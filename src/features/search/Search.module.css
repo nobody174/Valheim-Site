@@ -60,6 +60,11 @@
   background: var(--bg-1);
   color: var(--amber);
 }
+.hitName {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .id {
   color: var(--text-dim);
   font-size: 0.75rem;
