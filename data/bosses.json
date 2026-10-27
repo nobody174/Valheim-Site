@@ -93,5 +93,56 @@
     ],
     "trophy": "TrophyTheElder",
     "note": "Health, drops, attacks and resistances from game files; summon items curated."
+  },
+  {
+    "id": "Bonemass",
+    "name": "Bonemass",
+    "biome": "swamp",
+    "health": 5000.0,
+    "drops": [
+      {
+        "item": "TrophyBonemass",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "Wishbone",
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "bonemass_attack_aoe",
+        "damage": {
+          "poison": 130.0
+        }
+      },
+      {
+        "id": "bonemass_attack_punch",
+        "damage": {
+          "blunt": 80.0,
+          "poison": 50.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "blunt": "weak",
+      "slash": "resistant",
+      "pierce": "very resistant",
+      "fire": "very resistant",
+      "frost": "weak",
+      "poison": "immune"
+    },
+    "summonItems": [
+      {
+        "item": "WitheredBone",
+        "qty": 10
+      }
+    ],
+    "trophy": "TrophyBonemass",
+    "note": "Health, drops, attacks and resistances from game files; summon items curated."
   }
 ]

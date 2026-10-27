@@ -70,17 +70,17 @@ describe('filterAndSort', () => {
       expect(list[i - 1]!.total).toBeGreaterThanOrEqual(list[i]!.total);
     }
     expect(list.some((r) => r.group === AMMO_GROUP)).toBe(false);
-    expect(list[0]?.id).toBe('AtgeirBronze');
+    expect(list[0]?.id).toBe('Battleaxe');
   });
 
   it('lists ammunition when asked', () => {
     const list = filterAndSort(rows, { ...base, group: AMMO_GROUP });
-    expect(list.map((r) => r.id).sort()).toEqual(['ArrowBronze', 'ArrowFire', 'ArrowFlint', 'ArrowWood']);
+    expect(list.map((r) => r.id).sort()).toEqual(['ArrowBronze', 'ArrowFire', 'ArrowFlint', 'ArrowIron', 'ArrowWood']);
   });
 
   it('filters by weapon type', () => {
     const list = filterAndSort(rows, { ...base, group: 'Swords' });
-    expect(list.map((r) => r.id)).toEqual(['SwordBronze']);
+    expect(list.map((r) => r.id)).toEqual(['SwordIron', 'SwordBronze']);
   });
 
   it('shows only the chosen zone when "earlier zones" is off', () => {
@@ -120,6 +120,7 @@ describe('filterAndSort', () => {
     expect(filterAndSort(rows, { ...base, text: 'bronze axe' }).map((r) => r.id)).toEqual(['AxeBronze']);
     expect(filterAndSort(rows, { ...base, text: 'zzzz' })).toEqual([]);
     expect(filterAndSort(rows, { ...base, text: 'atgeir' }).map((r) => r.id)).toEqual([
+      'AtgeirIron',
       'AtgeirBronze',
     ]);
   });
@@ -128,7 +129,7 @@ describe('filterAndSort', () => {
 describe('groupByZone', () => {
   it('splits by zone in progression order and keeps the ranking inside each zone', () => {
     const groups = groupByZone(filterAndSort(weaponRows(), base));
-    expect(groups.map((g) => g.zoneId)).toEqual(['meadows', 'blackforest']);
+    expect(groups.map((g) => g.zoneId)).toEqual(['meadows', 'blackforest', 'swamp']);
     for (const g of groups) {
       for (let i = 1; i < g.rows.length; i++) {
         expect(g.rows[i - 1]!.total).toBeGreaterThanOrEqual(g.rows[i]!.total);

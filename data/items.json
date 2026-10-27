@@ -111,6 +111,42 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArmorIronChest",
+    "name": "Iron Scale Mail",
+    "category": "armor",
+    "biome": "swamp",
+    "weight": 15.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorIronChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorIronLegs",
+    "name": "Iron Greaves",
+    "category": "armor",
+    "biome": "swamp",
+    "weight": 15.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorIronLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArmorLeatherChest",
     "name": "Leather Tunic",
     "category": "armor",
@@ -177,6 +213,42 @@
       {
         "type": "recipe",
         "recipe": "recipe.ArmorRagsLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorRootChest",
+    "name": "Root Harnesk",
+    "category": "armor",
+    "biome": "swamp",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorRootChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorRootLegs",
+    "name": "Root Leggings",
+    "category": "armor",
+    "biome": "swamp",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorRootLegs"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -273,6 +345,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArrowIron",
+    "name": "Ironhead Arrow",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArrowWood",
     "name": "Wood Arrow",
     "category": "weapon",
@@ -303,6 +393,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.AtgeirBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "AtgeirIron",
+    "name": "Iron Atgeir",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AtgeirIron"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -401,6 +509,24 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "AxeIron",
+    "name": "Iron Axe",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "AxeStone",
     "name": "Stone Axe",
     "category": "weapon",
@@ -413,6 +539,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.AxeStone"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Battleaxe",
+    "name": "Battleaxe",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Battleaxe"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -457,6 +601,44 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "BlackSoup",
+    "name": "Black Soup",
+    "category": "food",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Blacksoup"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Bloodbag",
+    "name": "Bloodbag",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting BlackSoup, crafting MeadBaseFrostResist, crafting MeadBaseHealthMedium. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Leech"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Blueberries",
     "name": "Blueberries",
     "category": "material",
@@ -466,7 +648,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 6,
-    "hoardNote": "Used for crafting DeerStew, crafting MeadBaseHealthMinor, crafting MeadBaseTasty and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting DeerStew, crafting MeadBaseHealthMinor, crafting MeadBaseTasty and 2 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -490,6 +672,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.BoarJerky"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BombOoze",
+    "name": "Ooze Bomb",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BombOoze"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -545,6 +745,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.BowFineWood"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BowHuntsman",
+    "name": "Huntsman Bow",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BowHuntsman"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -636,7 +854,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 3,
-    "hoardNote": "Used for crafting CarrotSoup, crafting DeerStew, crafting MinceMeatSauce. Quantity is the largest single need.",
+    "hoardNote": "Used for building Spice Rack, crafting CarrotSoup, crafting DeerStew and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -673,6 +891,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.CarrotSoup"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Chain",
+    "name": "Chain",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Wraith"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -727,7 +963,7 @@
     "id": "Coins",
     "name": "Coins",
     "category": "material",
-    "biome": "meadows",
+    "biome": "blackforest",
     "weight": 0.10000000149011612,
     "stackSize": 999,
     "tags": [],
@@ -870,8 +1106,8 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "keep_some",
-    "recommendedQty": 1,
-    "hoardNote": "Used for crafting MeadBaseHealthMinor. Quantity is the largest single need.",
+    "recommendedQty": 3,
+    "hoardNote": "Used for building Spice Rack, crafting MeadBaseHealthMedium, crafting MeadBaseHealthMinor. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -960,20 +1196,23 @@
     "id": "Entrails",
     "name": "Entrails",
     "category": "material",
-    "biome": "meadows",
+    "biome": "swamp",
     "weight": 0.5,
     "stackSize": 50,
     "tags": [],
     "hoard": "must_keep",
     "obtainedFrom": [
       {
-        "type": "other",
-        "note": "Dropped by Draugr and Draugr Elite in the Swamp (not in the data yet)."
+        "type": "drop",
+        "creature": "Draugr"
+      },
+      {
+        "type": "drop",
+        "creature": "Draugr_Elite"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "verified": "cross-checked"
   },
   {
     "id": "Feathers",
@@ -1201,6 +1440,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "Guck",
+    "name": "Guck",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Abomination"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Hammer",
     "name": "Hammer",
     "category": "tool",
@@ -1256,6 +1513,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "HelmetIron",
+    "name": "Iron Helmet",
+    "category": "armor",
+    "biome": "swamp",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "HelmetLeather",
     "name": "Leather Helmet",
     "category": "armor",
@@ -1268,6 +1543,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.HelmetLeather"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HelmetRoot",
+    "name": "Root Mask",
+    "category": "armor",
+    "biome": "swamp",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetRoot"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1320,11 +1613,70 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting BoarJerky, crafting MeadBaseHealthMinor, crafting MeadBaseStaminaMinor and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting BlackSoup, crafting BoarJerky, crafting MeadBaseFrostResist and 5 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
         "note": "Beehive"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Iron",
+    "name": "Iron",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 12.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.smelter.IronScrap"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "IronNails",
+    "name": "Iron Nails",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.5,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.IronNails"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "IronScrap",
+    "name": "Scrap Iron",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 10.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine Muddy Scrap Piles inside Sunken Crypts (needs a Crypt Key from the Elder). Blob Elites also drop it. Smelt it into Iron."
+      },
+      {
+        "type": "drop",
+        "creature": "BlobElite"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1423,6 +1775,64 @@
     "verified": "cross-checked"
   },
   {
+    "id": "MaceIron",
+    "name": "Iron Mace",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MaceIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadBaseFrostResist",
+    "name": "Mead Base: Frost Resistance",
+    "category": "mead",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadFrostResist. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseFrostResist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadBaseHealthMedium",
+    "name": "Mead Base: Medium Healing",
+    "category": "mead",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadHealthMedium. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseHealthMedium"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "MeadBaseHealthMinor",
     "name": "Mead Base: Minor Healing",
     "category": "mead",
@@ -1437,6 +1847,26 @@
       {
         "type": "recipe",
         "recipe": "recipe.MeadBaseHealthMinor"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadBasePoisonResist",
+    "name": "Mead Base: Poison Resistance",
+    "category": "mead",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting MeadPoisonResist. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBasePoisonResist"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1483,6 +1913,42 @@
     "verified": "cross-checked"
   },
   {
+    "id": "MeadFrostResist",
+    "name": "Frost Resistance Mead",
+    "category": "mead",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseFrostResist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadHealthMedium",
+    "name": "Medium Healing Mead",
+    "category": "mead",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseHealthMedium"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "MeadHealthMinor",
     "name": "Minor Healing Mead",
     "category": "mead",
@@ -1495,6 +1961,24 @@
       {
         "type": "recipe",
         "recipe": "conv.fermenter.MeadBaseHealthMinor"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "MeadPoisonResist",
+    "name": "Poison Resistance Mead",
+    "category": "mead",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBasePoisonResist"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1563,8 +2047,8 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "keep_some",
-    "recommendedQty": 1,
-    "hoardNote": "Used for crafting CarrotSoup. Quantity is the largest single need.",
+    "recommendedQty": 5,
+    "hoardNote": "Used for building Spice Rack, crafting CarrotSoup. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1606,7 +2090,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 1,
-    "hoardNote": "Used for crafting MinceMeatSauce, crafting NeckTailGrilled. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting MeadBasePoisonResist, crafting MinceMeatSauce, crafting NeckTailGrilled. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -1658,6 +2142,30 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "Ooze",
+    "name": "Ooze",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 5,
+    "hoardNote": "Used for crafting BombOoze, crafting ShocklateSmoothie. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Blob"
+      },
+      {
+        "type": "drop",
+        "creature": "BlobElite"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "PickaxeAntler",
     "name": "Antler Pickaxe",
     "category": "weapon",
@@ -1688,6 +2196,25 @@
       {
         "type": "recipe",
         "recipe": "recipe.PickaxeBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "PickaxeIron",
+    "name": "Iron Pickaxe",
+    "category": "tool",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.PickaxeIron"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1777,7 +2304,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting MeadBaseHealthMinor, crafting MeadBaseStaminaMinor, crafting MeadBaseTasty and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting MeadBaseHealthMedium, crafting MeadBaseHealthMinor, crafting MeadBaseStaminaMinor and 3 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1798,7 +2325,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 1,
-    "hoardNote": "Used for crafting BoarJerky, crafting CookedMeat, crafting MinceMeatSauce and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting BoarJerky, crafting CookedMeat, crafting MinceMeatSauce and 2 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -1841,6 +2368,24 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "Root",
+    "name": "Root",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Abomination"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "RoundLog",
     "name": "Corewood",
     "category": "material",
@@ -1850,7 +2395,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 35,
-    "hoardNote": "Used for crafting BowFineWood, crafting Coal, crafting Cultivator and 6 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting BowFineWood, crafting Coal, crafting Cultivator and 8 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1884,7 +2429,7 @@
     "id": "Sausages",
     "name": "Sausages",
     "category": "food",
-    "biome": "blackforest",
+    "biome": "swamp",
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
@@ -1893,6 +2438,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.Sausages"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldBanded",
+    "name": "Banded Shield",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldBanded"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1935,6 +2498,60 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ShieldIronBuckler",
+    "name": "Iron Buckler",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldIronBuckler"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldIronTower",
+    "name": "Iron Tower Shield",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldIronTower"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ShieldRoots",
+    "name": "Shield of Roots",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldRoots"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ShieldWood",
     "name": "Wood Shield",
     "category": "weapon",
@@ -1971,6 +2588,42 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ShocklateSmoothie",
+    "name": "Muckshake",
+    "category": "food",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShocklateSmoothie"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SledgeIron",
+    "name": "Iron Sledge",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SledgeIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "SledgeStagbreaker",
     "name": "Stagbreaker",
     "category": "weapon",
@@ -2001,6 +2654,24 @@
       {
         "type": "recipe",
         "recipe": "recipe.SpearBronze"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "SpearElderbark",
+    "name": "Ancient Bark Spear",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpearElderbark"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2071,6 +2742,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "SwordIron",
+    "name": "Iron Sword",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 0.800000011920929,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Thistle",
     "name": "Thistle",
     "category": "material",
@@ -2079,8 +2768,8 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "keep_some",
-    "recommendedQty": 1,
-    "hoardNote": "Used for crafting Sausages. Quantity is the largest single need.",
+    "recommendedQty": 5,
+    "hoardNote": "Used for building Spice Rack, crafting MeadBaseFrostResist, crafting MeadBasePoisonResist and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -2166,6 +2855,46 @@
     "verified": "cross-checked"
   },
   {
+    "id": "TrophyAbomination",
+    "name": "Abomination Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 4.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Abomination"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyBlob",
+    "name": "Blob Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Blob"
+      },
+      {
+        "type": "drop",
+        "creature": "BlobElite"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "TrophyBoar",
     "name": "Boar Trophy",
     "category": "trophy",
@@ -2178,6 +2907,24 @@
       {
         "type": "drop",
         "creature": "Boar"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyBonemass",
+    "name": "Bonemass Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Bonemass"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2197,6 +2944,44 @@
       {
         "type": "drop",
         "creature": "Deer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyDraugr",
+    "name": "Draugr Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Draugr"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyDraugrElite",
+    "name": "Draugr Elite Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting SledgeIron. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Draugr_Elite"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2293,6 +3078,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "TrophyLeech",
+    "name": "Leech Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Leech"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "TrophyNeck",
     "name": "Neck Trophy",
     "category": "trophy",
@@ -2349,6 +3152,137 @@
     "verified": "cross-checked"
   },
   {
+    "id": "TrophyWraith",
+    "name": "Wraith Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Wraith"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyWrithan",
+    "name": "Writhan Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Writhan"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Turnip",
+    "name": "Turnip",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 3,
+    "hoardNote": "Used for building Spice Rack, crafting BlackSoup, crafting TurnipStew. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Grow from Turnip Seeds."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "TurnipSeeds",
+    "name": "Turnip Seeds",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick wild turnips in the Swamp (guides), or collect seeds when harvesting grown ones."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "TurnipStew",
+    "name": "Turnip Stew",
+    "category": "food",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TurnipStew"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "Wishbone",
+    "name": "Wishbone",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.10000000149011612,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Bonemass"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "WitheredBone",
+    "name": "Withered Bone",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Found in Muddy Scrap Piles in Sunken Crypts (guides). Ten summon Bonemass; the boss altar cost is not in the extracted data."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Wood",
     "name": "Wood",
     "category": "material",
@@ -2374,6 +3308,45 @@
       {
         "type": "drop",
         "creature": "Greydwarf_Shaman"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "WrithanRoots",
+    "name": "Writhan Roots",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 5,
+    "hoardNote": "Used for crafting ShieldRoots, upgrading ShieldRoots. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Writhan"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "YmirRemains",
+    "name": "Ymir Flesh",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Source not confirmed: not a creature drop in the game files. Check in game."
       }
     ],
     "source": "game-files:steam-build-25909357",

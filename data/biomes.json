@@ -12,5 +12,12 @@
     "order": 2,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "swamp",
+    "name": "Swamp",
+    "order": 3,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   }
 ]

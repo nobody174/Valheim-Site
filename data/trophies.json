@@ -1,13 +1,43 @@
 [
   {
+    "item": "TrophyAbomination",
+    "creature": "Abomination",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyBlob",
+    "creature": "Blob",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyBoar",
     "creature": "Boar",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyBonemass",
+    "creature": "Bonemass",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyDeer",
     "creature": "Deer",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyDraugr",
+    "creature": "Draugr",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyDraugrElite",
+    "creature": "Draugr_Elite",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -42,6 +72,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyLeech",
+    "creature": "Leech",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyNeck",
     "creature": "Neck",
     "source": "game-files:steam-build-25909357",
@@ -56,6 +92,18 @@
   {
     "item": "TrophyTheElder",
     "creature": "gd_king",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyWraith",
+    "creature": "Wraith",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyWrithan",
+    "creature": "Writhan",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   }

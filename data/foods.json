@@ -1,5 +1,14 @@
 [
   {
+    "item": "BlackSoup",
+    "kind": "food",
+    "health": 50.0,
+    "stamina": 17.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "Blueberries",
     "kind": "food",
     "health": 8.0,
@@ -90,6 +99,23 @@
     "verified": "cross-checked"
   },
   {
+    "item": "MeadFrostResist",
+    "kind": "mead",
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "You are protected against the cold."
+  },
+  {
+    "item": "MeadHealthMedium",
+    "kind": "mead",
+    "durationSec": 120.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "health": 75.0,
+    "effect": "Health over time."
+  },
+  {
     "item": "MeadHealthMinor",
     "kind": "mead",
     "durationSec": 120.0,
@@ -97,6 +123,14 @@
     "verified": "cross-checked",
     "health": 50.0,
     "effect": "Health over time."
+  },
+  {
+    "item": "MeadPoisonResist",
+    "kind": "mead",
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "You take less damage from poison."
   },
   {
     "item": "MeadStaminaMinor",
@@ -183,6 +217,24 @@
     "kind": "food",
     "health": 55.0,
     "stamina": 18.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "ShocklateSmoothie",
+    "kind": "food",
+    "health": 16.0,
+    "stamina": 50.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TurnipStew",
+    "kind": "food",
+    "health": 18.0,
+    "stamina": 55.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"

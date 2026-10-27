@@ -1,0 +1,141 @@
+{
+  "id": "swamp",
+  "name": "Swamp",
+  "order": 3,
+  "materials": [
+    "Iron",
+    "IronScrap",
+    "IronNails",
+    "Root",
+    "Ooze",
+    "Bloodbag",
+    "Entrails",
+    "Chain",
+    "Guck",
+    "Turnip",
+    "TurnipSeeds",
+    "WitheredBone",
+    "YmirRemains",
+    "WrithanRoots",
+    "Wishbone"
+  ],
+  "tools": [
+    "PickaxeIron"
+  ],
+  "weapons": [
+    "SwordIron",
+    "AxeIron",
+    "MaceIron",
+    "AtgeirIron",
+    "SledgeIron",
+    "Battleaxe",
+    "SpearElderbark",
+    "BowHuntsman",
+    "ArrowIron",
+    "BombOoze",
+    "ShieldBanded",
+    "ShieldIronBuckler",
+    "ShieldIronTower",
+    "ShieldRoots"
+  ],
+  "armor": {
+    "ArmorIronChest": "chest",
+    "ArmorIronLegs": "legs",
+    "HelmetIron": "helmet",
+    "ArmorRootChest": "chest",
+    "ArmorRootLegs": "legs",
+    "HelmetRoot": "helmet"
+  },
+  "foods": [
+    "Sausages",
+    "TurnipStew",
+    "BlackSoup",
+    "ShocklateSmoothie"
+  ],
+  "meads": [
+    "MeadBaseHealthMedium",
+    "MeadHealthMedium",
+    "MeadBaseFrostResist",
+    "MeadFrostResist",
+    "MeadBasePoisonResist",
+    "MeadPoisonResist"
+  ],
+  "trophies": [
+    "TrophyDraugr",
+    "TrophyDraugrElite",
+    "TrophyBlob",
+    "TrophyLeech",
+    "TrophyWraith",
+    "TrophyAbomination",
+    "TrophyWrithan",
+    "TrophyBonemass"
+  ],
+  "creatures": [
+    "Draugr",
+    "Draugr_Elite",
+    "Blob",
+    "BlobElite",
+    "Leech",
+    "Wraith",
+    "Abomination",
+    "Writhan"
+  ],
+  "bosses": [
+    "Bonemass"
+  ],
+  "bossSummon": {
+    "Bonemass": [
+      [
+        "WitheredBone",
+        10
+      ]
+    ]
+  },
+  "gather": {
+    "IronScrap": [
+      [
+        "gather",
+        "Mine Muddy Scrap Piles inside Sunken Crypts (needs a Crypt Key from the Elder). Blob Elites also drop it. Smelt it into Iron."
+      ]
+    ],
+    "WitheredBone": [
+      [
+        "gather",
+        "Found in Muddy Scrap Piles in Sunken Crypts (guides). Ten summon Bonemass; the boss altar cost is not in the extracted data."
+      ]
+    ],
+    "Turnip": [
+      [
+        "gather",
+        "Grow from Turnip Seeds."
+      ]
+    ],
+    "TurnipSeeds": [
+      [
+        "gather",
+        "Pick wild turnips in the Swamp (guides), or collect seeds when harvesting grown ones."
+      ]
+    ],
+    "YmirRemains": [
+      [
+        "other",
+        "Source not confirmed: not a creature drop in the game files. Check in game."
+      ]
+    ]
+  },
+  "hoard": {
+    "keepSome": {},
+    "mustKeep": [
+      "Iron",
+      "IronScrap",
+      "WitheredBone",
+      "YmirRemains",
+      "Chain",
+      "Root",
+      "Entrails"
+    ]
+  },
+  "guide": {
+    "notes": []
+  }
+}
