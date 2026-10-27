@@ -106,4 +106,42 @@ describe('validateData', () => {
     d.items[0].recommendedQty = 20;
     expect(errorsOf(d)).toBe('');
   });
+
+  describe('hoard follows the recipes', () => {
+    it('fails when a recipe input is safe_discard', () => {
+      const d = fresh();
+      d.items[0].hoard = 'safe_discard';
+      expect(errorsOf(d)).toMatch(/\[Wood\].*needed for crafting Club/);
+    });
+
+    it('fails when a decorative trophy summons a boss', () => {
+      const d = fresh();
+      d.items.push({
+        id: 'TrophyDeer',
+        name: 'Deer Trophy',
+        category: 'trophy',
+        biome: 'meadows',
+        weight: 1,
+        stackSize: 1,
+        hoard: 'decorative',
+        ...prov,
+      });
+      d.bosses.push({
+        id: 'Eikthyr',
+        name: 'Eikthyr',
+        biome: 'meadows',
+        summonItems: [{ item: 'TrophyDeer', qty: 2 }],
+        ...prov,
+      });
+      expect(errorsOf(d)).toMatch(/\[TrophyDeer\].*needed for summoning Eikthyr/);
+      d.items[2].hoard = 'must_keep';
+      expect(errorsOf(d)).toBe('');
+    });
+
+    it('allows safe_discard for an item nothing needs', () => {
+      const d = fresh();
+      expect(d.items[1].hoard).toBe('safe_discard');
+      expect(errorsOf(d)).toBe('');
+    });
+  });
 });

@@ -119,7 +119,10 @@ Fails the build on:
 - any dangling reference (recipe input/output, drop, station, trophy, summon item, biome)
 - recipe output items that no file declares
 - items with `hoard = keep_some` but no `recommendedQty`
+- items that are needed as a recipe input, upgrade cost, station or building cost, or boss summon item but have `hoard` = `safe_discard` or `decorative`
 - missing `source` or `verified`
+
+**Hoard defaults.** `build_data.py` sets them from the recipes: an item that summons a boss is `must_keep`; a tool you craft (stack size 1) is `must_keep`; anything else used as an ingredient is `keep_some` with `recommendedQty` = its largest single need (one craft, upgrade step, build or summon). Items nothing uses stay `safe_discard` (`decorative` for trophies). The hand-written `keepSome` and `mustKeep` lists in `tools/extract/biomes/` still win. Derived entries carry a `hoardNote` saying why.
 
 Prints a summary: counts per file and counts per `verified` level. This summary is how the
 owner sees how trustworthy the dataset currently is.
