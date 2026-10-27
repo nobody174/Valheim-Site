@@ -869,6 +869,29 @@
     "comfort": 1
   },
   {
+    "id": "rug_Bjorn",
+    "name": "Bearskin Rug",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "BjornHide",
+        "qty": 1
+      },
+      {
+        "item": "BjornPaw",
+        "qty": 2
+      },
+      {
+        "item": "TrophyBjorn",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
+  },
+  {
     "id": "bed",
     "name": "Bed",
     "category": "Furniture",

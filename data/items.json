@@ -75,6 +75,42 @@
     "verified": "cross-checked"
   },
   {
+    "id": "ArmorBerserkerChest",
+    "name": "Patterns of the Bear",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorBerserkerChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "ArmorBerserkerLegs",
+    "name": "Loincloth of the Bear",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorBerserkerLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "ArmorBronzeChest",
     "name": "Bronze Plate Tunic",
     "category": "armor",
@@ -601,6 +637,66 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "BjornHide",
+    "name": "Bear Hide",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 11,
+    "hoardNote": "Used for crafting ArmorBerserkerChest, crafting ArmorBerserkerLegs, crafting FistBjornClaw and 5 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Bjorn"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BjornMeat",
+    "name": "Bear Meat",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting CookedBjornMeat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Bjorn"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "BjornPaw",
+    "name": "Bear Paw",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 2,
+    "hoardNote": "Used for crafting ArmorBerserkerChest, crafting FistBjornClaw. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Bjorn"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "BlackSoup",
     "name": "Black Soup",
     "category": "food",
@@ -647,8 +743,8 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "keep_some",
-    "recommendedQty": 6,
-    "hoardNote": "Used for crafting DeerStew, crafting MeadBaseHealthMinor, crafting MeadBaseTasty and 2 more. Quantity is the largest single need.",
+    "recommendedQty": 7,
+    "hoardNote": "Used for crafting ArmorBerserkerChest, crafting ArmorBerserkerLegs, crafting DeerStew and 7 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -854,7 +950,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 3,
-    "hoardNote": "Used for building Spice Rack, crafting CarrotSoup, crafting DeerStew and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for building Spice Rack, crafting CarrotSoup, crafting DeerStew and 2 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -972,6 +1068,30 @@
       {
         "type": "drop",
         "creature": "Troll"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "CookedBjornMeat",
+    "name": "Cooked Bear Meat",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting PulledBear. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.BjornMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.BjornMeat"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1394,6 +1514,24 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "FistBjornClaw",
+    "name": "Paws of the Bear",
+    "category": "weapon",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.FistBjornClaw"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "Flint",
     "name": "Flint",
     "category": "material",
@@ -1489,6 +1627,24 @@
       {
         "type": "drop",
         "creature": "Eikthyr"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "HelmetBerserkerHood",
+    "name": "Headdress of the Bear",
+    "category": "armor",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetBerserker"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2277,6 +2433,24 @@
     "verified": "cross-checked"
   },
   {
+    "id": "PulledBear",
+    "name": "Pulled Bear",
+    "category": "food",
+    "biome": "blackforest",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.PulledBear"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "QueensJam",
     "name": "Queen's Jam",
     "category": "food",
@@ -2867,6 +3041,26 @@
       {
         "type": "drop",
         "creature": "Abomination"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "TrophyBjorn",
+    "name": "Bear Trophy",
+    "category": "trophy",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting HelmetBerserkerHood. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Bjorn"
       }
     ],
     "source": "game-files:steam-build-25909357",

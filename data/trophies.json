@@ -6,6 +6,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyBjorn",
+    "creature": "Bjorn",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyBlob",
     "creature": "Blob",
     "source": "game-files:steam-build-25909357",

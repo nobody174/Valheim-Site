@@ -66,6 +66,17 @@
       ]
     },
     {
+      "recipe": "Recipe_HelmetCelebration",
+      "output": "HelmetCelebration",
+      "station": "piece_workbench",
+      "inputs": [
+        "DeerHide",
+        "Bronze",
+        "BjornHide",
+        "AmberPearl"
+      ]
+    },
+    {
       "recipe": "Recipe_HelmetOdin",
       "output": "HelmetOdin",
       "station": "piece_workbench",
@@ -129,6 +140,16 @@
         "Bronze",
         "AncientSeed",
         "TrophyGreydwarfShaman"
+      ]
+    },
+    {
+      "recipe": "Recipe_TrinketBronzeStamina",
+      "output": "TrinketBronzeStamina",
+      "station": "forge",
+      "inputs": [
+        "Bronze",
+        "TrophyBjorn",
+        "Ruby"
       ]
     },
     {

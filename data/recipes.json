@@ -1112,6 +1112,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.PulledBear",
+    "kind": "craft",
+    "output": {
+      "item": "PulledBear",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "CookedBjornMeat",
+        "qty": 1
+      },
+      {
+        "item": "Carrot",
+        "qty": 2
+      },
+      {
+        "item": "Blueberries",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.Bow",
     "kind": "craft",
     "output": {
@@ -1311,6 +1340,71 @@
           {
             "item": "DeerHide",
             "qty": 5
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorBerserkerLegs",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorBerserkerLegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "BjornHide",
+        "qty": 5
+      },
+      {
+        "item": "Blueberries",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 7
+          },
+          {
+            "item": "Blueberries",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 9
+          },
+          {
+            "item": "Blueberries",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 11
+          },
+          {
+            "item": "Blueberries",
+            "qty": 7
           }
         ]
       }
@@ -1832,6 +1926,59 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.HelmetBerserker",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetBerserkerHood",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "BjornHide",
+        "qty": 5
+      },
+      {
+        "item": "TrophyBjorn",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 11
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.HelmetLeather",
     "kind": "craft",
     "output": {
@@ -2109,6 +2256,75 @@
           {
             "item": "ElderBark",
             "qty": 25
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorBerserkerChest",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorBerserkerChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "BjornHide",
+        "qty": 5
+      },
+      {
+        "item": "BjornPaw",
+        "qty": 2
+      },
+      {
+        "item": "Blueberries",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 7
+          },
+          {
+            "item": "Blueberries",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 9
+          },
+          {
+            "item": "Blueberries",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 11
+          },
+          {
+            "item": "Blueberries",
+            "qty": 7
           }
         ]
       }
@@ -2619,6 +2835,75 @@
           {
             "item": "ElderBark",
             "qty": 25
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FistBjornClaw",
+    "kind": "craft",
+    "output": {
+      "item": "FistBjornClaw",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "BjornHide",
+        "qty": 2
+      },
+      {
+        "item": "BjornPaw",
+        "qty": 2
+      },
+      {
+        "item": "LeatherScraps",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 4
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 6
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "BjornHide",
+            "qty": 8
+          },
+          {
+            "item": "LeatherScraps",
+            "qty": 10
           }
         ]
       }
@@ -4526,6 +4811,28 @@
     "timeSec": 25.0
   },
   {
+    "id": "conv.piece_cookingstation.BjornMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedBjornMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BjornMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
     "id": "conv.piece_cookingstation_iron.FishRaw",
     "kind": "cook",
     "output": {
@@ -4605,6 +4912,28 @@
     "inputs": [
       {
         "item": "DeerMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.BjornMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedBjornMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BjornMeat",
         "qty": 1
       }
     ],

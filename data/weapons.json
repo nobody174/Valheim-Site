@@ -775,6 +775,73 @@
     }
   },
   {
+    "item": "FistBjornClaw",
+    "skill": "Unarmed",
+    "damage": {
+      "slash": 25.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "damagePerLevel": {
+      "slash": 4.0
+    },
+    "blockPower": 5.0,
+    "parryForce": 10.0,
+    "knockback": 20.0,
+    "durability": 300.0,
+    "maxQuality": 4,
+    "attack": {
+      "animation": "unarmed_attack",
+      "chainLevels": 2,
+      "staminaPerHit": 6.0,
+      "damageMultiplier": 1.0,
+      "lastChainMultiplier": 2.0,
+      "rangeM": 2.0,
+      "timing": {
+        "steps": [
+          {
+            "lengthSec": 1.1667,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 1.1667,
+            "speedEvents": [
+              {
+                "at": 0.0,
+                "factor": 2.0
+              },
+              {
+                "at": 0.6975,
+                "factor": 2.0
+              },
+              {
+                "at": 0.916,
+                "factor": 1.0
+              }
+            ]
+          },
+          {
+            "lengthSec": 1.2,
+            "stateSpeed": 1.0,
+            "exitTime": 0.9,
+            "chainAt": 0.9926,
+            "speedEvents": [
+              {
+                "at": 0.0,
+                "factor": 2.0
+              },
+              {
+                "at": 0.6733,
+                "factor": 2.0
+              }
+            ]
+          }
+        ],
+        "verified": "unverified",
+        "note": "Raw numbers from the player animation clips. How they turn into attacks per second is an estimate that has not been checked in game."
+      }
+    }
+  },
+  {
     "item": "KnifeButcher",
     "skill": "Knives",
     "damage": {},
