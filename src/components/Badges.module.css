@@ -1,0 +1,40 @@
+.badge {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--silver);
+  white-space: nowrap;
+}
+.v_unverified {
+  color: var(--amber);
+  border-color: var(--amber);
+  border-style: dashed;
+}
+.v_cross_checked {
+  color: var(--silver);
+  border-color: var(--silver);
+}
+.v_in_game {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.h_must_keep {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.h_keep_some {
+  color: var(--amber);
+  border-color: var(--amber);
+}
+.h_safe_discard {
+  color: var(--text-dim);
+}
+.h_decorative {
+  color: var(--bronze);
+  border-color: var(--bronze);
+}
+.h_sell {
+  color: var(--silver);
+}
