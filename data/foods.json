@@ -72,6 +72,15 @@
     "verified": "cross-checked"
   },
   {
+    "item": "FishCooked",
+    "kind": "food",
+    "health": 45.0,
+    "stamina": 15.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "Honey",
     "kind": "food",
     "health": 8.0,

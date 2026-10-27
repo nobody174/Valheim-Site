@@ -113,5 +113,12 @@
       ]
     }
   ],
-  "inputNotConfigured": []
+  "inputNotConfigured": [],
+  "anyOneOfNotModelled": [
+    {
+      "recipe": "Recipe_Fish1",
+      "output": "FishRaw",
+      "station": "piece_preptable"
+    }
+  ]
 }

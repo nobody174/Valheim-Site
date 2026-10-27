@@ -90,17 +90,19 @@ def attack_of(shared, timing):
     return out
 
 
-def report_dropped(skipped_outputs, skipped_inputs, path):
+def report_dropped(skipped_outputs, skipped_inputs, any_of, path):
     """Print and save the game recipes the builder did not keep, so a missing craftable (a fire arrow,
     a dual axe) shows up as a line in a reviewable file instead of vanishing silently.
 
     - skipped_outputs: the recipe's output item is in no biome config, but every input is. These are
       the likeliest misses: add the output to the biome it belongs to.
     - skipped_inputs: the output is configured but an input is not, so the recipe was dropped.
+    - any_of: recipes that need only one of their ingredients; not modelled yet, so never emitted.
     """
     key = lambda r: (r['recipe'], r['output'])
     report = {'outputNotConfigured': sorted(skipped_outputs, key=key),
-              'inputNotConfigured': sorted(skipped_inputs, key=key)}
+              'inputNotConfigured': sorted(skipped_inputs, key=key),
+              'anyOneOfNotModelled': sorted(any_of, key=key)}
     with open(path, 'w', encoding='utf8', newline='\n') as f:
         json.dump(report, f, indent=2)
         f.write('\n')
@@ -287,11 +289,16 @@ def main(raw, out, build_id, reviewed=None):
     stations_seen = set()
     recipes, recipe_ids = [], set()
     recipe_outputs = defaultdict(list)
-    skipped_outputs, skipped_inputs = [], []  # reported at the end, see report_dropped()
+    skipped_outputs, skipped_inputs, any_of = [], [], []  # reported, see report_dropped()
     for row in load(raw, 'recipe.json'):
         d = row['data']
         out_item = comp_name(d['m_item'])
         if not d['m_enabled']:
+            continue
+        if d['m_requireOnlyOneIngredient'] and out_item in allowed:
+            # "any one of these" recipes (Raw Fish from any fish) cannot be written as a plain input
+            # list; listing them as "all of these" would be wrong, so they are reported instead.
+            any_of.append({'recipe': d['m_Name'], 'output': out_item, 'station': comp_name(d['m_craftingStation'])})
             continue
         if out_item not in allowed:
             ins = [comp_name(r['m_resItem']) for r in d['m_resources'] if not r['m_upgraderResource']]
@@ -333,7 +340,7 @@ def main(raw, out, build_id, reviewed=None):
             **prov,
         })
 
-    report_dropped(skipped_outputs, skipped_inputs, report_path)
+    report_dropped(skipped_outputs, skipped_inputs, any_of, report_path)
 
     # ---- conversions: cooking, smelting, kilns, fermenting (from -> to, with a time)
     conv_names = {}

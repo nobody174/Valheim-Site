@@ -59,6 +59,10 @@ const ObtainedFromSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('drop'), creature: id }).strict(),
   z.object({ type: z.literal('recipe'), recipe: id }).strict(),
   z.object({ type: z.literal('other'), note: z.string().min(1) }).strict(),
+  /** Bought from a trader, for example Haldor. The note says from whom and roughly for how much. */
+  z.object({ type: z.literal('trader'), note: z.string().min(1) }).strict(),
+  /** Lying around in the world: chests, crypts, ruins. The note says where. */
+  z.object({ type: z.literal('found'), note: z.string().min(1) }).strict(),
 ]);
 
 export const ItemSchema = z

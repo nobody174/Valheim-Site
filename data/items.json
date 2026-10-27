@@ -8,9 +8,15 @@
     "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Drops when you chop oak trees"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Amber",
@@ -21,9 +27,15 @@
     "stackSize": 20,
     "tags": [],
     "hoard": "must_keep",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "found",
+        "note": "In chests in Burial Chambers in the Meadows and Black Forest."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "AmberPearl",
@@ -34,9 +46,15 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "must_keep",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "found",
+        "note": "In chests in Burial Chambers and Troll Caves, and buried treasure."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "AncientSeed",
@@ -409,9 +427,15 @@
     "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Drops when you chop beech trees"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "BirchSeeds",
@@ -422,9 +446,15 @@
     "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Drops when you chop birch trees"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Blueberries",
@@ -935,9 +965,15 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "must_keep",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Draugr and Draugr Elite in the Swamp (not in the data yet)."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Feathers",
@@ -949,9 +985,15 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 20,
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Shoot birds. Guides list crows and seagulls; the game files list Hen, Chicken and Volture as drops. Also found in chests."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "FineWood",
@@ -963,9 +1005,15 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 50,
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Drops from birch and oak logs; guides say a Bronze Axe or better is needed. Also in some world structures."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "FirCone",
@@ -976,9 +1024,96 @@
     "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Drops when you chop fir trees"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish1",
+    "name": "Perch",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Catch with a Fishing Rod and basic bait in lakes and rivers."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish2",
+    "name": "Pike",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Catch with a Fishing Rod and basic bait in deeper water."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishCooked",
+    "name": "Cooked Fish",
+    "category": "food",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.FishRaw"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.FishRaw"
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "FishRaw",
+    "name": "Raw Fish",
+    "category": "material",
+    "biome": "meadows",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting FishCooked. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Cut any caught fish into raw fish at a Preparation Table (the game files list it; the table is not in the data yet)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "FishingBait",
@@ -989,9 +1124,15 @@
     "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "trader",
+        "note": "Haldor sells basic bait for about 10 coins per pack (pack size differs between guides)."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "FishingRod",
@@ -1003,9 +1144,15 @@
     "tags": [],
     "hoard": "must_keep",
     "hoardNote": "A tool you need to own.",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "trader",
+        "note": "Haldor, usually in the Black Forest, about 300-350 coins (guides differ). Rarely found in Frost Caves."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Flint",
@@ -1500,9 +1647,15 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Deathsquitos on the Plains (the game files list it; the zone is not in the data yet)."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "PickaxeAntler",
@@ -1549,9 +1702,15 @@
     "stackSize": 1,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "No recipe in the game files and no known source in this version."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "PineCone",
@@ -1562,9 +1721,15 @@
     "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Drops when you chop pine trees, not every time."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Pukeberries",
@@ -1686,9 +1851,15 @@
     "hoard": "keep_some",
     "recommendedQty": 35,
     "hoardNote": "Used for crafting BowFineWood, crafting Coal, crafting Cultivator and 6 more. Quantity is the largest single need.",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Chop pine trees; some world furniture also drops it."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Ruby",
@@ -1699,9 +1870,15 @@
     "stackSize": 20,
     "tags": [],
     "hoard": "must_keep",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "found",
+        "note": "In chests: Stone Graves and Viking graveyards in the Meadows, Burial Chambers in the Black Forest, and other dungeons and ruins."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "unverified",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Sausages",

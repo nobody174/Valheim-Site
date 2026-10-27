@@ -31,7 +31,10 @@
     "BirchSeeds",
     "FirCone",
     "AxeHead1",
-    "AxeHead2"
+    "AxeHead2",
+    "FishRaw",
+    "Fish1",
+    "Fish2"
   ],
   "tools": [
     "Hammer",
@@ -75,7 +78,8 @@
     "CookedMeat",
     "CookedDeerMeat",
     "NeckTailGrilled",
-    "QueensJam"
+    "QueensJam",
+    "FishCooked"
   ],
   "meads": [
     "MeadBaseHealthMinor",
@@ -173,6 +177,96 @@
       [
         "other",
         "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+      ]
+    ],
+    "Feathers": [
+      [
+        "other",
+        "Shoot birds. Guides list crows and seagulls; the game files list Hen, Chicken and Volture as drops. Also found in chests."
+      ]
+    ],
+    "Acorn": [
+      [
+        "gather",
+        "Drops when you chop oak trees"
+      ]
+    ],
+    "BeechSeeds": [
+      [
+        "gather",
+        "Drops when you chop beech trees"
+      ]
+    ],
+    "BirchSeeds": [
+      [
+        "gather",
+        "Drops when you chop birch trees"
+      ]
+    ],
+    "FirCone": [
+      [
+        "gather",
+        "Drops when you chop fir trees"
+      ]
+    ],
+    "Entrails": [
+      [
+        "other",
+        "Dropped by Draugr and Draugr Elite in the Swamp (not in the data yet)."
+      ]
+    ],
+    "Amber": [
+      [
+        "found",
+        "In chests in Burial Chambers in the Meadows and Black Forest."
+      ]
+    ],
+    "AmberPearl": [
+      [
+        "found",
+        "In chests in Burial Chambers and Troll Caves, and buried treasure."
+      ]
+    ],
+    "Needle": [
+      [
+        "other",
+        "Dropped by Deathsquitos on the Plains (the game files list it; the zone is not in the data yet)."
+      ]
+    ],
+    "FishingRod": [
+      [
+        "trader",
+        "Haldor, usually in the Black Forest, about 300-350 coins (guides differ). Rarely found in Frost Caves."
+      ]
+    ],
+    "FishingBait": [
+      [
+        "trader",
+        "Haldor sells basic bait for about 10 coins per pack (pack size differs between guides)."
+      ]
+    ],
+    "PickaxeStone": [
+      [
+        "other",
+        "No recipe in the game files and no known source in this version."
+      ]
+    ],
+    "Fish1": [
+      [
+        "other",
+        "Catch with a Fishing Rod and basic bait in lakes and rivers."
+      ]
+    ],
+    "Fish2": [
+      [
+        "other",
+        "Catch with a Fishing Rod and basic bait in deeper water."
+      ]
+    ],
+    "FishRaw": [
+      [
+        "other",
+        "Cut any caught fish into raw fish at a Preparation Table (the game files list it; the table is not in the data yet)."
       ]
     ]
   },
