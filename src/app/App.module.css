@@ -146,3 +146,25 @@
 .profile a:hover {
   color: var(--amber);
 }
+
+.toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--bg-2);
+  border: 1px solid var(--bronze);
+  border-radius: var(--radius);
+}
+.toast button {
+  padding: 0.25rem 0.7rem;
+  color: var(--amber);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}

@@ -6,9 +6,11 @@ import '@fontsource/inter/600.css';
 import './styles/tokens.css';
 import './styles/base.css';
 import { App } from './app/App';
+import { UpdatePrompt } from './app/UpdatePrompt';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
+    <UpdatePrompt />
   </StrictMode>,
 );
