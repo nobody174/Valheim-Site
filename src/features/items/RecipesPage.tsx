@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router';
+import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
 import type { Recipe } from '../../data/schemas';
 import { RecipeBlock } from './RecipeBlock';
@@ -87,7 +88,8 @@ export function RecipesPage() {
       {groups.map((g) => (
         <section key={g.id} className={styles.section}>
           <h2>
-            {g.label} <span className={styles.count}>{g.recipes.length}</span>
+            {g.id === NO_STATION ? g.label : <EntityLink id={g.id} />}{' '}
+            <span className={styles.count}>{g.recipes.length}</span>
           </h2>
           {g.recipes.map((r) => (
             <RecipeBlock key={r.id} recipe={r} />

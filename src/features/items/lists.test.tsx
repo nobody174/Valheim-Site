@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it } from 'vitest';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
 import { ItemsPage } from './ItemsPage';
@@ -18,6 +18,9 @@ describe('recipes page', () => {
     );
     expect(screen.getByRole('heading', { level: 1, name: 'Recipes' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: /Forge/ })).toBeTruthy();
+    // The station name in each group heading links to the station page.
+    const link = within(screen.getByRole('heading', { name: /Forge/ })).getByRole('link');
+    expect(link.getAttribute('href')).toBe('/station/forge');
     await user.type(screen.getByLabelText('Search'), 'carrot');
     expect(screen.getByText(/recipes?$/).textContent).toMatch(/^\d+ recipes?$/);
     expect(screen.getAllByRole('link', { name: 'Carrot Soup' }).length).toBeGreaterThan(0);

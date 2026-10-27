@@ -2,7 +2,7 @@ import { useParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { VerifiedBadge } from '../../components/Badges';
 import { lookup } from '../../data/lookup';
-import type { Boss, Creature } from '../../data/schemas';
+import type { Boss, Creature, Station } from '../../data/schemas';
 import { RecipeBlock } from './RecipeBlock';
 import styles from './Items.module.css';
 
@@ -125,6 +125,39 @@ export function CreaturePage({ boss = false }: { boss?: boolean }) {
   return <MonsterPage monster={monster} boss={boss} />;
 }
 
+/** What to build the station from, and which zones those materials come from. */
+function HowToGet({ station }: { station: Station }) {
+  const reqs = station.buildRequirements;
+  const zones = lookup
+    .allBiomes()
+    .filter((b) => reqs.some((g) => lookup.item(g.item)?.biome === b.id))
+    .map((b) => b.name);
+  return (
+    <section className={styles.section}>
+      <h2>How to get it</h2>
+      {reqs.length === 0 ? (
+        <p className={styles.dim}>Unknown for now (it needs items from biomes not added yet).</p>
+      ) : (
+        <>
+          <p className={styles.dim}>Build cost:</p>
+          <ul className={styles.inline}>
+            {reqs.map((g) => (
+              <li key={g.item}>
+                {g.qty} × <EntityLink id={g.item} />
+              </li>
+            ))}
+          </ul>
+          {zones.length > 0 && (
+            <p className={styles.dim}>
+              Materials come from: {zones.join(', ')}. Click a material to see where to find it.
+            </p>
+          )}
+        </>
+      )}
+    </section>
+  );
+}
+
 export function StationPage() {
   const { id = '' } = useParams();
   const station = lookup.station(id);
@@ -137,20 +170,7 @@ export function StationPage() {
         <span className={styles.dim}>Crafting station</span>
         <VerifiedBadge level={station.verified} note={station.note} />
       </div>
-      <section className={styles.section}>
-        <h2>Build cost</h2>
-        {station.buildRequirements.length === 0 ? (
-          <p className={styles.dim}>Unknown for now (it needs items from biomes not added yet).</p>
-        ) : (
-          <ul className={styles.inline}>
-            {station.buildRequirements.map((g) => (
-              <li key={g.item}>
-                {g.qty} × <EntityLink id={g.item} />
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+      <HowToGet station={station} />
       {station.extensions.length > 0 && (
         <section className={styles.section}>
           <h2>Extensions</h2>
