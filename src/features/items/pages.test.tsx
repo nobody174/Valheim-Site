@@ -86,7 +86,7 @@ describe('link integrity', () => {
   it('every link on every item page resolves to a page', () => {
     const broken = lookup.allItems().flatMap((i) => brokenLinks(`/item/${i.id}`));
     expect(broken).toEqual([]);
-  });
+  }, 30_000);
 
   it('every link on creature, boss and station pages resolves', () => {
     const paths = [

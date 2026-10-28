@@ -5,10 +5,12 @@ import { VitePWA } from 'vite-plugin-pwa';
 // Repo's canonical name on GitHub; do not derive from the clone URL.
 export default defineConfig({
   base: '/Valheim-Site/',
+  // Icons stay separate files (cached by the service worker) instead of base64 inside the entry chunk.
+  build: { assetsInlineLimit: 0 },
   plugins: [
     react(),
     VitePWA({
-      registerType: 'prompt',
+      registerType: 'autoUpdate',
       includeAssets: ['icon.svg'],
       manifest: {
         name: 'Valheim Companion',
