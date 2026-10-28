@@ -239,7 +239,10 @@
       "fire": "very weak",
       "poison": "resistant",
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Greydwarf elite"
+    ]
   },
   {
     "id": "Greydwarf_Shaman",
@@ -476,7 +479,10 @@
       "fire": "weak",
       "frost": "resistant",
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Bjorn"
+    ]
   },
   {
     "id": "Draugr",
@@ -630,7 +636,10 @@
       "frost": "weak",
       "lightning": "weak",
       "poison": "immune"
-    }
+    },
+    "aliases": [
+      "Blob elite"
+    ]
   },
   {
     "id": "Leech",
@@ -884,7 +893,10 @@
     "verified": "cross-checked",
     "resistances": {
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Fenris"
+    ]
   },
   {
     "id": "Hatchling",
@@ -918,7 +930,10 @@
       "fire": "weak",
       "frost": "immune",
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Hatchling"
+    ]
   },
   {
     "id": "StoneGolem",
@@ -1017,7 +1032,10 @@
     "resistances": {
       "fire": "weak",
       "poison": "resistant"
-    }
+    },
+    "aliases": [
+      "Fenris"
+    ]
   },
   {
     "id": "Goblin",
@@ -1074,7 +1092,10 @@
     "verified": "cross-checked",
     "resistances": {
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Goblin"
+    ]
   },
   {
     "id": "GoblinArcher",
@@ -1112,7 +1133,11 @@
     "verified": "cross-checked",
     "resistances": {
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Goblin archer",
+      "Fuling archer"
+    ]
   },
   {
     "id": "GoblinBrute",
@@ -1167,7 +1192,11 @@
     "verified": "cross-checked",
     "resistances": {
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Goblin brute",
+      "Fuling brute"
+    ]
   },
   {
     "id": "GoblinShaman",
@@ -1241,7 +1270,10 @@
     "verified": "cross-checked",
     "resistances": {
       "spirit": "immune"
-    }
+    },
+    "aliases": [
+      "Goblin shaman"
+    ]
   },
   {
     "id": "Lox",

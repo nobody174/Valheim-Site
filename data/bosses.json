@@ -258,6 +258,9 @@
       }
     ],
     "trophy": "TrophyGoblinKing",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated."
+    "note": "Health, drops, attacks and resistances from game files; summon items curated.",
+    "aliases": [
+      "Goblin king"
+    ]
   }
 ]

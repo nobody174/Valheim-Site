@@ -1,0 +1,84 @@
+{
+  "_comment": "Search-only alternative names (old guide names, spelling variants, game-community nicknames). Not game data: they only help the search find an entry. Key = entry id of an item, creature or boss.",
+  "RoundLog": [
+    "Core wood",
+    "Round log",
+    "Roundlog"
+  ],
+  "FineWood": [
+    "Fine wood"
+  ],
+  "DeerHide": [
+    "Deerskin",
+    "Deer skin"
+  ],
+  "Pukeberries": [
+    "Puke berries",
+    "Pukeberry"
+  ],
+  "BlackMetal": [
+    "Blackmetal"
+  ],
+  "BlackMetalScrap": [
+    "Blackmetal scrap"
+  ],
+  "WolfHairBundle": [
+    "Wolf hair",
+    "Fenris hair"
+  ],
+  "WolfClaw": [
+    "Wolf claw"
+  ],
+  "YmirRemains": [
+    "Ymir remains"
+  ],
+  "Cloudberry": [
+    "Cloudberry"
+  ],
+  "Goblin": [
+    "Goblin"
+  ],
+  "GoblinArcher": [
+    "Goblin archer",
+    "Fuling archer"
+  ],
+  "GoblinBrute": [
+    "Goblin brute",
+    "Fuling brute"
+  ],
+  "GoblinShaman": [
+    "Goblin shaman"
+  ],
+  "GoblinKing": [
+    "Goblin king"
+  ],
+  "TrophyGoblin": [
+    "Goblin trophy"
+  ],
+  "TrophyGoblinBrute": [
+    "Goblin brute trophy",
+    "Fuling brute trophy"
+  ],
+  "TrophyGoblinShaman": [
+    "Goblin shaman trophy"
+  ],
+  "Greydwarf_Elite": [
+    "Greydwarf elite"
+  ],
+  "BlobElite": [
+    "Blob elite"
+  ],
+  "Bjorn": [
+    "Bjorn",
+    "Bear"
+  ],
+  "Hatchling": [
+    "Hatchling"
+  ],
+  "Wolf": [
+    "Fenris"
+  ],
+  "Fenring": [
+    "Fenris"
+  ]
+}

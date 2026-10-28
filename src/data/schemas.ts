@@ -246,6 +246,7 @@ export const CreatureSchema = z
   .object({
     id,
     name: z.string().min(1),
+    aliases: z.array(z.string()).optional(),
     biome: id.nullable(),
     health: z.number().positive().optional(),
     drops: z.array(drop).default([]),
@@ -259,6 +260,7 @@ export const BossSchema = z
   .object({
     id,
     name: z.string().min(1),
+    aliases: z.array(z.string()).optional(),
     biome: id,
     summonItems: z.array(ingredient).default([]),
     trophy: id.optional(),

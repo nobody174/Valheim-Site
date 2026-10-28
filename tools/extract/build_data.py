@@ -607,6 +607,21 @@ def main(raw, out, build_id, reviewed=None):
     biomes = [{'id': c['id'], 'name': c['name'], 'order': c['order'],
                **({'guide': c['guide']} if c.get('guide', {}).get('notes') else {}), **prov} for c in configs]
 
+    # Search-only alternative names (tools/extract/aliases.json); not game data.
+    alias_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'aliases.json')
+    if os.path.exists(alias_path):
+        with open(alias_path, encoding='utf8') as f:
+            alias_cfg = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
+        by_id = {e['id']: e for e in items + creatures + bosses}
+        for aid, names in alias_cfg.items():
+            if aid not in by_id:
+                warnings.append(f'alias for {aid}: no such item, creature or boss')
+                continue
+            own = by_id[aid]['name'].lower()
+            extra = [n for n in dict.fromkeys(names) if n.lower() != own]
+            if extra:
+                by_id[aid]['aliases'] = extra
+
     os.makedirs(out, exist_ok=True)
     files = {'meta': {'gameVersion': f'Steam build {build_id}', 'lastReviewed': reviewed},
              'biomes': biomes, 'items': items, 'recipes': recipes, 'stations': stations, 'weapons': weapons,
