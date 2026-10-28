@@ -1,9 +1,9 @@
 # Valheim Companion
 
-A personal, offline-capable Valheim companion: search, recipes, crafting graph, progression
-guide, rankings, build planner and checklists. Static site, hosted free on GitHub Pages.
+A personal, offline-capable Valheim companion: search, recipes, building costs, progression
+guide, weapon and armor rankings, trophies, bosses, creatures, food and checklists. Static site, hosted free on GitHub Pages.
 
-**Status:** Phase 1 (MVP) in review: lookup, checklist, profiles, progression guide, offline app. See `docs/ROADMAP.md`.
+**Status:** data for Meadows to Plains is in, with the browse pages, rankings and search. The crafting graph, build planner and other tools are still to come. See `docs/ROADMAP.md`.
 
 ## Live site
 

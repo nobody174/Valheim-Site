@@ -128,3 +128,21 @@ describe('armor sets', () => {
     expect(wrong).toEqual([]);
   });
 });
+
+describe('display names', () => {
+  it('no two items, creatures or bosses share a name', () => {
+    const seen = new Map<string, string>();
+    const clash: string[] = [];
+    const all = [
+      ...lookup.allItems().map((e) => ({ id: e.id, name: e.name })),
+      ...lookup.allCreatures().map((e) => ({ id: e.id, name: e.name })),
+      ...lookup.allBosses().map((e) => ({ id: e.id, name: e.name })),
+    ];
+    for (const e of all) {
+      const key = e.name.toLowerCase();
+      if (seen.has(key)) clash.push(`${e.name}: ${seen.get(key)} and ${e.id}`);
+      else seen.set(key, e.id);
+    }
+    expect(clash).toEqual([]);
+  });
+});

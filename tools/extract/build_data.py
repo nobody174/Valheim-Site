@@ -622,6 +622,18 @@ def main(raw, out, build_id, reviewed=None):
     biomes = [{'id': c['id'], 'name': c['name'], 'order': c['order'],
                **({'guide': c['guide']} if c.get('guide', {}).get('notes') else {}), **prov} for c in configs]
 
+    # Display names that differ from the game where it gives two entries one name (name_overrides.json).
+    name_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'name_overrides.json')
+    if os.path.exists(name_path):
+        with open(name_path, encoding='utf8') as f:
+            name_cfg = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
+        named = {e['id']: e for e in items + creatures + bosses}
+        for nid, nname in name_cfg.items():
+            if nid in named:
+                named[nid]['name'] = nname
+            else:
+                warnings.append(f'name override for {nid}: no such item, creature or boss')
+
     # Search-only alternative names (tools/extract/aliases.json); not game data.
     alias_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'aliases.json')
     if os.path.exists(alias_path):
