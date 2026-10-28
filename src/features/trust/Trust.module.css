@@ -1,0 +1,36 @@
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(180deg, #241c15, #1b1510);
+  border: 2px solid var(--wood-light);
+  border-radius: 14px;
+  box-shadow: var(--shadow-chunk);
+}
+.tile strong {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--gold);
+}
+.tile span {
+  color: var(--text-dim);
+}
+.group {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.9rem;
+  background: var(--bg-1);
+  border: 2px solid var(--wood);
+  border-radius: 12px;
+}
+.group summary {
+  cursor: pointer;
+}
+.group p {
+  margin: 0.5rem 0 0;
+}

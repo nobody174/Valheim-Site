@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Intro } from '../../components/Intro';
 import { Link, useSearchParams } from 'react-router';
+import { getRecent } from '../../state/recent';
 import {
   Background,
   Controls,
@@ -111,7 +112,8 @@ function connected(start: string, edges: { source: string; target: string }[]): 
 export function GraphPage() {
   const [params, setParams] = useSearchParams();
   const items = useMemo(() => [...lookup.allItems()].sort((a, b) => a.name.localeCompare(b.name)), []);
-  const id = lookup.item(params.get('item') ?? '')?.id ?? '';
+  const fallback = getRecent().find((r) => ctx.recipesFor(r).length > 0) ?? 'SwordBronze';
+  const id = lookup.item(params.get('item') ?? '')?.id ?? lookup.item(fallback)?.id ?? '';
   const mode = MODES.find((m) => m.key === params.get('mode'))?.key ?? 'needs';
   const depth = Math.min(MAX_DEPTH, Math.max(1, Number(params.get('depth')) || DEFAULT_DEPTH));
   const [text, setText] = useState('');

@@ -31,8 +31,8 @@ describe('recipe completeness', () => {
 });
 
 describe('item sources', () => {
-  /** Items whose source nobody could confirm (no game file lists it and no guide was found). */
-  const KNOWN_GAPS = ['CarrotSeeds', 'ElderBark'];
+  /** Items whose source nobody could find (no game file lists it and no guide was found). None left. */
+  const KNOWN_GAPS: string[] = [];
 
   it('every item says where to get it, except the documented gaps', () => {
     const none = lookup
@@ -42,9 +42,6 @@ describe('item sources', () => {
     expect(none).toEqual([]);
   });
 
-  it('the documented gaps are still gaps', () => {
-    for (const id of KNOWN_GAPS) expect(lookup.item(id)?.obtainedFrom, id).toHaveLength(0);
-  });
 });
 
 describe('station build costs', () => {

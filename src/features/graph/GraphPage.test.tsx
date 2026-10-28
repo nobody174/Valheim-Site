@@ -39,9 +39,9 @@ const renderPage = (path = '/graph') =>
   );
 
 describe('graph page', () => {
-  it('asks for an item first', () => {
+  it('opens on the Bronze Sword when nothing was chosen, instead of an empty page', () => {
     renderPage();
-    expect(screen.getByText(/Choose an item to draw/)).toBeTruthy();
+    expect(within(screen.getByTestId('flow')).getByText('node:Bronze Sword')).toBeTruthy();
   });
 
   it('draws the ingredients of an item with the station and level on the edges', () => {

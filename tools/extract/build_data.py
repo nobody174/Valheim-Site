@@ -206,8 +206,19 @@ def build_places(raw, biome_order, boss_ids, warnings):
     return places
 
 
+def previous_review(out, build_id):
+    """lastReviewed means a person looked at this build's data. Rebuilding the same build must not
+    move it, so keep the date that is already there; a new build starts at today."""
+    path = os.path.join(out, 'meta.json')
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding='utf8') as f:
+        meta = json.load(f)
+    return meta.get('lastReviewed') if meta.get('gameVersion') == f'Steam build {build_id}' else None
+
+
 def main(raw, out, build_id, reviewed=None):
-    reviewed = reviewed or date.today().isoformat()
+    reviewed = reviewed or previous_review(out, build_id) or date.today().isoformat()
     configs = load_configs()
     warnings = []
     report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dropped_recipes.json')

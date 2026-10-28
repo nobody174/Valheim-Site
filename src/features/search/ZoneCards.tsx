@@ -42,7 +42,13 @@ export function ZoneCards() {
                 aria-label={`${b.name}: ${got} of ${inZone.length} items collected`}
               />
               <span className={styles.zoneCount}>
-                <strong>{got}</strong> / {inZone.length} found
+                {got === 0 ? (
+                  <>Not started</>
+                ) : (
+                  <>
+                    <strong>{got}</strong> / {inZone.length} found
+                  </>
+                )}
               </span>
             </Link>
           );

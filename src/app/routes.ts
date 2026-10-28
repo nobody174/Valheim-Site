@@ -4,6 +4,8 @@ export interface RouteDef {
   phase: number;
   /** Id of the in-game icon shown beside the label (any item id with an exported icon). */
   icon: string;
+  /** Newer or less checked pages carry a small Beta tag in the menu. */
+  beta?: boolean;
 }
 
 export interface RouteGroup {
@@ -31,7 +33,7 @@ export const ROUTE_GROUPS: RouteGroup[] = [
       { path: '/trophies', label: 'Trophies', phase: 2, icon: 'TrophyDeer' },
       { path: '/food', label: 'Food', phase: 2, icon: 'CookedMeat' },
       { path: '/skills', label: 'Skills', phase: 5, icon: 'SwordBronze' },
-      { path: '/places', label: 'Places', phase: 5, icon: 'CryptKey' },
+      { path: '/places', label: 'Places', phase: 5, icon: 'CryptKey', beta: true },
     ],
   },
   {
@@ -42,15 +44,15 @@ export const ROUTE_GROUPS: RouteGroup[] = [
       { path: '/upgrades', label: 'Upgrades', phase: 3, icon: 'PickaxeBronze' },
       { path: '/rankings', label: 'Rankings', phase: 3, icon: 'SwordIron' },
       { path: '/compare', label: 'Compare', phase: 3, icon: 'ShieldBronzeBuckler' },
-      { path: '/optimizer', label: 'Food optimizer', phase: 3, icon: 'MeadHealthMinor' },
-      { path: '/graph', label: 'Crafting graph', phase: 3, icon: 'Amber' },
+      { path: '/optimizer', label: 'Food optimizer', phase: 3, icon: 'MeadHealthMinor', beta: true },
+      { path: '/graph', label: 'Crafting graph', phase: 3, icon: 'Amber', beta: true },
     ],
   },
   {
     id: 'mygame',
     title: 'My game',
     routes: [
-      { path: '/character', label: 'My character', phase: 5, icon: 'ArmorBronzeChest' },
+      { path: '/character', label: 'My character', phase: 5, icon: 'ArmorBronzeChest', beta: true },
       { path: '/next', label: 'Next steps', phase: 3, icon: 'Wishbone' },
       { path: '/checklist', label: 'Checklist', phase: 1, icon: 'Raspberry' },
       { path: '/progression', label: 'Progression', phase: 1, icon: 'TrophyTheElder' },
@@ -62,6 +64,7 @@ export const ROUTE_GROUPS: RouteGroup[] = [
     title: 'Reference',
     routes: [
       { path: '/commands', label: 'Console commands', phase: 5, icon: 'Ruby' },
+      { path: '/trust', label: 'Data trust', phase: 5, icon: 'Bell' },
       { path: '/updates', label: 'Update log', phase: 5, icon: 'BellFragment' },
       { path: '/profile', label: 'Profile & data', phase: 1, icon: 'Coins' },
     ],

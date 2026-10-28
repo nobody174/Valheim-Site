@@ -251,3 +251,11 @@ jobs:
 ```
 
 Check the current major versions of these actions when creating the file.
+
+## Decisions recorded after review 3 (2026-10-28)
+
+- **Page tiers.** Core: search, items, recipes, bosses, creatures, food, building. Useful: planner, rankings, progression, checklist, skills, console commands, update log, data trust. Beta (marked with a dot in the menu): crafting graph, food optimizer, my character, places. Beta pages are newer or lean on guides. New features wait until the data is better checked (a feature freeze that the owner can lift).
+- **Shared origin.** The site lives on `nobody174.github.io`, an origin shared with any other project page of the same account. Everything it stores in the browser uses the `vcs:v1:` prefix and nothing sensitive is stored. Character files are read in the browser and never uploaded.
+- **npm audit.** Four low findings (deepmerge, through vite-plugin-pwa and workbox) are accepted: they are build-time only and the site is static. Re-check at each dependency update.
+- **Cauldron level 6** needs the Smoker extension, which is a later-zone piece (`laterExtensions`); it is not a data gap.
+- **Snapshot tests** (`src/data/snapshot.test.ts`) pin a few computed numbers so a data refresh that moves them shows up in review.

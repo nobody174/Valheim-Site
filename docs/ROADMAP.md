@@ -53,3 +53,7 @@ reviews the live site before the next phase starts.
 | Game patch changes data | `meta.json` version, data-only update workflow, update log (Phase 5) |
 | Game art copyright | Owner chose to commit the real item icons (64 px) in `src/assets/icons/`; not licensed for reuse, README says so; nothing else from the game's art is committed |
 | Graph performance with full data | Show a focused neighbourhood by default (depth 2), expand on demand |
+
+## State after review 3 (2026-10-28)
+
+v1.0 is tagged, but **nothing is marked seen in game yet**; the Data trust page shows the numbers honestly. Review 3 (`docs/REVIEW-2026-10-28.md`) work done: all seven boss summon costs now come from the game files; the last sourceless items (Ancient Bark, Carrot Seeds) have guide-tagged sources; `lastReviewed` no longer moves on a rebuild; `npm run patchcheck`; Data trust page; touch targets, toast, search placeholder, graph default; beta dots in the menu. Not done on purpose: mobile bottom tab bar and list virtualisation (the site is used on a desktop second monitor); play-test verification needs the owner in game.

@@ -1,6 +1,6 @@
 .shell {
   display: grid;
-  grid-template-columns: 200px minmax(0, 1fr);
+  grid-template-columns: 216px minmax(0, 1fr);
   grid-template-rows: auto 1fr;
   grid-template-areas: 'header header' 'nav main';
   height: 100%;
@@ -236,7 +236,7 @@
 .toast {
   position: fixed;
   right: 1rem;
-  bottom: 1rem;
+  top: 4.6rem;
   z-index: 30;
   display: flex;
   align-items: center;
@@ -294,4 +294,25 @@
 .screenToggle[aria-pressed='true'] {
   color: var(--amber);
   border-color: var(--amber);
+}
+
+.beta {
+  flex: none;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-left: auto;
+  background: var(--ember);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--ember);
+}
+.betaText {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.nav a.active .beta {
+  background: var(--ink);
+  box-shadow: none;
 }

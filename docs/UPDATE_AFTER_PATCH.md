@@ -12,6 +12,16 @@ explicitly with `-I`:
 PY="C:/Users/Vartd/AppData/Local/Programs/Python/Python312/python.exe"
 ```
 
+## 0. Has the game updated?
+
+```
+npm run patchcheck
+```
+
+It compares the installed Steam build with `data/meta.json` and says whether the data is behind
+(set `VALHEIM_MANIFEST` if the game is not on D:). `lastReviewed` only moves when the build id
+changes, or when you pass a date to `build_data.py`, so a rebuild never looks like a review.
+
 ## 1. Start a branch and note the build id
 
 ```

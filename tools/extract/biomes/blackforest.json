@@ -104,7 +104,9 @@
       ]
     ]
   },
-  "bossSummonFromFiles": ["gd_king"],
+  "bossSummonFromFiles": [
+    "gd_king"
+  ],
   "gather": {
     "CopperOre": [
       [
@@ -164,6 +166,18 @@
       [
         "found",
         "Found on stands inside crypts (the dungeon caves around the world); the owner found theirs in the Black Forest. Surtlings, the fire creatures of the Swamp, are another guide-reported source. Not checked against the game's loot tables."
+      ]
+    ],
+    "ElderBark": [
+      [
+        "gather",
+        "Chop Ancient Trees in the Swamp with a Bronze Axe or better; Sunken Crypt chests can hold some too (guides)."
+      ]
+    ],
+    "CarrotSeeds": [
+      [
+        "gather",
+        "Found on the ground in the Black Forest (guides). Plant it on cultivated ground to grow Carrots."
       ]
     ]
   },
