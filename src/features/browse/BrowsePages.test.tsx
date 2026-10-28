@@ -15,7 +15,6 @@ const renderAt = (ui: React.ReactElement, path: string) =>
   render(<MemoryRouter initialEntries={[path]}>{ui}</MemoryRouter>);
 
 const bodyRows = () => within(screen.getAllByRole('table')[0]!).getAllByRole('row').slice(1);
-const firstCells = () => bodyRows().map((r) => within(r).getAllByRole('cell')[0]!.textContent);
 
 describe('browse pages', () => {
   it('lists every trophy with where it drops', () => {
@@ -33,8 +32,10 @@ describe('browse pages', () => {
 
   it('lists bosses in zone order with their summon items', () => {
     renderAt(<BossesPage />, '/bosses');
-    expect(firstCells()).toHaveLength(lookup.allBosses().length);
-    expect(firstCells()[0]).toMatch(/Eikthyr/);
+    const cards = screen.getAllByRole('listitem');
+    expect(cards).toHaveLength(lookup.allBosses().length);
+    expect(cards[0]!.textContent).toMatch(/Eikthyr/);
+    expect(cards[0]!.textContent).toMatch(/2.*Deer Trophy/);
   });
 
   it('lists creatures and filters by zone', async () => {

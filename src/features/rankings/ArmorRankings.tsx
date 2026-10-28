@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router';
+import { Intro } from '../../components/Intro';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
 import itemStyles from '../items/Items.module.css';
@@ -74,9 +75,11 @@ export function ArmorRankings() {
 
   return (
     <section>
-      <p className={itemStyles.lead}>
+      <Intro>
+      <p>
         Armor pieces side by side. Pick a view for a quick answer, or click a column to sort by it.
       </p>
+      </Intro>
       <div className={styles.tabs} role="group" aria-label="Armor views">
         {ARMOR_PRESETS.map((p) => (
           <button

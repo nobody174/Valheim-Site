@@ -104,3 +104,26 @@
   font-weight: 400;
   font-size: 0.85em;
 }
+
+.tab {
+  padding: 0.5rem 1.3rem;
+  font-family: var(--font-heading);
+  background: var(--wood-dark);
+  border: 2px solid var(--wood-light);
+  border-radius: 999px;
+  box-shadow: var(--shadow-chunk);
+}
+.tab:hover {
+  background: var(--wood);
+}
+.tab[aria-selected='true'] {
+  color: var(--ink);
+  background: linear-gradient(180deg, #ecdcb5, #cdb98a);
+  border-color: #fff3cf;
+}
+.warn {
+  border-radius: 12px;
+  border: 2px solid var(--amber);
+  border-left-width: 6px;
+  background: rgba(224, 116, 42, 0.1);
+}

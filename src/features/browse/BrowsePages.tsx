@@ -6,6 +6,8 @@ import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
 import { effectiveHoard } from '../../state/model';
 import { useProfile } from '../../state/store';
+import { EntityIcon } from '../../components/EntityIcon';
+import cards from './BossCards.module.css';
 import styles from '../items/Items.module.css';
 
 const UNKNOWN = 'unknown';
@@ -196,46 +198,49 @@ export function BossesPage() {
       {rows.length === 0 ? (
         <p className={styles.empty}>No bosses match these filters.</p>
       ) : (
-        <div className={styles.tableWrap}>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Boss</th>
-                <th>Zone</th>
-                <th>Health</th>
-                <th>Summon with</th>
-                <th>Drops</th>
-                <th className={styles.hideOnMobile}>Data</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((b) => (
-                <tr key={b.id}>
-                  <td>
+        <ul className={cards.grid}>
+          {rows.map((b) => (
+            <li key={b.id} className={cards.card} data-zone={b.biome}>
+              <div className={cards.top}>
+                <span className={cards.art}>
+                  <EntityIcon id={b.id} size={64} />
+                </span>
+                <div>
+                  <h2 className={cards.name}>
                     <EntityLink id={b.id} />
-                  </td>
-                  <td>{lookup.biomeName(b.biome)}</td>
-                  <td>{num(b.health)}</td>
-                  <td>
-                    {b.summonItems.length
-                      ? b.summonItems.map((s) => (
-                          <span key={s.item}>
-                            {s.qty}× <EntityLink id={s.item} />{' '}
-                          </span>
-                        ))
-                      : UNKNOWN}
-                  </td>
-                  <td>
-                    <Links ids={b.drops.map((d) => d.item)} />
-                  </td>
-                  <td className={styles.hideOnMobile}>
-                    <VerifiedBadge level={b.verified} note={b.note} />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                  </h2>
+                  <span className={cards.zone}>{lookup.biomeName(b.biome)}</span>
+                </div>
+                <span className={cards.health} title="Health">
+                  <span aria-hidden="true">&#9829;</span> {num(b.health)}
+                </span>
+              </div>
+              <div className={cards.row}>
+                <span className={cards.label}>Summon with</span>
+                <span>
+                  {b.summonItems.length
+                    ? b.summonItems.map((s) => (
+                        <span key={s.item} className={cards.chip}>
+                          {s.qty}&times; <EntityLink id={s.item} />
+                        </span>
+                      ))
+                    : UNKNOWN}
+                </span>
+              </div>
+              <div className={cards.row}>
+                <span className={cards.label}>Drops</span>
+                <span>
+                  {b.drops.map((d) => (
+                    <span key={d.item} className={cards.chip}>
+                      <EntityLink id={d.item} />
+                    </span>
+                  ))}
+                </span>
+              </div>
+              <VerifiedBadge level={b.verified} note={b.note} />
+            </li>
+          ))}
+        </ul>
       )}
     </section>
   );
