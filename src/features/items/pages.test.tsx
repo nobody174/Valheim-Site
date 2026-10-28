@@ -41,6 +41,17 @@ describe('item page', () => {
     expect(within(details).getByText('SwordBronze')).toBeTruthy();
   });
 
+  it('tags hand-written sources and summon costs, not values read from the game files', () => {
+    renderAt('/item/Wood');
+    expect(screen.getAllByText('guide, not checked').length).toBeGreaterThan(0);
+    cleanup();
+    renderAt('/boss/Eikthyr');
+    expect(screen.getAllByText('guide, not checked').length).toBeGreaterThan(0);
+    cleanup();
+    renderAt('/item/SwordBronze');
+    expect(screen.queryAllByText('guide, not checked')).toHaveLength(0);
+  });
+
   it('renders a weapon with stats and a recipe', () => {
     renderAt('/item/SwordBronze');
     expect(screen.getByRole('heading', { level: 1, name: 'Bronze Sword' })).toBeTruthy();

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
-import { HoardBadge, VerifiedBadge } from '../../components/Badges';
+import { GuideTag, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityIcon } from '../../components/EntityIcon';
 import { graph, lookup } from '../../data/lookup';
 import { effectiveHoard } from '../../state/model';
@@ -164,10 +164,30 @@ function WhereFound({ id }: { id: string }) {
       <h2>Where found</h2>
       <ul>
         {sources.map((s, i) => {
-          if (s.type === 'gather') return <li key={i}>Gathered from: {s.node}</li>;
-          if (s.type === 'other') return <li key={i}>{s.note}</li>;
-          if (s.type === 'trader') return <li key={i}>Bought from: {s.note}</li>;
-          if (s.type === 'found') return <li key={i}>Found: {s.note}</li>;
+          if (s.type === 'gather')
+            return (
+              <li key={i}>
+                Gathered from: {s.node} <GuideTag />
+              </li>
+            );
+          if (s.type === 'other')
+            return (
+              <li key={i}>
+                {s.note} <GuideTag />
+              </li>
+            );
+          if (s.type === 'trader')
+            return (
+              <li key={i}>
+                Bought from: {s.note} <GuideTag />
+              </li>
+            );
+          if (s.type === 'found')
+            return (
+              <li key={i}>
+                Found: {s.note} <GuideTag />
+              </li>
+            );
           if (s.type === 'drop') {
             const monster = lookup.creature(s.creature) ?? lookup.boss(s.creature);
             const drop = monster?.drops.find((d) => d.item === id);
@@ -195,7 +215,7 @@ function WhereFound({ id }: { id: string }) {
         })}
         {summons.map((b) => (
           <li key={b.id}>
-            Used to summon <EntityLink id={b.id} />
+            Used to summon <EntityLink id={b.id} /> <GuideTag />
           </li>
         ))}
       </ul>

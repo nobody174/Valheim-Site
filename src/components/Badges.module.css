@@ -41,3 +41,13 @@
 .h_sell {
   color: var(--silver);
 }
+
+.guide {
+  margin-left: 0.4rem;
+  padding: 0 0.4rem;
+  font-size: 0.7rem;
+  color: var(--amber);
+  border: 1px dashed var(--amber);
+  border-radius: 999px;
+  white-space: nowrap;
+}
