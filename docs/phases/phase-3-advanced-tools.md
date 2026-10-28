@@ -16,11 +16,13 @@ Each step is its own session and its own checkpoint.
 - Performance: keep it smooth with the full dataset (collapse long chains, limit visible nodes,
   report the measured frame behavior).
 
+Built (`/graph`, `src/features/graph/`): React Flow with a dagre left-to-right layout, loaded only when the page is opened (a separate 232 kB chunk, 76 kB gzip). Needs, Unlocks and Both, depth 1 to 5 (default 2), click a node to open its page, centre the graph on it or expand it one more step. Edges carry the amount, station and level; items with no recipe show up to two creatures that drop them. Hover highlights the whole path; zoom, pan, fit and a mini-map. An item used in dozens of recipes shows 10 products until expanded, and the graph stops at 80 nodes. A plain list of the nodes (links) sits below the canvas for keyboard and screen-reader use. Station nodes are not drawn; the station is on the edge. Measured: about 144 frames per second while zooming, the largest default graph is 13 nodes.
+
 Acceptance:
-- [ ] Graph for Copper, Bronze, Iron and a late-game item all render correctly from data
-- [ ] Layout is stable and readable; no overlapping nodes at default depth
-- [ ] Works offline; keyboard accessible node focus and "open page" action
-- [ ] Tests for the graph-to-nodes/edges transform
+- [x] Graph for Copper, Bronze, Iron and a late-game item all render correctly from data
+- [x] Layout is stable and readable; no overlapping nodes at default depth (tested for 7 items in all 3 modes)
+- [x] Works offline (the chunk is precached); node focus is by keyboard through React Flow, plus the plain link list
+- [x] Tests for the graph-to-nodes/edges transform and the layout
 
 ## Step 2 - Build planner
 
