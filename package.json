@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "validate": "tsx scripts/validate-data.ts",
+    "patchcheck": "tsx scripts/patchcheck.ts",
     "test": "vitest run",
     "typecheck": "tsc",
     "lint": "eslint .",

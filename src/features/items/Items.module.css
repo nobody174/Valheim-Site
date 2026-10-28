@@ -539,3 +539,22 @@
 .recipeGrid > * {
   margin: 0;
 }
+
+.tools a {
+  padding: 0.3rem 0.9rem;
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(180deg, #ecdcb5, #cdb98a);
+  border: 2px solid #fff3cf;
+  border-radius: 999px;
+  box-shadow: var(--shadow-chunk);
+}
+.tools a:hover {
+  color: var(--ink);
+  background: linear-gradient(180deg, #fff3cf, #e0cd9c);
+}
+.tools a:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}

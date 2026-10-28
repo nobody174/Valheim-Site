@@ -17,6 +17,7 @@ import { CommandsPage } from '../features/commands/CommandsPage';
 import { SkillsPage } from '../features/skills/SkillsPage';
 import { UpdateLogPage } from '../features/updates/UpdateLogPage';
 import { PlacesPage } from '../features/places/PlacesPage';
+import { TrustPage } from '../features/trust/TrustPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
 import { SecondScreenToggle } from './SecondScreenToggle';
@@ -82,6 +83,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/places': <PlacesPage />,
   '/skills': <SkillsPage />,
   '/commands': <CommandsPage />,
+  '/trust': <TrustPage />,
   '/updates': <UpdateLogPage />,
   '/profile': <ProfilePage />,
 };
@@ -133,7 +135,7 @@ function Shell() {
           className={styles.search}
           type="search"
           readOnly
-          placeholder="Search (Ctrl+K or /)"
+          placeholder="Search"
           aria-label="Open search"
           onClick={() => setPaletteOpen(true)}
           onKeyDown={(e) => {
@@ -163,11 +165,19 @@ function Shell() {
               >
                 <EntityIcon id={r.icon} size={22} />
                 <span>{r.label}</span>
+                {r.beta && (
+                  <span className={styles.beta} title="Beta: newer and less checked">
+                    <span className={styles.betaText}>beta</span>
+                  </span>
+                )}
               </NavLink>
             ))}
           </div>
         ))}
         <p className={styles.dataInfo}>
+          <span className={styles.beta} aria-hidden="true" /> beta: newer, less checked
+          <br />
+          <br />
           Data: {gameData.meta.gameVersion}
           <br />
           Reviewed {gameData.meta.lastReviewed}

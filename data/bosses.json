@@ -211,9 +211,9 @@
         "qty": 3
       }
     ],
-    "summonFromFiles": false,
+    "summonFromFiles": true,
     "trophy": "TrophyDragonQueen",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated from guides."
+    "note": "Health, drops, attacks and resistances from game files; summon items from the altar in the game files."
   },
   {
     "id": "GoblinKing",
@@ -261,9 +261,9 @@
         "qty": 5
       }
     ],
-    "summonFromFiles": false,
+    "summonFromFiles": true,
     "trophy": "TrophyGoblinKing",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated from guides.",
+    "note": "Health, drops, attacks and resistances from game files; summon items from the altar in the game files.",
     "aliases": [
       "Goblin king"
     ]

@@ -2488,10 +2488,16 @@
     "stackSize": 100,
     "tags": [],
     "hoard": "safe_discard",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Found on the ground in the Black Forest (guides). Plant it on cultivated ground to grow Carrots."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
-    "description": "Plant these if you like carrots..."
+    "verified": "unverified",
+    "description": "Plant these if you like carrots...",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "CarrotSoup",
@@ -3289,10 +3295,16 @@
     "stackSize": 50,
     "tags": [],
     "hoard": "must_keep",
-    "obtainedFrom": [],
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Chop Ancient Trees in the Swamp with a Bronze Axe or better; Sunken Crypt chests can hold some too (guides)."
+      }
+    ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
-    "description": "An ancient and sturdy material."
+    "verified": "unverified",
+    "description": "An ancient and sturdy material.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "Entrails",

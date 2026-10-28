@@ -82,7 +82,7 @@ export function PlacesPage() {
         </label>{' '}
         <span>{shown.length} shown</span>
       </p>
-      <div className={styles.tableWrap}>
+      <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="Places">
         <table className={styles.table}>
           <thead>
             <tr>

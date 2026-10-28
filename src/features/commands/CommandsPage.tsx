@@ -45,7 +45,7 @@ export function CommandsPage() {
         </label>{' '}
         <span>{shown.length} shown</span>
       </p>
-      <div className={styles.tableWrap}>
+      <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="Console commands">
         <table className={styles.table}>
           <thead>
             <tr>
