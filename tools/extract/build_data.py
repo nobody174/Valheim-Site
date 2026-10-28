@@ -18,8 +18,8 @@ from collections import defaultdict
 from datetime import date
 
 SKILLS = {0: 'None', 1: 'Swords', 2: 'Knives', 3: 'Clubs', 4: 'Polearms', 5: 'Spears', 6: 'Blocking', 7: 'Axes',
-          8: 'Bows', 9: 'FireMagic', 10: 'FrostMagic', 11: 'Unarmed', 12: 'Pickaxes',
-          13: 'WoodCutting', 14: 'Crossbows', 15: 'ElementalMagic', 16: 'BloodMagic'}
+          8: 'Bows', 9: 'ElementalMagic', 10: 'BloodMagic', 11: 'Unarmed', 12: 'Pickaxes',
+          13: 'WoodCutting', 14: 'Crossbows'}  # Skills.SkillType, read from the game's code
 DMG_KEYS = ['blunt', 'slash', 'pierce', 'chop', 'pickaxe', 'fire', 'frost', 'lightning', 'poison',
             'spirit']
 # Character.DamageModifier enum
@@ -677,13 +677,26 @@ def main(raw, out, build_id, reviewed=None):
 
     skills_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'save_skills.json')
     with open(skills_path, encoding='utf8') as f:
-        save_tokens['skills'] = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
+        skill_cfg = {int(k): v for k, v in json.load(f).items() if not k.startswith('_')}
+    defs = load(raw, 'skillsdef.json')
+    live = max((d['data'] for d in defs), key=lambda d: len(d['m_skills']))  # the longest copy is the live one
+    xp_per_use = {s_['m_skill']: s_['m_increseStep'] for s_ in live['m_skills']}
+    skills = []
+    for num, cfg in sorted(skill_cfg.items()):
+        key = cfg['id'].lower()
+        skills.append({'id': cfg['id'], 'number': num, 'name': loc.get(f'skill_{key}', cfg['id']),
+                       'description': loc.get(f'skill_{key}_description', ''), 'group': cfg['group'],
+                       'xpPerUse': round(xp_per_use[num], 3) if num in xp_per_use else None})
+        if num not in xp_per_use:
+            warnings.append(f"skill {cfg['id']} has no entry in the game's Skills list")
+    skills_file = {'deathLoss': round(live['m_DeathLowerFactor'], 4), 'skills': skills}
+    save_tokens['skills'] = {str(k['number']): k['name'] for k in skills}
 
     os.makedirs(out, exist_ok=True)
     files = {'meta': {'gameVersion': f'Steam build {build_id}', 'lastReviewed': reviewed},
              'biomes': biomes, 'items': items, 'recipes': recipes, 'stations': stations, 'weapons': weapons,
              'armor': armor, 'foods': foods, 'trophies': trophies, 'creatures': creatures,
-             'bosses': bosses, 'pieces': pieces_out, 'savekeys': save_tokens}
+             'bosses': bosses, 'pieces': pieces_out, 'savekeys': save_tokens, 'skills': skills_file}
     for name, content in files.items():
         with open(os.path.join(out, f'{name}.json'), 'w', encoding='utf8', newline='\n') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)

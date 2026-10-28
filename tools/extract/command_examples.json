@@ -1,0 +1,13 @@
+{
+  "_note": "Hand-written example lines for a few common console commands. Not from the game files: shown on the site with the 'guide, not checked' tag. The command usage itself (in each description) is the game's own text.",
+  "spawn": "spawn Wood 20",
+  "goto": "goto 0,0",
+  "raiseskill": "raiseskill Swords 10",
+  "tod": "tod 0.5",
+  "addstatus": "addstatus Rested",
+  "setpower": "setpower GP_Eikthyr",
+  "heal": "heal",
+  "god": "god",
+  "fly": "fly",
+  "pos": "pos"
+}

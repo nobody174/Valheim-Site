@@ -1,4 +1,5 @@
 import { graph, lookup } from './lookup';
+import { skillLabel } from './skills';
 import { combatDamage, totalCombatDamage } from './weaponStats';
 
 export interface EntityDescription {
@@ -42,7 +43,7 @@ function itemLines(id: string): string[] {
         .join(', ');
       lines.push(`Damage ${num(total)} (${types})`);
     }
-    lines.push(join([weapon.skill, weapon.twoHanded && 'two-handed']));
+    lines.push(join([skillLabel(weapon.skill), weapon.twoHanded && 'two-handed']));
     if (weapon.blockPower !== undefined) lines.push(`Block power ${num(weapon.blockPower)}`);
   }
   if (armor) {

@@ -1,0 +1,197 @@
+{
+  "deathLoss": 0.05,
+  "skills": [
+    {
+      "id": "Swords",
+      "number": 1,
+      "name": "Swords",
+      "description": "Damage with swords.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Knives",
+      "number": 2,
+      "name": "Knives",
+      "description": "Damage with knives.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Clubs",
+      "number": 3,
+      "name": "Clubs",
+      "description": "Damage with clubs.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Polearms",
+      "number": 4,
+      "name": "Polearms",
+      "description": "Damage with polearms.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Spears",
+      "number": 5,
+      "name": "Spears",
+      "description": "Damage with spears.",
+      "group": "weapon",
+      "xpPerUse": 1.5
+    },
+    {
+      "id": "Blocking",
+      "number": 6,
+      "name": "Blocking",
+      "description": "Damage absorbed when blocking with a weapon or shield.",
+      "group": "combat",
+      "xpPerUse": 0.5
+    },
+    {
+      "id": "Axes",
+      "number": 7,
+      "name": "Axes",
+      "description": "Damage with axes.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Bows",
+      "number": 8,
+      "name": "Bows",
+      "description": "Damage with bows.",
+      "group": "weapon",
+      "xpPerUse": 1.5
+    },
+    {
+      "id": "ElementalMagic",
+      "number": 9,
+      "name": "Elemental Magic",
+      "description": "Damage and eitr usage when using elemental magic.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "BloodMagic",
+      "number": 10,
+      "name": "Blood Magic",
+      "description": "Damage, eitr and health drain when using blood magic.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Unarmed",
+      "number": 11,
+      "name": "Fists",
+      "description": "Damage when unarmed.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Pickaxes",
+      "number": 12,
+      "name": "Pickaxes",
+      "description": "Damage with pickaxes.",
+      "group": "tool",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "WoodCutting",
+      "number": 13,
+      "name": "Wood Cutting",
+      "description": "Axe damage when hitting trees.",
+      "group": "tool",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Crossbows",
+      "number": 14,
+      "name": "Crossbows",
+      "description": "Accuracy and damage with crossbows.",
+      "group": "weapon",
+      "xpPerUse": 1.0
+    },
+    {
+      "id": "Jump",
+      "number": 100,
+      "name": "Jump",
+      "description": "Jump height.",
+      "group": "movement",
+      "xpPerUse": 0.5
+    },
+    {
+      "id": "Sneak",
+      "number": 101,
+      "name": "Sneak",
+      "description": "Stamina drain and stealthiness when sneaking.",
+      "group": "movement",
+      "xpPerUse": 0.5
+    },
+    {
+      "id": "Run",
+      "number": 102,
+      "name": "Run",
+      "description": "Speed and stamina drain when running.",
+      "group": "movement",
+      "xpPerUse": 0.2
+    },
+    {
+      "id": "Swim",
+      "number": 103,
+      "name": "Swim",
+      "description": "Stamina drain when swimming.",
+      "group": "movement",
+      "xpPerUse": 0.3
+    },
+    {
+      "id": "Fishing",
+      "number": 104,
+      "name": "Fishing",
+      "description": "Stamina drain and pull speed when fishing.",
+      "group": "life",
+      "xpPerUse": 0.25
+    },
+    {
+      "id": "Cooking",
+      "number": 105,
+      "name": "Cooking",
+      "description": "Cooking speed, serving tray wear and chance for bonus yields.",
+      "group": "life",
+      "xpPerUse": 0.25
+    },
+    {
+      "id": "Farming",
+      "number": 106,
+      "name": "Farming",
+      "description": "Stamina use, cultivator wear, harvest radius and chance for bonus yields.",
+      "group": "life",
+      "xpPerUse": 0.25
+    },
+    {
+      "id": "Crafting",
+      "number": 107,
+      "name": "Crafting",
+      "description": "Crafting speed, hammer wear and building stamina use.",
+      "group": "life",
+      "xpPerUse": 0.25
+    },
+    {
+      "id": "Dodge",
+      "number": 108,
+      "name": "Dodge",
+      "description": "Stamina drain when dodging.",
+      "group": "combat",
+      "xpPerUse": 0.25
+    },
+    {
+      "id": "Ride",
+      "number": 110,
+      "name": "Riding",
+      "description": "Animal speed and stamina drain.",
+      "group": "movement",
+      "xpPerUse": 0.2
+    }
+  ]
+}

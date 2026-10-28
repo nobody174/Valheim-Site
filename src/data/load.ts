@@ -12,7 +12,9 @@ import bosses from '../../data/bosses.json';
 import pieces from '../../data/pieces.json';
 import meta from '../../data/meta.json';
 import savekeys from '../../data/savekeys.json';
-import { FILE_SCHEMAS, MetaSchema, SaveKeysSchema, type GameData } from './schemas';
+import commandsRaw from '../../data/commands.json';
+import skillsRaw from '../../data/skills.json';
+import { CommandSchema, FILE_SCHEMAS, MetaSchema, SaveKeysSchema, SkillsFileSchema, type GameData } from './schemas';
 
 const raw = {
   biomes,
@@ -41,3 +43,9 @@ export const gameData: GameData = {
 
 /** In-game name keys (as written into character files) mapped to item, creature and station ids. */
 export const saveKeys = SaveKeysSchema.parse(savekeys);
+
+/** The game's console commands. */
+export const commands = z.array(CommandSchema).parse(commandsRaw);
+
+/** The game's skills (descriptions, groups, gain per use) and the share lost on death. */
+export const skillsFile = SkillsFileSchema.parse(skillsRaw);

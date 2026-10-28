@@ -13,6 +13,8 @@ import { FoodOptimizerPage } from '../features/food/FoodOptimizerPage';
 import { AdvisorPage } from '../features/advisor/AdvisorPage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
 import { CharacterPage } from '../features/save/CharacterPage';
+import { CommandsPage } from '../features/commands/CommandsPage';
+import { SkillsPage } from '../features/skills/SkillsPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
 import { SecondScreenToggle } from './SecondScreenToggle';
@@ -74,6 +76,8 @@ const PAGES: Record<string, React.ReactElement> = {
   '/next': <AdvisorPage />,
   '/favorites': <FavoritesPage />,
   '/character': <CharacterPage />,
+  '/skills': <SkillsPage />,
+  '/commands': <CommandsPage />,
   '/profile': <ProfilePage />,
 };
 

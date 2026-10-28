@@ -73,7 +73,7 @@ describe('importCharacter', () => {
   it('builds the snapshot: gear, skills by name, stations, bosses and kills', () => {
     const s = imp.snapshot;
     expect(s.name).toBe('Venom');
-    expect(s.skills).toEqual({ Axes: 27, Woodcutting: 50 });
+    expect(s.skills).toEqual({ Axes: 27, 'Wood Cutting': 50 });
     expect(s.stations).toEqual({ piece_workbench: 3 });
     expect(s.bosses).toEqual(['Eikthyr']);
     expect(s.kills).toEqual({ Boar: 5 });

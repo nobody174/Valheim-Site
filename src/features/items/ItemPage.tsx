@@ -4,6 +4,7 @@ import { EntityLink } from '../../components/EntityLink';
 import { GuideTag, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityIcon } from '../../components/EntityIcon';
 import { graph, lookup } from '../../data/lookup';
+import { skillLabel } from '../../data/skills';
 import { effectiveHoard } from '../../state/model';
 import { pushRecent } from '../../state/recent';
 import { useProfile } from '../../state/store';
@@ -34,7 +35,9 @@ function Stats({ id }: { id: string }) {
         {weapon && (
           <>
             <dt>Skill</dt>
-            <dd>{weapon.skill}</dd>
+            <dd>
+              <Link to="/skills">{skillLabel(weapon.skill)}</Link>
+            </dd>
             <dt>Damage</dt>
             <dd>
               <DamageList damage={weapon.damage} />

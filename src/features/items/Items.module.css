@@ -420,3 +420,8 @@
   border-radius: var(--radius);
   resize: vertical;
 }
+
+.dimNote {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
