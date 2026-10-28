@@ -116,6 +116,9 @@ dotnet tool install ilspycmd --tool-path ./ilspy      # once
 Check `git diff data/commands.json` for new or removed commands. A new skill also needs a line in
 `tools/extract/save_skills.json` (a warning from step 3 says so).
 
+The places list (`data/places.json`) is rebuilt in step 3. A warning there says if `tools/extract/places.json` names a
+place the game no longer has.
+
 ## 10. Character files (only if the game changed its save format)
 
 The "My character" page reads `.fch` files with `src/features/save/fch.ts`, which follows the

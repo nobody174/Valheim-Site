@@ -24,6 +24,7 @@ export const ROUTES: RouteDef[] = [
   { path: '/next', label: 'Next steps', phase: 3 },
   { path: '/character', label: 'My character', phase: 5 },
   { path: '/favorites', label: 'Favorites', phase: 1 },
+  { path: '/places', label: 'Dungeons & places', phase: 5 },
   { path: '/skills', label: 'Skills', phase: 5 },
   { path: '/commands', label: 'Console commands', phase: 5 },
   { path: '/updates', label: 'Update log', phase: 5 },

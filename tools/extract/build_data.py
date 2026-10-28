@@ -159,6 +159,53 @@ def update_log(out, new_files, build_id, reviewed):
     return log
 
 
+def build_places(raw, biome_order, boss_ids, warnings):
+    """Places the game generates in the world (ZoneSystem locations), grouped into families
+    (Crypt2, Crypt3 and Crypt4 are one family). Zone and count come from the game files; names and
+    notes for the places that matter come from places.json (hand-written)."""
+    cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'places.json')
+    with open(cfg_path, encoding='utf8') as f:
+        curated = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
+    best, flags = {}, defaultdict(int)  # best entry per prefab; zone flags merged across the game's copies of the list
+    for row in load(raw, 'vegetation.json'):
+        for loc in row['data'].get('m_locations') or []:
+            name = loc.get('m_prefabName')
+            if not name or not loc['m_enable'] or loc['m_quantity'] <= 0 or re.search(r'Dev|Test', name):
+                continue
+            flags[name] |= loc['m_biome']
+            if name not in best or loc['m_quantity'] > best[name]['m_quantity']:
+                best[name] = loc
+    families = {}
+    for name, loc in best.items():
+        family = re.sub(r'_+', '_', re.sub(r'\d+', '', re.sub(r'_new\d*', '', name))).strip('_')
+        zones = {BIOME_BITS[b] for b in BIOME_BITS if flags[name] & b and BIOME_BITS[b] in biome_order}
+        fam = families.setdefault(family, {'zones': set(), 'quantity': 0, 'variants': 0})
+        fam['zones'] |= zones
+        fam['quantity'] += loc['m_quantity']
+        fam['variants'] += 1
+    places = []
+    for family, fam in sorted(families.items()):
+        if not fam['zones']:
+            continue  # only in the ocean or the Deep North, which the site does not cover
+        cfg = curated.get(family, {})
+        pretty = ' '.join(w[:1].upper() + w[1:] for w in re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', family.replace('_', ' ')).split())
+        place = {'id': family, 'name': cfg.get('name', pretty),
+                 'zones': [z for z in biome_order if z in fam['zones']],
+                 'quantity': fam['quantity'], 'variants': fam['variants'], 'kind': cfg.get('kind', 'other')}
+        if cfg.get('note'):
+            place['note'] = cfg['note']
+        if cfg.get('boss'):
+            if cfg['boss'] in boss_ids:
+                place['boss'] = cfg['boss']
+            else:
+                warnings.append(f"place {family}: no boss {cfg['boss']}")
+        places.append(place)
+    for family in curated:
+        if family not in families:
+            warnings.append(f'places.json lists {family}, which is not a place in the game files')
+    return places
+
+
 def main(raw, out, build_id, reviewed=None):
     reviewed = reviewed or date.today().isoformat()
     configs = load_configs()
@@ -744,6 +791,7 @@ def main(raw, out, build_id, reviewed=None):
              'biomes': biomes, 'items': items, 'recipes': recipes, 'stations': stations, 'weapons': weapons,
              'armor': armor, 'foods': foods, 'trophies': trophies, 'creatures': creatures,
              'bosses': bosses, 'pieces': pieces_out, 'savekeys': save_tokens, 'skills': skills_file}
+    files['places'] = build_places(raw, [b['id'] for b in sorted(biomes, key=lambda b: b['order'])], {b['id'] for b in bosses}, warnings)
     files['updatelog'] = update_log(out, files, build_id, reviewed)  # compares with the files still on disk
     for name, content in files.items():
         with open(os.path.join(out, f'{name}.json'), 'w', encoding='utf8', newline='\n') as f:

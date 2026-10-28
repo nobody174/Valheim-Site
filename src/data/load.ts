@@ -15,7 +15,8 @@ import savekeys from '../../data/savekeys.json';
 import commandsRaw from '../../data/commands.json';
 import skillsRaw from '../../data/skills.json';
 import updateLogRaw from '../../data/updatelog.json';
-import { CommandSchema, FILE_SCHEMAS, MetaSchema, SaveKeysSchema, SkillsFileSchema, UpdateLogSchema, type GameData } from './schemas';
+import placesRaw from '../../data/places.json';
+import { CommandSchema, FILE_SCHEMAS, PlaceSchema, MetaSchema, SaveKeysSchema, SkillsFileSchema, UpdateLogSchema, type GameData } from './schemas';
 
 const raw = {
   biomes,
@@ -53,3 +54,6 @@ export const skillsFile = SkillsFileSchema.parse(skillsRaw);
 
 /** What changed between game builds, newest first. */
 export const updateLog = UpdateLogSchema.parse(updateLogRaw);
+
+/** Dungeons, camps, altars and other places the game generates. */
+export const places = z.array(PlaceSchema).parse(placesRaw);

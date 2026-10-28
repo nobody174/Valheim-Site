@@ -1,0 +1,815 @@
+[
+  {
+    "id": "AbandonedLogCabin",
+    "name": "Abandoned Log Cabin",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 116,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "AshlandRuins",
+    "name": "Ashland Ruins",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Bonemass",
+    "name": "Bonemass's altar",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 5,
+    "variants": 1,
+    "kind": "altar",
+    "boss": "Bonemass"
+  },
+  {
+    "id": "CharredFortress",
+    "name": "Charred Fortress",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 20,
+    "variants": 1,
+    "kind": "dungeon",
+    "note": "Ashlands fortress. The Bell Altar in its central tower gives the Bell Fragments needed for Bells; a Vegvisir there can mark Fader's arena."
+  },
+  {
+    "id": "CharredRuins",
+    "name": "Charred Ruins",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 375,
+    "variants": 4,
+    "kind": "other"
+  },
+  {
+    "id": "CharredStone_Spawner",
+    "name": "Charred Stone Spawner",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 300,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "CharredTowerRuins",
+    "name": "Charred Tower Ruins",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 100,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "CharredTowerRuins_dvergr",
+    "name": "Charred Tower Ruins Dvergr",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 30,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Crypt",
+    "name": "Burial Chamber",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 600,
+    "variants": 3,
+    "kind": "dungeon",
+    "note": "Black Forest dungeon (three layouts). Skeletons, Rancid Remains and ghosts inside; no key needed. Chests give Surtling Cores, Amber, Coins and Bone Fragments."
+  },
+  {
+    "id": "Dolmen",
+    "name": "Dolmen",
+    "zones": [
+      "meadows",
+      "blackforest"
+    ],
+    "quantity": 250,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "Dragonqueen",
+    "name": "Moder's altar",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 3,
+    "variants": 1,
+    "kind": "altar",
+    "boss": "Dragon"
+  },
+  {
+    "id": "DrakeLorestone",
+    "name": "Drake Lorestone",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 50,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "DrakeNest",
+    "name": "Drake Nest",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 200,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Eikthyrnir",
+    "name": "Eikthyr's altar",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 3,
+    "variants": 1,
+    "kind": "altar",
+    "boss": "Eikthyr"
+  },
+  {
+    "id": "FaderLocation",
+    "name": "Fader's arena",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 3,
+    "variants": 1,
+    "kind": "altar",
+    "boss": "Fader"
+  },
+  {
+    "id": "FireHole",
+    "name": "Fire Hole",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 75,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "FortressRuins",
+    "name": "Fortress Ruins",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "GDKing",
+    "name": "The Elder's altar",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 4,
+    "variants": 1,
+    "kind": "altar",
+    "boss": "gd_king"
+  },
+  {
+    "id": "GoblinCamp",
+    "name": "Goblin Camp",
+    "zones": [
+      "plains"
+    ],
+    "quantity": 200,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "GoblinKing",
+    "name": "Yagluth's altar",
+    "zones": [
+      "plains"
+    ],
+    "quantity": 4,
+    "variants": 1,
+    "kind": "altar",
+    "boss": "GoblinKing"
+  },
+  {
+    "id": "Grave",
+    "name": "Grave",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 200,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Greydwarf_camp",
+    "name": "Greydwarf Camp",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 300,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Hildir_camp",
+    "name": "Hildir's camp",
+    "zones": [
+      "meadows",
+      "swamp"
+    ],
+    "quantity": 10,
+    "variants": 1,
+    "kind": "merchant",
+    "note": "Hildir, a merchant who gives quests."
+  },
+  {
+    "id": "Hildir_cave",
+    "name": "Hildir's quest: cave",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 3,
+    "variants": 1,
+    "kind": "quest",
+    "note": "A place from Hildir's quests (a chest to find)."
+  },
+  {
+    "id": "Hildir_crypt",
+    "name": "Hildir's quest: crypt",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 3,
+    "variants": 1,
+    "kind": "quest",
+    "note": "A place from Hildir's quests (a chest to find)."
+  },
+  {
+    "id": "Hildir_plainsfortress",
+    "name": "Hildir's quest: Plains fortress",
+    "zones": [
+      "plains"
+    ],
+    "quantity": 3,
+    "variants": 1,
+    "kind": "quest",
+    "note": "A place from Hildir's quests (a chest to find)."
+  },
+  {
+    "id": "InfestedTree",
+    "name": "Infested Tree",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 700,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "LeviathanLava",
+    "name": "Leviathan Lava",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_DvergrBossEntrance",
+    "name": "Mistlands Dvergr Boss Entrance",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 5,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_DvergrTownEntrance",
+    "name": "Mistlands Dvergr Town Entrance",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 240,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_Excavation",
+    "name": "Mistlands Excavation",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 120,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_Giant",
+    "name": "Mistlands Giant",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 335,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_GuardTower",
+    "name": "Mistlands Guard Tower",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 200,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_GuardTower_ruined",
+    "name": "Mistlands Guard Tower Ruined",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 150,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_Harbour",
+    "name": "Mistlands Harbour",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_Lighthouse",
+    "name": "Mistlands Lighthouse",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_RoadPost",
+    "name": "Mistlands Road Post",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 500,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_RockSpire",
+    "name": "Mistlands Rock Spire",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 200,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_Statue",
+    "name": "Mistlands Statue",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 400,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_StatueGroup",
+    "name": "Mistlands Statue Group",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 200,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_Swords",
+    "name": "Mistlands Swords",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 99,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "Mistlands_Viaduct",
+    "name": "Mistlands Viaduct",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 250,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "MorgenHole",
+    "name": "Morgen Hole",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 120,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "MountainCave",
+    "name": "Frost Cave",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 120,
+    "variants": 1,
+    "kind": "dungeon",
+    "note": "Mountain dungeon behind a stone entrance. No key needed. Guides disagree on what lives inside (Cultists and a caged Fenring are mentioned) and what it drops."
+  },
+  {
+    "id": "MountainGrave",
+    "name": "Mountain Grave",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "MountainWell",
+    "name": "Mountain Well",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 25,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "PlaceofMystery",
+    "name": "Place of Mystery",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 3,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "Ruin",
+    "name": "Ruin",
+    "zones": [
+      "blackforest",
+      "plains"
+    ],
+    "quantity": 450,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Ashlands",
+    "name": "Runestone Ashlands",
+    "zones": [
+      "blackforest",
+      "ashlands"
+    ],
+    "quantity": 70,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_BlackForest",
+    "name": "Runestone Black Forest",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 50,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Boars",
+    "name": "Runestone Boars",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 50,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Draugr",
+    "name": "Runestone Draugr",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 50,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Greydwarfs",
+    "name": "Runestone Greydwarfs",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 25,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Meadows",
+    "name": "Runestone Meadows",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Mistlands",
+    "name": "Runestone Mistlands",
+    "zones": [
+      "mistlands"
+    ],
+    "quantity": 50,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Mountains",
+    "name": "Runestone Mountains",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Plains",
+    "name": "Runestone Plains",
+    "zones": [
+      "plains"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Runestone_Swamps",
+    "name": "Runestone Swamps",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "ShipSetting",
+    "name": "Ship Setting",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "ShipWreck",
+    "name": "Ship Wreck",
+    "zones": [
+      "blackforest",
+      "swamp",
+      "plains"
+    ],
+    "quantity": 245,
+    "variants": 4,
+    "kind": "other"
+  },
+  {
+    "id": "StartTemple",
+    "name": "Start Temple",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 1,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "StoneCircle",
+    "name": "Stone Circle",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 25,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "StoneHenge",
+    "name": "Stone Henge",
+    "zones": [
+      "plains"
+    ],
+    "quantity": 60,
+    "variants": 6,
+    "kind": "other"
+  },
+  {
+    "id": "StoneHouse",
+    "name": "Stone House",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 400,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "StoneTower",
+    "name": "Stone Tower",
+    "zones": [
+      "plains"
+    ],
+    "quantity": 100,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "StoneTowerRuins",
+    "name": "Stone Tower Ruins",
+    "zones": [
+      "blackforest",
+      "mountain"
+    ],
+    "quantity": 500,
+    "variants": 7,
+    "kind": "other"
+  },
+  {
+    "id": "SulfurArch",
+    "name": "Sulfur Arch",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 100,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "SunkenCrypt",
+    "name": "Sunken Crypt",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 175,
+    "variants": 1,
+    "kind": "dungeon",
+    "note": "Swamp dungeon. The door needs the Swamp Key (The Elder drops it). Blobs, Draugr and Draugr Elite inside; chests give Scrap Iron, Ancient Bark, Chain, Withered Bone and Coins."
+  },
+  {
+    "id": "SwampHut",
+    "name": "Swamp Hut",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 225,
+    "variants": 5,
+    "kind": "other"
+  },
+  {
+    "id": "SwampRuin",
+    "name": "Swamp Ruin",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 60,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "SwampWell",
+    "name": "Swamp Well",
+    "zones": [
+      "swamp"
+    ],
+    "quantity": 25,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "TarPit",
+    "name": "Tar Pit",
+    "zones": [
+      "plains"
+    ],
+    "quantity": 251,
+    "variants": 3,
+    "kind": "other"
+  },
+  {
+    "id": "TrollCave",
+    "name": "Troll Cave",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 200,
+    "variants": 1,
+    "kind": "dungeon",
+    "note": "Black Forest cave with at least one Troll inside. Loot is mostly Amber, Bone Fragments, Deer Hide, Feathers and Coins. Bear caves look almost the same from outside."
+  },
+  {
+    "id": "Vendor_BlackForest",
+    "name": "Haldor the Trader",
+    "zones": [
+      "blackforest"
+    ],
+    "quantity": 10,
+    "variants": 1,
+    "kind": "merchant",
+    "note": "A merchant camp in the Black Forest; sells and buys for Coins. There is one Haldor per world, at one of these spots."
+  },
+  {
+    "id": "VoltureNest",
+    "name": "Volture Nest",
+    "zones": [
+      "ashlands"
+    ],
+    "quantity": 350,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "Waymarker",
+    "name": "Waymarker",
+    "zones": [
+      "mountain"
+    ],
+    "quantity": 100,
+    "variants": 2,
+    "kind": "other"
+  },
+  {
+    "id": "WoodFarm",
+    "name": "Wood Farm",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 10,
+    "variants": 1,
+    "kind": "other"
+  },
+  {
+    "id": "WoodHouse",
+    "name": "Wood House",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 260,
+    "variants": 13,
+    "kind": "other"
+  },
+  {
+    "id": "WoodVillage",
+    "name": "Wood Village",
+    "zones": [
+      "meadows"
+    ],
+    "quantity": 15,
+    "variants": 1,
+    "kind": "other"
+  }
+]

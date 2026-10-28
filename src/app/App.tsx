@@ -16,6 +16,7 @@ import { CharacterPage } from '../features/save/CharacterPage';
 import { CommandsPage } from '../features/commands/CommandsPage';
 import { SkillsPage } from '../features/skills/SkillsPage';
 import { UpdateLogPage } from '../features/updates/UpdateLogPage';
+import { PlacesPage } from '../features/places/PlacesPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
 import { SecondScreenToggle } from './SecondScreenToggle';
@@ -77,6 +78,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/next': <AdvisorPage />,
   '/favorites': <FavoritesPage />,
   '/character': <CharacterPage />,
+  '/places': <PlacesPage />,
   '/skills': <SkillsPage />,
   '/commands': <CommandsPage />,
   '/updates': <UpdateLogPage />,
