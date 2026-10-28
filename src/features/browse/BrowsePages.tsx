@@ -8,6 +8,8 @@ import { effectiveHoard } from '../../state/model';
 import { useProfile } from '../../state/store';
 import { EntityIcon } from '../../components/EntityIcon';
 import cards from './BossCards.module.css';
+import gridCards from '../../components/Cards.module.css';
+import { useListView, ViewToggle } from '../../components/ViewToggle';
 import styles from '../items/Items.module.css';
 
 const UNKNOWN = 'unknown';
@@ -248,6 +250,7 @@ export function BossesPage() {
 
 export function CreaturesPage() {
   const { params, set, clear } = useFilters();
+  const [view, setView] = useListView();
   const text = params.get('q') ?? '';
   const biome = params.get('biome') ?? '';
   const rows = useMemo(
@@ -267,11 +270,40 @@ export function CreaturesPage() {
         </p>
       </Intro>
       <Filters text={text} biome={biome} set={set} clear={clear} />
-      <p className={styles.dim} aria-live="polite">
-        {rows.length} {rows.length === 1 ? 'creature' : 'creatures'}
-      </p>
+      <div className={gridCards.top}>
+        <ViewToggle view={view} onChange={setView} />
+        <p className={styles.dim} aria-live="polite">
+          {rows.length} {rows.length === 1 ? 'creature' : 'creatures'}
+        </p>
+      </div>
       {rows.length === 0 ? (
         <p className={styles.empty}>No creatures match these filters.</p>
+      ) : view === 'cards' ? (
+        <ul className={`${gridCards.grid} ${gridCards.wide}`}>
+          {rows.map((c) => (
+            <li key={c.id} className={gridCards.card} data-zone={c.biome ?? undefined}>
+              <span className={gridCards.art}>
+                <EntityIcon id={c.id} size={42} />
+              </span>
+              <div className={gridCards.body}>
+                <h2 className={gridCards.name}>
+                  <EntityLink id={c.id} />
+                </h2>
+                <span className={gridCards.meta}>
+                  <span className={gridCards.zone}>{lookup.biomeName(c.biome) ?? UNKNOWN}</span>
+                </span>
+                <span className={gridCards.pills}>
+                  <span className={`${gridCards.pill} ${gridCards.hp}`}>&#9829; {num(c.health)}</span>
+                  {c.drops.slice(0, 3).map((d) => (
+                    <span key={d.item} className={gridCards.pill}>
+                      <EntityLink id={d.item} />
+                    </span>
+                  ))}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
       ) : (
         <div className={styles.tableWrap}>
           <table className={styles.table}>
@@ -323,6 +355,7 @@ const FOOD_HEAD: Record<FoodSort, string> = {
 
 export function FoodPage() {
   const { params, set, clear } = useFilters();
+  const [view, setView] = useListView();
   const text = params.get('q') ?? '';
   const biome = params.get('biome') ?? '';
   const kind = params.get('kind') ?? '';
@@ -371,11 +404,57 @@ export function FoodPage() {
           </select>
         </label>
       </Filters>
-      <p className={styles.dim} aria-live="polite">
-        {rows.length} {rows.length === 1 ? 'entry' : 'entries'}
-      </p>
+      <div className={gridCards.top}>
+        <ViewToggle view={view} onChange={setView} />
+        {view === 'cards' && (
+          <label className={gridCards.sort}>
+            Sort by
+            <select value={sort} onChange={(e) => set({ sort: e.target.value === 'name' ? '' : e.target.value, dir: '' })}>
+              {FOOD_SORTS.map((s) => (
+                <option key={s} value={s}>
+                  {FOOD_HEAD[s]}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
+        <p className={styles.dim} aria-live="polite">
+          {rows.length} {rows.length === 1 ? 'entry' : 'entries'}
+        </p>
+      </div>
       {rows.length === 0 ? (
         <p className={styles.empty}>No food matches these filters.</p>
+      ) : view === 'cards' ? (
+        <ul className={gridCards.grid}>
+          {rows.map(({ f, item }) => (
+            <li key={f.item} className={gridCards.card} data-zone={item?.biome ?? undefined}>
+              <span className={gridCards.art}>
+                <EntityIcon id={f.item} size={42} />
+              </span>
+              <div className={gridCards.body}>
+                <h2 className={gridCards.name}>
+                  <EntityLink id={f.item} />
+                </h2>
+                <span className={gridCards.meta}>
+                  <span className={gridCards.zone}>{lookup.biomeName(item?.biome ?? null) ?? UNKNOWN}</span> · lasts{' '}
+                  {lasts(f.durationSec)}
+                </span>
+                <span className={gridCards.pills}>
+                  {f.health !== undefined && (
+                    <span className={`${gridCards.pill} ${gridCards.hp}`}>&#9829; {num(f.health)}</span>
+                  )}
+                  {f.stamina !== undefined && (
+                    <span className={`${gridCards.pill} ${gridCards.sta}`}>&#9889; {num(f.stamina)}</span>
+                  )}
+                  {f.eitr !== undefined && f.eitr > 0 && (
+                    <span className={`${gridCards.pill} ${gridCards.eitr}`}>&#10022; {num(f.eitr)}</span>
+                  )}
+                </span>
+                {f.effect && <span className={gridCards.meta}>{f.effect}</span>}
+              </div>
+            </li>
+          ))}
+        </ul>
       ) : (
         <div className={styles.tableWrap}>
           <table className={styles.table}>

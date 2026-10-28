@@ -16,7 +16,42 @@ const renderAt = (ui: React.ReactElement, path: string) =>
 
 const bodyRows = () => within(screen.getAllByRole('table')[0]!).getAllByRole('row').slice(1);
 
+const showAs = (view: 'cards' | 'list') =>
+  localStorage.setItem('vcs:v1:display', JSON.stringify({ secondScreen: false, view }));
+
+describe('card view', () => {
+  afterEach(() => {
+    cleanup();
+    localStorage.clear();
+  });
+
+  it('shows creatures and food as cards by default, and the choice is remembered', async () => {
+    const user = userEvent.setup();
+    renderAt(<CreaturesPage />, '/creatures');
+    expect(screen.queryByRole('table')).toBeNull();
+    expect(screen.getAllByRole('listitem')).toHaveLength(lookup.allCreatures().length);
+    await user.click(screen.getByRole('button', { name: 'List' }));
+    expect(screen.getByRole('table')).toBeTruthy();
+    expect(localStorage.getItem('vcs:v1:display')).toContain('list');
+    cleanup();
+    renderAt(<FoodPage />, '/food');
+    expect(screen.getByRole('table')).toBeTruthy();
+  });
+
+  it('lets food cards be sorted with a menu', async () => {
+    const user = userEvent.setup();
+    renderAt(<FoodPage />, '/food');
+    await user.selectOptions(screen.getByLabelText('Sort by'), 'health');
+    const first = screen.getAllByRole('listitem')[0]!.textContent ?? '';
+    const best = Math.max(...lookup.allFoods().map((f) => f.health ?? 0));
+    expect(first).toContain(String(best));
+  });
+});
+
 describe('browse pages', () => {
+  beforeEach(() => showAs('list'));
+  afterEach(() => localStorage.clear());
+
   it('lists every trophy with where it drops', () => {
     renderAt(<TrophiesPage />, '/trophies');
     expect(bodyRows()).toHaveLength(lookup.allTrophies().length);

@@ -11,7 +11,7 @@ reviews the live site before the next phase starts.
 | 1 | MVP | done (live) | 2-3 | Search, item pages, recipe explorer, checklist, favorites, profiles, backup, PWA |
 | 2 | Core database | done: all seven zones (Swamp to Ashlands unverified until the owner reaches them) | 6-8 | All browse pages built. Review fixes done: hoard from recipes, dropped-recipe report, station levels and costs, sources, search, item page, descriptions. Details in `docs/DATA_SOURCES.md` |
 | 3 | Advanced tools | done (owner checkpoint pending): rankings done (ordered by Rating, bombs and shields left out; DPS is an estimate pending an in-game check) | 3-4 | Phase 3 tools all built: build planner, upgrade calculator, compare, food optimizer, next-steps advisor and crafting graph. Owner still to verify the DPS estimate in game |
-| 4 | Polish | in progress: zone colours, home page, second-screen mode, Lighthouse and offline checks and the patch-update guide done; owner approval of the look and v1.0 pending | 2 | Visual pass, mobile, a11y, performance, offline hardening |
+| 4 | Polish | done: v1.0 tagged and released on GitHub (2026-10-28), site linked from the repo; design pass 2 done (grouped sidebar, wood-and-parchment theme, cards with a Cards/List toggle) | 2 | Visual pass, mobile, a11y, performance, offline hardening |
 | 5 | Future expansion | started: personal notes per item and reading your Valheim character file ("My character" page), the Skills, Console commands, Update log and Dungeons & places pages done; the rest is picked by the owner | open | Backlog, picked as wanted |
 
 ## Why this order

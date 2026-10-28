@@ -530,3 +530,12 @@
   color: var(--ink);
   opacity: 0.75;
 }
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0.7rem;
+}
+.recipeGrid > * {
+  margin: 0;
+}

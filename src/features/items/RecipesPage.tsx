@@ -94,9 +94,11 @@ export function RecipesPage() {
             {g.id === NO_STATION ? g.label : <EntityLink id={g.id} />}{' '}
             <span className={styles.count}>{g.recipes.length}</span>
           </h2>
-          {g.recipes.map((r) => (
-            <RecipeBlock key={r.id} recipe={r} />
-          ))}
+          <div className={styles.recipeGrid}>
+            {g.recipes.map((r) => (
+              <RecipeBlock key={r.id} recipe={r} />
+            ))}
+          </div>
         </section>
       ))}
     </section>

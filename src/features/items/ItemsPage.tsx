@@ -6,6 +6,9 @@ import { HOARD_OPTIONS, HoardBadge, VerifiedBadge } from '../../components/Badge
 import { lookup } from '../../data/lookup';
 import { effectiveHoard } from '../../state/model';
 import { useProfile } from '../../state/store';
+import { EntityIcon } from '../../components/EntityIcon';
+import cards from '../../components/Cards.module.css';
+import { useListView, ViewToggle } from '../../components/ViewToggle';
 import styles from './Items.module.css';
 
 export const CATEGORY_LABELS: Record<string, string> = {
@@ -24,6 +27,7 @@ export const CATEGORY_LABELS: Record<string, string> = {
 /** Filters live in the URL, so a filtered list can be linked to and survives a refresh. */
 export function ItemsPage() {
   const profile = useProfile();
+  const [view, setView] = useListView();
   const [params, setParams] = useSearchParams();
   const text = params.get('q') ?? '';
   const hoard = params.get('hoard') ?? '';
@@ -113,11 +117,45 @@ export function ItemsPage() {
           </button>
         )}
       </div>
-      <p className={styles.dim} aria-live="polite">
-        {rows.length} {rows.length === 1 ? 'item' : 'items'}
-      </p>
+      <div className={cards.top}>
+        <ViewToggle view={view} onChange={setView} />
+        <p className={styles.dim} aria-live="polite">
+          {rows.length} {rows.length === 1 ? 'item' : 'items'}
+        </p>
+      </div>
       {rows.length === 0 ? (
         <p className={styles.empty}>No items match these filters.</p>
+      ) : view === 'cards' ? (
+        <ul className={cards.grid}>
+          {rows.map((i) => (
+            <li key={i.id} className={cards.card} data-zone={i.biome ?? undefined}>
+              <span className={cards.art}>
+                <EntityIcon id={i.id} size={42} />
+              </span>
+              <div className={cards.body}>
+                <h2 className={cards.name}>
+                  <EntityLink id={i.id} />
+                </h2>
+                <span className={cards.meta}>
+                  {CATEGORY_LABELS[i.category] ?? i.category}
+                  {i.biome && (
+                    <>
+                      {' '}
+                      · <span className={cards.zone}>{lookup.biomeName(i.biome)}</span>
+                    </>
+                  )}
+                </span>
+                <span className={cards.pills}>
+                  <HoardBadge
+                    hoard={effectiveHoard(i, profile)}
+                    qty={i.recommendedQty}
+                    custom={i.id in profile.hoardOverrides}
+                  />
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
       ) : (
         <div className={styles.tableWrap}>
           <table className={styles.table}>
