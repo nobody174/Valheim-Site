@@ -17,7 +17,7 @@ Direction: dark Nordic, modern, wiki-grade. Not cartoon, not mobile-game.
 - Empty, loading and error states for every page.
 - `prefers-reduced-motion` honored.
 
-Done so far (2026-10-28): one muted zone colour per zone (`--zone-*` tokens, `data-zone` attribute) as a thin top edge and a dot on item, creature and boss pages and on the progression tabs and heading; card hover glow on recipe blocks; the four tool links (plan, upgrade, graph, compare) in one row on item pages; 404 wording. Not done: wood or metal textures, rune details (kept off to keep numbers fast to read).
+Done so far (2026-10-28): one muted zone colour per zone (`--zone-*` tokens, `data-zone` attribute) as a thin top edge and a dot on item, creature and boss pages and on the progression tabs and heading; card hover glow on recipe blocks; the four tool links (plan, upgrade, graph, compare) in one row on item pages; 404 wording. Home page: a card per zone (boss, creatures, items, collected progress bar) and shortcuts to the six tools. Not done: wood or metal textures, rune details (kept off to keep numbers fast to read).
 
 Acceptance:
 - [ ] Owner approves a screenshot set: home, item page, graph, rankings table, planner

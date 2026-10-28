@@ -6,6 +6,7 @@ import { lookup } from '../../data/lookup';
 import { getRecent } from '../../state/recent';
 import { search } from './instance';
 import { NoResults } from './NoResults';
+import { ZoneCards } from './ZoneCards';
 import { SearchResults } from './SearchResults';
 import { useHitKeys } from './useHitKeys';
 import styles from './Search.module.css';
@@ -60,6 +61,7 @@ export function SearchPage() {
         </>
       ) : (
         <>
+          <ZoneCards />
           <h2 className={styles.sectionTitle}>Browse</h2>
           <div className={styles.chips}>
             {QUICK.map((c) => (

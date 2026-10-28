@@ -3,6 +3,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router';
+import { lookup } from '../../data/lookup';
 import { SearchPage } from './SearchPage';
 
 afterEach(cleanup);
@@ -45,5 +46,21 @@ describe('landing search keyboard', () => {
     renderLanding();
     await user.type(screen.getByRole('searchbox', { name: 'Search' }), 'zzzqqq{Enter}');
     expect(screen.getByText(/No results for/)).toBeTruthy();
+  });
+});
+
+describe('home page zones and tools', () => {
+  it('shows a card per zone with progress, and links to the tools', () => {
+    render(
+      <MemoryRouter>
+        <SearchPage />
+      </MemoryRouter>,
+    );
+    for (const b of lookup.allBiomes()) {
+      expect(screen.getByRole('link', { name: new RegExp(b.name) })).toBeTruthy();
+    }
+    expect(screen.getAllByRole('progressbar').length).toBe(lookup.allBiomes().length);
+    expect(screen.getByRole('link', { name: /Build planner/ })).toBeTruthy();
+    expect(screen.getByRole('link', { name: /Crafting graph/ })).toBeTruthy();
   });
 });
