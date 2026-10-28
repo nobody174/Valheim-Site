@@ -664,6 +664,8 @@ def main(raw, out, build_id, reviewed=None):
         desc = re.sub(r'</?color[^>]*>', '', english(s.get('m_description', ''), '')).strip()
         if desc:
             item['description'] = desc
+        if s.get('m_teleportable') == 0:
+            item['portalBlocked'] = True  # Inventory.IsTeleportable refuses to portal while carrying it
         if curated:
             item['verified'] = 'unverified'
             item['note'] = 'Weight and stack size come from the game files. Where to find it was written by hand and not checked.'

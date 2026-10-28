@@ -10,6 +10,9 @@ import {
   profileForCharacter,
   withInventoryQty,
   withNote,
+  withPortal,
+  withoutPortal,
+  type Portal,
   withPlannerTargets,
   withToggledTick,
   withToggledFavorite,
@@ -39,6 +42,9 @@ export interface Actions {
   setPlannerTargets(targets: PlannerState['targets']): void;
   toggleTick(itemId: string): void;
   setNote(itemId: string, text: string): void;
+  /** Add or change one of the active profile's portals (same id replaces). */
+  savePortal(portal: Portal): void;
+  removePortal(id: string): void;
   /** Tick what a character file shows and keep its snapshot; returns the profile it went to. */
   applyCharacter(imp: CharacterImport): void;
   createProfile(name: string): void;
@@ -79,6 +85,8 @@ export function createAppStore(storage: StorageLike | null) {
       setPlannerTargets: (targets) => updateActive((p) => withPlannerTargets(p, targets)),
       toggleTick: (itemId) => updateActive((p) => withToggledTick(p, itemId)),
       setNote: (itemId, text) => updateActive((p) => withNote(p, itemId, text)),
+      savePortal: (portal) => updateActive((p) => withPortal(p, portal)),
+      removePortal: (id) => updateActive((p) => withoutPortal(p, id)),
 
       applyCharacter: (imp) => {
         const state = base();

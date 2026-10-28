@@ -1646,6 +1646,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A heavy bar of dark metal.",
+    "portalBlocked": true,
     "aliases": [
       "Blackmetal"
     ]
@@ -1684,6 +1685,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "A twisted hunk of dark metal.",
+    "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Blackmetal scrap"
@@ -2236,7 +2238,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A strong alloy of copper and tin."
+    "description": "A strong alloy of copper and tin.",
+    "portalBlocked": true
   },
   {
     "id": "BronzeNails",
@@ -2995,7 +2998,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A bar of pure copper ready to be worked."
+    "description": "A bar of pure copper ready to be worked.",
+    "portalBlocked": true
   },
   {
     "id": "CopperOre",
@@ -3015,6 +3019,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
     "description": "Unrefined copper. Needs to be refined in a smelter.",
+    "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3241,6 +3246,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Far heavier than it looks, with a faint humming sound from within.",
+    "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3679,7 +3685,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "According to legend, this metal was used by the gods themselves to craft powerful weapons."
+    "description": "According to legend, this metal was used by the gods themselves to craft powerful weapons.",
+    "portalBlocked": true
   },
   {
     "id": "FlametalOreNew",
@@ -3699,6 +3706,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Warm to the touch with glowing veins of strange metal. Needs to be refined in a blast furnace.",
+    "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4253,7 +4261,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A bar of pure iron ready to be worked."
+    "description": "A bar of pure iron ready to be worked.",
+    "portalBlocked": true
   },
   {
     "id": "IronNails",
@@ -4298,6 +4307,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "It's old and rusty but can be smelted and used again.",
+    "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -5347,7 +5357,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A mysterious contraption built by the Dvergr. Used to build traps."
+    "description": "A mysterious contraption built by the Dvergr. Used to build traps.",
+    "portalBlocked": true
   },
   {
     "id": "MinceMeatSauce",
@@ -6664,7 +6675,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A bar of pure silver ready to be worked."
+    "description": "A bar of pure silver ready to be worked.",
+    "portalBlocked": true
   },
   {
     "id": "SilverOre",
@@ -6684,6 +6696,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Unrefined silver. Needs to be refined in a smelter.",
+    "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -7357,7 +7370,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A bar of pure tin ready to be worked."
+    "description": "A bar of pure tin ready to be worked.",
+    "portalBlocked": true
   },
   {
     "id": "TinOre",
@@ -7377,6 +7391,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Unrefined tin. Needs to be refined in a smelter.",
+    "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {

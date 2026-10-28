@@ -38,6 +38,19 @@ export const ProfileSchema = z
     checks: z.record(z.string(), z.enum(['ok', 'bad'])).optional(),
     /** The last character file read for this profile (names and numbers only). */
     character: CharacterSnapshotSchema.optional(),
+    /** Your own portals: the name on it, where it leads, and whether it is standing. */
+    portals: z
+      .array(
+        z.object({
+          id: z.string(),
+          name: z.string(),
+          from: z.string(),
+          to: z.string(),
+          note: z.string(),
+          down: z.boolean(),
+        }),
+      )
+      .optional(),
     /** Build planner: what to make and which shopping-list lines are ticked off. */
     planner: z
       .object({
@@ -256,4 +269,28 @@ export function profileForCharacter(state: AppState, name: string): string | nul
   const existing = state.order.find((id) => state.profiles[id].character?.name === name);
   if (existing) return existing;
   return state.profiles[state.active].character ? null : state.active;
+}
+
+export type Portal = NonNullable<Profile['portals']>[number];
+
+const trim = (text: string, max: number) => text.trim().slice(0, max);
+
+/** Add a portal, or replace the one with the same id. Blank names are ignored. */
+export function withPortal(profile: Profile, portal: Portal): Profile {
+  const clean: Portal = {
+    id: portal.id,
+    name: trim(portal.name, 40),
+    from: trim(portal.from, 60),
+    to: trim(portal.to, 60),
+    note: trim(portal.note, 300),
+    down: portal.down,
+  };
+  if (!clean.name) return profile;
+  const current = profile.portals ?? [];
+  const exists = current.some((p) => p.id === clean.id);
+  return { ...profile, portals: exists ? current.map((p) => (p.id === clean.id ? clean : p)) : [...current, clean] };
+}
+
+export function withoutPortal(profile: Profile, id: string): Profile {
+  return { ...profile, portals: (profile.portals ?? []).filter((p) => p.id !== id) };
 }
