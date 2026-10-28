@@ -137,3 +137,49 @@
     grid-template-columns: 7rem 1fr 2.5rem;
   }
 }
+
+/* carved-wood panels, like the rest of the site */
+.panel {
+  background: linear-gradient(180deg, #241c15, #1b1510);
+  border: 2px solid var(--wood-light);
+  border-radius: 14px;
+  box-shadow: var(--shadow-chunk);
+  padding: 1rem 1.2rem 1.1rem;
+}
+.panel h2 {
+  display: inline-block;
+  padding: 0.15rem 0.8rem;
+  margin: -0.1rem 0 0.8rem;
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ecdcb5, #cdb98a);
+  border-radius: 999px;
+  box-shadow: var(--shadow-chunk);
+}
+.panel h2 .dim {
+  color: var(--ink);
+  opacity: 0.75;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.button {
+  background: var(--wood);
+  border: 2px solid var(--wood-light);
+  border-radius: 999px;
+  box-shadow: var(--shadow-chunk);
+}
+.stats > div {
+  padding: 0.5rem 0.7rem;
+  background: #120d09;
+  border: 2px solid var(--wood);
+  border-radius: 12px;
+}
+.stats dd {
+  color: var(--gold);
+}
+.skills progress {
+  height: 0.8rem;
+  accent-color: var(--gold);
+}

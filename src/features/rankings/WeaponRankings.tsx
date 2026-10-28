@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router';
+import { Intro } from '../../components/Intro';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
 import { skillLabel } from '../../data/skills';
@@ -171,14 +172,15 @@ export function WeaponRankings() {
 
   return (
     <section>
-      <p className={itemStyles.lead}>
+      <Intro>
+      <p>
         The strongest weapons first. Pick the zone you are in to see the best weapon you can have
         there, and click a column to sort by it.
       </p>
+      </Intro>
       <p className={styles.warn} role="note">
-        <strong>DPS ≈ is an estimate</strong> (swing timing is from the animation files, not checked
-        in game). Per hit, per combo and per stamina are exact game numbers. Ordered by Rating;
-        weapons without timing, such as bows, have no rating and come last.
+        <strong>DPS ≈ is an estimate</strong> (swing timing not checked in game). Per hit, per combo and per
+        stamina are exact game numbers.
       </p>
       <div className={itemStyles.filters}>
         <label>
