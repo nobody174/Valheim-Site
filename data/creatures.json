@@ -31,7 +31,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "resistances": {
       "spirit": "immune"
     }
@@ -61,7 +61,7 @@
     ],
     "attacks": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "resistances": {
       "spirit": "immune"
     }
@@ -94,7 +94,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "resistances": {
       "fire": "weak",
       "poison": "resistant",
@@ -178,7 +178,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "resistances": {
       "fire": "very weak",
       "poison": "resistant",
@@ -234,7 +234,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "resistances": {
       "fire": "very weak",
       "poison": "resistant",
@@ -293,7 +293,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "resistances": {
       "fire": "very weak",
       "poison": "resistant",

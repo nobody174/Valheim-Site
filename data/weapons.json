@@ -211,7 +211,7 @@
       "pierce": 45.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "pierce": 6.0
     },
@@ -515,7 +515,7 @@
       "chop": 40.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "slash": 5.0,
       "chop": 3.0
@@ -1415,7 +1415,7 @@
       "pierce": 22.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "pierce": 3.0
     },
@@ -2238,7 +2238,7 @@
       "blunt": 35.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "blunt": 6.0
     },
@@ -2652,7 +2652,7 @@
       "pickaxe": 18.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "blockPower": 2.0,
     "parryForce": 20.0,
     "knockback": 50.0,
@@ -2694,7 +2694,7 @@
       "pickaxe": 25.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "pierce": 5.0,
       "pickaxe": 4.0
@@ -3109,7 +3109,7 @@
       "pierce": 35.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "pierce": 6.0
     },
@@ -3549,7 +3549,7 @@
       "slash": 35.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "slash": 6.0
     },

@@ -15,7 +15,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Plant them to grow an oak tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -134,7 +134,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "If these intricate designs can protect warriors from distant lands, they can surely protect you too."
   },
   {
@@ -172,7 +172,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A breastplate of hammered bronze."
   },
   {
@@ -191,7 +191,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "Bronze greaves to shield your legs."
   },
   {
@@ -362,7 +362,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A tunic made from animal hide."
   },
   {
@@ -381,7 +381,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "They squeak a little when you walk."
   },
   {
@@ -552,7 +552,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "Better than nothing."
   },
   {
@@ -1014,7 +1014,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A true warrior's tool."
   },
   {
@@ -1109,7 +1109,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A bright and burnished blade, curved like a smile."
   },
   {
@@ -1186,7 +1186,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "What battles has this weapon borne witness to? You cannot see its past, only shape its future...",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -1420,7 +1420,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Plant them to grow a beech tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -1501,7 +1501,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Plant them to grow a birch tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -1786,7 +1786,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Tiny but tasty.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -2077,7 +2077,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A crude but functional bow."
   },
   {
@@ -2495,7 +2495,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Plant these if you like carrots...",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -3013,7 +3013,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Unrefined copper. Needs to be refined in a smelter.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -3302,7 +3302,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "An ancient and sturdy material.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -3450,7 +3450,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "High quality wood for fine carpentry.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
@@ -3963,7 +3963,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "This will help to keep your brains inside your skull."
   },
   {
@@ -4077,7 +4077,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A hood of toughened leather."
   },
   {
@@ -4590,7 +4590,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A headache on a stick."
   },
   {
@@ -5576,7 +5576,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "An energetic glowing mushroom.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -5750,7 +5750,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "This tool is hard enough to crack even the most stubborn rocks."
   },
   {
@@ -5789,7 +5789,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A good bronze pick. Can break very hard rocks."
   },
   {
@@ -6837,7 +6837,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A sturdy spear with a head of burnished bronze."
   },
   {
@@ -7181,7 +7181,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "Blood-drinker. A thirsty friend."
   },
   {

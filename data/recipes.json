@@ -201,7 +201,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.SeekerAspic",
@@ -1198,7 +1198,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.SwordKrom",
@@ -2047,7 +2047,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.ArmorRagsLegs",
@@ -2345,7 +2345,7 @@
     ],
     "upgrades": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.ArmorLeatherLegs",
@@ -2675,7 +2675,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.YggdrasilPorridge",
@@ -2815,7 +2815,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.PulledBear",
@@ -3473,7 +3473,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.MechanicalSpring",
@@ -3903,7 +3903,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.WolfJerky",
@@ -4014,7 +4014,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.HelmetMage",
@@ -4392,7 +4392,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.Salad",
@@ -4778,7 +4778,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.ShieldBlackmetalTower",
@@ -6323,7 +6323,7 @@
     ],
     "upgrades": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.TrinketBlackStamina",
@@ -6552,7 +6552,7 @@
     ],
     "upgrades": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.CapeFeather",
@@ -7791,7 +7791,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.HelmetDrake",
@@ -10921,7 +10921,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.SwordNiedhogg",
@@ -11413,7 +11413,7 @@
     ],
     "upgrades": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "in-game"
   },
   {
     "id": "recipe.ArmorMageLegs_Ashlands",
