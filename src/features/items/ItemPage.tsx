@@ -215,7 +215,7 @@ function WhereFound({ id }: { id: string }) {
         })}
         {summons.map((b) => (
           <li key={b.id}>
-            Used to summon <EntityLink id={b.id} /> <GuideTag />
+            Used to summon <EntityLink id={b.id} /> {b.summonFromFiles ? null : <GuideTag />}
           </li>
         ))}
       </ul>

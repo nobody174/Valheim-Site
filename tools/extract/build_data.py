@@ -182,6 +182,7 @@ def main(raw, out, build_id, reviewed=None):
     biome_of, category_of, armor_slot = {}, {}, {}
     creature_biome, boss_biome = {}, {}
     summon, curated_src, keep_some, must_keep = {}, {}, {}, set()
+    summon_from_files = set()  # bosses whose altar cost was read from the game files (OfferingBowl)
     creature_notes = {}  # creature id -> note for what the game files do not say (zone, spawn)
 
     def add_item(i, cat, biome):
@@ -206,6 +207,7 @@ def main(raw, out, build_id, reviewed=None):
             boss_biome[i] = b
         creature_notes.update(c.get('creatureNotes', {}))
         summon.update(c.get('bossSummon', {}))
+        summon_from_files.update(c.get('bossSummonFromFiles', []))
         curated_src.update(c.get('gather', {}))
         keep_some.update(c.get('hoard', {}).get('keepSome', {}))
         must_keep.update(c.get('hoard', {}).get('mustKeep', []))
@@ -278,11 +280,13 @@ def main(raw, out, build_id, reviewed=None):
             entry['resistances'] = res
         if cid in boss_biome:
             entry['summonItems'] = [{'item': i, 'qty': q} for i, q in summon.get(cid, []) if i in allowed]
+            entry['summonFromFiles'] = cid in summon_from_files
             troph = next((d['item'] for d in entry['drops'] if d['item'].startswith('Trophy')), None)
             if troph:
                 entry['trophy'] = troph
             entry['verified'] = 'unverified'
-            entry['note'] = 'Health, drops, attacks and resistances from game files; summon items curated.'
+            entry['note'] = 'Health, drops, attacks and resistances from game files; summon items ' + (
+                'from the altar in the game files.' if cid in summon_from_files else 'curated from guides.')
             bosses.append(entry)
         else:
             if cid in creature_notes:

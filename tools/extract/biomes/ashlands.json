@@ -102,10 +102,11 @@
     "Fader": [
       [
         "Bell",
-        1
+        3
       ]
     ]
   },
+  "bossSummonFromFiles": ["Fader"],
   "creatureNotes": {
     "Charred_Mage": "Health, drops and attacks come from the game files. The game files do not list where it spawns; the Ashlands zone is from guides and not checked."
   },
