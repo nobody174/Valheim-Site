@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Intro } from '../../components/Intro';
 import { GuideTag } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
 import { places } from '../../data/load';
@@ -40,11 +41,13 @@ export function PlacesPage() {
   return (
     <div>
       <h1>Dungeons and places</h1>
-      <p>
+      <Intro>
+        <p>
         Every kind of place the game generates in a world, with the zone it appears in and how many the game tries to
         place. Those two come from the game files. The notes on the main dungeons are from public guides and are
         tagged. Places without a note are listed by their game name.
       </p>
+      </Intro>
       <p>
         <label>
           Zone{' '}

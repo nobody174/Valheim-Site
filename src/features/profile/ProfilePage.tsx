@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Intro } from '../../components/Intro';
 import { buildExport, parseImport, type ExportFile } from '../../state/model';
 import { appStore, useApp } from '../../state/store';
 import styles from '../items/Items.module.css';
@@ -96,10 +97,12 @@ export function ProfilePage() {
   return (
     <section>
       <h1>Profile &amp; data</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         A profile keeps its own checklist, favorites and hoard choices, for example one per
         character or world. Everything is stored in this browser only.
-      </p>
+        </p>
+      </Intro>
 
       <section className={styles.section}>
         <h2>Profiles</h2>

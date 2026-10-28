@@ -1,4 +1,5 @@
 import { EntityLink } from '../../components/EntityLink';
+import { Intro } from '../../components/Intro';
 import { lookup } from '../../data/lookup';
 import { FavoriteStar } from '../items/ItemActions';
 import { useProfile } from '../../state/store';
@@ -17,10 +18,12 @@ export function FavoritesPage() {
   return (
     <section>
       <h1>Favorites</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Your starred items and recipes for the profile <strong>{profile.name}</strong>. Star things
         from any item page or recipe card.
-      </p>
+        </p>
+      </Intro>
       {none && (
         <p className={styles.empty}>Nothing starred yet. Open an item and press the star.</p>
       )}

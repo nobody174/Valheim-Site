@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
@@ -53,10 +54,12 @@ export function RecipesPage() {
   return (
     <section>
       <h1>Recipes</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         What you can make, grouped by where you make it. Search by what you want or by an ingredient
         you have.
-      </p>
+        </p>
+      </Intro>
       <div className={styles.filters}>
         <label>
           Search

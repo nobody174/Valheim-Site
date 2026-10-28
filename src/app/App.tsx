@@ -26,7 +26,8 @@ import { ItemsPage } from '../features/items/ItemsPage';
 import { RecipesPage } from '../features/items/RecipesPage';
 import { CommandPalette } from '../features/search/CommandPalette';
 import { SearchPage } from '../features/search/SearchPage';
-import { ROUTES } from './routes';
+import { EntityIcon } from '../components/EntityIcon';
+import { ROUTE_GROUPS, ROUTES } from './routes';
 import styles from './App.module.css';
 
 function ComingSoon({ label, phase }: { label: string; phase: number }) {
@@ -85,6 +86,17 @@ const PAGES: Record<string, React.ReactElement> = {
   '/profile': <ProfilePage />,
 };
 
+/** A small round shield with a rune, drawn here so the site needs no game art for its logo. */
+function BrandMark() {
+  return (
+    <svg className={styles.brandMark} viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false">
+      <circle cx="16" cy="16" r="14.5" fill="#3b2a1c" stroke="#d3a73b" strokeWidth="2" />
+      <circle cx="16" cy="16" r="10.5" fill="none" stroke="#a97142" strokeWidth="1" strokeDasharray="2 2.2" />
+      <path d="M10 9 L22 23 M22 9 L10 23 M16 7 V25" stroke="#e6d7b2" strokeWidth="2.2" strokeLinecap="round" fill="none" />
+    </svg>
+  );
+}
+
 function isTyping(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
   return target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
@@ -114,6 +126,7 @@ function Shell() {
       </a>
       <header className={styles.header}>
         <Link to="/" className={styles.brand}>
+          <BrandMark />
           Valheim Companion
         </Link>
         <input
@@ -134,20 +147,25 @@ function Shell() {
         <ProfileSwitcher />
       </header>
       <nav className={styles.nav} aria-label="Main">
-        {ROUTES.map((r) => (
-          <NavLink
-            key={r.path}
-            to={r.path}
-            end
-            className={({ isActive }) =>
-              [isActive ? styles.active : '', PAGES[r.path] ? '' : styles.dimmed]
-                .join(' ')
-                .trim() || undefined
-            }
-          >
-            {r.label}
-            {!PAGES[r.path] && <span className={styles.soon}>soon</span>}
-          </NavLink>
+        {ROUTE_GROUPS.map((g) => (
+          <div key={g.id} className={styles.group} role="group" aria-label={g.title || 'Start'}>
+            {g.title && (
+              <span className={styles.groupTitle} aria-hidden="true">
+                {g.title}
+              </span>
+            )}
+            {g.routes.map((r) => (
+              <NavLink
+                key={r.path}
+                to={r.path}
+                end
+                className={({ isActive }) => (isActive ? styles.active : undefined)}
+              >
+                <EntityIcon id={r.icon} size={22} />
+                <span>{r.label}</span>
+              </NavLink>
+            ))}
+          </div>
         ))}
         <p className={styles.dataInfo}>
           Data: {gameData.meta.gameVersion}

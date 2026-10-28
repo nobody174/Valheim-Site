@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Intro } from '../../components/Intro';
 import { Link, useSearchParams } from 'react-router';
 import {
   Background,
@@ -173,10 +174,12 @@ export function GraphPage() {
   return (
     <section>
       <h1>Crafting graph</h1>
-      <p className={itemStyles.lead}>
+      <Intro>
+        <p>
         See what goes into an item and what it leads to. Click a node to select it, then open its page
         or expand it one more step. Edges show the amount, the station and the station level.
-      </p>
+        </p>
+      </Intro>
       <div className={itemStyles.filters}>
         <label>
           Item

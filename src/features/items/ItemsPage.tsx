@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { HOARD_OPTIONS, HoardBadge, VerifiedBadge } from '../../components/Badges';
@@ -53,10 +54,12 @@ export function ItemsPage() {
   return (
     <section>
       <h1>Items</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Everything in the database. Use the hoard filter to see what to keep and what you can safely
         throw away.
-      </p>
+        </p>
+      </Intro>
       <div className={styles.filters}>
         <label>
           Name

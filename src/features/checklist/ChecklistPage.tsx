@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { graph, lookup } from '../../data/lookup';
@@ -69,10 +70,12 @@ export function ChecklistPage() {
   return (
     <section>
       <h1>Checklist</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Tick items off as you go. Progress is saved in this browser for the active profile (
         <strong>{profile.name}</strong>).
-      </p>
+        </p>
+      </Intro>
 
       <p className={styles.dim}>
         <strong>Collected</strong>: you have found it. <strong>Crafted</strong>: you have made it.{' '}

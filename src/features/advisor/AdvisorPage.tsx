@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { Intro } from '../../components/Intro';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { graph, lookup } from '../../data/lookup';
@@ -43,11 +44,13 @@ export function AdvisorPage() {
   return (
     <section>
       <h1>Next steps</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Suggestions from your checklist and inventory (profile {profile.name}). Tick what you have
         collected and crafted on the <Link to="/checklist">checklist</Link> and the advisor keeps
         up. It only suggests things you can do now, and only in zones up to {zoneName}.
-      </p>
+        </p>
+      </Intro>
 
       {boss && (
         <section className={styles.section}>

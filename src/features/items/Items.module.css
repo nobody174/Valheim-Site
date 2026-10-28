@@ -425,3 +425,108 @@
   color: var(--text-dim);
   font-size: 0.8rem;
 }
+
+/* ---- Carved-wood look for every page's panels, tables and filters ---- */
+.page {
+  border-top: 0;
+  padding-top: 0.25rem;
+}
+.title {
+  position: relative;
+  gap: 1.1rem;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--zone) 30%, #261b13), #1d1611 70%);
+  border: 2px solid var(--wood-light);
+  border-top: 5px solid var(--zone);
+  border-radius: 16px;
+  box-shadow: var(--shadow-chunk);
+}
+.iconFrame {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  background: radial-gradient(circle at 50% 35%, #4a3a2a, #1a130d);
+  border: 3px solid var(--gold);
+  border-radius: 16px;
+  box-shadow:
+    inset 0 0 0 2px #0c0907,
+    var(--shadow-chunk);
+  transform: rotate(-3deg);
+}
+.title h1::after {
+  display: none;
+}
+.title h1 {
+  color: #fff3cf;
+  font-size: 2rem;
+}
+.section {
+  background: linear-gradient(180deg, #241c15, #1b1510);
+  border: 2px solid var(--wood-light);
+  border-radius: 14px;
+  box-shadow: var(--shadow-chunk);
+}
+.section h2 {
+  display: inline-block;
+  margin: -0.2rem 0 0.7rem;
+  padding: 0.15rem 0.8rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: linear-gradient(180deg, #ecdcb5, #cdb98a);
+  border-radius: 999px;
+  box-shadow: var(--shadow-chunk);
+}
+.table th {
+  color: var(--parchment);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--wood-dark);
+  border-bottom: 3px solid var(--wood-light);
+}
+.table tbody tr:nth-child(even) {
+  background: rgba(255, 240, 200, 0.03);
+}
+.filters select,
+.filters input {
+  background: var(--wood-dark);
+  border: 2px solid var(--wood-light);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+}
+.filters label {
+  color: var(--parchment);
+}
+.toggle {
+  background: var(--wood-dark);
+  border: 2px solid var(--wood-light);
+  box-shadow: var(--shadow-chunk);
+}
+.toggle:hover {
+  background: var(--wood);
+  border-color: var(--gold);
+}
+.toggle:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+.toggleOn {
+  color: var(--ink);
+  background: linear-gradient(180deg, #ecdcb5, #cdb98a);
+  border-color: #fff3cf;
+}
+.empty {
+  border-radius: 14px;
+}
+
+.section h2 span,
+.section h2 small {
+  color: var(--ink);
+  opacity: 0.75;
+}

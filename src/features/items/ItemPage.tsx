@@ -252,7 +252,9 @@ export function ItemPage() {
   return (
     <article className={styles.page} data-zone={item.biome ?? undefined}>
       <header className={styles.title}>
-        <EntityIcon id={item.id} size={56} />
+        <span className={styles.iconFrame}>
+          <EntityIcon id={item.id} size={64} />
+        </span>
         <div>
           <h1>{item.name}</h1>
           <div className={styles.badges}>

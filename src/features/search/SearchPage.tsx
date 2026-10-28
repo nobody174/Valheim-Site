@@ -1,17 +1,27 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router';
+import { EntityIcon } from '../../components/EntityIcon';
 import { entityPath } from '../../components/EntityLink';
 import { CATEGORY_LABELS } from '../items/ItemsPage';
 import { lookup } from '../../data/lookup';
 import { getRecent } from '../../state/recent';
 import { search } from './instance';
 import { NoResults } from './NoResults';
+import { Hero } from './Hero';
 import { ZoneCards } from './ZoneCards';
 import { SearchResults } from './SearchResults';
 import { useHitKeys } from './useHitKeys';
 import styles from './Search.module.css';
 
 const QUICK = ['weapon', 'armor', 'food', 'material', 'trophy', 'tool'];
+const QUICK_ICON: Record<string, string> = {
+  weapon: 'SwordBronze',
+  armor: 'ArmorBronzeChest',
+  food: 'CookedMeat',
+  material: 'Wood',
+  trophy: 'TrophyBoar',
+  tool: 'Hammer',
+};
 
 /** Landing page: a big search box, then shortcuts so there is something to click right away. */
 export function SearchPage() {
@@ -29,23 +39,25 @@ export function SearchPage() {
 
   return (
     <section>
-      <h1>What are you looking for?</h1>
-      <input
-        className={styles.bigInput}
-        type="search"
-        value={query}
-        placeholder="Search items, creatures, bosses, stations"
-        aria-label="Search"
-        autoFocus
-        onChange={(e) => {
-          setQuery(e.target.value);
-          resetActive();
-        }}
-        onKeyDown={handleKey}
-      />
-      <p className={styles.hint}>
-        Tip: press <kbd>Ctrl</kbd>+<kbd>K</kbd> or <kbd>/</kbd> on any page to search.
-      </p>
+      <Hero>
+        <h1>What are you looking for, Viking?</h1>
+        <input
+          className={styles.bigInput}
+          type="search"
+          value={query}
+          placeholder="Try: iron, Eikthyr, forge ..."
+          aria-label="Search"
+          autoFocus
+          onChange={(e) => {
+            setQuery(e.target.value);
+            resetActive();
+          }}
+          onKeyDown={handleKey}
+        />
+        <p className={styles.hint}>
+          Press <kbd>/</kbd> on any page to search.
+        </p>
+      </Hero>
 
       {searching ? (
         <>
@@ -66,13 +78,16 @@ export function SearchPage() {
           <div className={styles.chips}>
             {QUICK.map((c) => (
               <Link key={c} to={`/items?category=${c}`} className={styles.chip}>
+                <EntityIcon id={QUICK_ICON[c] ?? 'Wood'} size={22} />
                 {CATEGORY_LABELS[c]}
               </Link>
             ))}
             <Link to="/recipes" className={styles.chip}>
+              <EntityIcon id="Flint" size={22} />
               Recipes
             </Link>
             <Link to="/items?hoard=must_keep" className={styles.chip}>
+              <EntityIcon id="CryptKey" size={22} />
               Must keep
             </Link>
           </div>

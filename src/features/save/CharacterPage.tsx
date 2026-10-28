@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Intro } from '../../components/Intro';
 import { EntityLink } from '../../components/EntityLink';
 import { gameData, saveKeys } from '../../data/load';
 import { profileForCharacter } from '../../state/model';
@@ -88,10 +89,12 @@ export function CharacterPage() {
   return (
     <div className={styles.page}>
       <h1>My character</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Read your Valheim character file and the site ticks what you have found and made, and shows your gear and
         skills. The file is read in this browser; nothing is uploaded.
-      </p>
+        </p>
+      </Intro>
 
       <section className={styles.panel}>
         <h2>Read a character</h2>
