@@ -247,14 +247,14 @@ export function ItemPage() {
   const biome = lookup.biomeName(item.biome);
 
   return (
-    <article className={styles.page}>
+    <article className={styles.page} data-zone={item.biome ?? undefined}>
       <header className={styles.title}>
         <EntityIcon id={item.id} size={56} />
         <div>
           <h1>{item.name}</h1>
           <div className={styles.badges}>
             <span className={styles.dim}>{label(item.category)}</span>
-            {biome && <span className={styles.dim}>· {biome}</span>}
+            {biome && <span className={styles.zoneTag}>{biome}</span>}
             <HoardBadge
               hoard={effectiveHoard(item, profile)}
               qty={item.recommendedQty}
@@ -282,17 +282,16 @@ export function ItemPage() {
 
       <WhereFound id={id} />
 
-      {craftedFrom.length > 0 && (
-        <p>
-          <Link to={`/planner?add=${id}`}>Plan this: total materials and shopping list</Link>
-          {craftedFrom.some((r) => r.upgrades.length > 0) && (
-            <>
-              {' · '}
-              <Link to={`/upgrades?item=${id}`}>Upgrade calculator</Link>
-            </>
-          )}
-        </p>
-      )}
+      <p className={styles.tools}>
+        {craftedFrom.length > 0 && <Link to={`/planner?add=${id}`}>Plan this</Link>}
+        {craftedFrom.some((r) => r.upgrades.length > 0) && (
+          <Link to={`/upgrades?item=${id}`}>Upgrade calculator</Link>
+        )}
+        <Link to={`/graph?item=${id}`}>Crafting graph</Link>
+        {(lookup.weapon(id) || lookup.armor(id)) && (
+          <Link to={`/compare?items=${id}`}>Compare</Link>
+        )}
+      </p>
 
       {craftedFrom.length > 0 && (
         <section className={styles.section}>
@@ -323,16 +322,6 @@ export function ItemPage() {
             ))}
           </ul>
         </section>
-      )}
-
-      <p>
-        <Link to={`/graph?item=${id}`}>Crafting graph</Link>
-      </p>
-
-      {(lookup.weapon(id) || lookup.armor(id)) && (
-        <p>
-          <Link to={`/compare?items=${id}`}>Compare with other gear</Link>
-        </p>
       )}
 
       <Stats id={id} />

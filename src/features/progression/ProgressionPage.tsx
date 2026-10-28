@@ -33,6 +33,7 @@ export function ProgressionPage() {
         {biomes.map((b, i) => (
           <NavLink
             key={b.id}
+            data-zone={b.id}
             to={`/progression/${b.id}`}
             className={({ isActive }) =>
               isActive || (!param && i === 0)
@@ -40,12 +41,16 @@ export function ProgressionPage() {
                 : styles.toggle
             }
           >
-            {i + 1}. {b.name}
+            <span className={styles.zoneTag}>
+              {i + 1}. {b.name}
+            </span>
           </NavLink>
         ))}
       </nav>
 
-      <h2>{biome.name}</h2>
+      <h2 data-zone={biome.id}>
+        <span className={styles.zoneTag}>{biome.name}</span>
+      </h2>
 
       {biome.guide?.notes.length ? (
         <section className={styles.section}>

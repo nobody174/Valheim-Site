@@ -16,4 +16,21 @@
   --font-body: 'Inter', system-ui, sans-serif;
   --radius: 6px;
   --t-fast: 150ms ease;
+  /* Zone colours: muted, used for a thin top edge, a dot and a name. One set, everywhere. */
+  --zone-meadows: #8fb35a;
+  --zone-blackforest: #4f9170;
+  --zone-swamp: #a3a850;
+  --zone-mountain: #8ab6d4;
+  --zone-plains: #d4aa4e;
+  --zone-mistlands: #a68fcf;
+  --zone-ashlands: #d27348;
+  --zone: var(--iron);
 }
+
+[data-zone='meadows'] { --zone: var(--zone-meadows); }
+[data-zone='blackforest'] { --zone: var(--zone-blackforest); }
+[data-zone='swamp'] { --zone: var(--zone-swamp); }
+[data-zone='mountain'] { --zone: var(--zone-mountain); }
+[data-zone='plains'] { --zone: var(--zone-plains); }
+[data-zone='mistlands'] { --zone: var(--zone-mistlands); }
+[data-zone='ashlands'] { --zone: var(--zone-ashlands); }
