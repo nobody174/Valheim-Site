@@ -7,6 +7,7 @@ import { BuildingPage } from '../features/browse/BuildingPage';
 import { BossesPage, CreaturesPage, FoodPage, TrophiesPage } from '../features/browse/BrowsePages';
 import { ProgressionPage } from '../features/progression/ProgressionPage';
 import { PlannerPage } from '../features/planner/PlannerPage';
+import { UpgradePage } from '../features/upgrades/UpgradePage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
@@ -53,6 +54,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/food': <FoodPage />,
   '/rankings': <RankingsPage />,
   '/planner': <PlannerPage />,
+  '/upgrades': <UpgradePage />,
   '/checklist': <ChecklistPage />,
   '/favorites': <FavoritesPage />,
   '/profile': <ProfilePage />,
