@@ -29,6 +29,7 @@ import { RecipesPage } from '../features/items/RecipesPage';
 import { CommandPalette } from '../features/search/CommandPalette';
 import { SearchPage } from '../features/search/SearchPage';
 import { EntityIcon } from '../components/EntityIcon';
+import { BackupNudge } from './BackupNudge';
 import { MobileTabs } from './MobileTabs';
 import { ROUTE_GROUPS, ROUTES } from './routes';
 import styles from './App.module.css';
@@ -187,6 +188,7 @@ function Shell() {
         </p>
       </nav>
       <main id="main" className={styles.main}>
+        <BackupNudge />
         <Routes>
           {ROUTES.map((r) => (
             <Route
