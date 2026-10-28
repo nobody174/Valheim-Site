@@ -40,8 +40,8 @@ export function totalCombatDamage(w: Weapon, quality = 1): number {
   return Object.values(combatDamage(w, quality)).reduce((a, b) => a + b, 0);
 }
 
-/** A weapon is rankable when it deals combat damage at all (shields do not). */
-export const isRankable = (w: Weapon): boolean => totalCombatDamage(w) > 0;
+/** A weapon is rankable when it deals combat damage at all (shields do not) and is a real weapon skill (bombs are consumables). */
+export const isRankable = (w: Weapon): boolean => totalCombatDamage(w) > 0 && w.skill !== 'None';
 
 /** The weapon type shown in filters: its skill, with ammunition kept apart from the bows. */
 export const weaponGroup = (w: Weapon): string => (isAmmo(w) ? AMMO_GROUP : w.skill);

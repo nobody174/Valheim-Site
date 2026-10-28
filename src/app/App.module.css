@@ -129,7 +129,7 @@
   border-radius: 999px;
 }
 .nav a.dimmed {
-  opacity: 0.65;
+  color: var(--text-dim);
 }
 .panel p {
   color: var(--text-dim);

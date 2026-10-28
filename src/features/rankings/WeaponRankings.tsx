@@ -19,6 +19,9 @@ import {
 } from './weaponRanking';
 import styles from './Rankings.module.css';
 
+/** What the list is ordered by until a column is clicked. */
+const DEFAULT_SORT: SortKey = 'rating';
+
 const label = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
 const num = (n: number) => String(Math.round(n * 100) / 100);
 
@@ -31,7 +34,7 @@ const COLUMNS: { key: SortKey | null; text: string; hint?: string; mobile: boole
   { key: 'stamina', text: 'Per stamina', hint: 'Combo damage per stamina point', mobile: false },
   { key: 'dps', text: 'DPS ≈', hint: 'Estimated damage per second. Approximate, see below.', mobile: true },
   { key: 'reach', text: 'Reach', hint: 'Attack range in metres', mobile: false },
-  { key: 'rating', text: 'Rating', hint: 'Overall score 0 to 100. An opinion, see below.', mobile: false },
+  { key: 'rating', text: 'Rating', hint: 'Overall score 0 to 100. An opinion, see below.', mobile: true },
   { key: null, text: 'Damage types', mobile: false },
   { key: 'knockback', text: 'Knockback', mobile: false },
   { key: 'durability', text: 'Durability', mobile: false },
@@ -131,7 +134,7 @@ export function WeaponRankings() {
   const group = params.get('type') ?? '';
   const text = params.get('q') ?? '';
   const view = oneOf(params.get('view'), ['list', 'zones'] as const, 'list');
-  const sort = oneOf(params.get('sort'), SORT_KEYS, 'damage');
+  const sort = oneOf(params.get('sort'), SORT_KEYS, DEFAULT_SORT);
   const dir = oneOf(params.get('dir'), ['asc', 'desc'] as const, defaultDir(sort));
   const creature = params.get('vs') ?? '';
   const skillParam = params.get('skill');
@@ -152,7 +155,7 @@ export function WeaponRankings() {
 
   const onSort = (key: SortKey) =>
     set({
-      sort: key === 'damage' ? '' : key,
+      sort: key === DEFAULT_SORT ? '' : key,
       dir: key === sort ? (dir === 'asc' ? 'desc' : 'asc') : '',
     });
 
@@ -172,10 +175,9 @@ export function WeaponRankings() {
         there, and click a column to sort by it.
       </p>
       <p className={styles.warn} role="note">
-        <strong>DPS ≈ is an estimate.</strong> Damage per hit, per combo and per stamina are exact
-        game numbers. Damage per second also needs how long each swing takes, which comes from the
-        animation files and has not been checked in game, so treat it as approximate. The list is
-        ordered by damage per hit; sort by DPS or rating and the order can change.
+        <strong>DPS ≈ is an estimate</strong> (swing timing is from the animation files, not checked
+        in game). Per hit, per combo and per stamina are exact game numbers. Ordered by Rating;
+        weapons without timing, such as bows, have no rating and come last.
       </p>
       <div className={itemStyles.filters}>
         <label>

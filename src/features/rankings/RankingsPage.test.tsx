@@ -32,6 +32,19 @@ describe('weapon rankings page', () => {
     expect(screen.getByText(/DPS ≈ is an estimate/)).toBeTruthy();
   });
 
+  it('orders by Rating until a column is clicked, and leaves bombs out', () => {
+    renderPage();
+    const rows = within(screen.getAllByRole('table')[0]!).getAllByRole('row').slice(1);
+    const header = within(screen.getAllByRole('table')[0]!).getAllByRole('columnheader');
+    const ratingCol = header.findIndex((h) => h.textContent?.startsWith('Rating'));
+    expect(header[ratingCol]!.getAttribute('aria-sort')).toBe('descending');
+    const ratings = rows
+      .map((r) => Number(within(r).getAllByRole('cell')[ratingCol]!.textContent))
+      .filter((n) => !Number.isNaN(n));
+    expect(ratings).toEqual([...ratings].sort((x, y) => y - x));
+    expect(names()).not.toContain('Ooze Bomb');
+  });
+
   it('shows the best weapon for a zone, including earlier zones by default', async () => {
     const user = userEvent.setup();
     renderPage();
