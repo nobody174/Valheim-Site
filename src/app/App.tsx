@@ -37,7 +37,7 @@ function NotFound() {
     <section className={styles.panel}>
       <h1>Page not found</h1>
       <p>
-        There is nothing at this address. Try the search box above, or go back to the{' '}
+        Lost in the Black Forest: there is nothing at this address. Try the search box above, or go back to the{' '}
         <Link to="/">start page</Link>.
       </p>
     </section>

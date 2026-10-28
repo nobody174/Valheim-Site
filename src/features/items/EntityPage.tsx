@@ -89,14 +89,14 @@ function Resistances({ resistances }: { resistances: Creature['resistances'] }) 
 function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolean }) {
   const biome = lookup.biomeName(monster.biome);
   return (
-    <article className={styles.page}>
+    <article className={styles.page} data-zone={monster.biome ?? undefined}>
       <header className={styles.title}>
         <EntityIcon id={monster.id} size={56} />
         <h1>{monster.name}</h1>
       </header>
       <div className={styles.badges}>
         <span className={styles.dim}>{boss ? 'Boss' : 'Creature'}</span>
-        {biome && <span className={styles.dim}>· {biome}</span>}
+        {biome && <span className={styles.zoneTag}>{biome}</span>}
         <VerifiedBadge level={monster.verified} note={monster.note} />
       </div>
       <section className={styles.section}>

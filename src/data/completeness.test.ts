@@ -158,3 +158,13 @@ describe('item zones', () => {
     expect([...new Set(early)]).toEqual([]);
   });
 });
+
+describe('zone colours', () => {
+  it('every zone has a colour token', () => {
+    const css = readFileSync(new URL('../styles/tokens.css', import.meta.url), 'utf8');
+    for (const b of lookup.allBiomes()) {
+      expect(css, `--zone-${b.id}`).toContain(`--zone-${b.id}:`);
+      expect(css, `data-zone ${b.id}`).toContain(`[data-zone='${b.id}']`);
+    }
+  });
+});
