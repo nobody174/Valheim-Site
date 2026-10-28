@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Intro } from '../../components/Intro';
 import { Link, useSearchParams } from 'react-router';
 import { HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
@@ -109,10 +110,12 @@ export function TrophiesPage() {
   return (
     <section>
       <h1>Trophies</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         What drops each trophy, and whether it is safe to throw away. Check the hoard column before
         clearing your chests.
-      </p>
+        </p>
+      </Intro>
       <Filters text={text} biome={biome} set={set} clear={clear} />
       <p className={styles.dim} aria-live="polite">
         {rows.length} {rows.length === 1 ? 'trophy' : 'trophies'}
@@ -184,9 +187,11 @@ export function BossesPage() {
   return (
     <section>
       <h1>Bosses</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         One boss per zone, in the order you meet them. Open one to see its attacks and drops.
-      </p>
+        </p>
+      </Intro>
       <Filters text={text} biome={biome} set={set} clear={clear} />
       {rows.length === 0 ? (
         <p className={styles.empty}>No bosses match these filters.</p>
@@ -251,9 +256,11 @@ export function CreaturesPage() {
   return (
     <section>
       <h1>Creatures</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Health, drops and what each creature is weak to. Boss fights are on the Bosses page.
-      </p>
+        </p>
+      </Intro>
       <Filters text={text} biome={biome} set={set} clear={clear} />
       <p className={styles.dim} aria-live="polite">
         {rows.length} {rows.length === 1 ? 'creature' : 'creatures'}
@@ -343,10 +350,12 @@ export function FoodPage() {
   return (
     <section>
       <h1>Food and mead</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Click a column heading to sort. Only the three foods you eat count at once, so look at health
         and stamina together. <Link to="/optimizer">Find the best three foods</Link>.
-      </p>
+        </p>
+      </Intro>
       <Filters text={text} biome={biome} set={set} clear={clear}>
         <label>
           Type

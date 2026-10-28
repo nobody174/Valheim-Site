@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
@@ -34,10 +35,12 @@ export function BuildingPage() {
   return (
     <section>
       <h1>Building</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         What the Hammer can build, and what it costs. Only pieces whose materials are already in the
         database are listed, so more appear as zones are added.
-      </p>
+        </p>
+      </Intro>
       <div className={styles.filters}>
         <label>
           Name

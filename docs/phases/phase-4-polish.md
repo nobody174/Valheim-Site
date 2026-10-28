@@ -46,3 +46,7 @@ Acceptance:
 ## Checkpoint
 
 Owner declares v1.0. Tag the release. Update ROADMAP.
+
+## Design pass 2 (2026-10-28)
+
+The owner found the site too text-heavy and too plain for a game site. Done: sidebar grouped into Look things up, Plan & compare, My game and Reference with a game icon on every entry; a wood-and-parchment theme (carved-sign buttons, wood header, warm surfaces) driven by tokens; a home page with a drawn night landscape, boss-icon zone cards and icon tool cards; item, creature and boss pages with a framed icon and a zone-coloured banner; every long page intro folded into an "About this page" box. The logo and landscape are SVG drawn for the site, no game art beyond the item icons already used.

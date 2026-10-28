@@ -1,4 +1,5 @@
 import { useSearchParams } from 'react-router';
+import { Intro } from '../../components/Intro';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
@@ -47,10 +48,12 @@ export function FoodOptimizerPage() {
   return (
     <section>
       <h1>Food optimizer</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         You can eat three different foods at a time, and their health, stamina and Eitr add up. Pick a goal
         and the zone you have reached to see the best sets.
-      </p>
+        </p>
+      </Intro>
       <div className={styles.filters}>
         <label>
           Goal

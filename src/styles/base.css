@@ -82,3 +82,62 @@ html[data-screen='second'] *::after {
   animation: none !important;
   scroll-behavior: auto !important;
 }
+
+/* Page backdrop: dark wood with a faint glow, so no page is a flat grey slab. */
+body {
+  background:
+    radial-gradient(1200px 500px at 70% -10%, rgba(224, 116, 42, 0.07), transparent 60%),
+    radial-gradient(900px 500px at 0% 100%, rgba(79, 145, 112, 0.06), transparent 60%),
+    var(--bg-0);
+}
+h1 {
+  color: var(--parchment);
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+  margin: 0.2rem 0 0.8rem;
+}
+h1::after {
+  content: '';
+  display: block;
+  width: 84px;
+  height: 4px;
+  margin-top: 0.35rem;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--bronze) 60%, transparent);
+}
+h2 {
+  color: var(--gold);
+}
+
+/* Buttons and selects: chunky, rounded, a little raised, like a carved sign. */
+button:not([class]),
+select,
+input[type='search'],
+input[type='text'] {
+  border-radius: var(--radius);
+}
+button:not([class]) {
+  padding: 0.4rem 0.8rem;
+  color: var(--text);
+  background: var(--wood);
+  border: 1px solid var(--wood-light);
+  box-shadow: var(--shadow-chunk);
+  cursor: pointer;
+}
+button:not([class]):hover {
+  background: var(--wood-light);
+}
+button:not([class]):active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+select {
+  background: var(--wood-dark);
+  color: var(--text);
+  border: 1px solid var(--wood-light);
+  padding: 0.35rem 0.5rem;
+}
+::selection {
+  background: rgba(211, 167, 59, 0.35);
+}

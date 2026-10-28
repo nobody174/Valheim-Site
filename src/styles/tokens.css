@@ -1,20 +1,28 @@
 :root {
-  --bg-0: #111111;
-  --bg-1: #161616;
-  --bg-2: #1a1a1a;
-  --iron: #3a3d42;
+  --bg-0: #120f0c;
+  --bg-1: #1a1511;
+  --bg-2: #231c16;
+  --iron: #4a4238;
   --black-metal: #0c0d0e;
   --bronze: #a97142;
   --silver: #b8bcc2;
   --gold: #c9a227;
   --amber: #d98e04;
-  --parchment: #d9c9a3;
-  --text: #e4e4e4;
-  --text-dim: #9a9da2;
-  --border: #2a2c30;
+  --parchment: #e6d7b2;
+  --text: #efe8d8;
+  --text-dim: #b3a995;
+  --border: #3b2f24;
   --font-heading: 'Cinzel', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
-  --radius: 6px;
+  --radius: 10px;
+  /* Wood, ink and glow: the longhouse at night. Used for the header, side menu, cards and buttons. */
+  --wood-dark: #261b13;
+  --wood: #45321f;
+  --wood-light: #6b4f33;
+  --ink: #2b2118;
+  --ember: #e0742a;
+  --shadow-chunk: 0 3px 0 rgba(0, 0, 0, 0.55);
+  --glow: 0 0 0 1px var(--gold), 0 6px 18px rgba(211, 167, 59, 0.22);
   --t-fast: 150ms ease;
   /* Zone colours: muted, used for a thin top edge, a dot and a name. One set, everywhere. */
   --zone-meadows: #8fb35a;

@@ -1,4 +1,5 @@
 import { NavLink, useParams } from 'react-router';
+import { Intro } from '../../components/Intro';
 import { GuideTag } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
 import { gameData } from '../../data/load';
@@ -25,10 +26,12 @@ export function ProgressionPage() {
   return (
     <section>
       <h1>Progression guide</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         What to know about each biome, built from the game data: the boss, what lives there, what to
         keep, and a few gear and food picks. Choose a biome below.
-      </p>
+        </p>
+      </Intro>
       <nav className={styles.tabs} aria-label="Biomes">
         {biomes.map((b, i) => (
           <NavLink

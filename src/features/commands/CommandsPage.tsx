@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Intro } from '../../components/Intro';
 import { GuideTag } from '../../components/Badges';
 import { commands } from '../../data/load';
 import styles from '../items/Items.module.css';
@@ -17,11 +18,13 @@ export function CommandsPage() {
   return (
     <div>
       <h1>Console commands</h1>
-      <p>
+      <Intro>
+        <p>
         Press <kbd>F5</kbd> in game to open the console <GuideTag />. Commands marked <em>needs devcommands</em> only
         work after you type <code>devcommands</code> first. The game warns that using them is at your own risk, and
         a character that used cheats is marked as cheated. Prefer a separate test character.
       </p>
+      </Intro>
       <p>
         <label>
           Filter{' '}

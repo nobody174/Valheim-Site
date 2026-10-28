@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { Intro } from '../../components/Intro';
 import { Link, useSearchParams } from 'react-router';
 import { EntityLink, entityPath } from '../../components/EntityLink';
 import { EntityIcon } from '../../components/EntityIcon';
@@ -122,10 +123,12 @@ export function PlannerPage() {
   return (
     <section>
       <h1>Build planner</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Pick what you want to make. The planner works out the raw materials, the crafting steps and
         the station levels, and subtracts what you already hold (profile {profile.name}).
-      </p>
+        </p>
+      </Intro>
 
       <div className={styles.filters}>
         <label>

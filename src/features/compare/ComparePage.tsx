@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
@@ -41,10 +42,12 @@ export function ComparePage() {
   return (
     <section>
       <h1>Compare</h1>
-      <p className={styles.lead}>
+      <Intro>
+        <p>
         Put two to four weapons, or two to four armor pieces, side by side. The best value in each row is
         marked. Numbers are the same as on the Rankings page.
-      </p>
+        </p>
+      </Intro>
       <div className={styles.filters}>
         <label>
           Add an item

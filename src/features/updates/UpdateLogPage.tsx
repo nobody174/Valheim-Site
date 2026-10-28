@@ -1,4 +1,5 @@
 import { EntityLink } from '../../components/EntityLink';
+import { Intro } from '../../components/Intro';
 import { updateLog } from '../../data/load';
 import { lookup } from '../../data/lookup';
 import { useState } from 'react';
@@ -42,10 +43,12 @@ export function UpdateLogPage() {
   return (
     <div>
       <h1>Update log</h1>
-      <p>
+      <Intro>
+        <p>
         What changed in the data after each game patch. It is written when the data is rebuilt for a new Steam
         build, by comparing the new files with the old. Fixes to the site&apos;s own notes are not listed here.
       </p>
+      </Intro>
       {updateLog.entries.map((e) => (
         <section key={e.gameVersion} className={styles.section}>
           <h2>

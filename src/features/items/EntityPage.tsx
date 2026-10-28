@@ -91,7 +91,9 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
   return (
     <article className={styles.page} data-zone={monster.biome ?? undefined}>
       <header className={styles.title}>
-        <EntityIcon id={monster.id} size={56} />
+        <span className={styles.iconFrame}>
+          <EntityIcon id={monster.id} size={64} />
+        </span>
         <h1>{monster.name}</h1>
       </header>
       <div className={styles.badges}>
@@ -232,7 +234,9 @@ export function StationPage() {
   return (
     <article className={styles.page}>
       <header className={styles.title}>
-        <EntityIcon id={station.id} size={56} />
+        <span className={styles.iconFrame}>
+          <EntityIcon id={station.id} size={64} />
+        </span>
         <h1>{station.name}</h1>
       </header>
       <div className={styles.badges}>
