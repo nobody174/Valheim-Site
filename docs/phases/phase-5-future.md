@@ -6,6 +6,7 @@ An open backlog, not a schedule. The owner picks items from `docs/FEATURES.md` s
 ## Candidates
 
 - ~~Personal notes per item and profile~~ done: a "My note" box on every item page, saved in the profile (max 2000 characters) and included in the backup file
+- ~~Read the Valheim character file~~ done: the "My character" page reads a `.fch` file in the browser (nothing is uploaded), shows gear, skills, stations, zones, bosses and kills, and ticks found and crafted items in the matching profile
 - Weight and inventory planner (carry weight, ship cargo)
 - Farming, cooking and taming reference
 - Skills reference

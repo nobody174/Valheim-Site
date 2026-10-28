@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { HOARD_CATEGORIES, type Item } from '../data/schemas';
+import { CharacterSnapshotSchema, type CharacterImport } from '../features/save/character';
 
 export const CURRENT_VERSION = 1;
 
@@ -33,6 +34,8 @@ export const ProfileSchema = z
     hoardOverrides: z.record(z.string(), Hoard),
     inventory: z.record(z.string(), z.number().int().nonnegative()),
     notes: z.record(z.string(), z.string()),
+    /** The last character file read for this profile (names and numbers only). */
+    character: CharacterSnapshotSchema.optional(),
     /** Build planner: what to make and which shopping-list lines are ticked off. */
     planner: z
       .object({
@@ -233,4 +236,22 @@ export function applyImport(
     order.push(id);
   }
   return { order, profiles, active: state.active };
+}
+
+/** Merge what a character file shows into a profile: tick what it found and made, never untick. */
+export function withCharacter(profile: Profile, imp: CharacterImport): Profile {
+  const progress = { ...profile.progress };
+  for (const id of imp.collected) progress[id] = { ...progress[id], collected: true };
+  for (const id of imp.crafted) progress[id] = { ...progress[id], crafted: true };
+  return { ...profile, progress, character: imp.snapshot };
+}
+
+/**
+ * Pick the profile a character belongs to: the one already holding that character, else the active
+ * profile when it holds none, else a new profile named after the character.
+ */
+export function profileForCharacter(state: AppState, name: string): string | null {
+  const existing = state.order.find((id) => state.profiles[id].character?.name === name);
+  if (existing) return existing;
+  return state.profiles[state.active].character ? null : state.active;
 }

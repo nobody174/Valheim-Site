@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
+import { saveKeys } from './load';
 import { graph, lookup } from './lookup';
 
 /** Categories the player crafts. Materials and trophies are gathered or dropped, so they need no recipe. */
@@ -166,5 +167,21 @@ describe('zone colours', () => {
       expect(css, `--zone-${b.id}`).toContain(`--zone-${b.id}:`);
       expect(css, `data-zone ${b.id}`).toContain(`[data-zone='${b.id}']`);
     }
+  });
+});
+
+describe('character file keys', () => {
+  it('every key the game writes into a save points at something in the data', () => {
+    const items = new Set(lookup.allItems().map((i) => i.id));
+    const creatures = new Set([...lookup.allCreatures(), ...lookup.allBosses()].map((c) => c.id));
+    const stations = new Set(lookup.allStations().map((s) => s.id));
+    for (const id of Object.values(saveKeys.items)) expect(items.has(id), id).toBe(true);
+    for (const id of Object.values(saveKeys.creatures)) expect(creatures.has(id), id).toBe(true);
+    for (const id of Object.values(saveKeys.stations)) expect(stations.has(id), id).toBe(true);
+  });
+
+  it('knows a name for every skill number in the file', () => {
+    expect(saveKeys.skills['13']).toBe('Woodcutting');
+    expect(Object.keys(saveKeys.skills).length).toBeGreaterThanOrEqual(20);
   });
 });

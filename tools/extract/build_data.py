@@ -182,6 +182,7 @@ def main(raw, out, build_id, reviewed=None):
     biome_of, category_of, armor_slot = {}, {}, {}
     creature_biome, boss_biome = {}, {}
     summon, curated_src, keep_some, must_keep = {}, {}, {}, set()
+    save_tokens = {'items': {}, 'creatures': {}, 'stations': {}}  # in-game name keys, to read character files
     summon_from_files = set()  # bosses whose altar cost was read from the game files (OfferingBowl)
     creature_notes = {}  # creature id -> note for what the game files do not say (zone, spawn)
 
@@ -272,6 +273,8 @@ def main(raw, out, build_id, reviewed=None):
         seen = spawn_biomes.get(cid)
         if seen and biome not in seen and cid not in boss_biome:
             warnings.append(f'{cid}: config says {biome} but spawn data says {sorted(seen)}')
+        if data.get('m_name', '').startswith('$'):
+            save_tokens['creatures'].setdefault(data['m_name'], cid)
         entry = {'id': cid, 'name': english(data.get('m_name', ''), cid), 'biome': biome,
                  'health': data.get('m_health'), 'drops': clean_drops(cid),
                  'attacks': attacks_of(data), **prov}
@@ -434,6 +437,8 @@ def main(raw, out, build_id, reviewed=None):
     for s in sorted(stations_seen):
         data = station_raw.get(s, {})
         cost = piece_cost(s)
+        if data.get('m_name', '').startswith('$'):
+            save_tokens['stations'].setdefault(data['m_name'], s)
         entry = {'id': s, 'name': english(data.get('m_name', ''), conv_names.get(s, s)),
                  'buildRequirements': cost or [],
                  'extensions': list(ext_by_station.get(s, {}).values()),
@@ -518,6 +523,7 @@ def main(raw, out, build_id, reviewed=None):
             hoard, extra = 'decorative', {}
         else:
             hoard, extra = 'safe_discard', {}
+        save_tokens['items'].setdefault(s['m_name'], iid)
         item = {
             'id': iid, 'name': english(s['m_name'], iid), 'category': cat, 'biome': biome_of[iid],
             'weight': s['m_weight'], 'stackSize': s['m_maxStackSize'], 'tags': [],
@@ -669,11 +675,15 @@ def main(raw, out, build_id, reviewed=None):
             else:
                 warnings.append(f'use text for {uid}: no such item')
 
+    skills_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'save_skills.json')
+    with open(skills_path, encoding='utf8') as f:
+        save_tokens['skills'] = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
+
     os.makedirs(out, exist_ok=True)
     files = {'meta': {'gameVersion': f'Steam build {build_id}', 'lastReviewed': reviewed},
              'biomes': biomes, 'items': items, 'recipes': recipes, 'stations': stations, 'weapons': weapons,
              'armor': armor, 'foods': foods, 'trophies': trophies, 'creatures': creatures,
-             'bosses': bosses, 'pieces': pieces_out}
+             'bosses': bosses, 'pieces': pieces_out, 'savekeys': save_tokens}
     for name, content in files.items():
         with open(os.path.join(out, f'{name}.json'), 'w', encoding='utf8', newline='\n') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)

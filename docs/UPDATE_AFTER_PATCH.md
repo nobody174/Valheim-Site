@@ -98,6 +98,15 @@ Open a pull request into `main`, merge it, and wait for the Deploy workflow. The
 site and check the line "Data: Steam build ..." (sidebar on desktop, bottom of the page on a phone).
 The service worker updates by itself, so a returning visitor gets the new data on the next load.
 
+## 9. Character files (only if the game changed its save format)
+
+The "My character" page reads `.fch` files with `src/features/save/fch.ts`, which follows the
+game's own loader for file version 47. If a patch raises the version, the page says so and refuses
+the file instead of guessing. To update it: decompile `assembly_valheim.dll` (for example with
+`ilspycmd -t PlayerProfile`, `-t Player`, `-t Inventory`, `-t Skills`), compare the load code with
+`parseCharacter`, change it, and raise `MAX_FILE_VERSION`. New skills go in
+`tools/extract/save_skills.json`. `data/savekeys.json` is rebuilt by step 3.
+
 ## If something goes wrong
 
 - The deploy fails on a test timing out: tests allow 30 s each; a failure is real, not slow CI.

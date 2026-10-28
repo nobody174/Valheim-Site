@@ -12,6 +12,7 @@ import { ComparePage } from '../features/compare/ComparePage';
 import { FoodOptimizerPage } from '../features/food/FoodOptimizerPage';
 import { AdvisorPage } from '../features/advisor/AdvisorPage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
+import { CharacterPage } from '../features/save/CharacterPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
 import { SecondScreenToggle } from './SecondScreenToggle';
@@ -72,6 +73,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/checklist': <ChecklistPage />,
   '/next': <AdvisorPage />,
   '/favorites': <FavoritesPage />,
+  '/character': <CharacterPage />,
   '/profile': <ProfilePage />,
 };
 

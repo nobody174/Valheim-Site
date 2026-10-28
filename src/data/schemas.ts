@@ -264,6 +264,17 @@ export const CreatureSchema = z
   })
   .strict();
 
+/** Name keys the game writes into a character file, mapped to our ids. Generated; see build_data.py. */
+export const SaveKeysSchema = z
+  .object({
+    items: z.record(z.string(), id),
+    creatures: z.record(z.string(), id),
+    stations: z.record(z.string(), id),
+    skills: z.record(z.string(), z.string()),
+  })
+  .strict();
+export type SaveKeys = z.infer<typeof SaveKeysSchema>;
+
 export const BossSchema = z
   .object({
     id,
