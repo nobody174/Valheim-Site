@@ -10,6 +10,7 @@ import { PlannerPage } from '../features/planner/PlannerPage';
 import { UpgradePage } from '../features/upgrades/UpgradePage';
 import { ComparePage } from '../features/compare/ComparePage';
 import { FoodOptimizerPage } from '../features/food/FoodOptimizerPage';
+import { AdvisorPage } from '../features/advisor/AdvisorPage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
@@ -60,6 +61,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/upgrades': <UpgradePage />,
   '/compare': <ComparePage />,
   '/checklist': <ChecklistPage />,
+  '/next': <AdvisorPage />,
   '/favorites': <FavoritesPage />,
   '/profile': <ProfilePage />,
 };

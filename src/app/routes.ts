@@ -20,6 +20,7 @@ export const ROUTES: RouteDef[] = [
   { path: '/upgrades', label: 'Upgrades', phase: 3 },
   { path: '/compare', label: 'Compare', phase: 3 },
   { path: '/checklist', label: 'Checklist', phase: 1 },
+  { path: '/next', label: 'Next steps', phase: 3 },
   { path: '/favorites', label: 'Favorites', phase: 1 },
   { path: '/profile', label: 'Profile & data', phase: 1 },
 ];

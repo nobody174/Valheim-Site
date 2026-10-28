@@ -10,7 +10,7 @@ reviews the live site before the next phase starts.
 | 0 | Foundation | done (live) | 1 | Scaffold, schemas, validation, CI/deploy, seed data (Meadows + Black Forest from local game files) |
 | 1 | MVP | done (live) | 2-3 | Search, item pages, recipe explorer, checklist, favorites, profiles, backup, PWA |
 | 2 | Core database | done: all seven zones (Swamp to Ashlands unverified until the owner reaches them) | 6-8 | All browse pages built. Review fixes done: hoard from recipes, dropped-recipe report, station levels and costs, sources, search, item page, descriptions. Details in `docs/DATA_SOURCES.md` |
-| 3 | Advanced tools | in progress: rankings done (ordered by Rating, bombs and shields left out; DPS is an estimate pending an in-game check) | 3-4 | Build planner, upgrade calculator, compare and food optimizer done. Pending: crafting graph, next-steps advisor |
+| 3 | Advanced tools | in progress: rankings done (ordered by Rating, bombs and shields left out; DPS is an estimate pending an in-game check) | 3-4 | Build planner, upgrade calculator, compare, food optimizer and next-steps advisor done. Pending: crafting graph |
 | 4 | Polish | not started | 2 | Visual pass, mobile, a11y, performance, offline hardening |
 | 5 | Future expansion | not started | open | Backlog, picked as wanted |
 
