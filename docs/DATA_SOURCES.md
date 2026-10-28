@@ -117,6 +117,17 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 | 23 | Flametal ore, Blackwood, Molten Core, Bell Fragment | Where to find them (guides) |
 | 24 | Charred Mage | Where it spawns |
 
+### Places (added 2026-10-28)
+
+| # | Entry | What to check |
+|---|---|---|
+| 25 | Burial Chamber note | Enemies and loot as written; no key needed |
+| 26 | Troll Cave note | At least one Troll inside; loot as written |
+| 27 | Sunken Crypt note | Needs the Swamp Key; enemies and loot as written |
+| 28 | Frost Cave note | What lives inside and what it drops (guides disagree) |
+| 29 | Charred Fortress note | Bell Altar gives Bell Fragments |
+| 30 | Haldor and Hildir | Where they appear, one Haldor per world |
+
 `From game files` (stored as `verified: cross-checked`) means the value was read from the game files of build 25909357, one source, not confirmed in game. Everything else with that level is read straight from the files.
 
 ## Regenerating the data
@@ -190,3 +201,4 @@ The altar prefabs (`OfferingBowl` component) hold the item and amount. Read from
 - **Skills** (`data/skills.json`): names and descriptions from the game's localization, training rate per use and the death loss (5%) from the game's `Skills` component (extracted by `extract_raw.py` as `skillsdef`). Skill numbers and ids are from the game's code (`Skills.SkillType`). **Correction:** weapon skills 9 and 10 were labelled FireMagic and FrostMagic; the game's own list says Elemental Magic and Blood Magic, so the Fireball, Ice Shards and Clusterbomb staves are Elemental and the Protection and Dead Raiser staves are Blood. Fixed.
 - **Console commands** (`data/commands.json`): every non-secret command in the game's `Terminal` class, with the game's own description and whether it needs `devcommands`. Read from the game's code with a decompiler (`tools/extract/extract_console_commands.py`). The example lines are hand-written and tagged "guide, not checked", as is the F5 key.
 - **Character files**: read in the browser from the owner's own `.fch` file, following the game's loader. Name keys map to ids through `data/savekeys.json`. Nothing is uploaded.
+- **Dungeons and places** (`data/places.json`): the game's world-generation list (ZoneSystem locations): which zones a place appears in and how many the game tries to place, grouped into families (Crypt2, Crypt3 and Crypt4 are one). Names and notes for the main dungeons, merchants and altars are in `tools/extract/places.json`, written by hand from public guides (Burial Chamber, Troll Cave, Sunken Crypt, Frost Cave, Charred Fortress, Haldor, Hildir) and tagged "guide, not checked". What is inside each dungeon (enemies, loot) is not in the files we read; the guide notes may be out of date. Add to the spot-check list: items 25 to 30 below.

@@ -328,6 +328,23 @@ export const UpdateLogSchema = z
   })
   .strict();
 
+/** A kind of place the game generates in the world (dungeon, camp, altar ...). Zone and count are read from the game files. */
+export const PlaceSchema = z
+  .object({
+    id,
+    name: z.string().min(1),
+    zones: z.array(id).min(1),
+    /** How many the game tries to place in a world, summed over its variants. */
+    quantity: z.number().int().positive(),
+    variants: z.number().int().positive(),
+    kind: z.enum(['dungeon', 'altar', 'merchant', 'quest', 'other']),
+    /** Hand-written, from guides; shown with the "guide, not checked" tag. */
+    note: z.string().optional(),
+    boss: id.optional(),
+  })
+  .strict();
+export type Place = z.infer<typeof PlaceSchema>;
+
 export const BossSchema = z
   .object({
     id,

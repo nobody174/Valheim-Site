@@ -1,0 +1,60 @@
+{
+  "_note": "Hand-written names and notes for places that matter to a player, keyed by place family (a prefab name with its digits removed, so Crypt2, Crypt3 and Crypt4 are 'Crypt'). Zone and how many the game places come from the game files; the notes below are from public guides, not checked in game, and the site tags them so. Places not listed here still appear, with a name made from the prefab name.",
+  "Crypt": {
+    "name": "Burial Chamber",
+    "kind": "dungeon",
+    "note": "Black Forest dungeon (three layouts). Skeletons, Rancid Remains and ghosts inside; no key needed. Chests give Surtling Cores, Amber, Coins and Bone Fragments."
+  },
+  "TrollCave": {
+    "name": "Troll Cave",
+    "kind": "dungeon",
+    "note": "Black Forest cave with at least one Troll inside. Loot is mostly Amber, Bone Fragments, Deer Hide, Feathers and Coins. Bear caves look almost the same from outside."
+  },
+  "SunkenCrypt": {
+    "name": "Sunken Crypt",
+    "kind": "dungeon",
+    "note": "Swamp dungeon. The door needs the Swamp Key (The Elder drops it). Blobs, Draugr and Draugr Elite inside; chests give Scrap Iron, Ancient Bark, Chain, Withered Bone and Coins."
+  },
+  "MountainCave": {
+    "name": "Frost Cave",
+    "kind": "dungeon",
+    "note": "Mountain dungeon behind a stone entrance. No key needed. Guides disagree on what lives inside (Cultists and a caged Fenring are mentioned) and what it drops."
+  },
+  "CharredFortress": {
+    "name": "Charred Fortress",
+    "kind": "dungeon",
+    "note": "Ashlands fortress. The Bell Altar in its central tower gives the Bell Fragments needed for Bells; a Vegvisir there can mark Fader's arena."
+  },
+  "Vendor_BlackForest": {
+    "name": "Haldor the Trader",
+    "kind": "merchant",
+    "note": "A merchant camp in the Black Forest; sells and buys for Coins. There is one Haldor per world, at one of these spots."
+  },
+  "Hildir_camp": {
+    "name": "Hildir's camp",
+    "kind": "merchant",
+    "note": "Hildir, a merchant who gives quests."
+  },
+  "Hildir_cave": {
+    "name": "Hildir's quest: cave",
+    "kind": "quest",
+    "note": "A place from Hildir's quests (a chest to find)."
+  },
+  "Hildir_crypt": {
+    "name": "Hildir's quest: crypt",
+    "kind": "quest",
+    "note": "A place from Hildir's quests (a chest to find)."
+  },
+  "Hildir_plainsfortress": {
+    "name": "Hildir's quest: Plains fortress",
+    "kind": "quest",
+    "note": "A place from Hildir's quests (a chest to find)."
+  },
+  "PlaceofMystery": {"name": "Place of Mystery", "kind": "other"},
+  "Eikthyrnir": {"name": "Eikthyr's altar", "kind": "altar", "boss": "Eikthyr"},
+  "GDKing": {"name": "The Elder's altar", "kind": "altar", "boss": "gd_king"},
+  "Bonemass": {"name": "Bonemass's altar", "kind": "altar", "boss": "Bonemass"},
+  "Dragonqueen": {"name": "Moder's altar", "kind": "altar", "boss": "Dragon"},
+  "GoblinKing": {"name": "Yagluth's altar", "kind": "altar", "boss": "GoblinKing"},
+  "FaderLocation": {"name": "Fader's arena", "kind": "altar", "boss": "Fader"}
+}

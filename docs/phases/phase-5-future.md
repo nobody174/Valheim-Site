@@ -13,7 +13,7 @@ An open backlog, not a schedule. The owner picks items from `docs/FEATURES.md` s
 - ~~Console / dev-commands cheat sheet~~ done: the Console commands page (130 commands read from the game's code, filter, needs-devcommands marked)
 - Random events, raids and weather
 - ~~Update log between game versions~~ done: the Update log page; `build_data.py` appends what changed (new, removed, changed ids) to `data/updatelog.json` whenever the Steam build id is new (diff of `/data` by `gameVersion`)
-- Dungeon and point-of-interest guide
+- ~~Dungeon and point-of-interest guide~~ done: the Dungeons & places page (zone and count from the game files, notes on the main dungeons from guides, tagged)
 - Printable / shareable checklist and shopping list
 - Optional: community-contributed corrections via GitHub issues template
 
