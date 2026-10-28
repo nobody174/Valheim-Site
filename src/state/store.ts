@@ -1,10 +1,13 @@
 import { createStore, useStore as useZustand } from 'zustand';
 import type { Item } from '../data/schemas';
+import type { CharacterImport } from '../features/save/character';
 import {
   applyImport,
   emptyProfile,
   newId,
   withHoardOverride,
+  withCharacter,
+  profileForCharacter,
   withInventoryQty,
   withNote,
   withPlannerTargets,
@@ -36,6 +39,8 @@ export interface Actions {
   setPlannerTargets(targets: PlannerState['targets']): void;
   toggleTick(itemId: string): void;
   setNote(itemId: string, text: string): void;
+  /** Tick what a character file shows and keep its snapshot; returns the profile it went to. */
+  applyCharacter(imp: CharacterImport): void;
   createProfile(name: string): void;
   renameProfile(id: string, name: string): void;
   switchProfile(id: string): void;
@@ -74,6 +79,25 @@ export function createAppStore(storage: StorageLike | null) {
       setPlannerTargets: (targets) => updateActive((p) => withPlannerTargets(p, targets)),
       toggleTick: (itemId) => updateActive((p) => withToggledTick(p, itemId)),
       setNote: (itemId, text) => updateActive((p) => withNote(p, itemId, text)),
+
+      applyCharacter: (imp) => {
+        const state = base();
+        let target = profileForCharacter(state, imp.snapshot.name);
+        let next = state;
+        if (target === null) {
+          target = newId();
+          const profile = emptyProfile(target, cleanName(imp.snapshot.name) || 'Character');
+          next = { order: [...state.order, target], active: target, profiles: { ...state.profiles, [target]: profile } };
+        }
+        const current = next.profiles[target];
+        // A still-unnamed starter profile takes the character's name.
+        const named = current.name === 'Default' ? { ...current, name: cleanName(imp.snapshot.name) || current.name } : current;
+        const updated = withCharacter(named, imp);
+        const result = { ...next, active: target, profiles: { ...next.profiles, [target]: updated } };
+        saveProfile(storage, updated);
+        saveMeta(storage, result);
+        set(result);
+      },
 
       createProfile: (name) => {
         const clean = cleanName(name);
