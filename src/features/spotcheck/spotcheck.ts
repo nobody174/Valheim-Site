@@ -37,9 +37,10 @@ type Needed = Pick<
 /**
  * The entries most worth checking in game, per zone: gear numbers, recipes, foods, a few creature
  * drops, the boss altar, and the hand-written "where to get" lines that nothing checks. Built from
- * the data, so it always says what the site says now.
+ * the data, so it always says what the site says now. Lines in `confirmed` were already seen in game
+ * and are left out.
  */
-export function buildSpotChecks(data: Needed): ZoneChecks[] {
+export function buildSpotChecks(data: Needed, confirmed: ReadonlySet<string> = new Set()): ZoneChecks[] {
   const item = new Map(data.items.map((i) => [i.id, i]));
   const nameOf = (id: string) => item.get(id)?.name ?? data.creatures.find((c) => c.id === id)?.name ?? id;
   const station = new Map(data.stations.map((s) => [s.id, s.name]));
@@ -171,6 +172,9 @@ export function buildSpotChecks(data: Needed): ZoneChecks[] {
         });
       }
 
-      return { zone: z.id, name: z.name, groups };
+      const open = groups
+        .map((g) => ({ ...g, rows: g.rows.filter((r) => !confirmed.has(r.key)) }))
+        .filter((g) => g.rows.length > 0);
+      return { zone: z.id, name: z.name, groups: open };
     });
 }
