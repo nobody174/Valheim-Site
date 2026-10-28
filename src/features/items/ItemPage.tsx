@@ -251,6 +251,15 @@ export function ItemPage() {
         </p>
       )}
 
+      {item.description && <p className={styles.dim}>{item.description}</p>}
+      {item.use && (
+        <section className={styles.section}>
+          <h2>What to do with it</h2>
+          <p>{item.use}</p>
+          <p className={styles.dim}>Guide, not checked in game.</p>
+        </section>
+      )}
+
       <ItemActions item={item} />
 
       <section className={styles.section}>

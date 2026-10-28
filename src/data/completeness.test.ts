@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { lookup } from './lookup';
+import { graph, lookup } from './lookup';
 
 /** Categories the player crafts. Materials and trophies are gathered or dropped, so they need no recipe. */
 const CRAFTED = new Set(['weapon', 'armor', 'tool', 'food', 'mead']);
@@ -66,5 +66,17 @@ describe('station build costs', () => {
       expect(station?.buildRequirements, `${id} has a cost now; remove it from NO_COST`).toHaveLength(0);
       expect(reason.length).toBeGreaterThan(10);
     }
+  });
+});
+
+describe('item descriptions', () => {
+  it('every item that nothing is made from says what it is (game description) or what to do with it', () => {
+    const missing = lookup
+      .allItems()
+      .filter((i) => i.category !== 'trophy')
+      .filter((i) => graph.usedIn(i.id).length === 0 && lookup.summonsFor(i.id).length === 0)
+      .filter((i) => !i.description && !i.use)
+      .map((i) => i.id);
+    expect(missing).toEqual([]);
   });
 });

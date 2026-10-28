@@ -16,6 +16,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Plant them to grow an oak tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -35,7 +36,9 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Valuable",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "A valuable you can sell to the trader Haldor."
   },
   {
     "id": "AmberPearl",
@@ -54,7 +57,9 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Valuable",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "A valuable you can sell to the trader Haldor."
   },
   {
     "id": "AncientSeed",
@@ -72,7 +77,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Held against your ear, you hear tiny whisperings within..."
   },
   {
     "id": "ArmorBerserkerChest",
@@ -90,7 +96,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "If these intricate designs can protect warriors from distant lands, they can surely protect you too."
   },
   {
     "id": "ArmorBerserkerLegs",
@@ -108,7 +115,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "It covers all the important bits, but not much else."
   },
   {
     "id": "ArmorBronzeChest",
@@ -126,7 +134,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A breastplate of hammered bronze."
   },
   {
     "id": "ArmorBronzeLegs",
@@ -144,7 +153,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Bronze greaves to shield your legs."
   },
   {
     "id": "ArmorFenringChest",
@@ -162,7 +172,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The beast could draw deep breaths, so that its howl could be heard far across the land."
   },
   {
     "id": "ArmorFenringLegs",
@@ -180,7 +191,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The legs of the beast were lean and strong, so that it could leap great strides."
   },
   {
     "id": "ArmorIronChest",
@@ -198,7 +210,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "An iron scale mail, this will turn all but the strongest of blows."
   },
   {
     "id": "ArmorIronLegs",
@@ -216,7 +229,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Iron greaves to protect your legs."
   },
   {
     "id": "ArmorLeatherChest",
@@ -234,7 +248,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A tunic made from animal hide."
   },
   {
     "id": "ArmorLeatherLegs",
@@ -252,7 +267,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "They squeak a little when you walk."
   },
   {
     "id": "ArmorLoxChest",
@@ -270,7 +286,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A heavy musk still clings to it."
   },
   {
     "id": "ArmorLoxLegs",
@@ -288,7 +305,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Soft, silent and flexible."
   },
   {
     "id": "ArmorPaddedCuirass",
@@ -306,7 +324,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Finely wrought and strong enough to turn even the sharpest blades."
   },
   {
     "id": "ArmorPaddedGreaves",
@@ -324,7 +343,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Expertly crafted leg protection."
   },
   {
     "id": "ArmorRagsChest",
@@ -342,7 +362,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Better than nothing."
   },
   {
     "id": "ArmorRagsLegs",
@@ -360,7 +381,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A simple remedy for nudity."
   },
   {
     "id": "ArmorRootChest",
@@ -378,7 +400,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Finely wrought and strong enough to turn even the sharpest blades."
   },
   {
     "id": "ArmorRootLegs",
@@ -396,7 +419,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A light armour oddly woven together by ancient roots and bark."
   },
   {
     "id": "ArmorTrollLeatherChest",
@@ -414,7 +438,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Trolls are hard to skin but their leather is tough and warm."
   },
   {
     "id": "ArmorTrollLeatherLegs",
@@ -432,7 +457,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Leggings of tough troll hide."
   },
   {
     "id": "ArmorWolfChest",
@@ -450,7 +476,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A wolfskin jerkin, warm and wild-looking. It protects against the cold."
   },
   {
     "id": "ArmorWolfLegs",
@@ -468,7 +495,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Shaggy breeches of wolfskin."
   },
   {
     "id": "ArrowBronze",
@@ -486,7 +514,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Sharper than flint. A sleek messenger of death."
   },
   {
     "id": "ArrowFire",
@@ -504,7 +533,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This arrow burns whatever it pierces."
   },
   {
     "id": "ArrowFlint",
@@ -522,7 +552,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A hide-breaker with a head of flint."
   },
   {
     "id": "ArrowFrost",
@@ -540,7 +571,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A shard of piercing ice."
   },
   {
     "id": "ArrowIron",
@@ -558,7 +590,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Capped with iron and flighted with dark feathers."
   },
   {
     "id": "ArrowNeedle",
@@ -576,7 +609,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The final stitch."
   },
   {
     "id": "ArrowObsidian",
@@ -594,7 +628,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A sliver of darkness."
   },
   {
     "id": "ArrowPoison",
@@ -612,7 +647,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A bitter sting from afar."
   },
   {
     "id": "ArrowSilver",
@@ -630,7 +666,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A needle to calm restless spirits."
   },
   {
     "id": "ArrowWood",
@@ -648,7 +685,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "An arrow of sharpened wood."
   },
   {
     "id": "AtgeirBlackmetal",
@@ -666,7 +704,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A vicious hewing-axe of almost unbreakable black metal."
   },
   {
     "id": "AtgeirBronze",
@@ -684,7 +723,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A true warrior's tool."
   },
   {
     "id": "AtgeirIron",
@@ -702,7 +742,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Blood-drinker, skull-cracker, death-bringer."
   },
   {
     "id": "AxeBlackMetal",
@@ -720,7 +761,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A perfectly balanced axe forged from dark metal with an emerald sheen."
   },
   {
     "id": "AxeBronze",
@@ -738,7 +780,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A bright and burnished blade, curved like a smile."
   },
   {
     "id": "AxeEarly",
@@ -756,7 +799,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Mighty weapons from long ago, from a time when the world was still young and incomplete..."
   },
   {
     "id": "AxeFlint",
@@ -774,7 +818,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Sharper than stone."
   },
   {
     "id": "AxeHead1",
@@ -793,6 +838,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "The metal glints oddly in the sunlight. Somehow, you know that it can never be complete on its own...",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -812,6 +858,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "What battles has this weapon borne witness to? You cannot see its past, only shape its future...",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -830,7 +877,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Sharp and strong, a woodcutter's friend."
   },
   {
     "id": "AxeStone",
@@ -848,7 +896,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A crude axe for tree-felling."
   },
   {
     "id": "Barley",
@@ -867,6 +916,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A bundle of barley.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -887,7 +937,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Great for baking bread."
   },
   {
     "id": "BarleyWine",
@@ -905,7 +956,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Fortifies you against fire."
   },
   {
     "id": "BarleyWineBase",
@@ -925,7 +977,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "Battleaxe",
@@ -943,7 +996,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Skull-splitter, a warrior's joy."
   },
   {
     "id": "BattleaxeBlackmetal",
@@ -961,7 +1015,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Green shall be the last thing your foes see before you cleave them in half."
   },
   {
     "id": "BattleaxeCrystal",
@@ -979,7 +1034,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "It's see-through and tears through."
   },
   {
     "id": "BeechSeeds",
@@ -998,6 +1054,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Plant them to grow a beech tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -1017,6 +1074,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Plant them to grow a birch tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -1037,7 +1095,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A thick and furry hide, coarse yet incredibly soft."
   },
   {
     "id": "BjornMeat",
@@ -1057,7 +1116,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This fatty meat was once meant to sustain a body through hibernation."
   },
   {
     "id": "BjornPaw",
@@ -1077,7 +1137,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Sharp claws suitable for picking berries – or for dismembering."
   },
   {
     "id": "BlackMetal",
@@ -1096,6 +1157,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
+    "description": "A heavy bar of dark metal.",
     "aliases": [
       "Blackmetal"
     ]
@@ -1133,6 +1195,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A twisted hunk of dark metal.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Blackmetal scrap"
@@ -1154,7 +1217,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A perfect balance of sweetness and acidity."
   },
   {
     "id": "BloodPudding",
@@ -1172,7 +1236,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "It's bloody tasty."
   },
   {
     "id": "Bloodbag",
@@ -1192,7 +1257,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The contents of a leech. Ick!"
   },
   {
     "id": "Blueberries",
@@ -1213,6 +1279,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Tiny but tasty.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -1231,7 +1298,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Lean and salty."
   },
   {
     "id": "BombOoze",
@@ -1249,7 +1317,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The stench is unbearable..."
   },
   {
     "id": "BoneFragments",
@@ -1268,7 +1337,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A pile of shattered bones."
   },
   {
     "id": "Bow",
@@ -1286,7 +1356,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A crude but functional bow."
   },
   {
     "id": "BowDraugrFang",
@@ -1304,7 +1375,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Dark wood strung with glistening sinew. A vicious thing."
   },
   {
     "id": "BowFineWood",
@@ -1322,7 +1394,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A simple bow of strong and supple wood."
   },
   {
     "id": "BowHuntsman",
@@ -1340,7 +1413,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Finely worked and strung. A huntsman's joy."
   },
   {
     "id": "Bread",
@@ -1358,7 +1432,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A tasty loaf of bread."
   },
   {
     "id": "BreadDough",
@@ -1378,7 +1453,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
   },
   {
     "id": "Bronze",
@@ -1400,7 +1476,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A strong alloy of copper and tin."
   },
   {
     "id": "BronzeNails",
@@ -1418,7 +1495,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Used in construction of ships and furniture."
   },
   {
     "id": "CapeDeerHide",
@@ -1436,7 +1514,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Rustic chic."
   },
   {
     "id": "CapeLinen",
@@ -1454,7 +1533,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A simple traveler's cape."
   },
   {
     "id": "CapeLox",
@@ -1472,7 +1552,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A pelt from one of the great beasts, thick and warm."
   },
   {
     "id": "CapeTrollHide",
@@ -1490,7 +1571,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Trollskin is tough and supple."
   },
   {
     "id": "CapeWolf",
@@ -1508,7 +1590,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Wolves are natural survivors. This one was just unlucky. Now its pelt will warm you in the snow."
   },
   {
     "id": "Carrot",
@@ -1529,6 +1612,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "An orange treat.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -1542,7 +1626,8 @@
     "hoard": "safe_discard",
     "obtainedFrom": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Plant these if you like carrots..."
   },
   {
     "id": "CarrotSoup",
@@ -1560,7 +1645,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A warm tasty soup made of mostly carrots."
   },
   {
     "id": "Chain",
@@ -1578,7 +1664,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A link of iron chain."
   },
   {
     "id": "Cloudberry",
@@ -1599,6 +1686,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "The gold of the forest.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Cloudberry"
@@ -1620,7 +1708,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A crude but useful weapon."
   },
   {
     "id": "Coal",
@@ -1651,7 +1740,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A lump of coal."
   },
   {
     "id": "Coins",
@@ -1685,7 +1775,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Valuable"
   },
   {
     "id": "CookedBjornMeat",
@@ -1709,7 +1800,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Tastes like victory."
   },
   {
     "id": "CookedDeerMeat",
@@ -1733,7 +1825,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "All that running paid off."
   },
   {
     "id": "CookedLoxMeat",
@@ -1751,7 +1844,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A great hunk of tender meat, food fit for Valhalla!"
   },
   {
     "id": "CookedMeat",
@@ -1773,7 +1867,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "An earthly taste."
   },
   {
     "id": "CookedWolfMeat",
@@ -1795,7 +1890,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A wild taste."
   },
   {
     "id": "Copper",
@@ -1813,7 +1909,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A bar of pure copper ready to be worked."
   },
   {
     "id": "CopperOre",
@@ -1832,6 +1929,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Unrefined copper. Needs to be refined in a smelter.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -1850,7 +1948,9 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Partly covered in caked mud, it smells foetid.",
+    "use": "Opens the locked doors of the Sunken Crypts in the Swamp. Carry it in your inventory and interact with the door."
   },
   {
     "id": "Crystal",
@@ -1868,7 +1968,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A shard of crystal from deep within the earth."
   },
   {
     "id": "Cultivator",
@@ -1887,7 +1988,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A farming tool for tilling soil."
   },
   {
     "id": "Dandelion",
@@ -1912,6 +2014,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Some call it a weed, but it's pretty nonetheless.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -1932,6 +2035,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
+    "description": "A cleaned hide from a deer.",
     "aliases": [
       "Deerskin",
       "Deer skin"
@@ -1973,7 +2077,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Fall-apart tender."
   },
   {
     "id": "DragonEgg",
@@ -1992,6 +2097,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Far heavier than it looks, with a faint humming sound from within.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2015,6 +2121,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "The last frozen tear of a dragon, pulsating with mysterious energy.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2028,7 +2135,8 @@
     "hoard": "must_keep",
     "obtainedFrom": [],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "An ancient and sturdy material."
   },
   {
     "id": "Entrails",
@@ -2050,7 +2158,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A slimy length of something's insides."
   },
   {
     "id": "Eyescream",
@@ -2068,7 +2177,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Crispy cool and creamy."
   },
   {
     "id": "Feathers",
@@ -2088,6 +2198,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A small pile of feathers.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2108,6 +2219,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "High quality wood for fine carpentry.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Fine wood"
@@ -2130,6 +2242,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Plant it to grow a fir tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2149,6 +2262,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A tasty whitemeat fish.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2168,6 +2282,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A freshwater fish that needs a lot of seasoning.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2192,7 +2307,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A tasty side of smoked fish."
   },
   {
     "id": "FishRaw",
@@ -2213,6 +2329,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A good catch.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2231,7 +2348,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Bread and fish, what more to wish?"
   },
   {
     "id": "FishingBait",
@@ -2250,6 +2368,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Common dvergr fishing bait. Fishing rod sold separately.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2270,6 +2389,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Standard issue dvergr fishing rod.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2288,7 +2408,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Made for tearing and rending."
   },
   {
     "id": "FistFenrirClaw",
@@ -2306,7 +2427,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "If claws work for wolves, why not for a viking?"
   },
   {
     "id": "Flax",
@@ -2325,6 +2447,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Unspun fibers from a flax plant.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2345,6 +2468,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Can be shaped into sharp blades.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2363,7 +2487,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This mysterious organ keeps a perfect temperature."
   },
   {
     "id": "GoblinTotem",
@@ -2381,7 +2506,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Channels the ancient power of Yagluth."
   },
   {
     "id": "GreydwarfEye",
@@ -2407,7 +2533,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The milky eyeball of a Greydwarf."
   },
   {
     "id": "Guck",
@@ -2427,7 +2554,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "It smells like fermented fish."
   },
   {
     "id": "Hammer",
@@ -2446,7 +2574,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "With this to your hand, you can raise high halls and mighty fortifications."
   },
   {
     "id": "HardAntler",
@@ -2464,7 +2593,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A piece of very hard antlers."
   },
   {
     "id": "HelmetBerserkerHood",
@@ -2482,7 +2612,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Let the primal rage of a mighty bear consume you."
   },
   {
     "id": "HelmetBronze",
@@ -2500,7 +2631,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This will help to keep your brains inside your skull."
   },
   {
     "id": "HelmetDrake",
@@ -2518,7 +2650,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "An elaborate and finely-crafted helm."
   },
   {
     "id": "HelmetIron",
@@ -2536,7 +2669,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A helm of polished iron, fit for a hero."
   },
   {
     "id": "HelmetLeather",
@@ -2554,7 +2688,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A hood of toughened leather."
   },
   {
     "id": "HelmetLox",
@@ -2572,7 +2707,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "See the world like a lox might."
   },
   {
     "id": "HelmetPadded",
@@ -2590,7 +2726,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A snug fit, finely made."
   },
   {
     "id": "HelmetRoot",
@@ -2608,7 +2745,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Your head fits perfectly inside this knot of roots and bark."
   },
   {
     "id": "HelmetTrollLeather",
@@ -2626,7 +2764,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Trollskin is hard to work but makes exceptional armour."
   },
   {
     "id": "Hoe",
@@ -2645,7 +2784,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A farmer's tool for working the earth."
   },
   {
     "id": "Honey",
@@ -2666,6 +2806,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Sweet and tasty.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2684,7 +2825,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A bar of pure iron ready to be worked."
   },
   {
     "id": "IronNails",
@@ -2704,7 +2846,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needed for advanced construction projects."
   },
   {
     "id": "IronScrap",
@@ -2727,6 +2870,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "It's old and rusty but can be smelted and used again.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2745,7 +2889,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A darkling blade. Strong and sharp."
   },
   {
     "id": "KnifeButcher",
@@ -2763,7 +2908,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A butcher's knife designed specifically for slaughtering tamed animals."
   },
   {
     "id": "KnifeCopper",
@@ -2781,7 +2927,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A glittering copper knife."
   },
   {
     "id": "KnifeFlint",
@@ -2799,7 +2946,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Sharpened flint. A reliable tool."
   },
   {
     "id": "KnifeSilver",
@@ -2817,7 +2965,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A savage piece of pain."
   },
   {
     "id": "LeatherScraps",
@@ -2836,7 +2985,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A small pile of leather scraps."
   },
   {
     "id": "LinenThread",
@@ -2854,7 +3004,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A fine linen thread made out of a strong flax filament."
   },
   {
     "id": "LoxMeat",
@@ -2874,7 +3025,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A raw slab of marbled meat."
   },
   {
     "id": "LoxPelt",
@@ -2894,7 +3046,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A heavy pelt of thick, musty fur."
   },
   {
     "id": "LoxPie",
@@ -2912,7 +3065,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Break the crust to release a cloud of fragrant steam. Delicious!"
   },
   {
     "id": "LoxPieUncooked",
@@ -2932,7 +3086,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
   },
   {
     "id": "MaceBronze",
@@ -2950,7 +3105,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A headache on a stick."
   },
   {
     "id": "MaceIron",
@@ -2968,7 +3124,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A fist-sized lump of iron on a wooden shaft."
   },
   {
     "id": "MaceNeedle",
@@ -2986,7 +3143,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A deadly weapon, bristling with fiendish spikes."
   },
   {
     "id": "MaceSilver",
@@ -3004,7 +3162,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The dead fear silver. Remind them why."
   },
   {
     "id": "MeadBaseFrostResist",
@@ -3024,7 +3183,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "MeadBaseHealthMedium",
@@ -3044,7 +3204,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "MeadBaseHealthMinor",
@@ -3064,7 +3225,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "MeadBasePoisonResist",
@@ -3084,7 +3246,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "MeadBaseStaminaMedium",
@@ -3104,7 +3267,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "MeadBaseStaminaMinor",
@@ -3124,7 +3288,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "MeadBaseTasty",
@@ -3144,7 +3309,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
   },
   {
     "id": "MeadFrostResist",
@@ -3162,7 +3328,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Protects against the cold."
   },
   {
     "id": "MeadHealthMedium",
@@ -3180,7 +3347,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Restores health."
   },
   {
     "id": "MeadHealthMinor",
@@ -3198,7 +3366,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Restores health."
   },
   {
     "id": "MeadPoisonResist",
@@ -3216,7 +3385,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Fortifies you against poison."
   },
   {
     "id": "MeadStaminaMedium",
@@ -3234,7 +3404,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Restores stamina."
   },
   {
     "id": "MeadStaminaMinor",
@@ -3252,7 +3423,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Restores stamina."
   },
   {
     "id": "MeadTasty",
@@ -3270,7 +3442,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The nectar of the Gods, divine mead."
   },
   {
     "id": "MinceMeatSauce",
@@ -3288,7 +3461,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Chunks of goodness in a thick gravy."
   },
   {
     "id": "Mushroom",
@@ -3309,6 +3483,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Bounty of the forest.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3330,6 +3505,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "An energetic glowing mushroom.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3350,7 +3526,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Inedible when raw, but proves to be quite a tasty snack if cooked."
   },
   {
     "id": "NeckTailGrilled",
@@ -3372,7 +3549,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This savoury, charcoal-grilled meat has a slight aroma of seaweed and grass."
   },
   {
     "id": "Needle",
@@ -3395,6 +3573,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "The pointy end of a Deathsquito.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3414,6 +3593,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Dark volcanic glass.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3435,6 +3615,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A crunchy and spicy taste.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3453,7 +3634,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Deliciously rich."
   },
   {
     "id": "Ooze",
@@ -3477,7 +3659,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Rotten and putrid-smelling. Why do you want this?"
   },
   {
     "id": "PickaxeAntler",
@@ -3495,7 +3678,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This tool is hard enough to crack even the most stubborn rocks."
   },
   {
     "id": "PickaxeBronze",
@@ -3513,7 +3697,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A good bronze pick. Can break very hard rocks."
   },
   {
     "id": "PickaxeIron",
@@ -3532,7 +3717,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A sturdy tool of hardened iron."
   },
   {
     "id": "PickaxeStone",
@@ -3551,6 +3737,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A rock-breaker made of stone.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3570,6 +3757,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Plant it to grow a pine tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3593,6 +3781,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
+    "description": "Allows the consumer to quickly evacuate any misplaced meal and start anew.",
     "aliases": [
       "Puke berries",
       "Pukeberry"
@@ -3614,7 +3803,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Tender meat cooked for hours upon hours, until it practically falls apart."
   },
   {
     "id": "QueensJam",
@@ -3632,7 +3822,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "That classic tasty blend of raspberries and blueberries."
   },
   {
     "id": "Raspberry",
@@ -3653,6 +3844,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Sweet and delicious.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3705,6 +3897,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Sticky tree resin which insulates well. If put to the flame it burns slow and steady.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3723,7 +3916,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "An old root from an ancient tree stump. It feels both flexible and durable at the same time."
   },
   {
     "id": "RoundLog",
@@ -3744,6 +3938,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Perfect for building log cabins.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Core wood",
@@ -3768,7 +3963,9 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Valuable",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "A valuable you can sell to the trader Haldor."
   },
   {
     "id": "Sausages",
@@ -3786,7 +3983,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Links of savory, smoked meat."
   },
   {
     "id": "ShieldBanded",
@@ -3804,7 +4002,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Banded with hoops of iron, a true warrior's companion."
   },
   {
     "id": "ShieldBlackmetal",
@@ -3822,7 +4021,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Fashioned from the strongest metal, able to turn even the deadliest blades."
   },
   {
     "id": "ShieldBlackmetalTower",
@@ -3840,7 +4040,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A tower shield of gleaming dark metal."
   },
   {
     "id": "ShieldBoneTower",
@@ -3858,7 +4059,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The bones of dead warriors make for a good protection."
   },
   {
     "id": "ShieldBronzeBuckler",
@@ -3876,7 +4078,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A shield of burnished bronze, good to turn a blade or two."
   },
   {
     "id": "ShieldIronBuckler",
@@ -3894,7 +4097,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Its lightness and curved center makes it excellent for deflecting attacks."
   },
   {
     "id": "ShieldIronTower",
@@ -3912,7 +4116,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A tall shield of strong iron."
   },
   {
     "id": "ShieldRoots",
@@ -3930,7 +4135,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Malleable roots have been twisted into a surprisingly sturdy shield."
   },
   {
     "id": "ShieldSilver",
@@ -3948,7 +4154,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A shield of radiant silver."
   },
   {
     "id": "ShieldWood",
@@ -3966,7 +4173,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A simple wooden shield."
   },
   {
     "id": "ShieldWoodTower",
@@ -3984,7 +4192,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A rough but heavy wooden shield."
   },
   {
     "id": "ShocklateSmoothie",
@@ -4002,7 +4211,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Wakes you up!"
   },
   {
     "id": "Silver",
@@ -4020,7 +4230,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A bar of pure silver ready to be worked."
   },
   {
     "id": "SilverOre",
@@ -4039,6 +4250,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Unrefined silver. Needs to be refined in a smelter.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4057,7 +4269,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A mighty hammer, worthy of a champion."
   },
   {
     "id": "SledgeStagbreaker",
@@ -4075,7 +4288,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A weapon worthy of the Gods! If you get hit with this, you'll know it..."
   },
   {
     "id": "SpearBronze",
@@ -4093,7 +4307,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A sturdy spear with a head of burnished bronze."
   },
   {
     "id": "SpearElderbark",
@@ -4111,7 +4326,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Despite its gnarled look, this spear is strong and perfectly balanced."
   },
   {
     "id": "SpearFlint",
@@ -4129,7 +4345,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "If your eye marks a thing for death, let your arm send the messenger."
   },
   {
     "id": "SpearWolfFang",
@@ -4147,7 +4364,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Even in death, the wolf's tooth aches for flesh."
   },
   {
     "id": "Stone",
@@ -4179,6 +4397,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "It's a rock.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4204,6 +4423,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "It throbs with inner heat.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4222,7 +4442,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A thing of death and beauty. It catches the light with a greenish glow."
   },
   {
     "id": "SwordBronze",
@@ -4240,7 +4461,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Blood-drinker. A thirsty friend."
   },
   {
     "id": "SwordIron",
@@ -4258,7 +4480,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The straight line between life and death runs along the edge of this blade."
   },
   {
     "id": "SwordSilver",
@@ -4276,7 +4499,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Purest of metals, nothing unclean can abide its touch."
   },
   {
     "id": "Tar",
@@ -4295,6 +4519,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A sticky lump of tar.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4316,6 +4541,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Beautiful but prickly.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4334,7 +4560,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A bar of pure tin ready to be worked."
   },
   {
     "id": "TinOre",
@@ -4353,6 +4580,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Unrefined tin. Needs to be refined in a smelter.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4372,7 +4600,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "It brings light and warmth, drives back the darkness."
   },
   {
     "id": "TrollHide",
@@ -4390,7 +4619,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A thick and sturdy hide. This is why trolls are so hard to kill."
   },
   {
     "id": "TrophyAbomination",
@@ -4408,7 +4638,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A tangled mess of roots and bark."
   },
   {
     "id": "TrophyBjorn",
@@ -4428,7 +4659,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "That stare is still frightening..."
   },
   {
     "id": "TrophyBlob",
@@ -4450,7 +4682,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A smelly lump of sticky matter."
   },
   {
     "id": "TrophyBoar",
@@ -4468,7 +4701,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This boar head would make for a nice decoration in any house."
   },
   {
     "id": "TrophyBonemass",
@@ -4486,7 +4720,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Bones and viscous goo, held together by some unseen force.\r\n\r\nOffer it to the Sacrificial Stones."
   },
   {
     "id": "TrophyDeathsquito",
@@ -4504,7 +4739,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "You don't like touching this thing even when it's dead."
   },
   {
     "id": "TrophyDeer",
@@ -4523,7 +4759,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A fine specimen, but you'll need to kill more than deer to enter Valhalla."
   },
   {
     "id": "TrophyDragonQueen",
@@ -4541,7 +4778,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The head of a dragon, majestic even in the rigor of death.\r\n\r\nOffer it to the Sacrificial Stones."
   },
   {
     "id": "TrophyDraugr",
@@ -4559,7 +4797,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Bind up the mouth if it starts to whisper in the night..."
   },
   {
     "id": "TrophyDraugrElite",
@@ -4579,7 +4818,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The dead stare of the glowing red eyes sends a shiver through your bones."
   },
   {
     "id": "TrophyEikthyr",
@@ -4597,7 +4837,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This severed head oozes power.\r\n\r\nOffer it to the Sacrificial Stones."
   },
   {
     "id": "TrophyFenring",
@@ -4615,7 +4856,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A strange, elongated paw, its claws razor sharp."
   },
   {
     "id": "TrophyFrostTroll",
@@ -4633,7 +4875,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The leathery skin bears the faded tracery of ancient symbols."
   },
   {
     "id": "TrophyGoblin",
@@ -4656,6 +4899,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
+    "description": "Loose folds of greenish skin gathered in around a pair of dark and hateful eyes.",
     "aliases": [
       "Goblin trophy"
     ]
@@ -4677,6 +4921,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
+    "description": "The huge grizzled head is as heavy as a boulder.",
     "aliases": [
       "Goblin brute trophy",
       "Fuling brute trophy"
@@ -4698,7 +4943,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The crownless head of a dead king.\r\n\r\nOffer it to the Sacrificial Stones."
   },
   {
     "id": "TrophyGoblinShaman",
@@ -4717,6 +4963,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
+    "description": "It shall cast no more spells against you.",
     "aliases": [
       "Goblin shaman trophy"
     ]
@@ -4737,7 +4984,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The mossy, severed head of a Greydwarf."
   },
   {
     "id": "TrophyGreydwarfBrute",
@@ -4755,7 +5003,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "It took seven blows to hack this gnarled head from its body."
   },
   {
     "id": "TrophyGreydwarfShaman",
@@ -4773,7 +5022,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "It may try to come back so be sure to prune any new shoots..."
   },
   {
     "id": "TrophyHatchling",
@@ -4793,7 +5043,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Still cold to the touch."
   },
   {
     "id": "TrophyLeech",
@@ -4811,7 +5062,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Although slimy, the skin is beautifully patterned in red and black."
   },
   {
     "id": "TrophyLox",
@@ -4829,7 +5081,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A giant beast's head, thatched with thick fur."
   },
   {
     "id": "TrophyNeck",
@@ -4847,7 +5100,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The beady eyes and razor sharp teeth belie the ostensibly calm nature of this small lizard."
   },
   {
     "id": "TrophySGolem",
@@ -4865,7 +5119,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This crystalline rock formation would make for an impressive floor decoration."
   },
   {
     "id": "TrophySkeleton",
@@ -4885,7 +5140,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The expressionless grin of this skull reminds you of the inevitability of death."
   },
   {
     "id": "TrophyTheElder",
@@ -4903,7 +5159,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This severed head oozes power.\r\n\r\nOffer it to the Sacrificial Stones."
   },
   {
     "id": "TrophyWolf",
@@ -4923,7 +5180,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Frozen in death, the hair matted with blood and a silent howl lodged in its throat."
   },
   {
     "id": "TrophyWraith",
@@ -4941,7 +5199,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The shed skin of a wraith, a flowing robe only visible by moonlight."
   },
   {
     "id": "TrophyWrithan",
@@ -4959,7 +5218,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Tough dead, it should probably be handled delicately."
   },
   {
     "id": "Turnip",
@@ -4980,6 +5240,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A dense vegetable, rich with nutrition.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -4999,6 +5260,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "These can be planted in cultivated soil.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -5017,7 +5279,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Nutritious and restorative."
   },
   {
     "id": "Wishbone",
@@ -5035,7 +5298,9 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "This ancient bone remembers the location of many forgotten things.",
+    "use": "Equip it to find buried treasure: it reacts when treasure is close. Dig up the spot with a pickaxe or hoe."
   },
   {
     "id": "WitheredBone",
@@ -5054,6 +5319,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A giant bone, knotted like old wood.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -5075,6 +5341,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "It is hard and sharp like iron.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Wolf claw"
@@ -5100,7 +5367,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Still sharp."
   },
   {
     "id": "WolfHairBundle",
@@ -5121,6 +5389,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "A bundle of thick, rough hair. It has a strong smell.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Wolf hair"
@@ -5142,7 +5411,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "Chewy and full of flavor."
   },
   {
     "id": "WolfMeat",
@@ -5180,7 +5450,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "A pelt of shaggy fur."
   },
   {
     "id": "Wood",
@@ -5212,6 +5483,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "Good, strong wood to build with.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -5232,7 +5504,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The gnarled body parts of a strange, offputting creature."
   },
   {
     "id": "YagluthDrop",
@@ -5250,7 +5523,8 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "description": "The remains of Yagluth, a twisted spirit torn between this world and the next."
   },
   {
     "id": "YmirRemains",
@@ -5269,6 +5543,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
+    "description": "The earthy remains of the giant Ymir.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Ymir remains"
