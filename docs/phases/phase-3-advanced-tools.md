@@ -74,7 +74,7 @@ Acceptance:
 - **Upgrade calculator:** total cost from quality 1 to a target, station level needed. Built (`/upgrades`, `src/features/upgrades/`): pick an item and a from and to level; shows total cost, each step with its station level, and weapon damage at both levels. Linked from item pages.
 - **Compare:** two to four weapons or armor pieces side by side. Built (`/compare`, `src/features/compare/`): ids and upgrade level in the URL, same numbers as the rankings, best value per row marked; linked from gear pages.
 - **Next-steps advisor:** from checklist progress, suggest what to do or craft next, with
-  the reason shown (which unmet requirement it unlocks).
+  the reason shown (which unmet requirement it unlocks). Built (`/next`, `src/features/advisor/`): "You can craft now" (every ingredient collected, crafted or in the inventory), "Worth collecting" (the only missing ingredient of something craftable, never an item that can itself be crafted) and the next boss with summon items held and missing. A zone opens once the boss before it is down (its trophy ticked). A randomized test over 40 profiles on the real data checks no suggestion has an unmet prerequisite.
 
 Acceptance:
 - [ ] Optimizer output verified against a brute-force test on a small dataset
