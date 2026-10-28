@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
+import { iconUrl } from '../../data/icons';
 import { lookup } from '../../data/lookup';
 import { initialState } from '../../state/model';
 import { appStore } from '../../state/store';
@@ -24,6 +25,13 @@ describe('building page', () => {
     renderPage();
     expect(rows()).toHaveLength(lookup.allPieces().length);
     expect(screen.getAllByText('Bed').length).toBeGreaterThan(0);
+  });
+
+  it('shows each piece with its icon where one was exported', () => {
+    renderPage();
+    const withIcon = lookup.allPieces().filter((p) => iconUrl(p.id));
+    expect(withIcon.length).toBeGreaterThan(0);
+    expect(screen.getAllByRole('table')[0]!.querySelectorAll('tbody td:first-child img')).toHaveLength(withIcon.length);
   });
 
   it('filters by category and by name, and says so when nothing matches', async () => {

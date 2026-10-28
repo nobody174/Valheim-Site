@@ -140,6 +140,9 @@ function Shell() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <p className={styles.dataInfoMobile}>
+        Data: {gameData.meta.gameVersion}, reviewed {gameData.meta.lastReviewed}
+      </p>
       {paletteOpen && <CommandPalette onClose={() => setPaletteOpen(false)} />}
     </div>
   );

@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router';
+import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
 import styles from '../items/Items.module.css';
@@ -95,7 +96,12 @@ export function BuildingPage() {
             <tbody>
               {rows.map((p) => (
                 <tr key={p.id}>
-                  <td>{p.name}</td>
+                  <td>
+                    <span className={styles.nameCell}>
+                      <EntityIcon id={p.id} size={28} />
+                      {p.name}
+                    </span>
+                  </td>
                   <td>{p.category}</td>
                   <td>
                     <ul className={styles.inline}>

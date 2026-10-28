@@ -199,6 +199,7 @@ Single versioned key per profile, e.g. `vcs:v1:profile:<profileId>`:
   `extract_raw.py` whenever new entries are added. Game art is (c) Iron Gate and not licensed for
   reuse (see the README disclaimer). Nothing else from the game's art or audio is committed.
 - Creatures and bosses have no icon of their own; they show their trophy's icon.
+- The service worker updates itself (`registerType: 'autoUpdate'`), and `build.assetsInlineLimit: 0` keeps icons as separate cached files instead of base64 inside the JS (entry chunk 2,082 kB to 789 kB, 1,148 to 175 kB gzip, 2026-10-28).
 - Icons are loaded through `src/data/icons.ts` (a Vite glob, no manifest) and drawn by
   `<EntityIcon>`. An id with no exported icon falls back to the generated category glyph, so a
   missing file never breaks a page. Icons are precached with the app so pages work offline.
