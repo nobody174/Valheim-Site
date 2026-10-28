@@ -9,6 +9,7 @@ import { ProgressionPage } from '../features/progression/ProgressionPage';
 import { PlannerPage } from '../features/planner/PlannerPage';
 import { UpgradePage } from '../features/upgrades/UpgradePage';
 import { ComparePage } from '../features/compare/ComparePage';
+import { FoodOptimizerPage } from '../features/food/FoodOptimizerPage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
@@ -53,6 +54,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/bosses': <BossesPage />,
   '/creatures': <CreaturesPage />,
   '/food': <FoodPage />,
+  '/optimizer': <FoodOptimizerPage />,
   '/rankings': <RankingsPage />,
   '/planner': <PlannerPage />,
   '/upgrades': <UpgradePage />,

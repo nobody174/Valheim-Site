@@ -573,9 +573,14 @@ def main(raw, out, build_id, reviewed=None):
                 trophies.append({'item': iid, 'creature': owner, **prov})
             else:
                 warnings.append(f'trophy {iid}: no owning creature found among dropped trophies')
-        if iid in food_ids and s['m_food'] > 0:
-            foods.append({'item': iid, 'kind': 'food', 'health': s['m_food'], 'stamina': s['m_foodStamina'],
-                          'durationSec': s['m_foodBurnTime'], **prov})
+        if iid in food_ids and (s['m_food'] > 0 or s.get('m_foodEitr', 0) > 0):
+            entry = {'item': iid, 'kind': 'food', 'health': s['m_food'], 'stamina': s['m_foodStamina'],
+                     'durationSec': s['m_foodBurnTime'], **prov}
+            if s.get('m_foodEitr', 0) > 0:
+                entry['eitr'] = s['m_foodEitr']
+            if s.get('m_foodRegen', 0) > 0:
+                entry['regen'] = s['m_foodRegen']
+            foods.append(entry)
         elif cat == 'mead':
             se, tip = tooltip_of(s)
             if se:

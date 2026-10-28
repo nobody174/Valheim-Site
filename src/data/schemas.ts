@@ -229,6 +229,8 @@ export const FoodSchema = z
     health: z.number().nonnegative().optional(),
     stamina: z.number().nonnegative().optional(),
     eitr: z.number().nonnegative().optional(),
+    /** Health regenerated per tick while the food lasts. */
+    regen: z.number().nonnegative().optional(),
     durationSec: z.number().positive().optional(),
     effect: z.string().optional(),
     ...provenance,
