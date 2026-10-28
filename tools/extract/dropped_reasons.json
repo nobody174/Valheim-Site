@@ -15,5 +15,8 @@
   "Recipe_Tankard": "Cosmetic item, not part of progression; not added.",
   "Recipe_TankardAnniversary": "Cosmetic or event item, not part of progression; not added.",
   "Recipe_HelmetCelebration": "Cosmetic or event item, not part of progression; not added.",
-  "Recipe_SwordWood": "Not added yet: no biome config lists it and the reason it was left out was not recorded."
+  "Recipe_SwordWood": "Not added yet: no biome config lists it and the reason it was left out was not recorded.",
+  "Recipe_SaddleAsksvin": "A saddle: taming and riding are not modelled yet.",
+  "Recipe_FishingBaitAshlands": "Fishing is not modelled yet; bait variants are left out until fish and the fishing rod are.",
+  "Recipe_TurretBoltFlametal": "Turret ammunition; turrets are not modelled yet and which zone they belong to was not checked."
 }

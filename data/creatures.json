@@ -1979,5 +1979,508 @@
       "spirit": "immune"
     },
     "note": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
+  },
+  {
+    "id": "Charred_Archer",
+    "name": "Charred Marksman",
+    "biome": "ashlands",
+    "health": 200.0,
+    "drops": [
+      {
+        "item": "CharredBone",
+        "min": 1,
+        "max": 3
+      },
+      {
+        "item": "TrophyCharredArcher",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "charred_bow",
+        "damage": {
+          "pierce": 90.0
+        }
+      },
+      {
+        "id": "charred_bow_volley",
+        "damage": {
+          "pierce": 60.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "pierce": "resistant",
+      "fire": "very resistant",
+      "poison": "immune",
+      "spirit": "weak"
+    }
+  },
+  {
+    "id": "Charred_Melee",
+    "name": "Charred Warrior",
+    "biome": "ashlands",
+    "health": 600.0,
+    "drops": [
+      {
+        "item": "CharredBone",
+        "min": 1,
+        "max": 3
+      },
+      {
+        "item": "TrophyCharredMelee",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "charred_greatsword_swing",
+        "damage": {
+          "slash": 150.0
+        }
+      },
+      {
+        "id": "charred_greatsword_thrust",
+        "damage": {
+          "pierce": 160.0
+        }
+      },
+      {
+        "id": "charred_greatsword_feint",
+        "damage": {
+          "slash": 130.0
+        }
+      },
+      {
+        "id": "charred_greatsword_thrustfeint",
+        "damage": {
+          "pierce": 160.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "pierce": "resistant",
+      "fire": "very resistant",
+      "poison": "immune",
+      "spirit": "weak"
+    }
+  },
+  {
+    "id": "Charred_Mage",
+    "name": "Charred Warlock",
+    "biome": "ashlands",
+    "health": 600.0,
+    "drops": [
+      {
+        "item": "CharredBone",
+        "min": 1,
+        "max": 3
+      },
+      {
+        "item": "TrophyCharredMage",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "charred_magestaff_fire",
+        "damage": {
+          "pierce": 100.0
+        }
+      },
+      {
+        "id": "charred_magestaff_summon",
+        "damage": {
+          "pierce": 100.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "pierce": "resistant",
+      "fire": "very resistant",
+      "frost": "resistant",
+      "poison": "immune",
+      "spirit": "weak"
+    },
+    "note": "Health, drops and attacks come from the game files. The game files do not list where it spawns; the Ashlands zone is from guides and not checked."
+  },
+  {
+    "id": "Charred_Twitcher",
+    "name": "Charred Twitcher",
+    "biome": "ashlands",
+    "health": 220.0,
+    "drops": [
+      {
+        "item": "CharredBone",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "attacks": [
+      {
+        "id": "charred_twitcher_scratch_l",
+        "damage": {
+          "slash": 100.0
+        }
+      },
+      {
+        "id": "charred_twitcher_scratch_r",
+        "damage": {
+          "slash": 100.0
+        }
+      },
+      {
+        "id": "charred_twitcher_throw",
+        "damage": {
+          "pierce": 75.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "pierce": "resistant",
+      "fire": "very resistant",
+      "poison": "immune",
+      "spirit": "weak"
+    }
+  },
+  {
+    "id": "Asksvin",
+    "name": "Asksvin",
+    "biome": "ashlands",
+    "health": 800.0,
+    "drops": [
+      {
+        "item": "TrophyAsksvin",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "AskBladder",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "AskHide",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "item": "AsksvinMeat",
+        "min": 2,
+        "max": 3
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Asksvin_Bite",
+        "damage": {
+          "blunt": 75.0,
+          "slash": 75.0
+        }
+      },
+      {
+        "id": "Asksvin_Headbutt",
+        "damage": {
+          "blunt": 120.0
+        }
+      },
+      {
+        "id": "Asksvin_Pounce",
+        "damage": {
+          "blunt": 150.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "resistant",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Morgen_NonSleeping",
+    "name": "Morgen",
+    "biome": "ashlands",
+    "health": 1600.0,
+    "drops": [
+      {
+        "item": "MorgenSinew",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "MorgenHeart",
+        "min": 1,
+        "max": 1,
+        "chance": 0.8
+      },
+      {
+        "item": "TrophyMorgen",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Morgen_bite",
+        "damage": {
+          "pierce": 160.0
+        }
+      },
+      {
+        "id": "Morgen_roll_right",
+        "damage": {
+          "blunt": 50.0
+        }
+      },
+      {
+        "id": "Morgen_roll_left",
+        "damage": {
+          "blunt": 50.0
+        }
+      },
+      {
+        "id": "Morgen_swipe_1",
+        "damage": {
+          "pierce": 160.0
+        }
+      },
+      {
+        "id": "Morgen_swipe_2",
+        "damage": {
+          "pierce": 160.0
+        }
+      },
+      {
+        "id": "Morgen_swipe_3",
+        "damage": {
+          "pierce": 160.0
+        }
+      },
+      {
+        "id": "Morgen_swipe_4",
+        "damage": {
+          "pierce": 160.0
+        }
+      },
+      {
+        "id": "Morgen_bodyslam",
+        "damage": {
+          "blunt": 160.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "slash": "resistant",
+      "pierce": "resistant",
+      "fire": "resistant",
+      "lightning": "weak"
+    }
+  },
+  {
+    "id": "BlobLava",
+    "name": "Lava Blob",
+    "biome": "ashlands",
+    "health": 300.0,
+    "drops": [
+      {
+        "item": "ProustitePowder",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "SulfurStone",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "TrophyBlob_Lava",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "weak",
+      "pierce": "resistant",
+      "fire": "immune",
+      "frost": "weak",
+      "lightning": "weak",
+      "poison": "resistant"
+    }
+  },
+  {
+    "id": "FallenValkyrie",
+    "name": "Fallen Valkyrie",
+    "biome": "ashlands",
+    "health": 1500.0,
+    "drops": [
+      {
+        "item": "CelestialFeather",
+        "min": 2,
+        "max": 4
+      },
+      {
+        "item": "TrophyFallenValkyrie",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "fallenvalkyrie_claws",
+        "damage": {
+          "slash": 105.0,
+          "pierce": 55.0
+        }
+      },
+      {
+        "id": "fallenvalkyrie_spin",
+        "damage": {
+          "blunt": 80.0,
+          "pierce": 140.0
+        }
+      },
+      {
+        "id": "fallenvalkyrie_taunt",
+        "damage": {
+          "slash": 20.0,
+          "pierce": 20.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "resistant",
+      "poison": "immune",
+      "spirit": "weak"
+    }
+  },
+  {
+    "id": "Volture",
+    "name": "Volture",
+    "biome": "ashlands",
+    "health": 200.0,
+    "drops": [
+      {
+        "item": "TrophyVolture",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      },
+      {
+        "item": "VoltureMeat",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "Feathers",
+        "min": 2,
+        "max": 3,
+        "chance": 0.5
+      },
+      {
+        "item": "VoltureEgg",
+        "min": 1,
+        "max": 2,
+        "chance": 0.5
+      }
+    ],
+    "attacks": [
+      {
+        "id": "volture_talons",
+        "damage": {
+          "slash": 110.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "frost": "weak",
+      "poison": "immune"
+    }
+  },
+  {
+    "id": "BonemawSerpent",
+    "name": "Bonemaw",
+    "biome": "ashlands",
+    "health": 1100.0,
+    "drops": [
+      {
+        "item": "TrophyBonemawSerpent",
+        "min": 1,
+        "max": 1,
+        "chance": 0.33
+      },
+      {
+        "item": "BoneMawSerpentMeat",
+        "min": 6,
+        "max": 8
+      },
+      {
+        "item": "BonemawSerpentTooth",
+        "min": 8,
+        "max": 10
+      }
+    ],
+    "attacks": [
+      {
+        "id": "BonemawSerpent_spit",
+        "damage": {
+          "blunt": 40.0,
+          "fire": 20.0,
+          "poison": 20.0
+        }
+      },
+      {
+        "id": "BonemawSerpent_taunt",
+        "damage": {
+          "slash": 40.0,
+          "poison": 5.0
+        }
+      },
+      {
+        "id": "BonemawSerpent_bite",
+        "damage": {
+          "slash": 140.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "immune",
+      "frost": "weak",
+      "poison": "resistant",
+      "spirit": "immune"
+    }
   }
 ]

@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
+import { lookup } from '../../data/lookup';
 import { initialState } from '../../state/model';
 import { appStore } from '../../state/store';
 import { RankingsPage } from './RankingsPage';
@@ -67,7 +68,9 @@ describe('armor rankings page', () => {
     const user = userEvent.setup();
     renderArmor();
     await user.selectOptions(screen.getByLabelText('Slot'), 'cape');
-    expect(pieces().every((p) => /Cape/.test(p ?? ''))).toBe(true);
+    const capes = new Set(lookup.allArmor().filter((a) => a.slot === 'cape').map((a) => lookup.item(a.item)?.name));
+    expect(pieces().length).toBeGreaterThan(0);
+    expect(pieces().every((p) => capes.has(p ?? ''))).toBe(true);
     await user.type(screen.getByLabelText('Name'), 'zzzz');
     expect(screen.getByText(/No armor matches/)).toBeTruthy();
   });

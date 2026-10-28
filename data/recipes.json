@@ -435,6 +435,60 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.BombSiege",
+    "kind": "craft",
+    "output": {
+      "item": "BombSiege",
+      "qty": 5
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "AskHide",
+        "qty": 2
+      },
+      {
+        "item": "SulfurStone",
+        "qty": 2
+      },
+      {
+        "item": "ProustitePowder",
+        "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.BombSmoke",
+    "kind": "craft",
+    "output": {
+      "item": "BombSmoke",
+      "qty": 10
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "MushroomSmokePuff",
+        "qty": 1
+      },
+      {
+        "item": "AskBladder",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.TrinketBronzeStamina",
     "kind": "craft",
     "output": {
@@ -1228,6 +1282,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.PiquantPie",
+    "kind": "craft",
+    "output": {
+      "item": "PiquantPieUncooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Vineberry",
+        "qty": 2
+      },
+      {
+        "item": "AsksvinMeat",
+        "qty": 2
+      },
+      {
+        "item": "BarleyFlour",
+        "qty": 4
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.MaceIron",
     "kind": "craft",
     "output": {
@@ -1998,6 +2081,87 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArmorMediumLegs_Ashlands",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorAshlandsMediumlegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "LinenThread",
+        "qty": 15
+      },
+      {
+        "item": "LoxPelt",
+        "qty": 4
+      },
+      {
+        "item": "AskHide",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 25
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 6
+          },
+          {
+            "item": "AskHide",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 35
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 8
+          },
+          {
+            "item": "AskHide",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 45
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 10
+          },
+          {
+            "item": "AskHide",
+            "qty": 25
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorTrollLeatherChest",
     "kind": "craft",
     "output": {
@@ -2572,6 +2736,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.BombLava",
+    "kind": "craft",
+    "output": {
+      "item": "BombLava",
+      "qty": 5
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "AskHide",
+        "qty": 1
+      },
+      {
+        "item": "AskBladder",
+        "qty": 1
+      },
+      {
+        "item": "ProustitePowder",
+        "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorBronzeLegs",
     "kind": "craft",
     "output": {
@@ -2890,6 +3083,75 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.HelmetMage_Ashlands",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetMage_Ashlands",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_magetable",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LinenThread",
+        "qty": 16
+      },
+      {
+        "item": "Eitr",
+        "qty": 15
+      },
+      {
+        "item": "AskHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 24
+          },
+          {
+            "item": "Eitr",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 32
+          },
+          {
+            "item": "Eitr",
+            "qty": 25
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 40
+          },
+          {
+            "item": "Eitr",
+            "qty": 30
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.FishWraps",
     "kind": "craft",
     "output": {
@@ -2992,6 +3254,70 @@
           {
             "item": "Eitr",
             "qty": 10
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldFlametal",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldFlametal",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Blackwood",
+        "qty": 10
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 8
+      },
+      {
+        "item": "AskHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 20
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 12
+          },
+          {
+            "item": "AskHide",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 30
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 16
+          },
+          {
+            "item": "AskHide",
+            "qty": 6
           }
         ]
       }
@@ -3760,6 +4086,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.BoltCharred",
+    "kind": "craft",
+    "output": {
+      "item": "BoltCharred",
+      "qty": 20
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "CharredBone",
+        "qty": 2
+      },
+      {
+        "item": "Blackwood",
+        "qty": 8
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.AtgeirBlackmetal",
     "kind": "craft",
     "output": {
@@ -4490,6 +4845,87 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.StaffClusterbomb",
+    "kind": "craft",
+    "output": {
+      "item": "StaffClusterbomb",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_magetable",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "CharredBone",
+        "qty": 15
+      },
+      {
+        "item": "Blackwood",
+        "qty": 5
+      },
+      {
+        "item": "ProustitePowder",
+        "qty": 8
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "CharredBone",
+            "qty": 20
+          },
+          {
+            "item": "Blackwood",
+            "qty": 8
+          },
+          {
+            "item": "ProustitePowder",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "CharredBone",
+            "qty": 25
+          },
+          {
+            "item": "Blackwood",
+            "qty": 11
+          },
+          {
+            "item": "ProustitePowder",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "CharredBone",
+            "qty": 30
+          },
+          {
+            "item": "Blackwood",
+            "qty": 14
+          },
+          {
+            "item": "ProustitePowder",
+            "qty": 11
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorWolfLegs",
     "kind": "craft",
     "output": {
@@ -4664,6 +5100,87 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorMediumChest_Ashlands",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorAshlandsMediumChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "LinenThread",
+        "qty": 15
+      },
+      {
+        "item": "LoxPelt",
+        "qty": 4
+      },
+      {
+        "item": "AskHide",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 25
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 6
+          },
+          {
+            "item": "AskHide",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 35
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 8
+          },
+          {
+            "item": "AskHide",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 45
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 10
+          },
+          {
+            "item": "AskHide",
+            "qty": 25
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -5198,6 +5715,59 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.CapeAsksvin",
+    "kind": "craft",
+    "output": {
+      "item": "CapeAsksvin",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_magetable",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "AskHide",
+        "qty": 6
+      },
+      {
+        "item": "MorgenSinew",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "AskHide",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "AskHide",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "AskHide",
+            "qty": 12
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SparklingShroomshake",
     "kind": "craft",
     "output": {
@@ -5252,6 +5822,91 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorMageChest_Ashlands",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorMageChest_Ashlands",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_magetable",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LinenThread",
+        "qty": 20
+      },
+      {
+        "item": "Eitr",
+        "qty": 20
+      },
+      {
+        "item": "AskHide",
+        "qty": 10
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 30
+          },
+          {
+            "item": "Eitr",
+            "qty": 25
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 40
+          },
+          {
+            "item": "Eitr",
+            "qty": 30
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 50
+          },
+          {
+            "item": "Eitr",
+            "qty": 35
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 11
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -5354,6 +6009,27 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.Bell",
+    "kind": "craft",
+    "output": {
+      "item": "Bell",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BellFragment",
+        "qty": 3
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -5679,6 +6355,87 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.SwordSlayer",
+    "kind": "craft",
+    "output": {
+      "item": "THSwordSlayer",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FlametalNew",
+        "qty": 30
+      },
+      {
+        "item": "AskHide",
+        "qty": 5
+      },
+      {
+        "item": "MorgenSinew",
+        "qty": 3
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 45
+          },
+          {
+            "item": "AskHide",
+            "qty": 10
+          },
+          {
+            "item": "MorgenSinew",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 60
+          },
+          {
+            "item": "AskHide",
+            "qty": 15
+          },
+          {
+            "item": "MorgenSinew",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 75
+          },
+          {
+            "item": "AskHide",
+            "qty": 20
+          },
+          {
+            "item": "MorgenSinew",
+            "qty": 12
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.BowSpineSnap",
     "kind": "craft",
     "output": {
@@ -5904,6 +6661,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.FierySvinstew",
+    "kind": "craft",
+    "output": {
+      "item": "FierySvinstew",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 5
+    },
+    "inputs": [
+      {
+        "item": "AsksvinMeat",
+        "qty": 1
+      },
+      {
+        "item": "Vineberry",
+        "qty": 2
+      },
+      {
+        "item": "MushroomSmokePuff",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.HelmetBronze",
     "kind": "craft",
     "output": {
@@ -6113,6 +6899,103 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.CrossbowRipper",
+    "kind": "craft",
+    "output": {
+      "item": "CrossbowRipper",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Blackwood",
+        "qty": 10
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 8
+      },
+      {
+        "item": "MorgenSinew",
+        "qty": 2
+      },
+      {
+        "item": "BonemawSerpentTooth",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 15
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 12
+          },
+          {
+            "item": "MorgenSinew",
+            "qty": 3
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 20
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 16
+          },
+          {
+            "item": "MorgenSinew",
+            "qty": 4
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 12
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 25
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 20
+          },
+          {
+            "item": "MorgenSinew",
+            "qty": 5
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 16
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -6364,6 +7247,143 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ShieldFlametalTower",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldFlametalTower",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Blackwood",
+        "qty": 15
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 10
+      },
+      {
+        "item": "AskHide",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 25
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 14
+          },
+          {
+            "item": "AskHide",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 35
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 18
+          },
+          {
+            "item": "AskHide",
+            "qty": 9
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorFlametalChest",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorFlametalChest",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FlametalNew",
+        "qty": 20
+      },
+      {
+        "item": "AskHide",
+        "qty": 3
+      },
+      {
+        "item": "CharredBone",
+        "qty": 5
+      },
+      {
+        "item": "MorgenHeart",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 30
+          },
+          {
+            "item": "AskHide",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 40
+          },
+          {
+            "item": "AskHide",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 50
+          },
+          {
+            "item": "AskHide",
+            "qty": 6
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.FistBjornClaw",
     "kind": "craft",
     "output": {
@@ -6425,6 +7445,75 @@
           {
             "item": "LeatherScraps",
             "qty": 10
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.AxeBerzerkr",
+    "kind": "craft",
+    "output": {
+      "item": "AxeBerzerkr",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "CharredBone",
+        "qty": 15
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 24
+      },
+      {
+        "item": "AskHide",
+        "qty": 3
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 39
+          },
+          {
+            "item": "AskHide",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 54
+          },
+          {
+            "item": "AskHide",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 69
+          },
+          {
+            "item": "AskHide",
+            "qty": 6
           }
         ]
       }
@@ -6814,6 +7903,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArrowCharred",
+    "kind": "craft",
+    "output": {
+      "item": "ArrowCharred",
+      "qty": 20
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "CharredBone",
+        "qty": 4
+      },
+      {
+        "item": "Feathers",
+        "qty": 2
+      },
+      {
+        "item": "Blackwood",
+        "qty": 8
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorFenrirChest",
     "kind": "craft",
     "output": {
@@ -7020,6 +8138,103 @@
           {
             "item": "Eitr",
             "qty": 16
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.SpearSplitner",
+    "kind": "craft",
+    "output": {
+      "item": "SpearSplitner",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Blackwood",
+        "qty": 10
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 6
+      },
+      {
+        "item": "AskHide",
+        "qty": 2
+      },
+      {
+        "item": "BonemawSerpentTooth",
+        "qty": 3
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 15
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 12
+          },
+          {
+            "item": "AskHide",
+            "qty": 3
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 20
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 18
+          },
+          {
+            "item": "AskHide",
+            "qty": 4
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 9
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 25
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 24
+          },
+          {
+            "item": "AskHide",
+            "qty": 5
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 12
           }
         ]
       }
@@ -8981,6 +10196,132 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.RoastedCrustPie",
+    "kind": "craft",
+    "output": {
+      "item": "RoastedCrustPieUncooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Vineberry",
+        "qty": 2
+      },
+      {
+        "item": "VoltureEgg",
+        "qty": 1
+      },
+      {
+        "item": "BarleyFlour",
+        "qty": 4
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.MaceEldner",
+    "kind": "craft",
+    "output": {
+      "item": "MaceEldner",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "CharredBone",
+        "qty": 10
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 15
+      },
+      {
+        "item": "SulfurStone",
+        "qty": 5
+      },
+      {
+        "item": "AskHide",
+        "qty": 3
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "CharredBone",
+            "qty": 15
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 23
+          },
+          {
+            "item": "SulfurStone",
+            "qty": 8
+          },
+          {
+            "item": "AskHide",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "CharredBone",
+            "qty": 20
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 31
+          },
+          {
+            "item": "SulfurStone",
+            "qty": 11
+          },
+          {
+            "item": "AskHide",
+            "qty": 7
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "CharredBone",
+            "qty": 25
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 39
+          },
+          {
+            "item": "SulfurStone",
+            "qty": 14
+          },
+          {
+            "item": "AskHide",
+            "qty": 9
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SledgeIron",
     "kind": "craft",
     "output": {
@@ -9212,6 +10553,39 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.TrinketFlametalStaminaHealth",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketFlametalStaminaHealth",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FlametalNew",
+        "qty": 5
+      },
+      {
+        "item": "SulfurStone",
+        "qty": 5
+      },
+      {
+        "item": "MoltenCore",
+        "qty": 1
+      },
+      {
+        "item": "TrophyMorgen",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.KnifeButcher",
     "kind": "craft",
     "output": {
@@ -9368,6 +10742,132 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.MashedMeat",
+    "kind": "craft",
+    "output": {
+      "item": "MashedMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 6
+    },
+    "inputs": [
+      {
+        "item": "AsksvinMeat",
+        "qty": 1
+      },
+      {
+        "item": "VoltureMeat",
+        "qty": 1
+      },
+      {
+        "item": "Fiddleheadfern",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.BowAshlands",
+    "kind": "craft",
+    "output": {
+      "item": "BowAshlands",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "Blackwood",
+        "qty": 10
+      },
+      {
+        "item": "CharredBone",
+        "qty": 16
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 5
+      },
+      {
+        "item": "BonemawSerpentTooth",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 15
+          },
+          {
+            "item": "CharredBone",
+            "qty": 26
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 10
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 20
+          },
+          {
+            "item": "CharredBone",
+            "qty": 36
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 15
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Blackwood",
+            "qty": 25
+          },
+          {
+            "item": "CharredBone",
+            "qty": 46
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 20
+          },
+          {
+            "item": "BonemawSerpentTooth",
+            "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ShieldBoneTower",
     "kind": "craft",
     "output": {
@@ -9416,6 +10916,75 @@
           {
             "item": "BoneFragments",
             "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.SwordNiedhogg",
+    "kind": "craft",
+    "output": {
+      "item": "SwordNiedhogg",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "CharredBone",
+        "qty": 3
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 12
+      },
+      {
+        "item": "AskHide",
+        "qty": 2
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 22
+          },
+          {
+            "item": "AskHide",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 32
+          },
+          {
+            "item": "AskHide",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 42
+          },
+          {
+            "item": "AskHide",
+            "qty": 8
           }
         ]
       }
@@ -9509,6 +11078,91 @@
           {
             "item": "BoneFragments",
             "qty": 30
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HelmetFlametal",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetFlametal",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FlametalNew",
+        "qty": 16
+      },
+      {
+        "item": "AskHide",
+        "qty": 3
+      },
+      {
+        "item": "CharredBone",
+        "qty": 2
+      },
+      {
+        "item": "Eitr",
+        "qty": 4
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 24
+          },
+          {
+            "item": "AskHide",
+            "qty": 4
+          },
+          {
+            "item": "Eitr",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 32
+          },
+          {
+            "item": "AskHide",
+            "qty": 5
+          },
+          {
+            "item": "Eitr",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 40
+          },
+          {
+            "item": "AskHide",
+            "qty": 6
+          },
+          {
+            "item": "Eitr",
+            "qty": 10
           }
         ]
       }
@@ -9762,6 +11416,75 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.ArmorMageLegs_Ashlands",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorMageLegs_Ashlands",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_magetable",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "LinenThread",
+        "qty": 20
+      },
+      {
+        "item": "Eitr",
+        "qty": 20
+      },
+      {
+        "item": "AskHide",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 30
+          },
+          {
+            "item": "Eitr",
+            "qty": 25
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 40
+          },
+          {
+            "item": "Eitr",
+            "qty": 30
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 50
+          },
+          {
+            "item": "Eitr",
+            "qty": 35
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorPaddedGreaves",
     "kind": "craft",
     "output": {
@@ -9852,6 +11575,132 @@
       }
     ],
     "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.CapeAsh",
+    "kind": "craft",
+    "output": {
+      "item": "CapeAsh",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "AskHide",
+        "qty": 6
+      },
+      {
+        "item": "MorgenSinew",
+        "qty": 2
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "AskHide",
+            "qty": 8
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "AskHide",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "AskHide",
+            "qty": 12
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ArmorFlametalLegs",
+    "kind": "craft",
+    "output": {
+      "item": "ArmorFlametalLegs",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FlametalNew",
+        "qty": 20
+      },
+      {
+        "item": "AskHide",
+        "qty": 3
+      },
+      {
+        "item": "CharredBone",
+        "qty": 5
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 30
+          },
+          {
+            "item": "AskHide",
+            "qty": 4
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 40
+          },
+          {
+            "item": "AskHide",
+            "qty": 5
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "FlametalNew",
+            "qty": 50
+          },
+          {
+            "item": "AskHide",
+            "qty": 6
+          }
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -10117,6 +11966,87 @@
           {
             "item": "LinenThread",
             "qty": 20
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HelmetMedium_Ashlands",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetAshlandsMediumHood",
+      "qty": 1
+    },
+    "station": {
+      "id": "blackforge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "LinenThread",
+        "qty": 15
+      },
+      {
+        "item": "LoxPelt",
+        "qty": 4
+      },
+      {
+        "item": "AskHide",
+        "qty": 10
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 25
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 6
+          },
+          {
+            "item": "AskHide",
+            "qty": 15
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 35
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 8
+          },
+          {
+            "item": "AskHide",
+            "qty": 20
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "LinenThread",
+            "qty": 45
+          },
+          {
+            "item": "LoxPelt",
+            "qty": 10
+          },
+          {
+            "item": "AskHide",
+            "qty": 25
           }
         ]
       }
@@ -10952,6 +12882,72 @@
     "timeSec": 25.0
   },
   {
+    "id": "conv.piece_cookingstation_iron.VoltureMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedVoltureMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "VoltureMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.AsksvinMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedAsksvinMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "AsksvinMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.BoneMawSerpentMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedBoneMawSerpentMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BoneMawSerpentMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 60.0
+  },
+  {
     "id": "conv.piece_cookingstation_iron.BjornMeat",
     "kind": "cook",
     "output": {
@@ -10972,6 +12968,27 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "timeSec": 25.0
+  },
+  {
+    "id": "conv.blastfurnace.FlametalOreNew",
+    "kind": "smelt",
+    "output": {
+      "item": "FlametalNew",
+      "qty": 1
+    },
+    "station": {
+      "id": "blastfurnace",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FlametalOreNew",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "conv.blastfurnace.BlackMetalScrap",
@@ -11096,6 +13113,50 @@
     "inputs": [
       {
         "item": "MagicallyStuffedShroomUncooked",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 50.0
+  },
+  {
+    "id": "conv.piece_oven.RoastedCrustPieUncooked",
+    "kind": "smelt",
+    "output": {
+      "item": "RoastedCrustPie",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_oven",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "RoastedCrustPieUncooked",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 50.0
+  },
+  {
+    "id": "conv.piece_oven.PiquantPieUncooked",
+    "kind": "smelt",
+    "output": {
+      "item": "PiquantPie",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_oven",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "PiquantPieUncooked",
         "qty": 1
       }
     ],

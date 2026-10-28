@@ -81,6 +81,44 @@
     "description": "Held against your ear, you hear tiny whisperings within..."
   },
   {
+    "id": "ArmorAshlandsMediumChest",
+    "name": "Breastplate of Ask",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorMediumChest_Ashlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The first man in Midgard knew how to guard his most vital organs, perhaps with a breastplate just like this one."
+  },
+  {
+    "id": "ArmorAshlandsMediumlegs",
+    "name": "Trousers of Ask",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorMediumLegs_Ashlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The first man to roam Midgard preferred to tread lightly. Wearers of these trousers could learn a thing or two from him."
+  },
+  {
     "id": "ArmorBerserkerChest",
     "name": "Patterns of the Bear",
     "category": "armor",
@@ -233,6 +271,44 @@
     "description": "The legs of the beast were lean and strong, so that it could leap great strides."
   },
   {
+    "id": "ArmorFlametalChest",
+    "name": "Flametal Breastplate",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorFlametalChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This fusion of mysterious flametal and charred bones serves as a protective layer more resilient than anything you could ever find in Midgard."
+  },
+  {
+    "id": "ArmorFlametalLegs",
+    "name": "Flametal Greaves",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorFlametalLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Heavy trousers insulate against the heat, while solid greaves keep your shins safe from low blows."
+  },
+  {
     "id": "ArmorIronChest",
     "name": "Iron Scale Mail",
     "category": "armor",
@@ -366,6 +442,25 @@
     "description": "These artfully layered robes have spells and charms sewn into every seam and fold."
   },
   {
+    "id": "ArmorMageChest_Ashlands",
+    "name": "Robes of Embla",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorMageChest_Ashlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Imbued with the power of the first sorceress, these robes will grant a boon to any who seeks to wield the ancient art of magic."
+  },
+  {
     "id": "ArmorMageLegs",
     "name": "Eitr-weave Trousers",
     "category": "armor",
@@ -383,6 +478,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "The trousers worn by mages are always especially tight. Discomfort fuels the focus that is needed for magic..."
+  },
+  {
+    "id": "ArmorMageLegs_Ashlands",
+    "name": "Trousers of Embla",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorMageLegs_Ashlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Whether or not the first sorceress actually wore trousers exactly like these, we can never know."
   },
   {
     "id": "ArmorPaddedCuirass",
@@ -613,6 +727,25 @@
     "description": "Heavy and pointy, this one's gonna hurt."
   },
   {
+    "id": "ArrowCharred",
+    "name": "Charred Arrow",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowCharred"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This arrow has been whittled into shape from a charred femur, and it's as hard as any metal."
+  },
+  {
     "id": "ArrowFire",
     "name": "Fire Arrow",
     "category": "weapon",
@@ -784,6 +917,69 @@
     "description": "An arrow of sharpened wood."
   },
   {
+    "id": "AskBladder",
+    "name": "Asksvin Bladder",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Basalt Bomb, crafting Smoke Bomb. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Asksvin"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "An acidic smell still lingers. Prominently."
+  },
+  {
+    "id": "AskHide",
+    "name": "Asksvin Hide",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 25,
+    "hoardNote": "Used for crafting Ashen Cape, crafting Asksvin Cloak, crafting Basalt Bomb and 32 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Asksvin"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This sturdy leather is thick, and still warm to the touch."
+  },
+  {
+    "id": "AsksvinMeat",
+    "name": "Asksvin Tail",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 2,
+    "hoardNote": "Used for crafting Cooked Asksvin Tail, crafting Fiery Svinstew, crafting Mashed Meat and 1 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Asksvin"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Smells a bit smokey, even when raw."
+  },
+  {
     "id": "AtgeirBlackmetal",
     "name": "Black Metal Atgeir",
     "category": "weapon",
@@ -858,6 +1054,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Blood-drinker, skull-cracker, death-bringer."
+  },
+  {
+    "id": "AxeBerzerkr",
+    "name": "Berserkir Axes",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeBerzerkr"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Let your rage take over and face the slaughter."
   },
   {
     "id": "AxeBlackMetal",
@@ -1062,7 +1277,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Blood Pudding, crafting Bread Dough, crafting Fish Wraps and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Blood Pudding, crafting Bread Dough, crafting Fish Wraps and 3 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1207,6 +1422,46 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Plant them to grow a beech tree.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Bell",
+    "name": "Bell",
+    "category": "tool",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 9,
+    "tags": [],
+    "hoard": "must_keep",
+    "hoardNote": "Needed to summon Fader.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Bell"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "For whom does the bell toll?"
+  },
+  {
+    "id": "BellFragment",
+    "name": "Bell Fragment",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 9,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Found in the Ashlands (guides; the game files list no creature drop)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "This ancient fragment appears to be a piece of a broken bell...",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -1454,6 +1709,26 @@
     "description": "A perfect balance of sweetness and acidity."
   },
   {
+    "id": "Blackwood",
+    "name": "Ashwood",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Chop the burnt trees of the Ashlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Wood hardened by fire and ash.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "BloodPudding",
     "name": "Blood Pudding",
     "category": "food",
@@ -1592,6 +1867,25 @@
     "description": "A heavy and solid bolt."
   },
   {
+    "id": "BoltCharred",
+    "name": "Charred Bolt",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BoltCharred"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A sturdy bone from a forearm, shaped into a deadly bolt."
+  },
+  {
     "id": "BoltIron",
     "name": "Iron Bolt",
     "category": "weapon",
@@ -1630,6 +1924,25 @@
     "description": "Handle with care."
   },
   {
+    "id": "BombLava",
+    "name": "Basalt Bomb",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BombLava"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "With enough heat, it solidifies upon explosion."
+  },
+  {
     "id": "BombOoze",
     "name": "Ooze Bomb",
     "category": "weapon",
@@ -1647,6 +1960,44 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "The stench is unbearable..."
+  },
+  {
+    "id": "BombSiege",
+    "name": "Explosive Payload",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BombSiege"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Best used with a catapult. Handle with care."
+  },
+  {
+    "id": "BombSmoke",
+    "name": "Smoke Bomb",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BombSmoke"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Everyone knows you can't breathe in the smoke."
   },
   {
     "id": "BoneFragments",
@@ -1669,6 +2020,48 @@
     "description": "A pile of shattered bones."
   },
   {
+    "id": "BoneMawSerpentMeat",
+    "name": "Bonemaw Meat",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 10.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Cooked Bonemaw Meat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "BonemawSerpent"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A tasty, white fish meat. Very good for your bones!"
+  },
+  {
+    "id": "BonemawSerpentTooth",
+    "name": "Bonemaw Tooth",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 20,
+    "hoardNote": "Used for crafting Ash Fang, crafting Ripper, crafting Splitnir and 3 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "BonemawSerpent"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This has caused the death of many a brave sailor."
+  },
+  {
     "id": "Bow",
     "name": "Crude Bow",
     "category": "weapon",
@@ -1686,6 +2079,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A crude but functional bow."
+  },
+  {
+    "id": "BowAshlands",
+    "name": "Ash Fang",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BowAshlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Risen again from the ashes, this bow holds unyielding strength."
   },
   {
     "id": "BowDraugrFang",
@@ -1869,6 +2281,44 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "When you crack open their shells, the meat within is tender and succulent."
+  },
+  {
+    "id": "CapeAsh",
+    "name": "Ashen Cape",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeAsh"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Thin metal threads are woven into this cape to create an intricate pattern, like a destiny woven by the Norns themselves."
+  },
+  {
+    "id": "CapeAsksvin",
+    "name": "Asksvin Cloak",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeAsksvin"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This thick cape catches the wind, not unlike the sail of a ship."
   },
   {
     "id": "CapeDeerHide",
@@ -2063,6 +2513,27 @@
     "description": "A warm tasty soup made of mostly carrots."
   },
   {
+    "id": "CelestialFeather",
+    "name": "Celestial Feather",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 8,
+    "hoardNote": "Used for building Feathery Wreath. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "FallenValkyrie"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The only remnant of the fallen valkyrie's former self."
+  },
+  {
     "id": "CeramicPlate",
     "name": "Ceramic Plate",
     "category": "material",
@@ -2101,6 +2572,37 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A link of iron chain."
+  },
+  {
+    "id": "CharredBone",
+    "name": "Charred Bone",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Charred_Archer"
+      },
+      {
+        "type": "drop",
+        "creature": "Charred_Melee"
+      },
+      {
+        "type": "drop",
+        "creature": "Charred_Mage"
+      },
+      {
+        "type": "drop",
+        "creature": "Charred_Twitcher"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Followed by the distinct smell of burnt meat."
   },
   {
     "id": "Chitin",
@@ -2257,6 +2759,25 @@
     "description": "Valuable"
   },
   {
+    "id": "CookedAsksvinMeat",
+    "name": "Cooked Asksvin Tail",
+    "category": "food",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.AsksvinMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This meat has a potent and mature flavour, but is very tasty when grilled right."
+  },
+  {
     "id": "CookedBjornMeat",
     "name": "Cooked Bear Meat",
     "category": "food",
@@ -2280,6 +2801,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Tastes like victory."
+  },
+  {
+    "id": "CookedBoneMawSerpentMeat",
+    "name": "Cooked Bonemaw Meat",
+    "category": "food",
+    "biome": "ashlands",
+    "weight": 10.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.BoneMawSerpentMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The boiling sea did nothing to this meat, but grilling it over the fire has given it a delightful crisp."
   },
   {
     "id": "CookedBugMeat",
@@ -2391,6 +2931,25 @@
     "description": "An earthly taste."
   },
   {
+    "id": "CookedVoltureMeat",
+    "name": "Cooked Volture Meat",
+    "category": "food",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.VoltureMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A chewy and somewhat dry meat. Some seasoning would probably make it taste better, but it'll fill your stomach regardless."
+  },
+  {
     "id": "CookedWolfMeat",
     "name": "Cooked Wolf Meat",
     "category": "food",
@@ -2470,6 +3029,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A slow but powerful weapon."
+  },
+  {
+    "id": "CrossbowRipper",
+    "name": "Ripper",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CrossbowRipper"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Rips your foes apart, simple as that."
   },
   {
     "id": "CryptKey",
@@ -2759,6 +3337,25 @@
     "description": "Crispy cool and creamy."
   },
   {
+    "id": "FaderDrop",
+    "name": "Kindled Ribs",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Fader"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The smouldering remains of a patriarch."
+  },
+  {
     "id": "Feathers",
     "name": "Feathers",
     "category": "material",
@@ -2772,6 +3369,10 @@
       {
         "type": "other",
         "note": "Shoot birds. Guides list crows and seagulls; the game files list Hen, Chicken and Volture as drops. Also found in chests."
+      },
+      {
+        "type": "drop",
+        "creature": "Volture"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2789,7 +3390,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 3,
-    "hoardNote": "Used for crafting Marinated Greens, crafting Scorching Medley, crafting Sizzling Berry Broth and 1 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Marinated Greens, crafting Mashed Meat, crafting Scorching Medley and 2 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -2800,6 +3401,25 @@
     "verified": "unverified",
     "description": "Veggies with a twist!",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FierySvinstew",
+    "name": "Fiery Svinstew",
+    "category": "food",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.FierySvinstew"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This musty stew is a necessity on every adventurer's menu."
   },
   {
     "id": "FineWood",
@@ -3031,6 +3651,45 @@
     "description": "If claws work for wolves, why not for a viking?"
   },
   {
+    "id": "FlametalNew",
+    "name": "Flametal",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 12.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.blastfurnace.FlametalOreNew"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "According to legend, this metal was used by the gods themselves to craft powerful weapons."
+  },
+  {
+    "id": "FlametalOreNew",
+    "name": "Flametal Ore",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 10.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine flametal veins in the Ashlands (guides). Smelt it into Flametal."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Warm to the touch with glowing veins of strange metal. Needs to be refined in a blast furnace.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Flax",
     "name": "Flax",
     "category": "material",
@@ -3239,6 +3898,25 @@
     "description": "The meat of a hare is scant but toothsome."
   },
   {
+    "id": "HelmetAshlandsMediumHood",
+    "name": "Hood of Ask",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetMedium_Ashlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "As the first man of Midgard, Ask knew it was important to not draw too much attention to himself."
+  },
+  {
     "id": "HelmetBerserkerHood",
     "name": "Headdress of the Bear",
     "category": "armor",
@@ -3334,6 +4012,25 @@
     "description": "The eyes of the beast were wise and knowing, so that it could measure the strength of a warrior in one glance."
   },
   {
+    "id": "HelmetFlametal",
+    "name": "Flametal Helmet",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetFlametal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "While you're wearing this helmet, your enemies will think twice before trying to bite your head off."
+  },
+  {
     "id": "HelmetIron",
     "name": "Iron Helmet",
     "category": "armor",
@@ -3408,6 +4105,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Sorcery shows itself in the eyes, so most mages wear cowls to disguise their occult pursuits."
+  },
+  {
+    "id": "HelmetMage_Ashlands",
+    "name": "Hood of Embla",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetMage_Ashlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Even the first sorceress valued the mystique of covering one's face. It is rumoured that honouring her this way will make your spells even more powerful."
   },
   {
     "id": "HelmetPadded",
@@ -3795,7 +4511,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 23,
-    "hoardNote": "Used for crafting Bracelets of the Brave, crafting Lox Cape, crafting Lox Fur Hood and 6 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Bracelets of the Brave, crafting Breastplate of Ask, crafting Hood of Ask and 12 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -3864,6 +4580,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A headache on a stick."
+  },
+  {
+    "id": "MaceEldner",
+    "name": "Flametal Mace",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MaceEldner"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Dense yet spiked flametal, perfect for bashing enemy faces in."
   },
   {
     "id": "MaceIron",
@@ -4001,6 +4736,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "It's spicy, it's chewy, it's sweet… This mad dish tickles your tongue as well as your mind."
+  },
+  {
+    "id": "MashedMeat",
+    "name": "Mashed Meat",
+    "category": "food",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MashedMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Leftover meat can actually be pretty tasty if you just mash it right!"
   },
   {
     "id": "MeadBaseEitrLingering",
@@ -4643,6 +5397,68 @@
     "description": "Ready for the oven."
   },
   {
+    "id": "MoltenCore",
+    "name": "Molten Core",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Found in the Ashlands (guides; the game files list no creature drop)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Potent energy swirls within, ready to be unleashed.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "MorgenHeart",
+    "name": "Morgen Heart",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Flametal Breastplate. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Morgen_NonSleeping"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It's hard to believe it has ever beaten."
+  },
+  {
+    "id": "MorgenSinew",
+    "name": "Morgen Sinew",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 12,
+    "hoardNote": "Used for crafting Ashen Cape, crafting Asksvin Cloak, crafting Ripper and 3 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Morgen_NonSleeping"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Chewy."
+  },
+  {
     "id": "Mushroom",
     "name": "Mushroom",
     "category": "material",
@@ -4718,7 +5534,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Marinated Greens, crafting Mead Base: Lingering Health, crafting Sparkling Shroomshake. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Fiery Svinstew, crafting Marinated Greens, crafting Mead Base: Lingering Health and 2 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -5025,6 +5841,67 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "PiquantPie",
+    "name": "Piquant Pie",
+    "category": "food",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.PiquantPieUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It takes some time and effort to make this pie, but the taste is well worth it."
+  },
+  {
+    "id": "PiquantPieUncooked",
+    "name": "Uncooked Piquant Pie",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Piquant Pie. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.PiquantPie"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
+  },
+  {
+    "id": "ProustitePowder",
+    "name": "Proustite Powder",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 11,
+    "hoardNote": "Used for crafting Basalt Bomb, crafting Explosive Payload, crafting Staff of Fracturing and 1 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "BlobLava"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This unstable powder packs great potential."
+  },
+  {
     "id": "Pukeberries",
     "name": "Bukeperries",
     "category": "material",
@@ -5184,6 +6061,46 @@
     "verified": "unverified",
     "description": "Sticky tree resin which insulates well. If put to the flame it burns slow and steady.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "RoastedCrustPie",
+    "name": "Roasted Crust Pie",
+    "category": "food",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.RoastedCrustPieUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This dessert keeps you going all day long."
+  },
+  {
+    "id": "RoastedCrustPieUncooked",
+    "name": "Uncooked Roasted Crust Pie",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Roasted Crust Pie. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.RoastedCrustPie"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
   },
   {
     "id": "Root",
@@ -5546,6 +6463,44 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A protective force within is ready to be unleashed."
+  },
+  {
+    "id": "ShieldFlametal",
+    "name": "Flametal Shield",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldFlametal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The shield is and always will be a viking's most important weapon."
+  },
+  {
+    "id": "ShieldFlametalTower",
+    "name": "Flametal Tower Shield",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldFlametalTower"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The best defence is a great defence."
   },
   {
     "id": "ShieldIronBuckler",
@@ -5950,6 +6905,25 @@
     "description": "If your eye marks a thing for death, let your arm send the messenger."
   },
   {
+    "id": "SpearSplitner",
+    "name": "Splitnir",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpearSplitner"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Split your enemies' hearts in two."
+  },
+  {
     "id": "SpearWolfFang",
     "name": "Fang Spear",
     "category": "weapon",
@@ -5986,6 +6960,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Sugary honey perfectly balanced with tangy fronds and tart berries."
+  },
+  {
+    "id": "StaffClusterbomb",
+    "name": "Staff of Fracturing",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.StaffClusterbomb"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Only those with patience and focus will be able to harness the true power of this staff."
   },
   {
     "id": "StaffFireball",
@@ -6097,6 +7090,25 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "SulfurStone",
+    "name": "Sulfur",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "BlobLava"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Smells like rotten eggs."
+  },
+  {
     "id": "SurtlingCore",
     "name": "Surtling Core",
     "category": "material",
@@ -6199,6 +7211,25 @@
     "description": "The faint glow seems to slice through the mist."
   },
   {
+    "id": "SwordNiedhogg",
+    "name": "Nidhögg",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 0.800000011920929,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordNiedhogg"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Named after the evil dragon that dwells by the roots of the world tree, this sword heralds doom for those who cross its path."
+  },
+  {
     "id": "SwordSilver",
     "name": "Silver Sword",
     "category": "weapon",
@@ -6235,6 +7266,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "As deadly as it is shiny, and it's very shiny."
+  },
+  {
+    "id": "THSwordSlayer",
+    "name": "Slayer",
+    "category": "weapon",
+    "biome": "ashlands",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordSlayer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This mighty blade thirsts for the blood of foes."
   },
   {
     "id": "Tar",
@@ -6433,6 +7483,25 @@
     "description": "If you listen carefully, you can hear the faint echoes of lost souls..."
   },
   {
+    "id": "TrinketFlametalStaminaHealth",
+    "name": "Brimstone",
+    "category": "trinket",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketFlametalStaminaHealth"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It's warm, as if filled with a lifesblood of its own."
+  },
+  {
     "id": "TrinketIronHealth",
     "name": "Iron Brooch",
     "category": "trinket",
@@ -6547,6 +7616,27 @@
     "description": "A tangled mess of roots and bark."
   },
   {
+    "id": "TrophyAsksvin",
+    "name": "Asksvin Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for building Feathery Wreath. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Asksvin"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Don't let yourself be fooled by the friendly smile, for it could easily bite your arm off."
+  },
+  {
     "id": "TrophyBjorn",
     "name": "Bear Trophy",
     "category": "trophy",
@@ -6591,6 +7681,25 @@
     "description": "A smelly lump of sticky matter."
   },
   {
+    "id": "TrophyBlob_Lava",
+    "name": "Lava Blob Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "BlobLava"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It's probably dead, right?"
+  },
+  {
     "id": "TrophyBoar",
     "name": "Boar Trophy",
     "category": "trophy",
@@ -6627,6 +7736,82 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Bones and viscous goo, held together by some unseen force.\r\n\r\nOffer it to the Sacrificial Stones."
+  },
+  {
+    "id": "TrophyBonemawSerpent",
+    "name": "Bonemaw Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 25.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "BonemawSerpent"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A skull made up of dense bone, as dangerous as it is protective."
+  },
+  {
+    "id": "TrophyCharredArcher",
+    "name": "Marksman Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Charred_Archer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "These legs could hold infinite power."
+  },
+  {
+    "id": "TrophyCharredMage",
+    "name": "Warlock Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Charred_Mage"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A warm glow seems to almost emanate from within. Handle with care."
+  },
+  {
+    "id": "TrophyCharredMelee",
+    "name": "Warrior Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Charred_Melee"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Fractures line this skull, as if it has taken many hits over the years."
   },
   {
     "id": "TrophyCultist",
@@ -6800,6 +7985,44 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "This severed head oozes power.\r\n\r\nOffer it to the Sacrificial Stones."
+  },
+  {
+    "id": "TrophyFader",
+    "name": "Fader Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Fader"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The green dragon, corrupted beyond redemption.\r\n\r\nOffer him to the sacrificial stones."
+  },
+  {
+    "id": "TrophyFallenValkyrie",
+    "name": "Fallen Valkyrie Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "FallenValkyrie"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Though she is dead, she yearns for the blood to flow."
   },
   {
     "id": "TrophyFenring",
@@ -7096,6 +8319,27 @@
     "description": "A giant beast's head, thatched with thick fur."
   },
   {
+    "id": "TrophyMorgen",
+    "name": "Morgen Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Brimstone. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Morgen_NonSleeping"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The waking nightmare has met its end."
+  },
+  {
     "id": "TrophyNeck",
     "name": "Neck Trophy",
     "category": "trophy",
@@ -7254,6 +8498,25 @@
     "description": "It's a conversation piece..."
   },
   {
+    "id": "TrophyVolture",
+    "name": "Volture Trophy",
+    "category": "trophy",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Volture"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It's like a vulture, but it thrives in volcanic climates."
+  },
+  {
     "id": "TrophyWolf",
     "name": "Wolf Trophy",
     "category": "trophy",
@@ -7383,7 +8646,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Mead Base: Lingering Eitr, crafting Mead Base: Lingering Health, crafting Sizzling Berry Broth and 2 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Fiery Svinstew, crafting Mead Base: Lingering Eitr, crafting Mead Base: Lingering Health and 5 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -7394,6 +8657,48 @@
     "verified": "unverified",
     "description": "These juicy berries are both sour and sweet.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "VoltureEgg",
+    "name": "Volture Egg",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Uncooked Roasted Crust Pie. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Volture"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Warm to the touch, and full of protein."
+  },
+  {
+    "id": "VoltureMeat",
+    "name": "Volture Meat",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Cooked Volture Meat, crafting Mashed Meat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Volture"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Given that this bird feasts on all kinds of things, you'd better cook its meat before you even think about eating it."
   },
   {
     "id": "Wishbone",

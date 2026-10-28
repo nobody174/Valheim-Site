@@ -1,0 +1,153 @@
+{
+  "id": "ashlands",
+  "name": "Ashlands",
+  "order": 7,
+  "materials": [
+    "CharredBone",
+    "Blackwood",
+    "FlametalOreNew",
+    "FlametalNew",
+    "MoltenCore",
+    "SulfurStone",
+    "AskHide",
+    "AskBladder",
+    "AsksvinMeat",
+    "MorgenHeart",
+    "MorgenSinew",
+    "ProustitePowder",
+    "FaderDrop",
+    "BellFragment",
+    "VoltureMeat",
+    "VoltureEgg",
+    "PiquantPieUncooked",
+    "RoastedCrustPieUncooked",
+    "BonemawSerpentTooth",
+    "BoneMawSerpentMeat",
+    "CelestialFeather"
+  ],
+  "tools": [
+    "Bell"
+  ],
+  "weapons": [
+    "SwordNiedhogg",
+    "AxeBerzerkr",
+    "THSwordSlayer",
+    "MaceEldner",
+    "SpearSplitner",
+    "BowAshlands",
+    "CrossbowRipper",
+    "StaffClusterbomb",
+    "ShieldFlametal",
+    "ShieldFlametalTower",
+    "ArrowCharred",
+    "BoltCharred",
+    "BombLava",
+    "BombSiege",
+    "BombSmoke"
+  ],
+  "armor": {
+    "ArmorFlametalChest": "chest",
+    "ArmorFlametalLegs": "legs",
+    "HelmetFlametal": "helmet",
+    "ArmorAshlandsMediumChest": "chest",
+    "ArmorAshlandsMediumlegs": "legs",
+    "HelmetAshlandsMediumHood": "helmet",
+    "ArmorMageChest_Ashlands": "chest",
+    "ArmorMageLegs_Ashlands": "legs",
+    "HelmetMage_Ashlands": "helmet",
+    "CapeAsh": "cape",
+    "CapeAsksvin": "cape"
+  },
+  "foods": [
+    "CookedAsksvinMeat",
+    "CookedVoltureMeat",
+    "FierySvinstew",
+    "MashedMeat",
+    "PiquantPie",
+    "RoastedCrustPie",
+    "CookedBoneMawSerpentMeat"
+  ],
+  "meads": [],
+  "trophies": [
+    "TrophyCharredArcher",
+    "TrophyCharredMelee",
+    "TrophyCharredMage",
+    "TrophyAsksvin",
+    "TrophyMorgen",
+    "TrophyFader",
+    "TrophyFallenValkyrie",
+    "TrophyBlob_Lava",
+    "TrophyVolture",
+    "TrophyBonemawSerpent"
+  ],
+  "trinkets": [
+    "TrinketFlametalStaminaHealth"
+  ],
+  "creatures": [
+    "Charred_Archer",
+    "Charred_Melee",
+    "Charred_Mage",
+    "Charred_Twitcher",
+    "Asksvin",
+    "Morgen_NonSleeping",
+    "BlobLava",
+    "FallenValkyrie",
+    "Volture",
+    "BonemawSerpent"
+  ],
+  "bosses": [
+    "Fader"
+  ],
+  "bossSummon": {
+    "Fader": [
+      [
+        "Bell",
+        1
+      ]
+    ]
+  },
+  "creatureNotes": {
+    "Charred_Mage": "Health, drops and attacks come from the game files. The game files do not list where it spawns; the Ashlands zone is from guides and not checked."
+  },
+  "gather": {
+    "FlametalOreNew": [
+      [
+        "gather",
+        "Mine flametal veins in the Ashlands (guides). Smelt it into Flametal."
+      ]
+    ],
+    "Blackwood": [
+      [
+        "gather",
+        "Chop the burnt trees of the Ashlands (guides)."
+      ]
+    ],
+    "MoltenCore": [
+      [
+        "gather",
+        "Found in the Ashlands (guides; the game files list no creature drop)."
+      ]
+    ],
+    "BellFragment": [
+      [
+        "gather",
+        "Found in the Ashlands (guides; the game files list no creature drop)."
+      ]
+    ]
+  },
+  "hoard": {
+    "keepSome": {},
+    "mustKeep": [
+      "FlametalNew",
+      "FlametalOreNew",
+      "Blackwood",
+      "CharredBone",
+      "MoltenCore",
+      "SulfurStone",
+      "BellFragment"
+    ]
+  },
+  "guide": {
+    "notes": []
+  }
+}
