@@ -21,6 +21,9 @@ export function ProgressionPage() {
 
   const guide = buildGuide(gameData, biome.id);
   const owned = (id: string) => profile.progress[id]?.collected === true;
+  const inGame = [...gameData.items, ...gameData.creatures, ...gameData.bosses].filter(
+    (e) => e.biome === biome.id && e.verified === 'in-game',
+  ).length;
   const mustKeepMissing = guide.mustKeep.filter((id) => !owned(id)).length;
 
   return (
@@ -54,6 +57,12 @@ export function ProgressionPage() {
       <h2 data-zone={biome.id}>
         <span className={styles.zoneTag}>{biome.name}</span>
       </h2>
+
+      <p className={styles.dimNote} role="note">
+        {inGame === 0
+          ? 'Not checked in game yet: everything in this zone is read from the game files and has not been seen in play.'
+          : `${inGame} entries here are seen in game; the rest is read from the game files.`}
+      </p>
 
       {biome.guide?.notes.length ? (
         <section className={styles.section}>
