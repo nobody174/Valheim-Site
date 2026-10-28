@@ -36,5 +36,9 @@ export default defineConfig({
       },
     }),
   ],
-  test: { include: ['src/**/*.test.ts', 'src/**/*.test.tsx', 'scripts/**/*.test.ts'] },
+  // Pages render the whole database in jsdom; CI runners are slower than a desktop.
+  test: {
+    include: ['src/**/*.test.ts', 'src/**/*.test.tsx', 'scripts/**/*.test.ts'],
+    testTimeout: 30_000,
+  },
 });
