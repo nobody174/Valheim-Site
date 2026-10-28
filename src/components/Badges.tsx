@@ -3,7 +3,7 @@ import styles from './Badges.module.css';
 
 const VERIFIED_LABEL: Record<Item['verified'], string> = {
   unverified: 'Unverified',
-  'cross-checked': 'Cross-checked',
+  'cross-checked': 'From game files',
   'in-game': 'Verified in game',
 };
 

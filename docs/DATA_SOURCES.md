@@ -45,7 +45,7 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 - Station levels are computed in code from the extensions and each recipe's minimum level (see ARCHITECTURE.md). Extensions that need items from biomes not added yet are kept as `laterExtensions` (name and the missing items) until those biomes are configured.
 - Where to get an item: drops come from the game files; gather, trader, found and other notes are written by hand from public guides and are `unverified`. Two items have no source at all: Carrot Seeds and Elder Bark (a test lists them as known gaps). Where Haldor sells the Fishing Rod and bait, and the prices, differ between guides.
 - Raw Fish is made from any one fish at a Preparation Table. The data model has no "any one of" recipes, so the builder reports it (`anyOneOfNotModelled` in `tools/extract/dropped_recipes.json`) instead of writing a wrong recipe.
-- Item `description` is the game's own text from the localisation files (270 of 273 items; the other three are raw meats). `use` ("What to do with it") is hand-written in `tools/extract/item_use.json`, shown as "guide, not checked in game": Swamp Key (opens Sunken Crypt doors), Wishbone (finds buried treasure), Ruby, Amber and Amber Pearl (sell to Haldor). A test fails if an item that nothing is made from has neither.
+- Item `description` is the game's own text from the localisation files (270 of 273 items; the other three are raw meats). `use` ("What to do with it") is hand-written in `tools/extract/item_use.json`, shown as "guide, not checked in game": Swamp Key (opens Sunken Crypt doors), Wishbone (finds silver), Ruby, Amber and Amber Pearl (sell to Haldor). A test fails if an item that nothing is made from has neither.
 - Hoard defaults: crafted weapons and armor are `gear` (neutral badge, no keep/discard advice); Coins are keep some (999, one stack); hoard notes use display names. The Ooze Bomb's skill 0 shows as "None".
 - Package 5 (2026-10-28): checked every resolved drop table in the dump (360 drops, 171 characters). No creature drops Fenris Hair, Fenris Claw or Ymir Flesh, so their source stays "not confirmed" (likely chest or cave loot, which the dump does not hold). Added the Cultist (drops its trophy; zone from guides, flagged unverified), the Fenris Hood (the third piece of the Fenris set), Wolf Skewer and seven trinkets (new `trinket` category). Trinket effects are not in the dump, so the page shows only the game's description. Every recipe the builder leaves out has a reason in `tools/extract/dropped_reasons.json`; a test fails without one.
 - Display names: the game calls both the Fuling and its archer "Fuling"; `tools/extract/name_overrides.json` names the archer "Fuling Archer". A test fails if two items, creatures or bosses share a name.
@@ -74,7 +74,24 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 | 4 | Amber and Amber Pearl | Found in Meadows? (assigned by hand) |
 | 5 | Honey | Comes from beehives (curated source) |
 
-Everything else with `verified: cross-checked` is read straight from the game files of build 25909357.
+### Swamp, Mountains and Plains (added 2026-10-28; none of this has been checked in game)
+
+| # | Entry | What to check |
+|---|---|---|
+| 6 | Bonemass boss | Summon: 10 Withered Bone at the altar |
+| 7 | Moder boss (Dragon) | Summon: 3 Dragon Eggs at the altar |
+| 8 | Yagluth boss (Goblin King) | Summon: 5 Fuling Totems at the altar |
+| 9 | Swamp Key | Opens Sunken Crypt doors (item use line) |
+| 10 | Wishbone | Finds silver veins (item use line) |
+| 11 | Surtling | Where it appears (zone set to Swamp by hand) |
+| 12 | Cultist | Spawns in Mountain caves (zone set by hand) |
+| 13 | Fenris Hair, Fenris Claw, Ymir Flesh | Where they come from (no source in the files) |
+| 14 | Surtling Core | Crypt stands (you found one in the Black Forest) |
+| 15 | Muddy Scrap Piles and Withered Bone | Sunken Crypt sources (guides) |
+| 16 | Plains gather notes | Barley, Flax, Cloudberry, Onion, Tar, Black Metal Scrap (guides) |
+| 17 | Zone of crafted items | Cultivator, Mead Base: Minor Stamina, Coal in the Black Forest; Wolf Skewer in the Plains |
+
+`From game files` (stored as `verified: cross-checked`) means the value was read from the game files of build 25909357, one source, not confirmed in game. Everything else with that level is read straight from the files.
 
 ## Regenerating the data
 
