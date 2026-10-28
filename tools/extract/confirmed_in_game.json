@@ -1,0 +1,4 @@
+{
+  "_comment": "Lines from the Check in game page that the owner saw match in the real game. Key -> date seen. build_data.py marks each entry verified 'in-game' and the page stops listing it. Add lines with apply_checks.py from pasted 'Copy my results'.",
+  "gear:AxeFlint": "2026-10-28"
+}

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { EntityLink } from '../../components/EntityLink';
 import { Intro } from '../../components/Intro';
-import { gameData } from '../../data/load';
+import { confirmedChecks, gameData } from '../../data/load';
 import { adoptProfileChecks, setGameCheck, useGameChecks } from '../../state/gameChecks';
 import { appStore } from '../../state/store';
 import { buildSpotChecks } from './spotcheck';
@@ -17,7 +17,7 @@ export function SpotCheckPage() {
     const { profiles } = appStore.getState();
     adoptProfileChecks(Object.values(profiles));
   }, []);
-  const zones = useMemo(() => buildSpotChecks(gameData), []);
+  const zones = useMemo(() => buildSpotChecks(gameData, confirmedChecks), []);
   const [copied, setCopied] = useState(false);
 
   const all = zones.flatMap((z) => z.groups.flatMap((g) => g.rows));
@@ -42,6 +42,13 @@ export function SpotCheckPage() {
           send them over, and the matching entries are marked as seen in game.
         </p>
       </Intro>
+
+      {confirmedChecks.size > 0 && (
+        <p>
+          {confirmedChecks.size} lines you have already confirmed in game are filed as seen in game, and are no longer
+          listed here.
+        </p>
+      )}
 
       <p className={styles.bar}>
         <strong>

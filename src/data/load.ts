@@ -16,6 +16,7 @@ import commandsRaw from '../../data/commands.json';
 import skillsRaw from '../../data/skills.json';
 import updateLogRaw from '../../data/updatelog.json';
 import placesRaw from '../../data/places.json';
+import confirmedRaw from '../../data/confirmed.json';
 import { CommandSchema, FILE_SCHEMAS, PlaceSchema, MetaSchema, SaveKeysSchema, SkillsFileSchema, UpdateLogSchema, type GameData } from './schemas';
 
 const raw = {
@@ -54,6 +55,9 @@ export const skillsFile = SkillsFileSchema.parse(skillsRaw);
 
 /** What changed between game builds, newest first. */
 export const updateLog = UpdateLogSchema.parse(updateLogRaw);
+
+/** Check in game lines already seen matching in the real game (they drop off that list). */
+export const confirmedChecks = new Set(z.array(z.string()).parse(confirmedRaw));
 
 /** Dungeons, camps, altars and other places the game generates. */
 export const places = z.array(PlaceSchema).parse(placesRaw);

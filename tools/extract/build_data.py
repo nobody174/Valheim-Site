@@ -217,6 +217,32 @@ def previous_review(out, build_id):
     return meta.get('lastReviewed') if meta.get('gameVersion') == f'Steam build {build_id}' else None
 
 
+def apply_confirmed(files, warnings):
+    """Mark what the owner saw match in game (confirmed_in_game.json) as verified 'in-game'.
+    Returns the confirmed keys, so the Check in game page can stop listing them."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'confirmed_in_game.json')
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding='utf8') as f:
+        keys = sorted(k for k in json.load(f) if not k.startswith('_'))
+    # key prefix -> the lists whose entries carry that id, and the field holding it
+    targets = {'gear': [('items', 'id'), ('weapons', 'item'), ('armor', 'item')],
+               'recipe': [('recipes', 'id')], 'food': [('foods', 'item')],
+               'creature': [('creatures', 'id')], 'boss': [('bosses', 'id')],
+               'where': [('items', 'id')]}
+    for key in keys:
+        kind, _, ident = key.partition(':')
+        hit = False
+        for lst, field in targets.get(kind, []):
+            for entry in files[lst]:
+                if entry.get(field) == ident:
+                    entry['verified'] = 'in-game'
+                    hit = True
+        if not hit:
+            warnings.append(f'confirmed_in_game.json lists {key}, which is not in the data')
+    return keys
+
+
 def main(raw, out, build_id, reviewed=None):
     reviewed = reviewed or previous_review(out, build_id) or date.today().isoformat()
     configs = load_configs()
@@ -803,6 +829,7 @@ def main(raw, out, build_id, reviewed=None):
              'armor': armor, 'foods': foods, 'trophies': trophies, 'creatures': creatures,
              'bosses': bosses, 'pieces': pieces_out, 'savekeys': save_tokens, 'skills': skills_file}
     files['places'] = build_places(raw, [b['id'] for b in sorted(biomes, key=lambda b: b['order'])], {b['id'] for b in bosses}, warnings)
+    files['confirmed'] = apply_confirmed(files, warnings)
     files['updatelog'] = update_log(out, files, build_id, reviewed)  # compares with the files still on disk
     for name, content in files.items():
         with open(os.path.join(out, f'{name}.json'), 'w', encoding='utf8', newline='\n') as f:

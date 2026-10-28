@@ -26,6 +26,12 @@ describe('buildSpotChecks', () => {
     }
   });
 
+  it('leaves out lines already confirmed in game', () => {
+    const key = zones[0]!.groups[0]!.rows[0]!.key;
+    const rest = buildSpotChecks(gameData, new Set([key]));
+    expect(rest.flatMap((z) => z.groups.flatMap((g) => g.rows.map((r) => r.key)))).not.toContain(key);
+  });
+
   it('says what the site says, so it can be compared with the game', () => {
     const meadows = zones[0]!;
     const boss = meadows.groups.find((g) => g.id === 'boss')!.rows[0]!;
