@@ -66,6 +66,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyDvergr",
+    "creature": "Dverger",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyEikthyr",
     "creature": "Eikthyr",
     "source": "game-files:steam-build-25909357",
@@ -80,6 +86,12 @@
   {
     "item": "TrophyFrostTroll",
     "creature": "Troll",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyGjall",
+    "creature": "Gjall",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -126,6 +138,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyHare",
+    "creature": "Hare",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyHatchling",
     "creature": "Hatchling",
     "source": "game-files:steam-build-25909357",
@@ -156,6 +174,24 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophySeeker",
+    "creature": "Seeker",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophySeekerBrute",
+    "creature": "SeekerBrute",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophySeekerQueen",
+    "creature": "SeekerQueen",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophySkeleton",
     "creature": "Skeleton",
     "source": "game-files:steam-build-25909357",
@@ -164,6 +200,12 @@
   {
     "item": "TrophyTheElder",
     "creature": "gd_king",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyTick",
+    "creature": "Tick",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },

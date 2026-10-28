@@ -1,5 +1,99 @@
 [
   {
+    "id": "blackforge",
+    "name": "Black Forge",
+    "buildRequirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 10
+      },
+      {
+        "item": "YggdrasilWood",
+        "qty": 10
+      },
+      {
+        "item": "BlackCore",
+        "qty": 5
+      }
+    ],
+    "extensions": [
+      {
+        "id": "blackforge_ext2_vise",
+        "name": "Vice",
+        "rangeM": 4.0,
+        "requirements": [
+          {
+            "item": "Iron",
+            "qty": 5
+          },
+          {
+            "item": "Copper",
+            "qty": 8
+          },
+          {
+            "item": "MechanicalSpring",
+            "qty": 2
+          }
+        ]
+      },
+      {
+        "id": "blackforge_ext1",
+        "name": "Black Forge Cooler",
+        "rangeM": 4.0,
+        "requirements": [
+          {
+            "item": "Iron",
+            "qty": 5
+          },
+          {
+            "item": "Copper",
+            "qty": 5
+          },
+          {
+            "item": "BlackMarble",
+            "qty": 4
+          }
+        ]
+      }
+    ],
+    "laterExtensions": [
+      {
+        "id": "blackforge_ext3_metalcutter",
+        "name": "Metal Cutter",
+        "rangeM": 4.0,
+        "needs": [
+          "Flametal",
+          "Ashwood",
+          "Charred Bone"
+        ]
+      },
+      {
+        "id": "blackforge_ext4_gemcutter",
+        "name": "Gem Cutter",
+        "rangeM": 4.0,
+        "needs": [
+          "Flametal",
+          "Ashwood",
+          "Morgen Sinew",
+          "Bloodstone"
+        ]
+      },
+      {
+        "id": "blackforge_ext5_apron",
+        "name": "Smith's Aprons",
+        "rangeM": 4.0,
+        "needs": [
+          "Bloodgold",
+          "Timberwood",
+          "Moose Hide"
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
+  },
+  {
     "id": "blastfurnace",
     "name": "Blast Furnace",
     "buildRequirements": [
@@ -37,6 +131,37 @@
       {
         "item": "SurtlingCore",
         "qty": 5
+      }
+    ],
+    "extensions": [],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
+  },
+  {
+    "id": "eitrrefinery",
+    "name": "Eitr Refinery",
+    "buildRequirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 20
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 5
+      },
+      {
+        "item": "YggdrasilWood",
+        "qty": 10
+      },
+      {
+        "item": "BlackCore",
+        "qty": 5
+      },
+      {
+        "item": "Sap",
+        "qty": 3
       }
     ],
     "extensions": [],
@@ -208,6 +333,45 @@
     "note": "Station level is 1 plus the number of different extensions built within range."
   },
   {
+    "id": "piece_artisanstation",
+    "name": "Artisan Table",
+    "buildRequirements": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "DragonTear",
+        "qty": 2
+      }
+    ],
+    "extensions": [
+      {
+        "id": "artisan_ext1",
+        "name": "Artisan Press",
+        "rangeM": 4.0,
+        "requirements": [
+          {
+            "item": "BlackMarble",
+            "qty": 5
+          },
+          {
+            "item": "Bronze",
+            "qty": 5
+          },
+          {
+            "item": "QueenDrop",
+            "qty": 1
+          }
+        ]
+      }
+    ],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
+  },
+  {
     "id": "piece_cauldron",
     "name": "Cauldron",
     "buildRequirements": [
@@ -345,6 +509,96 @@
     ],
     "extensions": [],
     "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
+  },
+  {
+    "id": "piece_magetable",
+    "name": "Galdr Table",
+    "buildRequirements": [
+      {
+        "item": "YggdrasilWood",
+        "qty": 20
+      },
+      {
+        "item": "BlackMetal",
+        "qty": 10
+      },
+      {
+        "item": "BlackCore",
+        "qty": 5
+      },
+      {
+        "item": "Eitr",
+        "qty": 5
+      }
+    ],
+    "extensions": [
+      {
+        "id": "piece_magetable_ext",
+        "name": "Rune Table",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "BlackMarble",
+            "qty": 10
+          },
+          {
+            "item": "YggdrasilWood",
+            "qty": 5
+          },
+          {
+            "item": "Eitr",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "id": "piece_magetable_ext2",
+        "name": "Unfading Candles",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "BlackMarble",
+            "qty": 10
+          },
+          {
+            "item": "TrophySkeleton",
+            "qty": 3
+          },
+          {
+            "item": "Eitr",
+            "qty": 10
+          },
+          {
+            "item": "Resin",
+            "qty": 15
+          }
+        ]
+      }
+    ],
+    "laterExtensions": [
+      {
+        "id": "piece_magetable_ext3",
+        "name": "Feathery Wreath",
+        "rangeM": 5.0,
+        "needs": [
+          "Celestial Feather",
+          "Asksvin Trophy",
+          "Ashwood"
+        ]
+      },
+      {
+        "id": "piece_magetable_ext4",
+        "name": "Standing Loom",
+        "rangeM": 5.0,
+        "needs": [
+          "Timberwood",
+          "Nornathread"
+        ]
+      }
+    ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "note": "Station level is 1 plus the number of different extensions built within range."

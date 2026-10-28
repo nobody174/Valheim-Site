@@ -62,6 +62,10 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 - Creatures can spawn in more than one biome (for example Deer, Greydwarf); the data keeps one home biome per creature.
 - `kind: smelt` also covers kilns and other conversion stations.
 
+## Mistlands pass (2026-10-28; the owner has not reached the Mistlands, so nothing here is checked in game)
+
+Config: `tools/extract/biomes/mistlands.json`. Read from the game files: Seeker, Seeker Brute, Seeker Brood, Gjall, Tick, Hare, the Dvergr and the Queen (health, attacks, drops, resistances), the Black Forge, Eitr Refinery and Galdr Table build costs and extensions, the Eitr conversion (Soft Tissue to Refined Eitr), all recipes, stats, foods and meads. Hand-written and `unverified` or tagged "guide, not checked": the Queen's summon cost (3 Soft Tissue, from memory, not in the files), every gather note (Yggdrasil Wood, Sap, Black Marble, Soft Tissue, Chitin, Wisp, Black Core, the mushrooms, Vineberry, Fiddlehead), and the Dvergr zone (they have camps and ruins, not a spawn entry). Included: Mistlands weapons (Mistwalker, Krom, Himmin Afl, Jotun Bane, Skull Splittur, Demolisher, carapace and chitin gear, Spine Snap, Arbalest, staves, bolts, shields), carapace and mage armor, Mistlands meads and foods, two trinkets, the Lantern, Demister, Ceramic Plate, Mechanical Spring and Shield Core. Left out on purpose: anything that needs Ashlands, Deep North or Gold items (Flametal, Askvin, Moose, Gold armor and weapons, Fader), the six Feasts, fishing and its bait, turrets, and eggs (chicken, Volture). The pickable mushrooms, Vineberry and Fiddlehead are listed as materials (their food values are not shown).
+
 ## Spot-check list (Meadows and Black Forest, session 2.1)
 
 Entries most likely to be wrong, all curated by hand. Please check these in your game:
@@ -90,6 +94,15 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 | 15 | Muddy Scrap Piles and Withered Bone | Sunken Crypt sources (guides) |
 | 16 | Plains gather notes | Barley, Flax, Cloudberry, Onion, Tar, Black Metal Scrap (guides) |
 | 17 | Zone of crafted items | Cultivator, Mead Base: Minor Stamina, Coal in the Black Forest; Wolf Skewer in the Plains |
+
+### Mistlands (added 2026-10-28)
+
+| # | Entry | What to check |
+|---|---|---|
+| 18 | The Queen boss | Summon: 3 Soft Tissue at the altar |
+| 19 | Black Forge, Eitr Refinery, Galdr Table | Build costs (read from the files; Black Core, Black Marble, Yggdrasil Wood) |
+| 20 | Gather notes | Yggdrasil Wood, Sap, Black Marble, Chitin, Wisp, Black Core, mushrooms, Vineberry, Fiddlehead |
+| 21 | Dvergr | Where they appear |
 
 `From game files` (stored as `verified: cross-checked`) means the value was read from the game files of build 25909357, one source, not confirmed in game. Everything else with that level is read straight from the files.
 

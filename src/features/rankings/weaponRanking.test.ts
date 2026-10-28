@@ -84,7 +84,7 @@ describe('filterAndSort', () => {
   it('filters by weapon type', () => {
     const list = filterAndSort(rows, { ...base, group: 'Swords' });
     expect(list.map((r) => r.id)).toEqual(expect.arrayContaining(['SwordIron', 'SwordBronze']));
-    expect(list.every((r) => r.id.startsWith('Sword'))).toBe(true);
+    expect(list.every((r) => r.group === 'Swords')).toBe(true);
   });
 
   it('shows only the chosen zone when "earlier zones" is off', () => {

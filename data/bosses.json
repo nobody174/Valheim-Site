@@ -262,5 +262,83 @@
     "aliases": [
       "Goblin king"
     ]
+  },
+  {
+    "id": "SeekerQueen",
+    "name": "The Queen",
+    "biome": "mistlands",
+    "health": 12500.0,
+    "drops": [
+      {
+        "item": "TrophySeekerQueen",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "QueenDrop",
+        "min": 5,
+        "max": 5
+      }
+    ],
+    "attacks": [
+      {
+        "id": "SeekerQueen_Teleport",
+        "damage": {
+          "slash": 80.0
+        }
+      },
+      {
+        "id": "SeekerQueen_Rush",
+        "damage": {
+          "slash": 100.0
+        }
+      },
+      {
+        "id": "SeekerQueen_Bite",
+        "damage": {
+          "pierce": 140.0,
+          "poison": 100.0
+        }
+      },
+      {
+        "id": "SeekerQueen_Call",
+        "damage": {
+          "slash": 80.0
+        }
+      },
+      {
+        "id": "SeekerQueen_Spit",
+        "damage": {
+          "blunt": 40.0,
+          "poison": 40.0
+        }
+      },
+      {
+        "id": "SeekerQueen_Slap",
+        "damage": {
+          "slash": 130.0
+        }
+      },
+      {
+        "id": "SeekerQueen_PierceAOE",
+        "damage": {
+          "pierce": 150.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "pierce": "resistant",
+      "spirit": "immune"
+    },
+    "summonItems": [
+      {
+        "item": "Softtissue",
+        "qty": 3
+      }
+    ],
+    "trophy": "TrophySeekerQueen",
+    "note": "Health, drops, attacks and resistances from game files; summon items curated."
   }
 ]

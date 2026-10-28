@@ -33,5 +33,12 @@
     "order": 5,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "mistlands",
+    "name": "Mistlands",
+    "order": 6,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   }
 ]

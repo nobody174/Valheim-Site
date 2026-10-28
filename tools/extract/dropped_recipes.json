@@ -1,51 +1,12 @@
 {
   "outputNotConfigured": [
     {
-      "recipe": "Recipe_BoltBlackmetal",
-      "output": "BoltBlackmetal",
-      "station": "blackforge",
-      "inputs": [
-        "BlackMetal",
-        "Wood",
-        "Feathers"
-      ]
-    },
-    {
-      "recipe": "Recipe_BoltBone",
-      "output": "BoltBone",
-      "station": "blackforge",
-      "inputs": [
-        "BoneFragments",
-        "Feathers"
-      ]
-    },
-    {
-      "recipe": "Recipe_BoltIron",
-      "output": "BoltIron",
-      "station": "blackforge",
-      "inputs": [
-        "Wood",
-        "Iron",
-        "Feathers"
-      ]
-    },
-    {
       "recipe": "Recipe_CapeOdin",
       "output": "CapeOdin",
       "station": "piece_workbench",
       "inputs": [
         "LeatherScraps",
         "Coal"
-      ]
-    },
-    {
-      "recipe": "Recipe_CrossbowArbalest",
-      "output": "CrossbowArbalest",
-      "station": "blackforge",
-      "inputs": [
-        "Wood",
-        "Iron",
-        "Root"
       ]
     },
     {
@@ -120,26 +81,6 @@
       "inputs": [
         "LeatherScraps",
         "Coal"
-      ]
-    },
-    {
-      "recipe": "Recipe_KnifeSkollAndHati",
-      "output": "KnifeSkollAndHati",
-      "station": "blackforge",
-      "inputs": [
-        "FineWood",
-        "Iron",
-        "BlackMetal"
-      ]
-    },
-    {
-      "recipe": "Recipe_Lantern",
-      "output": "Lantern",
-      "station": "blackforge",
-      "inputs": [
-        "Bronze",
-        "SurtlingCore",
-        "Crystal"
       ]
     },
     {
