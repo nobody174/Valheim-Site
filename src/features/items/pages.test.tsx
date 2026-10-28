@@ -99,7 +99,7 @@ describe('link integrity', () => {
     const broken: string[] = [];
     for (const a of container.querySelectorAll('a')) {
       const href = a.getAttribute('href') ?? '';
-      if (href.startsWith('/planner') || href.startsWith('/upgrades')) continue; // tool pages
+      if (href.startsWith('/planner') || href.startsWith('/upgrades') || href.startsWith('/compare')) continue; // tool pages
       const [, kind, id] = href.split('/');
       if (!targets[kind]?.(decodeURIComponent(id)))
         broken.push(`${path} -> ${a.getAttribute('href')}`);

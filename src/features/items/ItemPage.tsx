@@ -325,6 +325,12 @@ export function ItemPage() {
         </section>
       )}
 
+      {(lookup.weapon(id) || lookup.armor(id)) && (
+        <p>
+          <Link to={`/compare?items=${id}`}>Compare with other gear</Link>
+        </p>
+      )}
+
       <Stats id={id} />
 
       <ItemActions item={item} />
