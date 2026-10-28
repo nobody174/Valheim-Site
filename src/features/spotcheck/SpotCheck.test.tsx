@@ -4,7 +4,8 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { gameData } from '../../data/load';
-import { initialState, withCheck } from '../../state/model';
+import { adoptProfileChecks, resetGameChecksCache } from '../../state/gameChecks';
+import { initialState } from '../../state/model';
 import { appStore } from '../../state/store';
 import { SpotCheckPage } from './SpotCheckPage';
 import { buildSpotChecks } from './spotcheck';
@@ -33,10 +34,14 @@ describe('buildSpotChecks', () => {
 });
 
 describe('SpotCheckPage', () => {
-  beforeEach(() => appStore.setState(initialState()));
+  beforeEach(() => {
+    localStorage.clear();
+    resetGameChecksCache();
+    appStore.setState(initialState());
+  });
   afterEach(cleanup);
 
-  it('records Matches and Different in the profile and counts them', async () => {
+  it('records Matches and Different for the whole browser and counts them', async () => {
     const user = userEvent.setup();
     render(
       <MemoryRouter>
@@ -45,16 +50,29 @@ describe('SpotCheckPage', () => {
     );
     const first = screen.getAllByRole('button', { name: 'Matches' })[0]!;
     await user.click(first);
-    const state = appStore.getState();
-    expect(Object.values(state.profiles[state.active]!.checks ?? {})).toEqual(['ok']);
+    expect(Object.values(JSON.parse(localStorage.getItem('vcs:v1:gamechecks')!))).toEqual(['ok']);
     await user.click(screen.getAllByRole('button', { name: 'Different' })[1]!);
     expect(screen.getByText(/1 different/)).toBeTruthy();
     expect(within(document.body).getByText(/2 of/)).toBeTruthy();
   });
 
-  it('clears a check when the same answer is pressed again', () => {
+  it('clears a check when the same answer is pressed again', async () => {
+    const user = userEvent.setup();
+    render(
+      <MemoryRouter>
+        <SpotCheckPage />
+      </MemoryRouter>,
+    );
+    const first = screen.getAllByRole('button', { name: 'Matches' })[0]!;
+    await user.click(first);
+    await user.click(first);
+    expect(JSON.parse(localStorage.getItem('vcs:v1:gamechecks')!)).toEqual({});
+  });
+
+  it('takes in answers an earlier version kept in a profile, once', () => {
     const start = initialState();
-    const p = withCheck(withCheck(start.profiles[start.active]!, 'a', 'ok'), 'a', 'ok');
-    expect(p.checks).toEqual({});
+    const profile = { ...start.profiles[start.active]!, checks: { 'gear:X': 'ok' as const } };
+    adoptProfileChecks([profile]);
+    expect(JSON.parse(localStorage.getItem('vcs:v1:gamechecks')!)).toEqual({ 'gear:X': 'ok' });
   });
 });

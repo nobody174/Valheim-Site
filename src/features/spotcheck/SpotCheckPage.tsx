@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { EntityLink } from '../../components/EntityLink';
 import { Intro } from '../../components/Intro';
 import { gameData } from '../../data/load';
-import { appStore, useProfile } from '../../state/store';
+import { adoptProfileChecks, setGameCheck, useGameChecks } from '../../state/gameChecks';
+import { appStore } from '../../state/store';
 import { buildSpotChecks } from './spotcheck';
 import styles from './SpotCheck.module.css';
 
@@ -11,8 +12,11 @@ const OPEN_ZONES = 3;
 
 /** A list to take into the game: what the site says, to compare with what the game shows. */
 export function SpotCheckPage() {
-  const profile = useProfile();
-  const checks = profile.checks ?? {};
+  const checks = useGameChecks();
+  useEffect(() => {
+    const { profiles } = appStore.getState();
+    adoptProfileChecks(Object.values(profiles));
+  }, []);
   const zones = useMemo(() => buildSpotChecks(gameData), []);
   const [copied, setCopied] = useState(false);
 
@@ -34,7 +38,7 @@ export function SpotCheckPage() {
         <p>
           Almost everything on this site is read from the game files, but none of it has been seen working in game. Take
           this list in with you. For each line, look at the thing in game and press <strong>Matches</strong> or{' '}
-          <strong>Different</strong>. Your answers save by themselves the moment you press, so there is no Save button: the counter below goes up. Press &quot;Copy my results&quot; and
+          <strong>Different</strong>. This is about the site, not your character: each answer saves by itself on this device the moment you press, whichever profile you use, so there is no Save button. Press &quot;Copy my results&quot; and
           send them over, and the matching entries are marked as seen in game.
         </p>
       </Intro>
@@ -43,7 +47,7 @@ export function SpotCheckPage() {
         <strong>
           {done} of {all.length}
         </strong>{' '}
-        checked, saved automatically in {profile.name}{bad.length > 0 && <span className={styles.badCount}> · {bad.length} different</span>}
+        checked, saved automatically on this device{bad.length > 0 && <span className={styles.badCount}> · {bad.length} different</span>}
         <button type="button" onClick={report} disabled={done === 0}>
           Copy my results
         </button>
@@ -80,14 +84,14 @@ export function SpotCheckPage() {
                           <button
                             type="button"
                             aria-pressed={state === 'ok'}
-                            onClick={() => appStore.getState().setCheck(r.key, 'ok')}
+                            onClick={() => setGameCheck(r.key, 'ok')}
                           >
                             Matches
                           </button>
                           <button
                             type="button"
                             aria-pressed={state === 'bad'}
-                            onClick={() => appStore.getState().setCheck(r.key, 'bad')}
+                            onClick={() => setGameCheck(r.key, 'bad')}
                           >
                             Different
                           </button>

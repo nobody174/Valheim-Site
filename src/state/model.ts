@@ -34,7 +34,7 @@ export const ProfileSchema = z
     hoardOverrides: z.record(z.string(), Hoard),
     inventory: z.record(z.string(), z.number().int().nonnegative()),
     notes: z.record(z.string(), z.string()),
-    /** In-game spot checks: key -> whether the site matched the game ("ok") or not ("bad"). */
+    /** Older versions kept the spot-check answers here; they now live in `gameChecks.ts` for the whole browser. */
     checks: z.record(z.string(), z.enum(['ok', 'bad'])).optional(),
     /** The last character file read for this profile (names and numbers only). */
     character: CharacterSnapshotSchema.optional(),
@@ -256,12 +256,4 @@ export function profileForCharacter(state: AppState, name: string): string | nul
   const existing = state.order.find((id) => state.profiles[id].character?.name === name);
   if (existing) return existing;
   return state.profiles[state.active].character ? null : state.active;
-}
-
-/** Record what the game showed for one spot check; the same value again clears it. */
-export function withCheck(profile: Profile, key: string, value: 'ok' | 'bad'): Profile {
-  const checks = { ...profile.checks };
-  if (checks[key] === value) delete checks[key];
-  else checks[key] = value;
-  return { ...profile, checks };
 }

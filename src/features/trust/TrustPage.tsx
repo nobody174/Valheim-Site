@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { gameData } from '../../data/load';
+import { useGameChecks } from '../../state/gameChecks';
 import { trustReport } from './trust';
 import styles from '../items/Items.module.css';
 import tiles from './Trust.module.css';
@@ -11,6 +12,9 @@ const pct = (n: number, of: number) => (of === 0 ? '0%' : `${Math.round((n / of)
 /** The honesty page: how much of the data has been checked, and what is still a guess. */
 export function TrustPage() {
   const { overall, zones, unverified } = report;
+  const mine = Object.values(useGameChecks());
+  const matched = mine.filter((v) => v === 'ok').length;
+  const different = mine.length - matched;
   return (
     <div>
       <h1>Data trust</h1>
@@ -88,6 +92,13 @@ export function TrustPage() {
         Take the <Link to="/spotcheck">Check in game</Link> list into the game and mark what matches. Entries that are
         confirmed move to &quot;seen in game&quot; here.
       </p>
+      {mine.length > 0 && (
+        <p>
+          So far on this device: <strong>{matched}</strong> matched the game
+          {different > 0 && <>, <strong>{different}</strong> were different</>}. They count here for good once you send
+          them over with &quot;Copy my results&quot;.
+        </p>
+      )}
     </div>
   );
 }
