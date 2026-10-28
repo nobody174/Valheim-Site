@@ -17,7 +17,7 @@ export function SecondScreenToggle() {
       aria-pressed={on}
       title="Bigger text, tighter tables and no animations, easier to read from a second monitor while you play"
       onClick={() => {
-        const next = { secondScreen: !on };
+        const next = { ...loadDisplay(), secondScreen: !on };
         setOn(next.secondScreen);
         saveDisplay(next);
         applyDisplay(next);
