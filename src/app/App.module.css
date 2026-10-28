@@ -165,24 +165,18 @@
   }
   .shell {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto auto 1fr;
-    grid-template-areas: 'header' 'nav' 'main';
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'header' 'main';
   }
+  /* The sidebar gives way to the bottom tab bar (MobileTabs). */
   .nav {
-    flex-direction: row;
-    gap: 0.2rem;
-    overflow-x: auto;
-    border-right: 0;
-    border-bottom: 3px solid #120d09;
-  }
-  .group {
-    flex-direction: row;
-  }
-  .groupTitle {
     display: none;
   }
-  .nav a {
-    white-space: nowrap;
+  .main {
+    padding-bottom: 5.5rem;
+  }
+  .dataInfoMobile {
+    padding-bottom: 5.5rem;
   }
 }
 

@@ -53,6 +53,7 @@ export const ROUTE_GROUPS: RouteGroup[] = [
     title: 'My game',
     routes: [
       { path: '/character', label: 'My character', phase: 5, icon: 'ArmorBronzeChest', beta: true },
+      { path: '/spotcheck', label: 'Check in game', phase: 5, icon: 'Thistle' },
       { path: '/next', label: 'Next steps', phase: 3, icon: 'Wishbone' },
       { path: '/checklist', label: 'Checklist', phase: 1, icon: 'Raspberry' },
       { path: '/progression', label: 'Progression', phase: 1, icon: 'TrophyTheElder' },
