@@ -14,6 +14,7 @@ export const ROUTES: RouteDef[] = [
   { path: '/bosses', label: 'Bosses', phase: 2 },
   { path: '/creatures', label: 'Creatures', phase: 2 },
   { path: '/food', label: 'Food', phase: 2 },
+  { path: '/optimizer', label: 'Food optimizer', phase: 3 },
   { path: '/rankings', label: 'Rankings', phase: 3 },
   { path: '/planner', label: 'Planner', phase: 3 },
   { path: '/upgrades', label: 'Upgrades', phase: 3 },

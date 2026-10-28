@@ -22,7 +22,8 @@
     "stamina": 17.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "BloodPudding",
@@ -31,7 +32,8 @@
     "stamina": 75.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "Blueberries",
@@ -40,7 +42,8 @@
     "stamina": 25.0,
     "durationSec": 600.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "BoarJerky",
@@ -49,7 +52,8 @@
     "stamina": 23.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "Bread",
@@ -58,7 +62,8 @@
     "stamina": 70.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "Carrot",
@@ -67,7 +72,8 @@
     "stamina": 32.0,
     "durationSec": 900.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "CarrotSoup",
@@ -76,7 +82,8 @@
     "stamina": 45.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "CookedAsksvinMeat",
@@ -85,7 +92,8 @@
     "stamina": 24.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 6.0
   },
   {
     "item": "CookedBjornMeat",
@@ -94,7 +102,8 @@
     "stamina": 13.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "CookedBoneMawSerpentMeat",
@@ -103,7 +112,8 @@
     "stamina": 30.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 6.0
   },
   {
     "item": "CookedBugMeat",
@@ -112,7 +122,8 @@
     "stamina": 20.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 5.0
   },
   {
     "item": "CookedDeerMeat",
@@ -121,7 +132,8 @@
     "stamina": 12.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "CookedHareMeat",
@@ -130,7 +142,8 @@
     "stamina": 20.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 5.0
   },
   {
     "item": "CookedLoxMeat",
@@ -139,7 +152,8 @@
     "stamina": 16.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 4.0
   },
   {
     "item": "CookedMeat",
@@ -148,7 +162,8 @@
     "stamina": 10.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "CookedVoltureMeat",
@@ -157,7 +172,8 @@
     "stamina": 24.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 6.0
   },
   {
     "item": "CookedWolfMeat",
@@ -166,7 +182,8 @@
     "stamina": 15.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "DeerMeat",
@@ -175,7 +192,8 @@
     "stamina": 20.0,
     "durationSec": 600.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "DeerStew",
@@ -184,7 +202,8 @@
     "stamina": 15.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "Eyescream",
@@ -193,7 +212,8 @@
     "stamina": 65.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "FierySvinstew",
@@ -202,7 +222,8 @@
     "stamina": 32.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 6.0
   },
   {
     "item": "FishCooked",
@@ -211,7 +232,8 @@
     "stamina": 15.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "FishWraps",
@@ -220,7 +242,8 @@
     "stamina": 23.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 4.0
   },
   {
     "item": "Honey",
@@ -229,7 +252,8 @@
     "stamina": 35.0,
     "durationSec": 900.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "LoxPie",
@@ -238,7 +262,8 @@
     "stamina": 24.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 4.0
   },
   {
     "item": "MagicallyStuffedShroom",
@@ -247,7 +272,9 @@
     "stamina": 12.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "eitr": 75.0,
+    "regen": 3.0
   },
   {
     "item": "MarinatedGreens",
@@ -256,7 +283,9 @@
     "stamina": 16.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "eitr": 95.0,
+    "regen": 4.0
   },
   {
     "item": "MashedMeat",
@@ -265,7 +294,8 @@
     "stamina": 34.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 6.0
   },
   {
     "item": "MeadEitrLingering",
@@ -383,7 +413,8 @@
     "stamina": 26.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 5.0
   },
   {
     "item": "MinceMeatSauce",
@@ -392,7 +423,8 @@
     "stamina": 13.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "MisthareSupreme",
@@ -401,7 +433,8 @@
     "stamina": 28.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 5.0
   },
   {
     "item": "Mushroom",
@@ -410,7 +443,8 @@
     "stamina": 15.0,
     "durationSec": 900.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "MushroomYellow",
@@ -419,7 +453,8 @@
     "stamina": 30.0,
     "durationSec": 600.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "NeckTailGrilled",
@@ -428,7 +463,8 @@
     "stamina": 8.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "OnionSoup",
@@ -437,7 +473,8 @@
     "stamina": 60.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "PiquantPie",
@@ -446,7 +483,8 @@
     "stamina": 35.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 6.0
   },
   {
     "item": "PulledBear",
@@ -455,7 +493,8 @@
     "stamina": 16.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "QueensJam",
@@ -464,7 +503,8 @@
     "stamina": 40.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "Raspberry",
@@ -473,7 +513,8 @@
     "stamina": 20.0,
     "durationSec": 600.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "RawMeat",
@@ -482,7 +523,8 @@
     "stamina": 20.0,
     "durationSec": 600.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "RoastedCrustPie",
@@ -491,7 +533,8 @@
     "stamina": 100.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 4.0
   },
   {
     "item": "Salad",
@@ -500,7 +543,8 @@
     "stamina": 80.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "Sausages",
@@ -509,7 +553,8 @@
     "stamina": 18.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "ScorchingMedley",
@@ -518,7 +563,8 @@
     "stamina": 95.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 4.0
   },
   {
     "item": "SeekerAspic",
@@ -527,7 +573,9 @@
     "stamina": 14.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "eitr": 85.0,
+    "regen": 3.0
   },
   {
     "item": "ShocklateSmoothie",
@@ -536,7 +584,8 @@
     "stamina": 50.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 1.0
   },
   {
     "item": "SizzlingBerryBroth",
@@ -545,7 +594,9 @@
     "stamina": 14.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "eitr": 85.0,
+    "regen": 4.0
   },
   {
     "item": "SparklingShroomshake",
@@ -554,7 +605,9 @@
     "stamina": 15.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "eitr": 90.0,
+    "regen": 4.0
   },
   {
     "item": "SpicyMarmalade",
@@ -563,7 +616,8 @@
     "stamina": 90.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 4.0
   },
   {
     "item": "TurnipStew",
@@ -572,7 +626,8 @@
     "stamina": 55.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 2.0
   },
   {
     "item": "WolfJerky",
@@ -581,7 +636,8 @@
     "stamina": 33.0,
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "WolfMeatSkewer",
@@ -590,7 +646,8 @@
     "stamina": 21.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "regen": 3.0
   },
   {
     "item": "YggdrasilPorridge",
@@ -599,6 +656,8 @@
     "stamina": 13.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "eitr": 80.0,
+    "regen": 3.0
   }
 ]

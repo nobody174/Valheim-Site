@@ -70,7 +70,7 @@ Acceptance:
 ## Step 4 - Optimizer, upgrade calculator, compare
 
 - **Food optimizer:** best 3-food combination for a goal (health, stamina, Eitr, balanced),
-  limited to foods available up to a chosen biome.
+  limited to foods available up to a chosen biome. Built (`/optimizer`, `src/features/food/`): tries every set of three different foods (exact), five best shown with rules per goal, optional minimum duration; checked against an independent brute-force search in tests. Meads, raw berries and mushrooms are not included. Food data now also holds Eitr and health regeneration.
 - **Upgrade calculator:** total cost from quality 1 to a target, station level needed. Built (`/upgrades`, `src/features/upgrades/`): pick an item and a from and to level; shows total cost, each step with its station level, and weapon damage at both levels. Linked from item pages.
 - **Compare:** two to four weapons or armor pieces side by side. Built (`/compare`, `src/features/compare/`): ids and upgrade level in the URL, same numbers as the rankings, best value per row marked; linked from gear pages.
 - **Next-steps advisor:** from checklist progress, suggest what to do or craft next, with

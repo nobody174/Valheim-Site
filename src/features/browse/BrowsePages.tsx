@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useSearchParams } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
@@ -345,7 +345,7 @@ export function FoodPage() {
       <h1>Food and mead</h1>
       <p className={styles.lead}>
         Click a column heading to sort. Only the three foods you eat count at once, so look at health
-        and stamina together.
+        and stamina together. <Link to="/optimizer">Find the best three foods</Link>.
       </p>
       <Filters text={text} biome={biome} set={set} clear={clear}>
         <label>
