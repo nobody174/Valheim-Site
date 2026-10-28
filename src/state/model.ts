@@ -138,6 +138,15 @@ export function withHoardOverride(
   return { ...profile, hoardOverrides };
 }
 
+/** A personal note on an item (a portal's coordinates, what is in a chest). Empty removes it. */
+export function withNote(profile: Profile, itemId: string, text: string): Profile {
+  const notes = { ...profile.notes };
+  const clean = text.slice(0, 2000);
+  if (clean.trim() === '') delete notes[itemId];
+  else notes[itemId] = clean;
+  return { ...profile, notes };
+}
+
 export type PlannerState = NonNullable<Profile['planner']>;
 
 export const plannerOf = (profile: Profile): PlannerState =>

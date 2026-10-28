@@ -42,6 +42,7 @@ export function ItemActions({ item }: { item: Item }) {
   const profile = useProfile();
   const toggleFlag = useApp((s) => s.toggleFlag);
   const setOverride = useApp((s) => s.setHoardOverride);
+  const setNote = useApp((s) => s.setNote);
   const override = profile.hoardOverrides[item.id];
 
   return (
@@ -89,6 +90,16 @@ export function ItemActions({ item }: { item: Item }) {
           Reset to default
         </button>
       )}
+      <label className={styles.override}>
+        My note
+        <textarea
+          rows={2}
+          maxLength={2000}
+          value={profile.notes[item.id] ?? ''}
+          placeholder="For example where you keep it, or portal coordinates"
+          onChange={(e) => setNote(item.id, e.target.value)}
+        />
+      </label>
     </section>
   );
 }
