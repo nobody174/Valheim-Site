@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { applyDisplay, loadDisplay, saveDisplay } from '../state/display';
 import styles from './App.module.css';
 
-/** Header button: larger type, tighter tables and no motion, for a second monitor. */
+/** Header button ("Big text"): larger type, tighter tables and no motion, for a second monitor. */
 export function SecondScreenToggle() {
   const [on, setOn] = useState(() => {
     const display = loadDisplay();
@@ -15,7 +15,7 @@ export function SecondScreenToggle() {
       type="button"
       className={styles.screenToggle}
       aria-pressed={on}
-      title="Larger type, tighter tables and no motion, for a monitor beside the game"
+      title="Bigger text, tighter tables and no animations, easier to read from a second monitor while you play"
       onClick={() => {
         const next = { secondScreen: !on };
         setOn(next.secondScreen);
@@ -23,7 +23,7 @@ export function SecondScreenToggle() {
         applyDisplay(next);
       }}
     >
-      Second screen
+      Big text
     </button>
   );
 }

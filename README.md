@@ -23,7 +23,7 @@ to its page. `/items` lists all items, filterable by name, category, hoard and b
 Tools: the **build planner** (materials, stations and a shopping list for what you want to make),
 the **crafting graph**, **compare** (weapons or armor side by side), the **upgrade calculator**, the
 **food optimizer** (best three foods), **rankings** and **next steps** (what to craft or collect now).
-The **Second screen** button in the header gives larger type, tighter tables and no motion for a
+The **Big text** button in the header gives larger type, tighter tables and no motion for a
 monitor beside the game.
 
 Progress (checklist, favorites, hoard overrides) is saved in this browser per profile. Use
