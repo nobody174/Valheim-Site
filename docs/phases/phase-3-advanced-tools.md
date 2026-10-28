@@ -71,7 +71,7 @@ Acceptance:
 
 - **Food optimizer:** best 3-food combination for a goal (health, stamina, Eitr, balanced),
   limited to foods available up to a chosen biome.
-- **Upgrade calculator:** total cost from quality 1 to a target, station level needed.
+- **Upgrade calculator:** total cost from quality 1 to a target, station level needed. Built (`/upgrades`, `src/features/upgrades/`): pick an item and a from and to level; shows total cost, each step with its station level, and weapon damage at both levels. Linked from item pages.
 - **Compare:** two to four weapons or armor pieces side by side.
 - **Next-steps advisor:** from checklist progress, suggest what to do or craft next, with
   the reason shown (which unmet requirement it unlocks).

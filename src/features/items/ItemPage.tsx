@@ -285,6 +285,12 @@ export function ItemPage() {
       {craftedFrom.length > 0 && (
         <p>
           <Link to={`/planner?add=${id}`}>Plan this: total materials and shopping list</Link>
+          {craftedFrom.some((r) => r.upgrades.length > 0) && (
+            <>
+              {' · '}
+              <Link to={`/upgrades?item=${id}`}>Upgrade calculator</Link>
+            </>
+          )}
         </p>
       )}
 
