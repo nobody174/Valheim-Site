@@ -103,7 +103,9 @@ function Shell() {
         Skip to content
       </a>
       <header className={styles.header}>
-        <span className={styles.brand}>Valheim Companion</span>
+        <Link to="/" className={styles.brand}>
+          Valheim Companion
+        </Link>
         <input
           className={styles.search}
           type="search"

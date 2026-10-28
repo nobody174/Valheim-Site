@@ -18,6 +18,10 @@
   font-family: var(--font-heading);
   color: var(--gold);
   font-size: 1.15rem;
+  text-decoration: none;
+}
+.brand:hover {
+  text-decoration: underline;
 }
 .search {
   flex: 1;

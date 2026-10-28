@@ -27,7 +27,7 @@ Acceptance:
 ## Step 2 - Mobile, accessibility, performance, offline
 
 - Responsive layouts at 390px and 1280px+; touch targets at least 44px; sticky search on mobile.
-- **Second-screen mode:** compact density, large type, motion off, toggle in the header. Built: the "Second screen" button in the header sets `data-screen="second"` on the page (type 112.5%, table cells and panels tighter, all motion off); remembered in this browser only (`vcs:v1:display`). Measured on the Items table: rows 28 px instead of 39 px.
+- **Second-screen mode:** compact density, large type, motion off, toggle in the header. Built: the "Big text" button in the header sets `data-screen="second"` on the page (type 112.5%, table cells and panels tighter, all motion off); remembered in this browser only (`vcs:v1:display`). Measured on the Items table: rows 28 px instead of 39 px.
 - Pinned and recently viewed bar.
 - Keyboard navigation and visible focus everywhere; ARIA for the palette, tables, graph controls.
 - Lighthouse on the deployed site: Performance, Accessibility, Best Practices, PWA all
