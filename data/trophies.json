@@ -30,6 +30,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyCultist",
+    "creature": "Fenring_Cultist",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyDeathsquito",
     "creature": "Deathsquito",
     "source": "game-files:steam-build-25909357",

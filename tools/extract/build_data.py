@@ -182,6 +182,7 @@ def main(raw, out, build_id, reviewed=None):
     biome_of, category_of, armor_slot = {}, {}, {}
     creature_biome, boss_biome = {}, {}
     summon, curated_src, keep_some, must_keep = {}, {}, {}, set()
+    creature_notes = {}  # creature id -> note for what the game files do not say (zone, spawn)
 
     def add_item(i, cat, biome):
         if i in biome_of:
@@ -193,7 +194,8 @@ def main(raw, out, build_id, reviewed=None):
     for c in configs:
         b = c['id']
         for cat, key in (('material', 'materials'), ('tool', 'tools'), ('weapon', 'weapons'),
-                         ('mead', 'meads'), ('trophy', 'trophies'), ('food', 'foods')):
+                         ('mead', 'meads'), ('trophy', 'trophies'), ('food', 'foods'),
+                         ('trinket', 'trinkets')):
             for i in c.get(key, []):
                 add_item(i, cat, b)
         for i, slot in c.get('armor', {}).items():
@@ -202,6 +204,7 @@ def main(raw, out, build_id, reviewed=None):
             creature_biome[i] = b
         for i in c.get('bosses', []):
             boss_biome[i] = b
+        creature_notes.update(c.get('creatureNotes', {}))
         summon.update(c.get('bossSummon', {}))
         curated_src.update(c.get('gather', {}))
         keep_some.update(c.get('hoard', {}).get('keepSome', {}))
@@ -282,6 +285,9 @@ def main(raw, out, build_id, reviewed=None):
             entry['note'] = 'Health, drops, attacks and resistances from game files; summon items curated.'
             bosses.append(entry)
         else:
+            if cid in creature_notes:
+                entry['verified'] = 'unverified'
+                entry['note'] = creature_notes[cid]
             creatures.append(entry)
     monster_ids = {c['id'] for c in creatures + bosses}
 
@@ -500,7 +506,7 @@ def main(raw, out, build_id, reviewed=None):
             hoard, extra = 'keep_some', {'recommendedQty': keep_some[iid]}
         elif iid in must_keep:
             hoard, extra = 'must_keep', {}
-        elif cat in ('weapon', 'armor'):
+        elif cat in ('weapon', 'armor', 'trinket'):
             hoard, extra = 'gear', {}  # crafted gear is neither hoarded nor thrown away by default
         elif derived_hoard(iid, cat, s['m_maxStackSize']):
             hoard, extra = derived_hoard(iid, cat, s['m_maxStackSize'])

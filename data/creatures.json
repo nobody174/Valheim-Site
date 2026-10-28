@@ -1038,6 +1038,49 @@
     ]
   },
   {
+    "id": "Fenring_Cultist",
+    "name": "Cultist",
+    "biome": "mountain",
+    "health": 200.0,
+    "drops": [
+      {
+        "item": "TrophyCultist",
+        "min": 1,
+        "max": 1,
+        "chance": 0.1
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Fenring_attack_fireclaw_double",
+        "damage": {
+          "slash": 35.0,
+          "fire": 40.0
+        }
+      },
+      {
+        "id": "Fenring_attack_fireclaw",
+        "damage": {
+          "slash": 35.0,
+          "fire": 40.0
+        }
+      },
+      {
+        "id": "Fenring_attack_flames",
+        "damage": {
+          "fire": 50.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "fire": "immune",
+      "poison": "weak"
+    },
+    "note": "Health, drops and attacks come from the game files. The game files do not list where it spawns; the Mountains zone is from guides and not checked."
+  },
+  {
     "id": "Goblin",
     "name": "Fuling",
     "biome": "plains",

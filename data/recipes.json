@@ -178,6 +178,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.TrinketBronzeStamina",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketBronzeStamina",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Bronze",
+        "qty": 5
+      },
+      {
+        "item": "TrophyBjorn",
+        "qty": 1
+      },
+      {
+        "item": "Ruby",
+        "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArrowNeedle",
     "kind": "craft",
     "output": {
@@ -1229,6 +1258,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.TrinketBlackDamageHealth",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketBlackDamageHealth",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BlackMetal",
+        "qty": 5
+      },
+      {
+        "item": "LoxPelt",
+        "qty": 5
+      },
+      {
+        "item": "TrophyLox",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArrowWood",
     "kind": "craft",
     "output": {
@@ -1243,6 +1301,35 @@
       {
         "item": "Wood",
         "qty": 8
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.WolfSkewer",
+    "kind": "craft",
+    "output": {
+      "item": "WolfMeatSkewer",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "WolfMeat",
+        "qty": 1
+      },
+      {
+        "item": "Mushroom",
+        "qty": 2
+      },
+      {
+        "item": "Onion",
+        "qty": 1
       }
     ],
     "upgrades": [],
@@ -1576,6 +1663,35 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.TrinketIronHealth",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketIronHealth",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 5
+      },
+      {
+        "item": "ElderBark",
+        "qty": 5
+      },
+      {
+        "item": "TrophyLeech",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -3302,6 +3418,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.TrinketBronzeHealth",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketBronzeHealth",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Bronze",
+        "qty": 5
+      },
+      {
+        "item": "AncientSeed",
+        "qty": 5
+      },
+      {
+        "item": "TrophyGreydwarfShaman",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorBerserkerChest",
     "kind": "craft",
     "output": {
@@ -3392,6 +3537,35 @@
       },
       {
         "item": "Turnip",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.TrinketSilverResist",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketSilverResist",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Silver",
+        "qty": 5
+      },
+      {
+        "item": "Crystal",
+        "qty": 5
+      },
+      {
+        "item": "TrophySGolem",
         "qty": 1
       }
     ],
@@ -3685,6 +3859,35 @@
       {
         "item": "HardAntler",
         "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.TrinketBlackStamina",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketBlackStamina",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BlackMetal",
+        "qty": 5
+      },
+      {
+        "item": "TrophyGoblinBrute",
+        "qty": 1
+      },
+      {
+        "item": "LinenThread",
+        "qty": 10
       }
     ],
     "upgrades": [],
@@ -5341,6 +5544,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.TrinketSilverDamage",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketSilverDamage",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Silver",
+        "qty": 5
+      },
+      {
+        "item": "WolfFang",
+        "qty": 5
+      },
+      {
+        "item": "TrophyFenring",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.KnifeBlackmetal",
     "kind": "craft",
     "output": {
@@ -6025,6 +6257,75 @@
           {
             "item": "LinenThread",
             "qty": 32
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HelmetFenrir",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetFenring",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "WolfHairBundle",
+        "qty": 20
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 2
+      },
+      {
+        "item": "TrophyCultist",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 25
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 30
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 10
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "WolfHairBundle",
+            "qty": 35
+          },
+          {
+            "item": "WolfPelt",
+            "qty": 14
           }
         ]
       }

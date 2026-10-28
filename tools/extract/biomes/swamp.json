@@ -138,5 +138,8 @@
   },
   "guide": {
     "notes": []
-  }
+  },
+  "trinkets": [
+    "TrinketIronHealth"
+  ]
 }

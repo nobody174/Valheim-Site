@@ -362,5 +362,14 @@
     "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "item": "WolfMeatSkewer",
+    "kind": "food",
+    "health": 65.0,
+    "stamina": 21.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   }
 ]

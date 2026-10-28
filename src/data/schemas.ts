@@ -17,6 +17,7 @@ export const ITEM_CATEGORIES = [
   'food',
   'mead',
   'trophy',
+  'trinket',
   'piece',
   'misc',
 ] as const;

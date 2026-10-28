@@ -200,76 +200,6 @@
       ]
     },
     {
-      "recipe": "Recipe_TrinketBlackDamageHealth",
-      "output": "TrinketBlackDamageHealth",
-      "station": "forge",
-      "inputs": [
-        "BlackMetal",
-        "LoxPelt",
-        "TrophyLox"
-      ]
-    },
-    {
-      "recipe": "Recipe_TrinketBlackStamina",
-      "output": "TrinketBlackStamina",
-      "station": "forge",
-      "inputs": [
-        "BlackMetal",
-        "TrophyGoblinBrute",
-        "LinenThread"
-      ]
-    },
-    {
-      "recipe": "Recipe_TrinketBronzeHealth",
-      "output": "TrinketBronzeHealth",
-      "station": "forge",
-      "inputs": [
-        "Bronze",
-        "AncientSeed",
-        "TrophyGreydwarfShaman"
-      ]
-    },
-    {
-      "recipe": "Recipe_TrinketBronzeStamina",
-      "output": "TrinketBronzeStamina",
-      "station": "forge",
-      "inputs": [
-        "Bronze",
-        "TrophyBjorn",
-        "Ruby"
-      ]
-    },
-    {
-      "recipe": "Recipe_TrinketIronHealth",
-      "output": "TrinketIronHealth",
-      "station": "forge",
-      "inputs": [
-        "Iron",
-        "ElderBark",
-        "TrophyLeech"
-      ]
-    },
-    {
-      "recipe": "Recipe_TrinketSilverDamage",
-      "output": "TrinketSilverDamage",
-      "station": "forge",
-      "inputs": [
-        "Silver",
-        "WolfFang",
-        "TrophyFenring"
-      ]
-    },
-    {
-      "recipe": "Recipe_TrinketSilverResist",
-      "output": "TrinketSilverResist",
-      "station": "forge",
-      "inputs": [
-        "Silver",
-        "Crystal",
-        "TrophySGolem"
-      ]
-    },
-    {
       "recipe": "Recipe_TurretBolt",
       "output": "TurretBolt",
       "station": "piece_artisanstation",
@@ -285,16 +215,6 @@
       "inputs": [
         "RoundLog",
         "Feathers"
-      ]
-    },
-    {
-      "recipe": "Recipe_WolfSkewer",
-      "output": "WolfMeatSkewer",
-      "station": "piece_cauldron",
-      "inputs": [
-        "WolfMeat",
-        "Mushroom",
-        "Onion"
       ]
     }
   ],
