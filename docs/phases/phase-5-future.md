@@ -5,7 +5,7 @@ An open backlog, not a schedule. The owner picks items from `docs/FEATURES.md` s
 
 ## Candidates
 
-- Personal notes per item and profile (portal coordinates, base chest contents)
+- ~~Personal notes per item and profile~~ done: a "My note" box on every item page, saved in the profile (max 2000 characters) and included in the backup file
 - Weight and inventory planner (carry weight, ship cargo)
 - Farming, cooking and taming reference
 - Skills reference

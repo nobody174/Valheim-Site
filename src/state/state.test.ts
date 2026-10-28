@@ -187,3 +187,32 @@ describe('export and import', () => {
     expect(new Set(store.getState().order).size).toBe(2);
   });
 });
+
+describe('item notes', () => {
+  it('saves a note per item and profile, trims it away when emptied, and survives export and import', () => {
+    const store = createAppStore(memoryStorage());
+    store.getState().setNote('Wood', 'Portal at 120, -300');
+    expect(active(store).notes.Wood).toBe('Portal at 120, -300');
+    store.getState().createProfile('Other');
+    expect(active(store).notes.Wood).toBeUndefined(); // a different profile starts clean
+
+    store.getState().switchProfile(store.getState().order[0]);
+    const text = JSON.stringify(buildExport(store.getState()));
+    const wiped = createAppStore(memoryStorage());
+    const parsed = parseImport(text);
+    expect(parsed.ok).toBe(true);
+    if (!parsed.ok) return;
+    wiped.getState().importData(parsed.data, 'replace');
+    wiped.getState().switchProfile(wiped.getState().order[0]);
+    expect(active(wiped).notes.Wood).toBe('Portal at 120, -300');
+
+    store.getState().setNote('Wood', '   ');
+    expect(active(store).notes.Wood).toBeUndefined();
+  });
+
+  it('caps a note at 2000 characters', () => {
+    const store = createAppStore(memoryStorage());
+    store.getState().setNote('Wood', 'x'.repeat(5000));
+    expect(active(store).notes.Wood).toHaveLength(2000);
+  });
+});

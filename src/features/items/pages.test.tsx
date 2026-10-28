@@ -1,6 +1,7 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it } from 'vitest';
 import { cleanup, render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router';
 import { lookup } from '../../data/lookup';
 import { CreaturePage, StationPage } from './EntityPage';
@@ -155,5 +156,15 @@ describe('new data on pages', () => {
     renderAt('/item/MeadHealthMinor');
     expect(screen.getByText('Effect')).toBeTruthy();
     expect(screen.getByText(/Ferments into/)).toBeTruthy();
+  });
+});
+
+describe('item notes on the page', () => {
+  it('lets the player write a note that is kept for the profile', async () => {
+    const user = userEvent.setup();
+    renderAt('/item/Wood');
+    const box = screen.getByLabelText('My note');
+    await user.type(box, 'chest by the portal');
+    expect((box as HTMLTextAreaElement).value).toBe('chest by the portal');
   });
 });

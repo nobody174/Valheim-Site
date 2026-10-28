@@ -6,6 +6,7 @@ import {
   newId,
   withHoardOverride,
   withInventoryQty,
+  withNote,
   withPlannerTargets,
   withToggledTick,
   withToggledFavorite,
@@ -34,6 +35,7 @@ export interface Actions {
   setInventoryQty(itemId: string, qty: number): void;
   setPlannerTargets(targets: PlannerState['targets']): void;
   toggleTick(itemId: string): void;
+  setNote(itemId: string, text: string): void;
   createProfile(name: string): void;
   renameProfile(id: string, name: string): void;
   switchProfile(id: string): void;
@@ -71,6 +73,7 @@ export function createAppStore(storage: StorageLike | null) {
       setInventoryQty: (itemId, qty) => updateActive((p) => withInventoryQty(p, itemId, qty)),
       setPlannerTargets: (targets) => updateActive((p) => withPlannerTargets(p, targets)),
       toggleTick: (itemId) => updateActive((p) => withToggledTick(p, itemId)),
+      setNote: (itemId, text) => updateActive((p) => withNote(p, itemId, text)),
 
       createProfile: (name) => {
         const clean = cleanName(name);
