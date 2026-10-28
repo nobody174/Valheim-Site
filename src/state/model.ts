@@ -33,6 +33,19 @@ export const ProfileSchema = z
     hoardOverrides: z.record(z.string(), Hoard),
     inventory: z.record(z.string(), z.number().int().nonnegative()),
     notes: z.record(z.string(), z.string()),
+    /** Build planner: what to make and which shopping-list lines are ticked off. */
+    planner: z
+      .object({
+        targets: z.array(
+          z.object({
+            item: z.string(),
+            qty: z.number().int().positive(),
+            quality: z.number().int().min(1).optional(),
+          }),
+        ),
+        ticked: z.array(z.string()),
+      })
+      .optional(),
   })
   .strict();
 
@@ -123,6 +136,31 @@ export function withHoardOverride(
   if (hoard === null) delete hoardOverrides[itemId];
   else hoardOverrides[itemId] = hoard;
   return { ...profile, hoardOverrides };
+}
+
+export type PlannerState = NonNullable<Profile['planner']>;
+
+export const plannerOf = (profile: Profile): PlannerState =>
+  profile.planner ?? { targets: [], ticked: [] };
+
+export function withInventoryQty(profile: Profile, itemId: string, qty: number): Profile {
+  const inventory = { ...profile.inventory };
+  const clean = Math.max(0, Math.floor(qty) || 0);
+  if (clean === 0) delete inventory[itemId];
+  else inventory[itemId] = clean;
+  return { ...profile, inventory };
+}
+
+export function withPlannerTargets(profile: Profile, targets: PlannerState['targets']): Profile {
+  return { ...profile, planner: { ...plannerOf(profile), targets } };
+}
+
+export function withToggledTick(profile: Profile, itemId: string): Profile {
+  const planner = plannerOf(profile);
+  const ticked = planner.ticked.includes(itemId)
+    ? planner.ticked.filter((x) => x !== itemId)
+    : [...planner.ticked, itemId];
+  return { ...profile, planner: { ...planner, ticked } };
 }
 
 export function effectiveHoard(item: Pick<Item, 'id' | 'hoard'>, profile: Profile): Item['hoard'] {

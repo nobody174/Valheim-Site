@@ -30,10 +30,12 @@ Acceptance:
 - Inventory editor (per profile): quick entry, persisted.
 - Shopping list: grouped by biome and by station, tick-off, copy as text.
 
+Built (Planner page, `/planner`; `src/features/planner/`): targets with amount and upgrade level, recursive expansion with inventory used first at every level, stations with levels (upgrades raise the level by one per quality), shopping list by zone with tick-off and copy as text, crafting steps by station, inventory editor. "Plan this" link on item pages. Where an item has several recipes the first is used. Station build costs are not added to the totals.
+
 Acceptance:
-- [ ] Totals match hand-calculated examples (add unit tests with at least 5 cases incl. upgrades)
-- [ ] Cyclic or missing recipes handled without crashing
-- [ ] Inventory and shopping list persist per profile
+- [x] Totals match hand-calculated examples (9 unit tests, including upgrades and inventory)
+- [x] Cyclic or missing recipes handled without crashing
+- [x] Inventory and shopping list persist per profile (`profile.inventory`, `profile.planner`)
 
 ## Step 3 - Rankings
 

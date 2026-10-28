@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { GuideTag, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityIcon } from '../../components/EntityIcon';
@@ -281,6 +281,12 @@ export function ItemPage() {
       )}
 
       <WhereFound id={id} />
+
+      {craftedFrom.length > 0 && (
+        <p>
+          <Link to={`/planner?add=${id}`}>Plan this: total materials and shopping list</Link>
+        </p>
+      )}
 
       {craftedFrom.length > 0 && (
         <section className={styles.section}>

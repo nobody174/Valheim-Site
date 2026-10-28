@@ -5,12 +5,16 @@ import {
   emptyProfile,
   newId,
   withHoardOverride,
+  withInventoryQty,
+  withPlannerTargets,
+  withToggledTick,
   withToggledFavorite,
   withToggledFlag,
   type AppState,
   type ExportFile,
   type FavoriteKind,
   type Profile,
+  type PlannerState,
   type ProgressFlag,
 } from './model';
 import {
@@ -27,6 +31,9 @@ export interface Actions {
   toggleFlag(itemId: string, flag: ProgressFlag): void;
   toggleFavorite(kind: FavoriteKind, id: string): void;
   setHoardOverride(itemId: string, hoard: Item['hoard'] | null): void;
+  setInventoryQty(itemId: string, qty: number): void;
+  setPlannerTargets(targets: PlannerState['targets']): void;
+  toggleTick(itemId: string): void;
   createProfile(name: string): void;
   renameProfile(id: string, name: string): void;
   switchProfile(id: string): void;
@@ -61,6 +68,9 @@ export function createAppStore(storage: StorageLike | null) {
       toggleFlag: (itemId, flag) => updateActive((p) => withToggledFlag(p, itemId, flag)),
       toggleFavorite: (kind, id) => updateActive((p) => withToggledFavorite(p, kind, id)),
       setHoardOverride: (itemId, hoard) => updateActive((p) => withHoardOverride(p, itemId, hoard)),
+      setInventoryQty: (itemId, qty) => updateActive((p) => withInventoryQty(p, itemId, qty)),
+      setPlannerTargets: (targets) => updateActive((p) => withPlannerTargets(p, targets)),
+      toggleTick: (itemId) => updateActive((p) => withToggledTick(p, itemId)),
 
       createProfile: (name) => {
         const clean = cleanName(name);

@@ -98,7 +98,9 @@ describe('link integrity', () => {
     const { container } = renderAt(path);
     const broken: string[] = [];
     for (const a of container.querySelectorAll('a')) {
-      const [, kind, id] = (a.getAttribute('href') ?? '').split('/');
+      const href = a.getAttribute('href') ?? '';
+      if (href.startsWith('/planner')) continue; // a tool page, not an entity
+      const [, kind, id] = href.split('/');
       if (!targets[kind]?.(decodeURIComponent(id)))
         broken.push(`${path} -> ${a.getAttribute('href')}`);
     }
