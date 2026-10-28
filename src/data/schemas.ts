@@ -6,6 +6,7 @@ export const HOARD_CATEGORIES = [
   'keep_some',
   'safe_discard',
   'decorative',
+  'gear',
   'sell',
 ] as const;
 export const ITEM_CATEGORIES = [

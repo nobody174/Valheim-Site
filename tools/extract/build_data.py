@@ -17,7 +17,7 @@ import sys
 from collections import defaultdict
 from datetime import date
 
-SKILLS = {1: 'Swords', 2: 'Knives', 3: 'Clubs', 4: 'Polearms', 5: 'Spears', 6: 'Blocking', 7: 'Axes',
+SKILLS = {0: 'None', 1: 'Swords', 2: 'Knives', 3: 'Clubs', 4: 'Polearms', 5: 'Spears', 6: 'Blocking', 7: 'Axes',
           8: 'Bows', 9: 'FireMagic', 10: 'FrostMagic', 11: 'Unarmed', 12: 'Pickaxes',
           13: 'WoodCutting', 14: 'Crossbows', 15: 'ElementalMagic', 16: 'BloodMagic'}
 DMG_KEYS = ['blunt', 'slash', 'pierce', 'chop', 'pickaxe', 'fire', 'frost', 'lightning', 'poison',
@@ -451,13 +451,17 @@ def main(raw, out, build_id, reviewed=None):
 
     # ---- what each item is needed for, so the hoard default follows the recipes and not a guess.
     # Every use is (what it is for, quantity needed at once).
+    def iname(i):
+        return english(items_raw[i]['m_name'], i) if i in items_raw else i
+
     uses = defaultdict(list)
     for r in recipes:
+        out_name = iname(r['output']['item'])
         for ing in r['inputs']:
-            uses[ing['item']].append((f"crafting {r['output']['item']}", ing['qty']))
+            uses[ing['item']].append((f"crafting {out_name}", ing['qty']))
         for up in r['upgrades']:
             for ing in up['inputs']:
-                uses[ing['item']].append((f"upgrading {r['output']['item']}", ing['qty']))
+                uses[ing['item']].append((f"upgrading {out_name}", ing['qty']))
     for st in stations:
         for ing in st['buildRequirements']:
             uses[ing['item']].append((f"building {st['name']}", ing['qty']))
@@ -496,6 +500,8 @@ def main(raw, out, build_id, reviewed=None):
             hoard, extra = 'keep_some', {'recommendedQty': keep_some[iid]}
         elif iid in must_keep:
             hoard, extra = 'must_keep', {}
+        elif cat in ('weapon', 'armor'):
+            hoard, extra = 'gear', {}  # crafted gear is neither hoarded nor thrown away by default
         elif derived_hoard(iid, cat, s['m_maxStackSize']):
             hoard, extra = derived_hoard(iid, cat, s['m_maxStackSize'])
         elif cat == 'trophy':
