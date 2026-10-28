@@ -3,7 +3,7 @@
 A personal, offline-capable Valheim companion: search, recipes, building costs, progression
 guide, weapon and armor rankings, trophies, bosses, creatures, food and checklists. Static site, hosted free on GitHub Pages.
 
-**Status:** data for Meadows to Plains is in, with the browse pages, rankings and search. The crafting graph, build planner and other tools are still to come. See `docs/ROADMAP.md`.
+**Status:** all seven zones (Meadows to Ashlands), the browse pages, search, rankings and the planning tools are built. Swamp to Ashlands data is unverified until reached in game. See `docs/ROADMAP.md`.
 
 ## Live site
 
@@ -19,6 +19,12 @@ GitHub Pages, Source: GitHub Actions. Pushing to `main` runs `.github/workflows/
 Press **Ctrl+K** or **/** on any page to search. Every item, creature, boss and station name is a link
 to its page. `/items` lists all items, filterable by name, category, hoard and biome (filters live in the URL).
 `/recipes` lists every recipe grouped by station, searchable by output or ingredient.
+
+Tools: the **build planner** (materials, stations and a shopping list for what you want to make),
+the **crafting graph**, **compare** (weapons or armor side by side), the **upgrade calculator**, the
+**food optimizer** (best three foods), **rankings** and **next steps** (what to craft or collect now).
+The **Second screen** button in the header gives larger type, tighter tables and no motion for a
+monitor beside the game.
 
 Progress (checklist, favorites, hoard overrides) is saved in this browser per profile. Use
 **Profile & data** to add profiles and to download or restore a JSON backup; browsers can lose
@@ -39,6 +45,8 @@ npm run build
 
 Game data is in `/data/*.json`, extracted from a local game install with `tools/extract/`
 and validated against Zod schemas. See `docs/DATA_SOURCES.md`.
+
+After a game patch, follow `docs/UPDATE_AFTER_PATCH.md` to refresh the data.
 
 ## Project layout
 
