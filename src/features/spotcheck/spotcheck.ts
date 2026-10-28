@@ -24,6 +24,9 @@ export interface ZoneChecks {
 }
 
 const num = (n: number) => String(Math.round(n * 10) / 10);
+
+/** The game's item tooltip never prints these, so they cannot be checked by hovering. */
+const HIDDEN_IN_TOOLTIP = new Set(['chop', 'pickaxe']);
 const take = <T>(list: T[], n: number) => list.slice(0, n);
 
 type Needed = Pick<
@@ -57,6 +60,7 @@ export function buildSpotChecks(data: Needed): ZoneChecks[] {
           id: w.item,
           label: nameOf(w.item),
           expect: `${Object.entries(w.damage)
+            .filter(([k]) => !HIDDEN_IN_TOOLTIP.has(k))
             .map(([k, v]) => `${k} ${num(v)}`)
             .join(', ')}${w.durability ? ` · durability ${num(w.durability)}` : ''}${w.blockPower ? ` · block ${num(w.blockPower)}` : ''}`,
         })),
@@ -71,7 +75,7 @@ export function buildSpotChecks(data: Needed): ZoneChecks[] {
         groups.push({
           id: 'gear',
           title: 'Weapons and armor',
-          how: 'Open your inventory and hover the item. Compare the damage or armor and the durability of an un-upgraded one.',
+          how: 'Open your inventory and hover the item. Compare the damage or armor and the durability of an un-upgraded one. The tooltip does not show chop or pickaxe damage, so those are left out.',
           rows: gear,
         });
       }
