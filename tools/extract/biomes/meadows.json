@@ -7,7 +7,6 @@
     "Stone",
     "Flint",
     "Resin",
-    "Coal",
     "Dandelion",
     "Raspberry",
     "Blueberries",
@@ -37,7 +36,6 @@
     "Hammer",
     "Hoe",
     "Torch",
-    "Cultivator",
     "FishingRod",
     "FishingBait"
   ],
@@ -81,8 +79,6 @@
   "meads": [
     "MeadBaseHealthMinor",
     "MeadHealthMinor",
-    "MeadBaseStaminaMinor",
-    "MeadStaminaMinor",
     "MeadBaseTasty",
     "MeadTasty"
   ],

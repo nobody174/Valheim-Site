@@ -27,9 +27,12 @@
     "Coins",
     "BjornMeat",
     "BjornHide",
-    "BjornPaw"
+    "BjornPaw",
+    "Coal"
   ],
-  "tools": [],
+  "tools": [
+    "Cultivator"
+  ],
   "weapons": [
     "BowFineWood",
     "ArrowBronze",
@@ -69,7 +72,10 @@
     "CookedBjornMeat",
     "PulledBear"
   ],
-  "meads": [],
+  "meads": [
+    "MeadBaseStaminaMinor",
+    "MeadStaminaMinor"
+  ],
   "trophies": [
     "TrophyGreydwarf",
     "TrophyGreydwarfBrute",
