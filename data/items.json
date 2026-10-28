@@ -5486,7 +5486,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "This ancient bone remembers the location of many forgotten things.",
-    "use": "Equip it to find buried treasure: it reacts when treasure is close. Dig up the spot with a pickaxe or hoe."
+    "use": "Equip it to find silver: it reacts when you are close to a silver vein in the Mountains. Mine the vein with a pickaxe."
   },
   {
     "id": "WitheredBone",
