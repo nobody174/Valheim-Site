@@ -7,6 +7,7 @@ import {
   newId,
   withHoardOverride,
   withCharacter,
+  withCheck,
   profileForCharacter,
   withInventoryQty,
   withNote,
@@ -39,6 +40,8 @@ export interface Actions {
   setPlannerTargets(targets: PlannerState['targets']): void;
   toggleTick(itemId: string): void;
   setNote(itemId: string, text: string): void;
+  /** Mark a spot check as matching the game (ok) or not (bad); again clears it. */
+  setCheck(key: string, value: 'ok' | 'bad'): void;
   /** Tick what a character file shows and keep its snapshot; returns the profile it went to. */
   applyCharacter(imp: CharacterImport): void;
   createProfile(name: string): void;
@@ -79,6 +82,7 @@ export function createAppStore(storage: StorageLike | null) {
       setPlannerTargets: (targets) => updateActive((p) => withPlannerTargets(p, targets)),
       toggleTick: (itemId) => updateActive((p) => withToggledTick(p, itemId)),
       setNote: (itemId, text) => updateActive((p) => withNote(p, itemId, text)),
+      setCheck: (key, value) => updateActive((p) => withCheck(p, key, value)),
 
       applyCharacter: (imp) => {
         const state = base();

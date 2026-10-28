@@ -57,3 +57,5 @@ reviews the live site before the next phase starts.
 ## State after review 3 (2026-10-28)
 
 v1.0 is tagged, but **nothing is marked seen in game yet**; the Data trust page shows the numbers honestly. Review 3 (`docs/REVIEW-2026-10-28.md`) work done: all seven boss summon costs now come from the game files; the last sourceless items (Ancient Bark, Carrot Seeds) have guide-tagged sources; `lastReviewed` no longer moves on a rebuild; `npm run patchcheck`; Data trust page; touch targets, toast, search placeholder, graph default; beta dots in the menu. Not done on purpose: mobile bottom tab bar and list virtualisation (the site is used on a desktop second monitor); play-test verification needs the owner in game.
+
+After review 3: phone bottom tab bar (Home, Search, Items, Planner, More) replaces the top tabs on narrow screens; new Check in game page (a per-zone list to take into the game, saved in the profile, with a Copy my results button) to earn the first in-game verifications.

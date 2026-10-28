@@ -18,6 +18,7 @@ import { SkillsPage } from '../features/skills/SkillsPage';
 import { UpdateLogPage } from '../features/updates/UpdateLogPage';
 import { PlacesPage } from '../features/places/PlacesPage';
 import { TrustPage } from '../features/trust/TrustPage';
+import { SpotCheckPage } from '../features/spotcheck/SpotCheckPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
 import { SecondScreenToggle } from './SecondScreenToggle';
@@ -28,6 +29,7 @@ import { RecipesPage } from '../features/items/RecipesPage';
 import { CommandPalette } from '../features/search/CommandPalette';
 import { SearchPage } from '../features/search/SearchPage';
 import { EntityIcon } from '../components/EntityIcon';
+import { MobileTabs } from './MobileTabs';
 import { ROUTE_GROUPS, ROUTES } from './routes';
 import styles from './App.module.css';
 
@@ -83,6 +85,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/places': <PlacesPage />,
   '/skills': <SkillsPage />,
   '/commands': <CommandsPage />,
+  '/spotcheck': <SpotCheckPage />,
   '/trust': <TrustPage />,
   '/updates': <UpdateLogPage />,
   '/profile': <ProfilePage />,
@@ -203,6 +206,7 @@ function Shell() {
       <p className={styles.dataInfoMobile}>
         Data: {gameData.meta.gameVersion}, reviewed {gameData.meta.lastReviewed}
       </p>
+      <MobileTabs onSearch={() => setPaletteOpen(true)} />
       {paletteOpen && <CommandPalette onClose={() => setPaletteOpen(false)} />}
     </div>
   );

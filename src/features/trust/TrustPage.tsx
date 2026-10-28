@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { gameData } from '../../data/load';
 import { trustReport } from './trust';
@@ -84,8 +85,8 @@ export function TrustPage() {
 
       <h2>Help check it</h2>
       <p>
-        The list of entries most worth checking is the &quot;Spot-check list&quot; in <code>docs/DATA_SOURCES.md</code>{' '}
-        in the repository. When one is seen working in game, it moves to &quot;seen in game&quot; here.
+        Take the <Link to="/spotcheck">Check in game</Link> list into the game and mark what matches. Entries that are
+        confirmed move to &quot;seen in game&quot; here.
       </p>
     </div>
   );
