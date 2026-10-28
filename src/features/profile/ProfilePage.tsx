@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Intro } from '../../components/Intro';
+import { BACKUP_EVERY_DAYS, daysSinceBackup, markBackup } from '../../state/backup';
 import { buildExport, parseImport, type ExportFile } from '../../state/model';
 import { appStore, useApp } from '../../state/store';
 import styles from '../items/Items.module.css';
@@ -13,6 +14,7 @@ function downloadExport(): void {
   a.download = `valheim-companion-${new Date().toISOString().slice(0, 10)}.json`;
   a.click();
   URL.revokeObjectURL(url);
+  markBackup();
 }
 
 function ProfileRow({ id }: { id: string }) {
@@ -69,6 +71,7 @@ export function ProfilePage() {
   const order = useApp((s) => s.order);
   const { createProfile, importData } = appStore.getState();
   const [newName, setNewName] = useState('');
+  const [backupDays, setBackupDays] = useState(() => daysSinceBackup());
   const [pending, setPending] = useState<ExportFile | null>(null);
   const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
 
@@ -136,10 +139,15 @@ export function ProfilePage() {
       <section className={styles.section}>
         <h2>Back up and restore</h2>
         <p className={styles.dim}>
-          Browsers can lose site data. Download a backup now and then; import it to restore.
+          Browsers can lose site data. Download a backup now and then; import it to restore. The site reminds you
+          after {BACKUP_EVERY_DAYS} days.{' '}
+          {backupDays === null ? 'No backup made on this device yet.' : `Last backup here: ${backupDays} days ago.`}
         </p>
         <div className={styles.row}>
-          <button type="button" className={styles.toggle} onClick={downloadExport}>
+          <button type="button" className={styles.toggle} onClick={() => {
+              downloadExport();
+              setBackupDays(daysSinceBackup());
+            }}>
             Download backup (JSON)
           </button>
           <label className={styles.toggle}>
