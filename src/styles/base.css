@@ -60,3 +60,25 @@ select,
 input {
   font: inherit;
 }
+
+/* Second-screen mode (header toggle): larger type, tighter tables and sections, no motion. */
+html[data-screen='second'] {
+  font-size: 112.5%;
+}
+html[data-screen='second'] main td,
+html[data-screen='second'] main th {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  line-height: 1.25;
+}
+html[data-screen='second'] main [class*='_section_'] {
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.8rem;
+}
+html[data-screen='second'] *,
+html[data-screen='second'] *::before,
+html[data-screen='second'] *::after {
+  transition: none !important;
+  animation: none !important;
+  scroll-behavior: auto !important;
+}
