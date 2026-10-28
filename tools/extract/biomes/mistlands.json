@@ -133,11 +133,12 @@
   "bossSummon": {
     "SeekerQueen": [
       [
-        "Softtissue",
+        "TrophySeekerBrute",
         3
       ]
     ]
   },
+  "bossSummonFromFiles": ["SeekerQueen"],
   "creatureNotes": {
     "Dverger": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",
     "DvergerMage": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",

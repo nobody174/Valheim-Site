@@ -65,11 +65,11 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 
 ## Mistlands pass (2026-10-28; the owner has not reached the Mistlands, so nothing here is checked in game)
 
-Config: `tools/extract/biomes/mistlands.json`. Read from the game files: Seeker, Seeker Brute, Seeker Brood, Gjall, Tick, Hare, the Dvergr and the Queen (health, attacks, drops, resistances), the Black Forge, Eitr Refinery and Galdr Table build costs and extensions, the Eitr conversion (Soft Tissue to Refined Eitr), all recipes, stats, foods and meads. Hand-written and `unverified` or tagged "guide, not checked": the Queen's summon cost (3 Soft Tissue, from memory, not in the files), every gather note (Yggdrasil Wood, Sap, Black Marble, Soft Tissue, Chitin, Wisp, Black Core, the mushrooms, Vineberry, Fiddlehead), and the Dvergr zone (they have camps and ruins, not a spawn entry). Included: Mistlands weapons (Mistwalker, Krom, Himmin Afl, Jotun Bane, Skull Splittur, Demolisher, carapace and chitin gear, Spine Snap, Arbalest, staves, bolts, shields), carapace and mage armor, Mistlands meads and foods, two trinkets, the Lantern, Demister, Ceramic Plate, Mechanical Spring and Shield Core. Left out on purpose: anything that needs Ashlands, Deep North or Gold items (Flametal, Askvin, Moose, Gold armor and weapons, Fader), the six Feasts, fishing and its bait, turrets, and eggs (chicken, Volture). The pickable mushrooms, Vineberry and Fiddlehead are listed as materials (their food values are not shown).
+Config: `tools/extract/biomes/mistlands.json`. Read from the game files: Seeker, Seeker Brute, Seeker Brood, Gjall, Tick, Hare, the Dvergr and the Queen (health, attacks, drops, resistances), the Black Forge, Eitr Refinery and Galdr Table build costs and extensions, the Eitr conversion (Soft Tissue to Refined Eitr), all recipes, stats, foods and meads. Hand-written and `unverified` or tagged "guide, not checked": every gather note (Yggdrasil Wood, Sap, Black Marble, Soft Tissue, Chitin, Wisp, Black Core, the mushrooms, Vineberry, Fiddlehead), and the Dvergr zone (they have camps and ruins, not a spawn entry). Included: Mistlands weapons (Mistwalker, Krom, Himmin Afl, Jotun Bane, Skull Splittur, Demolisher, carapace and chitin gear, Spine Snap, Arbalest, staves, bolts, shields), carapace and mage armor, Mistlands meads and foods, two trinkets, the Lantern, Demister, Ceramic Plate, Mechanical Spring and Shield Core. Left out on purpose: anything that needs Ashlands, Deep North or Gold items (Flametal, Askvin, Moose, Gold armor and weapons, Fader), the six Feasts, fishing and its bait, turrets, and eggs (chicken, Volture). The pickable mushrooms, Vineberry and Fiddlehead are listed as materials (their food values are not shown).
 
 ## Ashlands pass (2026-10-28; the owner has not reached the Ashlands, so nothing here is checked in game)
 
-Config: `tools/extract/biomes/ashlands.json`. Read from the game files: the Charred (archer, melee, mage, twitcher), Asksvin, Morgen, Lava Blob, Fallen Valkyrie, Volture, Bonemaw Serpent and Fader (health, attacks, drops, resistances), all recipes and stats for Flametal, Blackwood and Charred gear, the Ashlands armor and capes, the bombs, the Bell, foods and one trinket. Hand-written and flagged: Fader's summon (one Bell, from memory, not in the files), the gather notes for flametal ore, Blackwood, Molten Core and Bell Fragments, and the Charred Mage's zone. Left out on purpose: the Red, Blue and Green Gemstone items and everything that needs them (three staves, the Flametal Eitr trinket, upgraded weapon variants), Gold items and the Deep North, Dyrnwyn, saddles, fishing and turrets.
+Config: `tools/extract/biomes/ashlands.json`. Read from the game files: the Charred (archer, melee, mage, twitcher), Asksvin, Morgen, Lava Blob, Fallen Valkyrie, Volture, Bonemaw Serpent and Fader (health, attacks, drops, resistances), all recipes and stats for Flametal, Blackwood and Charred gear, the Ashlands armor and capes, the bombs, the Bell, foods and one trinket. Hand-written and flagged: the gather notes for flametal ore, Blackwood, Molten Core and Bell Fragments, and the Charred Mage's zone. Left out on purpose: the Red, Blue and Green Gemstone items and everything that needs them (three staves, the Flametal Eitr trinket, upgraded weapon variants), Gold items and the Deep North, Dyrnwyn, saddles, fishing and turrets.
 
 ## Spot-check list (Meadows and Black Forest, session 2.1)
 
@@ -77,8 +77,8 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 
 | # | Entry | What to check |
 |---|---|---|
-| 1 | Eikthyr boss | Summon items: 2 Deer Trophies at the altar |
-| 2 | The Elder boss | Summon items: 3 Ancient Seeds at the altar |
+| 1 | Eikthyr boss | Summon items: 2 Deer Trophies at the altar (checked: altar data in the game files) |
+| 2 | The Elder boss | Summon items: 3 Ancient Seeds at the altar (checked: altar data in the game files) |
 | 3 | Ruby | Found in Black Forest? (assigned by hand) |
 | 4 | Amber and Amber Pearl | Found in Meadows? (assigned by hand) |
 | 5 | Honey | Comes from beehives (curated source) |
@@ -87,7 +87,7 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 
 | # | Entry | What to check |
 |---|---|---|
-| 6 | Bonemass boss | Summon: 10 Withered Bone at the altar |
+| 6 | Bonemass boss | Summon: 10 Withered Bone at the altar (checked: altar data in the game files) |
 | 7 | Moder boss (Dragon) | Summon: 3 Dragon Eggs at the altar |
 | 8 | Yagluth boss (Goblin King) | Summon: 5 Fuling Totems at the altar |
 | 9 | Swamp Key | Opens Sunken Crypt doors (item use line) |
@@ -104,7 +104,7 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 
 | # | Entry | What to check |
 |---|---|---|
-| 18 | The Queen boss | Summon: 3 Soft Tissue at the altar |
+| 18 | The Queen boss | Summon: 3 Seeker Soldier Trophies at the altar (checked: altar data in the game files and guides; corrected from 3 Soft Tissue) |
 | 19 | Black Forge, Eitr Refinery, Galdr Table | Build costs (read from the files; Black Core, Black Marble, Yggdrasil Wood) |
 | 20 | Gather notes | Yggdrasil Wood, Sap, Black Marble, Chitin, Wisp, Black Core, mushrooms, Vineberry, Fiddlehead |
 | 21 | Dvergr | Where they appear |
@@ -113,7 +113,7 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 
 | # | Entry | What to check |
 |---|---|---|
-| 22 | Fader boss | Summon: 1 Bell at the altar |
+| 22 | Fader boss | Summon: 3 Bells on the bell holders (checked: altar data in the game files and guides; corrected from 1 Bell) |
 | 23 | Flametal ore, Blackwood, Molten Core, Bell Fragment | Where to find them (guides) |
 | 24 | Charred Mage | Where it spawns |
 
@@ -155,7 +155,7 @@ Correction: Upgrader1Armor and Upgrader2Weapon are flagged as upgrade-only resou
 Config: `tools/extract/biomes/swamp.json`. The creature drops, recipes, stats and build costs come from the game files. Hand-written parts, all `unverified` until the owner checks them in game:
 
 - Where-to-get notes for Scrap Iron, Withered Bone and Turnip Seeds (guides: Sunken Crypts' Muddy Scrap Piles, wild turnips in the Swamp).
-- Bonemass summon: 10 Withered Bone (guides agree; the altar cost is not in the extracted data).
+- Bonemass summon: 10 Withered Bone (read from the altar in the game files, 2026-10-28).
 - Ymir Flesh: no creature drops it in the game files and no guide result was found, so its source says "not confirmed". It is needed by the Iron Sledge.
 - Moved to the right zone (M6): Entrails and Sausages to the Swamp, Coins to the Black Forest (Trolls drop them). Needle stays in Meadows until the Plains pass (Deathsquito drop).
 - Iron Shield (`ShieldIronSquare`) is not added: its recipe is disabled in the game files.
@@ -180,3 +180,7 @@ Config: `tools/extract/biomes/plains.json`. Creature drops, recipes, stats and c
 - Needle moved here from Meadows (Deathsquito drop).
 - Left out for now: Black Forge items (Bolt, Skoll and Hati knife, Saddle, Arbalest), trinkets, fishing bait variants, Viking Cupcake (needs Chicken Egg), Wolf Skewer, Feasts. Growths (Tar) are not added as creatures: no spawn-table entry was found.
 - Fuling raids also appear in other zones' spawn tables; they are treated as Plains creatures.
+
+## Boss summon costs (checked 2026-10-28)
+
+The altar prefabs (`OfferingBowl` component) hold the item and amount. Read from them: Eikthyr 2 Deer Trophy, The Elder 3 Ancient Seed, Bonemass 10 Withered Bone, The Queen 3 Seeker Soldier Trophy (`TrophySeekerBrute`), Fader 3 Bell. Those five are flagged `summonFromFiles` and carry no "guide, not checked" tag. Web guides agree. Two earlier values were wrong and are fixed: the Queen needs trophies, not Soft Tissue, and Fader needs 3 Bells, not 1. Moder (3 Dragon Eggs, on egg cups) and Yagluth (5 Fuling Totems, on totem holders) fill item stands in the world; the number of stands is not in the altar prefab, so those two stay on guides (several agree) and keep the tag.

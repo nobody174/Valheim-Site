@@ -271,6 +271,8 @@ export const BossSchema = z
     aliases: z.array(z.string()).optional(),
     biome: id,
     summonItems: z.array(ingredient).default([]),
+    /** The summon cost was read from the boss altar in the game files, not taken from a guide. */
+    summonFromFiles: z.boolean().default(false),
     trophy: id.optional(),
     drops: z.array(drop).default([]),
     health: z.number().positive().optional(),

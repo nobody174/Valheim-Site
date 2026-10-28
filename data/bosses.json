@@ -44,8 +44,9 @@
         "qty": 2
       }
     ],
+    "summonFromFiles": true,
     "trophy": "TrophyEikthyr",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated."
+    "note": "Health, drops, attacks and resistances from game files; summon items from the altar in the game files."
   },
   {
     "id": "gd_king",
@@ -91,8 +92,9 @@
         "qty": 3
       }
     ],
+    "summonFromFiles": true,
     "trophy": "TrophyTheElder",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated."
+    "note": "Health, drops, attacks and resistances from game files; summon items from the altar in the game files."
   },
   {
     "id": "Bonemass",
@@ -142,8 +144,9 @@
         "qty": 10
       }
     ],
+    "summonFromFiles": true,
     "trophy": "TrophyBonemass",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated."
+    "note": "Health, drops, attacks and resistances from game files; summon items from the altar in the game files."
   },
   {
     "id": "Dragon",
@@ -208,8 +211,9 @@
         "qty": 3
       }
     ],
+    "summonFromFiles": false,
     "trophy": "TrophyDragonQueen",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated."
+    "note": "Health, drops, attacks and resistances from game files; summon items curated from guides."
   },
   {
     "id": "GoblinKing",
@@ -257,8 +261,9 @@
         "qty": 5
       }
     ],
+    "summonFromFiles": false,
     "trophy": "TrophyGoblinKing",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated.",
+    "note": "Health, drops, attacks and resistances from game files; summon items curated from guides.",
     "aliases": [
       "Goblin king"
     ]
@@ -334,12 +339,13 @@
     },
     "summonItems": [
       {
-        "item": "Softtissue",
+        "item": "TrophySeekerBrute",
         "qty": 3
       }
     ],
+    "summonFromFiles": true,
     "trophy": "TrophySeekerQueen",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated."
+    "note": "Health, drops, attacks and resistances from game files; summon items from the altar in the game files."
   },
   {
     "id": "Fader",
@@ -419,10 +425,11 @@
     "summonItems": [
       {
         "item": "Bell",
-        "qty": 1
+        "qty": 3
       }
     ],
+    "summonFromFiles": true,
     "trophy": "TrophyFader",
-    "note": "Health, drops, attacks and resistances from game files; summon items curated."
+    "note": "Health, drops, attacks and resistances from game files; summon items from the altar in the game files."
   }
 ]

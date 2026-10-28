@@ -8408,7 +8408,8 @@
     "weight": 2.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "must_keep",
+    "hoardNote": "Needed to summon The Queen.",
     "obtainedFrom": [
       {
         "type": "drop",

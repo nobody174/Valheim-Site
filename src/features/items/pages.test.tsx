@@ -46,8 +46,11 @@ describe('item page', () => {
     renderAt('/item/Wood');
     expect(screen.getAllByText('guide, not checked').length).toBeGreaterThan(0);
     cleanup();
-    renderAt('/boss/Eikthyr');
+    renderAt('/boss/Dragon');
     expect(screen.getAllByText('guide, not checked').length).toBeGreaterThan(0);
+    cleanup();
+    renderAt('/boss/Eikthyr');
+    expect(screen.queryAllByText('guide, not checked')).toHaveLength(0);
     cleanup();
     renderAt('/item/SwordBronze');
     expect(screen.queryAllByText('guide, not checked')).toHaveLength(0);

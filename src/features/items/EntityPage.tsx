@@ -108,7 +108,7 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
       {'summonItems' in monster && monster.summonItems.length > 0 && (
         <section className={styles.section}>
           <h2>
-            Summon with <GuideTag />
+            Summon with {'summonFromFiles' in monster && monster.summonFromFiles ? null : <GuideTag />}
           </h2>
           <ul className={styles.inline}>
             {monster.summonItems.map((s) => (
