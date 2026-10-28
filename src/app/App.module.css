@@ -200,3 +200,23 @@
     max-width: 7rem;
   }
 }
+
+.screenToggle {
+  margin-left: auto;
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.screenToggle:hover {
+  color: var(--text);
+  border-color: var(--iron);
+}
+.screenToggle[aria-pressed='true'] {
+  color: var(--amber);
+  border-color: var(--amber);
+}

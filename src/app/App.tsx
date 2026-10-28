@@ -14,6 +14,7 @@ import { AdvisorPage } from '../features/advisor/AdvisorPage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
+import { SecondScreenToggle } from './SecondScreenToggle';
 import { CreaturePage, StationPage } from '../features/items/EntityPage';
 import { ItemPage } from '../features/items/ItemPage';
 import { ItemsPage } from '../features/items/ItemsPage';
@@ -117,6 +118,7 @@ function Shell() {
             }
           }}
         />
+        <SecondScreenToggle />
         <ProfileSwitcher />
       </header>
       <nav className={styles.nav} aria-label="Main">
