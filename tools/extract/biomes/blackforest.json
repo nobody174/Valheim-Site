@@ -182,5 +182,9 @@
   },
   "guide": {
     "notes": []
-  }
+  },
+  "trinkets": [
+    "TrinketBronzeHealth",
+    "TrinketBronzeStamina"
+  ]
 }

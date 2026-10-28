@@ -96,3 +96,35 @@ describe('player-facing text', () => {
     expect(bad).toEqual([]);
   });
 });
+
+describe('dropped recipes', () => {
+  const read = (name: string) =>
+    JSON.parse(readFileSync(new URL(`../../tools/extract/${name}`, import.meta.url), 'utf8'));
+  const dropped = read('dropped_recipes.json').outputNotConfigured as { recipe: string }[];
+  const reasons = read('dropped_reasons.json') as Record<string, string>;
+
+  it('every recipe the builder leaves out has a written reason', () => {
+    const missing = dropped.filter((r) => !(r.recipe in reasons)).map((r) => r.recipe);
+    expect(missing).toEqual([]);
+  });
+
+  it('dropped_reasons.json has no reason for a recipe that is no longer dropped', () => {
+    const names = new Set(dropped.map((r) => r.recipe));
+    const stale = Object.keys(reasons).filter((r) => !names.has(r));
+    expect(stale).toEqual([]);
+  });
+});
+
+describe('armor sets', () => {
+  it('every armor set has as many pieces in the data as its declared size', () => {
+    const sets = new Map<string, { size: number; count: number }>();
+    for (const a of lookup.allArmor()) {
+      if (!a.setName) continue;
+      const s = sets.get(a.setName) ?? { size: a.setSize ?? 0, count: 0 };
+      s.count += 1;
+      sets.set(a.setName, s);
+    }
+    const wrong = [...sets].filter(([, s]) => s.size !== s.count).map(([n, s]) => `${n}: ${s.count}/${s.size}`);
+    expect(wrong).toEqual([]);
+  });
+});

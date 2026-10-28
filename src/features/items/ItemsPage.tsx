@@ -15,6 +15,7 @@ export const CATEGORY_LABELS: Record<string, string> = {
   mead: 'Meads',
   material: 'Materials',
   trophy: 'Trophies',
+  trinket: 'Trinkets',
   piece: 'Building pieces',
   misc: 'Misc',
 };

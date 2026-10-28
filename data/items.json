@@ -2655,6 +2655,25 @@
     "description": "An elaborate and finely-crafted helm."
   },
   {
+    "id": "HelmetFenring",
+    "name": "Fenris Hood",
+    "category": "armor",
+    "biome": "mountain",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetFenrir"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The eyes of the beast were wise and knowing, so that it could measure the strength of a warrior in one glance."
+  },
+  {
     "id": "HelmetIron",
     "name": "Iron Helmet",
     "category": "armor",
@@ -3039,7 +3058,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 23,
-    "hoardNote": "Used for crafting Lox Cape, crafting Lox Fur Hood, crafting Lox Fur Jacket and 5 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Bracelets of the Brave, crafting Lox Cape, crafting Lox Fur Hood and 6 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -3475,7 +3494,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 5,
-    "hoardNote": "Used for building Spice Rack, crafting Carrot Soup. Quantity is the largest single need.",
+    "hoardNote": "Used for building Spice Rack, crafting Carrot Soup, crafting Wolf Skewer. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -3607,7 +3626,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 3,
-    "hoardNote": "Used for crafting Onion Soup. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Onion Soup, crafting Wolf Skewer. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -4605,6 +4624,139 @@
     "description": "It brings light and warmth, drives back the darkness."
   },
   {
+    "id": "TrinketBlackDamageHealth",
+    "name": "Bracelets of the Brave",
+    "category": "trinket",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketBlackDamageHealth"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Your mind hardens, as do your blows."
+  },
+  {
+    "id": "TrinketBlackStamina",
+    "name": "Evasion Mantle",
+    "category": "trinket",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketBlackStamina"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Dance with death as you dodge your enemies' strikes."
+  },
+  {
+    "id": "TrinketBronzeHealth",
+    "name": "Heart of the Forest",
+    "category": "trinket",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketBronzeHealth"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It pulsates with fragments of ancient life."
+  },
+  {
+    "id": "TrinketBronzeStamina",
+    "name": "Bronze Pendant",
+    "category": "trinket",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketBronzeStamina"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A beautiful pendant, harbouring the endurance of a bear."
+  },
+  {
+    "id": "TrinketIronHealth",
+    "name": "Iron Brooch",
+    "category": "trinket",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketIronHealth"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A delicate yet defensive accessory."
+  },
+  {
+    "id": "TrinketSilverDamage",
+    "name": "Wolf Sight",
+    "category": "trinket",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketSilverDamage"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Assume the sharp and furious mind of a wolf."
+  },
+  {
+    "id": "TrinketSilverResist",
+    "name": "Crystal Heart",
+    "category": "trinket",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketSilverResist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A shard of frozen sorrow. Touching it makes you feel almost numb."
+  },
+  {
     "id": "TrollHide",
     "name": "Troll Hide",
     "category": "material",
@@ -4652,7 +4804,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 1,
-    "hoardNote": "Used for crafting Headdress of the Bear. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Bronze Pendant, crafting Headdress of the Bear. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -4723,6 +4875,27 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Bones and viscous goo, held together by some unseen force.\r\n\r\nOffer it to the Sacrificial Stones."
+  },
+  {
+    "id": "TrophyCultist",
+    "name": "Cultist Trophy",
+    "category": "trophy",
+    "biome": "mountain",
+    "weight": 3.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Fenris Hood. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Fenring_Cultist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "My, what big teeth it has..."
   },
   {
     "id": "TrophyDeathsquito",
@@ -4849,7 +5022,9 @@
     "weight": 1.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Wolf Sight. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -4913,7 +5088,9 @@
     "weight": 2.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Evasion Mantle. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -5015,7 +5192,9 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Heart of the Forest. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -5055,7 +5234,9 @@
     "weight": 2.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Iron Brooch. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -5074,7 +5255,9 @@
     "weight": 2.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Bracelets of the Brave. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -5112,7 +5295,9 @@
     "weight": 2.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Crystal Heart. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -5381,7 +5566,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 35,
-    "hoardNote": "Used for crafting Fenris Coat, crafting Fenris Leggings, crafting Flesh Rippers and 3 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Fenris Coat, crafting Fenris Hood, crafting Fenris Leggings and 5 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -5425,7 +5610,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 1,
-    "hoardNote": "Used for crafting Cooked Wolf Meat, crafting Wolf Jerky. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Cooked Wolf Meat, crafting Wolf Jerky, crafting Wolf Skewer. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -5434,6 +5619,25 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "WolfMeatSkewer",
+    "name": "Wolf Skewer",
+    "category": "food",
+    "biome": "mountain",
+    "weight": 0.5,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.WolfSkewer"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Dripping with taste."
   },
   {
     "id": "WolfPelt",

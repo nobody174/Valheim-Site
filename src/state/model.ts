@@ -131,7 +131,7 @@ export function effectiveHoard(item: Pick<Item, 'id' | 'hoard'>, profile: Profil
 
 /** Which favorites list an item belongs to. Recipes are favorited by recipe id instead. */
 export function favoriteKindOf(category: Item['category']): FavoriteKind {
-  return category === 'weapon' || category === 'armor' || category === 'tool'
+  return category === 'weapon' || category === 'armor' || category === 'tool' || category === 'trinket'
     ? 'gear'
     : 'materials';
 }

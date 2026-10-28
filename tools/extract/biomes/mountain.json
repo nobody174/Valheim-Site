@@ -37,12 +37,14 @@
     "HelmetDrake": "helmet",
     "CapeWolf": "cape",
     "ArmorFenringChest": "chest",
-    "ArmorFenringLegs": "legs"
+    "ArmorFenringLegs": "legs",
+    "HelmetFenring": "helmet"
   },
   "foods": [
     "CookedWolfMeat",
     "WolfJerky",
-    "Eyescream"
+    "Eyescream",
+    "WolfMeatSkewer"
   ],
   "meads": [],
   "trophies": [
@@ -50,13 +52,15 @@
     "TrophyHatchling",
     "TrophySGolem",
     "TrophyFenring",
-    "TrophyDragonQueen"
+    "TrophyDragonQueen",
+    "TrophyCultist"
   ],
   "creatures": [
     "Wolf",
     "Hatchling",
     "StoneGolem",
-    "Fenring"
+    "Fenring",
+    "Fenring_Cultist"
   ],
   "bosses": [
     "Dragon"
@@ -123,5 +127,12 @@
   },
   "guide": {
     "notes": []
+  },
+  "trinkets": [
+    "TrinketSilverDamage",
+    "TrinketSilverResist"
+  ],
+  "creatureNotes": {
+    "Fenring_Cultist": "Health, drops and attacks come from the game files. The game files do not list where it spawns; the Mountains zone is from guides and not checked."
   }
 }
