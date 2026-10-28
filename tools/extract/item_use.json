@@ -1,0 +1,8 @@
+{
+  "_comment": "Hand-written 'what to do with it' lines for items whose game description does not say. Not read from the game files: shown on the item page labelled 'guide, not checked in game'. Key = item id.",
+  "CryptKey": "Opens the locked doors of the Sunken Crypts in the Swamp. Carry it in your inventory and interact with the door.",
+  "Wishbone": "Equip it to find buried treasure: it reacts when treasure is close. Dig up the spot with a pickaxe or hoe.",
+  "Ruby": "A valuable you can sell to the trader Haldor.",
+  "Amber": "A valuable you can sell to the trader Haldor.",
+  "AmberPearl": "A valuable you can sell to the trader Haldor."
+}

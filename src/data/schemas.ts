@@ -70,6 +70,10 @@ export const ItemSchema = z
     id,
     name: z.string().min(1),
     aliases: z.array(z.string()).optional(),
+    /** The game's own description text (from the localisation files). */
+    description: z.string().optional(),
+    /** Hand-written "what to do with it" line, not from the game files (see tools/extract/item_use.json). */
+    use: z.string().optional(),
     category: z.enum(ITEM_CATEGORIES),
     biome: id.nullable(),
     weight: z.number().nonnegative().nullable(),

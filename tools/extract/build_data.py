@@ -507,6 +507,9 @@ def main(raw, out, build_id, reviewed=None):
             'weight': s['m_weight'], 'stackSize': s['m_maxStackSize'], 'tags': [],
             'hoard': hoard, **extra, 'obtainedFrom': obtained, **prov,
         }
+        desc = re.sub(r'</?color[^>]*>', '', english(s.get('m_description', ''), '')).strip()
+        if desc:
+            item['description'] = desc
         if curated:
             item['verified'] = 'unverified'
             item['note'] = 'Weight and stack size come from the game files. Where to find it was written by hand and not checked.'
@@ -621,6 +624,17 @@ def main(raw, out, build_id, reviewed=None):
             extra = [n for n in dict.fromkeys(names) if n.lower() != own]
             if extra:
                 by_id[aid]['aliases'] = extra
+
+    use_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'item_use.json')
+    if os.path.exists(use_path):
+        with open(use_path, encoding='utf8') as f:
+            use_cfg = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
+        item_by_id = {i['id']: i for i in items}
+        for uid, text in use_cfg.items():
+            if uid in item_by_id:
+                item_by_id[uid]['use'] = text
+            else:
+                warnings.append(f'use text for {uid}: no such item')
 
     os.makedirs(out, exist_ok=True)
     files = {'meta': {'gameVersion': f'Steam build {build_id}', 'lastReviewed': reviewed},
