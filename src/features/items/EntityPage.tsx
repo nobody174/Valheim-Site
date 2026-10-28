@@ -1,7 +1,7 @@
 import { useParams } from 'react-router';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
-import { VerifiedBadge } from '../../components/Badges';
+import { GuideTag, VerifiedBadge } from '../../components/Badges';
 import { lookup } from '../../data/lookup';
 import type { Boss, Creature, Station } from '../../data/schemas';
 import { stationLevels } from '../../data/stationLevels';
@@ -106,7 +106,9 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
       </section>
       {'summonItems' in monster && monster.summonItems.length > 0 && (
         <section className={styles.section}>
-          <h2>Summon with</h2>
+          <h2>
+            Summon with <GuideTag />
+          </h2>
           <ul className={styles.inline}>
             {monster.summonItems.map((s) => (
               <li key={s.item}>

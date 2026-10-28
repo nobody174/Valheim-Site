@@ -1,4 +1,5 @@
 import { NavLink, useParams } from 'react-router';
+import { GuideTag } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
 import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
@@ -48,7 +49,9 @@ export function ProgressionPage() {
 
       {biome.guide?.notes.length ? (
         <section className={styles.section}>
-          <h2>Notes</h2>
+          <h2>
+            Notes <GuideTag />
+          </h2>
           <ul>
             {biome.guide.notes.map((n) => (
               <li key={n}>{n}</li>
@@ -76,6 +79,7 @@ export function ProgressionPage() {
               ) : (
                 'unknown'
               )}
+              {b.summon.length > 0 && <GuideTag />}
             </dd>
             <dt>Drops</dt>
             <dd>

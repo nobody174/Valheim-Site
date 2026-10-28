@@ -46,3 +46,12 @@ export function HoardBadge({
     </span>
   );
 }
+
+/** Marks one hand-written value (a source line, a summon cost) that was not read from the game files. */
+export function GuideTag() {
+  return (
+    <span className={styles.guide} title="Written by hand from guides; not checked in game">
+      guide, not checked
+    </span>
+  );
+}
