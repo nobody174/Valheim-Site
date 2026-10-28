@@ -29,6 +29,18 @@ describe('item page', () => {
     expect(screen.getByRole('heading', { name: 'Used in' })).toBeTruthy();
   });
 
+  it('puts the recipe and where to get it before the progress block, and ids in a folded Details', () => {
+    renderAt('/item/SwordBronze');
+    const order = (name: string | RegExp) =>
+      screen.getByRole('heading', { name }).compareDocumentPosition(
+        screen.getByRole('heading', { name: /Your progress/ }),
+      );
+    expect(order('Crafted from') & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    const details = screen.getByText('Internal id').closest('details')!;
+    expect(details.open).toBe(false);
+    expect(within(details).getByText('SwordBronze')).toBeTruthy();
+  });
+
   it('renders a weapon with stats and a recipe', () => {
     renderAt('/item/SwordBronze');
     expect(screen.getByRole('heading', { level: 1, name: 'Bronze Sword' })).toBeTruthy();

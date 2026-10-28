@@ -997,7 +997,7 @@
   },
   {
     "item": "BombOoze",
-    "skill": "skill0",
+    "skill": "None",
     "damage": {
       "blunt": 5.0
     },

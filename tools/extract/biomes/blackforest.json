@@ -162,7 +162,8 @@
   },
   "hoard": {
     "keepSome": {
-      "FineWood": 50
+      "FineWood": 50,
+      "Coins": 999
     },
     "mustKeep": [
       "Copper",

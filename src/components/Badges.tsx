@@ -19,6 +19,7 @@ const HOARD_LABEL: Record<Item['hoard'], string> = {
   must_keep: 'Must keep',
   keep_some: 'Keep some',
   safe_discard: 'Safe to discard',
+  gear: 'Gear',
   decorative: 'Decorative',
   sell: 'Sell',
 };

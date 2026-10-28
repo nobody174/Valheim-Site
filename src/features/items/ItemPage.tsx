@@ -260,28 +260,6 @@ export function ItemPage() {
         </section>
       )}
 
-      <ItemActions item={item} />
-
-      <section className={styles.section}>
-        <dl className={styles.facts}>
-          <dt>Weight</dt>
-          <dd>{item.weight === null ? 'unknown' : num(item.weight)}</dd>
-          <dt>Stack size</dt>
-          <dd>{item.stackSize === null ? 'unknown' : item.stackSize}</dd>
-          <dt>Tags</dt>
-          <dd>{item.tags.length ? item.tags.join(', ') : 'none'}</dd>
-          <dt>Internal id</dt>
-          <dd>{item.id}</dd>
-          {item.hoardNote && (
-            <>
-              <dt>Hoard note</dt>
-              <dd>{item.hoardNote}</dd>
-            </>
-          )}
-        </dl>
-      </section>
-
-      <Stats id={id} />
       <WhereFound id={id} />
 
       {craftedFrom.length > 0 && (
@@ -314,6 +292,34 @@ export function ItemPage() {
           </ul>
         </section>
       )}
+
+      <Stats id={id} />
+
+      <ItemActions item={item} />
+
+      <details className={styles.section}>
+        <summary>Details</summary>
+        <dl className={styles.facts}>
+          <dt>Weight</dt>
+          <dd>{item.weight === null ? 'unknown' : num(item.weight)}</dd>
+          <dt>Stack size</dt>
+          <dd>{item.stackSize === null ? 'unknown' : item.stackSize}</dd>
+          {item.tags.length > 0 && (
+            <>
+              <dt>Tags</dt>
+              <dd>{item.tags.join(', ')}</dd>
+            </>
+          )}
+          <dt>Internal id</dt>
+          <dd>{item.id}</dd>
+          {item.hoardNote && (
+            <>
+              <dt>Hoard note</dt>
+              <dd>{item.hoardNote}</dd>
+            </>
+          )}
+        </dl>
+      </details>
     </article>
   );
 }

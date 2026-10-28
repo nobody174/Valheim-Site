@@ -80,3 +80,19 @@ describe('item descriptions', () => {
     expect(missing).toEqual([]);
   });
 });
+
+describe('player-facing text', () => {
+  /** A prefab id such as ArmorFenringChest: lower case followed directly by an upper case letter. */
+  const PREFAB = /[a-z][A-Z]/;
+
+  it('contains no internal prefab ids in notes, hoard notes or use lines', () => {
+    const bad: string[] = [];
+    for (const i of lookup.allItems()) {
+      const texts = [i.hoardNote, i.note, i.use, ...i.obtainedFrom.flatMap((o) =>
+        'note' in o ? [o.note] : 'node' in o ? [o.node] : [],
+      )];
+      for (const t of texts) if (t && PREFAB.test(t)) bad.push(`${i.id}: ${t}`);
+    }
+    expect(bad).toEqual([]);
+  });
+});
