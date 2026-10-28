@@ -33,7 +33,7 @@ describe('CharacterPage', () => {
     expect(screen.getByRole('heading', { name: /Venom/ })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Gear worn' })).toBeTruthy();
     expect(screen.getByRole('link', { name: 'Hammer' })).toBeTruthy();
-    expect(screen.getByLabelText('Woodcutting 50 of 100')).toBeTruthy();
+    expect(screen.getByLabelText('Wood Cutting 50 of 100')).toBeTruthy();
     const state = appStore.getState();
     const profile = state.profiles[state.active]!;
     expect(profile.character?.name).toBe('Venom');

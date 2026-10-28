@@ -98,7 +98,20 @@ Open a pull request into `main`, merge it, and wait for the Deploy workflow. The
 site and check the line "Data: Steam build ..." (sidebar on desktop, bottom of the page on a phone).
 The service worker updates by itself, so a returning visitor gets the new data on the next load.
 
-## 9. Character files (only if the game changed its save format)
+## 9. Console commands
+
+The command list comes from the game's code, not its assets:
+
+```
+dotnet tool install ilspycmd --tool-path ./ilspy      # once
+./ilspy/ilspycmd -t Terminal "D:/SteamLibrary/steamapps/common/Valheim/valheim_Data/Managed/assembly_valheim.dll" > Terminal.cs
+"$PY" -I tools/extract/extract_console_commands.py Terminal.cs data
+```
+
+Check `git diff data/commands.json` for new or removed commands. A new skill also needs a line in
+`tools/extract/save_skills.json` (a warning from step 3 says so).
+
+## 10. Character files (only if the game changed its save format)
 
 The "My character" page reads `.fch` files with `src/features/save/fch.ts`, which follows the
 game's own loader for file version 47. If a patch raises the version, the page says so and refuses

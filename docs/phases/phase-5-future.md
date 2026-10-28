@@ -9,8 +9,8 @@ An open backlog, not a schedule. The owner picks items from `docs/FEATURES.md` s
 - ~~Read the Valheim character file~~ done: the "My character" page reads a `.fch` file in the browser (nothing is uploaded), shows gear, skills, stations, zones, bosses and kills, and ticks found and crafted items in the matching profile
 - Weight and inventory planner (carry weight, ship cargo)
 - Farming, cooking and taming reference
-- Skills reference
-- Console / dev-commands cheat sheet
+- ~~Skills reference~~ done: the Skills page (game descriptions, training rate, weapons per skill, your level, damage curve)
+- ~~Console / dev-commands cheat sheet~~ done: the Console commands page (130 commands read from the game's code, filter, needs-devcommands marked)
 - Random events, raids and weather
 - Update log between game versions (diff of `/data` by `gameVersion`)
 - Dungeon and point-of-interest guide

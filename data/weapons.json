@@ -3387,7 +3387,7 @@
   },
   {
     "item": "StaffClusterbomb",
-    "skill": "FireMagic",
+    "skill": "ElementalMagic",
     "damage": {
       "blunt": 12.0,
       "fire": 12.0
@@ -3405,7 +3405,7 @@
   },
   {
     "item": "StaffFireball",
-    "skill": "FireMagic",
+    "skill": "ElementalMagic",
     "damage": {
       "blunt": 120.0,
       "fire": 120.0
@@ -3423,7 +3423,7 @@
   },
   {
     "item": "StaffIceShards",
-    "skill": "FireMagic",
+    "skill": "ElementalMagic",
     "damage": {
       "frost": 30.0
     },
@@ -3440,7 +3440,7 @@
   },
   {
     "item": "StaffShield",
-    "skill": "FrostMagic",
+    "skill": "BloodMagic",
     "damage": {},
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
@@ -3451,7 +3451,7 @@
   },
   {
     "item": "StaffSkeleton",
-    "skill": "FrostMagic",
+    "skill": "BloodMagic",
     "damage": {},
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",

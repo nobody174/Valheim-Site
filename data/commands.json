@@ -1,0 +1,792 @@
+[
+  {
+    "name": "achievements",
+    "description": "shows player achievement info",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "addstatus",
+    "description": "[name] adds a status effect (ex: Rested, Burning, SoftDeath, Wet, etc)",
+    "cheat": false,
+    "serverOnly": false,
+    "example": "addstatus Rested"
+  },
+  {
+    "name": "adrenaline",
+    "description": "sets adrenaline level",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "aggravate",
+    "description": "aggravated all nearby neutrals",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "altbioms",
+    "description": "list of biomes with modifiers",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "ban",
+    "description": "[name/ip/userID] - ban user",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "banned",
+    "description": "list banned users",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "beard",
+    "description": "change beard",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "bind",
+    "description": "[keycode] [command and parameters] bind a key to a console command. note: may cause conflicts with game controls",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "biomeinfo",
+    "description": "info about current biome sector",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "catch",
+    "description": "[fishname] [level] simulates catching a fish",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "cinematic",
+    "description": "[name] play cinematic",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "cinematicsleep",
+    "description": "[name] play cinematic on next sleep for everyone",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "clear",
+    "description": "clear the console window",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "clearpopups",
+    "description": "stops all current unlock UI messages",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "clearstatus",
+    "description": "clear any status modifiers",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "cr",
+    "description": "unloads unused assets",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "debugmode",
+    "description": "fly mode",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "die",
+    "description": "kill yourself",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "dpsdebug",
+    "description": "toggle dps debug print",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "env",
+    "description": "[env] override environment",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "event",
+    "description": "[name] - start event",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "exclusivefullscreen",
+    "description": "changes window mode to exclusive fullscreen, or back to borderless",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "exploremap",
+    "description": "explore entire map",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "ffsmooth",
+    "description": "freefly smoothness",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "filtercraft",
+    "description": "[name] filters crafting list to contain part of text",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "find",
+    "description": "[text] [pingmax] searches loaded objects and location list matching name and pings them on the map. pingmax defaults to 1, if more will place pins on map instead",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "findbiome",
+    "description": "marks center of all biomes on map of type or containing modifier with search string",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "findbiometp",
+    "description": "finds the closest biome matching your search and teleports you to it",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "findtp",
+    "description": "[text] [index=-1] [closerange=30] searches loaded objects and location list matching name and teleports you to the closest one outside of closerange. Specify an index to tp to any other in the found list, a minus value means index by closest.",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "fly",
+    "description": "fly mode",
+    "cheat": true,
+    "serverOnly": true,
+    "example": "fly"
+  },
+  {
+    "name": "forcedelete",
+    "description": "[radius] [*name] force remove all objects within given radius. If name is entered, only deletes items with matching names. Caution! Use at your own risk. Make backups! Radius default: 5, max: 150.",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "fov",
+    "description": "changes camera field of view",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "freefly",
+    "description": "freefly photo mode",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "gc",
+    "description": "shows garbage collector information",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "genloc",
+    "description": "regenerate all locations.",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "getstat",
+    "description": "get specific stat",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "ghost",
+    "description": "",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "god",
+    "description": "invincible mode",
+    "cheat": true,
+    "serverOnly": false,
+    "example": "god"
+  },
+  {
+    "name": "goto",
+    "description": "[x,z] - teleport",
+    "cheat": true,
+    "serverOnly": false,
+    "example": "goto 0,0"
+  },
+  {
+    "name": "hair",
+    "description": "change hair",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "haslocation",
+    "description": "check if zone has location",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "heal",
+    "description": "heal to full health & stamina",
+    "cheat": true,
+    "serverOnly": false,
+    "example": "heal"
+  },
+  {
+    "name": "height",
+    "description": "prints height from worldgen at current position",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "help",
+    "description": "Shows a list of console commands (optional: help 2 4 shows the second quarter)",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "info",
+    "description": "print system info",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "inventoryclean",
+    "description": "throws out any items in inventory on invalid positions",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "inventorysize",
+    "description": "sets inventory size",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "itemset",
+    "description": "[name] [item level override] [keep] - spawn a premade named set, add 'keep' to not drop current items.",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "kick",
+    "description": "[name/ip/userID] - kick user",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "killall",
+    "description": "kill nearby creatures",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "killenemies",
+    "description": "kill nearby enemies",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "killenemycreatures",
+    "description": "kill nearby enemies",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "killtame",
+    "description": "kill nearby tame creatures.",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "listkeys",
+    "description": "",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "location",
+    "description": "[SAVE*] spawn location (CAUTION: saving permanently disabled, *unless you specify SAVE)",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "lodbias",
+    "description": "set distance lod bias",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "maxfps",
+    "description": "[FPS] sets fps limit",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "model",
+    "description": "change player model",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "nextseed",
+    "description": "forces the next dungeon to a seed (CAUTION: saving permanently disabled)",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "nocost",
+    "description": "no build cost",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "nomap",
+    "description": "disables map for this character. If used as host, will disable for all joining players from now on.",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "noportals",
+    "description": "disables portals for server.",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "nospawn",
+    "description": "toggles natural spawning of monsters",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "optterrain",
+    "description": "optimize old terrain modifications",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "pevents",
+    "description": "Subcommands: [list/start/stop/here]",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "ping",
+    "description": "ping server",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "players",
+    "description": "[nr] - force diffuculty scale ( 0 = reset)",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "pos",
+    "description": "print current player position",
+    "cheat": false,
+    "serverOnly": false,
+    "example": "pos"
+  },
+  {
+    "name": "printbinds",
+    "description": "prints current binds",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "printcreatures",
+    "description": "shows counts and levels of active creatures",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "printlocations",
+    "description": "shows counts of loaded locations",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "printnetobj",
+    "description": "[radius = 5] lists number of network objects by name surrounding the player",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "printseeds",
+    "description": "print seeds of loaded dungeons",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "puke",
+    "description": "empties your stomach of food",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "raiseskill",
+    "description": "[skill] [amount]",
+    "cheat": false,
+    "serverOnly": false,
+    "example": "raiseskill Swords 10"
+  },
+  {
+    "name": "randomevent",
+    "description": "start a random event",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "recall",
+    "description": "[*name] recalls players to you, optionally that match given name",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "removebirds",
+    "description": "remove all birds",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "removedrops",
+    "description": "remove all item-drops in area",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "removefish",
+    "description": "remove all fish",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "removekey",
+    "description": "[name]",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "removekeyplayer",
+    "description": "[name]",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "repairall",
+    "description": "repairs all equipment",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "resetbinds",
+    "description": "resets all custom binds to default dev commands",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "resetcharacter",
+    "description": "reset character data",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "resetenv",
+    "description": "disables environment override",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "resetkeys",
+    "description": "[name]",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "resetknownitems",
+    "description": "reset character known items & recipes",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "resetmap",
+    "description": "reset map exploration",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "resetsharedmap",
+    "description": "removes any shared map data from cartography table",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "resetskill",
+    "description": "[skill]",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "resetspawn",
+    "description": "resets spawn location",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "resetwind",
+    "description": "",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "resetworldkeys",
+    "description": "[name] Resets all world modifiers to default",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "respawntime",
+    "description": "sets respawntime",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "restartparty",
+    "description": "restart playfab party network",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "s",
+    "description": "shout message",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "save",
+    "description": "force saving of world and resets world save interval",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "say",
+    "description": "chat message",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "setfuel",
+    "description": "[amount=10] Sets all light fuel to specified amount",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "setkey",
+    "description": "[name]",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "setkeyplayer",
+    "description": "[name]",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "setpower",
+    "description": "[name] sets your current guardian power and resets cooldown (ex: GP_Eikthyr, GP_TheElder, etc)",
+    "cheat": false,
+    "serverOnly": false,
+    "example": "setpower GP_Eikthyr"
+  },
+  {
+    "name": "setworldmodifier",
+    "description": "[name] [value] Sets a world modifier value",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "setworldpreset",
+    "description": "[name] Resets all world modifiers to a named preset",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "skiptime",
+    "description": "[gameseconds] skips head in seconds",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "sleep",
+    "description": "skips to next morning",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "snow",
+    "description": "[amount] adds/removes amount of snowbuild on all nearby buildpieces",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "sortcraft",
+    "description": "[type] sorts crafting lists according to setting",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "spawn",
+    "description": "[amount] [level] [radius] [p/e/i] - spawn something. (End word with a star (*) to create each object containing that word.) Add a 'p' after to try to pick up the spawned items, adding 'e' will try to use/equip, 'i' will only spawn and pickup if you don't have one in your inventory.",
+    "cheat": true,
+    "serverOnly": false,
+    "example": "spawn Wood 20"
+  },
+  {
+    "name": "stats",
+    "description": "shows player stats",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "stopevent",
+    "description": "stop current event",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "stopfire",
+    "description": "Puts out all spreading fires and smoke",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "stopsmoke",
+    "description": "Puts out all spreading fires",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "tame",
+    "description": "tame all nearby tameable creatures",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "time",
+    "description": "shows current time",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "timescale",
+    "description": "[target] [fadetime, default: 1, max: 3] sets timescale",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "tod",
+    "description": "-1 OR [0-1]",
+    "cheat": true,
+    "serverOnly": true,
+    "example": "tod 0.5"
+  },
+  {
+    "name": "tombstone",
+    "description": "[name] creates a tombstone with given name",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "tutorialreset",
+    "description": "reset tutorial data",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "unban",
+    "description": "[ip/userID] - unban user",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "unbind",
+    "description": "[keycode] clears all binds connected to keycode",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "unlockcinematics",
+    "description": "toggles unlocking all cinematics in the main menu",
+    "cheat": true,
+    "serverOnly": false
+  },
+  {
+    "name": "updatecover",
+    "description": "force update cover refresh",
+    "cheat": false,
+    "serverOnly": true
+  },
+  {
+    "name": "vegetation",
+    "description": "spawn vegetation",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "w",
+    "description": "[playername] whispers a private message to a player",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "wind",
+    "description": "[angle] [intensity]",
+    "cheat": true,
+    "serverOnly": true
+  },
+  {
+    "name": "xb:version",
+    "description": "Prints mercurial hashset used for this build",
+    "cheat": false,
+    "serverOnly": false
+  },
+  {
+    "name": "yesiuseddevcommandsbutiwantmyachievementsanyway",
+    "description": "[1 = true/ 0 = false] Normally cheated items / pieces don't trigger achievements. Turn this on to disable cheat checks.",
+    "cheat": false,
+    "serverOnly": false
+  }
+]

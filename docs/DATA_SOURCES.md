@@ -184,3 +184,9 @@ Config: `tools/extract/biomes/plains.json`. Creature drops, recipes, stats and c
 ## Boss summon costs (checked 2026-10-28)
 
 The altar prefabs (`OfferingBowl` component) hold the item and amount. Read from them: Eikthyr 2 Deer Trophy, The Elder 3 Ancient Seed, Bonemass 10 Withered Bone, The Queen 3 Seeker Soldier Trophy (`TrophySeekerBrute`), Fader 3 Bell. Those five are flagged `summonFromFiles` and carry no "guide, not checked" tag. Web guides agree. Two earlier values were wrong and are fixed: the Queen needs trophies, not Soft Tissue, and Fader needs 3 Bells, not 1. Moder (3 Dragon Eggs, on egg cups) and Yagluth (5 Fuling Totems, on totem holders) fill item stands in the world; the number of stands is not in the altar prefab, so those two stay on guides (several agree) and keep the tag.
+
+## Skills, console commands and character files (added 2026-10-28)
+
+- **Skills** (`data/skills.json`): names and descriptions from the game's localization, training rate per use and the death loss (5%) from the game's `Skills` component (extracted by `extract_raw.py` as `skillsdef`). Skill numbers and ids are from the game's code (`Skills.SkillType`). **Correction:** weapon skills 9 and 10 were labelled FireMagic and FrostMagic; the game's own list says Elemental Magic and Blood Magic, so the Fireball, Ice Shards and Clusterbomb staves are Elemental and the Protection and Dead Raiser staves are Blood. Fixed.
+- **Console commands** (`data/commands.json`): every non-secret command in the game's `Terminal` class, with the game's own description and whether it needs `devcommands`. Read from the game's code with a decompiler (`tools/extract/extract_console_commands.py`). The example lines are hand-written and tagged "guide, not checked", as is the F5 key.
+- **Character files**: read in the browser from the owner's own `.fch` file, following the game's loader. Name keys map to ids through `data/savekeys.json`. Nothing is uploaded.

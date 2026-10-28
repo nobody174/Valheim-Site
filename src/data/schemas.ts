@@ -275,6 +275,40 @@ export const SaveKeysSchema = z
   .strict();
 export type SaveKeys = z.infer<typeof SaveKeysSchema>;
 
+/** A console command, read from the game's code (extract_console_commands.py). */
+export const CommandSchema = z
+  .object({
+    name: z.string().min(1),
+    description: z.string(),
+    /** Needs `devcommands` to be switched on first. */
+    cheat: z.boolean(),
+    serverOnly: z.boolean(),
+    /** A hand-written example line (not from the game files). */
+    example: z.string().optional(),
+  })
+  .strict();
+export type Command = z.infer<typeof CommandSchema>;
+
+/** Skills as the game defines them: description, group and how much one use adds. */
+export const SkillsFileSchema = z
+  .object({
+    /** Share of every skill level lost on death (0.05 = 5%). */
+    deathLoss: z.number().min(0).max(1),
+    skills: z.array(
+      z
+        .object({
+          id,
+          number: z.number().int(),
+          name: z.string().min(1),
+          description: z.string(),
+          group: z.enum(['weapon', 'combat', 'tool', 'movement', 'life']),
+          xpPerUse: z.number().positive().nullable(),
+        })
+        .strict(),
+    ),
+  })
+  .strict();
+
 export const BossSchema = z
   .object({
     id,

@@ -521,11 +521,11 @@
     "6": "Blocking",
     "7": "Axes",
     "8": "Bows",
-    "9": "Elemental magic",
-    "10": "Blood magic",
-    "11": "Unarmed",
+    "9": "Elemental Magic",
+    "10": "Blood Magic",
+    "11": "Fists",
     "12": "Pickaxes",
-    "13": "Woodcutting",
+    "13": "Wood Cutting",
     "14": "Crossbows",
     "100": "Jump",
     "101": "Sneak",
@@ -536,6 +536,6 @@
     "106": "Farming",
     "107": "Crafting",
     "108": "Dodge",
-    "110": "Ride"
+    "110": "Riding"
   }
 }

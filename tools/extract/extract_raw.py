@@ -29,6 +29,7 @@ KINDS = [
     ('conversion', lambda d: 'm_conversion' in d),  # Fermenter / Smelter / CookingStation
     ('spawnsystem', lambda d: 'm_spawners' in d),  # SpawnSystemList
     ('vegetation', lambda d: 'm_vegetation' in d),  # ZoneSystem vegetation list
+    ('skillsdef', lambda d: 'm_DeathLowerFactor' in d),  # Skills (xp per use, loss on death); the longest copy is the live one
 ]
 
 

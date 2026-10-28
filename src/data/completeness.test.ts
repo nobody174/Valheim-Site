@@ -181,7 +181,7 @@ describe('character file keys', () => {
   });
 
   it('knows a name for every skill number in the file', () => {
-    expect(saveKeys.skills['13']).toBe('Woodcutting');
+    expect(saveKeys.skills['13']).toBe('Wood Cutting');
     expect(Object.keys(saveKeys.skills).length).toBeGreaterThanOrEqual(20);
   });
 });

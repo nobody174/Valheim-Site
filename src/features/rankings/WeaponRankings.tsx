@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
+import { skillLabel } from '../../data/skills';
 import { AMMO_GROUP } from '../../data/weaponStats';
 import itemStyles from '../items/Items.module.css';
 import { DEFAULT_WEIGHTS, formatWeights, parseWeights, RATING_MEASURES } from './weights';
@@ -90,7 +91,7 @@ function WeaponTable({
               <td className={styles.rank}>{i + 1}</td>
               <td>
                 <EntityLink id={r.id} />
-                <div className={styles.kind}>{r.group}</div>
+                <div className={styles.kind}>{skillLabel(r.group)}</div>
               </td>
               <td>{r.zoneName}</td>
               <td className={styles.damage}>
@@ -199,7 +200,7 @@ export function WeaponRankings() {
               .filter((g) => g !== AMMO_GROUP)
               .map((g) => (
                 <option key={g} value={g}>
-                  {g}
+                  {skillLabel(g)}
                 </option>
               ))}
             {weaponGroups().includes(AMMO_GROUP) && <option value={AMMO_GROUP}>{AMMO_GROUP}</option>}
