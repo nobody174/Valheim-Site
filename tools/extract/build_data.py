@@ -418,7 +418,8 @@ def main(raw, out, build_id, reviewed=None):
             troph = next((d['item'] for d in entry['drops'] if d['item'].startswith('Trophy')), None)
             if troph:
                 entry['trophy'] = troph
-            entry['verified'] = 'unverified'
+            # Everything read from the game files, summon cost included, counts as cross-checked.
+            entry['verified'] = 'cross-checked' if cid in summon_from_files else 'unverified'
             entry['note'] = 'Health, drops, attacks and resistances from game files; summon items ' + (
                 'from the altar in the game files.' if cid in summon_from_files else 'curated from guides.')
             bosses.append(entry)

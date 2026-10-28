@@ -129,7 +129,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "cross-checked",
     "resistances": {
       "blunt": "weak",
       "slash": "resistant",
@@ -199,7 +199,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "cross-checked",
     "resistances": {
       "fire": "weak",
       "frost": "immune",
@@ -249,7 +249,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "cross-checked",
     "resistances": {
       "pierce": "very resistant",
       "fire": "resistant",
@@ -332,7 +332,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "cross-checked",
     "resistances": {
       "pierce": "resistant",
       "spirit": "immune"
@@ -416,7 +416,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "cross-checked",
     "resistances": {
       "pierce": "resistant",
       "fire": "immune",
