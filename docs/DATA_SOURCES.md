@@ -66,6 +66,10 @@ At the start of Phase 2, look up the current Valheim version and which biomes/it
 
 Config: `tools/extract/biomes/mistlands.json`. Read from the game files: Seeker, Seeker Brute, Seeker Brood, Gjall, Tick, Hare, the Dvergr and the Queen (health, attacks, drops, resistances), the Black Forge, Eitr Refinery and Galdr Table build costs and extensions, the Eitr conversion (Soft Tissue to Refined Eitr), all recipes, stats, foods and meads. Hand-written and `unverified` or tagged "guide, not checked": the Queen's summon cost (3 Soft Tissue, from memory, not in the files), every gather note (Yggdrasil Wood, Sap, Black Marble, Soft Tissue, Chitin, Wisp, Black Core, the mushrooms, Vineberry, Fiddlehead), and the Dvergr zone (they have camps and ruins, not a spawn entry). Included: Mistlands weapons (Mistwalker, Krom, Himmin Afl, Jotun Bane, Skull Splittur, Demolisher, carapace and chitin gear, Spine Snap, Arbalest, staves, bolts, shields), carapace and mage armor, Mistlands meads and foods, two trinkets, the Lantern, Demister, Ceramic Plate, Mechanical Spring and Shield Core. Left out on purpose: anything that needs Ashlands, Deep North or Gold items (Flametal, Askvin, Moose, Gold armor and weapons, Fader), the six Feasts, fishing and its bait, turrets, and eggs (chicken, Volture). The pickable mushrooms, Vineberry and Fiddlehead are listed as materials (their food values are not shown).
 
+## Ashlands pass (2026-10-28; the owner has not reached the Ashlands, so nothing here is checked in game)
+
+Config: `tools/extract/biomes/ashlands.json`. Read from the game files: the Charred (archer, melee, mage, twitcher), Asksvin, Morgen, Lava Blob, Fallen Valkyrie, Volture, Bonemaw Serpent and Fader (health, attacks, drops, resistances), all recipes and stats for Flametal, Blackwood and Charred gear, the Ashlands armor and capes, the bombs, the Bell, foods and one trinket. Hand-written and flagged: Fader's summon (one Bell, from memory, not in the files), the gather notes for flametal ore, Blackwood, Molten Core and Bell Fragments, and the Charred Mage's zone. Left out on purpose: the Red, Blue and Green Gemstone items and everything that needs them (three staves, the Flametal Eitr trinket, upgraded weapon variants), Gold items and the Deep North, Dyrnwyn, saddles, fishing and turrets.
+
 ## Spot-check list (Meadows and Black Forest, session 2.1)
 
 Entries most likely to be wrong, all curated by hand. Please check these in your game:
@@ -103,6 +107,14 @@ Entries most likely to be wrong, all curated by hand. Please check these in your
 | 19 | Black Forge, Eitr Refinery, Galdr Table | Build costs (read from the files; Black Core, Black Marble, Yggdrasil Wood) |
 | 20 | Gather notes | Yggdrasil Wood, Sap, Black Marble, Chitin, Wisp, Black Core, mushrooms, Vineberry, Fiddlehead |
 | 21 | Dvergr | Where they appear |
+
+### Ashlands (added 2026-10-28)
+
+| # | Entry | What to check |
+|---|---|---|
+| 22 | Fader boss | Summon: 1 Bell at the altar |
+| 23 | Flametal ore, Blackwood, Molten Core, Bell Fragment | Where to find them (guides) |
+| 24 | Charred Mage | Where it spawns |
 
 `From game files` (stored as `verified: cross-checked`) means the value was read from the game files of build 25909357, one source, not confirmed in game. Everything else with that level is read straight from the files.
 

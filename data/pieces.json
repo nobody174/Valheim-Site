@@ -1,5 +1,401 @@
 [
   {
+    "id": "ashwood_arch_big",
+    "name": "Ashwood Arch",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_arch",
+    "name": "Ashwood Arched Wall",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_beam_1m",
+    "name": "Ashwood Beam 1 m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_beam_2m",
+    "name": "Ashwood Beam 2 m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_beam_26",
+    "name": "Ashwood Beam 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_beam_45",
+    "name": "Ashwood Beam 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_beam_67",
+    "name": "Ashwood Beam 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_deco_floor",
+    "name": "Ashwood Decorative Floor",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_decowall_2x2",
+    "name": "Ashwood Decorative Wall",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_decowall_tree",
+    "name": "Ashwood Decorative Window",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_decowall_divider",
+    "name": "Ashwood Divider",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_door",
+    "name": "Ashwood Door",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "FlametalNew",
+        "qty": 1
+      },
+      {
+        "item": "Blackwood",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_floor_1x1",
+    "name": "Ashwood Floor 1x1",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_floor_2x2",
+    "name": "Ashwood Floor 2x2",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_pole_1m",
+    "name": "Ashwood Pole 1 m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_pole_2m",
+    "name": "Ashwood Pole 2 m",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_quarterwall_1x1",
+    "name": "Ashwood Quarter Wall",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_cross_26",
+    "name": "Ashwood Roof Cross 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_cross_45",
+    "name": "Ashwood Roof Cross 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_cross_67",
+    "name": "Ashwood Roof Cross 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_stair",
+    "name": "Ashwood Stair",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_2x2",
+    "name": "Ashwood Wall",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_roof_26",
+    "name": "Ashwood Wall 26°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_roof_26_upsidedown",
+    "name": "Ashwood Wall 26° (Inverted)",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_roof_45",
+    "name": "Ashwood Wall 45°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_roof_45_upsidedown",
+    "name": "Ashwood Wall 45° (Inverted)",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_roof_67_a",
+    "name": "Ashwood Wall 67°",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "ashwood_wall_roof_67_upsidedown",
+    "name": "Ashwood Wall 67° (Inverted)",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "darkwood_decowall",
     "name": "Carved Darkwood Divider",
     "category": "Building",
@@ -1270,6 +1666,48 @@
     "station": "blackforge"
   },
   {
+    "id": "Piece_flametal_beam",
+    "name": "Flametal Beam",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "FlametalNew",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
+    "id": "flametal_gate",
+    "name": "Flametal Gate",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "FlametalNew",
+        "qty": 16
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
+    "id": "Piece_flametal_pillar",
+    "name": "Flametal Pillar",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "FlametalNew",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
     "id": "iron_grate",
     "name": "Iron Gate",
     "category": "Building (stone)",
@@ -1299,6 +1737,28 @@
       {
         "item": "Thistle",
         "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "cauldron_ext6_rollingpins",
+    "name": "Rolling Pins and Cutting Boards",
+    "category": "Crafting",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 8
+      },
+      {
+        "item": "FineWood",
+        "qty": 6
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 4
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1343,6 +1803,59 @@
       {
         "item": "LeatherScraps",
         "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "ashwood_bed",
+    "name": "Ashwood Bed",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 8
+      },
+      {
+        "item": "LoxPelt",
+        "qty": 2
+      },
+      {
+        "item": "AskHide",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "piece_blackwood_bench01",
+    "name": "Ashwood Bench",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1
+  },
+  {
+    "id": "rug_asksvin",
+    "name": "Asksvin Rug",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "AskHide",
+        "qty": 4
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1806,6 +2319,29 @@
     "verified": "cross-checked",
     "station": "piece_workbench",
     "comfort": 1
+  },
+  {
+    "id": "piece_Lavalantern",
+    "name": "Lava Lantern",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "FlametalNew",
+        "qty": 1
+      },
+      {
+        "item": "ProustitePowder",
+        "qty": 1
+      },
+      {
+        "item": "SulfurStone",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2
   },
   {
     "id": "piece_table_oak",
@@ -2382,6 +2918,33 @@
     "station": "piece_workbench"
   },
   {
+    "id": "blackwood_stack",
+    "name": "Ashwood Stack",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 50
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "piece_stakewall_blackwood",
+    "name": "Ashwood Stakewall",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "piece_turret",
     "name": "Ballista",
     "category": "Misc",
@@ -2397,6 +2960,28 @@
       {
         "item": "MechanicalSpring",
         "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "BatteringRam",
+    "name": "Battering Ram",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Blackwood",
+        "qty": 20
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 10
+      },
+      {
+        "item": "SurtlingCore",
+        "qty": 2
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2682,6 +3267,19 @@
       {
         "item": "FineWood",
         "qty": 50
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "bar_flametal_stack",
+    "name": "Flametal Stack",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "FlametalNew",
+        "qty": 30
       }
     ],
     "source": "game-files:steam-build-25909357",

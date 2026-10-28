@@ -54,27 +54,37 @@
             "qty": 4
           }
         ]
-      }
-    ],
-    "laterExtensions": [
+      },
       {
         "id": "blackforge_ext3_metalcutter",
         "name": "Metal Cutter",
         "rangeM": 4.0,
-        "needs": [
-          "Flametal",
-          "Ashwood",
-          "Charred Bone"
+        "requirements": [
+          {
+            "item": "BlackMarble",
+            "qty": 5
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 5
+          },
+          {
+            "item": "Blackwood",
+            "qty": 5
+          },
+          {
+            "item": "CharredBone",
+            "qty": 4
+          }
         ]
-      },
+      }
+    ],
+    "laterExtensions": [
       {
         "id": "blackforge_ext4_gemcutter",
         "name": "Gem Cutter",
         "rangeM": 4.0,
         "needs": [
-          "Flametal",
-          "Ashwood",
-          "Morgen Sinew",
           "Bloodstone"
         ]
       },
@@ -405,6 +415,25 @@
         ]
       },
       {
+        "id": "cauldron_ext5_mortarandpestle",
+        "name": "Rolling Pins and Cutting Boards",
+        "rangeM": 5.0,
+        "requirements": [
+          {
+            "item": "Blackwood",
+            "qty": 8
+          },
+          {
+            "item": "FineWood",
+            "qty": 6
+          },
+          {
+            "item": "FlametalNew",
+            "qty": 4
+          }
+        ]
+      },
+      {
         "id": "cauldron_ext4_pots",
         "name": "Pots and Pans",
         "rangeM": 5.0,
@@ -456,15 +485,6 @@
       }
     ],
     "laterExtensions": [
-      {
-        "id": "cauldron_ext5_mortarandpestle",
-        "name": "Rolling Pins and Cutting Boards",
-        "rangeM": 5.0,
-        "needs": [
-          "Ashwood",
-          "Flametal"
-        ]
-      },
       {
         "id": "cauldron_ext7_smoker",
         "name": "Smoker",
@@ -576,19 +596,32 @@
             "qty": 15
           }
         ]
-      }
-    ],
-    "laterExtensions": [
+      },
       {
         "id": "piece_magetable_ext3",
         "name": "Feathery Wreath",
         "rangeM": 5.0,
-        "needs": [
-          "Celestial Feather",
-          "Asksvin Trophy",
-          "Ashwood"
+        "requirements": [
+          {
+            "item": "CelestialFeather",
+            "qty": 8
+          },
+          {
+            "item": "TrophyAsksvin",
+            "qty": 1
+          },
+          {
+            "item": "Eitr",
+            "qty": 10
+          },
+          {
+            "item": "Blackwood",
+            "qty": 3
+          }
         ]
-      },
+      }
+    ],
+    "laterExtensions": [
       {
         "id": "piece_magetable_ext4",
         "name": "Standing Loom",

@@ -40,5 +40,12 @@
     "order": 6,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "ashlands",
+    "name": "Ashlands",
+    "order": 7,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   }
 ]

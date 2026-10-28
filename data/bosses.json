@@ -340,5 +340,89 @@
     ],
     "trophy": "TrophySeekerQueen",
     "note": "Health, drops, attacks and resistances from game files; summon items curated."
+  },
+  {
+    "id": "Fader",
+    "name": "Fader",
+    "biome": "ashlands",
+    "health": 25000.0,
+    "drops": [
+      {
+        "item": "TrophyFader",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "FaderDrop",
+        "min": 5,
+        "max": 5
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Fader_Fissure",
+        "damage": {
+          "pierce": 120.0
+        }
+      },
+      {
+        "id": "Fader_Bite",
+        "damage": {
+          "pierce": 210.0
+        }
+      },
+      {
+        "id": "Fader_Claw_Left",
+        "damage": {
+          "pierce": 200.0
+        }
+      },
+      {
+        "id": "Fader_Claw_Right",
+        "damage": {
+          "pierce": 200.0
+        }
+      },
+      {
+        "id": "Fader_Spin",
+        "damage": {
+          "pierce": 140.0
+        }
+      },
+      {
+        "id": "Fader_Flamebreath",
+        "damage": {
+          "fire": 60.0,
+          "spirit": 60.0
+        }
+      },
+      {
+        "id": "Fader_WallOfFire",
+        "damage": {
+          "pierce": 120.0
+        }
+      },
+      {
+        "id": "Fader_Fissure_Intense",
+        "damage": {
+          "pierce": 120.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "pierce": "resistant",
+      "fire": "immune",
+      "spirit": "immune"
+    },
+    "summonItems": [
+      {
+        "item": "Bell",
+        "qty": 1
+      }
+    ],
+    "trophy": "TrophyFader",
+    "note": "Health, drops, attacks and resistances from game files; summon items curated."
   }
 ]

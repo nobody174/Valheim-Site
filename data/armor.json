@@ -1,5 +1,31 @@
 [
   {
+    "item": "ArmorAshlandsMediumChest",
+    "slot": "chest",
+    "armor": 28.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "AshlandsMediumArmor",
+    "setSize": 3,
+    "setEffect": "A lighter armour lets you move more freely, every move requiring less energy.",
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorAshlandsMediumlegs",
+    "slot": "legs",
+    "armor": 28.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "AshlandsMediumArmor",
+    "setSize": 3,
+    "setEffect": "A lighter armour lets you move more freely, every move requiring less energy.",
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
     "item": "ArmorBerserkerChest",
     "slot": "chest",
     "armor": 7.0,
@@ -98,6 +124,28 @@
     "maxQuality": 4
   },
   {
+    "item": "ArmorFlametalChest",
+    "slot": "chest",
+    "armor": 38.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorFlametalLegs",
+    "slot": "legs",
+    "armor": 38.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
     "item": "ArmorIronChest",
     "slot": "chest",
     "armor": 14.0,
@@ -177,9 +225,31 @@
     "maxQuality": 4
   },
   {
+    "item": "ArmorMageChest_Ashlands",
+    "slot": "chest",
+    "armor": 19.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.02,
+    "maxQuality": 4
+  },
+  {
     "item": "ArmorMageLegs",
     "slot": "legs",
     "armor": 16.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.02,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorMageLegs_Ashlands",
+    "slot": "legs",
+    "armor": 19.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 1000.0,
@@ -306,6 +376,26 @@
     "maxQuality": 4
   },
   {
+    "item": "CapeAsh",
+    "slot": "cape",
+    "armor": 12.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1200.0,
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "CapeAsksvin",
+    "slot": "cape",
+    "armor": 1.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1500.0,
+    "armorPerLevel": 1.0,
+    "maxQuality": 4
+  },
+  {
     "item": "CapeDeerHide",
     "slot": "cape",
     "armor": 1.0,
@@ -369,6 +459,19 @@
     "maxQuality": 4
   },
   {
+    "item": "HelmetAshlandsMediumHood",
+    "slot": "helmet",
+    "armor": 28.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "setName": "AshlandsMediumArmor",
+    "setSize": 3,
+    "setEffect": "A lighter armour lets you move more freely, every move requiring less energy.",
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
     "item": "HelmetBerserkerHood",
     "slot": "helmet",
     "armor": 7.0,
@@ -426,6 +529,16 @@
     "maxQuality": 4
   },
   {
+    "item": "HelmetFlametal",
+    "slot": "helmet",
+    "armor": 38.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 800.0,
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
     "item": "HelmetIron",
     "slot": "helmet",
     "armor": 14.0,
@@ -462,6 +575,16 @@
     "item": "HelmetMage",
     "slot": "helmet",
     "armor": 16.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "HelmetMage_Ashlands",
+    "slot": "helmet",
+    "armor": 19.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "durability": 1000.0,

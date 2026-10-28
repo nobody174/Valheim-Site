@@ -6,6 +6,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyAsksvin",
+    "creature": "Asksvin",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyBjorn",
     "creature": "Bjorn",
     "source": "game-files:steam-build-25909357",
@@ -18,6 +24,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyBlob_Lava",
+    "creature": "BlobLava",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyBoar",
     "creature": "Boar",
     "source": "game-files:steam-build-25909357",
@@ -26,6 +38,30 @@
   {
     "item": "TrophyBonemass",
     "creature": "Bonemass",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyBonemawSerpent",
+    "creature": "BonemawSerpent",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyCharredArcher",
+    "creature": "Charred_Archer",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyCharredMage",
+    "creature": "Charred_Mage",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyCharredMelee",
+    "creature": "Charred_Melee",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -74,6 +110,18 @@
   {
     "item": "TrophyEikthyr",
     "creature": "Eikthyr",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyFader",
+    "creature": "Fader",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyFallenValkyrie",
+    "creature": "FallenValkyrie",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -162,6 +210,12 @@
     "verified": "cross-checked"
   },
   {
+    "item": "TrophyMorgen",
+    "creature": "Morgen_NonSleeping",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "TrophyNeck",
     "creature": "Neck",
     "source": "game-files:steam-build-25909357",
@@ -206,6 +260,12 @@
   {
     "item": "TrophyTick",
     "creature": "Tick",
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "TrophyVolture",
+    "creature": "Volture",
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },

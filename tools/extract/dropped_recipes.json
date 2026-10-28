@@ -10,6 +10,15 @@
       ]
     },
     {
+      "recipe": "Recipe_FishingBaitAshlands",
+      "output": "FishingBaitAshlands",
+      "station": "piece_preptable",
+      "inputs": [
+        "FishingBait",
+        "TrophyCharredMelee"
+      ]
+    },
+    {
       "recipe": "Recipe_FishingBaitCave",
       "output": "FishingBaitCave",
       "station": "piece_preptable",
@@ -84,6 +93,16 @@
       ]
     },
     {
+      "recipe": "Recipe_SaddleAsksvin",
+      "output": "SaddleAsksvin",
+      "station": "blackforge",
+      "inputs": [
+        "FlametalNew",
+        "LinenThread",
+        "MorgenSinew"
+      ]
+    },
+    {
       "recipe": "Recipe_SadleLox",
       "output": "SaddleLox",
       "station": "piece_workbench",
@@ -147,6 +166,15 @@
       "inputs": [
         "Wood",
         "BlackMetal"
+      ]
+    },
+    {
+      "recipe": "Recipe_TurretBoltFlametal",
+      "output": "TurretBoltFlametal",
+      "station": "piece_artisanstation",
+      "inputs": [
+        "Blackwood",
+        "FlametalNew"
       ]
     },
     {

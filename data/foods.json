@@ -79,11 +79,29 @@
     "verified": "cross-checked"
   },
   {
+    "item": "CookedAsksvinMeat",
+    "kind": "food",
+    "health": 70.0,
+    "stamina": 24.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "CookedBjornMeat",
     "kind": "food",
     "health": 40.0,
     "stamina": 13.0,
     "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "CookedBoneMawSerpentMeat",
+    "kind": "food",
+    "health": 90.0,
+    "stamina": 30.0,
+    "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -133,6 +151,15 @@
     "verified": "cross-checked"
   },
   {
+    "item": "CookedVoltureMeat",
+    "kind": "food",
+    "health": 70.0,
+    "stamina": 24.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "CookedWolfMeat",
     "kind": "food",
     "health": 45.0,
@@ -164,6 +191,15 @@
     "kind": "food",
     "health": 21.0,
     "stamina": 65.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "FierySvinstew",
+    "kind": "food",
+    "health": 95.0,
+    "stamina": 32.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -219,6 +255,15 @@
     "health": 32.0,
     "stamina": 16.0,
     "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "MashedMeat",
+    "kind": "food",
+    "health": 100.0,
+    "stamina": 34.0,
+    "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -395,6 +440,15 @@
     "verified": "cross-checked"
   },
   {
+    "item": "PiquantPie",
+    "kind": "food",
+    "health": 105.0,
+    "stamina": 35.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "PulledBear",
     "kind": "food",
     "health": 37.0,
@@ -427,6 +481,15 @@
     "health": 20.0,
     "stamina": 20.0,
     "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "RoastedCrustPie",
+    "kind": "food",
+    "health": 34.0,
+    "stamina": 100.0,
+    "durationSec": 1800.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
