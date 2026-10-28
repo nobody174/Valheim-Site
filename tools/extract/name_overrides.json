@@ -1,0 +1,4 @@
+{
+  "_comment": "Display names that differ from the game's localisation, only where the game gives two entries the same name. Key = creature, boss or item id.",
+  "GoblinArcher": "Fuling Archer"
+}

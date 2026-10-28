@@ -1142,7 +1142,7 @@
   },
   {
     "id": "GoblinArcher",
-    "name": "Fuling",
+    "name": "Fuling Archer",
     "biome": "plains",
     "health": 175.0,
     "drops": [
@@ -1178,8 +1178,7 @@
       "spirit": "immune"
     },
     "aliases": [
-      "Goblin archer",
-      "Fuling archer"
+      "Goblin archer"
     ]
   },
   {

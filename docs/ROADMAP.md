@@ -8,9 +8,9 @@ reviews the live site before the next phase starts.
 | Phase | Name | Status | Sessions | Notes |
 |---|---|---|---|---|
 | 0 | Foundation | done (live) | 1 | Scaffold, schemas, validation, CI/deploy, seed data (Meadows + Black Forest from local game files) |
-| 1 | MVP | Part A done; Part B in review (PR open) | 2-3 | Search, item pages, recipe explorer, checklist, favorites, PWA |
-| 2 | Core database | in progress: 2.1 done (pipeline v2, Meadows + Black Forest); browse pages built; review fixes H1-H3 and M1-M5, M8 done (Building page added); M6 settles with the Swamp pass, M7 kept as is; Swamp data added (unverified, owner has not reached it), M6 done; Mountains data added (unverified); Plains data added (unverified); review 2 Package 1 done (Surtling, Surtling Core, station build costs); Package 2 done (auto-update, smaller bundle, piece icons on the Building page); Package 3 done (typo-tolerant search, aliases, did-you-mean); item descriptions and "what to do with it" added; Package 4 done (item page order, Gear badge, readable hoard notes); Package 5 done (Cultist, Fenris Hood, Wolf Skewer, trinkets, dropped-recipe reasons); next backlog items and Mistlands | 6-8 | Full data, one biome per session, all browse pages |
-| 3 | Advanced tools | in progress: Step 3 Rankings done (weapons and armor, DPS is an estimate pending an in-game check); graph, planner, optimizer pending | 3-4 | Crafting graph, build planner, rankings, optimizer |
+| 1 | MVP | done (live) | 2-3 | Search, item pages, recipe explorer, checklist, favorites, profiles, backup, PWA |
+| 2 | Core database | in progress: Meadows to Plains done, Mistlands and Ashlands not started | 6-8 | All browse pages built. Review fixes done: hoard from recipes, dropped-recipe report, station levels and costs, sources, search, item page, descriptions. Details in `docs/DATA_SOURCES.md` |
+| 3 | Advanced tools | in progress: rankings done (DPS is an estimate pending an in-game check) | 3-4 | Pending: crafting graph, build planner, food optimizer, upgrade calculator, compare, next-steps advisor |
 | 4 | Polish | not started | 2 | Visual pass, mobile, a11y, performance, offline hardening |
 | 5 | Future expansion | not started | open | Backlog, picked as wanted |
 
