@@ -34,7 +34,7 @@ export function SpotCheckPage() {
         <p>
           Almost everything on this site is read from the game files, but none of it has been seen working in game. Take
           this list in with you. For each line, look at the thing in game and press <strong>Matches</strong> or{' '}
-          <strong>Different</strong>. Your answers are saved in this profile. Press &quot;Copy my results&quot; and
+          <strong>Different</strong>. Your answers save by themselves the moment you press, so there is no Save button: the counter below goes up. Press &quot;Copy my results&quot; and
           send them over, and the matching entries are marked as seen in game.
         </p>
       </Intro>
@@ -43,7 +43,7 @@ export function SpotCheckPage() {
         <strong>
           {done} of {all.length}
         </strong>{' '}
-        checked{bad.length > 0 && <span className={styles.badCount}> · {bad.length} different</span>}
+        checked, saved automatically in {profile.name}{bad.length > 0 && <span className={styles.badCount}> · {bad.length} different</span>}
         <button type="button" onClick={report} disabled={done === 0}>
           Copy my results
         </button>
