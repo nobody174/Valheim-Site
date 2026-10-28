@@ -37,7 +37,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "summonItems": [
       {
         "item": "TrophyDeer",
@@ -80,7 +80,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "resistances": {
       "fire": "very weak",
       "poison": "immune",
