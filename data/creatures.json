@@ -1395,5 +1395,589 @@
     "resistances": {
       "spirit": "immune"
     }
+  },
+  {
+    "id": "Seeker",
+    "name": "Seeker",
+    "biome": "mistlands",
+    "health": 200.0,
+    "drops": [
+      {
+        "item": "BugMeat",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "Carapace",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "TrophySeeker",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "seeker_takeoff",
+        "damage": {
+          "pierce": 30.0,
+          "frost": 200.0
+        }
+      },
+      {
+        "id": "seeker_land",
+        "damage": {
+          "pierce": 30.0,
+          "frost": 200.0
+        }
+      },
+      {
+        "id": "seeker_pincers",
+        "damage": {
+          "pierce": 90.0
+        }
+      },
+      {
+        "id": "seeker_claw_left",
+        "damage": {
+          "pierce": 120.0
+        }
+      },
+      {
+        "id": "seeker_claw_right",
+        "damage": {
+          "pierce": 120.0
+        }
+      },
+      {
+        "id": "seeker_groundslam",
+        "damage": {
+          "blunt": 100.0
+        }
+      },
+      {
+        "id": "seeker_groundslam_flying",
+        "damage": {
+          "blunt": 100.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "slash": "resistant",
+      "pierce": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "SeekerBrute",
+    "name": "Seeker Soldier",
+    "biome": "mistlands",
+    "health": 1500.0,
+    "drops": [
+      {
+        "item": "BugMeat",
+        "min": 1,
+        "max": 2
+      },
+      {
+        "item": "Carapace",
+        "min": 2,
+        "max": 4
+      },
+      {
+        "item": "TrophySeekerBrute",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      },
+      {
+        "item": "Mandible",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "attacks": [
+      {
+        "id": "SeekerBrute_Taunt",
+        "damage": {
+          "slash": 80.0
+        }
+      },
+      {
+        "id": "SeekerBrute_ram",
+        "damage": {
+          "blunt": 100.0
+        }
+      },
+      {
+        "id": "SeekerBrute_bite",
+        "damage": {
+          "slash": 100.0
+        }
+      },
+      {
+        "id": "SeekerBrute_groundslam",
+        "damage": {
+          "blunt": 120.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "slash": "resistant",
+      "pierce": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "SeekerBrood",
+    "name": "Seeker Brood",
+    "biome": "mistlands",
+    "health": 20.0,
+    "drops": [
+      {
+        "item": "RoyalJelly",
+        "min": 1,
+        "max": 1,
+        "chance": 0.5
+      }
+    ],
+    "attacks": [
+      {
+        "id": "babyseeker_attack",
+        "damage": {
+          "pierce": 60.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "blunt": "resistant",
+      "slash": "resistant",
+      "pierce": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Gjall",
+    "name": "Gjall",
+    "biome": "mistlands",
+    "health": 1500.0,
+    "drops": [
+      {
+        "item": "Bilebag",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "TrophyGjall",
+        "min": 1,
+        "max": 1,
+        "chance": 0.3
+      }
+    ],
+    "attacks": [
+      {
+        "id": "gjall_attack_spit",
+        "damage": {
+          "blunt": 50.0,
+          "fire": 80.0
+        }
+      },
+      {
+        "id": "gjall_attack_shake",
+        "damage": {
+          "blunt": 20.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "fire": "resistant",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Tick",
+    "name": "Tick",
+    "biome": "mistlands",
+    "health": 50.0,
+    "drops": [
+      {
+        "item": "GiantBloodSack",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "TrophyTick",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "tick_attack_attach",
+        "damage": {
+          "pierce": 50.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "pierce": "weak",
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Hare",
+    "name": "Hare",
+    "biome": "mistlands",
+    "health": 10.0,
+    "drops": [
+      {
+        "item": "HareMeat",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "item": "ScaleHide",
+        "min": 1,
+        "max": 3
+      },
+      {
+        "item": "TrophyHare",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "resistances": {
+      "spirit": "immune"
+    }
+  },
+  {
+    "id": "Dverger",
+    "name": "Dvergr Rogue",
+    "biome": "mistlands",
+    "health": 350.0,
+    "drops": [
+      {
+        "item": "Softtissue",
+        "min": 1,
+        "max": 2,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMarble",
+        "min": 1,
+        "max": 2,
+        "chance": 0.5
+      },
+      {
+        "item": "Coins",
+        "min": 2,
+        "max": 15
+      },
+      {
+        "item": "TrophyDvergr",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "DvergerArbalest",
+        "damage": {
+          "pierce": 160.0
+        }
+      },
+      {
+        "id": "DvergerArbalest_shoot",
+        "damage": {
+          "pierce": 110.0
+        }
+      },
+      {
+        "id": "Dverger_melee",
+        "damage": {
+          "blunt": 70.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "spirit": "immune"
+    },
+    "note": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
+  },
+  {
+    "id": "DvergerMage",
+    "name": "Dvergr Mage",
+    "biome": "mistlands",
+    "health": 350.0,
+    "drops": [
+      {
+        "item": "Softtissue",
+        "min": 1,
+        "max": 2,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMarble",
+        "min": 1,
+        "max": 2,
+        "chance": 0.5
+      },
+      {
+        "item": "Coins",
+        "min": 2,
+        "max": 15
+      },
+      {
+        "item": "TrophyDvergr",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Dverger_melee",
+        "damage": {
+          "blunt": 70.0
+        }
+      },
+      {
+        "id": "DvergerStaffFire_fireball",
+        "damage": {
+          "fire": 130.0
+        }
+      },
+      {
+        "id": "DvergerStaffFire",
+        "damage": {
+          "fire": 120.0
+        }
+      },
+      {
+        "id": "DvergerStaffFire_clusterbomb",
+        "damage": {
+          "fire": 100.0
+        }
+      },
+      {
+        "id": "DvergerStaffIce_icebolt",
+        "damage": {
+          "frost": 200.0
+        }
+      },
+      {
+        "id": "DvergerStaffIce",
+        "damage": {
+          "frost": 120.0
+        }
+      },
+      {
+        "id": "DvergerStaffNova",
+        "damage": {
+          "frost": 100.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "fire": "resistant",
+      "frost": "resistant",
+      "spirit": "immune"
+    },
+    "note": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
+  },
+  {
+    "id": "DvergerMageFire",
+    "name": "Dvergr Mage (Fire)",
+    "biome": "mistlands",
+    "health": 350.0,
+    "drops": [
+      {
+        "item": "Softtissue",
+        "min": 1,
+        "max": 2,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMarble",
+        "min": 1,
+        "max": 2,
+        "chance": 0.5
+      },
+      {
+        "item": "Coins",
+        "min": 2,
+        "max": 15
+      },
+      {
+        "item": "TrophyDvergr",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Dverger_melee",
+        "damage": {
+          "blunt": 70.0
+        }
+      },
+      {
+        "id": "DvergerStaffFire_fireball",
+        "damage": {
+          "fire": 130.0
+        }
+      },
+      {
+        "id": "DvergerStaffFire",
+        "damage": {
+          "fire": 120.0
+        }
+      },
+      {
+        "id": "DvergerStaffFire_clusterbomb",
+        "damage": {
+          "fire": 100.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "fire": "resistant",
+      "frost": "resistant",
+      "spirit": "immune"
+    },
+    "note": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
+  },
+  {
+    "id": "DvergerMageIce",
+    "name": "Dvergr Mage (Ice)",
+    "biome": "mistlands",
+    "health": 350.0,
+    "drops": [
+      {
+        "item": "Softtissue",
+        "min": 1,
+        "max": 2,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMarble",
+        "min": 1,
+        "max": 2,
+        "chance": 0.5
+      },
+      {
+        "item": "Coins",
+        "min": 2,
+        "max": 15
+      },
+      {
+        "item": "TrophyDvergr",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [
+      {
+        "id": "Dverger_melee",
+        "damage": {
+          "blunt": 70.0
+        }
+      },
+      {
+        "id": "DvergerStaffIce_icebolt",
+        "damage": {
+          "frost": 200.0
+        }
+      },
+      {
+        "id": "DvergerStaffNova",
+        "damage": {
+          "frost": 100.0
+        }
+      },
+      {
+        "id": "DvergerStaffIce",
+        "damage": {
+          "frost": 120.0
+        }
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "fire": "resistant",
+      "frost": "resistant",
+      "spirit": "immune"
+    },
+    "note": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
+  },
+  {
+    "id": "DvergerMageSupport",
+    "name": "Dvergr Mage (Support)",
+    "biome": "mistlands",
+    "health": 350.0,
+    "drops": [
+      {
+        "item": "Softtissue",
+        "min": 1,
+        "max": 2,
+        "chance": 0.25
+      },
+      {
+        "item": "BlackMarble",
+        "min": 1,
+        "max": 2,
+        "chance": 0.5
+      },
+      {
+        "item": "Coins",
+        "min": 2,
+        "max": 15
+      },
+      {
+        "item": "TrophyDvergr",
+        "min": 1,
+        "max": 1,
+        "chance": 0.05
+      }
+    ],
+    "attacks": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "resistances": {
+      "fire": "resistant",
+      "frost": "resistant",
+      "spirit": "immune"
+    },
+    "note": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
   }
 ]

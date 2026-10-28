@@ -1,0 +1,243 @@
+{
+  "id": "mistlands",
+  "name": "Mistlands",
+  "order": 6,
+  "materials": [
+    "Softtissue",
+    "BlackMarble",
+    "Carapace",
+    "Mandible",
+    "Chitin",
+    "BugMeat",
+    "HareMeat",
+    "ScaleHide",
+    "GiantBloodSack",
+    "Bilebag",
+    "QueenDrop",
+    "YggdrasilWood",
+    "Sap",
+    "Eitr",
+    "Wisp",
+    "MisthareSupremeUncooked",
+    "MeatPlatterUncooked",
+    "MagicallyStuffedShroomUncooked",
+    "BlackCore",
+    "CeramicPlate",
+    "MechanicalSpring",
+    "ShieldCore",
+    "MushroomMagecap",
+    "MushroomJotunPuffs",
+    "MushroomSmokePuff",
+    "Vineberry",
+    "Fiddleheadfern",
+    "RoyalJelly"
+  ],
+  "tools": [
+    "PickaxeBlackMetal",
+    "Lantern",
+    "Demister"
+  ],
+  "weapons": [
+    "SwordMistwalker",
+    "THSwordKrom",
+    "AtgeirHimminAfl",
+    "AxeJotunBane",
+    "BattleaxeSkullSplittur",
+    "SledgeDemolisher",
+    "SpearCarapace",
+    "SpearChitin",
+    "KnifeChitin",
+    "KnifeSkollAndHati",
+    "BowSpineSnap",
+    "CrossbowArbalest",
+    "StaffFireball",
+    "StaffIceShards",
+    "StaffShield",
+    "StaffSkeleton",
+    "ArrowCarapace",
+    "BoltIron",
+    "BoltBone",
+    "BoltBlackmetal",
+    "BoltCarapace",
+    "BombBile",
+    "ShieldCarapace",
+    "ShieldCarapaceBuckler"
+  ],
+  "armor": {
+    "ArmorCarapaceChest": "chest",
+    "ArmorCarapaceLegs": "legs",
+    "HelmetCarapace": "helmet",
+    "ArmorMageChest": "chest",
+    "ArmorMageLegs": "legs",
+    "HelmetMage": "helmet",
+    "CapeFeather": "cape"
+  },
+  "foods": [
+    "CookedBugMeat",
+    "CookedHareMeat",
+    "MisthareSupreme",
+    "MeatPlatter",
+    "MagicallyStuffedShroom",
+    "MarinatedGreens",
+    "Salad",
+    "ScorchingMedley",
+    "SeekerAspic",
+    "SizzlingBerryBroth",
+    "SparklingShroomshake",
+    "SpicyMarmalade",
+    "YggdrasilPorridge"
+  ],
+  "meads": [
+    "MeadBaseEitrMinor",
+    "MeadEitrMinor",
+    "MeadBaseEitrLingering",
+    "MeadEitrLingering",
+    "MeadBaseHealthMajor",
+    "MeadHealthMajor",
+    "MeadBaseHealthLingering",
+    "MeadHealthLingering",
+    "MeadBaseLightFoot",
+    "MeadLightfoot",
+    "MeadBaseStaminaLingering",
+    "MeadStaminaLingering"
+  ],
+  "trophies": [
+    "TrophySeeker",
+    "TrophySeekerBrute",
+    "TrophyGjall",
+    "TrophyTick",
+    "TrophyHare",
+    "TrophySeekerQueen",
+    "TrophyDvergr"
+  ],
+  "trinkets": [
+    "TrinketCarapaceEitr",
+    "TrinketScaleStaminaDamage"
+  ],
+  "creatures": [
+    "Seeker",
+    "SeekerBrute",
+    "SeekerBrood",
+    "Gjall",
+    "Tick",
+    "Hare",
+    "Dverger",
+    "DvergerMage",
+    "DvergerMageFire",
+    "DvergerMageIce",
+    "DvergerMageSupport"
+  ],
+  "bosses": [
+    "SeekerQueen"
+  ],
+  "bossSummon": {
+    "SeekerQueen": [
+      [
+        "Softtissue",
+        3
+      ]
+    ]
+  },
+  "creatureNotes": {
+    "Dverger": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",
+    "DvergerMage": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",
+    "DvergerMageFire": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",
+    "DvergerMageIce": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",
+    "DvergerMageSupport": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
+  },
+  "gather": {
+    "YggdrasilWood": [
+      [
+        "gather",
+        "Chop the Yggdrasil branches and roots that rise out of the Mistlands mist (guides)."
+      ]
+    ],
+    "Sap": [
+      [
+        "gather",
+        "Collect from Yggdrasil roots with a Sap Extractor (guides)."
+      ]
+    ],
+    "BlackMarble": [
+      [
+        "gather",
+        "Dropped by Dvergr, and mined from black marble in Dvergr ruins (guides)."
+      ]
+    ],
+    "Softtissue": [
+      [
+        "gather",
+        "Dropped by Dvergr, and found in Mistlands ruins (guides)."
+      ]
+    ],
+    "Chitin": [
+      [
+        "gather",
+        "Mine chitin deposits in the Mistlands (guides)."
+      ]
+    ],
+    "Wisp": [
+      [
+        "gather",
+        "Collect from Wisp Fountains in the Mistlands (guides)."
+      ]
+    ],
+    "MushroomMagecap": [
+      [
+        "gather",
+        "Pick from the ground in the Mistlands (guides)."
+      ]
+    ],
+    "MushroomJotunPuffs": [
+      [
+        "gather",
+        "Pick from the ground in the Mistlands (guides)."
+      ]
+    ],
+    "MushroomSmokePuff": [
+      [
+        "gather",
+        "Pick from the ground in the Mistlands (guides)."
+      ]
+    ],
+    "Vineberry": [
+      [
+        "gather",
+        "Pick from the vines hanging in the Mistlands (guides)."
+      ]
+    ],
+    "Fiddleheadfern": [
+      [
+        "gather",
+        "Pick from the ground in the Mistlands (guides)."
+      ]
+    ],
+    "BlackCore": [
+      [
+        "gather",
+        "Found in Dvergr ruins and chests in the Mistlands (guides)."
+      ]
+    ],
+    "RoyalJelly": [
+      [
+        "other",
+        "Dropped by Seeker Broods."
+      ]
+    ]
+  },
+  "hoard": {
+    "keepSome": {},
+    "mustKeep": [
+      "YggdrasilWood",
+      "Eitr",
+      "BlackMarble",
+      "Softtissue",
+      "Carapace",
+      "Sap",
+      "BlackCore"
+    ]
+  },
+  "guide": {
+    "notes": []
+  }
+}

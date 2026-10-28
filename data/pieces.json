@@ -166,6 +166,60 @@
     "station": "piece_workbench"
   },
   {
+    "id": "piece_dvergr_spiralstair",
+    "name": "Dvergr Spiral Staircase Left",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "YggdrasilWood",
+        "qty": 5
+      },
+      {
+        "item": "Copper",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
+    "id": "piece_dvergr_spiralstair_right",
+    "name": "Dvergr Spiral Staircase Right",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "YggdrasilWood",
+        "qty": 5
+      },
+      {
+        "item": "Copper",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
+    "id": "piece_hexagonal_door",
+    "name": "Hexagonal Gate",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "YggdrasilWood",
+        "qty": 8
+      },
+      {
+        "item": "Copper",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
     "id": "wood_wall_log",
     "name": "Log Beam 2 m",
     "category": "Building",
@@ -1202,6 +1256,20 @@
     "station": "piece_workbench"
   },
   {
+    "id": "piece_dvergr_metal_wall_2x2",
+    "name": "Dvergr Metal Wall",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Copper",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
     "id": "iron_grate",
     "name": "Iron Gate",
     "category": "Building (stone)",
@@ -1214,23 +1282,6 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "forge"
-  },
-  {
-    "id": "piece_artisanstation",
-    "name": "Artisan Table",
-    "category": "Crafting",
-    "requirements": [
-      {
-        "item": "Wood",
-        "qty": 10
-      },
-      {
-        "item": "DragonTear",
-        "qty": 2
-      }
-    ],
-    "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
   },
   {
     "id": "piece_birdnest",
@@ -1547,6 +1598,52 @@
     "comfort": 2
   },
   {
+    "id": "piece_dvergr_lantern_pole",
+    "name": "Dvergr Pole Lantern",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Copper",
+        "qty": 3
+      },
+      {
+        "item": "Lantern",
+        "qty": 1
+      },
+      {
+        "item": "Chain",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge",
+    "comfort": 1
+  },
+  {
+    "id": "piece_dvergr_lantern",
+    "name": "Dvergr Wall Lantern",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Copper",
+        "qty": 2
+      },
+      {
+        "item": "Lantern",
+        "qty": 1
+      },
+      {
+        "item": "Chain",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge",
+    "comfort": 1
+  },
+  {
     "id": "piece_FairylightGarland",
     "name": "Fey Lights",
     "category": "Furniture",
@@ -1628,6 +1725,21 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "forge",
+    "comfort": 1
+  },
+  {
+    "id": "rug_hare",
+    "name": "Hare Rug",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "ScaleHide",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
     "comfort": 1
   },
   {
@@ -2163,6 +2275,23 @@
     "comfort": 1
   },
   {
+    "id": "piece_groundtorch_mist",
+    "name": "Wisp Torch",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "YggdrasilWood",
+        "qty": 1
+      },
+      {
+        "item": "Wisp",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "rug_wolf",
     "name": "Wolf Rug",
     "category": "Furniture",
@@ -2251,6 +2380,41 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench"
+  },
+  {
+    "id": "piece_turret",
+    "name": "Ballista",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "BlackMetal",
+        "qty": 10
+      },
+      {
+        "item": "YggdrasilWood",
+        "qty": 10
+      },
+      {
+        "item": "MechanicalSpring",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "blackmarble_pile",
+    "name": "Black Marble Pile",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 50
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
   },
   {
     "id": "bar_blackmetal_stack",
@@ -2447,6 +2611,68 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "VikingShip_Ashlands",
+    "name": "Drakkar",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "IronNails",
+        "qty": 100
+      },
+      {
+        "item": "CeramicPlate",
+        "qty": 30
+      },
+      {
+        "item": "FineWood",
+        "qty": 50
+      },
+      {
+        "item": "YggdrasilWood",
+        "qty": 25
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
+    "id": "piece_dvergr_sharpstakes",
+    "name": "Dvergr Sharp Stakes",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "YggdrasilWood",
+        "qty": 5
+      },
+      {
+        "item": "Iron",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
+  },
+  {
+    "id": "piece_dvergr_stake_wall",
+    "name": "Dvergr Stakewall",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "YggdrasilWood",
+        "qty": 8
+      },
+      {
+        "item": "Iron",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "blackforge"
   },
   {
     "id": "wood_fine_stack",
@@ -2648,6 +2874,28 @@
     "station": "piece_workbench"
   },
   {
+    "id": "piece_shieldgenerator",
+    "name": "Shield Generator",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Iron",
+        "qty": 5
+      },
+      {
+        "item": "Copper",
+        "qty": 5
+      },
+      {
+        "item": "ShieldCore",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "bar_silver_stack",
     "name": "Silver Stack",
     "category": "Misc",
@@ -2715,6 +2963,28 @@
     "verified": "cross-checked"
   },
   {
+    "id": "piece_trap_troll",
+    "name": "Trap",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "BlackMetal",
+        "qty": 5
+      },
+      {
+        "item": "BronzeNails",
+        "qty": 10
+      },
+      {
+        "item": "MechanicalSpring",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "guard_stone",
     "name": "Ward",
     "category": "Misc",
@@ -2774,6 +3044,19 @@
     "requirements": [
       {
         "item": "Wood",
+        "qty": 50
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "wood_yggdrasil_stack",
+    "name": "Yggdrasil Wood Stack",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "YggdrasilWood",
         "qty": 50
       }
     ],

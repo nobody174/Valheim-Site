@@ -157,6 +157,44 @@
     "description": "Bronze greaves to shield your legs."
   },
   {
+    "id": "ArmorCarapaceChest",
+    "name": "Carapace Breastplate",
+    "category": "armor",
+    "biome": "mistlands",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorCarapaceChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A breastplate crafted from the burnished carapace of a giant insect."
+  },
+  {
+    "id": "ArmorCarapaceLegs",
+    "name": "Carapace Greaves",
+    "category": "armor",
+    "biome": "mistlands",
+    "weight": 10.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorCarapaceLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Leg guards of a rigid carapace."
+  },
+  {
     "id": "ArmorFenringChest",
     "name": "Fenris Coat",
     "category": "armor",
@@ -307,6 +345,44 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Soft, silent and flexible."
+  },
+  {
+    "id": "ArmorMageChest",
+    "name": "Eitr-weave Robe",
+    "category": "armor",
+    "biome": "mistlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorMageChest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "These artfully layered robes have spells and charms sewn into every seam and fold."
+  },
+  {
+    "id": "ArmorMageLegs",
+    "name": "Eitr-weave Trousers",
+    "category": "armor",
+    "biome": "mistlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArmorMageLegs"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The trousers worn by mages are always especially tight. Discomfort fuels the focus that is needed for magic..."
   },
   {
     "id": "ArmorPaddedCuirass",
@@ -518,6 +594,25 @@
     "description": "Sharper than flint. A sleek messenger of death."
   },
   {
+    "id": "ArrowCarapace",
+    "name": "Carapace Arrow",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ArrowCarapace"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Heavy and pointy, this one's gonna hurt."
+  },
+  {
     "id": "ArrowFire",
     "name": "Fire Arrow",
     "category": "weapon",
@@ -727,6 +822,25 @@
     "description": "A true warrior's tool."
   },
   {
+    "id": "AtgeirHimminAfl",
+    "name": "Himminafl",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AtgeirHimminAfl"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It might not be a hammer, but Thor himself would still approve of this weapon."
+  },
+  {
     "id": "AtgeirIron",
     "name": "Iron Atgeir",
     "category": "weapon",
@@ -879,6 +993,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Sharp and strong, a woodcutter's friend."
+  },
+  {
+    "id": "AxeJotunBane",
+    "name": "Jotun Bane",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.AxeJotunBane"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Not even the giants of old could weather the poisonous bite of this weapon."
   },
   {
     "id": "AxeStone",
@@ -1038,6 +1171,25 @@
     "description": "It's see-through and tears through."
   },
   {
+    "id": "BattleaxeSkullSplittur",
+    "name": "Skull Splittur",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 2.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Battleaxe_SkullSplittur"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Will find skulls to split even in the thickest of mists."
+  },
+  {
     "id": "BeechSeeds",
     "name": "Beech Seeds",
     "category": "material",
@@ -1056,6 +1208,27 @@
     "verified": "unverified",
     "description": "Plant them to grow a beech tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Bilebag",
+    "name": "Bilebag",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 6,
+    "hoardNote": "Used for crafting Bile Bomb, crafting Jotun Bane, upgrading Jotun Bane. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Gjall"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Caustic bile drawn from the corpse of a gjall."
   },
   {
     "id": "BirchSeeds",
@@ -1139,6 +1312,66 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Sharp claws suitable for picking berries – or for dismembering."
+  },
+  {
+    "id": "BlackCore",
+    "name": "Black Core",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Found in Dvergr ruins and chests in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Filled to the brim with ancient power.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "BlackMarble",
+    "name": "Black Marble",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Dropped by Dvergr, and mined from black marble in Dvergr ruins (guides)."
+      },
+      {
+        "type": "drop",
+        "creature": "Dverger"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMage"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageFire"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageIce"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageSupport"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "A block of solid stone, seamed with shifting colors.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "BlackMetal",
@@ -1302,6 +1535,101 @@
     "description": "Lean and salty."
   },
   {
+    "id": "BoltBlackmetal",
+    "name": "Black Metal Bolt",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BoltBlackmetal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A sleek bolt of dark metal."
+  },
+  {
+    "id": "BoltBone",
+    "name": "Bone Bolt",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BoltBone"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A crude bolt of yellowed bone."
+  },
+  {
+    "id": "BoltCarapace",
+    "name": "Carapace Bolt",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BoltCarapace"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A heavy and solid bolt."
+  },
+  {
+    "id": "BoltIron",
+    "name": "Iron Bolt",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BoltIron"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A sturdy iron missile."
+  },
+  {
+    "id": "BombBile",
+    "name": "Bile Bomb",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BombBile"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Handle with care."
+  },
+  {
     "id": "BombOoze",
     "name": "Ooze Bomb",
     "category": "weapon",
@@ -1417,6 +1745,25 @@
     "description": "Finely worked and strung. A huntsman's joy."
   },
   {
+    "id": "BowSpineSnap",
+    "name": "Spinesnap",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.BowSpineSnap"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Using this bow is backbreaking work but so worth it."
+  },
+  {
     "id": "Bread",
     "name": "Bread",
     "category": "food",
@@ -1499,6 +1846,31 @@
     "description": "Used in construction of ships and furniture."
   },
   {
+    "id": "BugMeat",
+    "name": "Seeker Meat",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 2,
+    "hoardNote": "Used for crafting Cooked Seeker Meat, crafting Seeker Aspic, crafting Uncooked Meat Platter. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Seeker"
+      },
+      {
+        "type": "drop",
+        "creature": "SeekerBrute"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "When you crack open their shells, the meat within is tender and succulent."
+  },
+  {
     "id": "CapeDeerHide",
     "name": "Deer Hide Cape",
     "category": "armor",
@@ -1516,6 +1888,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Rustic chic."
+  },
+  {
+    "id": "CapeFeather",
+    "name": "Feather Cape",
+    "category": "armor",
+    "biome": "mistlands",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CapeFeather"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Donning this cape makes you feel lighter, almost as if you could fly!"
   },
   {
     "id": "CapeLinen",
@@ -1594,6 +1985,29 @@
     "description": "Wolves are natural survivors. This one was just unlucky. Now its pelt will warm you in the snow."
   },
   {
+    "id": "Carapace",
+    "name": "Carapace",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Seeker"
+      },
+      {
+        "type": "drop",
+        "creature": "SeekerBrute"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A plate of chitinous armour."
+  },
+  {
     "id": "Carrot",
     "name": "Carrot",
     "category": "material",
@@ -1603,7 +2017,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 3,
-    "hoardNote": "Used for building Spice Rack, crafting Carrot Soup, crafting Deer Stew and 2 more. Quantity is the largest single need.",
+    "hoardNote": "Used for building Spice Rack, crafting Carrot Soup, crafting Deer Stew and 3 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1649,6 +2063,27 @@
     "description": "A warm tasty soup made of mostly carrots."
   },
   {
+    "id": "CeramicPlate",
+    "name": "Ceramic Plate",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 5,
+    "hoardNote": "Used for crafting Shield Core. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CeramicPlate"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "No matter how hot this gets, the other side of it remains strangely cool."
+  },
+  {
     "id": "Chain",
     "name": "Chain",
     "category": "material",
@@ -1668,6 +2103,28 @@
     "description": "A link of iron chain."
   },
   {
+    "id": "Chitin",
+    "name": "Chitin",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 50,
+    "hoardNote": "Used for crafting Abyssal Harpoon, crafting Abyssal Razor, upgrading Abyssal Razor. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Mine chitin deposits in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "A shard of crustacean shell.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Cloudberry",
     "name": "Cloudberries",
     "category": "material",
@@ -1677,7 +2134,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Barley Wine Base: Fire Resistance, crafting Mead Base: Medium Stamina, crafting Unbaked Lox Pie. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Barley Wine Base: Fire Resistance, crafting Mead Base: Lingering Stamina, crafting Mead Base: Medium Stamina and 2 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1773,6 +2230,26 @@
       {
         "type": "drop",
         "creature": "GoblinShaman"
+      },
+      {
+        "type": "drop",
+        "creature": "Dverger"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMage"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageFire"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageIce"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageSupport"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1805,6 +2282,25 @@
     "description": "Tastes like victory."
   },
   {
+    "id": "CookedBugMeat",
+    "name": "Cooked Seeker Meat",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.BugMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Succulent white meat. A true delicacy."
+  },
+  {
     "id": "CookedDeerMeat",
     "name": "Cooked Deer Meat",
     "category": "food",
@@ -1828,6 +2324,29 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "All that running paid off."
+  },
+  {
+    "id": "CookedHareMeat",
+    "name": "Cooked Hare Meat",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.HareMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.HareMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Stringy but flavorful."
   },
   {
     "id": "CookedLoxMeat",
@@ -1932,6 +2451,25 @@
     "verified": "unverified",
     "description": "Unrefined copper. Needs to be refined in a smelter.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "CrossbowArbalest",
+    "name": "Arbalest",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CrossbowArbalest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A slow but powerful weapon."
   },
   {
     "id": "CryptKey",
@@ -2082,6 +2620,26 @@
     "description": "Fall-apart tender."
   },
   {
+    "id": "Demister",
+    "name": "Wisplight",
+    "category": "tool",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Demister"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A bound wisp to guide you through the thickest of mists."
+  },
+  {
     "id": "DragonEgg",
     "name": "Dragon Egg",
     "category": "material",
@@ -2124,6 +2682,25 @@
     "verified": "unverified",
     "description": "The last frozen tear of a dragon, pulsating with mysterious energy.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Eitr",
+    "name": "Refined Eitr",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 5.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.eitrrefinery.Softtissue"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This is the stuff of life, the poison that consumes itself. The Dvergr refine it to use in their esoteric designs."
   },
   {
     "id": "ElderBark",
@@ -2200,6 +2777,28 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "A small pile of feathers.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fiddleheadfern",
+    "name": "Fiddlehead",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 3,
+    "hoardNote": "Used for crafting Marinated Greens, crafting Scorching Medley, crafting Sizzling Berry Broth and 1 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the ground in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Veggies with a twist!",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -2492,6 +3091,27 @@
     "description": "This mysterious organ keeps a perfect temperature."
   },
   {
+    "id": "GiantBloodSack",
+    "name": "Blood Clot",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting Mead Base: Major Healing, crafting Staff of Protection, crafting Uncooked Stuffed Mushroom and 1 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Tick"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Be careful not to puncture this while you carry it..."
+  },
+  {
     "id": "GoblinTotem",
     "name": "Fuling Totem",
     "category": "material",
@@ -2598,6 +3218,27 @@
     "description": "A piece of very hard antlers."
   },
   {
+    "id": "HareMeat",
+    "name": "Hare Meat",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Cooked Hare Meat, crafting Uncooked Meat Platter, crafting Uncooked Misthare Supreme. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Hare"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The meat of a hare is scant but toothsome."
+  },
+  {
     "id": "HelmetBerserkerHood",
     "name": "Headdress of the Bear",
     "category": "armor",
@@ -2634,6 +3275,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "This will help to keep your brains inside your skull."
+  },
+  {
+    "id": "HelmetCarapace",
+    "name": "Carapace Helmet",
+    "category": "armor",
+    "biome": "mistlands",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetCarapace"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "People might say you look like a giant ant. But they will only say it once."
   },
   {
     "id": "HelmetDrake",
@@ -2731,6 +3391,25 @@
     "description": "See the world like a lox might."
   },
   {
+    "id": "HelmetMage",
+    "name": "Eitr-weave Hood",
+    "category": "armor",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetMage"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Sorcery shows itself in the eyes, so most mages wear cowls to disguise their occult pursuits."
+  },
+  {
     "id": "HelmetPadded",
     "name": "Padded Helmet",
     "category": "armor",
@@ -2817,7 +3496,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Black Soup, crafting Boar Jerky, crafting Mead Base: Frost Resistance and 7 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Black Soup, crafting Boar Jerky, crafting Mead Base: Frost Resistance and 10 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -2932,6 +3611,25 @@
     "description": "A butcher's knife designed specifically for slaughtering tamed animals."
   },
   {
+    "id": "KnifeChitin",
+    "name": "Abyssal Razor",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.KnifeChitin"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A knife from the deep."
+  },
+  {
     "id": "KnifeCopper",
     "name": "Copper Knife",
     "category": "weapon",
@@ -2989,6 +3687,45 @@
     "description": "A savage piece of pain."
   },
   {
+    "id": "KnifeSkollAndHati",
+    "name": "Skoll and Hati",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.KnifeSkollAndHati"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Stab once for those who've betrayed you, and twice for those you hate."
+  },
+  {
+    "id": "Lantern",
+    "name": "Dvergr Lantern",
+    "category": "tool",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Lantern"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A simple torch would just be so old fashioned."
+  },
+  {
     "id": "LeatherScraps",
     "name": "Leather Scraps",
     "category": "material",
@@ -3037,7 +3774,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 2,
-    "hoardNote": "Used for crafting Cooked Lox Meat, crafting Unbaked Lox Pie. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Cooked Lox Meat, crafting Unbaked Lox Pie, crafting Uncooked Meat Platter. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -3186,6 +3923,128 @@
     "description": "The dead fear silver. Remind them why."
   },
   {
+    "id": "MagicallyStuffedShroom",
+    "name": "Stuffed Mushroom",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.MagicallyStuffedShroomUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Bursting with magical flavour."
+  },
+  {
+    "id": "MagicallyStuffedShroomUncooked",
+    "name": "Uncooked Stuffed Mushroom",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Stuffed Mushroom. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MagicallyStuffedShroom"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
+  },
+  {
+    "id": "Mandible",
+    "name": "Mandible",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 8,
+    "hoardNote": "Used for crafting Carapace Helmet, crafting Carapace Spear, crafting Himminafl and 3 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "SeekerBrute"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The hand of man could hardly design a more perfect weapon."
+  },
+  {
+    "id": "MarinatedGreens",
+    "name": "Marinated Greens",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MarinatedGreens"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It's spicy, it's chewy, it's sweet… This mad dish tickles your tongue as well as your mind."
+  },
+  {
+    "id": "MeadBaseEitrLingering",
+    "name": "Mead Base: Lingering Eitr",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Lingering Eitr Mead. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseEitrLingering"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
+  },
+  {
+    "id": "MeadBaseEitrMinor",
+    "name": "Mead Base: Minor Eitr",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Minor Eitr Mead. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseEitrMinor"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
+  },
+  {
     "id": "MeadBaseFrostResist",
     "name": "Mead Base: Frost Resistance",
     "category": "mead",
@@ -3200,6 +4059,48 @@
       {
         "type": "recipe",
         "recipe": "recipe.MeadBaseFrostResist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
+  },
+  {
+    "id": "MeadBaseHealthLingering",
+    "name": "Mead Base: Lingering Health",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Lingering Healing Mead. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseHealthLingering"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
+  },
+  {
+    "id": "MeadBaseHealthMajor",
+    "name": "Mead Base: Major Healing",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Major Healing Mead. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseHealthMajor"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3249,6 +4150,27 @@
     "description": "Needs to be fermented."
   },
   {
+    "id": "MeadBaseLightFoot",
+    "name": "Mead Base: Lightfoot",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Lightfoot Mead. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseLightFoot"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
+  },
+  {
     "id": "MeadBasePoisonResist",
     "name": "Mead Base: Poison Resistance",
     "category": "mead",
@@ -3263,6 +4185,27 @@
       {
         "type": "recipe",
         "recipe": "recipe.MeadBasePoisonResist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Needs to be fermented."
+  },
+  {
+    "id": "MeadBaseStaminaLingering",
+    "name": "Mead Base: Lingering Stamina",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Lingering Stamina Mead. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeadBaseStaminaLingering"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3333,6 +4276,44 @@
     "description": "Needs to be fermented."
   },
   {
+    "id": "MeadEitrLingering",
+    "name": "Lingering Eitr Mead",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseEitrLingering"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Increases eitr regeneration."
+  },
+  {
+    "id": "MeadEitrMinor",
+    "name": "Minor Eitr Mead",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseEitrMinor"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Restores eitr."
+  },
+  {
     "id": "MeadFrostResist",
     "name": "Frost Resistance Mead",
     "category": "mead",
@@ -3350,6 +4331,44 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Protects against the cold."
+  },
+  {
+    "id": "MeadHealthLingering",
+    "name": "Lingering Healing Mead",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseHealthLingering"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Increases health regeneration."
+  },
+  {
+    "id": "MeadHealthMajor",
+    "name": "Major Healing Mead",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseHealthMajor"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Restores health."
   },
   {
     "id": "MeadHealthMedium",
@@ -3390,6 +4409,25 @@
     "description": "Restores health."
   },
   {
+    "id": "MeadLightfoot",
+    "name": "Lightfoot Mead",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseLightFoot"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This bottle is full, yet it feels like it weighs almost nothing at all."
+  },
+  {
     "id": "MeadPoisonResist",
     "name": "Poison Resistance Mead",
     "category": "mead",
@@ -3407,6 +4445,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Fortifies you against poison."
+  },
+  {
+    "id": "MeadStaminaLingering",
+    "name": "Lingering Stamina Mead",
+    "category": "mead",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.fermenter.MeadBaseStaminaLingering"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Increases stamina regeneration."
   },
   {
     "id": "MeadStaminaMedium",
@@ -3466,6 +4523,67 @@
     "description": "The nectar of the Gods, divine mead."
   },
   {
+    "id": "MeatPlatter",
+    "name": "Meat Platter",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.MeatPlatterUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Battle fuel."
+  },
+  {
+    "id": "MeatPlatterUncooked",
+    "name": "Uncooked Meat Platter",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Meat Platter. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MeatPlatter"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
+  },
+  {
+    "id": "MechanicalSpring",
+    "name": "Mechanical Spring",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 5.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 2,
+    "hoardNote": "Used for building Vice. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MechanicalSpring"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A mysterious contraption built by the Dvergr. Used to build traps."
+  },
+  {
     "id": "MinceMeatSauce",
     "name": "Minced Meat Sauce",
     "category": "food",
@@ -3483,6 +4601,46 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Chunks of goodness in a thick gravy."
+  },
+  {
+    "id": "MisthareSupreme",
+    "name": "Misthare Supreme",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.MisthareSupremeUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "One of life's Great Pleasures."
+  },
+  {
+    "id": "MisthareSupremeUncooked",
+    "name": "Uncooked Misthare Supreme",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Misthare Supreme. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MisthareSupreme"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
   },
   {
     "id": "Mushroom",
@@ -3504,6 +4662,72 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Bounty of the forest.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "MushroomJotunPuffs",
+    "name": "Jotun Puffs",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting Mead Base: Lingering Stamina, crafting Mead Base: Minor Eitr, crafting Salad and 2 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the ground in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Swollen with magic, these golden orbs bubble from the ground where the Jotun fell.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "MushroomMagecap",
+    "name": "Magecap",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting Marinated Greens, crafting Mead Base: Lightfoot, crafting Mead Base: Lingering Eitr and 4 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the ground in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "The delicate blue magecaps crackle like nerve-endings with sorcerous vitality.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "MushroomSmokePuff",
+    "name": "Smoke Puff",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting Marinated Greens, crafting Mead Base: Lingering Health, crafting Sparkling Shroomshake. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the ground in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Hopefully it tastes better after cooking.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3626,7 +4850,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 3,
-    "hoardNote": "Used for crafting Onion Soup, crafting Wolf Skewer. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Onion Soup, crafting Salad, crafting Scorching Medley and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -3700,6 +4924,26 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "This tool is hard enough to crack even the most stubborn rocks."
+  },
+  {
+    "id": "PickaxeBlackMetal",
+    "name": "Black Metal Pickaxe",
+    "category": "tool",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "must_keep",
+    "hoardNote": "A tool you need to own.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.PickaxeBlackMetal"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A good strong pick of glistening dark metal."
   },
   {
     "id": "PickaxeBronze",
@@ -3825,6 +5069,27 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Tender meat cooked for hours upon hours, until it practically falls apart."
+  },
+  {
+    "id": "QueenDrop",
+    "name": "Majestic Carapace",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for building Artisan Press. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "SeekerQueen"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Her majesty's will was hard and unrelenting, but this piece of carapace is perhaps even more so."
   },
   {
     "id": "QueensJam",
@@ -3967,6 +5232,32 @@
     ]
   },
   {
+    "id": "RoyalJelly",
+    "name": "Royal Jelly",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 5,
+    "hoardNote": "Used for crafting Mead Base: Major Healing, crafting Seeker Aspic, crafting Yggdrasil Porridge. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Seeker Broods."
+      },
+      {
+        "type": "drop",
+        "creature": "SeekerBrood"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Jelly fit for kings and queens.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Ruby",
     "name": "Ruby",
     "category": "material",
@@ -3988,6 +5279,45 @@
     "use": "A valuable you can sell to the trader Haldor."
   },
   {
+    "id": "Salad",
+    "name": "Salad",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.Salad"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Fresh, crisp leaves."
+  },
+  {
+    "id": "Sap",
+    "name": "Sap",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.20000000298023224,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Collect from Yggdrasil roots with a Sap Extractor (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Sacred blood from the Great Tree.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Sausages",
     "name": "Sausages",
     "category": "food",
@@ -4005,6 +5335,65 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Links of savory, smoked meat."
+  },
+  {
+    "id": "ScaleHide",
+    "name": "Scale Hide",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 20,
+    "hoardNote": "Used for crafting Carapace Breastplate, crafting Carapace Buckler, crafting Carapace Greaves and 15 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Hare"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A pelt of glittering scales."
+  },
+  {
+    "id": "ScorchingMedley",
+    "name": "Scorching Medley",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ScorchingMedley"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A varied diet is important, so why not try this vegetarian option?"
+  },
+  {
+    "id": "SeekerAspic",
+    "name": "Seeker Aspic",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SeekerAspic"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A quivering jelly with a taste like gentle electricity."
   },
   {
     "id": "ShieldBanded",
@@ -4100,6 +5489,63 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A shield of burnished bronze, good to turn a blade or two."
+  },
+  {
+    "id": "ShieldCarapace",
+    "name": "Carapace Shield",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldCarapace"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The almost unbreakable carapace of your enemies makes an excellent shield."
+  },
+  {
+    "id": "ShieldCarapaceBuckler",
+    "name": "Carapace Buckler",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldCarapaceBuckler"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The skull of a seeker is solid but not heavy, which makes it perfect for a small and agile shield."
+  },
+  {
+    "id": "ShieldCore",
+    "name": "Shield Core",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldCore"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A protective force within is ready to be unleashed."
   },
   {
     "id": "ShieldIronBuckler",
@@ -4274,6 +5720,44 @@
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
+    "id": "SizzlingBerryBroth",
+    "name": "Sizzling Berry Broth",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SizzlingBerryBroth"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This soup settles in your stomach with an almost tingly sensation."
+  },
+  {
+    "id": "SledgeDemolisher",
+    "name": "Demolisher",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SledgeDemolisher"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This mighty sledge yearns to wreak havoc."
+  },
+  {
     "id": "SledgeIron",
     "name": "Iron Sledge",
     "category": "weapon",
@@ -4312,6 +5796,65 @@
     "description": "A weapon worthy of the Gods! If you get hit with this, you'll know it..."
   },
   {
+    "id": "Softtissue",
+    "name": "Soft Tissue",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 40,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Dropped by Dvergr, and found in Mistlands ruins (guides)."
+      },
+      {
+        "type": "drop",
+        "creature": "Dverger"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMage"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageFire"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageIce"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageSupport"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "It still fizzes softly with ancient memories.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "SparklingShroomshake",
+    "name": "Sparkling Shroomshake",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SparklingShroomshake"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Perhaps it's not the best flavour to start the day with, but it will give you the boost you need."
+  },
+  {
     "id": "SpearBronze",
     "name": "Bronze Spear",
     "category": "weapon",
@@ -4329,6 +5872,44 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A sturdy spear with a head of burnished bronze."
+  },
+  {
+    "id": "SpearCarapace",
+    "name": "Carapace Spear",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpearCarapace"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Sharpened to jagged perfection, this spear is sure to be deadly."
+  },
+  {
+    "id": "SpearChitin",
+    "name": "Abyssal Harpoon",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 1.5,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpearChitin"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The ocean's wrath."
   },
   {
     "id": "SpearElderbark",
@@ -4388,6 +5969,101 @@
     "description": "Even in death, the wolf's tooth aches for flesh."
   },
   {
+    "id": "SpicyMarmalade",
+    "name": "Spicy Marmalade",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SpiceInducedMarmalade"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Sugary honey perfectly balanced with tangy fronds and tart berries."
+  },
+  {
+    "id": "StaffFireball",
+    "name": "Staff of Embers",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.StaffFireball"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The sweltering heat of Muspelheim seems almost pathetic when compared to what this staff can do..."
+  },
+  {
+    "id": "StaffIceShards",
+    "name": "Staff of Frost",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.StaffIceShards"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A staff as cold as the three-year winter that will herald the end of times."
+  },
+  {
+    "id": "StaffShield",
+    "name": "Staff of Protection",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.StaffShield"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "For a slight blood offering it will protect the caster in a magical shell."
+  },
+  {
+    "id": "StaffSkeleton",
+    "name": "Dead Raiser",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.StaffSkeleton"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Sacrifice a bit of blood to raise the dead. Upgrade the skull to spawn multiple skeletons, and increase your blood magic to make them stronger."
+  },
+  {
     "id": "Stone",
     "name": "Stone",
     "category": "material",
@@ -4429,8 +6105,8 @@
     "stackSize": 10,
     "tags": [],
     "hoard": "keep_some",
-    "recommendedQty": 5,
-    "hoardNote": "Used for building Blast Furnace, building Charcoal Kiln, building Smelter and 1 more. Quantity is the largest single need.",
+    "recommendedQty": 10,
+    "hoardNote": "Used for building Blast Furnace, building Charcoal Kiln, building Smelter and 5 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "found",
@@ -4504,6 +6180,25 @@
     "description": "The straight line between life and death runs along the edge of this blade."
   },
   {
+    "id": "SwordMistwalker",
+    "name": "Mistwalker",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 0.800000011920929,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordMistwalker"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The faint glow seems to slice through the mist."
+  },
+  {
     "id": "SwordSilver",
     "name": "Silver Sword",
     "category": "weapon",
@@ -4521,6 +6216,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Purest of metals, nothing unclean can abide its touch."
+  },
+  {
+    "id": "THSwordKrom",
+    "name": "Krom",
+    "category": "weapon",
+    "biome": "mistlands",
+    "weight": 4.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SwordKrom"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "As deadly as it is shiny, and it's very shiny."
   },
   {
     "id": "Tar",
@@ -4700,6 +6414,25 @@
     "description": "A beautiful pendant, harbouring the endurance of a bear."
   },
   {
+    "id": "TrinketCarapaceEitr",
+    "name": "Pulsating Earrings",
+    "category": "trinket",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketCarapaceEitr"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "If you listen carefully, you can hear the faint echoes of lost souls..."
+  },
+  {
     "id": "TrinketIronHealth",
     "name": "Iron Brooch",
     "category": "trinket",
@@ -4717,6 +6450,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A delicate yet defensive accessory."
+  },
+  {
+    "id": "TrinketScaleStaminaDamage",
+    "name": "Resounding Shackle",
+    "category": "trinket",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketScaleStaminaDamage"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A razor-sharp ankle chain. Can it truly be comfortable?"
   },
   {
     "id": "TrinketSilverDamage",
@@ -4996,6 +6748,41 @@
     "description": "The dead stare of the glowing red eyes sends a shiver through your bones."
   },
   {
+    "id": "TrophyDvergr",
+    "name": "Dvergr Trophy",
+    "category": "trophy",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Dverger"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMage"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageFire"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageIce"
+      },
+      {
+        "type": "drop",
+        "creature": "DvergerMageSupport"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It's frankly a little troubling that you would consider hanging these on your wall..."
+  },
+  {
     "id": "TrophyEikthyr",
     "name": "Eikthyr Trophy",
     "category": "trophy",
@@ -5053,6 +6840,27 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "The leathery skin bears the faded tracery of ancient symbols."
+  },
+  {
+    "id": "TrophyGjall",
+    "name": "Gjall Trophy",
+    "category": "trophy",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Pulsating Earrings. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Gjall"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Hopefully it won't float away."
   },
   {
     "id": "TrophyGoblin",
@@ -5206,6 +7014,25 @@
     "description": "It may try to come back so be sure to prune any new shoots..."
   },
   {
+    "id": "TrophyHare",
+    "name": "Hare Trophy",
+    "category": "trophy",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Hare"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "These are said to bring luck. But not for their original owner."
+  },
+  {
     "id": "TrophyHatchling",
     "name": "Drake Trophy",
     "category": "trophy",
@@ -5309,6 +7136,65 @@
     "description": "This crystalline rock formation would make for an impressive floor decoration."
   },
   {
+    "id": "TrophySeeker",
+    "name": "Seeker Trophy",
+    "category": "trophy",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Resounding Shackle. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Seeker"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Less delicate than they look. The leather of the wings catches the firelight as if remembering flight."
+  },
+  {
+    "id": "TrophySeekerBrute",
+    "name": "Seeker Soldier Trophy",
+    "category": "trophy",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "SeekerBrute"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "The head of a fallen champion."
+  },
+  {
+    "id": "TrophySeekerQueen",
+    "name": "The Queen Trophy",
+    "category": "trophy",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "SeekerQueen"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "She has seen enough.\r\n\r\nOffer it to the Sacrificial Stones."
+  },
+  {
     "id": "TrophySkeleton",
     "name": "Skeleton Trophy",
     "category": "trophy",
@@ -5317,8 +7203,8 @@
     "stackSize": 20,
     "tags": [],
     "hoard": "keep_some",
-    "recommendedQty": 3,
-    "hoardNote": "Used for crafting Bone Tower Shield. Quantity is the largest single need.",
+    "recommendedQty": 10,
+    "hoardNote": "Used for building Unfading Candles, crafting Bone Tower Shield, crafting Dead Raiser and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -5347,6 +7233,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "This severed head oozes power.\r\n\r\nOffer it to the Sacrificial Stones."
+  },
+  {
+    "id": "TrophyTick",
+    "name": "Tick Trophy",
+    "category": "trophy",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "decorative",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Tick"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It's a conversation piece..."
   },
   {
     "id": "TrophyWolf",
@@ -5417,7 +7322,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 3,
-    "hoardNote": "Used for building Spice Rack, crafting Black Soup, crafting Turnip Stew. Quantity is the largest single need.",
+    "hoardNote": "Used for building Spice Rack, crafting Black Soup, crafting Turnip Stew and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -5469,6 +7374,28 @@
     "description": "Nutritious and restorative."
   },
   {
+    "id": "Vineberry",
+    "name": "Vineberry Cluster",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 10,
+    "hoardNote": "Used for crafting Mead Base: Lingering Eitr, crafting Mead Base: Lingering Health, crafting Sizzling Berry Broth and 2 more. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Pick from the vines hanging in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "These juicy berries are both sour and sweet.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Wishbone",
     "name": "Wishbone",
     "category": "material",
@@ -5487,6 +7414,28 @@
     "verified": "cross-checked",
     "description": "This ancient bone remembers the location of many forgotten things.",
     "use": "Equip it to find silver: it reacts when you are close to a silver vein in the Mountains. Mine the vein with a pickaxe."
+  },
+  {
+    "id": "Wisp",
+    "name": "Wisp",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 0.5,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 6,
+    "hoardNote": "Used for crafting Mistwalker, crafting Wisplight, upgrading Mistwalker. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Collect from Wisp Fountains in the Mistlands (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "It keeps whispering jibberish...",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "WitheredBone",
@@ -5730,6 +7679,45 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "The remains of Yagluth, a twisted spirit torn between this world and the next."
+  },
+  {
+    "id": "YggdrasilPorridge",
+    "name": "Yggdrasil Porridge",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.YggdrasilPorridge"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Made with sap from the great tree. Even a mouthful imparts a warm glow to your whole body."
+  },
+  {
+    "id": "YggdrasilWood",
+    "name": "Yggdrasil Wood",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "must_keep",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Chop the Yggdrasil branches and roots that rise out of the Mistlands mist (guides)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Godflesh, wood from the Great Tree.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "YmirRemains",

@@ -48,6 +48,28 @@
     "maxQuality": 4
   },
   {
+    "item": "ArmorCarapaceChest",
+    "slot": "chest",
+    "armor": 32.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1200.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorCarapaceLegs",
+    "slot": "legs",
+    "armor": 32.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1200.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.05,
+    "maxQuality": 4
+  },
+  {
     "item": "ArmorFenringChest",
     "slot": "chest",
     "armor": 10.0,
@@ -141,6 +163,28 @@
     "setSize": 3,
     "setEffect": "The fur allows you to blend in with the wilderness and move about unseen.",
     "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorMageChest",
+    "slot": "chest",
+    "armor": 16.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.02,
+    "maxQuality": 4
+  },
+  {
+    "item": "ArmorMageLegs",
+    "slot": "legs",
+    "armor": 16.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 2.0,
+    "movementModifier": -0.02,
     "maxQuality": 4
   },
   {
@@ -272,6 +316,16 @@
     "maxQuality": 4
   },
   {
+    "item": "CapeFeather",
+    "slot": "cape",
+    "armor": 1.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1200.0,
+    "armorPerLevel": 1.0,
+    "maxQuality": 4
+  },
+  {
     "item": "CapeLinen",
     "slot": "cape",
     "armor": 1.0,
@@ -338,6 +392,16 @@
     "maxQuality": 4
   },
   {
+    "item": "HelmetCarapace",
+    "slot": "helmet",
+    "armor": 32.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1200.0,
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
     "item": "HelmetDrake",
     "slot": "helmet",
     "armor": 20.0,
@@ -391,6 +455,16 @@
     "setName": "lox",
     "setSize": 3,
     "setEffect": "The fur allows you to blend in with the wilderness and move about unseen.",
+    "armorPerLevel": 2.0,
+    "maxQuality": 4
+  },
+  {
+    "item": "HelmetMage",
+    "slot": "helmet",
+    "armor": 16.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
     "armorPerLevel": 2.0,
     "maxQuality": 4
   },

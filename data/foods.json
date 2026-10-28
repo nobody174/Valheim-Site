@@ -88,10 +88,28 @@
     "verified": "cross-checked"
   },
   {
+    "item": "CookedBugMeat",
+    "kind": "food",
+    "health": 60.0,
+    "stamina": 20.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "CookedDeerMeat",
     "kind": "food",
     "health": 35.0,
     "stamina": 12.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "CookedHareMeat",
+    "kind": "food",
+    "health": 60.0,
+    "stamina": 20.0,
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -187,12 +205,63 @@
     "verified": "cross-checked"
   },
   {
+    "item": "MagicallyStuffedShroom",
+    "kind": "food",
+    "health": 25.0,
+    "stamina": 12.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "MarinatedGreens",
+    "kind": "food",
+    "health": 32.0,
+    "stamina": 16.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "MeadEitrLingering",
+    "kind": "mead",
+    "durationSec": 300.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "Eitr regeneration over time."
+  },
+  {
+    "item": "MeadEitrMinor",
+    "kind": "mead",
+    "durationSec": 120.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "Eitr over time."
+  },
+  {
     "item": "MeadFrostResist",
     "kind": "mead",
     "durationSec": 600.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "effect": "You are protected against the cold."
+  },
+  {
+    "item": "MeadHealthLingering",
+    "kind": "mead",
+    "durationSec": 300.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "Health regeneration over time."
+  },
+  {
+    "item": "MeadHealthMajor",
+    "kind": "mead",
+    "durationSec": 120.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "health": 125.0,
+    "effect": "Health over time."
   },
   {
     "item": "MeadHealthMedium",
@@ -213,12 +282,28 @@
     "effect": "Health over time."
   },
   {
+    "item": "MeadLightfoot",
+    "kind": "mead",
+    "durationSec": 600.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "You feel lighter, almost like you could jump all the way to the branches of Yggdrasil itself."
+  },
+  {
     "item": "MeadPoisonResist",
     "kind": "mead",
     "durationSec": 600.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "effect": "You take less damage from poison."
+  },
+  {
+    "item": "MeadStaminaLingering",
+    "kind": "mead",
+    "durationSec": 300.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "effect": "Stamina regeneration over time."
   },
   {
     "item": "MeadStaminaMedium",
@@ -247,10 +332,28 @@
     "effect": "Lower health regeneration, but increased stamina regeneration."
   },
   {
+    "item": "MeatPlatter",
+    "kind": "food",
+    "health": 80.0,
+    "stamina": 26.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "MinceMeatSauce",
     "kind": "food",
     "health": 40.0,
     "stamina": 13.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "MisthareSupreme",
+    "kind": "food",
+    "health": 85.0,
+    "stamina": 28.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
@@ -328,6 +431,15 @@
     "verified": "cross-checked"
   },
   {
+    "item": "Salad",
+    "kind": "food",
+    "health": 26.0,
+    "stamina": 80.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "Sausages",
     "kind": "food",
     "health": 55.0,
@@ -337,11 +449,56 @@
     "verified": "cross-checked"
   },
   {
+    "item": "ScorchingMedley",
+    "kind": "food",
+    "health": 32.0,
+    "stamina": 95.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "SeekerAspic",
+    "kind": "food",
+    "health": 28.0,
+    "stamina": 14.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "item": "ShocklateSmoothie",
     "kind": "food",
     "health": 16.0,
     "stamina": 50.0,
     "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "SizzlingBerryBroth",
+    "kind": "food",
+    "health": 28.0,
+    "stamina": 14.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "SparklingShroomshake",
+    "kind": "food",
+    "health": 30.0,
+    "stamina": 15.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "SpicyMarmalade",
+    "kind": "food",
+    "health": 30.0,
+    "stamina": 90.0,
+    "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -368,6 +525,15 @@
     "kind": "food",
     "health": 65.0,
     "stamina": 21.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "item": "YggdrasilPorridge",
+    "kind": "food",
+    "health": 27.0,
+    "stamina": 13.0,
     "durationSec": 1500.0,
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
