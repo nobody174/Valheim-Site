@@ -112,6 +112,53 @@ def report_dropped(skipped_outputs, skipped_inputs, any_of, path):
         print(f"  MISSING? {r['recipe']}: makes {r['output']} at {r['station']} from {', '.join(r['inputs'])}")
 
 
+LOG_KEYS = {'items': 'id', 'recipes': 'id', 'stations': 'id', 'weapons': 'item', 'armor': 'item', 'foods': 'item',
+            'trophies': 'item', 'creatures': 'id', 'bosses': 'id', 'pieces': 'id'}
+
+
+def update_log(out, new_files, build_id, reviewed):
+    """Append what changed since the last build to data/updatelog.json (only when the build id changed)."""
+    path = os.path.join(out, 'updatelog.json')
+    log = {'entries': []}
+    if os.path.exists(path):
+        with open(path, encoding='utf8') as f:
+            log = json.load(f)
+    version = f'Steam build {build_id}'
+    if any(e['gameVersion'] == version for e in log['entries']):
+        return log  # same build: hand edits and fixes are not game updates
+    old = {}
+    for name in LOG_KEYS:
+        p = os.path.join(out, f'{name}.json')
+        if os.path.exists(p):
+            with open(p, encoding='utf8') as f:
+                old[name] = json.load(f)
+    entry = {'gameVersion': version, 'date': reviewed}
+    if not log['entries'] or not old:
+        entry['baseline'] = True
+        entry['counts'] = {name: len(new_files[name]) for name in LOG_KEYS}
+    else:
+        added, removed, changed = {}, {}, {}
+        for name, key in LOG_KEYS.items():
+            before = {r[key]: r for r in old.get(name, [])}
+            after = {r[key]: r for r in new_files[name]}
+            if added_ids := sorted(set(after) - set(before)):
+                added[name] = added_ids
+            if removed_ids := sorted(set(before) - set(after)):
+                removed[name] = removed_ids
+            diffs = []
+            for rid in sorted(set(before) & set(after)):
+                if before[rid] != after[rid]:
+                    fields = sorted(k for k in set(before[rid]) | set(after[rid])
+                                    if k != 'source' and before[rid].get(k) != after[rid].get(k))  # 'source' names the build
+                    if fields:
+                        diffs.append({'id': rid, 'fields': fields})
+            if diffs:
+                changed[name] = diffs
+        entry.update({'added': added, 'removed': removed, 'changed': changed})
+    log['entries'].insert(0, entry)
+    return log
+
+
 def main(raw, out, build_id, reviewed=None):
     reviewed = reviewed or date.today().isoformat()
     configs = load_configs()
@@ -697,6 +744,7 @@ def main(raw, out, build_id, reviewed=None):
              'biomes': biomes, 'items': items, 'recipes': recipes, 'stations': stations, 'weapons': weapons,
              'armor': armor, 'foods': foods, 'trophies': trophies, 'creatures': creatures,
              'bosses': bosses, 'pieces': pieces_out, 'savekeys': save_tokens, 'skills': skills_file}
+    files['updatelog'] = update_log(out, files, build_id, reviewed)  # compares with the files still on disk
     for name, content in files.items():
         with open(os.path.join(out, f'{name}.json'), 'w', encoding='utf8', newline='\n') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)

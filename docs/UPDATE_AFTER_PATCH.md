@@ -57,6 +57,11 @@ git diff data/items.json | head -200
 Expect changes only where the patch changed things. A large unexpected diff means a rename or a
 format change in the game files; stop and look before going on.
 
+The build also compares the new files with the old ones and, when the Steam build id is new,
+adds an entry to `data/updatelog.json` (new, removed and changed ids). It shows on the site's
+"Update log" page. Re-running the build with the same build id adds nothing, so fixes to our own
+notes never show up as game changes.
+
 ## 5. New icons
 
 ```

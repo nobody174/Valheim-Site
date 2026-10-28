@@ -309,6 +309,25 @@ export const SkillsFileSchema = z
   })
   .strict();
 
+/** What changed in the data between game builds; written by build_data.py when the build id changes. */
+export const UpdateLogSchema = z
+  .object({
+    entries: z.array(
+      z
+        .object({
+          gameVersion: z.string().min(1),
+          date: z.string(),
+          baseline: z.boolean().optional(),
+          counts: z.record(z.string(), z.number().int()).optional(),
+          added: z.record(z.string(), z.array(z.string())).optional(),
+          removed: z.record(z.string(), z.array(z.string())).optional(),
+          changed: z.record(z.string(), z.array(z.object({ id: z.string(), fields: z.array(z.string()) }))).optional(),
+        })
+        .strict(),
+    ),
+  })
+  .strict();
+
 export const BossSchema = z
   .object({
     id,
