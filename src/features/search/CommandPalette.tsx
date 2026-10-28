@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { lookup } from '../../data/lookup';
 import { getRecent } from '../../state/recent';
 import { search } from './instance';
+import { NoResults } from './NoResults';
 import { SearchResults } from './SearchResults';
 import type { SearchGroup } from './search';
 import { useHitKeys } from './useHitKeys';
@@ -73,7 +74,7 @@ export function CommandPalette({ onClose }: { onClose: () => void }) {
         />
         <div className={styles.results}>
           <SearchResults groups={groups} activeKey={activeHit?.key} onPick={onClose} />
-          {query.trim() && flat.length === 0 && <p className={styles.empty}>No matches.</p>}
+          {query.trim() && flat.length === 0 && <NoResults query={query} onPick={onClose} />}
           {!query.trim() && flat.length === 0 && (
             <p className={styles.empty}>Type to search. Recent items appear here.</p>
           )}

@@ -5,6 +5,7 @@ import { CATEGORY_LABELS } from '../items/ItemsPage';
 import { lookup } from '../../data/lookup';
 import { getRecent } from '../../state/recent';
 import { search } from './instance';
+import { NoResults } from './NoResults';
 import { SearchResults } from './SearchResults';
 import { useHitKeys } from './useHitKeys';
 import styles from './Search.module.css';
@@ -49,10 +50,12 @@ export function SearchPage() {
         <>
           <SearchResults groups={groups} activeKey={activeHit?.key} />
           {groups.length === 0 && (
-            <p className={styles.empty}>
-              Nothing found for &quot;{query.trim()}&quot;. Try a shorter word, or{' '}
-              <Link to="/items">browse all items</Link>.
-            </p>
+            <>
+              <NoResults query={query} />
+              <p className={styles.empty}>
+                Or <Link to="/items">browse all items</Link>.
+              </p>
+            </>
           )}
         </>
       ) : (

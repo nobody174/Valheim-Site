@@ -44,6 +44,6 @@ describe('landing search keyboard', () => {
     const user = userEvent.setup();
     renderLanding();
     await user.type(screen.getByRole('searchbox', { name: 'Search' }), 'zzzqqq{Enter}');
-    expect(screen.getByText(/Nothing found/)).toBeTruthy();
+    expect(screen.getByText(/No results for/)).toBeTruthy();
   });
 });

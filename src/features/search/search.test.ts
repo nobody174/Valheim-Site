@@ -52,3 +52,31 @@ describe('search', () => {
     expect(perQuery).toBeLessThan(100);
   });
 });
+
+describe('forgiving search', () => {
+  const ids = (q: string) => search(q, 50).flatMap((g) => g.hits.map((h) => h.id));
+
+  it('finds items through short and misspelled words', () => {
+    expect(ids('bronz swrd')).toContain('SwordBronze');
+    expect(ids('fire arow')).toContain('ArrowFire');
+  });
+
+  it('falls back to any-word matching, best score first', () => {
+    const found = ids('bronze qqqqq');
+    expect(found).toContain('Bronze');
+  });
+
+  it('finds an entry by an alias', () => {
+    expect(ids('corewood')).toContain('RoundLog');
+    expect(ids('core wood')).toContain('RoundLog');
+    expect(ids('goblin')).toContain('Goblin');
+    expect(ids('deerskin')).toContain('DeerHide');
+    expect(ids('fenris')).toContain('Wolf');
+  });
+
+  it('suggests names for a query that finds nothing', () => {
+    expect(search('qqqqq')).toEqual([]);
+    expect(search.suggest('qqqqq')).toEqual([]);
+    expect(search.suggest('flnt').map((s) => s.id)).toContain('Flint');
+  });
+});

@@ -1095,7 +1095,10 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "aliases": [
+      "Blackmetal"
+    ]
   },
   {
     "id": "BlackMetalScrap",
@@ -1130,7 +1133,10 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "aliases": [
+      "Blackmetal scrap"
+    ]
   },
   {
     "id": "BlackSoup",
@@ -1593,7 +1599,10 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "aliases": [
+      "Cloudberry"
+    ]
   },
   {
     "id": "Club",
@@ -1922,7 +1931,11 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "aliases": [
+      "Deerskin",
+      "Deer skin"
+    ]
   },
   {
     "id": "DeerMeat",
@@ -2095,7 +2108,10 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "aliases": [
+      "Fine wood"
+    ]
   },
   {
     "id": "FirCone",
@@ -3576,7 +3592,11 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "aliases": [
+      "Puke berries",
+      "Pukeberry"
+    ]
   },
   {
     "id": "PulledBear",
@@ -3724,7 +3744,12 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "aliases": [
+      "Core wood",
+      "Round log",
+      "Roundlog"
+    ]
   },
   {
     "id": "Ruby",
@@ -4630,7 +4655,10 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "aliases": [
+      "Goblin trophy"
+    ]
   },
   {
     "id": "TrophyGoblinBrute",
@@ -4648,7 +4676,11 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "aliases": [
+      "Goblin brute trophy",
+      "Fuling brute trophy"
+    ]
   },
   {
     "id": "TrophyGoblinKing",
@@ -4684,7 +4716,10 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked"
+    "verified": "cross-checked",
+    "aliases": [
+      "Goblin shaman trophy"
+    ]
   },
   {
     "id": "TrophyGreydwarf",
@@ -5040,7 +5075,10 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "aliases": [
+      "Wolf claw"
+    ]
   },
   {
     "id": "WolfFang",
@@ -5083,7 +5121,10 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "aliases": [
+      "Wolf hair"
+    ]
   },
   {
     "id": "WolfJerky",
@@ -5228,6 +5269,9 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "aliases": [
+      "Ymir remains"
+    ]
   }
 ]

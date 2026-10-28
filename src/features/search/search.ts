@@ -47,13 +47,23 @@ export function buildDocs(data: GameData): SearchDoc[] {
     ...data.items.map((i) =>
       doc(i.category === 'trophy' ? 'trophies' : 'items', i.id, i.name, i.aliases, i.tags),
     ),
-    ...data.creatures.map((c) => doc('creatures', c.id, c.name)),
-    ...data.bosses.map((b) => doc('bosses', b.id, b.name)),
+    ...data.creatures.map((c) => doc('creatures', c.id, c.name, c.aliases)),
+    ...data.bosses.map((b) => doc('bosses', b.id, b.name, b.aliases)),
     ...data.stations.map((s) => doc('stations', s.id, s.name)),
   ];
 }
 
-/** In-memory MiniSearch index, built once. Fuzzy + prefix, name boosted over aliases and tags. */
+/** Fuzzy matching starts at three letters; each match may differ by about a fifth of its length. */
+const fuzzy = (term: string) => (term.length > 2 ? 0.2 : false);
+
+/** Looser matching used only to suggest names when a search finds nothing. */
+const suggestFuzzy = (term: string) => (term.length > 2 ? 0.34 : false);
+
+/**
+ * In-memory MiniSearch index, built once. Fuzzy + prefix, name boosted over aliases and tags.
+ * Every word must match; if that finds nothing, any word may match, best score first.
+ * `search.suggest(query)` gives up to three names to offer when both found nothing.
+ */
 export function createSearch(data: GameData) {
   const docs = buildDocs(data);
   const index = new MiniSearch<SearchDoc>({
@@ -63,17 +73,20 @@ export function createSearch(data: GameData) {
     searchOptions: {
       boost: { name: 3, id: 1.5 },
       prefix: true,
-      fuzzy: (term) => (term.length > 4 ? 0.2 : false),
+      fuzzy,
       combineWith: 'AND',
     },
   });
   index.addAll(docs);
 
   /** Hits grouped by category, best first inside each group. `limit` applies per group. */
-  return (query: string, limit = 8): SearchGroup[] => {
+  const search = (query: string, limit = 8): SearchGroup[] => {
     const q = query.trim();
     if (!q) return [];
-    const hits = index.search(q) as unknown as (SearchDoc & { score: number })[];
+    let hits = index.search(q) as unknown as (SearchDoc & { score: number })[];
+    if (hits.length === 0) {
+      hits = index.search(q, { combineWith: 'OR' }) as unknown as (SearchDoc & { score: number })[];
+    }
     const groups = new Map<SearchGroupKey, SearchDoc[]>();
     for (const h of hits) {
       const list = groups.get(h.group) ?? [];
@@ -86,4 +99,18 @@ export function createSearch(data: GameData) {
       hits: groups.get(g)!,
     }));
   };
+
+  /** Names close to a query that found nothing, best first. Names only, no aliases. */
+  const suggest = (query: string, count = 3): SearchDoc[] => {
+    const q = query.trim();
+    if (!q) return [];
+    const hits = index.search(q, {
+      fields: ['name'],
+      fuzzy: suggestFuzzy,
+      combineWith: 'OR',
+    }) as unknown as SearchDoc[];
+    return hits.slice(0, count);
+  };
+
+  return Object.assign(search, { suggest });
 }
