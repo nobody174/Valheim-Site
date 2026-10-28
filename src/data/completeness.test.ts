@@ -146,3 +146,15 @@ describe('display names', () => {
     expect(clash).toEqual([]);
   });
 });
+
+describe('item zones', () => {
+  it('no crafted item is placed in an earlier zone than the latest zone of its ingredients', () => {
+    const order = new Map(lookup.allBiomes().map((b) => [b.id, b.order]));
+    const zone = (id: string) => order.get(lookup.item(id)?.biome ?? '') ?? 0;
+    const early = lookup
+      .allRecipes()
+      .filter((r) => zone(r.output.item) < Math.max(0, ...r.inputs.map((g) => zone(g.item))))
+      .map((r) => r.output.item);
+    expect([...new Set(early)]).toEqual([]);
+  });
+});

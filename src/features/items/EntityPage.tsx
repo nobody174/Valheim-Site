@@ -1,6 +1,7 @@
 import { useParams } from 'react-router';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
+import { attackName } from '../../data/attackName';
 import { GuideTag, VerifiedBadge } from '../../components/Badges';
 import { lookup } from '../../data/lookup';
 import type { Boss, Creature, Station } from '../../data/schemas';
@@ -42,7 +43,7 @@ function Drops({ drops }: { drops: Creature['drops'] }) {
 
 const label = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
 
-function Attacks({ attacks }: { attacks: Creature['attacks'] }) {
+function Attacks({ attacks, owner }: { attacks: Creature['attacks']; owner: string }) {
   return (
     <section className={styles.section}>
       <h2>Attacks</h2>
@@ -52,7 +53,7 @@ function Attacks({ attacks }: { attacks: Creature['attacks'] }) {
         <ul>
           {attacks.map((a, i) => (
             <li key={a.id} title={a.id}>
-              Attack {i + 1}:{' '}
+              {attackName(a.id, owner, i)}:{' '}
               {Object.entries(a.damage)
                 .map(([k, v]) => `${label(k)} ${Math.round(v)}`)
                 .join(', ')}
@@ -118,7 +119,7 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
           </ul>
         </section>
       )}
-      <Attacks attacks={monster.attacks} />
+      <Attacks attacks={monster.attacks} owner={monster.id} />
       <Resistances resistances={monster.resistances} />
       <Drops drops={monster.drops} />
     </article>
