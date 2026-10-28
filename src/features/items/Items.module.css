@@ -310,9 +310,15 @@
   .checkTap {
     min-height: 2.75rem;
   }
+  /* The box is drawn small inside a 44px input, so the checkbox itself is a full-size tap target. */
   .checkCell input {
-    width: 1.4rem;
-    height: 1.4rem;
+    appearance: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect x='11' y='11' width='22' height='22' rx='4' fill='%23120d09' stroke='%23d3a73b' stroke-width='2.5'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  }
+  .checkCell input:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect x='11' y='11' width='22' height='22' rx='4' fill='%23d3a73b' stroke='%23d3a73b' stroke-width='2.5'/%3E%3Cpath d='M16 22.5l4.5 4.5 8-9' fill='none' stroke='%23120d09' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
 }
 .bars {
@@ -557,4 +563,13 @@
 .tools a:active {
   transform: translateY(2px);
   box-shadow: none;
+}
+
+@media (pointer: coarse) {
+  .recipeHead a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
