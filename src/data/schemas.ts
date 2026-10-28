@@ -85,6 +85,8 @@ export const ItemSchema = z
     hoardNote: z.string().optional(),
     recommendedQty: z.number().int().positive().nullable().optional(),
     sellValue: z.number().nonnegative().nullable().optional(),
+    /** True when a portal refuses you while you carry it (the game's m_teleportable is off). */
+    portalBlocked: z.boolean().optional(),
     obtainedFrom: z.array(ObtainedFromSchema).default([]),
     ...provenance,
   })

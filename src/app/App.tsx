@@ -18,6 +18,7 @@ import { SkillsPage } from '../features/skills/SkillsPage';
 import { UpdateLogPage } from '../features/updates/UpdateLogPage';
 import { PlacesPage } from '../features/places/PlacesPage';
 import { TrustPage } from '../features/trust/TrustPage';
+import { PortalsPage } from '../features/portals/PortalsPage';
 import { SpotCheckPage } from '../features/spotcheck/SpotCheckPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
@@ -62,6 +63,7 @@ const GraphPage = lazy(() => import('../features/graph/GraphPage').then((m) => (
 const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
   '/items': <ItemsPage />,
+  '/portals': <PortalsPage />,
   '/recipes': <RecipesPage />,
   '/progression': <ProgressionPage />,
   '/building': <BuildingPage />,
