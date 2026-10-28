@@ -135,7 +135,9 @@ export function CharacterPage() {
           </ul>
           <p>
             Browsers do not let a page open the Program Files folder, so for the Steam cloud copy use “Choose a .fch
-            file” and paste the path into the file dialog.
+            file”. In the file dialog, click the address bar, paste <code>%ProgramFiles(x86)%\Steam\userdata</code>,
+            press Enter, then open your number folder, then <code>892970</code>, <code>remote</code>,{' '}
+            <code>characters</code>. Your character is the file without “backup” in its name.
           </p>
         </details>
         {error && (
@@ -155,8 +157,15 @@ export function CharacterPage() {
             ))}
           </ul>
         )}
+        {folder && mine.length === 0 && backups.length > 0 && (
+          <p role="status" className={styles.error}>
+            This folder only holds backup copies (made by a backup tool), no current character. Your current
+            character is in the Steam folder: use “Choose a .fch file” (see “Where are my character files?”). A
+            backup can still be read from below.
+          </p>
+        )}
         {backups.length > 0 && (
-          <details className={styles.hint}>
+          <details className={styles.hint} open={mine.length === 0}>
             <summary>{backups.length} backups</summary>
             <ul className={styles.files}>
               {backups.map((f) => (
