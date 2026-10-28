@@ -26,5 +26,6 @@ export const ROUTES: RouteDef[] = [
   { path: '/favorites', label: 'Favorites', phase: 1 },
   { path: '/skills', label: 'Skills', phase: 5 },
   { path: '/commands', label: 'Console commands', phase: 5 },
+  { path: '/updates', label: 'Update log', phase: 5 },
   { path: '/profile', label: 'Profile & data', phase: 1 },
 ];

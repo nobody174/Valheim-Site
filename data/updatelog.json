@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "gameVersion": "Steam build 25909357",
+      "date": "2026-10-28",
+      "baseline": true,
+      "counts": {
+        "items": 445,
+        "recipes": 281,
+        "stations": 18,
+        "weapons": 102,
+        "armor": 55,
+        "foods": 68,
+        "trophies": 48,
+        "creatures": 51,
+        "bosses": 7,
+        "pieces": 215
+      }
+    }
+  ]
+}

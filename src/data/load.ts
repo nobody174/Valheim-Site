@@ -14,7 +14,8 @@ import meta from '../../data/meta.json';
 import savekeys from '../../data/savekeys.json';
 import commandsRaw from '../../data/commands.json';
 import skillsRaw from '../../data/skills.json';
-import { CommandSchema, FILE_SCHEMAS, MetaSchema, SaveKeysSchema, SkillsFileSchema, type GameData } from './schemas';
+import updateLogRaw from '../../data/updatelog.json';
+import { CommandSchema, FILE_SCHEMAS, MetaSchema, SaveKeysSchema, SkillsFileSchema, UpdateLogSchema, type GameData } from './schemas';
 
 const raw = {
   biomes,
@@ -49,3 +50,6 @@ export const commands = z.array(CommandSchema).parse(commandsRaw);
 
 /** The game's skills (descriptions, groups, gain per use) and the share lost on death. */
 export const skillsFile = SkillsFileSchema.parse(skillsRaw);
+
+/** What changed between game builds, newest first. */
+export const updateLog = UpdateLogSchema.parse(updateLogRaw);

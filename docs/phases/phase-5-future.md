@@ -12,7 +12,7 @@ An open backlog, not a schedule. The owner picks items from `docs/FEATURES.md` s
 - ~~Skills reference~~ done: the Skills page (game descriptions, training rate, weapons per skill, your level, damage curve)
 - ~~Console / dev-commands cheat sheet~~ done: the Console commands page (130 commands read from the game's code, filter, needs-devcommands marked)
 - Random events, raids and weather
-- Update log between game versions (diff of `/data` by `gameVersion`)
+- ~~Update log between game versions~~ done: the Update log page; `build_data.py` appends what changed (new, removed, changed ids) to `data/updatelog.json` whenever the Steam build id is new (diff of `/data` by `gameVersion`)
 - Dungeon and point-of-interest guide
 - Printable / shareable checklist and shopping list
 - Optional: community-contributed corrections via GitHub issues template
