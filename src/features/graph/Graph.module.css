@@ -1,0 +1,91 @@
+.canvas {
+  height: 560px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-1);
+}
+
+.node {
+  width: 170px;
+  height: 44px;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  color: var(--text);
+  background: var(--bg-2);
+  border: 1px solid var(--iron);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.root {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+
+.creature {
+  border-style: dashed;
+  color: var(--parchment);
+}
+
+.craftable {
+  border-color: var(--bronze);
+}
+
+.more {
+  margin-left: 0.35rem;
+  color: var(--amber);
+  font-weight: 700;
+}
+
+.dim {
+  opacity: 0.35;
+}
+
+.panel {
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+}
+
+.panel button {
+  margin-right: 0.5rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin: 0.5rem 0;
+}
+
+.handle {
+  width: 1px;
+  height: 1px;
+  min-width: 0;
+  min-height: 0;
+  border: 0;
+  background: transparent;
+}
+
+.canvas :global(.react-flow__controls-button) {
+  background: var(--bg-2);
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+.canvas :global(.react-flow__controls-button svg) {
+  fill: var(--text);
+}
+
+.canvas :global(.react-flow__controls-button:hover) {
+  background: var(--iron);
+}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { HashRouter, Link, NavLink, Route, Routes } from 'react-router';
 import { gameData } from '../data/load';
 import { ChecklistPage } from '../features/checklist/ChecklistPage';
@@ -45,6 +45,9 @@ function NotFound() {
 }
 
 /** Routes that already have a real page; the rest show a placeholder. */
+// The graph library is large, so it loads only when the page is opened.
+const GraphPage = lazy(() => import('../features/graph/GraphPage').then((m) => ({ default: m.GraphPage })));
+
 const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
   '/items': <ItemsPage />,
@@ -58,6 +61,11 @@ const PAGES: Record<string, React.ReactElement> = {
   '/optimizer': <FoodOptimizerPage />,
   '/rankings': <RankingsPage />,
   '/planner': <PlannerPage />,
+  '/graph': (
+    <Suspense fallback={<p>Loading the graph…</p>}>
+      <GraphPage />
+    </Suspense>
+  ),
   '/upgrades': <UpgradePage />,
   '/compare': <ComparePage />,
   '/checklist': <ChecklistPage />,

@@ -325,6 +325,10 @@ export function ItemPage() {
         </section>
       )}
 
+      <p>
+        <Link to={`/graph?item=${id}`}>Crafting graph</Link>
+      </p>
+
       {(lookup.weapon(id) || lookup.armor(id)) && (
         <p>
           <Link to={`/compare?items=${id}`}>Compare with other gear</Link>
