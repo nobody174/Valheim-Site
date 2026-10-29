@@ -183,3 +183,12 @@
   height: 0.8rem;
   accent-color: var(--gold);
 }
+
+@media (pointer: coarse) {
+  .button,
+  .primary {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}

@@ -160,7 +160,8 @@ select {
   main td a,
   main li a,
   main h2 a,
-  main h3 a {
+  main h3 a,
+  main dd a {
     display: inline-flex;
     align-items: center;
     min-height: 44px;

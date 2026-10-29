@@ -1,0 +1,464 @@
+{
+  "phone /": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /items": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /recipes": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /building": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /creatures": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /bosses": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /trophies": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /food": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /skills": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /places": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /planner": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /upgrades": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /rankings": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /compare": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /optimizer": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /graph": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /character": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /spotcheck": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /portals": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /next": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /checklist": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /progression": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /favorites": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /commands": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /trust": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /updates": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /profile": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /item/Iron": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /item/Wood": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /creature/Boar": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /boss/Eikthyr": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /station/piece_workbench": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "phone /progression/meadows": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /items": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /recipes": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /building": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /creatures": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /bosses": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /trophies": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /food": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /skills": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /places": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /planner": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /upgrades": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /rankings": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /compare": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /optimizer": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /graph": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /character": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /spotcheck": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /portals": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /next": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /checklist": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /progression": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /favorites": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /commands": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /trust": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /updates": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /profile": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /item/Iron": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /item/Wood": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /creature/Boar": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /boss/Eikthyr": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /station/piece_workbench": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  },
+  "desktop /progression/meadows": {
+    "axe": 0,
+    "small": 0,
+    "tiny": 0,
+    "overflow": false,
+    "errors": 0
+  }
+}
