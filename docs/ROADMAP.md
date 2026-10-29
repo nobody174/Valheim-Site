@@ -56,7 +56,7 @@ reviews the live site before the next phase starts.
 
 ## State after review 3 (2026-10-28)
 
-v1.0 is tagged, but **nothing is marked seen in game yet**; the Data trust page shows the numbers honestly. Review 3 (`docs/REVIEW-2026-10-28.md`) work done: all seven boss summon costs now come from the game files; the last sourceless items (Ancient Bark, Carrot Seeds) have guide-tagged sources; `lastReviewed` no longer moves on a rebuild; `npm run patchcheck`; Data trust page; touch targets, toast, search placeholder, graph default; beta dots in the menu. Not done on purpose: list virtualisation (the site is used on a desktop second monitor); play-test verification needs the owner in game.
+v1.0 and v1.1 are tagged. At the time of review 3 nothing was marked seen in game; since then the owner has confirmed lines in game (see the Data trust page for the current count). Review 3 (`docs/REVIEW-2026-10-28.md`) work done: all seven boss summon costs now come from the game files; the last sourceless items (Ancient Bark, Carrot Seeds) have guide-tagged sources; `lastReviewed` no longer moves on a rebuild; `npm run patchcheck`; Data trust page; touch targets, toast, search placeholder, graph default; beta dots in the menu. Not done on purpose: list virtualisation (the site is used on a desktop second monitor); play-test verification needs the owner in game.
 
 Confirmed in game: lines the owner saw match are filed in `tools/extract/confirmed_in_game.json` (added with `apply_checks.py` from the pasted "Copy my results"). `build_data.py` marks those entries `in-game` and writes `data/confirmed.json`; the Check in game page stops listing them.
 

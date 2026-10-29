@@ -17,6 +17,7 @@ export function BackupNudge() {
     Object.keys(profile.progress).length > 0 ||
     (profile.portals ?? []).length > 0 ||
     Object.keys(profile.notes).length > 0 ||
+    Object.keys(profile.hoardOverrides).length > 0 ||
     profile.favorites.materials.length + profile.favorites.recipes.length + profile.favorites.gear.length > 0;
 
   if (hidden || !hasData || pathname === '/profile' || !backupDue()) return null;

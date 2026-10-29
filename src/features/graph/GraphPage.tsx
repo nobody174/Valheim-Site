@@ -245,6 +245,7 @@ export function GraphPage() {
               edges={flowEdges}
               nodeTypes={nodeTypes}
               fitView
+              edgesFocusable={false}
               fitViewOptions={{ minZoom: 0.55, padding: 0.1 }}
               minZoom={0.2}
               nodesDraggable={false}
