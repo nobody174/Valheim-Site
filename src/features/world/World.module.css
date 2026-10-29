@@ -150,3 +150,28 @@
     min-width: 44px;
   }
 }
+.canvas {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 1;
+  display: block;
+  background: #0e0b08;
+  border: 2px solid var(--wood);
+  border-radius: 12px;
+  cursor: grab;
+  touch-action: none;
+}
+.canvas:active {
+  cursor: grabbing;
+}
+.mapBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+.mapBar .button {
+  min-width: 2.6rem;
+  text-align: center;
+}

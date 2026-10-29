@@ -20,7 +20,7 @@ export interface ParsedWorld {
   locations: WorldLocation[];
 }
 
-async function gunzip(bytes: Uint8Array): Promise<Uint8Array> {
+export async function gunzip(bytes: Uint8Array): Promise<Uint8Array> {
   if (typeof DecompressionStream === 'undefined') {
     throw new FchError('This browser cannot unpack the world file (it lacks DecompressionStream). Try a current Chrome, Edge or Firefox.');
   }
