@@ -6,6 +6,7 @@ import { GuideTag, VerifiedBadge } from '../../components/Badges';
 import { lookup } from '../../data/lookup';
 import type { Boss, Creature, Station } from '../../data/schemas';
 import { stationLevels } from '../../data/stationLevels';
+import { GameCheckPanel } from '../spotcheck/GameCheckPanel';
 import { RecipeBlock } from './RecipeBlock';
 import styles from './Items.module.css';
 
@@ -124,6 +125,7 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
       <Attacks attacks={monster.attacks} owner={monster.id} />
       <Resistances resistances={monster.resistances} />
       <Drops drops={monster.drops} />
+      <GameCheckPanel id={monster.id} />
     </article>
   );
 }

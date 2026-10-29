@@ -4,7 +4,7 @@ import { Intro } from '../../components/Intro';
 import { confirmedChecks, gameData } from '../../data/load';
 import { adoptProfileChecks, setGameCheck, useGameChecks } from '../../state/gameChecks';
 import { appStore } from '../../state/store';
-import { buildSpotChecks } from './spotcheck';
+import { allRows, buildSpotChecks, rowStatus } from './spotcheck';
 import styles from './SpotCheck.module.css';
 
 /** The first zones are open; later ones fold away until you get there. */
@@ -20,7 +20,8 @@ export function SpotCheckPage() {
   const zones = useMemo(() => buildSpotChecks(gameData, confirmedChecks), []);
   const [copied, setCopied] = useState(false);
 
-  const all = zones.flatMap((z) => z.groups.flatMap((g) => g.rows));
+  const changed = useMemo(() => allRows(gameData).filter((r) => rowStatus(r, confirmedChecks) === 'changed'), []);
+  const all = [...changed, ...zones.flatMap((z) => z.groups.flatMap((g) => g.rows))];
   const done = all.filter((r) => checks[r.key]).length;
   const bad = all.filter((r) => checks[r.key] === 'bad');
 
@@ -60,6 +61,35 @@ export function SpotCheckPage() {
         </button>
         {copied && <span role="status"> Copied.</span>}
       </p>
+
+      {changed.length > 0 && (
+        <section className={styles.group}>
+          <h2>Changed since you checked them</h2>
+          <p className={styles.how}>
+            These lines were seen in game, but the site now says something different. Check them again.
+          </p>
+          <ul className={styles.rows}>
+            {changed.map((r) => (
+              <li key={r.key} className={styles.row} data-state={checks[r.key]}>
+                <span className={styles.what}>
+                  <span>
+                    <EntityLink id={r.id} />
+                    <span className={styles.expect}>{r.expect}</span>
+                  </span>
+                </span>
+                <span className={styles.answers}>
+                  <button type="button" aria-pressed={checks[r.key] === 'ok'} onClick={() => setGameCheck(r.key, 'ok')}>
+                    Matches
+                  </button>
+                  <button type="button" aria-pressed={checks[r.key] === 'bad'} onClick={() => setGameCheck(r.key, 'bad')}>
+                    Different
+                  </button>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {zones.map((z, zi) => {
         const rows = z.groups.flatMap((g) => g.rows);

@@ -219,12 +219,15 @@ def previous_review(out, build_id):
 
 def apply_confirmed(files, warnings):
     """Mark what the owner saw match in game (confirmed_in_game.json) as verified 'in-game'.
-    Returns the confirmed keys, so the Check in game page can stop listing them."""
+    Returns key -> confirmed text, so the site can stop listing those lines and notice when one changes."""
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'confirmed_in_game.json')
     if not os.path.exists(path):
-        return []
+        return {}
     with open(path, encoding='utf8') as f:
-        keys = sorted(k for k in json.load(f) if not k.startswith('_'))
+        raw = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
+    keys = sorted(raw)
+    # key -> the text that was confirmed (None for an old entry filed without it)
+    confirmed = {k: (raw[k].get('text') if isinstance(raw[k], dict) else None) for k in keys}
     # key prefix -> the lists whose entries carry that id, and the field holding it
     targets = {'gear': [('items', 'id'), ('weapons', 'item'), ('armor', 'item')],
                'recipe': [('recipes', 'id')], 'food': [('foods', 'item')],
@@ -240,7 +243,7 @@ def apply_confirmed(files, warnings):
                     hit = True
         if not hit:
             warnings.append(f'confirmed_in_game.json lists {key}, which is not in the data')
-    return keys
+    return confirmed
 
 
 def main(raw, out, build_id, reviewed=None):

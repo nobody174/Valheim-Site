@@ -56,8 +56,10 @@ export const skillsFile = SkillsFileSchema.parse(skillsRaw);
 /** What changed between game builds, newest first. */
 export const updateLog = UpdateLogSchema.parse(updateLogRaw);
 
-/** Check in game lines already seen matching in the real game (they drop off that list). */
-export const confirmedChecks = new Set(z.array(z.string()).parse(confirmedRaw));
+/** Check in game lines already seen matching in the real game, with the text that was confirmed. */
+export const confirmedChecks: ReadonlyMap<string, string | null> = new Map(
+  Object.entries(z.record(z.string(), z.string().nullable()).parse(confirmedRaw)),
+);
 
 /** Dungeons, camps, altars and other places the game generates. */
 export const places = z.array(PlaceSchema).parse(placesRaw);

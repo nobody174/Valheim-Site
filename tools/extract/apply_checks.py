@@ -3,7 +3,7 @@
 Usage: python apply_checks.py results.txt
 where results.txt is what the Check in game page's "Copy my results" button copied:
 one line each, "OK | key | label | site says: ..." or "DIFFERENT | key | ...".
-OK lines are added (with today's date). DIFFERENT lines are only printed: they need a look
+OK lines are added with today's date and the text the site showed when they were checked, so a later change to that text brings the line back for another look. DIFFERENT lines are only printed: they need a look
 at the data, not a tick. After this, run the usual build_data step so the entries are marked.
 """
 import datetime
@@ -24,8 +24,9 @@ def main(path):
             if len(parts) < 3:
                 continue
             verdict, key, label = parts[0], parts[1], parts[2]
+            text = ' | '.join(parts[3:]).removeprefix('site says:').strip()
             if verdict == 'OK' and key not in confirmed:
-                confirmed[key] = today
+                confirmed[key] = {'date': today, 'text': text}
                 added.append(f'{key} ({label})')
             elif verdict == 'DIFFERENT':
                 different.append(f'{key} ({label}): {" | ".join(parts[3:])}')

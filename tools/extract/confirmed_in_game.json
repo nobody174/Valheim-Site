@@ -1,68 +1,263 @@
 {
   "_comment": "Lines from the Check in game page that the owner saw match in the real game. Key -> date seen. build_data.py marks each entry verified 'in-game' and the page stops listing it. Add lines with apply_checks.py from pasted 'Copy my results'.",
-  "gear:AxeFlint": "2026-10-28",
-  "gear:PickaxeAntler": "2026-10-28",
-  "gear:Bow": "2026-10-28",
-  "gear:ArmorLeatherChest": "2026-10-28",
-  "gear:ArmorLeatherLegs": "2026-10-28",
-  "gear:HelmetLeather": "2026-10-28",
-  "gear:ArmorRagsChest": "2026-10-28",
-  "recipe:recipe.Club": "2026-10-28",
-  "recipe:recipe.AxeStone": "2026-10-28",
-  "recipe:recipe.PickaxeAntler": "2026-10-28",
-  "recipe:recipe.CapeDeerHide": "2026-10-28",
-  "recipe:recipe.ArrowFire": "2026-10-28",
-  "recipe:recipe.KnifeFlint": "2026-10-28",
-  "recipe:recipe.ArrowFlint": "2026-10-28",
-  "recipe:recipe.HelmetLeather": "2026-10-28",
-  "food:CookedDeerMeat": "2026-10-28",
-  "food:CookedMeat": "2026-10-28",
-  "food:NeckTailGrilled": "2026-10-28",
-  "creature:Boar": "2026-10-28",
-  "creature:Deer": "2026-10-28",
-  "creature:Neck": "2026-10-28",
-  "boss:Eikthyr": "2026-10-28",
-  "where:Acorn": "2026-10-28",
-  "where:AxeHead2": "2026-10-28",
-  "where:BeechSeeds": "2026-10-28",
-  "where:BirchSeeds": "2026-10-28",
-  "where:Blueberries": "2026-10-28",
-  "gear:AxeBronze": "2026-10-28",
-  "gear:PickaxeBronze": "2026-10-28",
-  "gear:AtgeirBronze": "2026-10-28",
-  "gear:MaceBronze": "2026-10-28",
-  "gear:SpearBronze": "2026-10-28",
-  "gear:SwordBronze": "2026-10-28",
-  "gear:ArmorBronzeChest": "2026-10-28",
-  "gear:ArmorBronzeLegs": "2026-10-28",
-  "gear:HelmetBronze": "2026-10-28",
-  "gear:ArmorBerserkerChest": "2026-10-28",
-  "recipe:recipe.AtgeirBronze": "2026-10-28",
-  "recipe:recipe.ShieldBronzeBuckler": "2026-10-28",
-  "recipe:recipe.MaceBronze": "2026-10-28",
-  "recipe:recipe.ArmorBronzeLegs": "2026-10-28",
-  "recipe:recipe.SpearBronze": "2026-10-28",
-  "recipe:recipe.ArrowBronze": "2026-10-28",
-  "recipe:recipe.KnifeCopper": "2026-10-28",
-  "recipe:recipe.ShieldBoneTower": "2026-10-28",
-  "food:CookedBjornMeat": "2026-10-28",
-  "food:BoarJerky": "2026-10-28",
-  "creature:Greydwarf_Elite": "2026-10-28",
-  "creature:Greydwarf": "2026-10-28",
-  "creature:Greydwarf_Shaman": "2026-10-28",
-  "boss:gd_king": "2026-10-28",
-  "where:CarrotSeeds": "2026-10-28",
-  "where:CopperOre": "2026-10-28",
-  "where:ElderBark": "2026-10-28",
-  "where:FineWood": "2026-10-28",
-  "where:MushroomYellow": "2026-10-28",
-  "gear:AxeStone": "2026-10-29",
-  "where:Dandelion": "2026-10-29",
-  "where:Feathers": "2026-10-29",
-  "where:FirCone": "2026-10-29",
-  "where:PineCone": "2026-10-29",
-  "where:RoundLog": "2026-10-29",
-  "where:Thistle": "2026-10-29",
-  "where:AxeHead1": "2026-10-29",
-  "where:TinOre": "2026-10-29"
+  "gear:AxeFlint": {
+    "date": "2026-10-28",
+    "text": "slash 20 · durability 100 · block 4"
+  },
+  "gear:PickaxeAntler": {
+    "date": "2026-10-28",
+    "text": "pierce 18 · durability 100 · block 2"
+  },
+  "gear:Bow": {
+    "date": "2026-10-28",
+    "text": "pierce 22 · durability 50 · block 3"
+  },
+  "gear:ArmorLeatherChest": {
+    "date": "2026-10-28",
+    "text": "armor 2 · chest · durability 400"
+  },
+  "gear:ArmorLeatherLegs": {
+    "date": "2026-10-28",
+    "text": "armor 2 · legs · durability 400"
+  },
+  "gear:HelmetLeather": {
+    "date": "2026-10-28",
+    "text": "armor 2 · helmet · durability 400"
+  },
+  "gear:ArmorRagsChest": {
+    "date": "2026-10-28",
+    "text": "armor 1 · chest · durability 200"
+  },
+  "recipe:recipe.Club": {
+    "date": "2026-10-28",
+    "text": "6 Wood"
+  },
+  "recipe:recipe.AxeStone": {
+    "date": "2026-10-28",
+    "text": "5 Wood, 4 Stone"
+  },
+  "recipe:recipe.PickaxeAntler": {
+    "date": "2026-10-28",
+    "text": "Workbench level 1: 10 Wood, 1 Hard Antler"
+  },
+  "recipe:recipe.CapeDeerHide": {
+    "date": "2026-10-28",
+    "text": "Workbench level 2: 4 Deer Hide, 5 Bone Fragments"
+  },
+  "recipe:recipe.ArrowFire": {
+    "date": "2026-10-28",
+    "text": "Workbench level 2: 8 Wood, 8 Resin, 2 Feathers"
+  },
+  "recipe:recipe.KnifeFlint": {
+    "date": "2026-10-28",
+    "text": "Workbench level 1: 2 Wood, 4 Flint, 2 Leather Scraps"
+  },
+  "recipe:recipe.ArrowFlint": {
+    "date": "2026-10-28",
+    "text": "Workbench level 2: 8 Wood, 2 Flint, 2 Feathers"
+  },
+  "recipe:recipe.HelmetLeather": {
+    "date": "2026-10-28",
+    "text": "Workbench level 2: 6 Deer Hide"
+  },
+  "food:CookedDeerMeat": {
+    "date": "2026-10-28",
+    "text": "health 35 · stamina 12 · lasts 20 min"
+  },
+  "food:CookedMeat": {
+    "date": "2026-10-28",
+    "text": "health 30 · stamina 10 · lasts 20 min"
+  },
+  "food:NeckTailGrilled": {
+    "date": "2026-10-28",
+    "text": "health 25 · stamina 8 · lasts 20 min"
+  },
+  "creature:Boar": {
+    "date": "2026-10-28",
+    "text": "drops Boar Meat, Leather Scraps, Boar Trophy"
+  },
+  "creature:Deer": {
+    "date": "2026-10-28",
+    "text": "drops Deer Meat, Deer Hide, Deer Trophy"
+  },
+  "creature:Neck": {
+    "date": "2026-10-28",
+    "text": "drops Neck Tail, Neck Trophy"
+  },
+  "boss:Eikthyr": {
+    "date": "2026-10-28",
+    "text": "summon with 2 Deer Trophy · drops Eikthyr Trophy, Hard Antler"
+  },
+  "where:Acorn": {
+    "date": "2026-10-28",
+    "text": "Drops when you chop oak trees"
+  },
+  "where:AxeHead2": {
+    "date": "2026-10-28",
+    "text": "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+  },
+  "where:BeechSeeds": {
+    "date": "2026-10-28",
+    "text": "Drops when you chop beech trees"
+  },
+  "where:BirchSeeds": {
+    "date": "2026-10-28",
+    "text": "Drops when you chop birch trees"
+  },
+  "where:Blueberries": {
+    "date": "2026-10-28",
+    "text": "Pick wild bushes"
+  },
+  "gear:AxeBronze": {
+    "date": "2026-10-28",
+    "text": "slash 40 · durability 125 · block 12"
+  },
+  "gear:PickaxeBronze": {
+    "date": "2026-10-28",
+    "text": "pierce 25 · durability 120 · block 2"
+  },
+  "gear:AtgeirBronze": {
+    "date": "2026-10-28",
+    "text": "pierce 45 · durability 125 · block 16"
+  },
+  "gear:MaceBronze": {
+    "date": "2026-10-28",
+    "text": "blunt 35 · durability 200 · block 12"
+  },
+  "gear:SpearBronze": {
+    "date": "2026-10-28",
+    "text": "pierce 35 · durability 100 · block 12"
+  },
+  "gear:SwordBronze": {
+    "date": "2026-10-28",
+    "text": "slash 35 · durability 200 · block 12"
+  },
+  "gear:ArmorBronzeChest": {
+    "date": "2026-10-28",
+    "text": "armor 8 · chest · durability 1000"
+  },
+  "gear:ArmorBronzeLegs": {
+    "date": "2026-10-28",
+    "text": "armor 8 · legs · durability 1000"
+  },
+  "gear:HelmetBronze": {
+    "date": "2026-10-28",
+    "text": "armor 8 · helmet · durability 1000"
+  },
+  "gear:ArmorBerserkerChest": {
+    "date": "2026-10-28",
+    "text": "armor 7 · chest · durability 1000"
+  },
+  "recipe:recipe.AtgeirBronze": {
+    "date": "2026-10-28",
+    "text": "Forge level 1: 10 Wood, 8 Bronze, 2 Leather Scraps"
+  },
+  "recipe:recipe.ShieldBronzeBuckler": {
+    "date": "2026-10-28",
+    "text": "Forge level 1: 10 Bronze, 4 Wood"
+  },
+  "recipe:recipe.MaceBronze": {
+    "date": "2026-10-28",
+    "text": "Forge level 1: 4 Wood, 8 Bronze, 3 Leather Scraps"
+  },
+  "recipe:recipe.ArmorBronzeLegs": {
+    "date": "2026-10-28",
+    "text": "Forge level 1: 5 Bronze, 2 Deer Hide"
+  },
+  "recipe:recipe.SpearBronze": {
+    "date": "2026-10-28",
+    "text": "Forge level 1: 5 Wood, 6 Bronze, 2 Deer Hide"
+  },
+  "recipe:recipe.ArrowBronze": {
+    "date": "2026-10-28",
+    "text": "Forge level 1: 8 Wood, 1 Bronze, 2 Feathers"
+  },
+  "recipe:recipe.KnifeCopper": {
+    "date": "2026-10-28",
+    "text": "Forge level 1: 2 Wood, 8 Copper"
+  },
+  "recipe:recipe.ShieldBoneTower": {
+    "date": "2026-10-28",
+    "text": "Workbench level 3: 10 Wood, 10 Bone Fragments, 3 Skeleton Trophy"
+  },
+  "food:CookedBjornMeat": {
+    "date": "2026-10-28",
+    "text": "health 40 · stamina 13 · lasts 20 min"
+  },
+  "food:BoarJerky": {
+    "date": "2026-10-28",
+    "text": "health 23 · stamina 23 · lasts 30 min"
+  },
+  "creature:Greydwarf_Elite": {
+    "date": "2026-10-28",
+    "text": "drops Greydwarf Eye, Stone, Wood, Dandelion, Ancient Seed, Greydwarf Brute Trophy"
+  },
+  "creature:Greydwarf": {
+    "date": "2026-10-28",
+    "text": "drops Greydwarf Eye, Stone, Wood, Resin, Greydwarf Trophy"
+  },
+  "creature:Greydwarf_Shaman": {
+    "date": "2026-10-28",
+    "text": "drops Greydwarf Eye, Wood, Resin, Greydwarf Shaman Trophy, Bukeperries"
+  },
+  "boss:gd_king": {
+    "date": "2026-10-28",
+    "text": "summon with 3 Ancient Seed · drops The Elder Trophy, Swamp Key"
+  },
+  "where:CarrotSeeds": {
+    "date": "2026-10-28",
+    "text": "Found on the ground in the Black Forest (guides). Plant it on cultivated ground to grow Carrots."
+  },
+  "where:CopperOre": {
+    "date": "2026-10-28",
+    "text": "Mine copper deposits"
+  },
+  "where:ElderBark": {
+    "date": "2026-10-28",
+    "text": "Chop Ancient Trees in the Swamp with a Bronze Axe or better; Sunken Crypt chests can hold some too (guides)."
+  },
+  "where:FineWood": {
+    "date": "2026-10-28",
+    "text": "Drops from birch and oak logs; guides say a Bronze Axe or better is needed. Also in some world structures."
+  },
+  "where:MushroomYellow": {
+    "date": "2026-10-28",
+    "text": "Pick from the ground"
+  },
+  "gear:AxeStone": {
+    "date": "2026-10-29",
+    "text": "slash 15 · durability 100 · block 3"
+  },
+  "where:Dandelion": {
+    "date": "2026-10-29",
+    "text": "Pick wild plants"
+  },
+  "where:Feathers": {
+    "date": "2026-10-29",
+    "text": "Shoot birds. Guides list crows and seagulls; the game files list Hen, Chicken and Volture as drops. Also found in chests."
+  },
+  "where:FirCone": {
+    "date": "2026-10-29",
+    "text": "Drops when you chop fir trees"
+  },
+  "where:PineCone": {
+    "date": "2026-10-29",
+    "text": "Drops when you chop pine trees, not every time."
+  },
+  "where:RoundLog": {
+    "date": "2026-10-29",
+    "text": "Chop pine trees; some world furniture also drops it."
+  },
+  "where:Thistle": {
+    "date": "2026-10-29",
+    "text": "Pick from the ground"
+  },
+  "where:AxeHead1": {
+    "date": "2026-10-29",
+    "text": "Found in chests in the Meadows (confirmed by the owner's son, who found and crafted it; the game files do not list the loot)"
+  },
+  "where:TinOre": {
+    "date": "2026-10-29",
+    "text": "Mine tin deposits in shallow water"
+  }
 }
