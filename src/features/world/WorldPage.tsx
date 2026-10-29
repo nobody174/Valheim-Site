@@ -1,6 +1,13 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Intro } from '../../components/Intro';
-import { canPickFolder, listFiles, pickFolder } from '../../state/saveFolder';
+import {
+  canPickFolder,
+  listFiles,
+  pickFolder,
+  recallFolder,
+  rememberFolder,
+  type FolderHandle,
+} from '../../state/saveFolder';
 import { useApp } from '../../state/store';
 import { places } from '../../data/load';
 import { lookup } from '../../data/lookup';
@@ -20,6 +27,27 @@ import { useWorldMap } from './useWorldMap';
 import { WorldMapView } from './WorldMapView';
 import { familyIndex, parseWorld } from './worldFile';
 import styles from './World.module.css';
+
+/** The three kinds of folder the page keeps an eye on, each remembered per profile. */
+type Role = 'world' | 'land' | 'character';
+const ROLES: Role[] = ['world', 'land', 'character'];
+const ROLE_LABEL: Record<Role, string> = {
+  world: 'world file',
+  land: 'map files',
+  character: 'character file',
+};
+const roleKey = (role: Role, profile: string) => `${role}:${profile}`;
+/** The newest world file: the game numbers them up with every save. */
+const newestWorld = (files: File[]) =>
+  files
+    .filter((f) => /^_main\.\d+\.db2$/.test(f.name))
+    .sort((a, b) => Number(/\d+/.exec(b.name)![0]) - Number(/\d+/.exec(a.name)![0]))[0];
+const landFiles = (files: File[]) =>
+  files.filter((f) => /^cacheMinimap(Biome|Mask|Height)$/.test(f.name));
+const characterFiles = (files: File[]) =>
+  files.filter((f) => f.name.toLowerCase().endsWith('.fch') && !/_backup_|\.old$/i.test(f.name));
+/** Auto-update at most this often when the window is focused again. */
+const REFRESH_MS = 20_000;
 
 type From = 'logout' | 'home' | 'death' | 'custom';
 const FROM_LABEL: Record<From, string> = {
@@ -90,6 +118,9 @@ export function WorldPage() {
   const [showPins, setShowPins] = useState(true);
   const map = useWorldMap(profileId, fog);
   const zones = lookup.allBiomes();
+  const characterName = useApp((s) => s.profiles[s.active].character?.name);
+  const [remembered, setRemembered] = useState<Role[]>([]);
+  const [updated, setUpdated] = useState('');
 
   const readWorld = async (file: File) => {
     setError('');
@@ -110,26 +141,6 @@ export function WorldPage() {
     } finally {
       setBusy(false);
     }
-  };
-
-  /** A whole folder: the world file (newest number) and the map files, whichever of them are in it. */
-  const readFolder = async () => {
-    const folder = await pickFolder();
-    if (!folder) return;
-    setError('');
-    const files = await listFiles(folder);
-    const db2 = files
-      .filter((f) => /^_main\.\d+\.db2$/.test(f.name))
-      .sort((a, b) => Number(/\d+/.exec(b.name)![0]) - Number(/\d+/.exec(a.name)![0]))[0];
-    const maps = files.filter((f) => /^cacheMinimap(Biome|Mask|Height)$/.test(f.name));
-    if (!db2 && maps.length < 3) {
-      setError(
-        'That folder has no world file (_main.<number>.db2) and no map files (cacheMinimapBiome, Mask, Height). Try the world’s own folder.',
-      );
-      return;
-    }
-    if (db2) await readWorld(db2);
-    if (maps.length >= 3) await map.addTerrainFiles(maps);
   };
 
   const readCharacter = async (file: File) => {
@@ -155,6 +166,90 @@ export function WorldPage() {
       setError(e instanceof FchError ? e.message : 'Could not read that file.');
     }
   };
+
+  /** Read what a folder holds for one role. `auto` skips what cannot have changed (the places and the land). */
+  const load = async (role: Role, files: File[], auto: boolean) => {
+    if (role === 'world') {
+      const db2 = newestWorld(files);
+      if (db2 && !(auto && world?.file === db2.name)) await readWorld(db2);
+    } else if (role === 'land') {
+      const maps = landFiles(files);
+      if (maps.length >= 3 && !(auto && map.hasTerrain)) await map.addTerrainFiles(maps);
+    } else {
+      const found = characterFiles(files);
+      // The profile's own character if it can be told by name, else the one saved last.
+      const mine = found.find(
+        (f) => f.name.toLowerCase() === `${characterName?.toLowerCase()}.fch`,
+      );
+      const file = mine ?? [...found].sort((a, b) => b.lastModified - a.lastModified)[0];
+      if (file) await readCharacter(file);
+    }
+  };
+
+  /** Pick a folder; whatever it holds (world file, map files, characters) is read and the folder remembered. */
+  const readFolder = async () => {
+    const folder = await pickFolder();
+    if (!folder) return;
+    setError('');
+    const files = await listFiles(folder);
+    const present = ROLES.filter((r) =>
+      r === 'world'
+        ? newestWorld(files)
+        : r === 'land'
+          ? landFiles(files).length >= 3
+          : characterFiles(files).length > 0,
+    );
+    if (present.length === 0) {
+      setError(
+        'That folder has no world file (_main.<number>.db2), no map files (cacheMinimapBiome, Mask, Height) and no character file (.fch). Try the world’s own folder or the characters folder.',
+      );
+      return;
+    }
+    for (const role of present) {
+      await rememberFolder(folder, roleKey(role, profileId));
+      await load(role, files, false);
+    }
+    setRemembered((r) => [...new Set([...r, ...present])]);
+    setUpdated(new Date().toLocaleTimeString());
+  };
+
+  /** Read the remembered folders again. Without a click the browser only lets this through if it still remembers the permission. */
+  const refresh = async (ask: boolean) => {
+    const roles: Role[] = [];
+    for (const role of ROLES) {
+      const handle: FolderHandle | null = await recallFolder(roleKey(role, profileId));
+      if (!handle) continue;
+      roles.push(role);
+      let permission = (await handle.queryPermission?.({ mode: 'read' })) ?? 'granted';
+      if (permission !== 'granted' && ask)
+        permission = (await handle.requestPermission?.({ mode: 'read' })) ?? 'denied';
+      if (permission !== 'granted') continue;
+      try {
+        await load(role, await listFiles(handle), !ask);
+        setUpdated(new Date().toLocaleTimeString());
+      } catch {
+        setError('Could not read the remembered folder. Choose it again.');
+      }
+    }
+    setRemembered(roles);
+  };
+
+  // Keep what the page shows current: when it opens, and when the window is focused again (second monitor).
+  const latest = useRef(refresh);
+  useEffect(() => {
+    latest.current = refresh;
+  });
+  useEffect(() => {
+    let last = 0;
+    const run = () => {
+      if (Date.now() - last < REFRESH_MS) return;
+      last = Date.now();
+      void latest.current(false);
+    };
+    run();
+    window.addEventListener('focus', run);
+    return () => window.removeEventListener('focus', run);
+  }, [profileId]);
 
   const available = (['logout', 'home', 'death'] as const).filter((f) => world?.me?.[f]);
   // A spot that a character file did not have is not offered; fall back to the first one that it did.
@@ -218,14 +313,39 @@ export function WorldPage() {
         </p>
       </Intro>
 
+      {canPickFolder() && (
+        <section className={styles.panel}>
+          <h2>Keep it up to date</h2>
+          <p className={styles.dim}>
+            Choose the folders once and the page remembers them for this profile and reads the
+            newest files when you open it or come back to the window. Choose each folder in turn:
+            the world’s folder in the Steam cloud saves (the world file), the world’s folder in{' '}
+            <code>worlds_local</code> (the map files), and the characters folder (your position,
+            explored area and pins).
+          </p>
+          <div className={styles.actions}>
+            <button type="button" className={styles.button} onClick={() => void readFolder()}>
+              Choose a folder
+            </button>
+            {remembered.length > 0 && (
+              <button type="button" className={styles.button} onClick={() => void refresh(true)}>
+                Update now
+              </button>
+            )}
+          </div>
+          {remembered.length > 0 && (
+            <p className={styles.dim}>
+              Remembered: {remembered.map((r) => ROLE_LABEL[r]).join(', ')}.
+              {updated && ` Last read ${updated}.`} If the browser asks to view the files again,
+              allow it.
+            </p>
+          )}
+        </section>
+      )}
+
       <section className={styles.panel}>
         <h2>1. Read the world file</h2>
         <div className={styles.actions}>
-          {canPickFolder() && (
-            <button type="button" className={styles.button} onClick={() => void readFolder()}>
-              Choose a world folder
-            </button>
-          )}
           <label className={styles.button}>
             {busy ? 'Reading ...' : 'Choose the world .db2 file'}
             <input
@@ -338,11 +458,6 @@ export function WorldPage() {
           the rest dimmed.
         </p>
         <div className={styles.actions}>
-          {canPickFolder() && (
-            <button type="button" className={styles.button} onClick={() => void readFolder()}>
-              Choose a world folder
-            </button>
-          )}
           <label className={styles.button}>
             Choose the three map files
             <input
