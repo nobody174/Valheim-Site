@@ -47,6 +47,7 @@
   "recipe:recipe.ShieldBronzeBuckler",
   "recipe:recipe.SpearBronze",
   "where:Acorn",
+  "where:AxeHead1",
   "where:AxeHead2",
   "where:BeechSeeds",
   "where:BirchSeeds",
@@ -61,5 +62,6 @@
   "where:MushroomYellow",
   "where:PineCone",
   "where:RoundLog",
-  "where:Thistle"
+  "where:Thistle",
+  "where:TinOre"
 ]

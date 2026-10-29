@@ -1162,11 +1162,11 @@
     "obtainedFrom": [
       {
         "type": "other",
-        "note": "Not found yet by the owner, and the game files do not say where it comes from. Its pair, the Mysterious Axe Head, was found in Meadows chests, so check chests there (a guess)."
+        "note": "Found in chests in the Meadows (confirmed by the owner's son, who found and crafted it; the game files do not list the loot)"
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "The metal glints oddly in the sunlight. Somehow, you know that it can never be complete on its own...",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -7389,7 +7389,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Unrefined tin. Needs to be refined in a smelter.",
     "portalBlocked": true,
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
