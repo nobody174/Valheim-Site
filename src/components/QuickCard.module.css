@@ -39,6 +39,8 @@
   border: 1px solid var(--amber);
   border-radius: 6px;
   white-space: nowrap;
+  border-style: dashed;
+  cursor: help;
 }
 .more {
   min-height: 44px;
