@@ -164,7 +164,7 @@
     "AxeHead1": [
       [
         "other",
-        "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+        "Not found yet by the owner, and the game files do not say where it comes from. Its pair, the Mysterious Axe Head, was found in Meadows chests, so check chests there (a guess)."
       ]
     ],
     "AxeHead2": [
@@ -230,7 +230,7 @@
     "PickaxeStone": [
       [
         "other",
-        "No recipe in the game files and no known source in this version."
+        "No recipe in the game files, and the owner checked in game: the first pickaxe in the crafting list is the Antler Pickaxe. This item is not craftable."
       ]
     ],
     "Fish1": [

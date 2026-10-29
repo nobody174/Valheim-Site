@@ -896,7 +896,7 @@
       "chop": 20.0
     },
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "damagePerLevel": {
       "slash": 5.0,
       "chop": 3.0

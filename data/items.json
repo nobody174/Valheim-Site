@@ -1162,7 +1162,7 @@
     "obtainedFrom": [
       {
         "type": "other",
-        "note": "Found in chests in the Meadows (reported by the owner; the game files do not list the loot)"
+        "note": "Not found yet by the owner, and the game files do not say where it comes from. Its pair, the Mysterious Axe Head, was found in Meadows chests, so check chests there (a guess)."
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -1244,7 +1244,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "cross-checked",
+    "verified": "in-game",
     "description": "A crude axe for tree-felling."
   },
   {
@@ -3141,7 +3141,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Some call it a weed, but it's pretty nonetheless.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -3394,7 +3394,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "A small pile of feathers.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -3479,7 +3479,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Plant it to grow a fir tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -5835,7 +5835,7 @@
     "obtainedFrom": [
       {
         "type": "other",
-        "note": "No recipe in the game files and no known source in this version."
+        "note": "No recipe in the game files, and the owner checked in game: the first pickaxe in the crafting list is the Antler Pickaxe. This item is not craftable."
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -5859,7 +5859,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Plant it to grow a pine tree.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
@@ -6162,7 +6162,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Perfect for building log cabins.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
@@ -7349,7 +7349,7 @@
       }
     ],
     "source": "game-files:steam-build-25909357",
-    "verified": "unverified",
+    "verified": "in-game",
     "description": "Beautiful but prickly.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
