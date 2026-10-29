@@ -57,6 +57,7 @@ npm run validate   # schema + reference checks for /data
 npm run test       # unit tests (Vitest)
 npm run build      # validate + typecheck + production build
 npm run preview    # serve the production build
+npm run qa         # after a build: axe, tap targets, tiny text, console errors on every page (budget: tools/qa/budget.json)
 ```
 
 ## Definition of done (every session)
