@@ -286,7 +286,7 @@ const trim = (text: string, max: number) => text.trim().slice(0, max);
 export function withPortal(profile: Profile, portal: Portal): Profile {
   const clean: Portal = {
     id: portal.id,
-    name: trim(portal.name, 10),
+    name: trim(portal.name, 40), // the form limits new names to the game's 10; older, longer ones are left alone
     from: trim(portal.from, 60),
     to: trim(portal.to, 60),
     note: trim(portal.note, 300),
