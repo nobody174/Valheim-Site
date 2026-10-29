@@ -109,6 +109,8 @@ describe('world file', () => {
 
 describe('WorldPage', () => {
   beforeEach(() => {
+    // jsdom has no canvas; the page draws nothing and the lists are what is tested.
+    HTMLCanvasElement.prototype.getContext = () => null;
     localStorage.clear();
     resetWorldCache();
   });

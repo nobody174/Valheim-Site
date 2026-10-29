@@ -6,6 +6,10 @@ import { clearWorld, saveWorldMe, saveWorldPlaces, useWorld, type SavedWorld } f
 import { KIND_LABEL, KIND_ORDER } from '../places/PlacesPage';
 import { FchError, parseCharacter } from '../save/fch';
 import { formatDistance, nearest, spots, type Near, type Spot } from './nearby';
+import type { MapPin } from './mapData';
+import type { Fog } from './terrain';
+import { useWorldMap } from './useWorldMap';
+import { WorldMapView } from './WorldMapView';
 import { familyIndex, parseWorld } from './worldFile';
 import styles from './World.module.css';
 
@@ -23,15 +27,23 @@ const KIND_COLOUR: Record<(typeof KIND_ORDER)[number], string> = {
   quest: 'var(--zone-mistlands)',
   other: 'var(--silver)',
 };
-/** The map spans the area the game fills with land and places. */
-const MAP_EXTENT = 10500;
+const MAP_FOLDER = 'C:\\Users\\<you>\\AppData\\LocalLow\\IronGate\\Valheim\\worlds_local\\<world name>\\';
 const WORLD_PATHS = [
   'C:\\Program Files (x86)\\Steam\\userdata\\<your id>\\892970\\remote\\worlds\\<world name>\\_main.<number>.db2 (Steam cloud copy)',
   'C:\\Users\\<you>\\AppData\\LocalLow\\IronGate\\Valheim\\worlds_local\\<world name>\\ (a local, non-cloud world)',
 ];
 
+const KIND_COLOUR_HEX: Record<(typeof KIND_ORDER)[number], string> = {
+  dungeon: '#e0742a',
+  altar: '#d3a73b',
+  merchant: '#4f9170',
+  quest: '#a68fcf',
+  other: '#b8bcc2',
+};
 /** Spots with or without a distance, so one list can show both. */
 const listed = (list: readonly (Spot & Partial<Near>)[]) => list;
+
+const NO_PINS: MapPin[] = [];
 
 const pointOf = (me: SavedWorld['me'], from: From, custom: { x: string; z: string }): Spot | null => {
   if (from === 'custom') {
@@ -54,6 +66,9 @@ export function WorldPage() {
   const [onMap, setOnMap] = useState<ReadonlySet<string>>(
     () => new Set(places.filter((p) => p.kind === 'altar').map((p) => p.id)),
   );
+  const [fog, setFog] = useState<Fog>('dim');
+  const [showPins, setShowPins] = useState(true);
+  const map = useWorldMap(fog);
   const zones = lookup.allBiomes();
 
   const readWorld = async (file: File) => {
@@ -88,6 +103,7 @@ export function WorldPage() {
         return;
       }
       saveWorldMe({ name: c.name, home: remembered.home, logout: remembered.logout, death: remembered.death });
+      if (remembered.map) void map.addSavedMap(remembered.map);
       setFrom(remembered.logout ? 'logout' : remembered.home ? 'home' : 'custom');
     } catch (e) {
       setError(e instanceof FchError ? e.message : 'Could not read that file.');
@@ -119,6 +135,10 @@ export function WorldPage() {
       );
   }, [world, kind, query, reference, zones]);
 
+  const layers = useMemo(
+    () => rows.filter((r) => onMap.has(r.place.id)).map((r) => ({ id: r.place.id, colour: KIND_COLOUR_HEX[r.place.kind], spots: r.all })),
+    [rows, onMap],
+  );
   const hasPlaces = world !== null && Object.keys(world.places).length > 0;
   const toggle = (id: string) =>
     setOnMap((s) => {
@@ -247,26 +267,89 @@ export function WorldPage() {
         )}
       </section>
 
-      {error && (
-        <p className={styles.error} role="alert">
-          {error}
+      <section className={styles.panel}>
+        <h2>3. The land (optional)</h2>
+        <p className={styles.dim}>
+          The game keeps its own picture of the world next to the world's save. Give it to the site and the map shows
+          the coasts, mountains and zones, with the part you have explored lit and the rest dimmed.
         </p>
+        <label className={styles.button}>
+          Choose the three map files
+          <input
+            type="file"
+            multiple
+            className={styles.hidden}
+            aria-label="Choose the map files"
+            onChange={(e) => {
+              void map.addTerrainFiles([...(e.target.files ?? [])]);
+              e.target.value = '';
+            }}
+          />
+        </label>
+        {map.hasTerrain && (
+          <p className={styles.dim}>
+            Map read.{' '}
+            <button type="button" className={styles.link} onClick={map.forget}>
+              Forget the map
+            </button>
+          </p>
+        )}
+        <details className={styles.hint}>
+          <summary>Where are the map files?</summary>
+          <p>
+            In <code>{MAP_FOLDER}</code>: <code>cacheMinimapBiome</code>, <code>cacheMinimapMask</code> and{' '}
+            <code>cacheMinimapHeight</code>. They have no ending. Select all three in the file dialog at once (hold
+            Ctrl). The game writes them the first time you open the map in that world.
+          </p>
+        </details>
+      </section>
+
+      {(error || map.error) && (
+        <p className={styles.error} role="alert">
+          {error || map.error}
+        </p>
+      )}
+
+      {(hasPlaces || map.hasTerrain) && (
+        <section className={styles.panel} aria-label="Map">
+          <h2>Map</h2>
+          <div className={styles.form}>
+            {map.saved && (
+              <>
+                <label>
+                  Unexplored land
+                  <select value={fog} onChange={(e) => setFog(e.target.value as Fog)}>
+                    <option value="dim">Dimmed</option>
+                    <option value="hide">Hidden, like in game</option>
+                    <option value="none">Shown</option>
+                  </select>
+                </label>
+                <label className={styles.onMap}>
+                  <input type="checkbox" checked={showPins} onChange={(e) => setShowPins(e.target.checked)} />
+                  My pins ({map.saved.pins.filter((p) => !p.name.startsWith('$')).length})
+                </label>
+              </>
+            )}
+          </div>
+          <WorldMapView
+            key={reference ? 'me' : 'none'}
+            image={map.image}
+            layers={layers}
+            pins={showPins && map.saved ? map.saved.pins : NO_PINS}
+            reference={reference}
+          />
+          <p className={styles.dim}>
+            North is up. Drag to move, scroll to zoom.{' '}
+            {map.hasTerrain
+              ? 'The land is the game’s own map of this world.'
+              : 'Without the map files (step 3) there is no land, only the places.'}{' '}
+            It starts with the boss altars; tick more places below to draw them.
+          </p>
+        </section>
       )}
 
       {hasPlaces && (
         <>
-          <section className={styles.panel} aria-label="Map">
-            <h2>Map</h2>
-            <WorldMap
-              reference={reference}
-              layers={rows.filter((r) => onMap.has(r.place.id)).map((r) => ({ id: r.place.id, kind: r.place.kind, spots: r.all }))}
-            />
-            <p className={styles.dim}>
-              North is up. The circle is the edge of the world’s land. It starts with the boss altars; tick more places below to draw them. There is no zone
-              colouring: zones come from the world’s noise, not from this file.
-            </p>
-          </section>
-
           <section className={styles.panel}>
             <h2>Places</h2>
             <div className={styles.form}>
@@ -324,34 +407,5 @@ export function WorldPage() {
         </>
       )}
     </div>
-  );
-}
-
-function WorldMap({
-  reference,
-  layers,
-}: {
-  reference: Spot | null;
-  layers: { id: string; kind: (typeof KIND_ORDER)[number]; spots: Spot[] }[];
-}) {
-  const size = MAP_EXTENT * 2;
-  const dot = size / 200;
-  return (
-    <svg className={styles.map} viewBox={`${-MAP_EXTENT} ${-MAP_EXTENT} ${size} ${size}`} role="img" aria-label="Map of the places ticked below">
-      <circle cx={0} cy={0} r={10000} className={styles.edge} />
-      <line x1={-MAP_EXTENT} y1={0} x2={MAP_EXTENT} y2={0} className={styles.axis} />
-      <line x1={0} y1={-MAP_EXTENT} x2={0} y2={MAP_EXTENT} className={styles.axis} />
-      {layers.map((layer) =>
-        layer.spots.map((s) => (
-          <circle key={`${layer.id}:${s.x},${s.z}`} cx={s.x} cy={-s.z} r={dot} fill={KIND_COLOUR[layer.kind]} />
-        )),
-      )}
-      {reference && (
-        <g className={styles.me}>
-          <circle cx={reference.x} cy={-reference.z} r={dot * 2.2} />
-          <circle cx={reference.x} cy={-reference.z} r={dot * 0.8} />
-        </g>
-      )}
-    </svg>
   );
 }

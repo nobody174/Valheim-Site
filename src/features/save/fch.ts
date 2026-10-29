@@ -43,6 +43,8 @@ export interface WorldMemory {
   home?: MapPoint;
   logout?: MapPoint;
   death?: MapPoint;
+  /** The game's saved map for this world: explored area and pins (see features/world/mapData). */
+  map?: Uint8Array;
 }
 
 export interface ParsedCharacter {
@@ -136,6 +138,13 @@ export class Reader {
     const v = this.view.getBigInt64(this.pos, true);
     this.pos += 8;
     return v;
+  }
+  /** The next `n` raw bytes, without a length prefix. */
+  raw(n: number): Uint8Array {
+    this.need(n);
+    const out = this.bytes.subarray(this.pos, this.pos + n);
+    this.pos += n;
+    return out;
   }
   skip(n: number): void {
     this.need(n);
@@ -246,7 +255,7 @@ export function parseCharacter(file: Uint8Array): ParsedCharacter {
     if (haveDeath) world.death = death;
     if (home.x !== 0 || home.z !== 0) world.home = home;
     worlds.push(world);
-    if (r.bool()) r.byteArray(); // map
+    if (r.bool()) world.map = r.byteArray().slice();
   }
 
   const name = r.string();
