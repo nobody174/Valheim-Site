@@ -139,6 +139,55 @@
   display: none;
 }
 
+/* The right-hand strip only appears where there is room for it. */
+.side {
+  display: none;
+}
+@media (min-width: 1500px) {
+  .shell {
+    grid-template-columns: 216px minmax(0, 1fr) 270px;
+    grid-template-areas: 'header header header' 'nav main side';
+  }
+  .side {
+    grid-area: side;
+    display: block;
+    min-width: 0;
+    padding: 1.5rem 1.25rem 1.5rem 0;
+    overflow-y: auto;
+  }
+  .sideTitle {
+    margin: 0 0 0.6rem;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--gold);
+  }
+  .sideList {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0 0 0.8rem;
+    padding: 0.8rem 0.9rem;
+    list-style: none;
+    background: #120d09;
+    border: 2px solid var(--wood);
+    border-radius: 12px;
+    font-size: 0.95rem;
+  }
+  .sideList strong {
+    color: var(--text);
+  }
+  .sideDown {
+    opacity: 0.6;
+  }
+  .sideFrom,
+  .sideEmpty {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+  .sideLink {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 700px) {
   .header {
     padding: 0.6rem 0.75rem;

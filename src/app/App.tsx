@@ -31,6 +31,7 @@ import { RecipesPage } from '../features/items/RecipesPage';
 import { CommandPalette } from '../features/search/CommandPalette';
 import { SearchPage } from '../features/search/SearchPage';
 import { EntityIcon } from '../components/EntityIcon';
+import { QuickInfo } from './QuickInfo';
 import { BackupNudge } from './BackupNudge';
 import { MobileTabs } from './MobileTabs';
 import { ROUTE_GROUPS, ROUTES } from './routes';
@@ -50,8 +51,8 @@ function NotFound() {
     <section className={styles.panel}>
       <h1>Page not found</h1>
       <p>
-        Lost in the Black Forest: there is nothing at this address. Try the search box above, or go back to the{' '}
-        <Link to="/">start page</Link>.
+        Lost in the Black Forest: there is nothing at this address. Try the search box above, or go
+        back to the <Link to="/">start page</Link>.
       </p>
     </section>
   );
@@ -59,7 +60,9 @@ function NotFound() {
 
 /** Routes that already have a real page; the rest show a placeholder. */
 // The graph library is large, so it loads only when the page is opened.
-const GraphPage = lazy(() => import('../features/graph/GraphPage').then((m) => ({ default: m.GraphPage })));
+const GraphPage = lazy(() =>
+  import('../features/graph/GraphPage').then((m) => ({ default: m.GraphPage })),
+);
 
 const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
@@ -99,10 +102,31 @@ const PAGES: Record<string, React.ReactElement> = {
 /** A small round shield with a rune, drawn here so the site needs no game art for its logo. */
 function BrandMark() {
   return (
-    <svg className={styles.brandMark} viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false">
+    <svg
+      className={styles.brandMark}
+      viewBox="0 0 32 32"
+      width="30"
+      height="30"
+      aria-hidden="true"
+      focusable="false"
+    >
       <circle cx="16" cy="16" r="14.5" fill="#3b2a1c" stroke="#d3a73b" strokeWidth="2" />
-      <circle cx="16" cy="16" r="10.5" fill="none" stroke="#a97142" strokeWidth="1" strokeDasharray="2 2.2" />
-      <path d="M10 9 L22 23 M22 9 L10 23 M16 7 V25" stroke="#e6d7b2" strokeWidth="2.2" strokeLinecap="round" fill="none" />
+      <circle
+        cx="16"
+        cy="16"
+        r="10.5"
+        fill="none"
+        stroke="#a97142"
+        strokeWidth="1"
+        strokeDasharray="2 2.2"
+      />
+      <path
+        d="M10 9 L22 23 M22 9 L10 23 M16 7 V25"
+        stroke="#e6d7b2"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        fill="none"
+      />
     </svg>
   );
 }
@@ -209,6 +233,7 @@ function Shell() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <QuickInfo />
       <footer className={styles.dataInfoMobile}>
         Data: {gameData.meta.gameVersion}, reviewed {gameData.meta.lastReviewed}
       </footer>
