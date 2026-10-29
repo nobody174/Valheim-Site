@@ -158,7 +158,7 @@ export function GraphPage() {
       label: e.label,
       markerEnd: { type: MarkerType.ArrowClosed },
       style: { stroke: on ? '#b8bcc2' : '#3a3d42', strokeWidth: lit && on ? 2 : 1 },
-      labelStyle: { fontSize: 11, fill: '#e4e4e4' },
+      labelStyle: { fontSize: 12, fill: '#e4e4e4' },
       labelBgStyle: { fill: '#161616' },
     };
   });
@@ -245,6 +245,7 @@ export function GraphPage() {
               edges={flowEdges}
               nodeTypes={nodeTypes}
               fitView
+              fitViewOptions={{ minZoom: 0.55, padding: 0.1 }}
               minZoom={0.2}
               nodesDraggable={false}
               nodesConnectable={false}

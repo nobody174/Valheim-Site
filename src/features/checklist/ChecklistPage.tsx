@@ -1,10 +1,12 @@
 import { useMemo } from 'react';
+import { useProgressive } from '../../components/useProgressive';
 import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { graph, lookup } from '../../data/lookup';
 import { CATEGORY_LABELS } from '../items/ItemsPage';
-import { hasFlag, PROGRESS_FLAGS, type ProgressFlag } from '../../state/model';
+import type { Item } from '../../data/schemas';
+import { hasFlag, PROGRESS_FLAGS, type ProgressFlag, type Profile } from '../../state/model';
 import { useApp, useProfile } from '../../state/store';
 import styles from '../items/Items.module.css';
 
@@ -174,6 +176,25 @@ export function ChecklistPage() {
       {rows.length === 0 ? (
         <p className={styles.empty}>Nothing matches these filters.</p>
       ) : (
+        <ChecklistTable key={`${biome}|${category}|${status}`} rows={rows} profile={profile} toggle={toggle} />
+      )}
+    </section>
+  );
+}
+
+/** The table, drawn in steps so the page opens fast; the rest loads as you scroll. */
+function ChecklistTable({
+  rows,
+  profile,
+  toggle,
+}: {
+  rows: Item[];
+  profile: Profile;
+  toggle: (id: string, flag: ProgressFlag) => void;
+}) {
+  const { count, hasMore, sentinelRef, showAll } = useProgressive(rows.length, 100);
+  return (
+    <>
         <div className={styles.tableWrap}>
           <table className={styles.table}>
             <thead>
@@ -187,7 +208,7 @@ export function ChecklistPage() {
               </tr>
             </thead>
             <tbody>
-              {rows.map((i) => (
+              {rows.slice(0, count).map((i) => (
                 <tr key={i.id}>
                   <td>
                     <EntityLink id={i.id} />
@@ -209,7 +230,14 @@ export function ChecklistPage() {
             </tbody>
           </table>
         </div>
+      {hasMore && (
+        <p ref={sentinelRef} className={styles.dim}>
+          Showing {count} of {rows.length} items.{' '}
+          <button type="button" onClick={showAll}>
+            Show all
+          </button>
+        </p>
       )}
-    </section>
+    </>
   );
 }

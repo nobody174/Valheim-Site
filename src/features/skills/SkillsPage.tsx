@@ -44,7 +44,7 @@ export function SkillsPage() {
         Each hit rolls between a low and a high share of the weapon&apos;s listed damage. Both rise with the skill
         level (the same numbers the in-game tooltip shows):
       </p>
-      <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="Skills">
+      <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="Damage range by skill level">
         <table className={styles.table}>
           <thead>
             <tr>
@@ -76,7 +76,7 @@ export function SkillsPage() {
         return (
           <section key={g.id}>
             <h2>{g.title}</h2>
-            <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="Skills">
+            <div className={styles.tableWrap} tabIndex={0} role="region" aria-label={g.title}>
               <table className={styles.table}>
                 <thead>
                   <tr>
