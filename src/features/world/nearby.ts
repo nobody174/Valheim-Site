@@ -9,7 +9,16 @@ export interface Near extends Spot {
   direction: string;
 }
 
-const COMPASS = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west'] as const;
+const COMPASS = [
+  'north',
+  'north-east',
+  'east',
+  'south-east',
+  'south',
+  'south-west',
+  'west',
+  'north-west',
+] as const;
 
 /** Compass direction from `from` to `to`. In Valheim, east is +x and north is +z. */
 export function direction(from: Spot, to: Spot): string {

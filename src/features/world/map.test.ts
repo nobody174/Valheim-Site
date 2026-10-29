@@ -9,7 +9,9 @@ async function gzip(bytes: Uint8Array): Promise<Uint8Array> {
       c.close();
     },
   });
-  return new Uint8Array(await new Response(source.pipeThrough(new CompressionStream('gzip'))).arrayBuffer());
+  return new Uint8Array(
+    await new Response(source.pipeThrough(new CompressionStream('gzip'))).arrayBuffer(),
+  );
 }
 
 describe('terrain', () => {
@@ -33,7 +35,10 @@ describe('terrain', () => {
     const heights = new Uint8Array(size * size * 2);
     const view = new DataView(heights.buffer);
     [0xd000, 0x5a00, 0x5a00, 0x5a00].forEach((h, i) => view.setUint16(i * 2, h, true)); // pixel 0 is deep sea
-    const t = await decodeTerrain({ biome: await gzip(biome), mask: await gzip(mask), height: await gzip(heights) }, size);
+    const t = await decodeTerrain(
+      { biome: await gzip(biome), mask: await gzip(mask), height: await gzip(heights) },
+      size,
+    );
     expect(t.height[1]).toBe(192);
     const lit = renderTerrain(t, null, 'none', size);
     // Row 0 of the image is the north row, so texture row 1 comes first.
@@ -74,7 +79,14 @@ describe('saved map', () => {
     text('');
     out.push(0); // public position
     const packed = await gzip(new Uint8Array(out));
-    const file = new Uint8Array([8, 0, 0, 0, ...new Uint8Array(new Int32Array([packed.length]).buffer), ...packed]);
+    const file = new Uint8Array([
+      8,
+      0,
+      0,
+      0,
+      ...new Uint8Array(new Int32Array([packed.length]).buffer),
+      ...packed,
+    ]);
     const m = await parseMapData(file);
     expect(m.size).toBe(size);
     expect(m.explored[17]).toBe(1);

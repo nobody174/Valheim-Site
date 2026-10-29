@@ -22,7 +22,12 @@ const SIZE = 900;
 const FULL = 21000 / SIZE;
 const CLOSEST = 1.5;
 const LABEL_BELOW = 14;
-const PIN_COLOUR: Record<number, string> = { 9: '#d3a73b', 4: '#e0742a', 5: '#8fb35a', 6: '#a68fcf' };
+const PIN_COLOUR: Record<number, string> = {
+  9: '#d3a73b',
+  4: '#e0742a',
+  5: '#8fb35a',
+  6: '#a68fcf',
+};
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
 
@@ -42,7 +47,9 @@ export function WorldMapView({
   reference: Spot | null;
 }) {
   const canvas = useRef<HTMLCanvasElement>(null);
-  const [view, setView] = useState<View>(() => (reference ? { x: reference.x, z: reference.z, mpp: 6 } : { x: 0, z: 0, mpp: FULL }));
+  const [view, setView] = useState<View>(() =>
+    reference ? { x: reference.x, z: reference.z, mpp: 6 } : { x: 0, z: 0, mpp: FULL },
+  );
   const [cursor, setCursor] = useState<Spot | null>(null);
   const drag = useRef<{ id: number; u: number; v: number } | null>(null);
 
@@ -151,10 +158,14 @@ export function WorldMapView({
 
   const at = (e: ReactPointerEvent<HTMLCanvasElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    return { u: ((e.clientX - rect.left) / rect.width) * SIZE, v: ((e.clientY - rect.top) / rect.height) * SIZE };
+    return {
+      u: ((e.clientX - rect.left) / rect.width) * SIZE,
+      v: ((e.clientY - rect.top) / rect.height) * SIZE,
+    };
   };
 
-  const zoom = (factor: number) => setView((w) => ({ ...w, mpp: clamp(w.mpp * factor, CLOSEST, FULL) }));
+  const zoom = (factor: number) =>
+    setView((w) => ({ ...w, mpp: clamp(w.mpp * factor, CLOSEST, FULL) }));
 
   return (
     <div>
@@ -176,24 +187,45 @@ export function WorldMapView({
             drag.current = { id: d.id, ...p };
             setView((w) => ({ ...w, x: w.x - (p.u - d.u) * w.mpp, z: w.z + (p.v - d.v) * w.mpp }));
           }
-          setCursor({ x: view.x + (p.u - SIZE / 2) * view.mpp, z: view.z - (p.v - SIZE / 2) * view.mpp });
+          setCursor({
+            x: view.x + (p.u - SIZE / 2) * view.mpp,
+            z: view.z - (p.v - SIZE / 2) * view.mpp,
+          });
         }}
         onPointerUp={() => (drag.current = null)}
         onPointerCancel={() => (drag.current = null)}
         onPointerLeave={() => setCursor(null)}
       />
       <div className={styles.mapBar}>
-        <button type="button" className={styles.button} onClick={() => zoom(0.6)} aria-label="Zoom in">
+        <button
+          type="button"
+          className={styles.button}
+          onClick={() => zoom(0.6)}
+          aria-label="Zoom in"
+        >
           +
         </button>
-        <button type="button" className={styles.button} onClick={() => zoom(1 / 0.6)} aria-label="Zoom out">
+        <button
+          type="button"
+          className={styles.button}
+          onClick={() => zoom(1 / 0.6)}
+          aria-label="Zoom out"
+        >
           −
         </button>
-        <button type="button" className={styles.button} onClick={() => setView({ x: 0, z: 0, mpp: FULL })}>
+        <button
+          type="button"
+          className={styles.button}
+          onClick={() => setView({ x: 0, z: 0, mpp: FULL })}
+        >
           Whole world
         </button>
         {reference && (
-          <button type="button" className={styles.button} onClick={() => setView({ x: reference.x, z: reference.z, mpp: 6 })}>
+          <button
+            type="button"
+            className={styles.button}
+            onClick={() => setView({ x: reference.x, z: reference.z, mpp: 6 })}
+          >
             Centre on me
           </button>
         )}

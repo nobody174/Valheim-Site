@@ -33,10 +33,16 @@ export function halfToFloat(h: number): number {
 }
 
 export async function decodeTerrain(files: TerrainFiles, size = MAP_SIZE): Promise<Terrain> {
-  const [biome, mask, halves] = await Promise.all([gunzip(files.biome), gunzip(files.mask), gunzip(files.height)]);
+  const [biome, mask, halves] = await Promise.all([
+    gunzip(files.biome),
+    gunzip(files.mask),
+    gunzip(files.height),
+  ]);
   const pixels = size * size;
   if (biome.length !== pixels * 4 || mask.length !== pixels * 4 || halves.length !== pixels * 2) {
-    throw new FchError('The map files are not the size this site expects (2048 x 2048). They may be from another game version.');
+    throw new FchError(
+      'The map files are not the size this site expects (2048 x 2048). They may be from another game version.',
+    );
   }
   const view = new DataView(halves.buffer, halves.byteOffset, halves.byteLength);
   const height = new Float32Array(pixels);
@@ -57,7 +63,12 @@ export type Fog = 'none' | 'dim' | 'hide';
  * darker, the sea deeper in colour with depth. Unexplored pixels are dimmed or hidden when an explored map
  * is given. The result is RGBA with row 0 at the top (north), ready for ImageData.
  */
-export function renderTerrain(t: Terrain, explored: Uint8Array | null, fog: Fog, size = MAP_SIZE): Uint8ClampedArray {
+export function renderTerrain(
+  t: Terrain,
+  explored: Uint8Array | null,
+  fog: Fog,
+  size = MAP_SIZE,
+): Uint8ClampedArray {
   const out = new Uint8ClampedArray(size * size * 4);
   for (let row = 0; row < size; row++) {
     const i = size - 1 - row; // texture row, from the south

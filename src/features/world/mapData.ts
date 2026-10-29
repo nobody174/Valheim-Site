@@ -30,8 +30,13 @@ const AUTHOR_FROM = 8;
 export async function parseMapData(data: Uint8Array): Promise<SavedMap> {
   const head = new Reader(data);
   const version = head.int();
-  if (version < 5 || version > AUTHOR_FROM) throw new FchError(`The saved map has version ${version}; this site reads 5 to ${AUTHOR_FROM}.`);
-  const body = new Reader(version >= COMPRESSED_FROM ? await gunzip(head.byteArray()) : data.subarray(4));
+  if (version < 5 || version > AUTHOR_FROM)
+    throw new FchError(
+      `The saved map has version ${version}; this site reads 5 to ${AUTHOR_FROM}.`,
+    );
+  const body = new Reader(
+    version >= COMPRESSED_FROM ? await gunzip(head.byteArray()) : data.subarray(4),
+  );
   const size = body.int();
   if (size < 16 || size > 8192) throw new FchError('The saved map has an unexpected size.');
   const explored = body.raw(size * size);

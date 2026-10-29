@@ -1,8 +1,16 @@
 import { useMemo, useState } from 'react';
 import { Intro } from '../../components/Intro';
+import { canPickFolder, listFiles, pickFolder } from '../../state/saveFolder';
+import { useApp } from '../../state/store';
 import { places } from '../../data/load';
 import { lookup } from '../../data/lookup';
-import { clearWorld, saveWorldMe, saveWorldPlaces, useWorld, type SavedWorld } from '../../state/world';
+import {
+  clearWorld,
+  saveWorldMe,
+  saveWorldPlaces,
+  useWorld,
+  type SavedWorld,
+} from '../../state/world';
 import { KIND_LABEL, KIND_ORDER } from '../places/PlacesPage';
 import { FchError, parseCharacter } from '../save/fch';
 import { formatDistance, nearest, spots, type Near, type Spot } from './nearby';
@@ -27,7 +35,8 @@ const KIND_COLOUR: Record<(typeof KIND_ORDER)[number], string> = {
   quest: 'var(--zone-mistlands)',
   other: 'var(--silver)',
 };
-const MAP_FOLDER = 'C:\\Users\\<you>\\AppData\\LocalLow\\IronGate\\Valheim\\worlds_local\\<world name>\\';
+const MAP_FOLDER =
+  'C:\\Users\\<you>\\AppData\\LocalLow\\IronGate\\Valheim\\worlds_local\\<world name>\\';
 const WORLD_PATHS = [
   'C:\\Program Files (x86)\\Steam\\userdata\\<your id>\\892970\\remote\\worlds\\<world name>\\_main.<number>.db2 (Steam cloud copy)',
   'C:\\Users\\<you>\\AppData\\LocalLow\\IronGate\\Valheim\\worlds_local\\<world name>\\ (a local, non-cloud world)',
@@ -45,18 +54,29 @@ const listed = (list: readonly (Spot & Partial<Near>)[]) => list;
 
 const NO_PINS: MapPin[] = [];
 
-const pointOf = (me: SavedWorld['me'], from: From, custom: { x: string; z: string }): Spot | null => {
+const pointOf = (
+  me: SavedWorld['me'],
+  from: From,
+  custom: { x: string; z: string },
+): Spot | null => {
   if (from === 'custom') {
     const x = Number(custom.x);
     const z = Number(custom.z);
-    return custom.x.trim() !== '' && custom.z.trim() !== '' && Number.isFinite(x) && Number.isFinite(z) ? { x, z } : null;
+    return custom.x.trim() !== '' &&
+      custom.z.trim() !== '' &&
+      Number.isFinite(x) &&
+      Number.isFinite(z)
+      ? { x, z }
+      : null;
   }
   return me?.[from] ?? null;
 };
 
 /** Where the world's dungeons, altars and landmarks are, read from the owner's world file. */
 export function WorldPage() {
-  const world = useWorld();
+  const profileId = useApp((s) => s.active);
+  const profileName = useApp((s) => s.profiles[s.active].name);
+  const world = useWorld(profileId);
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
   const [chosen, setFrom] = useState<From>('logout');
@@ -68,7 +88,7 @@ export function WorldPage() {
   );
   const [fog, setFog] = useState<Fog>('dim');
   const [showPins, setShowPins] = useState(true);
-  const map = useWorldMap(fog);
+  const map = useWorldMap(profileId, fog);
   const zones = lookup.allBiomes();
 
   const readWorld = async (file: File) => {
@@ -84,7 +104,7 @@ export function WorldPage() {
         if (!id) unknown += 1;
         else (found[id] ??= []).push(Math.round(loc.x), Math.round(loc.z));
       }
-      saveWorldPlaces(file.name, found, unknown);
+      saveWorldPlaces(profileId, file.name, found, unknown);
     } catch (e) {
       setError(e instanceof FchError ? e.message : 'Could not read that file.');
     } finally {
@@ -92,17 +112,43 @@ export function WorldPage() {
     }
   };
 
+  /** A whole folder: the world file (newest number) and the map files, whichever of them are in it. */
+  const readFolder = async () => {
+    const folder = await pickFolder();
+    if (!folder) return;
+    setError('');
+    const files = await listFiles(folder);
+    const db2 = files
+      .filter((f) => /^_main\.\d+\.db2$/.test(f.name))
+      .sort((a, b) => Number(/\d+/.exec(b.name)![0]) - Number(/\d+/.exec(a.name)![0]))[0];
+    const maps = files.filter((f) => /^cacheMinimap(Biome|Mask|Height)$/.test(f.name));
+    if (!db2 && maps.length < 3) {
+      setError(
+        'That folder has no world file (_main.<number>.db2) and no map files (cacheMinimapBiome, Mask, Height). Try the world’s own folder.',
+      );
+      return;
+    }
+    if (db2) await readWorld(db2);
+    if (maps.length >= 3) await map.addTerrainFiles(maps);
+  };
+
   const readCharacter = async (file: File) => {
     setError('');
     try {
       const c = parseCharacter(new Uint8Array(await file.arrayBuffer()));
       // A character can remember several worlds; the newest one it has a logout spot in is the one being played.
-      const remembered = [...c.worlds].reverse().find((w) => w.logout) ?? c.worlds[c.worlds.length - 1];
+      const remembered =
+        [...c.worlds].reverse().find((w) => w.logout) ?? c.worlds[c.worlds.length - 1];
       if (!remembered) {
         setError('This character has not been in a world yet.');
         return;
       }
-      saveWorldMe({ name: c.name, home: remembered.home, logout: remembered.logout, death: remembered.death });
+      saveWorldMe(profileId, {
+        name: c.name,
+        home: remembered.home,
+        logout: remembered.logout,
+        death: remembered.death,
+      });
       if (remembered.map) void map.addSavedMap(remembered.map);
       setFrom(remembered.logout ? 'logout' : remembered.home ? 'home' : 'custom');
     } catch (e) {
@@ -112,7 +158,8 @@ export function WorldPage() {
 
   const available = (['logout', 'home', 'death'] as const).filter((f) => world?.me?.[f]);
   // A spot that a character file did not have is not offered; fall back to the first one that it did.
-  const from: From = chosen === 'custom' || available.includes(chosen) ? chosen : (available[0] ?? 'custom');
+  const from: From =
+    chosen === 'custom' || available.includes(chosen) ? chosen : (available[0] ?? 'custom');
   const reference = pointOf(world?.me, from, custom);
 
   const rows = useMemo(() => {
@@ -136,7 +183,10 @@ export function WorldPage() {
   }, [world, kind, query, reference, zones]);
 
   const layers = useMemo(
-    () => rows.filter((r) => onMap.has(r.place.id)).map((r) => ({ id: r.place.id, colour: KIND_COLOUR_HEX[r.place.kind], spots: r.all })),
+    () =>
+      rows
+        .filter((r) => onMap.has(r.place.id))
+        .map((r) => ({ id: r.place.id, colour: KIND_COLOUR_HEX[r.place.kind], spots: r.all })),
     [rows, onMap],
   );
   const hasPlaces = world !== null && Object.keys(world.places).length > 0;
@@ -150,40 +200,53 @@ export function WorldPage() {
   return (
     <div className={styles.page}>
       <h1>My world</h1>
+      <p className={styles.dim}>
+        Kept for the profile “{profileName}”: each profile has its own world.
+      </p>
       <Intro>
         <p>
-          The game decides where every dungeon, boss altar and landmark goes when a world is made, and keeps the list in
-          the world file. This page reads that list in your browser (nothing is uploaded) and shows where things are:
-          the nearest crypt, where each boss altar is, and a map.
+          The game decides where every dungeon, boss altar and landmark goes when a world is made,
+          and keeps the list in the world file. This page reads that list in your browser (nothing
+          is uploaded) and shows where things are: the nearest crypt, where each boss altar is, and
+          a map.
         </p>
         <p>
-          It lists <strong>everything</strong> in the world, including places in zones you have not reached, so it
-          spoils the map. Only places the game files name are shown; the rest are counted as unknown. The list is kept
-          in this browser only and is not part of the backup, because you can read the file again.
+          It lists <strong>everything</strong> in the world, including places in zones you have not
+          reached, so it spoils the map. Only places the game files name are shown; the rest are
+          counted as unknown. The list is kept in this browser only and is not part of the backup,
+          because you can read the file again.
         </p>
       </Intro>
 
       <section className={styles.panel}>
         <h2>1. Read the world file</h2>
-        <label className={styles.button}>
-          {busy ? 'Reading ...' : 'Choose the world .db2 file'}
-          <input
-            type="file"
-            accept=".db2"
-            className={styles.hidden}
-            aria-label="Choose a world file"
-            onChange={(e) => {
-              const f = e.target.files?.[0];
-              if (f) void readWorld(f);
-              e.target.value = '';
-            }}
-          />
-        </label>
+        <div className={styles.actions}>
+          {canPickFolder() && (
+            <button type="button" className={styles.button} onClick={() => void readFolder()}>
+              Choose a world folder
+            </button>
+          )}
+          <label className={styles.button}>
+            {busy ? 'Reading ...' : 'Choose the world .db2 file'}
+            <input
+              type="file"
+              accept=".db2"
+              className={styles.hidden}
+              aria-label="Choose a world file"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                if (f) void readWorld(f);
+                e.target.value = '';
+              }}
+            />
+          </label>
+        </div>
         {hasPlaces && (
           <p className={styles.dim}>
-            Read <code>{world.file}</code>: {Object.values(world.places).reduce((n, l) => n + l.length / 2, 0)} places
+            Read <code>{world.file}</code>:{' '}
+            {Object.values(world.places).reduce((n, l) => n + l.length / 2, 0)} places
             {world.unknown > 0 && `, and ${world.unknown} the game files do not name`}.{' '}
-            <button type="button" className={styles.link} onClick={clearWorld}>
+            <button type="button" className={styles.link} onClick={() => clearWorld(profileId)}>
               Forget it
             </button>
           </p>
@@ -198,9 +261,9 @@ export function WorldPage() {
             ))}
           </ul>
           <p>
-            Pick the <code>.db2</code> file with the highest number in the world’s folder. It is updated each time the
-            game saves, so places do not change, but this is the file to use. In the file dialog, click the address bar
-            and paste the folder to get there.
+            Pick the <code>.db2</code> file with the highest number in the world’s folder. It is
+            updated each time the game saves, so places do not change, but this is the file to use.
+            In the file dialog, click the address bar and paste the folder to get there.
           </p>
         </details>
       </section>
@@ -208,8 +271,8 @@ export function WorldPage() {
       <section className={styles.panel}>
         <h2>2. Where are you? (optional)</h2>
         <p className={styles.dim}>
-          Your character file remembers where you logged out, your home point and where you died. With one of those the
-          list is sorted by distance.
+          Your character file remembers where you logged out, your home point and where you died.
+          With one of those the list is sorted by distance.
         </p>
         <label className={styles.button}>
           Choose your .fch character file
@@ -270,22 +333,30 @@ export function WorldPage() {
       <section className={styles.panel}>
         <h2>3. The land (optional)</h2>
         <p className={styles.dim}>
-          The game keeps its own picture of the world next to the world's save. Give it to the site and the map shows
-          the coasts, mountains and zones, with the part you have explored lit and the rest dimmed.
+          The game keeps its own picture of the world next to the world's save. Give it to the site
+          and the map shows the coasts, mountains and zones, with the part you have explored lit and
+          the rest dimmed.
         </p>
-        <label className={styles.button}>
-          Choose the three map files
-          <input
-            type="file"
-            multiple
-            className={styles.hidden}
-            aria-label="Choose the map files"
-            onChange={(e) => {
-              void map.addTerrainFiles([...(e.target.files ?? [])]);
-              e.target.value = '';
-            }}
-          />
-        </label>
+        <div className={styles.actions}>
+          {canPickFolder() && (
+            <button type="button" className={styles.button} onClick={() => void readFolder()}>
+              Choose a world folder
+            </button>
+          )}
+          <label className={styles.button}>
+            Choose the three map files
+            <input
+              type="file"
+              multiple
+              className={styles.hidden}
+              aria-label="Choose the map files"
+              onChange={(e) => {
+                void map.addTerrainFiles([...(e.target.files ?? [])]);
+                e.target.value = '';
+              }}
+            />
+          </label>
+        </div>
         {map.hasTerrain && (
           <p className={styles.dim}>
             Map read.{' '}
@@ -297,9 +368,12 @@ export function WorldPage() {
         <details className={styles.hint}>
           <summary>Where are the map files?</summary>
           <p>
-            In <code>{MAP_FOLDER}</code>: <code>cacheMinimapBiome</code>, <code>cacheMinimapMask</code> and{' '}
-            <code>cacheMinimapHeight</code>. They have no ending. Select all three in the file dialog at once (hold
-            Ctrl). The game writes them the first time you open the map in that world.
+            In <code>{MAP_FOLDER}</code>: <code>cacheMinimapBiome</code>,{' '}
+            <code>cacheMinimapMask</code> and <code>cacheMinimapHeight</code>. They have no ending.
+            Select all three in the file dialog at once (hold Ctrl), and set the file type to “All
+            files”. A folder pick (Chrome or Edge) finds them by itself: choose the world’s folder
+            in <code>worlds_local</code> for the map, or the world’s folder in the Steam cloud saves
+            for the world file.
           </p>
         </details>
       </section>
@@ -325,7 +399,11 @@ export function WorldPage() {
                   </select>
                 </label>
                 <label className={styles.onMap}>
-                  <input type="checkbox" checked={showPins} onChange={(e) => setShowPins(e.target.checked)} />
+                  <input
+                    type="checkbox"
+                    checked={showPins}
+                    onChange={(e) => setShowPins(e.target.checked)}
+                  />
                   My pins ({map.saved.pins.filter((p) => !p.name.startsWith('$')).length})
                 </label>
               </>
@@ -366,7 +444,12 @@ export function WorldPage() {
               </label>
               <label>
                 Search
-                <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="crypt, tower ..." />
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="crypt, tower ..."
+                />
               </label>
             </div>
             <ul className={styles.list}>
@@ -374,29 +457,43 @@ export function WorldPage() {
                 <li key={place.id} className={styles.place}>
                   <details>
                     <summary>
-                      <span className={styles.swatch} style={{ background: KIND_COLOUR[place.kind] }} aria-hidden="true" />
+                      <span
+                        className={styles.swatch}
+                        style={{ background: KIND_COLOUR[place.kind] }}
+                        aria-hidden="true"
+                      />
                       <strong>{place.name}</strong>
                       <span className={styles.dim}>
                         {' '}
                         · {KIND_LABEL[place.kind]} · {all.length} in this world
-                        {near[0] && ` · nearest ${formatDistance(near[0].metres)} ${near[0].direction}`}
+                        {near[0] &&
+                          ` · nearest ${formatDistance(near[0].metres)} ${near[0].direction}`}
                       </span>
                     </summary>
                     <p className={styles.dim}>
-                      {place.zones.map((id) => zones.find((z) => z.id === id)?.name ?? id).join(', ')}
-                      {reference ? '. Nearest first:' : '. Add your position above to sort by distance.'}
+                      {place.zones
+                        .map((id) => zones.find((z) => z.id === id)?.name ?? id)
+                        .join(', ')}
+                      {reference
+                        ? '. Nearest first:'
+                        : '. Add your position above to sort by distance.'}
                     </p>
                     <ol className={styles.spots}>
                       {listed(reference ? near : all.slice(0, 8)).map((s) => (
                         <li key={`${s.x},${s.z}`}>
-                          {s.metres !== undefined && `${formatDistance(s.metres)} ${s.direction} · `}
+                          {s.metres !== undefined &&
+                            `${formatDistance(s.metres)} ${s.direction} · `}
                           east {s.x}, north {s.z}
                         </li>
                       ))}
                     </ol>
                   </details>
                   <label className={styles.onMap}>
-                    <input type="checkbox" checked={onMap.has(place.id)} onChange={() => toggle(place.id)} />
+                    <input
+                      type="checkbox"
+                      checked={onMap.has(place.id)}
+                      onChange={() => toggle(place.id)}
+                    />
                     On map
                   </label>
                 </li>

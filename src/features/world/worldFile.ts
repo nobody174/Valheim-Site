@@ -22,7 +22,9 @@ export interface ParsedWorld {
 
 export async function gunzip(bytes: Uint8Array): Promise<Uint8Array> {
   if (typeof DecompressionStream === 'undefined') {
-    throw new FchError('This browser cannot unpack the world file (it lacks DecompressionStream). Try a current Chrome, Edge or Firefox.');
+    throw new FchError(
+      'This browser cannot unpack the world file (it lacks DecompressionStream). Try a current Chrome, Edge or Firefox.',
+    );
   }
   const source = new ReadableStream({
     start(controller) {
@@ -30,7 +32,9 @@ export async function gunzip(bytes: Uint8Array): Promise<Uint8Array> {
       controller.close();
     },
   });
-  return new Uint8Array(await new Response(source.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
+  return new Uint8Array(
+    await new Response(source.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer(),
+  );
 }
 
 /** Parse the bytes of a `.db2` world file. Throws {@link FchError} with a plain message on trouble. */
@@ -69,7 +73,9 @@ export async function parseWorld(file: Uint8Array): Promise<ParsedWorld> {
 }
 
 /** The family a place hash belongs to, from the prefab names in the data. */
-export function familyIndex(places: readonly { id: string; prefabs: readonly string[] }[]): Map<number, string> {
+export function familyIndex(
+  places: readonly { id: string; prefabs: readonly string[] }[],
+): Map<number, string> {
   const out = new Map<number, string>();
   for (const p of places) for (const prefab of p.prefabs) out.set(stableHash(prefab), p.id);
   return out;

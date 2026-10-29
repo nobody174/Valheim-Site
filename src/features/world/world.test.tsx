@@ -4,6 +4,7 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { places } from '../../data/load';
+import { appStore } from '../../state/store';
 import { clearWorld, resetWorldCache, saveWorldMe, saveWorldPlaces } from '../../state/world';
 import { FchError, stableHash } from '../save/fch';
 import { direction, formatDistance, metresBetween, nearest, spots } from './nearby';
@@ -11,7 +12,10 @@ import { WorldPage } from './WorldPage';
 import { familyIndex, parseWorld, WORLD_DATA_VERSION } from './worldFile';
 
 /** A world file as the game writes it: version, net time, then the gzip-packed zone system block. */
-async function buildWorld(list: { prefab: string; x: number; z: number }[], version = WORLD_DATA_VERSION) {
+async function buildWorld(
+  list: { prefab: string; x: number; z: number }[],
+  version = WORLD_DATA_VERSION,
+) {
   const inner: number[] = [];
   const bytes = (n: number, write: (v: DataView) => void) => {
     const v = new DataView(new ArrayBuffer(n));
@@ -43,7 +47,9 @@ async function buildWorld(list: { prefab: string; x: number; z: number }[], vers
       controller.close();
     },
   });
-  const packed = new Uint8Array(await new Response(source.pipeThrough(new CompressionStream('gzip'))).arrayBuffer());
+  const packed = new Uint8Array(
+    await new Response(source.pipeThrough(new CompressionStream('gzip'))).arrayBuffer(),
+  );
   const head = new DataView(new ArrayBuffer(16));
   head.setInt32(0, version, true);
   head.setFloat64(4, 1234, true);
@@ -116,7 +122,7 @@ describe('WorldPage', () => {
   });
   afterEach(() => {
     cleanup();
-    clearWorld();
+    clearWorld(appStore.getState().active);
   });
 
   const open = () =>
@@ -133,15 +139,22 @@ describe('WorldPage', () => {
   });
 
   it('lists places nearest first from the chosen spot', async () => {
-    saveWorldPlaces('_main.1.db2', { Crypt: [900, 0, 100, 0], TrollCave: [0, 5000] }, 3);
-    saveWorldMe({ name: 'Venom', home: { x: 0, z: 0 } });
+    saveWorldPlaces(
+      appStore.getState().active,
+      '_main.1.db2',
+      { Crypt: [900, 0, 100, 0], TrollCave: [0, 5000] },
+      3,
+    );
+    saveWorldMe(appStore.getState().active, { name: 'Venom', home: { x: 0, z: 0 } });
     open();
     expect(screen.getByText(/3 places?/)).toBeTruthy();
     expect(screen.getByText(/and 3 the game files do not name/)).toBeTruthy();
     const crypt = screen.getByText('Burial Chamber').closest('li')!;
     expect(within(crypt).getByText(/2 in this world · nearest 100 m east/)).toBeTruthy();
     await userEvent.click(within(crypt).getByText('Burial Chamber'));
-    const items = within(crypt).getAllByRole('listitem').map((li) => li.textContent);
+    const items = within(crypt)
+      .getAllByRole('listitem')
+      .map((li) => li.textContent);
     expect(items).toEqual(['100 m east · east 100, north 0', '900 m east · east 900, north 0']);
   });
 });
