@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
-import { backupDue, daysSinceBackup } from '../state/backup';
+import { backupDue, daysSinceBackup, snoozeBackup } from '../state/backup';
 import { useGameChecks } from '../state/gameChecks';
 import { useProfile } from '../state/store';
 import styles from './BackupNudge.module.css';
@@ -14,18 +14,24 @@ export function BackupNudge() {
   const hasData =
     profile.character !== undefined ||
     Object.keys(gameChecks).length > 0 ||
-    Object.keys(profile.progress).length > 0;
+    Object.keys(profile.progress).length > 0 ||
+    (profile.portals ?? []).length > 0 ||
+    Object.keys(profile.notes).length > 0 ||
+    profile.favorites.materials.length + profile.favorites.recipes.length + profile.favorites.gear.length > 0;
 
   if (hidden || !hasData || pathname === '/profile' || !backupDue()) return null;
   const days = daysSinceBackup();
   return (
     <p role="status" className={styles.nudge}>
       <span>
-        {days === null ? 'You have not made a backup yet.' : `Your last backup was ${days} days ago.`} Your ticks live
+        {days === null ? 'You have not made a backup yet.' : `Your last backup was ${days} days ago.`} Your ticks, portals and notes live
         only in this browser.
       </span>
       <Link to="/profile">Back up now</Link>
-      <button type="button" onClick={() => setHidden(true)}>
+      <button type="button" onClick={() => {
+          snoozeBackup();
+          setHidden(true);
+        }}>
         Later
       </button>
     </p>

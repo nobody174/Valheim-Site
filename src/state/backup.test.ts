@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { backupDue, daysSinceBackup, markBackup } from './backup';
+import { backupDue, daysSinceBackup, markBackup, snoozeBackup } from './backup';
 
 afterEach(() => {
   localStorage.clear();
@@ -27,6 +27,13 @@ describe('backup reminder', () => {
     expect(backupDue(day(30))).toBe(false);
     expect(daysSinceBackup(day(30))).toBe(10);
     expect(backupDue(day(34))).toBe(true);
+  });
+
+  it('stays quiet for a day after Later', () => {
+    backupDue(day(0));
+    snoozeBackup(day(20));
+    expect(backupDue(day(20))).toBe(false);
+    expect(backupDue(day(21))).toBe(true);
   });
 
   it('ignores a corrupt stored value', () => {

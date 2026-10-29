@@ -21,7 +21,7 @@ describe('linkStates', () => {
 
   it('switches three with one name off, and ignores a portal that is down', () => {
     const three = linkStates([portal('1', 'x'), portal('2', 'x'), portal('3', 'x')]);
-    expect([...three.values()]).toEqual(['crowded', 'crowded', 'crowded']);
+    expect([...three.values()]).toEqual(['crowded', 'crowded', 'crowded']); // the game pairs two; which two is random
     const down = linkStates([portal('1', 'x'), portal('2', 'x', true)]);
     expect(down.get('1')).toBe('alone');
     expect(down.get('2')).toBe('down');
@@ -54,7 +54,7 @@ describe('PortalsPage', () => {
         <PortalsPage />
       </MemoryRouter>,
     );
-    await user.type(screen.getByLabelText('Name on the portal'), 'boat');
+    await user.type(screen.getByLabelText(/Name on the portal/), 'boat');
     await user.type(screen.getByLabelText('To'), 'Island base');
     await user.click(screen.getByRole('button', { name: 'Add portal' }));
     const state = appStore.getState();

@@ -573,3 +573,12 @@
     min-width: 44px;
   }
 }
+
+@media (pointer: coarse) {
+  .toggle,
+  .tools a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}

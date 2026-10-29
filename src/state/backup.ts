@@ -30,6 +30,26 @@ function read(now: Date): BackupInfo {
   }
 }
 
+const SNOOZE_KEY = 'vcs:v1:backup-snooze';
+
+/** "Later" on the reminder: stay quiet for a day. */
+export function snoozeBackup(now = new Date()): void {
+  try {
+    localStorage.setItem(SNOOZE_KEY, now.toISOString());
+  } catch {
+    // Blocked storage: the reminder comes back on the next page load.
+  }
+}
+
+function snoozed(now: Date): boolean {
+  try {
+    const at = Date.parse(localStorage.getItem(SNOOZE_KEY) ?? '');
+    return !Number.isNaN(at) && now.getTime() - at < DAY_MS;
+  } catch {
+    return false;
+  }
+}
+
 export function markBackup(now = new Date()): void {
   try {
     localStorage.setItem(KEY, JSON.stringify({ ...read(now), last: now.toISOString() }));
@@ -47,5 +67,5 @@ export function daysSinceBackup(now = new Date()): number | null {
 /** True when a backup is overdue: the last one (or, with none, the first visit) is old enough. */
 export function backupDue(now = new Date()): boolean {
   const { last, since } = read(now);
-  return now.getTime() - Date.parse(last ?? since) >= BACKUP_EVERY_DAYS * DAY_MS;
+  return !snoozed(now) && now.getTime() - Date.parse(last ?? since) >= BACKUP_EVERY_DAYS * DAY_MS;
 }

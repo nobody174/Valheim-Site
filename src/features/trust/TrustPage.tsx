@@ -22,6 +22,12 @@ export function TrustPage() {
         Nearly everything here is read from the game&apos;s own files, which is accurate but is not the same as seeing
         it work in game. This page says how much is checked and what is still a guess.
       </p>
+      <p className={styles.dimNote}>
+        An entry counts as &quot;seen in game&quot; when at least one of its lines was checked, for example a
+        weapon&apos;s damage and durability, a food&apos;s numbers, or where to find an item. The zone table counts
+        items, creatures, bosses, weapons, armor, food and trophies; recipes, stations and building pieces belong to
+        no zone, so the zone rows add up to less than the total.
+      </p>
 
       <div className={tiles.tiles}>
         <div className={tiles.tile}>
@@ -76,14 +82,13 @@ export function TrustPage() {
           <summary>
             <strong>{g.entries.length}</strong> {g.reason}
           </summary>
-          <p>
-            {g.entries.map((e, i) => (
-              <span key={e.id}>
-                {i > 0 && ', '}
+          <ul className={tiles.names}>
+            {g.entries.map((e) => (
+              <li key={e.id}>
                 <EntityLink id={e.id} />
-              </span>
+              </li>
             ))}
-          </p>
+          </ul>
         </details>
       ))}
 

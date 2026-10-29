@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { EntityLink } from '../../components/EntityLink';
-import { GuideTag } from '../../components/Badges';
 import { Intro } from '../../components/Intro';
 import { gameData } from '../../data/load';
 import { newId, type Portal } from '../../state/model';
@@ -11,7 +10,7 @@ import styles from './Portals.module.css';
 const STATUS: Record<LinkState, string> = {
   linked: 'Connected to the other portal with this name',
   alone: 'No other portal has this exact name, so it goes nowhere',
-  crowded: 'More than two portals share this name, so they are all off',
+  crowded: 'More than two portals share this name: the game pairs two of them and the rest go nowhere',
   down: 'Taken down',
 };
 
@@ -47,8 +46,8 @@ export function PortalsPage() {
 
       <form className={styles.form} onSubmit={save} aria-label="Add or edit a portal">
         <label>
-          Name on the portal
-          <input value={draft.name} maxLength={40} onChange={(e) => set('name', e.target.value)} placeholder="portal 2" />
+          Name on the portal (10 letters at most)
+          <input value={draft.name} maxLength={10} onChange={(e) => set('name', e.target.value)} placeholder="portal 2" />
         </label>
         <label>
           From
@@ -121,24 +120,25 @@ export function PortalsPage() {
       )}
 
       <h2>How portals work</h2>
+      <p className={styles.dimNote}>Read from the game&apos;s own code (the version in the data), not yet tried in game.</p>
       <ul className={styles.rules}>
         <li>
-          A portal leads to the other portal with <strong>exactly the same name</strong>. Capital letters count, so
-          &quot;Home&quot; and &quot;home&quot; do not meet. <GuideTag />
+          A portal pairs with another standing portal that has <strong>exactly the same name</strong>. Capital letters
+          count, so &quot;Home&quot; and &quot;home&quot; never meet. A name holds 10 letters at most. Portals with no
+          name at all pair up with each other too.
         </li>
         <li>
-          Renaming one end (press E on it) cuts it off from its partner, because the names no longer match. Give the
-          other end the same new name and they connect again; you have to visit both. Taking a portal down and building
-          it again somewhere else with the same name restores the link. <GuideTag />
+          Renaming one end (press E on it) breaks its link, because the names no longer match. Give the other end the
+          same new name and they pair up again; you have to visit both. Taking a portal down and building it again
+          with the same name works the same way.
         </li>
         <li>
-          Only two standing portals can share a name. With three, none of them work until you rename or remove one.{' '}
-          <GuideTag />
+          Portals pair two by two. If three share a name, two are paired (the game picks which) and the third has no
+          partner until one pair is broken. The pair that already works is not switched off.
         </li>
         <li>
           Portals also refuse you while you carry any of the items below. The game files mark them as not portable;
-          tools, weapons, armor and everything else can go through. A world setting called &quot;portals allow
-          everything&quot; lifts this.
+          tools, weapons, armor and everything else can go through. A world setting in the game can lift this.
         </li>
       </ul>
       <h3>Cannot go through a portal</h3>

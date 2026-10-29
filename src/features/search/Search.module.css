@@ -317,3 +317,11 @@
     display: none;
   }
 }
+
+@media (pointer: coarse) {
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
