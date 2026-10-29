@@ -89,3 +89,10 @@
 .canvas :global(.react-flow__controls-button:hover) {
   background: var(--iron);
 }
+
+/* On a phone the overview map covers half the canvas; panning and the zoom buttons are enough. */
+@media (max-width: 700px) {
+  .canvas :global(.react-flow__minimap) {
+    display: none;
+  }
+}

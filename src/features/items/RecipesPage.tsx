@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useProgressive } from '../../components/useProgressive';
 import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
@@ -88,19 +89,47 @@ export function RecipesPage() {
       {groups.length === 0 && (
         <p className={styles.empty}>No recipes match. Try a shorter search.</p>
       )}
-      {groups.map((g) => (
-        <section key={g.id} className={styles.section}>
-          <h2>
-            {g.id === NO_STATION ? g.label : <EntityLink id={g.id} />}{' '}
-            <span className={styles.count}>{g.recipes.length}</span>
-          </h2>
-          <div className={styles.recipeGrid}>
-            {g.recipes.map((r) => (
-              <RecipeBlock key={r.id} recipe={r} />
-            ))}
-          </div>
-        </section>
-      ))}
+      <RecipeGroups key={`${text}|${station}`} groups={groups} total={total} />
     </section>
+  );
+}
+
+type Group = { id: string; label: string; recipes: Recipe[] };
+
+/** The grouped list, drawn in steps so the page opens fast; the rest loads as you scroll. */
+function RecipeGroups({ groups, total }: { groups: Group[]; total: number }) {
+  const { count, hasMore, sentinelRef, showAll } = useProgressive(total, 60);
+  // Each group shows what is left of the budget after the groups before it.
+  const slices = groups.reduce<{ g: Group; shown: Recipe[] }[]>((acc, g) => {
+    const used = acc.reduce((n, x) => n + x.shown.length, 0);
+    return [...acc, { g, shown: g.recipes.slice(0, Math.max(count - used, 0)) }];
+  }, []);
+  return (
+    <>
+      {slices.map(({ g, shown }) => {
+        if (shown.length === 0) return null;
+        return (
+          <section key={g.id} className={styles.section}>
+            <h2>
+              {g.id === NO_STATION ? g.label : <EntityLink id={g.id} />}{' '}
+              <span className={styles.count}>{g.recipes.length}</span>
+            </h2>
+            <div className={styles.recipeGrid}>
+              {shown.map((r) => (
+                <RecipeBlock key={r.id} recipe={r} />
+              ))}
+            </div>
+          </section>
+        );
+      })}
+      {hasMore && (
+        <p ref={sentinelRef} className={styles.dim}>
+          Showing {count} of {total} recipes.{' '}
+          <button type="button" onClick={showAll}>
+            Show all
+          </button>
+        </p>
+      )}
+    </>
   );
 }
