@@ -2,7 +2,7 @@ import { quickCard, quickText, type QuickLine } from '../data/quick';
 import { EntityLink } from './EntityLink';
 import styles from './QuickCard.module.css';
 
-const GUIDE_TITLE = 'Written by hand from guides; not checked in game';
+const GUIDE_TITLE = 'Written by hand from community guides; not checked in game yet';
 
 function Parts({ line, onMore }: { line: QuickLine; onMore?: () => void }) {
   return (
@@ -20,7 +20,7 @@ function Parts({ line, onMore }: { line: QuickLine; onMore?: () => void }) {
       })}
       {line.guide && (
         <span className={styles.guide} title={GUIDE_TITLE}>
-          guide
+          unchecked
         </span>
       )}
     </>
@@ -57,7 +57,7 @@ export function QuickSummary({ line }: { line: QuickLine | undefined }) {
   return (
     <span className={styles.summary} title={quickText(line)}>
       {quickText(line)}
-      {line.guide && <span className={styles.guide}>guide</span>}
+      {line.guide && <span className={styles.guide}>unchecked</span>}
     </span>
   );
 }
