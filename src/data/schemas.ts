@@ -339,6 +339,8 @@ export const PlaceSchema = z
     /** How many the game tries to place in a world, summed over its variants. */
     quantity: z.number().int().positive(),
     variants: z.number().int().positive(),
+    /** The game's prefab names for this family; a world file refers to a place by the hash of one of them. */
+    prefabs: z.array(z.string().min(1)).min(1),
     kind: z.enum(['dungeon', 'altar', 'merchant', 'quest', 'other']),
     /** Hand-written, from guides; shown with the "guide, not checked" tag. */
     note: z.string().optional(),

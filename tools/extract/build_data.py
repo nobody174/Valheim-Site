@@ -179,10 +179,11 @@ def build_places(raw, biome_order, boss_ids, warnings):
     for name, loc in best.items():
         family = re.sub(r'_+', '_', re.sub(r'\d+', '', re.sub(r'_new\d*', '', name))).strip('_')
         zones = {BIOME_BITS[b] for b in BIOME_BITS if flags[name] & b and BIOME_BITS[b] in biome_order}
-        fam = families.setdefault(family, {'zones': set(), 'quantity': 0, 'variants': 0})
+        fam = families.setdefault(family, {'zones': set(), 'quantity': 0, 'variants': 0, 'prefabs': []})
         fam['zones'] |= zones
         fam['quantity'] += loc['m_quantity']
         fam['variants'] += 1
+        fam['prefabs'].append(name)
     places = []
     for family, fam in sorted(families.items()):
         if not fam['zones']:
@@ -191,7 +192,8 @@ def build_places(raw, biome_order, boss_ids, warnings):
         pretty = ' '.join(w[:1].upper() + w[1:] for w in re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', family.replace('_', ' ')).split())
         place = {'id': family, 'name': cfg.get('name', pretty),
                  'zones': [z for z in biome_order if z in fam['zones']],
-                 'quantity': fam['quantity'], 'variants': fam['variants'], 'kind': cfg.get('kind', 'other')}
+                 'quantity': fam['quantity'], 'variants': fam['variants'], 'kind': cfg.get('kind', 'other'),
+                 'prefabs': sorted(fam['prefabs'])}
         if cfg.get('note'):
             place['note'] = cfg['note']
         if cfg.get('boss'):

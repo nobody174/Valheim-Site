@@ -1,0 +1,152 @@
+.page {
+  max-width: 900px;
+}
+.panel {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+  margin: 1rem 0;
+}
+.panel h2 {
+  font-family: var(--font-heading);
+  color: var(--gold);
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
+}
+.dim {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+.button {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  background: var(--wood);
+  color: var(--text);
+  border: 2px solid var(--wood-light);
+  border-radius: 999px;
+  box-shadow: var(--shadow-chunk);
+  font: inherit;
+  cursor: pointer;
+}
+.button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+.link {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--gold);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hint {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+.hint code {
+  overflow-wrap: anywhere;
+}
+.error {
+  color: var(--ember);
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.form label {
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+}
+.map {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 1;
+  display: block;
+  background: #120d09;
+  border: 2px solid var(--wood);
+  border-radius: 12px;
+}
+.edge {
+  fill: none;
+  stroke: var(--wood-light);
+  stroke-width: 40;
+}
+.axis {
+  stroke: var(--wood);
+  stroke-width: 20;
+}
+.me circle:first-child {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 40;
+}
+.me circle:last-child {
+  fill: var(--text);
+}
+.list {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.place {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+  padding: 0.6rem 0.8rem;
+  background: #120d09;
+  border: 2px solid var(--wood);
+  border-radius: 12px;
+}
+.place details {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+.place summary {
+  cursor: pointer;
+}
+.swatch {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.45rem;
+  border-radius: 50%;
+}
+.spots {
+  margin: 0.3rem 0 0;
+  padding-left: 1.4rem;
+  font-size: 0.9rem;
+}
+.onMap {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+@media (pointer: coarse) {
+  .onMap,
+  .place summary,
+  .button {
+    min-height: 44px;
+  }
+  .link {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

@@ -30,6 +30,21 @@ export interface ParsedSkill {
   level: number;
 }
 
+/** A spot in a world, on the ground plane: x is east, z is north, in metres from the middle of the map. */
+export interface MapPoint {
+  x: number;
+  z: number;
+}
+
+/** What the character remembers about one world it has played in. */
+export interface WorldMemory {
+  /** The world's id as text (the game stores it as a 64-bit number). */
+  id: string;
+  home?: MapPoint;
+  logout?: MapPoint;
+  death?: MapPoint;
+}
+
 export interface ParsedCharacter {
   fileVersion: number;
   name: string;
@@ -53,6 +68,7 @@ export interface ParsedCharacter {
   knownBiomes: string[];
   foods: { name: string; secondsLeft: number }[];
   skills: ParsedSkill[];
+  worlds: WorldMemory[];
 }
 
 export class FchError extends Error {}
@@ -70,7 +86,7 @@ export function stableHash(text: string): number {
 }
 
 /** Little-endian reader with the same primitives as the game's ZPackage / .NET BinaryReader. */
-class Reader {
+export class Reader {
   private pos = 0;
   private readonly view: DataView;
   private readonly bytes: Uint8Array;
@@ -102,6 +118,12 @@ class Reader {
     const v = this.view.getInt32(this.pos, true);
     this.pos += 4;
     return v;
+  }
+  /** A 3D point, kept as the ground position (the height is dropped). */
+  point(): MapPoint {
+    const x = this.float();
+    this.float();
+    return { x, z: this.float() };
   }
   float(): number {
     this.need(4);
@@ -210,15 +232,20 @@ export function parseCharacter(file: Uint8Array): ParsedCharacter {
   }
 
   r.bool(); // first spawn
+  const worlds: WorldMemory[] = [];
   for (let i = 0, n = r.count(1000); i < n; i++) {
-    r.long(); // world id
+    const world: WorldMemory = { id: String(r.long()) };
     r.bool();
     r.skip(12); // custom spawn point
-    r.bool();
-    r.skip(12); // logout point
-    r.bool();
-    r.skip(12); // death point
-    r.skip(12); // home point
+    const haveLogout = r.bool();
+    const logout = r.point();
+    const haveDeath = r.bool();
+    const death = r.point();
+    const home = r.point();
+    if (haveLogout) world.logout = logout;
+    if (haveDeath) world.death = death;
+    if (home.x !== 0 || home.z !== 0) world.home = home;
+    worlds.push(world);
     if (r.bool()) r.byteArray(); // map
   }
 
@@ -326,5 +353,6 @@ export function parseCharacter(file: Uint8Array): ParsedCharacter {
     knownBiomes,
     foods,
     skills,
+    worlds,
   };
 }
