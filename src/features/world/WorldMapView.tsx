@@ -4,6 +4,14 @@ import type { Spot } from './nearby';
 import { METRES_PER_PIXEL } from './terrain';
 import styles from './World.module.css';
 
+export interface MapPortal {
+  id: string;
+  name: string;
+  x: number;
+  z: number;
+  down: boolean;
+}
+
 export interface MapLayer {
   id: string;
   colour: string;
@@ -22,6 +30,8 @@ const SIZE = 900;
 const FULL = 21000 / SIZE;
 const CLOSEST = 1.5;
 const LABEL_BELOW = 14;
+const PORTAL_COLOUR = '#b48cf2';
+const CLICK_SLOP = 5;
 const PIN_COLOUR: Record<number, string> = {
   9: '#d3a73b',
   4: '#e0742a',
@@ -39,11 +49,18 @@ export function WorldMapView({
   image,
   layers,
   pins,
+  portals,
+  placing,
+  onPlace,
   reference,
 }: {
   image: HTMLCanvasElement | null;
   layers: MapLayer[];
   pins: MapPin[];
+  portals: MapPortal[];
+  /** When set, the next click on the map reports a position instead of moving the map. */
+  placing: boolean;
+  onPlace: (spot: Spot) => void;
   reference: Spot | null;
 }) {
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -51,7 +68,7 @@ export function WorldMapView({
     reference ? { x: reference.x, z: reference.z, mpp: 6 } : { x: 0, z: 0, mpp: FULL },
   );
   const [cursor, setCursor] = useState<Spot | null>(null);
-  const drag = useRef<{ id: number; u: number; v: number } | null>(null);
+  const drag = useRef<{ id: number; u: number; v: number; u0: number; v0: number } | null>(null);
 
   useEffect(() => {
     const ctx = canvas.current?.getContext('2d');
@@ -118,6 +135,30 @@ export function WorldMapView({
       }
     }
 
+    for (const portal of portals) {
+      const sx = u(portal.x);
+      const sy = v(portal.z);
+      if (sx < -12 || sy < -12 || sx > SIZE + 12 || sy > SIZE + 12) continue;
+      ctx.globalAlpha = portal.down ? 0.5 : 1;
+      ctx.strokeStyle = PORTAL_COLOUR;
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(sx, sy, 8, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.fillStyle = PORTAL_COLOUR;
+      ctx.beginPath();
+      ctx.arc(sx, sy, 3, 0, Math.PI * 2);
+      ctx.fill();
+      if (view.mpp < LABEL_BELOW * 2) {
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = 'rgba(0,0,0,0.85)';
+        ctx.strokeText(portal.name, sx + 12, sy + 4);
+        ctx.fillStyle = '#e4d3ff';
+        ctx.fillText(portal.name, sx + 12, sy + 4);
+      }
+      ctx.globalAlpha = 1;
+    }
+
     if (reference) {
       const sx = u(reference.x);
       const sy = v(reference.z);
@@ -131,7 +172,7 @@ export function WorldMapView({
       ctx.arc(sx, sy, 3.5, 0, Math.PI * 2);
       ctx.fill();
     }
-  }, [image, layers, pins, reference, view]);
+  }, [image, layers, pins, portals, reference, view]);
 
   // The wheel needs a non-passive listener to stop the page from scrolling while the map zooms.
   useEffect(() => {
@@ -174,17 +215,19 @@ export function WorldMapView({
         width={SIZE}
         height={SIZE}
         className={styles.canvas}
+        data-placing={placing || undefined}
         role="img"
         aria-label="Map of the world. Drag to move, scroll or use the buttons to zoom."
         onPointerDown={(e) => {
           e.currentTarget.setPointerCapture(e.pointerId);
-          drag.current = { id: e.pointerId, ...at(e) };
+          const p = at(e);
+          drag.current = { id: e.pointerId, ...p, u0: p.u, v0: p.v };
         }}
         onPointerMove={(e) => {
           const p = at(e);
           const d = drag.current;
           if (d && d.id === e.pointerId) {
-            drag.current = { id: d.id, ...p };
+            drag.current = { ...d, ...p };
             setView((w) => ({ ...w, x: w.x - (p.u - d.u) * w.mpp, z: w.z + (p.v - d.v) * w.mpp }));
           }
           setCursor({
@@ -192,7 +235,18 @@ export function WorldMapView({
             z: view.z - (p.v - SIZE / 2) * view.mpp,
           });
         }}
-        onPointerUp={() => (drag.current = null)}
+        onPointerUp={(e) => {
+          const d = drag.current;
+          drag.current = null;
+          if (!placing || !d) return;
+          const p = at(e);
+          // A click, not the end of a drag.
+          if (Math.hypot(p.u - d.u0, p.v - d.v0) > CLICK_SLOP) return;
+          onPlace({
+            x: view.x + (p.u - SIZE / 2) * view.mpp,
+            z: view.z - (p.v - SIZE / 2) * view.mpp,
+          });
+        }}
         onPointerCancel={() => (drag.current = null)}
         onPointerLeave={() => setCursor(null)}
       />

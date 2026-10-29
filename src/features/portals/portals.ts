@@ -25,5 +25,14 @@ export function caseClashes(portals: Portal[]): string[] {
     const key = p.name.toLowerCase();
     byLower.set(key, (byLower.get(key) ?? new Set()).add(p.name));
   }
-  return [...byLower.values()].filter((names) => names.size > 1).map((names) => [...names].join(' / '));
+  return [...byLower.values()]
+    .filter((names) => names.size > 1)
+    .map((names) => [...names].join(' / '));
+}
+
+/** Alphabetical, ignoring capitals and counting numbers as numbers: boat, portal 1, portal 2, portal 10. */
+export function sortPortals(portals: readonly Portal[]): Portal[] {
+  return [...portals].sort((a, b) =>
+    a.name.localeCompare(b.name, 'en', { numeric: true, sensitivity: 'base' }),
+  );
 }

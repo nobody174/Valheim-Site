@@ -4,12 +4,25 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { gameData } from '../../data/load';
-import { emptyProfile, initialState, withPortal, withoutPortal, type Portal } from '../../state/model';
+import {
+  emptyProfile,
+  initialState,
+  withPortal,
+  withoutPortal,
+  type Portal,
+} from '../../state/model';
 import { appStore } from '../../state/store';
 import { PortalsPage } from './PortalsPage';
-import { caseClashes, linkStates } from './portals';
+import { caseClashes, linkStates, sortPortals } from './portals';
 
-const portal = (id: string, name: string, down = false): Portal => ({ id, name, from: 'A', to: 'B', note: '', down });
+const portal = (id: string, name: string, down = false): Portal => ({
+  id,
+  name,
+  from: 'A',
+  to: 'B',
+  note: '',
+  down,
+});
 
 describe('linkStates', () => {
   it('links exactly two standing portals with the same name', () => {
@@ -28,7 +41,9 @@ describe('linkStates', () => {
   });
 
   it('finds names that differ only in capitals', () => {
-    expect(caseClashes([portal('1', 'Home'), portal('2', 'home'), portal('3', 'boat')])).toEqual(['Home / home']);
+    expect(caseClashes([portal('1', 'Home'), portal('2', 'home'), portal('3', 'boat')])).toEqual([
+      'Home / home',
+    ]);
   });
 });
 
@@ -38,7 +53,9 @@ describe('portal edits', () => {
     p = withPortal(p, portal('1', '  boat  '));
     p = withPortal(p, { ...portal('1', 'boat'), to: 'Island base' });
     p = withPortal(p, portal('2', '   '));
-    expect(p.portals).toEqual([{ id: '1', name: 'boat', from: 'A', to: 'Island base', note: '', down: false }]);
+    expect(p.portals).toEqual([
+      { id: '1', name: 'boat', from: 'A', to: 'Island base', note: '', down: false },
+    ]);
     expect(withoutPortal(p, '1').portals).toEqual([]);
   });
 });
@@ -58,8 +75,36 @@ describe('PortalsPage', () => {
     await user.type(screen.getByLabelText('To'), 'Island base');
     await user.click(screen.getByRole('button', { name: 'Add portal' }));
     const state = appStore.getState();
-    expect(state.profiles[state.active]!.portals?.[0]).toMatchObject({ name: 'boat', to: 'Island base' });
+    expect(state.profiles[state.active]!.portals?.[0]).toMatchObject({
+      name: 'boat',
+      to: 'Island base',
+    });
     expect(screen.getByText(/No other portal has this exact name/)).toBeTruthy();
     expect(gameData.items.some((i) => i.portalBlocked)).toBe(true);
+  });
+});
+
+describe('sortPortals', () => {
+  it('puts portals in alphabetical order, numbers counted as numbers, capitals ignored', () => {
+    const names = sortPortals(
+      ['Portal 3', 'portal 10', 'Boat', 'portal 1', 'Portal 2'].map((n) => portal(n, n)),
+    ).map((p) => p.name);
+    expect(names).toEqual(['Boat', 'portal 1', 'Portal 2', 'Portal 3', 'portal 10']);
+  });
+
+  it('does not change the saved order', () => {
+    const list = [portal('1', 'b'), portal('2', 'a')];
+    sortPortals(list);
+    expect(list.map((p) => p.name)).toEqual(['b', 'a']);
+  });
+});
+
+describe('map position', () => {
+  it('is kept with the portal when saved', () => {
+    const p = withPortal(emptyProfile('x', 'X'), { ...portal('1', 'boat'), x: 120.4, z: -80 });
+    expect(p.portals?.[0]).toMatchObject({ x: 120.4, z: -80 });
+    expect(withPortal(emptyProfile('x', 'X'), portal('2', 'a')).portals?.[0]).not.toHaveProperty(
+      'x',
+    );
   });
 });

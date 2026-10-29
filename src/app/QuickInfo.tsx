@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { sortPortals } from '../features/portals/portals';
 import { useProfile } from '../state/store';
 import styles from './App.module.css';
 
@@ -8,7 +9,7 @@ import styles from './App.module.css';
  */
 export function QuickInfo() {
   const profile = useProfile();
-  const portals = profile.portals ?? [];
+  const portals = sortPortals(profile.portals ?? []);
   // Most portals lead back from one place (home); only the odd one out says where it starts.
   const counts = new Map<string, number>();
   for (const p of portals) counts.set(p.from, (counts.get(p.from) ?? 0) + 1);

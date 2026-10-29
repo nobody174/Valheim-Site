@@ -48,6 +48,9 @@ export const ProfileSchema = z
           to: z.string(),
           note: z.string(),
           down: z.boolean(),
+          /** Where it stands on the world map, in metres (east, north); set by clicking the map on My world. */
+          x: z.number().optional(),
+          z: z.number().optional(),
         }),
       )
       .optional(),
@@ -198,7 +201,10 @@ export function effectiveHoard(item: Pick<Item, 'id' | 'hoard'>, profile: Profil
 
 /** Which favorites list an item belongs to. Recipes are favorited by recipe id instead. */
 export function favoriteKindOf(category: Item['category']): FavoriteKind {
-  return category === 'weapon' || category === 'armor' || category === 'tool' || category === 'trinket'
+  return category === 'weapon' ||
+    category === 'armor' ||
+    category === 'tool' ||
+    category === 'trinket'
     ? 'gear'
     : 'materials';
 }
@@ -291,11 +297,15 @@ export function withPortal(profile: Profile, portal: Portal): Profile {
     to: trim(portal.to, 60),
     note: trim(portal.note, 300),
     down: portal.down,
+    ...(Number.isFinite(portal.x) && Number.isFinite(portal.z) && { x: portal.x, z: portal.z }),
   };
   if (!clean.name) return profile;
   const current = profile.portals ?? [];
   const exists = current.some((p) => p.id === clean.id);
-  return { ...profile, portals: exists ? current.map((p) => (p.id === clean.id ? clean : p)) : [...current, clean] };
+  return {
+    ...profile,
+    portals: exists ? current.map((p) => (p.id === clean.id ? clean : p)) : [...current, clean],
+  };
 }
 
 export function withoutPortal(profile: Profile, id: string): Profile {
