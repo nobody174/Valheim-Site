@@ -30,6 +30,14 @@ describe('item page', () => {
     expect(screen.getByRole('heading', { name: 'Used in' })).toBeTruthy();
   });
 
+  it('warns that ore cannot go through a portal, and says nothing for ordinary items', () => {
+    renderAt('/item/CopperOre');
+    expect(screen.getByText(/portal will not let you through/)).toBeTruthy();
+    cleanup();
+    renderAt('/item/Wood');
+    expect(screen.queryByText(/portal will not let you through/)).toBeNull();
+  });
+
   it('puts the recipe and where to get it before the progress block, and ids in a folded Details', () => {
     renderAt('/item/SwordBronze');
     const order = (name: string | RegExp) =>
@@ -100,7 +108,7 @@ describe('link integrity', () => {
     const broken: string[] = [];
     for (const a of container.querySelectorAll('a')) {
       const href = a.getAttribute('href') ?? '';
-      if (href.startsWith('/planner') || href.startsWith('/upgrades') || href.startsWith('/compare') || href.startsWith('/graph') || href.startsWith('/skills')) continue; // tool pages
+      if (href.startsWith('/planner') || href.startsWith('/upgrades') || href.startsWith('/compare') || href.startsWith('/graph') || href.startsWith('/skills') || href.startsWith('/portals')) continue; // tool pages
       const [, kind, id] = href.split('/');
       if (!targets[kind]?.(decodeURIComponent(id)))
         broken.push(`${path} -> ${a.getAttribute('href')}`);

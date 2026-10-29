@@ -329,6 +329,12 @@ export function ItemPage() {
         </section>
       )}
 
+      {item.portalBlocked && (
+        <p className={styles.dimNote} role="note">
+          A portal will not let you through while you carry this. See <Link to="/portals">My portals</Link>.
+        </p>
+      )}
+
       <Stats id={id} />
 
       <ItemActions item={item} />
