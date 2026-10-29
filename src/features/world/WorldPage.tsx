@@ -119,6 +119,8 @@ export function WorldPage() {
   const [showPins, setShowPins] = useState(true);
   const profile = useProfile();
   const [placing, setPlacing] = useState('');
+  const [focus, setFocus] = useState<(Spot & { n: number }) | null>(null);
+  const mapTop = useRef<HTMLHeadingElement>(null);
   const map = useWorldMap(profileId, fog);
   const zones = lookup.allBiomes();
   const characterName = useApp((s) => s.profiles[s.active].character?.name);
@@ -513,7 +515,7 @@ export function WorldPage() {
 
       {(hasPlaces || map.hasTerrain) && (
         <section className={styles.panel} aria-label="Map">
-          <h2>Map</h2>
+          <h2 ref={mapTop}>Map</h2>
           <div className={styles.form}>
             {map.saved && (
               <>
@@ -569,7 +571,8 @@ export function WorldPage() {
                   .savePortal({ ...portal, x: Math.round(spot.x), z: Math.round(spot.z) });
               setPlacing('');
             }}
-            key={reference ? 'me' : 'none'}
+            key={`${reference ? 'me' : 'none'}:${focus?.n ?? 0}`}
+            focus={focus}
             image={map.image}
             layers={layers}
             pins={showPins && map.saved ? map.saved.pins : NO_PINS}
@@ -580,7 +583,8 @@ export function WorldPage() {
             {map.hasTerrain
               ? 'The land is the game’s own map of this world.'
               : 'Without the map files (step 3) there is no land, only the places.'}{' '}
-            It starts with the boss altars; tick more places below to draw them.
+            It starts with the boss altars. Under Places, tap “Show on map” next to any spot to jump
+            to it and see how far it is from you.
           </p>
         </section>
       )}
@@ -642,7 +646,18 @@ export function WorldPage() {
                         <li key={`${s.x},${s.z}`}>
                           {s.metres !== undefined &&
                             `${formatDistance(s.metres)} ${s.direction} · `}
-                          east {s.x}, north {s.z}
+                          east {s.x}, north {s.z}{' '}
+                          <button
+                            type="button"
+                            className={styles.link}
+                            onClick={() => {
+                              setOnMap((on) => new Set(on).add(place.id));
+                              setFocus({ x: s.x, z: s.z, n: (focus?.n ?? 0) + 1 });
+                              mapTop.current?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                          >
+                            Show on map
+                          </button>
                         </li>
                       ))}
                     </ol>

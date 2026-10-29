@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import type { MapPin } from './mapData';
-import type { Spot } from './nearby';
+import { direction, formatDistance, metresBetween, type Spot } from './nearby';
 import { METRES_PER_PIXEL } from './terrain';
 import styles from './World.module.css';
 
@@ -53,6 +53,7 @@ export function WorldMapView({
   placing,
   onPlace,
   reference,
+  focus,
 }: {
   image: HTMLCanvasElement | null;
   layers: MapLayer[];
@@ -62,11 +63,22 @@ export function WorldMapView({
   placing: boolean;
   onPlace: (spot: Spot) => void;
   reference: Spot | null;
+  /** A spot to show: the map opens on it, with a ring and the way from the reference. */
+  focus: Spot | null;
 }) {
   const canvas = useRef<HTMLCanvasElement>(null);
-  const [view, setView] = useState<View>(() =>
-    reference ? { x: reference.x, z: reference.z, mpp: 6 } : { x: 0, z: 0, mpp: FULL },
-  );
+  const [view, setView] = useState<View>(() => {
+    if (focus && reference) {
+      const reach = Math.max(Math.abs(focus.x - reference.x), Math.abs(focus.z - reference.z));
+      return {
+        x: (focus.x + reference.x) / 2,
+        z: (focus.z + reference.z) / 2,
+        mpp: clamp((reach * 1.6) / SIZE, CLOSEST, FULL),
+      };
+    }
+    if (focus) return { x: focus.x, z: focus.z, mpp: 10 };
+    return reference ? { x: reference.x, z: reference.z, mpp: 6 } : { x: 0, z: 0, mpp: FULL };
+  });
   const [cursor, setCursor] = useState<Spot | null>(null);
   const drag = useRef<{ id: number; u: number; v: number; u0: number; v0: number } | null>(null);
 
@@ -159,6 +171,35 @@ export function WorldMapView({
       ctx.globalAlpha = 1;
     }
 
+    if (focus) {
+      const fx = u(focus.x);
+      const fy = v(focus.z);
+      if (reference) {
+        ctx.setLineDash([8, 6]);
+        ctx.strokeStyle = '#ffe28a';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(u(reference.x), v(reference.z));
+        ctx.lineTo(fx, fy);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        const text = `${formatDistance(metresBetween(reference, focus))} ${direction(reference, focus)}`;
+        const mx = (u(reference.x) + fx) / 2;
+        const my = (v(reference.z) + fy) / 2;
+        ctx.font = '700 15px Inter, system-ui, sans-serif';
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = 'rgba(0,0,0,0.9)';
+        ctx.strokeText(text, mx + 8, my - 8);
+        ctx.fillStyle = '#ffe28a';
+        ctx.fillText(text, mx + 8, my - 8);
+      }
+      ctx.strokeStyle = '#ffe28a';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(fx, fy, 14, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+
     if (reference) {
       const sx = u(reference.x);
       const sy = v(reference.z);
@@ -172,7 +213,7 @@ export function WorldMapView({
       ctx.arc(sx, sy, 3.5, 0, Math.PI * 2);
       ctx.fill();
     }
-  }, [image, layers, pins, portals, reference, view]);
+  }, [image, layers, pins, portals, reference, focus, view]);
 
   // The wheel needs a non-passive listener to stop the page from scrolling while the map zooms.
   useEffect(() => {
@@ -284,7 +325,13 @@ export function WorldMapView({
           </button>
         )}
         <span className={styles.dim} aria-live="off">
-          {cursor ? `east ${Math.round(cursor.x)}, north ${Math.round(cursor.z)}` : 'Drag to move'}
+          {cursor
+            ? `east ${Math.round(cursor.x)}, north ${Math.round(cursor.z)}${
+                reference
+                  ? ` · ${formatDistance(metresBetween(reference, cursor))} ${direction(reference, cursor)} of you`
+                  : ''
+              }`
+            : 'Drag to move'}
         </span>
       </div>
     </div>
