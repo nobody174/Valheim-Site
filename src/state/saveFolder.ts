@@ -12,7 +12,7 @@ export interface FolderHandle {
 
 const DB = 'vcs:v1:folders';
 const STORE = 'handles';
-const KEY = 'characters';
+const CHARACTERS = 'characters';
 
 function open(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
@@ -23,12 +23,12 @@ function open(): Promise<IDBDatabase> {
   });
 }
 
-export async function rememberFolder(handle: FolderHandle): Promise<void> {
+export async function rememberFolder(handle: FolderHandle, key = CHARACTERS): Promise<void> {
   try {
     const db = await open();
     await new Promise<void>((resolve, reject) => {
       const tx = db.transaction(STORE, 'readwrite');
-      tx.objectStore(STORE).put(handle, KEY);
+      tx.objectStore(STORE).put(handle, key);
       tx.oncomplete = () => resolve();
       tx.onerror = () => reject(tx.error);
     });
@@ -38,11 +38,11 @@ export async function rememberFolder(handle: FolderHandle): Promise<void> {
   }
 }
 
-export async function recallFolder(): Promise<FolderHandle | null> {
+export async function recallFolder(key = CHARACTERS): Promise<FolderHandle | null> {
   try {
     const db = await open();
     const handle = await new Promise<FolderHandle | null>((resolve, reject) => {
-      const req = db.transaction(STORE).objectStore(STORE).get(KEY);
+      const req = db.transaction(STORE).objectStore(STORE).get(key);
       req.onsuccess = () => resolve((req.result as FolderHandle | undefined) ?? null);
       req.onerror = () => reject(req.error);
     });
