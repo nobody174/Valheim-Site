@@ -21,6 +21,7 @@
   "gear:AtgeirBronze",
   "gear:AxeBronze",
   "gear:AxeFlint",
+  "gear:AxeStone",
   "gear:Bow",
   "gear:HelmetBronze",
   "gear:HelmetLeather",
@@ -52,7 +53,13 @@
   "where:Blueberries",
   "where:CarrotSeeds",
   "where:CopperOre",
+  "where:Dandelion",
   "where:ElderBark",
+  "where:Feathers",
   "where:FineWood",
-  "where:MushroomYellow"
+  "where:FirCone",
+  "where:MushroomYellow",
+  "where:PineCone",
+  "where:RoundLog",
+  "where:Thistle"
 ]
