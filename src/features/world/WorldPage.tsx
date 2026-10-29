@@ -8,7 +8,7 @@ import {
   rememberFolder,
   type FolderHandle,
 } from '../../state/saveFolder';
-import { useApp } from '../../state/store';
+import { appStore, useApp, useProfile } from '../../state/store';
 import { places } from '../../data/load';
 import { lookup } from '../../data/lookup';
 import {
@@ -24,6 +24,7 @@ import { formatDistance, nearest, spots, type Near, type Spot } from './nearby';
 import type { MapPin } from './mapData';
 import type { Fog } from './terrain';
 import { useWorldMap } from './useWorldMap';
+import { sortPortals } from '../portals/portals';
 import { WorldMapView } from './WorldMapView';
 import { familyIndex, parseWorld } from './worldFile';
 import styles from './World.module.css';
@@ -116,6 +117,8 @@ export function WorldPage() {
   );
   const [fog, setFog] = useState<Fog>('dim');
   const [showPins, setShowPins] = useState(true);
+  const profile = useProfile();
+  const [placing, setPlacing] = useState('');
   const map = useWorldMap(profileId, fog);
   const zones = lookup.allBiomes();
   const characterName = useApp((s) => s.profiles[s.active].character?.name);
@@ -283,6 +286,15 @@ export function WorldPage() {
         .filter((r) => onMap.has(r.place.id))
         .map((r) => ({ id: r.place.id, colour: KIND_COLOUR_HEX[r.place.kind], spots: r.all })),
     [rows, onMap],
+  );
+  const mapPortals = useMemo(
+    () =>
+      (profile.portals ?? []).flatMap((p) =>
+        p.x !== undefined && p.z !== undefined
+          ? [{ id: p.id, name: p.name, x: p.x, z: p.z, down: p.down }]
+          : [],
+      ),
+    [profile.portals],
   );
   const hasPlaces = world !== null && Object.keys(world.places).length > 0;
   const toggle = (id: string) =>
@@ -524,7 +536,39 @@ export function WorldPage() {
               </>
             )}
           </div>
+          <div className={styles.form}>
+            <label>
+              Mark a portal on the map
+              <select value={placing} onChange={(e) => setPlacing(e.target.value)}>
+                <option value="">Choose a portal ...</option>
+                {sortPortals(profile.portals ?? []).map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.name}
+                    {p.x !== undefined ? ' (placed)' : ''}
+                  </option>
+                ))}
+              </select>
+            </label>
+            {placing && (
+              <p className={styles.dim}>
+                Click the map where it stands. Zoom in first for a close mark.{' '}
+                <button type="button" className={styles.link} onClick={() => setPlacing('')}>
+                  Done
+                </button>
+              </p>
+            )}
+          </div>
           <WorldMapView
+            portals={mapPortals}
+            placing={placing !== ''}
+            onPlace={(spot) => {
+              const portal = (profile.portals ?? []).find((p) => p.id === placing);
+              if (portal)
+                appStore
+                  .getState()
+                  .savePortal({ ...portal, x: Math.round(spot.x), z: Math.round(spot.z) });
+              setPlacing('');
+            }}
             key={reference ? 'me' : 'none'}
             image={map.image}
             layers={layers}

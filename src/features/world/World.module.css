@@ -181,3 +181,6 @@
   align-items: center;
   gap: 0.6rem;
 }
+.canvas[data-placing] {
+  cursor: crosshair;
+}

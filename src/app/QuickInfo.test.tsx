@@ -24,7 +24,7 @@ describe('QuickInfo', () => {
     expect(screen.getByText(/None yet/)).toBeTruthy();
   });
 
-  it('lists each portal with where it goes, and names the start only when it differs', () => {
+  it('lists each portal alphabetically with where it goes, and names the start only when it differs', () => {
     const { savePortal } = appStore.getState();
     savePortal({
       id: '1',
@@ -54,10 +54,10 @@ describe('QuickInfo', () => {
     show();
     const items = screen.getAllByRole('listitem').map((li) => li.textContent);
     expect(items).toEqual([
-      'portal 2 → Mountain',
       'boat → Island Base',
-      'portal 3 → Hildir’s Store · down',
       'far → Swamp (from Island Base)',
+      'portal 2 → Mountain',
+      'portal 3 → Hildir’s Store · down',
     ]);
   });
 });
