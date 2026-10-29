@@ -155,6 +155,9 @@ describe('WorldPage', () => {
     const items = within(crypt)
       .getAllByRole('listitem')
       .map((li) => li.textContent);
-    expect(items).toEqual(['100 m east · east 100, north 0', '900 m east · east 900, north 0']);
+    expect(items).toEqual([
+      '100 m east · east 100, north 0 Show on map',
+      '900 m east · east 900, north 0 Show on map',
+    ]);
   });
 });
