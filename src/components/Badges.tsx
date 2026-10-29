@@ -1,3 +1,4 @@
+import { HOARD_LABEL } from '../data/quick';
 import type { Item } from '../data/schemas';
 import styles from './Badges.module.css';
 
@@ -14,15 +15,6 @@ export function VerifiedBadge({ level, note }: { level: Item['verified']; note?:
     </span>
   );
 }
-
-const HOARD_LABEL: Record<Item['hoard'], string> = {
-  must_keep: 'Must keep',
-  keep_some: 'Keep some',
-  safe_discard: 'Safe to discard',
-  gear: 'Gear',
-  decorative: 'Decorative',
-  sell: 'Sell',
-};
 
 export const HOARD_OPTIONS = Object.entries(HOARD_LABEL) as [Item['hoard'], string][];
 

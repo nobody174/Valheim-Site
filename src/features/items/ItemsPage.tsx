@@ -7,6 +7,8 @@ import { lookup } from '../../data/lookup';
 import { effectiveHoard } from '../../state/model';
 import { useProfile } from '../../state/store';
 import { EntityIcon } from '../../components/EntityIcon';
+import { QuickSummary } from '../../components/QuickCard';
+import { summaryLine } from '../../data/quick';
 import cards from '../../components/Cards.module.css';
 import { useListView, ViewToggle } from '../../components/ViewToggle';
 import styles from './Items.module.css';
@@ -60,8 +62,8 @@ export function ItemsPage() {
       <h1>Items</h1>
       <Intro>
         <p>
-        Everything in the database. Use the hoard filter to see what to keep and what you can safely
-        throw away.
+          Everything in the database. Use the hoard filter to see what to keep and what you can
+          safely throw away.
         </p>
       </Intro>
       <div className={styles.filters}>
@@ -145,6 +147,7 @@ export function ItemsPage() {
                     </>
                   )}
                 </span>
+                <QuickSummary line={summaryLine(i.id)} />
                 <span className={cards.pills}>
                   <HoardBadge
                     hoard={effectiveHoard(i, profile)}
@@ -165,6 +168,7 @@ export function ItemsPage() {
                 <th>Category</th>
                 <th>Biome</th>
                 <th>Hoard</th>
+                <th className={styles.hideOnMobile}>Farm / used for</th>
                 <th className={styles.hideOnMobile}>Data</th>
               </tr>
             </thead>
@@ -182,6 +186,9 @@ export function ItemsPage() {
                       qty={i.recommendedQty}
                       custom={i.id in profile.hoardOverrides}
                     />
+                  </td>
+                  <td className={`${styles.hideOnMobile} ${styles.summaryCell}`}>
+                    <QuickSummary line={summaryLine(i.id)} />
                   </td>
                   <td className={styles.hideOnMobile}>
                     <VerifiedBadge level={i.verified} note={i.note} />

@@ -1,0 +1,69 @@
+/* The three-line answer: FARM / USED FOR / MAKE. The zone colour comes from data-zone on an ancestor. */
+.card {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.9rem 0 1rem;
+  padding: 0.8rem 0.9rem;
+  background: color-mix(in srgb, var(--zone, var(--wood-light)) 12%, #1c1611);
+  border: 2px solid var(--wood-light);
+  border-left: 5px solid var(--zone, var(--gold));
+  border-radius: 12px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 5.2rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.row dt {
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.row dd {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.guide {
+  margin-left: 0.4rem;
+  padding: 0 0.35rem;
+  color: var(--amber);
+  font-size: 0.7rem;
+  border: 1px solid var(--amber);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.more {
+  min-height: 44px;
+  padding: 0 0.25rem;
+  color: var(--gold);
+  font: inherit;
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.summary {
+  display: block;
+  overflow: hidden;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cell {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.none {
+  color: var(--text-dim);
+}

@@ -14,6 +14,8 @@ reviews the live site before the next phase starts.
 | 4 | Polish | done: v1.0 tagged and released on GitHub (2026-10-28), site linked from the repo; design pass 2 done (grouped sidebar, wood-and-parchment theme, cards with a Cards/List toggle) | 2 | Visual pass, mobile, a11y, performance, offline hardening |
 | 5 | Future expansion | started: personal notes per item and reading your Valheim character file ("My character" page), the Skills, Console commands, Update log and Dungeons & places pages done; the rest is picked by the owner | open | Backlog, picked as wanted |
 
+Quick card (2026-10-29): every item page opens with FARM / USED FOR / MAKE in three short lines, built by `src/data/quick.ts` from existing data (hand-written lines carry a small "guide" marker); the old blocks sit under "More details". Item cards and the zone page rows show the same lines. Not started: short guide-tagged use lines for items with no recipe (needs owner input).
+
 ## Why this order
 
 - **Phase 0 comes first** because the data schema and validation script decide whether the
