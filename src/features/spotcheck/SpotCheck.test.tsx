@@ -3,12 +3,12 @@ import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { gameData } from '../../data/load';
+import { confirmedChecks, gameData } from '../../data/load';
 import { adoptProfileChecks, resetGameChecksCache } from '../../state/gameChecks';
 import { initialState } from '../../state/model';
 import { appStore } from '../../state/store';
 import { SpotCheckPage } from './SpotCheckPage';
-import { buildSpotChecks } from './spotcheck';
+import { allRows, buildSpotChecks, rowsForEntity, rowStatus, staleConfirmations } from './spotcheck';
 
 describe('buildSpotChecks', () => {
   const zones = buildSpotChecks(gameData);
@@ -28,7 +28,7 @@ describe('buildSpotChecks', () => {
 
   it('leaves out lines already confirmed in game', () => {
     const key = zones[0]!.groups[0]!.rows[0]!.key;
-    const rest = buildSpotChecks(gameData, new Set([key]));
+    const rest = buildSpotChecks(gameData, new Map([[key, null]]));
     expect(rest.flatMap((z) => z.groups.flatMap((g) => g.rows.map((r) => r.key)))).not.toContain(key);
   });
 
@@ -36,6 +36,29 @@ describe('buildSpotChecks', () => {
     const meadows = zones[0]!;
     const boss = meadows.groups.find((g) => g.id === 'boss')!.rows[0]!;
     expect(boss.expect).toMatch(/summon with 2 Deer Trophy/);
+  });
+});
+
+describe('confirmed lines', () => {
+  it('are still the text that was confirmed: a changed line must be checked again, not left as seen', () => {
+    expect(staleConfirmations(gameData, confirmedChecks)).toEqual([]);
+  });
+
+  it('come back as changed when the site now says something else, and are done when it matches', () => {
+    const row = allRows(gameData).find((r) => r.key === 'gear:AxeFlint')!;
+    expect(rowStatus(row, new Map([[row.key, row.expect]]))).toBe('confirmed');
+    expect(rowStatus(row, new Map([[row.key, 'slash 1']]))).toBe('changed');
+    expect(rowStatus(row, new Map())).toBe('open');
+    expect(staleConfirmations(gameData, new Map([['gear:AxeFlint', 'slash 1'], ['gear:Nope', null]])).map((x) => x.key)).toEqual([
+      'gear:AxeFlint',
+      'gear:Nope',
+    ]);
+  });
+
+  it('give an item its own lines: stats, recipe and where to find it', () => {
+    const keys = rowsForEntity(gameData, 'AxeFlint').map((r) => r.key.split(':')[0]);
+    expect(keys).toEqual(expect.arrayContaining(['gear', 'recipe']));
+    expect(rowsForEntity(gameData, 'Wood').map((r) => r.key)).toContain('where:Wood');
   });
 });
 

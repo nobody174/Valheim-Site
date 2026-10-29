@@ -5,6 +5,7 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router';
 import { lookup } from '../../data/lookup';
 import { CreaturePage, StationPage } from './EntityPage';
+import { resetGameChecksCache } from '../../state/gameChecks';
 import { ItemPage } from './ItemPage';
 
 afterEach(cleanup);
@@ -36,6 +37,20 @@ describe('item page', () => {
     cleanup();
     renderAt('/item/Wood');
     expect(screen.queryByText(/portal will not let you through/)).toBeNull();
+  });
+
+  it('lets you record Matches for a line on the item page, for the whole browser', async () => {
+    const user = userEvent.setup();
+    localStorage.clear();
+    resetGameChecksCache();
+    renderAt('/item/Dandelion');
+    const panel = screen.getByText(/Check this in game/).closest('details')!;
+    expect(panel.textContent).toMatch(/Seen in game|Matches/);
+    cleanup();
+    renderAt('/item/Wood');
+    await user.click(screen.getByText(/Check this in game/));
+    await user.click(screen.getAllByRole('button', { name: 'Matches' })[0]!);
+    expect(Object.values(JSON.parse(localStorage.getItem('vcs:v1:gamechecks')!))).toEqual(['ok']);
   });
 
   it('puts the recipe and where to get it before the progress block, and ids in a folded Details', () => {

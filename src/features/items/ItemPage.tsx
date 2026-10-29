@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
+import { GameCheckPanel } from '../spotcheck/GameCheckPanel';
 import { GuideTag, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityIcon } from '../../components/EntityIcon';
 import { graph, lookup } from '../../data/lookup';
@@ -338,6 +339,8 @@ export function ItemPage() {
       <Stats id={id} />
 
       <ItemActions item={item} />
+
+      <GameCheckPanel id={id} />
 
       <details className={styles.section}>
         <summary>Details</summary>

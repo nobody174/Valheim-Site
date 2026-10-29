@@ -143,3 +143,7 @@ the file instead of guessing. To update it: decompile `assembly_valheim.dll` (fo
 - The deploy fails on a test timing out: tests allow 30 s each; a failure is real, not slow CI.
 - A page shows an internal id: a name is missing from the localisation; the build falls back to the id.
 - You want the old data back: `git revert` the data PR; nothing else depends on it.
+
+## Lines you saw in game
+
+`tools/extract/confirmed_in_game.json` stores, for each line the owner saw match, the text the site showed at that moment. After a rebuild, `npm test` fails (test "are still the text that was confirmed") if a line's text on the site has changed since, for example a patch changed a damage number. On the site those lines come back on Check in game under "Changed since you checked them" and on their item page, with Matches / Different again. To clear the test: look at the line in game, then update `text` for that key (or remove the key if the line is wrong).
