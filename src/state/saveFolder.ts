@@ -60,12 +60,22 @@ export function canPickFolder(): boolean {
 
 export async function pickFolder(): Promise<FolderHandle | null> {
   try {
-    const picker = (window as unknown as { showDirectoryPicker: (o: { mode: 'read' }) => Promise<FolderHandle> })
-      .showDirectoryPicker;
+    const picker = (
+      window as unknown as { showDirectoryPicker: (o: { mode: 'read' }) => Promise<FolderHandle> }
+    ).showDirectoryPicker;
     return await picker.call(window, { mode: 'read' });
   } catch {
     return null; // cancelled, or the browser refused this folder
   }
+}
+
+/** Every file directly in a folder. */
+export async function listFiles(folder: FolderHandle): Promise<File[]> {
+  const files: File[] = [];
+  for await (const entry of folder.values()) {
+    if (entry.kind === 'file' && entry.getFile) files.push(await entry.getFile());
+  }
+  return files;
 }
 
 /** The character files in a folder, without the game's own backups and `.old` copies. */

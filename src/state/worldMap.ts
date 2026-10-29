@@ -1,6 +1,6 @@
 /**
  * Keeps the game's own map files (about 4.5 MB) and the character's saved map in this browser (IndexedDB),
- * so the map is there on the next visit without picking files again. Stored in this browser only, left out
+ * per profile, so the map is there on the next visit without picking files again. Stored in this browser only, left out
  * of the backup because the files can be read again, and the page works when storage is blocked.
  */
 export type MapFileName = 'biome' | 'mask' | 'height' | 'saved';
@@ -17,12 +17,16 @@ function open(): Promise<IDBDatabase> {
   });
 }
 
-export async function putMapFiles(files: Partial<Record<MapFileName, Uint8Array>>): Promise<void> {
+export async function putMapFiles(
+  profile: string,
+  files: Partial<Record<MapFileName, Uint8Array>>,
+): Promise<void> {
   try {
     const db = await open();
     await new Promise<void>((resolve, reject) => {
       const tx = db.transaction(STORE, 'readwrite');
-      for (const [name, bytes] of Object.entries(files)) tx.objectStore(STORE).put(bytes, name);
+      for (const [name, bytes] of Object.entries(files))
+        tx.objectStore(STORE).put(bytes, `${profile}:${name}`);
       tx.oncomplete = () => resolve();
       tx.onerror = () => reject(tx.error);
     });
@@ -32,14 +36,16 @@ export async function putMapFiles(files: Partial<Record<MapFileName, Uint8Array>
   }
 }
 
-export async function getMapFiles(): Promise<Partial<Record<MapFileName, Uint8Array>>> {
+export async function getMapFiles(
+  profile: string,
+): Promise<Partial<Record<MapFileName, Uint8Array>>> {
   try {
     const db = await open();
     const found: Partial<Record<MapFileName, Uint8Array>> = {};
     await new Promise<void>((resolve, reject) => {
       const tx = db.transaction(STORE);
       for (const name of ['biome', 'mask', 'height', 'saved'] as const) {
-        const req = tx.objectStore(STORE).get(name);
+        const req = tx.objectStore(STORE).get(`${profile}:${name}`);
         req.onsuccess = () => {
           if (req.result instanceof Uint8Array) found[name] = req.result;
         };
@@ -54,12 +60,13 @@ export async function getMapFiles(): Promise<Partial<Record<MapFileName, Uint8Ar
   }
 }
 
-export async function clearMapFiles(): Promise<void> {
+export async function clearMapFiles(profile: string): Promise<void> {
   try {
     const db = await open();
     await new Promise<void>((resolve, reject) => {
       const tx = db.transaction(STORE, 'readwrite');
-      tx.objectStore(STORE).clear();
+      for (const name of ['biome', 'mask', 'height', 'saved'])
+        tx.objectStore(STORE).delete(`${profile}:${name}`);
       tx.oncomplete = () => resolve();
       tx.onerror = () => reject(tx.error);
     });

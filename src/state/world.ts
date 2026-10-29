@@ -2,8 +2,9 @@ import { useSyncExternalStore } from 'react';
 
 /**
  * The places read from the owner's world file, and the spots a character remembers in it. This is
- * about one world on one device, not about a profile, and it can always be read again from the
- * files, so it is kept per browser and left out of the backup file. Safe when storage is missing or corrupt.
+ * about one world. Kept per profile (a profile is a character, and a character plays in a world), in this
+ * browser only, and left out of the backup file because it can always be read again from the files. Safe
+ * when storage is missing or corrupt.
  */
 export interface SavedPoint {
   x: number;
@@ -21,21 +22,27 @@ export interface SavedWorld {
   me?: { name: string; home?: SavedPoint; logout?: SavedPoint; death?: SavedPoint };
 }
 
-const KEY = 'vcs:v1:world';
-let cache: SavedWorld | null | undefined;
+const key = (profile: string) => `vcs:v1:world:${profile}`;
+const cache = new Map<string, SavedWorld | null>();
 const listeners = new Set<() => void>();
 
 const isPoint = (v: unknown): v is SavedPoint =>
-  typeof v === 'object' && v !== null && typeof (v as SavedPoint).x === 'number' && typeof (v as SavedPoint).z === 'number';
+  typeof v === 'object' &&
+  v !== null &&
+  typeof (v as SavedPoint).x === 'number' &&
+  typeof (v as SavedPoint).z === 'number';
 
 function parse(raw: string | null): SavedWorld | null {
   try {
     const v: unknown = raw ? JSON.parse(raw) : null;
     if (typeof v !== 'object' || v === null) return null;
     const w = v as Partial<SavedWorld>;
-    if (typeof w.file !== 'string' || typeof w.places !== 'object' || w.places === null) return null;
+    if (typeof w.file !== 'string' || typeof w.places !== 'object' || w.places === null)
+      return null;
     const places = Object.fromEntries(
-      Object.entries(w.places).filter(([, list]) => Array.isArray(list) && list.every((n) => typeof n === 'number')),
+      Object.entries(w.places).filter(
+        ([, list]) => Array.isArray(list) && list.every((n) => typeof n === 'number'),
+      ),
     );
     const me = w.me;
     return {
@@ -57,21 +64,24 @@ function parse(raw: string | null): SavedWorld | null {
   }
 }
 
-function load(): SavedWorld | null {
-  if (cache !== undefined) return cache;
+function load(profile: string): SavedWorld | null {
+  const known = cache.get(profile);
+  if (known !== undefined) return known;
+  let value: SavedWorld | null = null;
   try {
-    cache = parse(localStorage.getItem(KEY));
+    value = parse(localStorage.getItem(key(profile)));
   } catch {
-    cache = null;
+    // Blocked storage: nothing saved.
   }
-  return cache;
+  cache.set(profile, value);
+  return value;
 }
 
-function store(next: SavedWorld | null): void {
-  cache = next;
+function store(profile: string, next: SavedWorld | null): void {
+  cache.set(profile, next);
   try {
-    if (next) localStorage.setItem(KEY, JSON.stringify(next));
-    else localStorage.removeItem(KEY);
+    if (next) localStorage.setItem(key(profile), JSON.stringify(next));
+    else localStorage.removeItem(key(profile));
   } catch {
     // Blocked storage: the places last until the page closes.
   }
@@ -79,33 +89,43 @@ function store(next: SavedWorld | null): void {
 }
 
 /** Keep a freshly read world file; spots read earlier from a character stay. */
-export function saveWorldPlaces(file: string, places: Record<string, number[]>, unknown: number): void {
-  store({ file, places, unknown, me: load()?.me });
+export function saveWorldPlaces(
+  profile: string,
+  file: string,
+  places: Record<string, number[]>,
+  unknown: number,
+): void {
+  store(profile, { file, places, unknown, me: load(profile)?.me });
 }
 
 /** Keep the spots a character file remembers. */
-export function saveWorldMe(me: NonNullable<SavedWorld['me']>): void {
-  const world = load();
-  store({ file: world?.file ?? '', places: world?.places ?? {}, unknown: world?.unknown ?? 0, me });
+export function saveWorldMe(profile: string, me: NonNullable<SavedWorld['me']>): void {
+  const world = load(profile);
+  store(profile, {
+    file: world?.file ?? '',
+    places: world?.places ?? {},
+    unknown: world?.unknown ?? 0,
+    me,
+  });
 }
 
-export function clearWorld(): void {
-  store(null);
+export function clearWorld(profile: string): void {
+  store(profile, null);
 }
 
-export function useWorld(): SavedWorld | null {
+export function useWorld(profile: string): SavedWorld | null {
   return useSyncExternalStore(
     (l) => {
       listeners.add(l);
       return () => listeners.delete(l);
     },
-    load,
+    () => load(profile),
     () => null,
   );
 }
 
 /** For tests: forget the in-memory copy so the next read goes to storage. */
 export function resetWorldCache(): void {
-  cache = undefined;
+  cache.clear();
   listeners.forEach((l) => l());
 }
