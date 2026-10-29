@@ -34,3 +34,11 @@
 .group p {
   margin: 0.5rem 0 0;
 }
+.names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  margin: 0;
+  padding: 0.3rem 0.8rem 0.6rem;
+  list-style: none;
+}

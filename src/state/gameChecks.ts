@@ -67,6 +67,17 @@ export function adoptProfileChecks(profiles: Profile[]): void {
   if (Object.keys(merged).length > 0) store({ ...merged, ...load() });
 }
 
+/** The answers as they are now, for a backup file. */
+export function getGameChecks(): GameChecks {
+  return load();
+}
+
+/** Take answers from a backup: "replace" swaps what is here, "merge" keeps what is here and adds the rest. */
+export function importGameChecks(incoming: GameChecks | undefined, mode: 'replace' | 'merge'): void {
+  if (!incoming) return;
+  store(mode === 'replace' ? { ...incoming } : { ...incoming, ...load() });
+}
+
 export function useGameChecks(): GameChecks {
   return useSyncExternalStore(
     (l) => {

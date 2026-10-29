@@ -77,3 +77,13 @@
   padding: 0;
   list-style: none;
 }
+.dimNote {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+@media (pointer: coarse) {
+  .actions label {
+    min-height: 44px;
+  }
+}

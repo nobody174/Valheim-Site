@@ -82,6 +82,8 @@ export const ExportSchema = z
     exportedAt: z.string(),
     active: z.string(),
     profiles: z.array(ProfileSchema).min(1),
+    /** Check in game answers (kept per browser, not per profile). */
+    gameChecks: z.record(z.string(), z.enum(['ok', 'bad'])).optional(),
   })
   .strict();
 
@@ -201,13 +203,18 @@ export function favoriteKindOf(category: Item['category']): FavoriteKind {
     : 'materials';
 }
 
-export function buildExport(state: AppState, now = new Date()): ExportFile {
+export function buildExport(
+  state: AppState,
+  now = new Date(),
+  gameChecks: Record<string, 'ok' | 'bad'> = {},
+): ExportFile {
   return {
     app: 'valheim-companion',
     exportVersion: 1,
     exportedAt: now.toISOString(),
     active: state.active,
     profiles: state.order.map((id) => state.profiles[id]),
+    ...(Object.keys(gameChecks).length > 0 ? { gameChecks } : {}),
   };
 }
 
@@ -279,7 +286,7 @@ const trim = (text: string, max: number) => text.trim().slice(0, max);
 export function withPortal(profile: Profile, portal: Portal): Profile {
   const clean: Portal = {
     id: portal.id,
-    name: trim(portal.name, 40),
+    name: trim(portal.name, 10),
     from: trim(portal.from, 60),
     to: trim(portal.to, 60),
     note: trim(portal.note, 300),

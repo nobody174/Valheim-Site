@@ -5,6 +5,7 @@ import { EntityLink } from '../../components/EntityLink';
 import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
 import { useProfile } from '../../state/store';
+import { trustReport } from '../trust/trust';
 import { buildGuide } from './guide';
 import styles from '../items/Items.module.css';
 
@@ -21,9 +22,7 @@ export function ProgressionPage() {
 
   const guide = buildGuide(gameData, biome.id);
   const owned = (id: string) => profile.progress[id]?.collected === true;
-  const inGame = [...gameData.items, ...gameData.creatures, ...gameData.bosses].filter(
-    (e) => e.biome === biome.id && e.verified === 'in-game',
-  ).length;
+  const inGame = trustReport(gameData).zones.find((z) => z.id === biome.id)?.inGame ?? 0;
   const mustKeepMissing = guide.mustKeep.filter((id) => !owned(id)).length;
 
   return (
@@ -96,7 +95,7 @@ export function ProgressionPage() {
               ) : (
                 'unknown'
               )}
-              {b.summon.length > 0 && <GuideTag />}
+              {b.summon.length > 0 && !b.summonFromFiles && <GuideTag />}
             </dd>
             <dt>Drops</dt>
             <dd>

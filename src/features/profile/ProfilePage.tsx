@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Intro } from '../../components/Intro';
+import { getGameChecks, importGameChecks } from '../../state/gameChecks';
 import { BACKUP_EVERY_DAYS, daysSinceBackup, markBackup } from '../../state/backup';
 import { buildExport, parseImport, type ExportFile } from '../../state/model';
 import { appStore, useApp } from '../../state/store';
 import styles from '../items/Items.module.css';
 
 function downloadExport(): void {
-  const file = buildExport(appStore.getState());
+  const file = buildExport(appStore.getState(), new Date(), getGameChecks());
   const blob = new Blob([JSON.stringify(file, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -87,6 +88,7 @@ export function ProfilePage() {
   const apply = (mode: 'replace' | 'merge') => {
     if (!pending) return;
     importData(pending, mode);
+    importGameChecks(pending.gameChecks, mode);
     setMessage({
       ok: true,
       text:
@@ -139,7 +141,7 @@ export function ProfilePage() {
       <section className={styles.section}>
         <h2>Back up and restore</h2>
         <p className={styles.dim}>
-          Browsers can lose site data. Download a backup now and then; import it to restore. The site reminds you
+          Browsers can lose site data. Download a backup now and then; import it to restore. The backup holds every profile and your Check in game answers. The site reminds you
           after {BACKUP_EVERY_DAYS} days.{' '}
           {backupDays === null ? 'No backup made on this device yet.' : `Last backup here: ${backupDays} days ago.`}
         </p>

@@ -8,6 +8,8 @@ export interface BiomeGuide {
     name: string;
     health: number | null;
     summon: { item: string; qty: number }[];
+    /** True when the altar cost was read from the game files (not a guide). */
+    summonFromFiles: boolean;
     drops: string[];
   }[];
   mustKeep: string[];
@@ -50,6 +52,7 @@ export function buildGuide(data: GameData, biomeId: string): BiomeGuide {
         name: b.name,
         health: b.health ?? null,
         summon: b.summonItems,
+        summonFromFiles: b.summonFromFiles === true,
         drops: b.drops.map((d) => d.item),
       })),
     mustKeep: [...itemsHere.values()].filter((i) => i.hoard === 'must_keep').map((i) => i.id),

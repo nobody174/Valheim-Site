@@ -207,9 +207,9 @@ function Shell() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      <p className={styles.dataInfoMobile}>
+      <footer className={styles.dataInfoMobile}>
         Data: {gameData.meta.gameVersion}, reviewed {gameData.meta.lastReviewed}
-      </p>
+      </footer>
       <MobileTabs onSearch={() => setPaletteOpen(true)} />
       {paletteOpen && <CommandPalette onClose={() => setPaletteOpen(false)} />}
     </div>
