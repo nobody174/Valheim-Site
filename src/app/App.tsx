@@ -19,6 +19,7 @@ import { UpdateLogPage } from '../features/updates/UpdateLogPage';
 import { PlacesPage } from '../features/places/PlacesPage';
 import { TrustPage } from '../features/trust/TrustPage';
 import { PortalsPage } from '../features/portals/PortalsPage';
+import { WorldPage } from '../features/world/WorldPage';
 import { SpotCheckPage } from '../features/spotcheck/SpotCheckPage';
 import { ProfilePage } from '../features/profile/ProfilePage';
 import { ProfileSwitcher } from './ProfileSwitcher';
@@ -64,6 +65,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
   '/items': <ItemsPage />,
   '/portals': <PortalsPage />,
+  '/world': <WorldPage />,
   '/recipes': <RecipesPage />,
   '/progression': <ProgressionPage />,
   '/building': <BuildingPage />,

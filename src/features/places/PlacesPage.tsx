@@ -6,8 +6,8 @@ import { places } from '../../data/load';
 import { lookup } from '../../data/lookup';
 import styles from '../items/Items.module.css';
 
-const KIND_ORDER = ['dungeon', 'altar', 'merchant', 'quest', 'other'] as const;
-const KIND_LABEL: Record<(typeof KIND_ORDER)[number], string> = {
+export const KIND_ORDER = ['dungeon', 'altar', 'merchant', 'quest', 'other'] as const;
+export const KIND_LABEL: Record<(typeof KIND_ORDER)[number], string> = {
   dungeon: 'Dungeon',
   altar: 'Boss altar',
   merchant: 'Merchant',

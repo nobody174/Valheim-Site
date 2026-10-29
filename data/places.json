@@ -7,7 +7,12 @@
     ],
     "quantity": 116,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "AbandonedLogCabin02",
+      "AbandonedLogCabin03",
+      "AbandonedLogCabin04"
+    ]
   },
   {
     "id": "AshlandRuins",
@@ -17,7 +22,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "AshlandRuins"
+    ]
   },
   {
     "id": "Bonemass",
@@ -28,6 +36,9 @@
     "quantity": 5,
     "variants": 1,
     "kind": "altar",
+    "prefabs": [
+      "Bonemass"
+    ],
     "boss": "Bonemass"
   },
   {
@@ -39,6 +50,9 @@
     "quantity": 20,
     "variants": 1,
     "kind": "dungeon",
+    "prefabs": [
+      "CharredFortress"
+    ],
     "note": "Ashlands fortress. The Bell Altar in its central tower gives the Bell Fragments needed for Bells; a Vegvisir there can mark Fader's arena."
   },
   {
@@ -49,7 +63,13 @@
     ],
     "quantity": 375,
     "variants": 4,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "CharredRuins1",
+      "CharredRuins2",
+      "CharredRuins3",
+      "CharredRuins4"
+    ]
   },
   {
     "id": "CharredStone_Spawner",
@@ -59,7 +79,10 @@
     ],
     "quantity": 300,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "CharredStone_Spawner"
+    ]
   },
   {
     "id": "CharredTowerRuins",
@@ -69,7 +92,12 @@
     ],
     "quantity": 100,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "CharredTowerRuins1",
+      "CharredTowerRuins2",
+      "CharredTowerRuins3"
+    ]
   },
   {
     "id": "CharredTowerRuins_dvergr",
@@ -79,7 +107,10 @@
     ],
     "quantity": 30,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "CharredTowerRuins1_dvergr"
+    ]
   },
   {
     "id": "Crypt",
@@ -90,6 +121,11 @@
     "quantity": 600,
     "variants": 3,
     "kind": "dungeon",
+    "prefabs": [
+      "Crypt2",
+      "Crypt3",
+      "Crypt4"
+    ],
     "note": "Black Forest dungeon (three layouts). Skeletons, Rancid Remains and ghosts inside; no key needed. Chests give Surtling Cores, Amber, Coins and Bone Fragments."
   },
   {
@@ -101,7 +137,12 @@
     ],
     "quantity": 250,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Dolmen01",
+      "Dolmen02",
+      "Dolmen03"
+    ]
   },
   {
     "id": "Dragonqueen",
@@ -112,6 +153,9 @@
     "quantity": 3,
     "variants": 1,
     "kind": "altar",
+    "prefabs": [
+      "Dragonqueen"
+    ],
     "boss": "Dragon"
   },
   {
@@ -122,7 +166,10 @@
     ],
     "quantity": 50,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "DrakeLorestone"
+    ]
   },
   {
     "id": "DrakeNest",
@@ -132,7 +179,10 @@
     ],
     "quantity": 200,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "DrakeNest01"
+    ]
   },
   {
     "id": "Eikthyrnir",
@@ -143,6 +193,9 @@
     "quantity": 3,
     "variants": 1,
     "kind": "altar",
+    "prefabs": [
+      "Eikthyrnir"
+    ],
     "boss": "Eikthyr"
   },
   {
@@ -154,6 +207,9 @@
     "quantity": 3,
     "variants": 1,
     "kind": "altar",
+    "prefabs": [
+      "FaderLocation"
+    ],
     "boss": "Fader"
   },
   {
@@ -164,7 +220,10 @@
     ],
     "quantity": 75,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "FireHole"
+    ]
   },
   {
     "id": "FortressRuins",
@@ -174,7 +233,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "FortressRuins"
+    ]
   },
   {
     "id": "GDKing",
@@ -185,6 +247,9 @@
     "quantity": 4,
     "variants": 1,
     "kind": "altar",
+    "prefabs": [
+      "GDKing"
+    ],
     "boss": "gd_king"
   },
   {
@@ -195,7 +260,10 @@
     ],
     "quantity": 200,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "GoblinCamp2"
+    ]
   },
   {
     "id": "GoblinKing",
@@ -206,6 +274,9 @@
     "quantity": 4,
     "variants": 1,
     "kind": "altar",
+    "prefabs": [
+      "GoblinKing"
+    ],
     "boss": "GoblinKing"
   },
   {
@@ -216,7 +287,10 @@
     ],
     "quantity": 200,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Grave1"
+    ]
   },
   {
     "id": "Greydwarf_camp",
@@ -226,7 +300,10 @@
     ],
     "quantity": 300,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Greydwarf_camp1"
+    ]
   },
   {
     "id": "Hildir_camp",
@@ -238,6 +315,9 @@
     "quantity": 10,
     "variants": 1,
     "kind": "merchant",
+    "prefabs": [
+      "Hildir_camp"
+    ],
     "note": "Hildir, a merchant who gives quests."
   },
   {
@@ -249,6 +329,9 @@
     "quantity": 3,
     "variants": 1,
     "kind": "quest",
+    "prefabs": [
+      "Hildir_cave"
+    ],
     "note": "A place from Hildir's quests (a chest to find)."
   },
   {
@@ -260,6 +343,9 @@
     "quantity": 3,
     "variants": 1,
     "kind": "quest",
+    "prefabs": [
+      "Hildir_crypt"
+    ],
     "note": "A place from Hildir's quests (a chest to find)."
   },
   {
@@ -271,6 +357,9 @@
     "quantity": 3,
     "variants": 1,
     "kind": "quest",
+    "prefabs": [
+      "Hildir_plainsfortress"
+    ],
     "note": "A place from Hildir's quests (a chest to find)."
   },
   {
@@ -281,7 +370,10 @@
     ],
     "quantity": 700,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "InfestedTree01"
+    ]
   },
   {
     "id": "LeviathanLava",
@@ -291,7 +383,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "LeviathanLava"
+    ]
   },
   {
     "id": "Mistlands_DvergrBossEntrance",
@@ -301,7 +396,10 @@
     ],
     "quantity": 5,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_DvergrBossEntrance1"
+    ]
   },
   {
     "id": "Mistlands_DvergrTownEntrance",
@@ -311,7 +409,11 @@
     ],
     "quantity": 240,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_DvergrTownEntrance1",
+      "Mistlands_DvergrTownEntrance2"
+    ]
   },
   {
     "id": "Mistlands_Excavation",
@@ -321,7 +423,12 @@
     ],
     "quantity": 120,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_Excavation1",
+      "Mistlands_Excavation2",
+      "Mistlands_Excavation3"
+    ]
   },
   {
     "id": "Mistlands_Giant",
@@ -331,7 +438,11 @@
     ],
     "quantity": 335,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_Giant1",
+      "Mistlands_Giant2"
+    ]
   },
   {
     "id": "Mistlands_GuardTower",
@@ -341,7 +452,12 @@
     ],
     "quantity": 200,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_GuardTower1_new",
+      "Mistlands_GuardTower2_new",
+      "Mistlands_GuardTower3_new"
+    ]
   },
   {
     "id": "Mistlands_GuardTower_ruined",
@@ -351,7 +467,12 @@
     ],
     "quantity": 150,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_GuardTower1_ruined_new",
+      "Mistlands_GuardTower1_ruined_new2",
+      "Mistlands_GuardTower3_ruined_new"
+    ]
   },
   {
     "id": "Mistlands_Harbour",
@@ -361,7 +482,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_Harbour1"
+    ]
   },
   {
     "id": "Mistlands_Lighthouse",
@@ -371,7 +495,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_Lighthouse1_new"
+    ]
   },
   {
     "id": "Mistlands_RoadPost",
@@ -381,7 +508,10 @@
     ],
     "quantity": 500,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_RoadPost1"
+    ]
   },
   {
     "id": "Mistlands_RockSpire",
@@ -391,7 +521,10 @@
     ],
     "quantity": 200,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_RockSpire1"
+    ]
   },
   {
     "id": "Mistlands_Statue",
@@ -401,7 +534,11 @@
     ],
     "quantity": 400,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_Statue1",
+      "Mistlands_Statue2"
+    ]
   },
   {
     "id": "Mistlands_StatueGroup",
@@ -411,7 +548,10 @@
     ],
     "quantity": 200,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_StatueGroup1"
+    ]
   },
   {
     "id": "Mistlands_Swords",
@@ -421,7 +561,12 @@
     ],
     "quantity": 99,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_Swords1",
+      "Mistlands_Swords2",
+      "Mistlands_Swords3"
+    ]
   },
   {
     "id": "Mistlands_Viaduct",
@@ -431,7 +576,11 @@
     ],
     "quantity": 250,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Mistlands_Viaduct1",
+      "Mistlands_Viaduct2"
+    ]
   },
   {
     "id": "MorgenHole",
@@ -441,7 +590,12 @@
     ],
     "quantity": 120,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "MorgenHole1",
+      "MorgenHole2",
+      "MorgenHole3"
+    ]
   },
   {
     "id": "MountainCave",
@@ -452,6 +606,9 @@
     "quantity": 120,
     "variants": 1,
     "kind": "dungeon",
+    "prefabs": [
+      "MountainCave02"
+    ],
     "note": "Mountain dungeon behind a stone entrance. No key needed. Guides disagree on what lives inside (Cultists and a caged Fenring are mentioned) and what it drops."
   },
   {
@@ -462,7 +619,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "MountainGrave01"
+    ]
   },
   {
     "id": "MountainWell",
@@ -472,7 +632,10 @@
     ],
     "quantity": 25,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "MountainWell1"
+    ]
   },
   {
     "id": "PlaceofMystery",
@@ -482,7 +645,12 @@
     ],
     "quantity": 3,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "PlaceofMystery1",
+      "PlaceofMystery2",
+      "PlaceofMystery3"
+    ]
   },
   {
     "id": "Ruin",
@@ -493,7 +661,12 @@
     ],
     "quantity": 450,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Ruin1",
+      "Ruin2",
+      "Ruin3"
+    ]
   },
   {
     "id": "Runestone_Ashlands",
@@ -504,7 +677,10 @@
     ],
     "quantity": 70,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Ashlands"
+    ]
   },
   {
     "id": "Runestone_BlackForest",
@@ -514,7 +690,10 @@
     ],
     "quantity": 50,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_BlackForest"
+    ]
   },
   {
     "id": "Runestone_Boars",
@@ -524,7 +703,10 @@
     ],
     "quantity": 50,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Boars"
+    ]
   },
   {
     "id": "Runestone_Draugr",
@@ -534,7 +716,10 @@
     ],
     "quantity": 50,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Draugr"
+    ]
   },
   {
     "id": "Runestone_Greydwarfs",
@@ -544,7 +729,10 @@
     ],
     "quantity": 25,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Greydwarfs"
+    ]
   },
   {
     "id": "Runestone_Meadows",
@@ -554,7 +742,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Meadows"
+    ]
   },
   {
     "id": "Runestone_Mistlands",
@@ -564,7 +755,10 @@
     ],
     "quantity": 50,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Mistlands"
+    ]
   },
   {
     "id": "Runestone_Mountains",
@@ -574,7 +768,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Mountains"
+    ]
   },
   {
     "id": "Runestone_Plains",
@@ -584,7 +781,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Plains"
+    ]
   },
   {
     "id": "Runestone_Swamps",
@@ -594,7 +794,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Runestone_Swamps"
+    ]
   },
   {
     "id": "ShipSetting",
@@ -604,7 +807,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "ShipSetting01"
+    ]
   },
   {
     "id": "ShipWreck",
@@ -616,7 +822,13 @@
     ],
     "quantity": 245,
     "variants": 4,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "ShipWreck01",
+      "ShipWreck02",
+      "ShipWreck03",
+      "ShipWreck04"
+    ]
   },
   {
     "id": "StartTemple",
@@ -626,7 +838,10 @@
     ],
     "quantity": 1,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "StartTemple"
+    ]
   },
   {
     "id": "StoneCircle",
@@ -636,7 +851,10 @@
     ],
     "quantity": 25,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "StoneCircle"
+    ]
   },
   {
     "id": "StoneHenge",
@@ -646,7 +864,15 @@
     ],
     "quantity": 60,
     "variants": 6,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "StoneHenge1",
+      "StoneHenge2",
+      "StoneHenge3",
+      "StoneHenge4",
+      "StoneHenge5",
+      "StoneHenge6"
+    ]
   },
   {
     "id": "StoneHouse",
@@ -656,7 +882,11 @@
     ],
     "quantity": 400,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "StoneHouse3",
+      "StoneHouse4"
+    ]
   },
   {
     "id": "StoneTower",
@@ -666,7 +896,11 @@
     ],
     "quantity": 100,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "StoneTower1",
+      "StoneTower3"
+    ]
   },
   {
     "id": "StoneTowerRuins",
@@ -677,7 +911,16 @@
     ],
     "quantity": 500,
     "variants": 7,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "StoneTowerRuins03",
+      "StoneTowerRuins04",
+      "StoneTowerRuins05",
+      "StoneTowerRuins07",
+      "StoneTowerRuins08",
+      "StoneTowerRuins09",
+      "StoneTowerRuins10"
+    ]
   },
   {
     "id": "SulfurArch",
@@ -687,7 +930,10 @@
     ],
     "quantity": 100,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "SulfurArch"
+    ]
   },
   {
     "id": "SunkenCrypt",
@@ -698,6 +944,9 @@
     "quantity": 175,
     "variants": 1,
     "kind": "dungeon",
+    "prefabs": [
+      "SunkenCrypt4"
+    ],
     "note": "Swamp dungeon. The door needs the Swamp Key (The Elder drops it). Blobs, Draugr and Draugr Elite inside; chests give Scrap Iron, Ancient Bark, Chain, Withered Bone and Coins."
   },
   {
@@ -708,7 +957,14 @@
     ],
     "quantity": 225,
     "variants": 5,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "SwampHut1",
+      "SwampHut2",
+      "SwampHut3",
+      "SwampHut4",
+      "SwampHut5"
+    ]
   },
   {
     "id": "SwampRuin",
@@ -718,7 +974,11 @@
     ],
     "quantity": 60,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "SwampRuin1",
+      "SwampRuin2"
+    ]
   },
   {
     "id": "SwampWell",
@@ -728,7 +988,10 @@
     ],
     "quantity": 25,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "SwampWell1"
+    ]
   },
   {
     "id": "TarPit",
@@ -738,7 +1001,12 @@
     ],
     "quantity": 251,
     "variants": 3,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "TarPit1",
+      "TarPit2",
+      "TarPit3"
+    ]
   },
   {
     "id": "TrollCave",
@@ -749,6 +1017,9 @@
     "quantity": 200,
     "variants": 1,
     "kind": "dungeon",
+    "prefabs": [
+      "TrollCave02"
+    ],
     "note": "Black Forest cave with at least one Troll inside. Loot is mostly Amber, Bone Fragments, Deer Hide, Feathers and Coins. Bear caves look almost the same from outside."
   },
   {
@@ -760,6 +1031,9 @@
     "quantity": 10,
     "variants": 1,
     "kind": "merchant",
+    "prefabs": [
+      "Vendor_BlackForest"
+    ],
     "note": "A merchant camp in the Black Forest; sells and buys for Coins. There is one Haldor per world, at one of these spots."
   },
   {
@@ -770,7 +1044,10 @@
     ],
     "quantity": 350,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "VoltureNest"
+    ]
   },
   {
     "id": "Waymarker",
@@ -780,7 +1057,11 @@
     ],
     "quantity": 100,
     "variants": 2,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "Waymarker01",
+      "Waymarker02"
+    ]
   },
   {
     "id": "WoodFarm",
@@ -790,7 +1071,10 @@
     ],
     "quantity": 10,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "WoodFarm1"
+    ]
   },
   {
     "id": "WoodHouse",
@@ -800,7 +1084,22 @@
     ],
     "quantity": 260,
     "variants": 13,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "WoodHouse1",
+      "WoodHouse10",
+      "WoodHouse11",
+      "WoodHouse12",
+      "WoodHouse13",
+      "WoodHouse2",
+      "WoodHouse3",
+      "WoodHouse4",
+      "WoodHouse5",
+      "WoodHouse6",
+      "WoodHouse7",
+      "WoodHouse8",
+      "WoodHouse9"
+    ]
   },
   {
     "id": "WoodVillage",
@@ -810,6 +1109,9 @@
     ],
     "quantity": 15,
     "variants": 1,
-    "kind": "other"
+    "kind": "other",
+    "prefabs": [
+      "WoodVillage1"
+    ]
   }
 ]
