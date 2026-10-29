@@ -2,6 +2,8 @@ import { NavLink, useParams } from 'react-router';
 import { Intro } from '../../components/Intro';
 import { GuideTag } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
+import { QuickLineView } from '../../components/QuickCard';
+import { quickCard } from '../../data/quick';
 import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
 import { useProfile } from '../../state/store';
@@ -11,6 +13,25 @@ import styles from '../items/Items.module.css';
 
 const num = (n: number) => String(Math.round(n * 100) / 100);
 const label = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+/** One item with where to farm it here and what it is for. */
+function QuickRow({ id, mark = '' }: { id: string; mark?: string }) {
+  const card = quickCard(id, { biome: false });
+  return (
+    <li className={styles.quickRow}>
+      <span>
+        {mark}
+        <EntityLink id={id} />
+      </span>
+      <span>
+        <small>Get it</small> <QuickLineView line={card.farm ?? card.make} />
+      </span>
+      <span>
+        <small>Used for</small> <QuickLineView line={card.usedFor} />
+      </span>
+    </li>
+  );
+}
 
 /** Per-biome guide built from the data files. The ranked picks are simple measures, not advice. */
 export function ProgressionPage() {
@@ -30,8 +51,8 @@ export function ProgressionPage() {
       <h1>Progression guide</h1>
       <Intro>
         <p>
-        What to know about each biome, built from the game data: the boss, what lives there, what to
-        keep, and a few gear and food picks. Choose a biome below.
+          What to know about each biome, built from the game data: the boss, what lives there, what
+          to keep, and a few gear and food picks. Choose a biome below.
         </p>
       </Intro>
       <nav className={styles.tabs} aria-label="Biomes">
@@ -134,23 +155,18 @@ export function ProgressionPage() {
           {guide.mustKeep.length > 0 &&
             `You have collected ${guide.mustKeep.length - mustKeepMissing} of ${guide.mustKeep.length} (profile ${profile.name}).`}
         </p>
-        <ul className={styles.inline}>
+        <ul className={styles.quickRows}>
           {guide.mustKeep.map((id) => (
-            <li key={id}>
-              {owned(id) ? '✓ ' : ''}
-              <EntityLink id={id} />
-            </li>
+            <QuickRow key={id} id={id} mark={owned(id) ? '✓ ' : ''} />
           ))}
         </ul>
       </section>
 
       <section className={styles.section}>
         <h2>Other materials</h2>
-        <ul className={styles.inline}>
+        <ul className={styles.quickRows}>
           {guide.materials.map((id) => (
-            <li key={id}>
-              <EntityLink id={id} />
-            </li>
+            <QuickRow key={id} id={id} />
           ))}
         </ul>
       </section>

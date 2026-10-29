@@ -80,7 +80,7 @@ describe('item page', () => {
     renderAt('/item/SwordBronze');
     expect(screen.getByRole('heading', { level: 1, name: 'Bronze Sword' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Stats' })).toBeTruthy();
-    expect(screen.getByText(/Slash 35/)).toBeTruthy();
+    expect(screen.getAllByText(/Slash 35/).length).toBeGreaterThan(0);
     const crafted = screen.getByRole('heading', { name: 'Crafted from' }).parentElement!;
     expect(within(crafted).getAllByRole('link', { name: 'Bronze' }).length).toBeGreaterThan(0);
     expect(within(crafted).getByRole('link', { name: 'Forge' })).toBeTruthy();

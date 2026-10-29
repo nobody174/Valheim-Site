@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { GameCheckPanel } from '../spotcheck/GameCheckPanel';
 import { GuideTag, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityIcon } from '../../components/EntityIcon';
+import { QuickCard } from '../../components/QuickCard';
 import { graph, lookup } from '../../data/lookup';
 import { skillLabel } from '../../data/skills';
 import { effectiveHoard } from '../../state/model';
@@ -231,6 +232,9 @@ export function ItemPage() {
   const { id = '' } = useParams();
   const item = lookup.item(id);
   const profile = useProfile();
+  const more = useRef<HTMLDetailsElement>(null);
+  // Open on a desktop screen, folded on a phone where the quick card is the whole answer.
+  const [wide] = useState(() => window.matchMedia?.('(min-width: 900px)').matches ?? false);
 
   useEffect(() => {
     if (item) pushRecent(item.id);
@@ -259,111 +263,124 @@ export function ItemPage() {
         <div>
           <h1>{item.name}</h1>
           <div className={styles.badges}>
-            <span className={styles.dim}>{label(item.category)}</span>
-            {biome && <span className={styles.zoneTag}>{biome}</span>}
             <HoardBadge
               hoard={effectiveHoard(item, profile)}
               qty={item.recommendedQty}
               custom={item.id in profile.hoardOverrides}
             />
-            <VerifiedBadge level={item.verified} note={item.note} />
           </div>
         </div>
       </header>
 
-      {item.verified === 'unverified' && (
-        <p className={styles.warn}>
-          Unverified: {item.note ?? 'not yet checked against the game.'}
+      <QuickCard
+        id={item.id}
+        onMore={() => {
+          if (more.current) more.current.open = true;
+        }}
+      />
+
+      <details className={styles.section} ref={more} open={wide}>
+        <summary>More details</summary>
+        <p className={styles.dim}>
+          {label(item.category)}
+          {biome && ` · ${biome}`} · <VerifiedBadge level={item.verified} note={item.note} />
         </p>
-      )}
 
-      {item.description && <p className={styles.dim}>{item.description}</p>}
-      {item.use && (
-        <section className={styles.section}>
-          <h2>What to do with it</h2>
-          <p>{item.use}</p>
-          <p className={styles.dim}>Guide, not checked in game.</p>
-        </section>
-      )}
-
-      <WhereFound id={id} />
-
-      <p className={styles.tools}>
-        {craftedFrom.length > 0 && <Link to={`/planner?add=${id}`}>Plan this</Link>}
-        {craftedFrom.some((r) => r.upgrades.length > 0) && (
-          <Link to={`/upgrades?item=${id}`}>Upgrade calculator</Link>
+        {item.verified === 'unverified' && (
+          <p className={styles.warn}>
+            Unverified: {item.note ?? 'not yet checked against the game.'}
+          </p>
         )}
-        <Link to={`/graph?item=${id}`}>Crafting graph</Link>
-        {(lookup.weapon(id) || lookup.armor(id)) && (
-          <Link to={`/compare?items=${id}`}>Compare</Link>
+
+        {item.description && <p className={styles.dim}>{item.description}</p>}
+        {item.use && (
+          <section className={styles.section}>
+            <h2>What to do with it</h2>
+            <p>{item.use}</p>
+            <p className={styles.dim}>Guide, not checked in game.</p>
+          </section>
         )}
-      </p>
 
-      {craftedFrom.length > 0 && (
-        <section className={styles.section}>
-          <h2>Crafted from</h2>
-          {craftedFrom.map((r) => (
-            <RecipeBlock key={r.id} recipe={r} />
-          ))}
-        </section>
-      )}
+        <WhereFound id={id} />
 
-      {usedIn.length > 0 && (
-        <section className={styles.section}>
-          <h2>Used in</h2>
-          {usedIn.map((r) => (
-            <RecipeBlock key={r.id} recipe={r} />
-          ))}
-        </section>
-      )}
+        <p className={styles.tools}>
+          {craftedFrom.length > 0 && <Link to={`/planner?add=${id}`}>Plan this</Link>}
+          {craftedFrom.some((r) => r.upgrades.length > 0) && (
+            <Link to={`/upgrades?item=${id}`}>Upgrade calculator</Link>
+          )}
+          <Link to={`/graph?item=${id}`}>Crafting graph</Link>
+          {(lookup.weapon(id) || lookup.armor(id)) && (
+            <Link to={`/compare?items=${id}`}>Compare</Link>
+          )}
+        </p>
 
-      {canCraft.length > 0 && (
-        <section className={styles.section}>
-          <h2>Can craft into</h2>
-          <ul className={styles.inline}>
-            {canCraft.map((c) => (
-              <li key={c}>
-                <EntityLink id={c} />
-              </li>
+        {craftedFrom.length > 0 && (
+          <section className={styles.section}>
+            <h2>Crafted from</h2>
+            {craftedFrom.map((r) => (
+              <RecipeBlock key={r.id} recipe={r} />
             ))}
-          </ul>
-        </section>
-      )}
+          </section>
+        )}
 
-      {item.portalBlocked && (
-        <p className={styles.dimNote} role="note">
-          A portal will not let you through while you carry this. See <Link to="/portals">My portals</Link>.
-        </p>
-      )}
+        {usedIn.length > 0 && (
+          <section className={styles.section}>
+            <h2>Used in</h2>
+            {usedIn.map((r) => (
+              <RecipeBlock key={r.id} recipe={r} />
+            ))}
+          </section>
+        )}
 
-      <Stats id={id} />
+        {canCraft.length > 0 && (
+          <section className={styles.section}>
+            <h2>Can craft into</h2>
+            <ul className={styles.inline}>
+              {canCraft.map((c) => (
+                <li key={c}>
+                  <EntityLink id={c} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-      <ItemActions item={item} />
+        {item.portalBlocked && (
+          <p className={styles.dimNote} role="note">
+            A portal will not let you through while you carry this. See{' '}
+            <Link to="/portals">My portals</Link>.
+          </p>
+        )}
 
-      <GameCheckPanel id={id} />
+        <Stats id={id} />
 
-      <details className={styles.section}>
-        <summary>Details</summary>
-        <dl className={styles.facts}>
-          <dt>Weight</dt>
-          <dd>{item.weight === null ? 'unknown' : num(item.weight)}</dd>
-          <dt>Stack size</dt>
-          <dd>{item.stackSize === null ? 'unknown' : item.stackSize}</dd>
-          {item.tags.length > 0 && (
-            <>
-              <dt>Tags</dt>
-              <dd>{item.tags.join(', ')}</dd>
-            </>
-          )}
-          <dt>Internal id</dt>
-          <dd>{item.id}</dd>
-          {item.hoardNote && (
-            <>
-              <dt>Hoard note</dt>
-              <dd>{item.hoardNote}</dd>
-            </>
-          )}
-        </dl>
+        <ItemActions item={item} />
+
+        <GameCheckPanel id={id} />
+
+        <details className={styles.section}>
+          <summary>Facts</summary>
+          <dl className={styles.facts}>
+            <dt>Weight</dt>
+            <dd>{item.weight === null ? 'unknown' : num(item.weight)}</dd>
+            <dt>Stack size</dt>
+            <dd>{item.stackSize === null ? 'unknown' : item.stackSize}</dd>
+            {item.tags.length > 0 && (
+              <>
+                <dt>Tags</dt>
+                <dd>{item.tags.join(', ')}</dd>
+              </>
+            )}
+            <dt>Internal id</dt>
+            <dd>{item.id}</dd>
+            {item.hoardNote && (
+              <>
+                <dt>Hoard note</dt>
+                <dd>{item.hoardNote}</dd>
+              </>
+            )}
+          </dl>
+        </details>
       </details>
     </article>
   );
