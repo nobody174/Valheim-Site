@@ -310,6 +310,7 @@
     "$item_scalehide": "ScaleHide",
     "$item_scorchingmedley": "ScorchingMedley",
     "$item_seekeraspic": "SeekerAspic",
+    "$item_sharpeningstone": "SharpeningStone",
     "$item_shield_banded": "ShieldBanded",
     "$item_shield_blackmetal": "ShieldBlackmetal",
     "$item_shield_blackmetal_tower": "ShieldBlackmetalTower",
@@ -510,6 +511,7 @@
     "$piece_cauldron": "piece_cauldron",
     "$piece_magetable": "piece_magetable",
     "$piece_preptable": "piece_preptable",
+    "$piece_stonecutter": "piece_stonecutter",
     "$piece_workbench": "piece_workbench"
   },
   "skills": {

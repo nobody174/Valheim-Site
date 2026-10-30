@@ -26,6 +26,8 @@ import { ProfileSwitcher } from './ProfileSwitcher';
 import { SecondScreenToggle } from './SecondScreenToggle';
 import { CreaturePage, StationPage } from '../features/items/EntityPage';
 import { ItemPage } from '../features/items/ItemPage';
+import { ComfortPage } from '../features/comfort/ComfortPage';
+import { PiecePage } from '../features/comfort/PiecePage';
 import { ItemsPage } from '../features/items/ItemsPage';
 import { RecipesPage } from '../features/items/RecipesPage';
 import { CommandPalette } from '../features/search/CommandPalette';
@@ -67,6 +69,7 @@ const GraphPage = lazy(() =>
 const PAGES: Record<string, React.ReactElement> = {
   '/': <SearchPage />,
   '/items': <ItemsPage />,
+  '/comfort': <ComfortPage />,
   '/portals': <PortalsPage />,
   '/world': <WorldPage />,
   '/recipes': <RecipesPage />,
@@ -230,6 +233,7 @@ function Shell() {
           <Route path="/creature/:id" element={<CreaturePage />} />
           <Route path="/boss/:id" element={<CreaturePage boss />} />
           <Route path="/station/:id" element={<StationPage />} />
+          <Route path="/piece/:id" element={<PiecePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

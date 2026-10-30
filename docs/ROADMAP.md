@@ -16,6 +16,8 @@ reviews the live site before the next phase starts.
 
 Quick card (2026-10-29): every item page opens with FARM / USED FOR / MAKE in three short lines, built by `src/data/quick.ts` from existing data (hand-written lines carry a small "guide" marker); the old blocks sit under "More details". Item cards and the zone page rows show the same lines. Not started: short guide-tagged use lines for items with no recipe (needs owner input).
 
+Comfort pieces (2026-10-30): building pieces are in search ("hearth", "dragon bed", "throne"), each has a page with MAKE / COMFORT / GROUP, and `/comfort` adds up one piece per comfort group. The Stonecutter and its pieces (Hearth, Stone Throne, Black Marble set) are in the data. Pieces that still need items from zones not modelled yet (carved furniture, jute curtains, rugs from Moose or Seal, Snow Lantern, Bone and Antler Throne) are listed with their blocker in `tools/extract/dropped_pieces.json`. Shelter points and the comfort maximum are marked unchecked.
+
 ## Why this order
 
 - **Phase 0 comes first** because the data schema and validation script decide whether the

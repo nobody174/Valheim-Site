@@ -1,7 +1,7 @@
 import MiniSearch from 'minisearch';
 import type { GameData } from '../../data/schemas';
 
-export type SearchGroupKey = 'items' | 'trophies' | 'creatures' | 'bosses' | 'stations';
+export type SearchGroupKey = 'items' | 'trophies' | 'creatures' | 'bosses' | 'stations' | 'pieces';
 
 export const GROUP_LABELS: Record<SearchGroupKey, string> = {
   items: 'Items',
@@ -9,9 +9,17 @@ export const GROUP_LABELS: Record<SearchGroupKey, string> = {
   creatures: 'Creatures',
   bosses: 'Bosses',
   stations: 'Stations',
+  pieces: 'Building pieces',
 };
 
-const GROUP_ORDER: SearchGroupKey[] = ['items', 'trophies', 'creatures', 'bosses', 'stations'];
+const GROUP_ORDER: SearchGroupKey[] = [
+  'items',
+  'trophies',
+  'creatures',
+  'bosses',
+  'stations',
+  'pieces',
+];
 
 export interface SearchDoc {
   key: string; // unique across groups
@@ -20,6 +28,8 @@ export interface SearchDoc {
   group: SearchGroupKey;
   aliases: string;
   tags: string;
+  /** A short line shown beside the name, e.g. what a building piece is made at and what it adds. */
+  detail?: string;
 }
 
 export interface SearchGroup {
@@ -35,6 +45,7 @@ export function buildDocs(data: GameData): SearchDoc[] {
     name: string,
     aliases: string[] = [],
     tags: string[] = [],
+    detail = '',
   ): SearchDoc => ({
     key: `${group}:${id}`,
     id,
@@ -42,6 +53,7 @@ export function buildDocs(data: GameData): SearchDoc[] {
     group,
     aliases: aliases.join(' '),
     tags: tags.join(' '),
+    detail,
   });
   return [
     ...data.items.map((i) =>
@@ -50,6 +62,21 @@ export function buildDocs(data: GameData): SearchDoc[] {
     ...data.creatures.map((c) => doc('creatures', c.id, c.name, c.aliases)),
     ...data.bosses.map((b) => doc('bosses', b.id, b.name, b.aliases)),
     ...data.stations.map((s) => doc('stations', s.id, s.name)),
+    ...data.pieces.map((p) =>
+      doc(
+        'pieces',
+        p.id,
+        p.name,
+        [],
+        [p.category, p.comfortGroup ?? '', p.comfort ? 'comfort' : ''],
+        [
+          p.station ? `at ${data.stations.find((s) => s.id === p.station)?.name ?? p.station}` : '',
+          p.comfort ? `comfort ${p.comfort}${p.comfortGroup ? ` · ${p.comfortGroup}` : ''}` : '',
+        ]
+          .filter(Boolean)
+          .join(' · '),
+      ),
+    ),
   ];
 }
 
@@ -69,7 +96,7 @@ export function createSearch(data: GameData) {
   const index = new MiniSearch<SearchDoc>({
     idField: 'key',
     fields: ['name', 'id', 'aliases', 'tags'],
-    storeFields: ['id', 'name', 'group', 'aliases', 'tags'],
+    storeFields: ['id', 'name', 'group', 'aliases', 'tags', 'detail'],
     searchOptions: {
       boost: { name: 3, id: 1.5 },
       prefix: true,

@@ -6336,6 +6336,27 @@
     "description": "A quivering jelly with a taste like gentle electricity."
   },
   {
+    "id": "SharpeningStone",
+    "name": "Sharpening Stone",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 6.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for building Grinding Wheel. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SharpeningStone"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A whetstone wheel ready to spin."
+  },
+  {
     "id": "ShieldBanded",
     "name": "Banded Shield",
     "category": "weapon",

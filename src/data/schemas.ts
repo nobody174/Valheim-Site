@@ -376,6 +376,8 @@ export const PieceSchema = z
     station: id.optional(),
     /** Comfort points toward the Rested bonus, for furniture. */
     comfort: z.number().positive().optional(),
+    /** Only the strongest piece of each comfort group counts. Names are read off the pieces that share a group number. */
+    comfortGroup: z.string().min(1).optional(),
     ...provenance,
   })
   .strict();

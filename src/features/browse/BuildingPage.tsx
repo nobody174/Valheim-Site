@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { Intro } from '../../components/Intro';
-import { useSearchParams } from 'react-router';
-import { EntityIcon } from '../../components/EntityIcon';
+import { Link, useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
 import styles from '../items/Items.module.css';
@@ -37,8 +36,9 @@ export function BuildingPage() {
       <h1>Building</h1>
       <Intro>
         <p>
-        What the Hammer can build, and what it costs. Only pieces whose materials are already in the
-        database are listed, so more appear as zones are added.
+          What the Hammer can build, and what it costs. Only pieces whose materials are already in
+          the database are listed, so more appear as zones are added. For comfort, use the{' '}
+          <Link to="/comfort">comfort planner</Link>.
         </p>
       </Intro>
       <div className={styles.filters}>
@@ -74,7 +74,11 @@ export function BuildingPage() {
           </select>
         </label>
         {(text || category || station) && (
-          <button type="button" className={styles.reset} onClick={() => setParams({}, { replace: true })}>
+          <button
+            type="button"
+            className={styles.reset}
+            onClick={() => setParams({}, { replace: true })}
+          >
             Clear filters
           </button>
         )}
@@ -101,8 +105,7 @@ export function BuildingPage() {
                 <tr key={p.id}>
                   <td>
                     <span className={styles.nameCell}>
-                      <EntityIcon id={p.id} size={28} />
-                      {p.name}
+                      <EntityLink id={p.id} />
                     </span>
                   </td>
                   <td>{p.category}</td>
@@ -116,7 +119,11 @@ export function BuildingPage() {
                     </ul>
                   </td>
                   <td>{p.station ? <EntityLink id={p.station} /> : '-'}</td>
-                  <td className={styles.hideOnMobile}>{p.comfort ?? '-'}</td>
+                  <td className={styles.hideOnMobile}>
+                    {p.comfort
+                      ? `+${p.comfort}${p.comfortGroup ? ` · ${p.comfortGroup}` : ''}`
+                      : '-'}
+                  </td>
                 </tr>
               ))}
             </tbody>

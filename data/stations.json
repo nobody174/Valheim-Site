@@ -303,18 +303,24 @@
             "qty": 5
           }
         ]
-      }
-    ],
-    "laterExtensions": [
+      },
       {
         "id": "forge_ext3",
         "name": "Grinding Wheel",
         "rangeM": 5.0,
-        "needs": [
-          "Sharpening Stone"
+        "requirements": [
+          {
+            "item": "Wood",
+            "qty": 25
+          },
+          {
+            "item": "SharpeningStone",
+            "qty": 1
+          }
         ]
       }
     ],
+    "laterExtensions": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "note": "Station level is 1 plus the number of different extensions built within range."
@@ -697,6 +703,29 @@
       {
         "item": "LeatherScraps",
         "qty": 5
+      }
+    ],
+    "extensions": [],
+    "laterExtensions": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "note": "Station level is 1 plus the number of different extensions built within range."
+  },
+  {
+    "id": "piece_stonecutter",
+    "name": "Stonecutter",
+    "buildRequirements": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 2
+      },
+      {
+        "item": "Stone",
+        "qty": 4
       }
     ],
     "extensions": [],

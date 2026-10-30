@@ -8,7 +8,7 @@ import styles from './EntityIcon.module.css';
 function fallbackCategory(id: string): Item['category'] {
   const item = lookup.item(id);
   if (item) return item.category;
-  return lookup.station(id) ? 'piece' : 'misc';
+  return lookup.station(id) || lookup.piece(id) ? 'piece' : 'misc';
 }
 
 /**

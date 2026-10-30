@@ -113,14 +113,6 @@
       ]
     },
     {
-      "recipe": "Recipe_SharpeningStone",
-      "output": "SharpeningStone",
-      "station": "piece_stonecutter",
-      "inputs": [
-        "Stone"
-      ]
-    },
-    {
       "recipe": "Recipe_SwordWood",
       "output": "SwordWood",
       "station": "piece_workbench",

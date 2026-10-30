@@ -1,0 +1,297 @@
+[
+  {
+    "piece": "ArmorStand_Female",
+    "name": "Armour Stand",
+    "comfort": 1,
+    "group": null,
+    "blocker": "notInHammer"
+  },
+  {
+    "piece": "ArmorStand_Male",
+    "name": "ArmorStand_Male",
+    "comfort": 1,
+    "group": null,
+    "blocker": "notInHammer"
+  },
+  {
+    "piece": "BogWitch_Fire_Pit",
+    "name": "Campfire",
+    "comfort": 1,
+    "group": "Fire",
+    "blocker": "notInHammer"
+  },
+  {
+    "piece": "fire_pit_haldor",
+    "name": "Campfire",
+    "comfort": 1,
+    "group": "Fire",
+    "blocker": "notInHammer"
+  },
+  {
+    "piece": "fire_pit_hildir",
+    "name": "Campfire",
+    "comfort": 1,
+    "group": "Fire",
+    "blocker": "notInHammer"
+  },
+  {
+    "piece": "fire_pit_iron",
+    "name": "Iron Fire Pit",
+    "comfort": 1,
+    "group": "Fire",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Iron Pit"
+    ]
+  },
+  {
+    "piece": "jute_carpet",
+    "name": "Red Jute Carpet",
+    "comfort": 1,
+    "group": "Carpet",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Red Jute"
+    ]
+  },
+  {
+    "piece": "jute_carpet_blue",
+    "name": "Blue Jute Carpet",
+    "comfort": 1,
+    "group": "Carpet",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Blue Jute"
+    ]
+  },
+  {
+    "piece": "piece_asksvinskeleton",
+    "name": "Asksvin Skeleton",
+    "comfort": 1,
+    "group": "Decor",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Asksvin Neck",
+      "Asksvin Pelvis",
+      "Asksvin Ribcage",
+      "Asksvin Skull"
+    ]
+  },
+  {
+    "piece": "piece_barber",
+    "name": "Barber Station",
+    "comfort": 1,
+    "group": "Leisure",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Barber Kit"
+    ]
+  },
+  {
+    "piece": "piece_bench_runed",
+    "name": "Carved Bench",
+    "comfort": 1,
+    "group": "Chair",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Timberwood",
+      "Moose Hide"
+    ]
+  },
+  {
+    "piece": "piece_blackwood_bench",
+    "name": "Wood Bench",
+    "comfort": 1,
+    "group": "Chair",
+    "blocker": "notInHammer"
+  },
+  {
+    "piece": "piece_bone_throne",
+    "name": "Bone Throne",
+    "comfort": 3,
+    "group": "Chair",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Grausten",
+      "Charred Skull"
+    ]
+  },
+  {
+    "piece": "piece_chair_runed",
+    "name": "Carved Chair",
+    "comfort": 2,
+    "group": "Chair",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Timberwood",
+      "Moose Sinew"
+    ]
+  },
+  {
+    "piece": "piece_cloth_hanging_door",
+    "name": "Red Jute Curtain",
+    "comfort": 2,
+    "group": "Banner",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Red Jute"
+    ]
+  },
+  {
+    "piece": "piece_cloth_hanging_door_blue",
+    "name": "Blue Jute Drapes",
+    "comfort": 2,
+    "group": "Banner",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Blue Jute"
+    ]
+  },
+  {
+    "piece": "piece_cloth_hanging_door_blue2",
+    "name": "Blue Jute Curtain",
+    "comfort": 2,
+    "group": "Banner",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Blue Jute"
+    ]
+  },
+  {
+    "piece": "piece_jackoturnip",
+    "name": "Jack-o-turnip",
+    "comfort": 2,
+    "group": "Lantern",
+    "blocker": "disabled"
+  },
+  {
+    "piece": "piece_maypole",
+    "name": "Maypole",
+    "comfort": 1,
+    "group": null,
+    "blocker": "disabled"
+  },
+  {
+    "piece": "piece_mistletoe",
+    "name": "Mistletoe",
+    "comfort": 1,
+    "group": "Garland",
+    "blocker": "disabled"
+  },
+  {
+    "piece": "piece_moose_throne",
+    "name": "Antler Throne",
+    "comfort": 3,
+    "group": "Chair",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Timberwood",
+      "Moose Trophy",
+      "Moose Hide"
+    ]
+  },
+  {
+    "piece": "piece_pot1",
+    "name": "Medium Green Pot",
+    "comfort": 1,
+    "group": "Decor",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Pot Shard",
+      "Charcoal Resin"
+    ]
+  },
+  {
+    "piece": "piece_pot2",
+    "name": "Large Green Pot",
+    "comfort": 1,
+    "group": "Decor",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Pot Shard",
+      "Charcoal Resin"
+    ]
+  },
+  {
+    "piece": "piece_pot3",
+    "name": "Small Green Pot",
+    "comfort": 1,
+    "group": "Decor",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Pot Shard",
+      "Charcoal Resin"
+    ]
+  },
+  {
+    "piece": "piece_snowlantern",
+    "name": "Snow Lantern",
+    "comfort": 2,
+    "group": "Lantern",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Snowball"
+    ]
+  },
+  {
+    "piece": "piece_table_runed",
+    "name": "Long Carved Table",
+    "comfort": 2,
+    "group": "Table",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Timberwood"
+    ]
+  },
+  {
+    "piece": "piece_table_runed_small",
+    "name": "Square Carved Table",
+    "comfort": 1,
+    "group": "Table",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Timberwood"
+    ]
+  },
+  {
+    "piece": "piece_xmascrown",
+    "name": "Yule Wreath",
+    "comfort": 1,
+    "group": "Garland",
+    "blocker": "disabled"
+  },
+  {
+    "piece": "piece_xmasgarland",
+    "name": "Yule Garland",
+    "comfort": 1,
+    "group": "Garland",
+    "blocker": "disabled"
+  },
+  {
+    "piece": "piece_xmastree",
+    "name": "Yule Tree",
+    "comfort": 1,
+    "group": null,
+    "blocker": "disabled"
+  },
+  {
+    "piece": "rug_moose",
+    "name": "Moose Hide Carpet",
+    "comfort": 2,
+    "group": "Carpet",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Moose Hide"
+    ]
+  },
+  {
+    "piece": "rug_seal",
+    "name": "Sealskin Rug",
+    "comfort": 1,
+    "group": "Carpet",
+    "blocker": "itemsNotInData",
+    "needs": [
+      "Seal Pelt"
+    ]
+  }
+]

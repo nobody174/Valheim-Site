@@ -11,6 +11,7 @@ const KIND_OF_GROUP: Record<SearchGroupKey, EntityKind> = {
   creatures: 'creature',
   bosses: 'boss',
   stations: 'station',
+  pieces: 'piece',
 };
 
 export const hitPath = (hit: SearchDoc) => entityPath(KIND_OF_GROUP[hit.group], hit.id);
@@ -43,7 +44,7 @@ export function SearchResults({
                 <EntityIcon id={h.id} size={24} />
                 {h.name}
               </span>
-              <span className={styles.id}>{h.id}</span>
+              <span className={styles.id}>{h.detail || h.id}</span>
             </Link>
           ))}
         </div>
