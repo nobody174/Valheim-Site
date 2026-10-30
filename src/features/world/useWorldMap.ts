@@ -99,6 +99,7 @@ export function useWorldMap(profile: string, fog: Fog) {
   }, [terrain, explored, fog]);
 
   return {
+    terrain,
     image,
     hasTerrain: terrain !== null,
     saved,
