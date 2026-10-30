@@ -25,6 +25,7 @@ import type { MapPin } from './mapData';
 import type { Fog } from './terrain';
 import { useWorldMap } from './useWorldMap';
 import { sortPortals } from '../portals/portals';
+import { sailRoute } from './sailRoute';
 import { WorldMapView } from './WorldMapView';
 import { familyIndex, parseWorld } from './worldFile';
 import styles from './World.module.css';
@@ -261,6 +262,14 @@ export function WorldPage() {
   const from: From =
     chosen === 'custom' || available.includes(chosen) ? chosen : (available[0] ?? 'custom');
   const reference = pointOf(world?.me, from, custom);
+  const [refX, refZ] = [reference?.x, reference?.z];
+  const route = useMemo(
+    () =>
+      map.terrain && refX !== undefined && refZ !== undefined && focus
+        ? sailRoute(map.terrain, { x: refX, z: refZ }, focus)
+        : null,
+    [map.terrain, refX, refZ, focus],
+  );
 
   const rows = useMemo(() => {
     if (!world) return [];
@@ -573,6 +582,7 @@ export function WorldPage() {
             }}
             key={`${reference ? 'me' : 'none'}:${focus?.n ?? 0}`}
             focus={focus}
+            route={route}
             image={map.image}
             layers={layers}
             pins={showPins && map.saved ? map.saved.pins : NO_PINS}

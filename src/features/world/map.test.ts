@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { parseMapData } from './mapData';
-import { decodeTerrain, halfToFloat, renderTerrain, toPixel } from './terrain';
+import { sailRoute } from './sailRoute';
+import { decodeTerrain, halfToFloat, METRES_PER_PIXEL, renderTerrain, toPixel } from './terrain';
 
 async function gzip(bytes: Uint8Array): Promise<Uint8Array> {
   const source = new ReadableStream({
@@ -91,5 +92,34 @@ describe('saved map', () => {
     expect(m.size).toBe(size);
     expect(m.explored[17]).toBe(1);
     expect(m.pins).toEqual([{ name: 'Main Home Base', x: 583, z: -181, type: 0, checked: false }]);
+  });
+});
+
+describe('sailRoute', () => {
+  // 64 x 64 pixels = 8 x 8 cells; open water with a wall of land down the middle that leaves a gap at the top.
+  const size = 64;
+  const terrain = (() => {
+    const height = new Float32Array(size * size).fill(0);
+    for (let y = 0; y < size - 16; y++) for (let x = 28; x < 36; x++) height[y * size + x] = 50;
+    return { biome: new Uint8Array(0), mask: new Uint8Array(0), height };
+  })();
+  const at = (cx: number, cy: number) => ({
+    x: (cx - size / 2) * METRES_PER_PIXEL,
+    z: (cy - size / 2) * METRES_PER_PIXEL,
+  });
+
+  it('goes round the land instead of across it', () => {
+    const route = sailRoute(terrain, at(6, 10), at(58, 10), size);
+    expect(route).not.toBeNull();
+    const straight = Math.hypot(at(58, 10).x - at(6, 10).x, 0);
+    expect(route!.seaMetres).toBeGreaterThan(straight * 1.2);
+    // Some point of the route is up where the wall has its gap.
+    expect(Math.max(...route!.points.map((p) => p.z))).toBeGreaterThan(at(0, 48).z);
+  });
+
+  it('finds no route when the land closes the way', () => {
+    const closed = new Float32Array(terrain.height);
+    for (let y = 0; y < size; y++) for (let x = 28; x < 36; x++) closed[y * size + x] = 50;
+    expect(sailRoute({ ...terrain, height: closed }, at(6, 10), at(58, 10), size)).toBeNull();
   });
 });

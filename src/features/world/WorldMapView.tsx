@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import type { MapPin } from './mapData';
 import { direction, formatDistance, metresBetween, type Spot } from './nearby';
+import type { SailRoute } from './sailRoute';
 import { METRES_PER_PIXEL } from './terrain';
 import styles from './World.module.css';
 
@@ -54,6 +55,7 @@ export function WorldMapView({
   onPlace,
   reference,
   focus,
+  route,
 }: {
   image: HTMLCanvasElement | null;
   layers: MapLayer[];
@@ -65,15 +67,21 @@ export function WorldMapView({
   reference: Spot | null;
   /** A spot to show: the map opens on it, with a ring and the way from the reference. */
   focus: Spot | null;
+  /** A boat route from the reference to the focus; without one the map draws a straight line. */
+  route: SailRoute | null;
 }) {
   const canvas = useRef<HTMLCanvasElement>(null);
   const [view, setView] = useState<View>(() => {
     if (focus && reference) {
-      const reach = Math.max(Math.abs(focus.x - reference.x), Math.abs(focus.z - reference.z));
+      const all = [reference, focus, ...(route?.points ?? [])];
+      const xs = all.map((p) => p.x);
+      const zs = all.map((p) => p.z);
+      const [x0, x1] = [Math.min(...xs), Math.max(...xs)];
+      const [z0, z1] = [Math.min(...zs), Math.max(...zs)];
       return {
-        x: (focus.x + reference.x) / 2,
-        z: (focus.z + reference.z) / 2,
-        mpp: clamp((reach * 1.6) / SIZE, CLOSEST, FULL),
+        x: (x0 + x1) / 2,
+        z: (z0 + z1) / 2,
+        mpp: clamp((Math.max(x1 - x0, z1 - z0) * 1.3) / SIZE, CLOSEST, FULL),
       };
     }
     if (focus) return { x: focus.x, z: focus.z, mpp: 10 };
@@ -174,7 +182,42 @@ export function WorldMapView({
     if (focus) {
       const fx = u(focus.x);
       const fy = v(focus.z);
-      if (reference) {
+      if (reference && route && route.points.length > 0) {
+        const pts = route.points;
+        const first = pts[0]!;
+        const last = pts[pts.length - 1]!;
+        // On foot to the boat and from the boat: dotted. By boat: solid.
+        ctx.setLineDash([3, 6]);
+        ctx.strokeStyle = '#efe8d8';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(u(reference.x), v(reference.z));
+        ctx.lineTo(u(first.x), v(first.z));
+        ctx.moveTo(u(last.x), v(last.z));
+        ctx.lineTo(fx, fy);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.lineJoin = 'round';
+        ctx.strokeStyle = 'rgba(0,0,0,0.85)';
+        ctx.lineWidth = 7;
+        ctx.beginPath();
+        pts.forEach((p, i) => (i ? ctx.lineTo(u(p.x), v(p.z)) : ctx.moveTo(u(p.x), v(p.z))));
+        ctx.stroke();
+        ctx.strokeStyle = '#ffe28a';
+        ctx.lineWidth = 4;
+        ctx.stroke();
+        const mid = pts[Math.floor(pts.length / 2)]!;
+        ctx.font = '700 15px Inter, system-ui, sans-serif';
+        const tag = (text: string, x: number, y: number) => {
+          ctx.lineWidth = 4;
+          ctx.strokeStyle = 'rgba(0,0,0,0.9)';
+          ctx.strokeText(text, x, y);
+          ctx.fillStyle = '#ffe28a';
+          ctx.fillText(text, x, y);
+        };
+        tag(`Launch the boat here`, u(first.x) + 10, v(first.z) - 10);
+        tag(`Sail ${formatDistance(route.seaMetres)}`, u(mid.x) + 10, v(mid.z) - 10);
+      } else if (reference) {
         ctx.setLineDash([8, 6]);
         ctx.strokeStyle = '#ffe28a';
         ctx.lineWidth = 2;
@@ -213,7 +256,7 @@ export function WorldMapView({
       ctx.arc(sx, sy, 3.5, 0, Math.PI * 2);
       ctx.fill();
     }
-  }, [image, layers, pins, portals, reference, focus, view]);
+  }, [image, layers, pins, portals, reference, focus, route, view]);
 
   // The wheel needs a non-passive listener to stop the page from scrolling while the map zooms.
   useEffect(() => {
