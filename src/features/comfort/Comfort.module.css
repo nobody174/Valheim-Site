@@ -1,0 +1,66 @@
+.rules {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+.unchecked {
+  color: var(--text-dim);
+}
+.total {
+  margin: 1rem 0;
+  font-size: 1.15rem;
+}
+.total strong {
+  color: var(--gold);
+  font-size: 1.6rem;
+}
+.dim {
+  color: var(--text-dim);
+}
+.tableWrap {
+  overflow-x: auto;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--wood-light);
+}
+.table th {
+  color: var(--gold);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.table input[type='checkbox'] {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.table select {
+  min-height: 44px;
+  max-width: 16rem;
+}
+.nameCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

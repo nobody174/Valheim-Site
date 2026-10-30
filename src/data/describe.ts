@@ -25,7 +25,8 @@ const CATEGORY_LABEL: Record<string, string> = {
 
 const num = (n: number) => String(Math.round(n * 100) / 100);
 const label = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
-const duration = (sec: number) => (sec >= 120 ? `${Math.round(sec / 60)} min` : `${Math.round(sec)} s`);
+const duration = (sec: number) =>
+  sec >= 120 ? `${Math.round(sec / 60)} min` : `${Math.round(sec)} s`;
 const join = (parts: (string | false | null | undefined)[]) => parts.filter(Boolean).join(' · ');
 
 function itemLines(id: string): string[] {
@@ -92,7 +93,10 @@ export function describeEntity(id: string): EntityDescription | undefined {
     if (!item) return undefined;
     return {
       title: item.name,
-      subtitle: join([CATEGORY_LABEL[item.category] ?? item.category, lookup.biomeName(item.biome)]),
+      subtitle: join([
+        CATEGORY_LABEL[item.category] ?? item.category,
+        lookup.biomeName(item.biome),
+      ]),
       lines: itemLines(id),
       itemId: id,
     };
@@ -113,11 +117,31 @@ export function describeEntity(id: string): EntityDescription | undefined {
     return { title: station.name, subtitle: 'Crafting station', lines };
   }
 
+  if (ref.kind === 'piece') {
+    const piece = lookup.piece(id);
+    if (!piece) return undefined;
+    const at = piece.station ? lookup.station(piece.station)?.name : undefined;
+    return {
+      title: piece.name,
+      subtitle: join(['Building piece', piece.category]),
+      lines: [
+        `Build${at ? ` near ${at}` : ''}: ${piece.requirements
+          .map((g) => `${g.qty} ${lookup.entity(g.item)?.name ?? g.item}`)
+          .join(', ')}`,
+        piece.comfort
+          ? join([`Comfort ${piece.comfort}`, piece.comfortGroup && `${piece.comfortGroup} group`])
+          : '',
+      ].filter(Boolean),
+    };
+  }
+
   const monster = ref.kind === 'boss' ? lookup.boss(id) : lookup.creature(id);
   if (!monster) return undefined;
   const lines = [monster.health !== undefined ? `Health ${num(monster.health)}` : 'Health unknown'];
   if (monster.drops.length) {
-    lines.push(`Drops ${monster.drops.map((d) => lookup.entity(d.item)?.name ?? d.item).join(', ')}`);
+    lines.push(
+      `Drops ${monster.drops.map((d) => lookup.entity(d.item)?.name ?? d.item).join(', ')}`,
+    );
   }
   return {
     title: monster.name,

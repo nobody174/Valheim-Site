@@ -8714,6 +8714,27 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.SharpeningStone",
+    "kind": "craft",
+    "output": {
+      "item": "SharpeningStone",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_stonecutter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Stone",
+        "qty": 5
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorRagsChest",
     "kind": "craft",
     "output": {

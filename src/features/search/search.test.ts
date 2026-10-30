@@ -80,3 +80,21 @@ describe('forgiving search', () => {
     expect(search.suggest('flnt').map((s) => s.id)).toContain('Flint');
   });
 });
+
+describe('building pieces in search', () => {
+  const hit = (q: string, id: string) =>
+    search(q)
+      .find((g) => g.group === 'pieces')
+      ?.hits.find((h) => h.id === id);
+
+  it('finds the hearth, the dragon bed, the hot tub and a throne', () => {
+    expect(hit('hearth', 'hearth')).toBeDefined();
+    expect(hit('dragon bed', 'piece_bed02')).toBeDefined();
+    expect(hit('hot tub', 'piece_bathtub')).toBeDefined();
+    expect(hit('throne', 'piece_throne02')).toBeDefined();
+  });
+
+  it('shows the station and the comfort beside the piece', () => {
+    expect(hit('dragon bed', 'piece_bed02')?.detail).toMatch(/Workbench.*comfort 2 · Bed/);
+  });
+});

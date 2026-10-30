@@ -41,6 +41,7 @@ export const ROUTE_GROUPS: RouteGroup[] = [
     title: 'Plan & compare',
     routes: [
       { path: '/planner', label: 'Build planner', phase: 3, icon: 'Hammer' },
+      { path: '/comfort', label: 'Comfort', phase: 3, icon: 'piece_bed02' },
       { path: '/upgrades', label: 'Upgrades', phase: 3, icon: 'PickaxeBronze' },
       { path: '/rankings', label: 'Rankings', phase: 3, icon: 'SwordIron' },
       { path: '/compare', label: 'Compare', phase: 3, icon: 'ShieldBronzeBuckler' },

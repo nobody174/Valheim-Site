@@ -1582,6 +1582,202 @@
     "station": "piece_workbench"
   },
   {
+    "id": "blackmarble_1x1",
+    "name": "Black Marble 1x1x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_2x1x1",
+    "name": "Black Marble 2x1x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_2x2x2",
+    "name": "Black Marble 2x2x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_arch",
+    "name": "Black Marble Arch",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_column_1",
+    "name": "Black Marble Column Small",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_column_2",
+    "name": "Black Marble Column Wide",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_out_1",
+    "name": "Black Marble Cornice",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_outcorner",
+    "name": "Black Marble Cornice Corner",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_floor",
+    "name": "Black Marble Floor",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_floor_triangle",
+    "name": "Black Marble Floor Triangle",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_base_1",
+    "name": "Black Marble Plinth",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_basecorner",
+    "name": "Black Marble Plinth Corner",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_tip",
+    "name": "Black Marble Quarter Spire",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "blackmarble_stair",
+    "name": "Black Marble Stair",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
     "id": "iron_floor_1x1_v2",
     "name": "Cage Floor 1x1",
     "category": "Building (stone)",
@@ -1722,6 +1918,104 @@
     "station": "forge"
   },
   {
+    "id": "stone_arch",
+    "name": "Stone Arch",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "stone_floor_2x2",
+    "name": "Stone Floor 2x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "stone_pillar",
+    "name": "Stone Pillar",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "stone_stair",
+    "name": "Stone Stair",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "stone_wall_1x1",
+    "name": "Stone Wall 1x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "stone_wall_2x1",
+    "name": "Stone Wall 2x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "stone_wall_4x2",
+    "name": "Stone Wall 4x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
     "id": "piece_birdnest",
     "name": "Birds' Nest",
     "category": "Crafting",
@@ -1742,6 +2036,24 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench"
+  },
+  {
+    "id": "piece_EternalPyre",
+    "name": "Eternal Pyre",
+    "category": "Crafting",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 10
+      },
+      {
+        "item": "FaderDrop",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
   },
   {
     "id": "cauldron_ext6_rollingpins",
@@ -1766,26 +2078,22 @@
     "station": "piece_workbench"
   },
   {
-    "id": "piece_stonecutter",
-    "name": "Stonecutter",
+    "id": "piece_wisplure",
+    "name": "Wisp Fountain",
     "category": "Crafting",
     "requirements": [
       {
-        "item": "Wood",
+        "item": "Stone",
         "qty": 10
       },
       {
-        "item": "Iron",
-        "qty": 2
-      },
-      {
-        "item": "Stone",
-        "qty": 4
+        "item": "YagluthDrop",
+        "qty": 1
       }
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "station": "piece_workbench"
+    "station": "piece_stonecutter"
   },
   {
     "id": "ArmorStand",
@@ -1808,7 +2116,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Display"
   },
   {
     "id": "ashwood_bed",
@@ -1831,7 +2140,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Bed"
   },
   {
     "id": "piece_blackwood_bench01",
@@ -1846,7 +2156,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Chair"
   },
   {
     "id": "rug_asksvin",
@@ -1861,7 +2172,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Carpet"
   },
   {
     "id": "rug_Bjorn",
@@ -1884,7 +2196,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Carpet"
   },
   {
     "id": "bed",
@@ -1899,7 +2212,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Bed"
   },
   {
     "id": "piece_banner01",
@@ -1922,7 +2236,76 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
+  },
+  {
+    "id": "piece_blackmarble_bench",
+    "name": "Black Marble Bench",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 6
+      },
+      {
+        "item": "Copper",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter",
+    "comfort": 1,
+    "comfortGroup": "Chair"
+  },
+  {
+    "id": "piece_blackmarble_table",
+    "name": "Black Marble Table",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 6
+      },
+      {
+        "item": "Copper",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter",
+    "comfort": 1,
+    "comfortGroup": "Table"
+  },
+  {
+    "id": "piece_blackmarble_throne",
+    "name": "Black Marble Throne",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "BlackMarble",
+        "qty": 20
+      },
+      {
+        "item": "ScaleHide",
+        "qty": 4
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      },
+      {
+        "item": "Copper",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter",
+    "comfort": 3,
+    "comfortGroup": "Chair"
   },
   {
     "id": "piece_chest_blackmetal",
@@ -1967,7 +2350,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_brazierfloor02",
@@ -1990,7 +2374,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "forge",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Fire"
   },
   {
     "id": "piece_banner06",
@@ -2021,7 +2406,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_chest_wood",
@@ -2062,7 +2448,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Chair"
   },
   {
     "id": "rug_deer",
@@ -2077,7 +2464,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Carpet"
   },
   {
     "id": "piece_bed02",
@@ -2108,7 +2496,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Bed"
   },
   {
     "id": "piece_dvergr_lantern_pole",
@@ -2131,7 +2520,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "blackforge",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Lantern"
   },
   {
     "id": "piece_dvergr_lantern",
@@ -2154,7 +2544,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "blackforge",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Lantern"
   },
   {
     "id": "piece_FairylightGarland",
@@ -2173,7 +2564,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Garland"
   },
   {
     "id": "piece_CelebrationGarland",
@@ -2192,7 +2584,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Garland"
   },
   {
     "id": "piece_banner05",
@@ -2215,7 +2608,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_brazierceiling01",
@@ -2238,7 +2632,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "forge",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Fire"
   },
   {
     "id": "rug_hare",
@@ -2253,7 +2648,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Carpet"
   },
   {
     "id": "piece_bathtub",
@@ -2280,7 +2676,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Leisure"
   },
   {
     "id": "itemstand",
@@ -2299,7 +2696,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Display"
   },
   {
     "id": "itemstandh",
@@ -2318,7 +2716,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Display"
   },
   {
     "id": "piece_Lavalantern",
@@ -2341,7 +2740,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Lantern"
   },
   {
     "id": "piece_table_oak",
@@ -2364,7 +2764,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Table"
   },
   {
     "id": "rug_fur",
@@ -2379,7 +2780,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Carpet"
   },
   {
     "id": "piece_banner10",
@@ -2406,7 +2808,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_chest_private",
@@ -2451,7 +2854,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_throne01",
@@ -2470,7 +2874,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 3
+    "comfort": 3,
+    "comfortGroup": "Chair"
   },
   {
     "id": "piece_banner04",
@@ -2493,7 +2898,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_chest",
@@ -2534,7 +2940,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Table"
   },
   {
     "id": "piece_walltorch",
@@ -2587,7 +2994,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Chair"
   },
   {
     "id": "piece_groundtorch_blue",
@@ -2628,7 +3036,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "forge",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Fire"
   },
   {
     "id": "piece_groundtorch_green",
@@ -2685,6 +3094,30 @@
     "station": "piece_workbench"
   },
   {
+    "id": "piece_throne02",
+    "name": "Stone Throne",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 20
+      },
+      {
+        "item": "DeerHide",
+        "qty": 2
+      },
+      {
+        "item": "WolfPelt",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter",
+    "comfort": 3,
+    "comfortGroup": "Chair"
+  },
+  {
     "id": "piece_chair",
     "name": "Stool",
     "category": "Furniture",
@@ -2697,7 +3130,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Chair"
   },
   {
     "id": "rug_straw",
@@ -2716,7 +3150,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Carpet"
   },
   {
     "id": "piece_table",
@@ -2731,7 +3166,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Table"
   },
   {
     "id": "piece_banner11",
@@ -2758,7 +3194,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_banner07",
@@ -2785,7 +3222,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_banner03",
@@ -2808,7 +3246,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_groundtorch_mist",
@@ -2840,7 +3279,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Carpet"
   },
   {
     "id": "piece_bench01",
@@ -2855,7 +3295,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Chair"
   },
   {
     "id": "piece_chair02",
@@ -2870,7 +3311,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 2
+    "comfort": 2,
+    "comfortGroup": "Chair"
   },
   {
     "id": "piece_banner08",
@@ -2897,7 +3339,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Banner"
   },
   {
     "id": "piece_ArcheryTarget",
@@ -3051,7 +3494,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Fire"
   },
   {
     "id": "bar_bronze_stack",
@@ -3082,7 +3526,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "comfort": 1
+    "comfort": 1,
+    "comfortGroup": "Fire"
   },
   {
     "id": "Cart",
@@ -3297,6 +3742,22 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "hearth",
+    "name": "Hearth",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Stone",
+        "qty": 15
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter",
+    "comfort": 2,
+    "comfortGroup": "Fire"
   },
   {
     "id": "bar_iron_stack",

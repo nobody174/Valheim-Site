@@ -5,6 +5,7 @@ import type {
   Food,
   GameData,
   Item,
+  Piece,
   Recipe,
   Station,
   Trophy,
@@ -13,7 +14,7 @@ import type {
 import { buildGraph } from './graph';
 import { gameData } from './load';
 
-export type EntityKind = 'item' | 'creature' | 'boss' | 'station';
+export type EntityKind = 'item' | 'creature' | 'boss' | 'station' | 'piece';
 
 export interface EntityRef {
   kind: EntityKind;
@@ -29,6 +30,7 @@ export function createLookup(data: GameData) {
   const creatures = byKey(data.creatures, (c) => c.id);
   const bosses = byKey(data.bosses, (b) => b.id);
   const stations = byKey(data.stations, (s) => s.id);
+  const pieces = byKey(data.pieces, (p) => p.id);
   const recipes = byKey(data.recipes, (r) => r.id);
   const biomes = byKey(data.biomes, (b) => b.id);
   const weapons = byKey(data.weapons, (w) => w.item);
@@ -45,6 +47,8 @@ export function createLookup(data: GameData) {
     if (b) return { kind: 'boss', id, name: b.name };
     const s = stations.get(id);
     if (s) return { kind: 'station', id, name: s.name };
+    const p = pieces.get(id);
+    if (p) return { kind: 'piece', id, name: p.name };
     return undefined;
   };
 
@@ -54,6 +58,7 @@ export function createLookup(data: GameData) {
     creature: (id: string): Creature | undefined => creatures.get(id),
     boss: (id: string): Boss | undefined => bosses.get(id),
     station: (id: string): Station | undefined => stations.get(id),
+    piece: (id: string): Piece | undefined => pieces.get(id),
     recipe: (id: string): Recipe | undefined => recipes.get(id),
     weapon: (id: string): Weapon | undefined => weapons.get(id),
     armor: (id: string): Armor | undefined => armor.get(id),
