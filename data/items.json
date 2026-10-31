@@ -7,7 +7,7 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "plantable",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1296,7 +1296,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1412,7 +1412,7 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "plantable",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1493,7 +1493,7 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "plantable",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -1699,7 +1699,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1738,7 +1738,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -1800,7 +1800,7 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2185,7 +2185,7 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2490,7 +2490,7 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "plantable",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -2510,7 +2510,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2775,7 +2775,7 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2819,7 +2819,7 @@
     "weight": 10.0,
     "stackSize": 50,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2838,7 +2838,7 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2882,7 +2882,7 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2905,7 +2905,7 @@
     "weight": 2.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2924,7 +2924,7 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2947,7 +2947,7 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2966,7 +2966,7 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -3197,7 +3197,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -3343,7 +3343,7 @@
     "weight": 0.5,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -3428,7 +3428,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -3471,7 +3471,7 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "plantable",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -3578,7 +3578,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -4552,7 +4552,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -4687,7 +4687,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -4748,7 +4748,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -4767,7 +4767,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5059,7 +5059,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5078,7 +5078,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5097,7 +5097,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5116,7 +5116,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5135,7 +5135,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5154,7 +5154,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5173,7 +5173,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5192,7 +5192,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5211,7 +5211,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5230,7 +5230,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5249,7 +5249,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5268,7 +5268,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5287,7 +5287,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5306,7 +5306,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5368,7 +5368,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5387,7 +5387,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5620,7 +5620,7 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5709,7 +5709,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5851,7 +5851,7 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "plantable",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -5871,7 +5871,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5959,7 +5959,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -5999,7 +5999,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6093,7 +6093,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6226,7 +6226,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6265,7 +6265,7 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6305,7 +6305,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6324,7 +6324,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6668,7 +6668,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6728,7 +6728,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6844,7 +6844,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -6996,7 +6996,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -8654,7 +8654,7 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "plantable",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -8674,7 +8674,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -8892,7 +8892,7 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -8931,7 +8931,7 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -9042,7 +9042,7 @@
     "weight": 1.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "consumable",
     "obtainedFrom": [
       {
         "type": "recipe",

@@ -4,7 +4,8 @@ import { Link, useSearchParams } from 'react-router';
 import { HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
-import { effectiveHoard } from '../../state/model';
+import { effectiveHoard, hasFlag } from '../../state/model';
+import { summonNeeds } from '../advisor/advisor';
 import { useProfile } from '../../state/store';
 import { EntityIcon } from '../../components/EntityIcon';
 import cards from './BossCards.module.css';
@@ -177,6 +178,12 @@ export function TrophiesPage() {
 }
 
 export function BossesPage() {
+  const profile = useProfile();
+  const progress = {
+    collected: (id: string) => hasFlag(profile, id, 'collected'),
+    crafted: (id: string) => hasFlag(profile, id, 'crafted'),
+    inventory: profile.inventory,
+  };
   const { params, set, clear } = useFilters();
   const text = params.get('q') ?? '';
   const biome = params.get('biome') ?? '';
@@ -221,9 +228,10 @@ export function BossesPage() {
                 <span className={cards.label}>Summon with</span>
                 <span>
                   {b.summonItems.length
-                    ? b.summonItems.map((s) => (
-                        <span key={s.item} className={cards.chip}>
-                          {s.qty}&times; <EntityLink id={s.item} />
+                    ? summonNeeds(b.summonItems, progress).map((n) => (
+                        <span key={n.item} className={cards.chip}>
+                          {n.status === 'ticked' ? `ticked, needs ${n.need}` : `${n.have} / ${n.need}`}{' '}
+                          <EntityLink id={n.item} />
                         </span>
                       ))
                     : UNKNOWN}

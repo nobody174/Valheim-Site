@@ -35,6 +35,10 @@
   color: var(--bronze);
   border-color: var(--bronze);
 }
+.h_consumable,
+.h_plantable {
+  color: var(--text-dim);
+}
 .h_gear {
   color: var(--text-dim);
 }

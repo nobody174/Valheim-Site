@@ -1,5 +1,6 @@
 {
   "_comment": "Display names that differ from the game's localisation, only where the game gives two entries the same name. Key = creature, boss or item id.",
+  "darkwood_beam_67": "Darkwood Beam 67°",
   "GoblinArcher": "Fuling Archer",
   "DvergerMageFire": "Dvergr Mage (Fire)",
   "DvergerMageIce": "Dvergr Mage (Ice)",

@@ -46,9 +46,9 @@ export function AdvisorPage() {
       <h1>Next steps</h1>
       <Intro>
         <p>
-        Suggestions from your checklist and inventory (profile {profile.name}). Tick what you have
-        collected and crafted on the <Link to="/checklist">checklist</Link> and the advisor keeps
-        up. It only suggests things you can do now, and only in zones up to {zoneName}.
+          Suggestions from your checklist and inventory (profile {profile.name}). Tick what you have
+          collected and crafted on the <Link to="/checklist">checklist</Link> and the advisor keeps
+          up. It only suggests things you can do now, and only in zones up to {zoneName}.
         </p>
       </Intro>
 
@@ -57,22 +57,32 @@ export function AdvisorPage() {
           <h2>
             Next boss: <EntityLink id={boss.boss} />
           </h2>
-          {boss.missing.length === 0 ? (
-            <p>
-              You hold every summon item (
-              {boss.have.map(name).join(', ')}). Ready for the altar.
-            </p>
+          {boss.needs.length === 0 ? (
+            <p>The summon items for this boss are not in the data.</p>
           ) : (
-            <p>
-              Still needed:{' '}
-              {boss.missing.map((id, i) => (
-                <span key={id}>
-                  {i > 0 && ', '}
-                  <EntityLink id={id} />
-                </span>
-              ))}
-              . You hold {boss.have.length} of {boss.have.length + boss.missing.length}.
-            </p>
+            <>
+              <p>
+                {boss.needs.every((n) => n.status === 'enough')
+                  ? 'You hold every summon item. Ready for the altar.'
+                  : 'Summon items:'}
+              </p>
+              <ul>
+                {boss.needs.map((n) => (
+                  <li key={n.item}>
+                    <Item id={n.item} />{' '}
+                    {n.status === 'ticked' ? (
+                      <span className={styles.dim}>
+                        marked collected, amount not tracked (needs {n.need})
+                      </span>
+                    ) : (
+                      <strong>
+                        {n.have} / {n.need}
+                      </strong>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </>
           )}
         </section>
       )}

@@ -75,7 +75,7 @@ Illustrative shapes (schema examples only, **not authoritative data**):
   "weight": 2,
   "stackSize": 50,
   "tags": ["metal"],
-  "hoard": "must_keep",            // must_keep | keep_some | safe_discard | decorative | sell
+  "hoard": "must_keep",            // must_keep | keep_some | safe_discard | consumable | plantable | decorative | sell
   "hoardNote": "Needed for most mid-game gear.",
   "recommendedQty": null,          // number, used when hoard = keep_some
   "sellValue": null,               // number, used when hoard = sell
@@ -125,7 +125,7 @@ Fails the build on:
 - items that are needed as a recipe input, upgrade cost, station or building cost, or boss summon item but have `hoard` = `safe_discard` or `decorative`
 - missing `source` or `verified`
 
-**Hoard defaults.** `build_data.py` sets them from the recipes: an item that summons a boss is `must_keep`; a tool you craft (stack size 1) is `must_keep`; anything else used as an ingredient is `keep_some` with `recommendedQty` = its largest single need (one craft, upgrade step, build or summon). Items nothing uses stay `safe_discard` (`decorative` for trophies). The hand-written `keepSome` and `mustKeep` lists in `tools/extract/biomes/` still win. Derived entries carry a `hoardNote` saying why.
+**Hoard defaults.** `build_data.py` sets them from the recipes: an item that summons a boss is `must_keep`; a tool you craft (stack size 1) is `must_keep`; anything else used as an ingredient is `keep_some` with `recommendedQty` = its largest single need (one craft, upgrade step, build or summon). Foods and meads nothing uses are `consumable` ("Eat or drink"), seeds and cones are `plantable` ("Plant it"), trophies are `decorative`; only what is left stays `safe_discard`. The hand-written `keepSome` and `mustKeep` lists in `tools/extract/biomes/` still win. Derived entries carry a `hoardNote` saying why.
 
 Prints a summary: counts per file and counts per `verified` level. This summary is how the
 owner sees how trustworthy the dataset currently is.
