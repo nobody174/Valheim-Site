@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Recipe } from '../../data/schemas';
 import { graph, lookup } from '../../data/lookup';
-import { advise, type AdvisorData, type AdvisorProgress } from './advisor';
+import { advise, summonNeeds, type AdvisorData, type AdvisorProgress } from './advisor';
 
 const recipe = (output: string, inputs: string[], station = 'forge'): Recipe =>
   ({
@@ -90,8 +90,31 @@ describe('advise', () => {
   });
 
   it('reports the next boss with the summon items held and missing', () => {
-    const a = advise(data, progress(['Wood']));
-    expect(a.boss).toEqual({ boss: 'A', have: ['Wood'], missing: ['Flint'] });
+    const a = advise(data, progress(['Wood'], [], { Flint: 1 }));
+    expect(a.boss?.needs.map((n) => [n.item, n.have, n.need, n.status])).toEqual([
+      ['Wood', 0, 1, 'ticked'],
+      ['Flint', 1, 1, 'enough'],
+    ]);
+  });
+
+  it('counts held against the quantity the altar takes', () => {
+    const bone = [{ item: 'WitheredBone', qty: 10 }];
+    expect(summonNeeds(bone, progress([], [], {}))[0]).toMatchObject({
+      have: 0,
+      need: 10,
+      status: 'short',
+    });
+    expect(summonNeeds(bone, progress([], [], { WitheredBone: 4 }))[0]).toMatchObject({
+      have: 4,
+      status: 'short',
+    });
+    expect(summonNeeds(bone, progress(['WitheredBone']))[0]).toMatchObject({
+      have: 0,
+      status: 'ticked',
+    });
+    expect(summonNeeds(bone, progress([], [], { WitheredBone: 10 }))[0]).toMatchObject({
+      status: 'enough',
+    });
   });
 });
 

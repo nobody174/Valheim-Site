@@ -697,6 +697,10 @@ def main(raw, out, build_id, reviewed=None):
             hoard, extra = derived_hoard(iid, cat, s['m_maxStackSize'])
         elif cat == 'trophy':
             hoard, extra = 'decorative', {}
+        elif cat in ('food', 'mead'):
+            hoard, extra = 'consumable', {}  # eaten or drunk: neither hoarded nor thrown away
+        elif re.search(r'Seeds?$|Cone$|^Acorn$', iid):
+            hoard, extra = 'plantable', {}  # grows into crops or trees
         else:
             hoard, extra = 'safe_discard', {}
         save_tokens['items'].setdefault(s['m_name'], iid)
@@ -826,7 +830,7 @@ def main(raw, out, build_id, reviewed=None):
     if os.path.exists(name_path):
         with open(name_path, encoding='utf8') as f:
             name_cfg = {k: v for k, v in json.load(f).items() if not k.startswith('_')}
-        named = {e['id']: e for e in items + creatures + bosses}
+        named = {e['id']: e for e in items + creatures + bosses + pieces_out}
         for nid, nname in name_cfg.items():
             if nid in named:
                 named[nid]['name'] = nname

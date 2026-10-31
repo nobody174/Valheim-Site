@@ -9,8 +9,6 @@ export interface QuickLine {
   parts: QuickPart[];
   /** True when the line is hand-written or from an unverified entry, so it must carry a small marker. */
   guide: boolean;
-  /** True when the line is only the hoard label because nothing better is known. */
-  fallback?: boolean;
 }
 
 export interface QuickCard {
@@ -23,6 +21,8 @@ export const HOARD_LABEL: Record<Item['hoard'], string> = {
   must_keep: 'Must keep',
   keep_some: 'Keep some',
   safe_discard: 'Safe to discard',
+  consumable: 'Eat or drink',
+  plantable: 'Plant it',
   gear: 'Gear',
   decorative: 'Decorative',
   sell: 'Sell',
@@ -75,8 +75,15 @@ function usedForLine(item: Item): QuickLine | undefined {
     return { parts, guide: false };
   }
 
+  const summons = lookup.summonsFor(item.id);
+  if (summons.length > 0) {
+    const parts: QuickPart[] = ['Summons '];
+    summons.forEach((b, i) => parts.push(...(i ? [', '] : []), { id: b.id }));
+    return { parts, guide: false };
+  }
+
   if (item.use) return { parts: [item.use], guide: true };
-  return { parts: [HOARD_LABEL[item.hoard]], guide: false, fallback: true };
+  return undefined;
 }
 
 function makeLine(item: Item): QuickLine | undefined {

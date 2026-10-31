@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { gameData } from '../../data/load';
-import { createSearch } from './search';
+import { buildDocs, createSearch } from './search';
 
 const search = createSearch(gameData);
 const firstId = (q: string) => search(q).flatMap((g) => g.hits)[0]?.id;
@@ -26,8 +26,26 @@ describe('search', () => {
     expect(search('bronse sword').flatMap((g) => g.hits.map((h) => h.id))).toContain('SwordBronze');
   });
 
-  it('matches the internal id too', () => {
-    expect(search('SwordBronze').flatMap((g) => g.hits.map((h) => h.id))).toContain('SwordBronze');
+  it('every name finds itself first', () => {
+    const bad: string[] = [];
+    for (const d of buildDocs(gameData)) {
+      const top = search(d.name).flatMap((g) => g.hits)[0];
+      if (top?.name !== d.name) bad.push(`${d.name} -> ${top?.name}`);
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it('puts the boss first for its own name', () => {
+    expect(search('Bonemass')[0]?.hits[0]).toMatchObject({ group: 'bosses', id: 'Bonemass' });
+  });
+
+  it('shows no raw id in any row', () => {
+    const bad = buildDocs(gameData).filter((d) => /[a-z][A-Z]|_/.test(d.detail ?? ''));
+    expect(bad.map((d) => d.key)).toEqual([]);
+  });
+
+  it('offers no suggestions for words that are nothing like a name', () => {
+    expect(search.suggest('burial chamber')).toEqual([]);
   });
 
   it('groups results by category, trophies separate from items', () => {

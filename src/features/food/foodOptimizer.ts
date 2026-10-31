@@ -1,8 +1,16 @@
 export type Goal = 'health' | 'stamina' | 'eitr' | 'balanced';
 
 export const GOALS: { key: Goal; label: string; rule: string }[] = [
-  { key: 'health', label: 'Most health', rule: 'Highest total health; ties go to stamina, then Eitr.' },
-  { key: 'stamina', label: 'Most stamina', rule: 'Highest total stamina; ties go to health, then Eitr.' },
+  {
+    key: 'health',
+    label: 'Most health',
+    rule: 'Highest total health; ties go to stamina, then Eitr.',
+  },
+  {
+    key: 'stamina',
+    label: 'Most stamina',
+    rule: 'Highest total stamina; ties go to health, then Eitr.',
+  },
   { key: 'eitr', label: 'Most Eitr', rule: 'Highest total Eitr; ties go to health, then stamina.' },
   {
     key: 'balanced',
@@ -82,4 +90,15 @@ export function bestCombos(
         compareScores(score(x, goal), score(y, goal)) || x.ids.join().localeCompare(y.ids.join()),
     )
     .slice(0, count);
+}
+
+/** Foods that go on a cooking station as the only input: raw meat and fish, which the game does not let you eat. */
+export function rawFoodIds(
+  recipes: readonly { station?: { id: string } | null; inputs: readonly { item: string }[] }[],
+): Set<string> {
+  return new Set(
+    recipes
+      .filter((r) => r.station?.id.startsWith('piece_cookingstation') && r.inputs.length === 1)
+      .map((r) => r.inputs[0]!.item),
+  );
 }

@@ -30,11 +30,33 @@ export interface CollectAdvice {
   unlocks: string[];
 }
 
+/** One summon item: how many the altar takes and how many the inventory holds. */
+export interface SummonNeed {
+  item: string;
+  need: number;
+  /** Counted from the inventory. Zero when the item is only ticked. */
+  have: number;
+  /** Ticked as collected or crafted, which says nothing about how many. */
+  marked: boolean;
+  status: 'enough' | 'short' | 'ticked';
+}
+
 export interface BossAdvice {
   boss: string;
-  /** Summon items held, and those still missing. */
-  have: string[];
-  missing: string[];
+  needs: SummonNeed[];
+}
+
+/** Held against needed for each summon item. A tick alone never counts as holding the full amount. */
+export function summonNeeds(
+  summonItems: readonly { item: string; qty: number }[],
+  progress: AdvisorProgress,
+): SummonNeed[] {
+  return summonItems.map((s) => {
+    const have = progress.inventory[s.item] ?? 0;
+    const marked = progress.collected(s.item) || progress.crafted(s.item);
+    const status = have >= s.qty ? 'enough' : have === 0 && marked ? 'ticked' : 'short';
+    return { item: s.item, need: s.qty, have, marked, status };
+  });
 }
 
 export interface Advice {
@@ -97,15 +119,16 @@ export function advise(data: AdvisorData, progress: AdvisorProgress): Advice {
     .map(([item, set]) => ({ item, unlocks: [...set] }))
     .sort(
       (a, b) =>
-        b.unlocks.length - a.unlocks.length || zone(a.item) - zone(b.item) || a.item.localeCompare(b.item),
+        b.unlocks.length - a.unlocks.length ||
+        zone(a.item) - zone(b.item) ||
+        a.item.localeCompare(b.item),
     );
 
   craft.sort((a, b) => zone(a.item) - zone(b.item) || a.item.localeCompare(b.item));
 
   const boss = nextBoss && {
     boss: nextBoss.id,
-    have: nextBoss.summonItems.filter((s) => owned(s.item)).map((s) => s.item),
-    missing: nextBoss.summonItems.filter((s) => !owned(s.item)).map((s) => s.item),
+    needs: summonNeeds(nextBoss.summonItems, progress),
   };
 
   return { openZone, craft, collect, boss };

@@ -44,7 +44,7 @@ export function SearchResults({
                 <EntityIcon id={h.id} size={24} />
                 {h.name}
               </span>
-              <span className={styles.id}>{h.detail || h.id}</span>
+              <span className={styles.id}>{h.detail}</span>
             </Link>
           ))}
         </div>

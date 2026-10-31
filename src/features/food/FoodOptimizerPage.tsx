@@ -4,17 +4,18 @@ import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
 import styles from '../items/Items.module.css';
-import { bestCombos, GOALS, type FoodEntry, type Goal } from './foodOptimizer';
+import { bestCombos, GOALS, rawFoodIds, type FoodEntry, type Goal } from './foodOptimizer';
 
 const minutes = (sec: number) => `${Math.round(sec / 60)} min`;
 
-/** Foods (not meads) whose item belongs to the chosen zone or an earlier one. */
+/** Foods (not meads, not raw meat that has to be cooked first) from the chosen zone or an earlier one. */
 function foodsUpTo(zone: string): FoodEntry[] {
   const order = new Map(lookup.allBiomes().map((b) => [b.id, b.order]));
+  const raw = rawFoodIds(lookup.allRecipes());
   const limit = zone ? (order.get(zone) ?? Infinity) : Infinity;
   return lookup
     .allFoods()
-    .filter((f) => f.kind === 'food')
+    .filter((f) => f.kind === 'food' && !raw.has(f.item))
     .filter((f) => (order.get(lookup.item(f.item)?.biome ?? '') ?? 0) <= limit)
     .map((f) => ({
       id: f.item,
@@ -50,14 +51,17 @@ export function FoodOptimizerPage() {
       <h1>Food optimizer</h1>
       <Intro>
         <p>
-        You can eat three different foods at a time, and their health, stamina and Eitr add up. Pick a goal
-        and the zone you have reached to see the best sets.
+          You can eat three different foods at a time, and their health, stamina and Eitr add up.
+          Pick a goal and the zone you have reached to see the best sets.
         </p>
       </Intro>
       <div className={styles.filters}>
         <label>
           Goal
-          <select value={goal} onChange={(e) => set({ goal: e.target.value === 'health' ? '' : e.target.value })}>
+          <select
+            value={goal}
+            onChange={(e) => set({ goal: e.target.value === 'health' ? '' : e.target.value })}
+          >
             {GOALS.map((g) => (
               <option key={g.key} value={g.key}>
                 {g.label}
@@ -88,7 +92,8 @@ export function FoodOptimizerPage() {
         </label>
       </div>
       <p className={styles.dim}>
-        Rule: {rule} {pool.length} foods considered. Meads, raw berries and mushrooms are not included.
+        Rule: {rule} {pool.length} foods considered. Meads, raw berries and mushrooms are not
+        included.
       </p>
 
       {combos.length === 0 ? (
@@ -115,7 +120,9 @@ export function FoodOptimizerPage() {
                     · Eitr <strong>{c.eitr}</strong>
                   </>
                 )}{' '}
-                <span className={styles.dim}>· first one runs out after {minutes(c.shortestSec)}</span>
+                <span className={styles.dim}>
+                  · first one runs out after {minutes(c.shortestSec)}
+                </span>
               </p>
             </li>
           ))}

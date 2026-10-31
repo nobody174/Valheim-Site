@@ -5,6 +5,8 @@ export const HOARD_CATEGORIES = [
   'must_keep',
   'keep_some',
   'safe_discard',
+  'consumable',
+  'plantable',
   'decorative',
   'gear',
   'sell',

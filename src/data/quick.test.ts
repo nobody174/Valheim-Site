@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { lookup } from './lookup';
-import { quickCard, quickText } from './quick';
+import { HOARD_LABEL, quickCard, quickText } from './quick';
 
 const text = (id: string) => {
   const c = quickCard(id);
@@ -33,10 +33,18 @@ describe('quickCard', () => {
     expect(text('Coins').farm).toMatch(/^Black Forest · Dropped by [^,]+, [^,]+ \+\d+ more$/);
   });
 
-  it('Acorn and Coins use the hoard label rather than inventing a purpose', () => {
-    expect(quickCard('Acorn').usedFor?.fallback).toBe(true);
-    expect(text('Acorn').usedFor).toBe('Safe to discard');
-    expect(text('Coins').usedFor).toBe('Keep some');
+  it('shows no USED FOR line rather than repeating the hoard label', () => {
+    const labels = new Set(Object.values(HOARD_LABEL));
+    const bad = lookup
+      .allItems()
+      .filter((i) => labels.has(text(i.id).usedFor ?? ''))
+      .map((i) => i.id);
+    expect(bad).toEqual([]);
+    expect(quickCard('Acorn').usedFor).toBeUndefined();
+  });
+
+  it('a summon item says what it summons', () => {
+    expect(text('WitheredBone').usedFor).toMatch(/^Summons /);
   });
 
   it('no player-facing line contains a CamelCase prefab id', () => {
