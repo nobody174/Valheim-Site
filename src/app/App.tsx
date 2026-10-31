@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { HashRouter, Link, NavLink, Route, Routes } from 'react-router';
+import { HashRouter, Link, NavLink, Route, Routes, useLocation } from 'react-router';
 import { gameData } from '../data/load';
 import { ChecklistPage } from '../features/checklist/ChecklistPage';
 import { FavoritesPage } from '../features/checklist/FavoritesPage';
@@ -37,7 +37,7 @@ import { QuickInfo } from './QuickInfo';
 import { BackupNudge } from './BackupNudge';
 import { RescueBanner } from './RescueBanner';
 import { MobileTabs } from './MobileTabs';
-import { ROUTE_GROUPS, ROUTES } from './routes';
+import { groupsOfTier, ROUTES, type RouteDef } from './routes';
 import styles from './App.module.css';
 
 function ComingSoon({ label, phase }: { label: string; phase: number }) {
@@ -140,6 +140,35 @@ function isTyping(target: EventTarget | null): boolean {
   return target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
 }
 
+function MenuLink({ route: r }: { route: RouteDef }) {
+  return (
+    <NavLink to={r.path} end className={({ isActive }) => (isActive ? styles.active : undefined)}>
+      <EntityIcon id={r.icon} size={22} />
+      <span>{r.label}</span>
+    </NavLink>
+  );
+}
+
+/** A folded part of the menu. It starts open when the page you are on lives inside it. */
+function MenuFold({ label, tier }: { label: string; tier: RouteDef['tier'] }) {
+  const { pathname } = useLocation();
+  const groups = groupsOfTier(tier);
+  const here = groups.some((g) => g.routes.some((r) => r.path === pathname));
+  return (
+    <details className={styles.fold} open={here || undefined}>
+      <summary className={styles.groupTitle}>{label}</summary>
+      {groups.map((g) => (
+        <div key={g.id} className={styles.group} role="group" aria-label={g.title}>
+          {groups.length > 1 && <span className={styles.subTitle}>{g.title}</span>}
+          {g.routes.map((r) => (
+            <MenuLink key={r.path} route={r} />
+          ))}
+        </div>
+      ))}
+    </details>
+  );
+}
+
 function Shell() {
   const [paletteOpen, setPaletteOpen] = useState(false);
 
@@ -185,35 +214,14 @@ function Shell() {
         <ProfileSwitcher />
       </header>
       <nav className={styles.nav} aria-label="Main">
-        {ROUTE_GROUPS.map((g) => (
-          <div key={g.id} className={styles.group} role="group" aria-label={g.title || 'Start'}>
-            {g.title && (
-              <span className={styles.groupTitle} aria-hidden="true">
-                {g.title}
-              </span>
-            )}
-            {g.routes.map((r) => (
-              <NavLink
-                key={r.path}
-                to={r.path}
-                end
-                className={({ isActive }) => (isActive ? styles.active : undefined)}
-              >
-                <EntityIcon id={r.icon} size={22} />
-                <span>{r.label}</span>
-                {r.beta && (
-                  <span className={styles.beta} title="Beta: newer and less checked">
-                    <span className={styles.betaText}>beta</span>
-                  </span>
-                )}
-              </NavLink>
-            ))}
-          </div>
-        ))}
+        <div className={styles.group} role="group" aria-label="Main pages">
+          {groupsOfTier('main').flatMap((g) => g.routes).map((r) => (
+            <MenuLink key={r.path} route={r} />
+          ))}
+        </div>
+        <MenuFold label="More pages" tier="more" />
+        <MenuFold label="My game and data" tier="owner" />
         <p className={styles.dataInfo}>
-          <span className={styles.beta} aria-hidden="true" /> beta: newer, less checked
-          <br />
-          <br />
           Data: {gameData.meta.gameVersion}
           <br />
           Reviewed {gameData.meta.lastReviewed}

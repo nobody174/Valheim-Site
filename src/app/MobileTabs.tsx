@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { EntityIcon } from '../components/EntityIcon';
-import { ROUTE_GROUPS } from './routes';
+import { groupsOfTier, type RouteDef } from './routes';
 import styles from './MobileTabs.module.css';
 
 const TABS = [
@@ -9,6 +9,13 @@ const TABS = [
   { to: '/items', label: 'Items', icon: 'Wood' },
   { to: '/planner', label: 'Planner', icon: 'Hammer' },
 ];
+
+const link = (r: RouteDef) => (
+  <NavLink key={r.path} to={r.path} end className={({ isActive }) => (isActive ? styles.active : '')}>
+    <EntityIcon id={r.icon} size={22} />
+    {r.label}
+  </NavLink>
+);
 
 /**
  * The phone's bottom bar: Home, Search, Items, Planner and a More sheet with every page. Shown only
@@ -31,18 +38,16 @@ export function MobileTabs({ onSearch }: { onSearch: () => void }) {
     <>
       {open && (
         <div id="more-sheet" className={styles.sheet} role="region" aria-label="All pages">
-          {ROUTE_GROUPS.map((g) => (
-            <div key={g.id} className={styles.group}>
-              {g.title && <span className={styles.groupTitle}>{g.title}</span>}
-              <div className={styles.links}>
-                {g.routes.map((r) => (
-                  <NavLink key={r.path} to={r.path} end className={({ isActive }) => (isActive ? styles.active : '')}>
-                    <EntityIcon id={r.icon} size={22} />
-                    {r.label}
-                  </NavLink>
-                ))}
-              </div>
-            </div>
+          <div className={styles.group}>
+            <div className={styles.links}>{groupsOfTier('main').flatMap((g) => g.routes).map(link)}</div>
+          </div>
+          {(['more', 'owner'] as const).map((tier) => (
+            <details key={tier} className={styles.group}>
+              <summary className={styles.groupTitle}>
+                {tier === 'more' ? 'More pages' : 'My game and data'}
+              </summary>
+              <div className={styles.links}>{groupsOfTier(tier).flatMap((g) => g.routes).map(link)}</div>
+            </details>
           ))}
         </div>
       )}
