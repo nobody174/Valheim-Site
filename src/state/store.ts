@@ -26,7 +26,8 @@ import {
 } from './model';
 import {
   browserStorage,
-  loadState,
+  loadWithRescue,
+  type Rescued,
   removeProfile,
   saveMeta,
   saveProfile,
@@ -54,14 +55,18 @@ export interface Actions {
   importData(data: ExportFile, mode: 'replace' | 'merge'): void;
 }
 
-export type StoreState = AppState & Actions;
+export type StoreState = AppState &
+  Actions & {
+    /** Saved data that could not be read this session; kept aside, shown in a banner. */
+    rescued: Rescued[];
+  };
 
 const cleanName = (name: string) => name.trim().slice(0, 40);
 
 /** Zustand store with write-through persistence. `storage` can be null (app still works in memory). */
 export function createAppStore(storage: StorageLike | null) {
-  const initial = loadState(storage);
-  saveAll(storage, initial); // a fresh or repaired state is stored right away
+  const { state: initial, rescued } = loadWithRescue(storage);
+  saveAll(storage, initial); // a fresh state is stored right away; unreadable profiles were copied aside first
   return createStore<StoreState>()((set, get) => {
     const base = (): AppState => {
       const { order, active, profiles } = get();
@@ -77,6 +82,7 @@ export function createAppStore(storage: StorageLike | null) {
 
     return {
       ...initial,
+      rescued,
 
       toggleFlag: (itemId, flag) => updateActive((p) => withToggledFlag(p, itemId, flag)),
       toggleFavorite: (kind, id) => updateActive((p) => withToggledFavorite(p, kind, id)),

@@ -35,6 +35,7 @@ import { SearchPage } from '../features/search/SearchPage';
 import { EntityIcon } from '../components/EntityIcon';
 import { QuickInfo } from './QuickInfo';
 import { BackupNudge } from './BackupNudge';
+import { RescueBanner } from './RescueBanner';
 import { MobileTabs } from './MobileTabs';
 import { ROUTE_GROUPS, ROUTES } from './routes';
 import styles from './App.module.css';
@@ -219,6 +220,7 @@ function Shell() {
         </p>
       </nav>
       <main id="main" className={styles.main}>
+        <RescueBanner />
         <BackupNudge />
         <Routes>
           {ROUTES.map((r) => (

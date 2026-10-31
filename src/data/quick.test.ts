@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { confirmedChecks } from './load';
 import { lookup } from './lookup';
 import { HOARD_LABEL, quickCard, quickText } from './quick';
 
@@ -55,6 +56,16 @@ describe('quickCard', () => {
         const t = quickText(line);
         if (/\b[A-Z][a-z]+[A-Z][A-Za-z]*\b/.test(t)) bad.push(`${item.id}: ${t}`);
       }
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it('a where-to-find line seen in game is never also called unchecked', () => {
+    const bad: string[] = [];
+    for (const item of lookup.allItems()) {
+      if (!confirmedChecks.has(`where:${item.id}`)) continue;
+      if (item.verified !== 'in-game' || item.note || quickCard(item.id).farm?.guide)
+        bad.push(item.id);
     }
     expect(bad).toEqual([]);
   });
