@@ -1034,7 +1034,7 @@
     "prefabs": [
       "Vendor_BlackForest"
     ],
-    "note": "A merchant camp in the Black Forest; sells and buys for Coins. There is one Haldor per world, at one of these spots."
+    "note": "A merchant camp in the Black Forest; sells and buys for Coins. There is one Haldor per world and where he stands is different in every world. Read your world file on the World page to see the exact spots."
   },
   {
     "id": "VoltureNest",

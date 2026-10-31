@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router';
 import { Intro } from '../../components/Intro';
 import { GuideTag } from '../../components/Badges';
 import { EntityLink } from '../../components/EntityLink';
@@ -110,6 +111,12 @@ export function PlacesPage() {
                   {p.note && (
                     <>
                       {p.note} <GuideTag />
+                    </>
+                  )}
+                  {p.kind === 'merchant' && (
+                    <>
+                      {' '}
+                      <Link to="/world">Show the spots in my world</Link>
                     </>
                   )}
                 </td>

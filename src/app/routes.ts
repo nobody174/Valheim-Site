@@ -15,7 +15,7 @@ export interface RouteGroup {
 }
 
 /** The ten pages a player reaches for most. Everything else sits one click away. */
-const MAIN = new Set(['/', '/items', '/recipes', '/building', '/creatures', '/bosses', '/food', '/planner', '/next', '/checklist']);
+const MAIN = new Set(['/', '/items', '/recipes', '/building', '/creatures', '/bosses', '/food', '/checklist']);
 /** Pages that read or hold the owner's own character, world and data. */
 const OWNER = new Set(['/character', '/spotcheck', '/portals', '/world', '/profile']);
 

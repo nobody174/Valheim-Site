@@ -41,7 +41,7 @@ more than anything else.** Hosted on GitHub Pages. No backend, no paid services.
 
 - The default side menu shows **at most 10 pages** (`tier: 'main'` in `src/app/routes.ts`). A new page
   goes under "More pages" or "My game and data" unless it replaces one of the ten.
-- Home answers "what now?": one search box, a Next up card, zones in one compact row, the portals strip
+- Home answers "what now?": one search box, zones in one compact row, the portals strip
   from 1100 px. New shortcuts go inside the folded "More shortcuts", not onto the first screen.
 
 ## Code conventions
