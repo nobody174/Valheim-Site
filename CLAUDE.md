@@ -37,6 +37,13 @@ more than anything else.** Hosted on GitHub Pages. No backend, no paid services.
   documented formulas. Never store a computed value in JSON.
 - `data/meta.json` holds `gameVersion` and `lastReviewed`. Update it when data is reviewed.
 
+## Menu and Home rules
+
+- The default side menu shows **at most 10 pages** (`tier: 'main'` in `src/app/routes.ts`). A new page
+  goes under "More pages" or "My game and data" unless it replaces one of the ten.
+- Home answers "what now?": one search box, a Next up card, zones in one compact row, the portals strip
+  from 1100 px. New shortcuts go inside the folded "More shortcuts", not onto the first screen.
+
 ## Code conventions
 
 - TypeScript strict mode. No `any`. No unused exports.

@@ -8,7 +8,8 @@ import { getRecent } from '../../state/recent';
 import { search } from './instance';
 import { NoResults } from './NoResults';
 import { Hero } from './Hero';
-import { ZoneCards } from './ZoneCards';
+import { NextUp } from './NextUp';
+import { ZoneCards, ZoneTools } from './ZoneCards';
 import { SearchResults } from './SearchResults';
 import { useHitKeys } from './useHitKeys';
 import styles from './Search.module.css';
@@ -73,24 +74,28 @@ export function SearchPage() {
         </>
       ) : (
         <>
+          <NextUp />
           <ZoneCards />
-          <h2 className={styles.sectionTitle}>Browse</h2>
-          <div className={styles.chips}>
-            {QUICK.map((c) => (
-              <Link key={c} to={`/items?category=${c}`} className={styles.chip}>
-                <EntityIcon id={QUICK_ICON[c] ?? 'Wood'} size={22} />
-                {CATEGORY_LABELS[c]}
+          <details className={styles.more}>
+            <summary>More shortcuts</summary>
+            <ZoneTools />
+            <div className={styles.chips}>
+              {QUICK.map((c) => (
+                <Link key={c} to={`/items?category=${c}`} className={styles.chip}>
+                  <EntityIcon id={QUICK_ICON[c] ?? 'Wood'} size={22} />
+                  {CATEGORY_LABELS[c]}
+                </Link>
+              ))}
+              <Link to="/recipes" className={styles.chip}>
+                <EntityIcon id="Flint" size={22} />
+                Recipes
               </Link>
-            ))}
-            <Link to="/recipes" className={styles.chip}>
-              <EntityIcon id="Flint" size={22} />
-              Recipes
-            </Link>
-            <Link to="/items?hoard=must_keep" className={styles.chip}>
-              <EntityIcon id="CryptKey" size={22} />
-              Must keep
-            </Link>
-          </div>
+              <Link to="/items?hoard=must_keep" className={styles.chip}>
+                <EntityIcon id="CryptKey" size={22} />
+                Must keep
+              </Link>
+            </div>
+          </details>
           {recent.length > 0 && (
             <>
               <h2 className={styles.sectionTitle}>Recently viewed</h2>

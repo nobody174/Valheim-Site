@@ -325,3 +325,38 @@
     min-height: 44px;
   }
 }
+
+.nextUp {
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  background: #120d09;
+  border: 2px solid var(--amber);
+  border-radius: 12px;
+}
+.nextUp h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+.nextUp ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.2rem;
+}
+.more > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* Zones as one compact row of small cards. */
+.zones {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+.zones .zoneCard {
+  padding: 2.6rem 0.6rem 0.6rem;
+}
+.nextUp a:last-child {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}

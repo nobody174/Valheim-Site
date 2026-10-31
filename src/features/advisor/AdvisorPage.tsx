@@ -2,11 +2,10 @@ import { Link } from 'react-router';
 import { Intro } from '../../components/Intro';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
-import { graph, lookup } from '../../data/lookup';
-import { hasFlag } from '../../state/model';
+import { lookup } from '../../data/lookup';
 import { useProfile } from '../../state/store';
 import styles from '../items/Items.module.css';
-import { advise } from './advisor';
+import { useAdvice } from './useAdvice';
 
 const name = (id: string) => lookup.item(id)?.name ?? id;
 const LIMIT = 12;
@@ -23,19 +22,7 @@ function Item({ id }: { id: string }) {
 /** What to craft, collect or fight next, from the checklist and inventory of the active profile. */
 export function AdvisorPage() {
   const profile = useProfile();
-  const advice = advise(
-    {
-      items: lookup.allItems(),
-      recipesFor: (id) => graph.recipesFor(id),
-      bosses: lookup.allBosses(),
-      zoneOrder: new Map(lookup.allBiomes().map((b) => [b.id, b.order])),
-    },
-    {
-      collected: (id) => hasFlag(profile, id, 'collected'),
-      crafted: (id) => hasFlag(profile, id, 'crafted'),
-      inventory: profile.inventory,
-    },
-  );
+  const advice = useAdvice();
   const boss = advice.boss;
   const zoneName =
     lookup.allBiomes().find((b) => b.order === advice.openZone)?.name ?? 'every zone';
