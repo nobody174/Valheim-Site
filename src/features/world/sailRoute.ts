@@ -23,7 +23,40 @@ interface Grid {
   water: Uint8Array;
   /** 0 (shallow) to 1 (deep) for water cells. */
   deep: Float32Array;
+  /** Which stretch of connected water a cell belongs to (0 for land), so an unreachable goal is known at once. */
+  comp: Int32Array;
+  /** Cells in each stretch of water, by comp number. */
+  compSize: number[];
 }
+
+/** Number the stretches of connected water (a boat moves along edges, as the route search does). */
+function labelWater(water: Uint8Array, n: number) {
+  const comp = new Int32Array(n * n);
+  const compSize = [0];
+  const stack: number[] = [];
+  for (let seed = 0; seed < n * n; seed++) {
+    if (!water[seed] || comp[seed]) continue;
+    const id = compSize.length;
+    let size = 0;
+    comp[seed] = id;
+    stack.push(seed);
+    while (stack.length > 0) {
+      const at = stack.pop()!;
+      size++;
+      const x = at % n;
+      const y = (at - x) / n;
+      if (x > 0 && water[at - 1] && !comp[at - 1]) (comp[at - 1] = id), stack.push(at - 1);
+      if (x < n - 1 && water[at + 1] && !comp[at + 1]) (comp[at + 1] = id), stack.push(at + 1);
+      if (y > 0 && water[at - n] && !comp[at - n]) (comp[at - n] = id), stack.push(at - n);
+      if (y < n - 1 && water[at + n] && !comp[at + n]) (comp[at + n] = id), stack.push(at + n);
+    }
+    compSize.push(size);
+  }
+  return { comp, compSize };
+}
+
+/** A pond or lake smaller than this is not somewhere to launch a boat for a trip across the world. */
+const MIN_SEA_CELLS = 400;
 
 /** The map boiled down to blocks of `cell` pixels: a block is water when every pixel in it is. */
 function buildGrid(terrain: Terrain, size: number, cell: number): Grid {
@@ -49,7 +82,8 @@ function buildGrid(terrain: Terrain, size: number, cell: number): Grid {
       }
     }
   }
-  return { n, cell, water, deep };
+  const { comp, compSize } = labelWater(water, n);
+  return { n, cell, water, deep, comp, compSize };
 }
 
 /** The grid is the slow part, and the same map is asked many times, so it is built once per map. */
@@ -107,13 +141,16 @@ const toWorld = (g: Grid, gx: number, gy: number, size: number): Spot => ({
 
 /** The water cell nearest to a point, which may itself be on land. */
 function snap(g: Grid, gx: number, gy: number): number | null {
+  const seaSize = Math.min(MIN_SEA_CELLS, Math.max(...g.compSize) / 2);
   let best: number | null = null;
   let bestD = Infinity;
   for (let dy = -SNAP_RADIUS; dy <= SNAP_RADIUS; dy++) {
     for (let dx = -SNAP_RADIUS; dx <= SNAP_RADIUS; dx++) {
       const x = gx + dx;
       const y = gy + dy;
-      if (x < 0 || y < 0 || x >= g.n || y >= g.n || !g.water[y * g.n + x]) continue;
+      const at = y * g.n + x;
+      if (x < 0 || y < 0 || x >= g.n || y >= g.n || !g.water[at]) continue;
+      if (g.compSize[g.comp[at]!]! < seaSize) continue;
       const d = dx * dx + dy * dy;
       if (d < bestD) {
         bestD = d;
@@ -162,6 +199,8 @@ export function sailRoute(
   const b = toCell(g, to, size);
   const start = snap(g, a.gx, a.gy);
   const goal = snap(g, b.gx, b.gy);
+  // Both ends must sit on the same stretch of sea; otherwise there is no sailing there, and no need to search.
+  if (start !== null && goal !== null && g.comp[start] !== g.comp[goal]) return null;
   if (start === null || goal === null) return null;
 
   const { n } = g;
