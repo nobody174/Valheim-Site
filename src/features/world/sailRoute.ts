@@ -45,10 +45,16 @@ function labelWater(water: Uint8Array, n: number) {
       size++;
       const x = at % n;
       const y = (at - x) / n;
-      if (x > 0 && water[at - 1] && !comp[at - 1]) (comp[at - 1] = id), stack.push(at - 1);
-      if (x < n - 1 && water[at + 1] && !comp[at + 1]) (comp[at + 1] = id), stack.push(at + 1);
-      if (y > 0 && water[at - n] && !comp[at - n]) (comp[at - n] = id), stack.push(at - n);
-      if (y < n - 1 && water[at + n] && !comp[at + n]) (comp[at + n] = id), stack.push(at + n);
+      for (const next of [
+        x > 0 ? at - 1 : -1,
+        x < n - 1 ? at + 1 : -1,
+        y > 0 ? at - n : -1,
+        y < n - 1 ? at + n : -1,
+      ]) {
+        if (next < 0 || !water[next] || comp[next]) continue;
+        comp[next] = id;
+        stack.push(next);
+      }
     }
     compSize.push(size);
   }
