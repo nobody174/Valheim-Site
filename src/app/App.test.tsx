@@ -35,6 +35,7 @@ describe('command palette', () => {
 
   it('stays closed after Esc or a click outside when opened from the header box', async () => {
     const user = userEvent.setup();
+    window.location.hash = '#/items';
     render(<App />);
     const box = screen.getByLabelText('Open search');
     await user.click(box);
@@ -59,5 +60,11 @@ describe('command palette', () => {
     render(<App />);
     expect(screen.getByRole('heading', { name: 'Page not found' })).toBeTruthy();
     expect(screen.queryByText(/Coming in Phase/)).toBeNull();
+  });
+
+  it('Home has one search box, and the header box appears on other pages', () => {
+    render(<App />);
+    expect(screen.getAllByRole('searchbox')).toHaveLength(1);
+    expect(screen.queryByLabelText('Open search')).toBeNull();
   });
 });

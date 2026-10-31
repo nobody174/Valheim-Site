@@ -22,7 +22,7 @@ export function ZoneCards() {
   const items = lookup.allItems();
   return (
     <>
-      <h2 className={styles.sectionTitle}>Pick a zone</h2>
+      <h2 className={styles.sectionTitle}>Zones</h2>
       <div className={styles.zones}>
         {lookup.allBiomes().map((b) => {
           const inZone = items.filter((i) => i.biome === b.id);
@@ -54,7 +54,14 @@ export function ZoneCards() {
           );
         })}
       </div>
+    </>
+  );
+}
 
+/** The rest of the tools, shown inside the folded shortcuts. */
+export function ZoneTools() {
+  return (
+    <>
       <h2 className={styles.sectionTitle}>Handy tools</h2>
       <div className={styles.tools}>
         {TOOLS.map((t) => (

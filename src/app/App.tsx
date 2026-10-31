@@ -170,6 +170,7 @@ function MenuFold({ label, tier }: { label: string; tier: RouteDef['tier'] }) {
 }
 
 function Shell() {
+  const { pathname } = useLocation();
   const [paletteOpen, setPaletteOpen] = useState(false);
 
   useEffect(() => {
@@ -196,20 +197,22 @@ function Shell() {
           <BrandMark />
           Valheim Companion
         </Link>
-        <input
-          className={styles.search}
-          type="search"
-          readOnly
-          placeholder="Search"
-          aria-label="Open search"
-          onClick={() => setPaletteOpen(true)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              setPaletteOpen(true);
-            }
-          }}
-        />
+        {pathname !== '/' && (
+          <input
+            className={styles.search}
+            type="search"
+            readOnly
+            placeholder="Search"
+            aria-label="Open search"
+            onClick={() => setPaletteOpen(true)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setPaletteOpen(true);
+              }
+            }}
+          />
+        )}
         <SecondScreenToggle />
         <ProfileSwitcher />
       </header>
