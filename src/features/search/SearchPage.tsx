@@ -8,7 +8,6 @@ import { getRecent } from '../../state/recent';
 import { search } from './instance';
 import { NoResults } from './NoResults';
 import { Hero } from './Hero';
-import { NextUp } from './NextUp';
 import { ZoneCards, ZoneTools } from './ZoneCards';
 import { SearchResults } from './SearchResults';
 import { useHitKeys } from './useHitKeys';
@@ -74,7 +73,6 @@ export function SearchPage() {
         </>
       ) : (
         <>
-          <NextUp />
           <ZoneCards />
           <details className={styles.more}>
             <summary>More shortcuts</summary>

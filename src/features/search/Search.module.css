@@ -326,26 +326,28 @@
   }
 }
 
-.nextUp {
-  margin: 1rem 0;
-  padding: 0.8rem 1rem;
-  background: #120d09;
-  border: 2px solid var(--amber);
-  border-radius: 12px;
-}
-.nextUp h2 {
-  margin: 0 0 0.4rem;
-  font-size: 1rem;
-}
-.nextUp ul {
-  margin: 0 0 0.5rem;
-  padding-left: 1.2rem;
-}
 .more > summary {
   min-height: 44px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
   cursor: pointer;
+  list-style: none;
+  color: var(--gold);
+  background: var(--wood);
+  border: 1px solid var(--wood-light);
+  border-radius: 8px;
+}
+.more > summary::-webkit-details-marker {
+  display: none;
+}
+.more > summary::after {
+  content: '+';
+  font-weight: bold;
+}
+.more[open] > summary::after {
+  content: '2';
 }
 /* Zones as one compact row of small cards. */
 .zones {
@@ -354,9 +356,4 @@
 }
 .zones .zoneCard {
   padding: 2.6rem 0.6rem 0.6rem;
-}
-.nextUp a:last-child {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
 }
