@@ -101,7 +101,7 @@ describe('item page', () => {
 
   it('marks unverified data visibly', () => {
     renderAt('/item/Wood');
-    expect(screen.getAllByText('Unverified').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Guide, not checked').length).toBeGreaterThan(0);
   });
 
   it('handles an unknown id', () => {
