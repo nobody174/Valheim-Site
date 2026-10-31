@@ -62,7 +62,7 @@ export function buildDocs(data: GameData): SearchDoc[] {
     ),
     ...data.creatures.map((c) => doc('creatures', c.id, c.name, c.aliases, [], 'Creature')),
     ...data.bosses.map((b) => doc('bosses', b.id, b.name, b.aliases, [], 'Boss')),
-    ...data.stations.map((s) => doc('stations', s.id, s.name, [], [], 'Crafting station')),
+    ...data.stations.map((s) => doc('stations', s.id, s.name, [], ['level', 'upgrade', 'extension'], 'Crafting station')),
     ...data.pieces.map((p) =>
       doc(
         'pieces',

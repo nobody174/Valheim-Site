@@ -44,6 +44,19 @@ export function UpgradePage() {
         What it costs to take a weapon or armor piece from one upgrade level to another, and the
         station level each step needs.
       </p>
+      <p className={styles.lead}>
+        To raise a crafting station itself, open it to see the extensions it needs:{' '}
+        {lookup
+          .allStations()
+          .filter((s) => s.extensions.length + s.laterExtensions.length > 0)
+          .map((s, i) => (
+            <span key={s.id}>
+              {i > 0 && ', '}
+              <Link to={`/station/${encodeURIComponent(s.id)}?open=levels`}>{s.name}</Link>
+            </span>
+          ))}
+        .
+      </p>
       <div className={styles.filters}>
         <label>
           Item

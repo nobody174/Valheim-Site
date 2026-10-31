@@ -157,9 +157,21 @@ describe('new data on pages', () => {
 
   it('station page names the zones the materials come from and links each material', () => {
     renderAt('/station/piece_cauldron');
-    const section = screen.getByRole('heading', { name: 'How to get it' }).closest('section')!;
+    const section = screen.getByRole('heading', { name: 'How to get it' }).closest('details')!;
     expect(within(section).getByText(/Materials come from:/)).toBeTruthy();
     expect(within(section).getAllByRole('link').length).toBeGreaterThan(0);
+  });
+
+  it('station sections start folded and ?open= opens one', () => {
+    renderAt('/station/piece_workbench');
+    const folds = () =>
+      ['How to get it', 'Station levels', 'Extensions', 'Crafts here'].map(
+        (n) => screen.getByRole('heading', { name: n }).closest('details')!,
+      );
+    expect(folds().map((d) => d.open)).toEqual([false, false, false, false]);
+    cleanup();
+    renderAt('/station/piece_workbench?open=levels');
+    expect(folds().map((d) => d.open)).toEqual([false, true, false, false]);
   });
 
   it('creature page shows attacks and resistances', () => {

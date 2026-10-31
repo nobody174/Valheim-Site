@@ -1,4 +1,4 @@
-import { useParams } from 'react-router';
+import { useParams, useSearchParams } from 'react-router';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { attackName } from '../../data/attackName';
@@ -137,6 +137,30 @@ export function CreaturePage({ boss = false }: { boss?: boolean }) {
   return <MonsterPage monster={monster} boss={boss} />;
 }
 
+/** A section that starts folded; click its title to open it. `?open=levels` in the address opens one. */
+function Fold({
+  name,
+  title,
+  hint,
+  children,
+}: {
+  name: string;
+  title: string;
+  hint?: string;
+  children: React.ReactNode;
+}) {
+  const [params] = useSearchParams();
+  return (
+    <details className={`${styles.section} ${styles.fold}`} open={params.get('open') === name || undefined}>
+      <summary>
+        <h2>{title}</h2>
+        {hint && <span className={styles.dim}>{hint}</span>}
+      </summary>
+      {children}
+    </details>
+  );
+}
+
 /** What to build the station from, and which zones those materials come from. */
 function HowToGet({ station }: { station: Station }) {
   const reqs = station.buildRequirements;
@@ -145,8 +169,7 @@ function HowToGet({ station }: { station: Station }) {
     .filter((b) => reqs.some((g) => lookup.item(g.item)?.biome === b.id))
     .map((b) => b.name);
   return (
-    <section className={styles.section}>
-      <h2>How to get it</h2>
+    <Fold name="how" title="How to get it">
       {reqs.length === 0 ? (
         <p className={styles.dim}>No build cost in the data. Its materials come from a zone that is not added yet, or the game files list none.</p>
       ) : (
@@ -166,7 +189,7 @@ function HowToGet({ station }: { station: Station }) {
           )}
         </>
       )}
-    </section>
+    </Fold>
   );
 }
 
@@ -175,8 +198,7 @@ function StationLevels({ station }: { station: Station }) {
   const rows = stationLevels(station, lookup.allRecipes());
   if (rows.length < 2) return null;
   return (
-    <section className={styles.section}>
-      <h2>Station levels</h2>
+    <Fold name="levels" title="Station levels" hint={`level 1 to ${rows.length}`}>
       <p className={styles.dim}>
         A station is level 1 plus the number of different extensions built within range of it, so
         level N needs any N − 1 of the extensions below. An upgrade needs one level more per quality.
@@ -224,7 +246,7 @@ function StationLevels({ station }: { station: Station }) {
           </tbody>
         </table>
       </div>
-    </section>
+    </Fold>
   );
 }
 
@@ -248,8 +270,7 @@ export function StationPage() {
       <HowToGet station={station} />
       <StationLevels station={station} />
       {station.extensions.length + station.laterExtensions.length > 0 && (
-        <section className={styles.section}>
-          <h2>Extensions</h2>
+        <Fold name="extensions" title="Extensions" hint={`${station.extensions.length + station.laterExtensions.length} to build`}>
           <p className={styles.dim}>{station.note}</p>
           {station.extensions.map((e) => (
             <div key={e.id} className={styles.recipe}>
@@ -278,15 +299,14 @@ export function StationPage() {
               </p>
             </div>
           ))}
-        </section>
+        </Fold>
       )}
-      <section className={styles.section}>
-        <h2>Crafts here</h2>
+      <Fold name="crafts" title="Crafts here" hint={`${recipes.length} recipes`}>
         {recipes.length === 0 && <p className={styles.dim}>No recipes in the seed data.</p>}
         {recipes.map((r) => (
           <RecipeBlock key={r.id} recipe={r} />
         ))}
-      </section>
+      </Fold>
     </article>
   );
 }
