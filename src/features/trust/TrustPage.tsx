@@ -36,11 +36,11 @@ export function TrustPage() {
         </div>
         <div className={tiles.tile}>
           <strong>{overall.fromFiles}</strong>
-          <span>read from the game files</span>
+          <span>from game files</span>
         </div>
         <div className={tiles.tile}>
           <strong>{overall.unverified}</strong>
-          <span>written by hand, not checked</span>
+          <span>guide, not checked</span>
         </div>
         <div className={tiles.tile}>
           <strong>{overall.total}</strong>

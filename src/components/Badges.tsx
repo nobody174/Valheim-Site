@@ -3,9 +3,9 @@ import type { Item } from '../data/schemas';
 import styles from './Badges.module.css';
 
 const VERIFIED_LABEL: Record<Item['verified'], string> = {
-  unverified: 'Unverified',
+  unverified: 'Guide, not checked',
   'cross-checked': 'From game files',
-  'in-game': 'Verified in game',
+  'in-game': 'Seen in game',
 };
 
 export function VerifiedBadge({ level, note }: { level: Item['verified']; note?: string }) {
