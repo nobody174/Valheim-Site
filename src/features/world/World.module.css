@@ -1,5 +1,5 @@
 .page {
-  max-width: 900px;
+  max-width: 1500px;
 }
 .panel {
   background: var(--bg-2);
@@ -152,7 +152,7 @@
 }
 .canvas {
   width: 100%;
-  max-width: 900px;
+  max-width: min(100%, 1100px);
   aspect-ratio: 1;
   display: block;
   background: #0e0b08;
