@@ -15,9 +15,9 @@ export interface RouteGroup {
 }
 
 /** The ten pages a player reaches for most. Everything else sits one click away. */
-const MAIN = new Set(['/', '/items', '/recipes', '/building', '/creatures', '/bosses', '/food', '/checklist']);
+const MAIN = new Set(['/', '/items', '/recipes', '/building', '/creatures', '/bosses', '/food', '/checklist', '/world']);
 /** Pages that read or hold the owner's own character, world and data. */
-const OWNER = new Set(['/character', '/spotcheck', '/portals', '/world', '/profile']);
+const OWNER = new Set(['/character', '/spotcheck', '/portals', '/profile']);
 
 /** The sidebar, in the order a player reaches for things: look up, plan, track, reference. */
 const RAW_GROUPS: { id: string; title: string; routes: Omit<RouteDef, 'tier'>[] }[] = [

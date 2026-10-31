@@ -330,24 +330,13 @@
   min-height: 44px;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0 1rem;
   cursor: pointer;
   list-style: none;
   color: var(--gold);
-  background: var(--wood);
-  border: 1px solid var(--wood-light);
-  border-radius: 8px;
+  text-decoration: underline;
 }
 .more > summary::-webkit-details-marker {
   display: none;
-}
-.more > summary::after {
-  content: '+';
-  font-weight: bold;
-}
-.more[open] > summary::after {
-  content: '2';
 }
 /* Zones as one compact row of small cards. */
 .zones {
