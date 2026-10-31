@@ -68,7 +68,7 @@ export const ProfileSchema = z
       })
       .optional(),
   })
-  .strict();
+  .loose();
 
 export type Profile = z.infer<typeof ProfileSchema>;
 

@@ -16,8 +16,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant them to grow an oak tree.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Plant them to grow an oak tree."
   },
   {
     "id": "Amber",
@@ -1167,8 +1166,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "The metal glints oddly in the sunlight. Somehow, you know that it can never be complete on its own...",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "The metal glints oddly in the sunlight. Somehow, you know that it can never be complete on its own..."
   },
   {
     "id": "AxeHead2",
@@ -1187,8 +1185,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "What battles has this weapon borne witness to? You cannot see its past, only shape its future...",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "What battles has this weapon borne witness to? You cannot see its past, only shape its future..."
   },
   {
     "id": "AxeIron",
@@ -1421,8 +1418,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant them to grow a beech tree.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Plant them to grow a beech tree."
   },
   {
     "id": "Bell",
@@ -1502,8 +1498,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant them to grow a birch tree.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Plant them to grow a birch tree."
   },
   {
     "id": "BjornHide",
@@ -1789,8 +1784,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Tiny but tasty.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Tiny but tasty."
   },
   {
     "id": "BoarJerky",
@@ -2499,8 +2493,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant these if you like carrots...",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Plant these if you like carrots..."
   },
   {
     "id": "CarrotSoup",
@@ -3019,8 +3012,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
     "description": "Unrefined copper. Needs to be refined in a smelter.",
-    "portalBlocked": true,
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "portalBlocked": true
   },
   {
     "id": "CrossbowArbalest",
@@ -3142,8 +3134,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Some call it a weed, but it's pretty nonetheless.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Some call it a weed, but it's pretty nonetheless."
   },
   {
     "id": "DeerHide",
@@ -3309,8 +3300,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "An ancient and sturdy material.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "An ancient and sturdy material."
   },
   {
     "id": "Entrails",
@@ -3395,8 +3385,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "A small pile of feathers.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "A small pile of feathers."
   },
   {
     "id": "Fiddleheadfern",
@@ -3458,7 +3447,6 @@
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
     "description": "High quality wood for fine carpentry.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Fine wood"
     ]
@@ -3480,8 +3468,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant it to grow a fir tree.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Plant it to grow a fir tree."
   },
   {
     "id": "Fish1",
@@ -5588,8 +5575,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "An energetic glowing mushroom.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "An energetic glowing mushroom."
   },
   {
     "id": "NeckTail",
@@ -5860,8 +5846,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant it to grow a pine tree.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Plant it to grow a pine tree."
   },
   {
     "id": "PiquantPie",
@@ -6164,7 +6149,6 @@
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
     "description": "Perfect for building log cabins.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "aliases": [
       "Core wood",
       "Round log",
@@ -7371,8 +7355,7 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Beautiful but prickly.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "description": "Beautiful but prickly."
   },
   {
     "id": "Tin",
@@ -7412,8 +7395,7 @@
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
     "description": "Unrefined tin. Needs to be refined in a smelter.",
-    "portalBlocked": true,
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "portalBlocked": true
   },
   {
     "id": "Torch",

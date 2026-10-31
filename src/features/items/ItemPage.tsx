@@ -5,6 +5,7 @@ import { GameCheckPanel } from '../spotcheck/GameCheckPanel';
 import { GuideTag, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityIcon } from '../../components/EntityIcon';
 import { QuickCard } from '../../components/QuickCard';
+import { confirmedChecks } from '../../data/load';
 import { graph, lookup } from '../../data/lookup';
 import { skillLabel } from '../../data/skills';
 import { effectiveHoard } from '../../state/model';
@@ -164,6 +165,7 @@ function WhereFound({ id }: { id: string }) {
   const sources = graph.obtainedFrom(id).filter((s) => s.type !== 'recipe');
   const summons = lookup.summonsFor(id);
   if (sources.length === 0 && summons.length === 0) return null;
+  const whereConfirmed = confirmedChecks.has(`where:${id}`);
   return (
     <section className={styles.section}>
       <h2>Where found</h2>
@@ -172,25 +174,25 @@ function WhereFound({ id }: { id: string }) {
           if (s.type === 'gather')
             return (
               <li key={i}>
-                Gathered from: {s.node} <GuideTag />
+                Gathered from: {s.node} {!whereConfirmed && <GuideTag />}
               </li>
             );
           if (s.type === 'other')
             return (
               <li key={i}>
-                {s.note} <GuideTag />
+                {s.note} {!whereConfirmed && <GuideTag />}
               </li>
             );
           if (s.type === 'trader')
             return (
               <li key={i}>
-                Bought from: {s.note} <GuideTag />
+                Bought from: {s.note} {!whereConfirmed && <GuideTag />}
               </li>
             );
           if (s.type === 'found')
             return (
               <li key={i}>
-                Found: {s.note} <GuideTag />
+                Found: {s.note} {!whereConfirmed && <GuideTag />}
               </li>
             );
           if (s.type === 'drop') {
@@ -286,11 +288,7 @@ export function ItemPage() {
           {biome && ` · ${biome}`} · <VerifiedBadge level={item.verified} note={item.note} />
         </p>
 
-        {item.verified === 'unverified' && (
-          <p className={styles.warn}>
-            Unverified: {item.note ?? 'not yet checked against the game.'}
-          </p>
-        )}
+        {item.note && <p className={styles.dim}>{item.note}</p>}
 
         {item.description && <p className={styles.dim}>{item.description}</p>}
         {item.use && (

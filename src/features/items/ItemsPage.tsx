@@ -191,7 +191,7 @@ export function ItemsPage() {
                     <QuickSummary line={summaryLine(i.id)} />
                   </td>
                   <td className={styles.hideOnMobile}>
-                    <VerifiedBadge level={i.verified} note={i.note} />
+                    {i.verified !== 'cross-checked' && <VerifiedBadge level={i.verified} note={i.note} />}
                   </td>
                 </tr>
               ))}

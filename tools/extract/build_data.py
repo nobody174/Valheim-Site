@@ -281,6 +281,8 @@ def apply_confirmed(files, warnings):
             for entry in files[lst]:
                 if entry.get(field) == ident:
                     entry['verified'] = 'in-game'
+                    if kind == 'where':
+                        entry.pop('note', None)  # the note said where-to-find was not checked; now it was
                     hit = True
         if not hit:
             warnings.append(f'confirmed_in_game.json lists {key}, which is not in the data')

@@ -1,5 +1,6 @@
 import type { Item } from './schemas';
 import { describeEntity } from './describe';
+import { confirmedChecks } from './load';
 import { graph, lookup } from './lookup';
 
 /** One piece of a quick line: plain text, an entity to link, or a "+N more" that opens the full list. */
@@ -40,7 +41,10 @@ function farmLine(item: Item, withBiome: boolean): QuickLine | undefined {
   if (written) {
     const text = written.type === 'gather' ? written.node : written.note;
     const lead = written.type === 'trader' ? 'Buy: ' : '';
-    return { parts: [...prefix, `${lead}${text}`], guide: true };
+    return {
+      parts: [...prefix, `${lead}${text}`],
+      guide: !confirmedChecks.has(`where:${item.id}`),
+    };
   }
 
   // Best chance first; a drop with no stated chance counts as certain.
@@ -55,7 +59,7 @@ function farmLine(item: Item, withBiome: boolean): QuickLine | undefined {
   const parts: QuickPart[] = [...prefix, 'Dropped by '];
   drops.slice(0, MAX_DROPS).forEach((id, i) => parts.push(...(i ? [', '] : []), { id }));
   if (drops.length > MAX_DROPS) parts.push(' ', { more: drops.length - MAX_DROPS });
-  return { parts, guide: item.verified === 'unverified' };
+  return { parts, guide: false };
 }
 
 function usedForLine(item: Item): QuickLine | undefined {
@@ -93,7 +97,7 @@ function makeLine(item: Item): QuickLine | undefined {
   recipe.inputs.forEach((input, i) =>
     parts.push(...(i ? [', '] : []), `${input.qty} `, { id: input.item }),
   );
-  return { parts, guide: item.verified === 'unverified' };
+  return { parts, guide: false };
 }
 
 /** The three short lines a player needs: where to get it, what it is for, how to make it. Read-only. */

@@ -35,7 +35,7 @@ export const CharacterSnapshotSchema = z
     kills: z.record(z.string(), z.number().int()),
     foods: z.array(z.object({ item: z.string(), minutesLeft: z.number().int() })),
   })
-  .strict();
+  .loose();
 
 export type CharacterSnapshot = z.infer<typeof CharacterSnapshotSchema>;
 
