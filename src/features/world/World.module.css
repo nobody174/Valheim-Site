@@ -184,3 +184,16 @@
 .canvas[data-placing] {
   cursor: crosshair;
 }
+
+details.panel > summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+details.panel > summary h2 {
+  margin: 0;
+}
+details.panel[open] > summary {
+  margin-bottom: 0.4rem;
+}

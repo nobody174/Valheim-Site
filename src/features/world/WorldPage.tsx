@@ -337,8 +337,8 @@ export function WorldPage() {
       </Intro>
 
       {canPickFolder() && (
-        <section className={styles.panel}>
-          <h2>Keep it up to date</h2>
+        <details className={styles.panel}>
+          <summary><h2>Keep it up to date</h2></summary>
           <p className={styles.dim}>
             Choose the folders once and the page remembers them for this profile and reads the
             newest files when you open it or come back to the window. Choose each folder in turn:
@@ -363,11 +363,11 @@ export function WorldPage() {
               allow it.
             </p>
           )}
-        </section>
+        </details>
       )}
 
-      <section className={styles.panel}>
-        <h2>1. Read the world file</h2>
+      <details className={styles.panel}>
+        <summary><h2>1. Read the world file</h2></summary>
         <div className={styles.actions}>
           <label className={styles.button}>
             {busy ? 'Reading ...' : 'Choose the world .db2 file'}
@@ -409,10 +409,10 @@ export function WorldPage() {
             In the file dialog, click the address bar and paste the folder to get there.
           </p>
         </details>
-      </section>
+      </details>
 
-      <section className={styles.panel}>
-        <h2>2. Where are you? (optional)</h2>
+      <details className={styles.panel}>
+        <summary><h2>2. Where are you? (optional)</h2></summary>
         <p className={styles.dim}>
           Your character file remembers where you logged out, your home point and where you died.
           With one of those the list is sorted by distance.
@@ -471,10 +471,10 @@ export function WorldPage() {
             Measuring from east {Math.round(reference.x)}, north {Math.round(reference.z)}.
           </p>
         )}
-      </section>
+      </details>
 
-      <section className={styles.panel}>
-        <h2>3. The land (optional)</h2>
+      <details className={styles.panel}>
+        <summary><h2>3. The land (optional)</h2></summary>
         <p className={styles.dim}>
           The game keeps its own picture of the world next to the world's save. Give it to the site
           and the map shows the coasts, mountains and zones, with the part you have explored lit and
@@ -514,7 +514,7 @@ export function WorldPage() {
             for the world file.
           </p>
         </details>
-      </section>
+      </details>
 
       {(error || map.error) && (
         <p className={styles.error} role="alert">
