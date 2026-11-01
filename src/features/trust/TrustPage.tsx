@@ -29,6 +29,13 @@ export function TrustPage() {
         no zone, so the zone rows add up to less than the total.
       </p>
 
+      <h2>How we check it</h2>
+      <ol>
+        <li>The data is read straight from the game&apos;s own files, so names, numbers and recipes are not typed by hand.</li>
+        <li>Anything that comes from a guide and not the files is tagged &quot;Guide, not checked&quot; until it is confirmed.</li>
+        <li>The owner then checks lines in game, and those become &quot;Seen in game&quot;. Wrong? <Link to="/corrections">Report it</Link>.</li>
+      </ol>
+
       <div className={tiles.tiles}>
         <div className={tiles.tile}>
           <strong>{overall.inGame}</strong>

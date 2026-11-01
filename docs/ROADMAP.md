@@ -79,3 +79,5 @@ After review 3: phone bottom tab bar (Home, Search, Items, Planner, More) replac
 Top menu (2026-11-01, from the 4ever60 comparison): the left sidebar is replaced by a top bar with eight task dropdowns (Gear, Creatures, Building, Food, Progress, My game, Tools, About), a footer with data version and a fan-project notice, and the phone More sheet follows the same sections. Earlier notes above about ten sidebar pages are history.
 
 Home sections (2026-11-01): hero buttons (Open my world, What should I do next?), "What do you want to do?" task cards, zones, a boss icon row, three tool cards and the latest data update. Handy tools that are not on the first screen stay folded under More shortcuts.
+
+Trust pages (2026-11-01): a Report a wrong value page (a note to copy and send, since there is no server) linked from item, creature, boss and station pages and the footer; Data trust has a short How we check it; Update log is now labelled What's new.

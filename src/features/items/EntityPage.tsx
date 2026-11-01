@@ -1,3 +1,4 @@
+import { ReportLink } from '../../components/ReportLink';
 import { useParams, useSearchParams } from 'react-router';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
@@ -101,6 +102,7 @@ function MonsterPage({ monster, boss }: { monster: Creature | Boss; boss: boolea
         <span className={styles.dim}>{boss ? 'Boss' : 'Creature'}</span>
         {biome && <span className={styles.zoneTag}>{biome}</span>}
         <VerifiedBadge level={monster.verified} note={monster.note} />
+        <ReportLink id={monster.id} />
       </div>
       <section className={styles.section}>
         <dl className={styles.facts}>
@@ -266,6 +268,7 @@ export function StationPage() {
       <div className={styles.badges}>
         <span className={styles.dim}>Crafting station</span>
         <VerifiedBadge level={station.verified} note={station.note} />
+        <ReportLink id={station.id} />
       </div>
       <HowToGet station={station} />
       <StationLevels station={station} />

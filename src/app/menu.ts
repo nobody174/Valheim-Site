@@ -48,7 +48,7 @@ export const MENU: MenuSection[] = [
   {
     id: 'about',
     label: 'About',
-    paths: ['/trust', '/updates'],
+    paths: ['/trust', '/updates', '/corrections'],
   },
 ];
 

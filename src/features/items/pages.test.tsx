@@ -123,7 +123,7 @@ describe('link integrity', () => {
     const broken: string[] = [];
     for (const a of container.querySelectorAll('a')) {
       const href = a.getAttribute('href') ?? '';
-      if (href.startsWith('/planner') || href.startsWith('/upgrades') || href.startsWith('/compare') || href.startsWith('/graph') || href.startsWith('/skills') || href.startsWith('/portals')) continue; // tool pages
+      if (href.startsWith('/planner') || href.startsWith('/upgrades') || href.startsWith('/compare') || href.startsWith('/graph') || href.startsWith('/skills') || href.startsWith('/portals') || href.startsWith('/corrections')) continue; // tool pages
       const [, kind, id] = href.split('/');
       if (!targets[kind]?.(decodeURIComponent(id)))
         broken.push(`${path} -> ${a.getAttribute('href')}`);
