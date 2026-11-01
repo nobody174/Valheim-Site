@@ -22,13 +22,21 @@ const rows = () => within(screen.getAllByRole('table')[0]!).getAllByRole('row').
 
 describe('building page', () => {
   it('lists every piece in the data with its cost', () => {
-    renderPage();
+    renderPage('/building?zone=all');
     expect(rows()).toHaveLength(lookup.allPieces().length);
     expect(screen.getAllByText('Bed').length).toBeGreaterThan(0);
   });
 
-  it('shows each piece with its icon where one was exported', () => {
+  it('opens on the zones reached so far, with one click to every piece', async () => {
+    const user = userEvent.setup();
     renderPage();
+    expect(rows().length).toBeLessThan(lookup.allPieces().length);
+    await user.click(screen.getByRole('button', { name: 'Show all pieces' }));
+    expect(rows()).toHaveLength(lookup.allPieces().length);
+  });
+
+  it('shows each piece with its icon where one was exported', () => {
+    renderPage('/building?zone=all');
     const withIcon = lookup.allPieces().filter((p) => iconUrl(p.id));
     expect(withIcon.length).toBeGreaterThan(0);
     expect(screen.getAllByRole('table')[0]!.querySelectorAll('tbody td:first-child img')).toHaveLength(withIcon.length);

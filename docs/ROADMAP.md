@@ -89,3 +89,5 @@ Guides (2026-11-01): a Guides page under Progress, built from the data only: per
 Filter-first lists, part 1 (2026-11-01, review package 4): Recipes opens on the recipes whose materials are found up to the zone you have reached (from your boss trophies), with a one-click Show all zones; a search shows everything. First view went from about 12,300 page elements to about 1,500. Items, Checklist, Building and Food are next.
 
 Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached so far can give (found there or crafted from what is), 70 items for a fresh profile instead of 446, with Show all items; any filter or search shows everything. Checklist, Building and Food are still full lists.
+
+- Package 4 part 3: Checklist and Building open on your zone ("Show all" link; any filter shows everything); each recipe on the Recipes page collapses with its arrow.

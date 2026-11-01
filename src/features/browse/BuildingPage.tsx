@@ -2,8 +2,13 @@ import { useMemo } from 'react';
 import { Intro } from '../../components/Intro';
 import { Link, useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
+import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
+import { useAdvice } from '../advisor/useAdvice';
+import { itemZoneOrder } from '../guides/guides';
 import styles from '../items/Items.module.css';
+
+const ITEM_ZONE = itemZoneOrder(lookup.allBiomes(), lookup.allItems(), gameData.recipes);
 
 /** Building menu pieces whose whole cost is in the database. Filters live in the URL. */
 export function BuildingPage() {
@@ -11,6 +16,11 @@ export function BuildingPage() {
   const text = params.get('q') ?? '';
   const category = params.get('category') ?? '';
   const station = params.get('station') ?? '';
+  const reached = useAdvice().openZone;
+  const zoneName = lookup.allBiomes().find((b) => b.order === reached)?.name;
+  const showAll = params.get('zone') === 'all';
+  const filtered = Boolean(text || category || station);
+  const limited = !filtered && !showAll;
 
   const set = (key: string, value: string) => {
     const next = new URLSearchParams(params);
@@ -26,10 +36,14 @@ export function BuildingPage() {
     const t = text.trim().toLowerCase();
     return lookup
       .allPieces()
+      .filter(
+        (p) =>
+          !limited || p.requirements.every((g) => (ITEM_ZONE.get(g.item) ?? Infinity) <= reached),
+      )
       .filter((p) => !category || p.category === category)
       .filter((p) => !station || p.station === station)
       .filter((p) => !t || p.name.toLowerCase().includes(t));
-  }, [text, category, station]);
+  }, [text, category, station, limited, reached]);
 
   return (
     <section>
@@ -85,6 +99,23 @@ export function BuildingPage() {
       </div>
       <p className={styles.dim} aria-live="polite">
         {rows.length} {rows.length === 1 ? 'piece' : 'pieces'}
+        {limited && zoneName && (
+          <>
+            {' '}
+            with materials up to {zoneName}.{' '}
+            <button type="button" className={styles.linkButton} onClick={() => set('zone', 'all')}>
+              Show all pieces
+            </button>
+          </>
+        )}
+        {showAll && !filtered && (
+          <>
+            {' '}
+            <button type="button" className={styles.linkButton} onClick={() => set('zone', '')}>
+              Only up to my zone
+            </button>
+          </>
+        )}
       </p>
       {rows.length === 0 ? (
         <p className={styles.empty}>No pieces match these filters.</p>
