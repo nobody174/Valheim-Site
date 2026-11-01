@@ -650,3 +650,9 @@
   border: 0;
   cursor: pointer;
 }
+
+.rowHead {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}

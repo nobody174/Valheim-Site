@@ -91,3 +91,4 @@ Filter-first lists, part 1 (2026-11-01, review package 4): Recipes opens on the 
 Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached so far can give (found there or crafted from what is), 70 items for a fresh profile instead of 446, with Show all items; any filter or search shows everything. Checklist, Building and Food are still full lists.
 
 - Package 4 part 3: Checklist and Building open on your zone ("Show all" link; any filter shows everything); each recipe on the Recipes page collapses with its arrow.
+- Progression guide: tick each item as collected, or mark a whole list (Must keep, Other materials) at once.

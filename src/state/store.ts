@@ -16,6 +16,7 @@ import {
   withPlannerTargets,
   withToggledTick,
   withToggledFavorite,
+  withFlags,
   withToggledFlag,
   type AppState,
   type ExportFile,
@@ -37,6 +38,7 @@ import {
 
 export interface Actions {
   toggleFlag(itemId: string, flag: ProgressFlag): void;
+  setFlags(itemIds: readonly string[], flag: ProgressFlag, value: boolean): void;
   toggleFavorite(kind: FavoriteKind, id: string): void;
   setHoardOverride(itemId: string, hoard: Item['hoard'] | null): void;
   setInventoryQty(itemId: string, qty: number): void;
@@ -85,6 +87,7 @@ export function createAppStore(storage: StorageLike | null) {
       rescued,
 
       toggleFlag: (itemId, flag) => updateActive((p) => withToggledFlag(p, itemId, flag)),
+      setFlags: (ids, flag, value) => updateActive((p) => withFlags(p, ids, flag, value)),
       toggleFavorite: (kind, id) => updateActive((p) => withToggledFavorite(p, kind, id)),
       setHoardOverride: (itemId, hoard) => updateActive((p) => withHoardOverride(p, itemId, hoard)),
       setInventoryQty: (itemId, qty) => updateActive((p) => withInventoryQty(p, itemId, qty)),
