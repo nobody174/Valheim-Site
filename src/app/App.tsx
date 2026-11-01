@@ -16,6 +16,7 @@ import { CommandsPage } from '../features/commands/CommandsPage';
 import { SkillsPage } from '../features/skills/SkillsPage';
 import { UpdateLogPage } from '../features/updates/UpdateLogPage';
 import { PlacesPage } from '../features/places/PlacesPage';
+import { CorrectionsPage } from '../features/corrections/CorrectionsPage';
 import { TrustPage } from '../features/trust/TrustPage';
 import { PortalsPage } from '../features/portals/PortalsPage';
 import { WorldPage } from '../features/world/WorldPage';
@@ -99,6 +100,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/commands': <CommandsPage />,
   '/spotcheck': <SpotCheckPage />,
   '/trust': <TrustPage />,
+  '/corrections': <CorrectionsPage />,
   '/updates': <UpdateLogPage />,
   '/profile': <ProfilePage />,
 };

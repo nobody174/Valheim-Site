@@ -67,7 +67,8 @@ const RAW_GROUPS: { id: string; title: string; routes: RouteDef[] }[] = [
     routes: [
       { path: '/commands', label: 'Console commands', phase: 5, icon: 'Ruby' },
       { path: '/trust', label: 'Data trust', phase: 5, icon: 'Bell' },
-      { path: '/updates', label: 'Update log', phase: 5, icon: 'BellFragment' },
+      { path: '/updates', label: "What's new", phase: 5, icon: 'BellFragment' },
+      { path: '/corrections', label: 'Report a wrong value', phase: 5, icon: 'Thistle' },
       { path: '/profile', label: 'Profile & data', phase: 1, icon: 'Coins' },
     ],
   },

@@ -9,7 +9,8 @@ export function SiteFooter() {
     <footer className={styles.footer}>
       <nav aria-label="About the data" className={styles.links}>
         <Link to="/trust">Data trust</Link>
-        <Link to="/updates">Update log</Link>
+        <Link to="/updates">What&apos;s new</Link>
+        <Link to="/corrections">Report a wrong value</Link>
         <Link to="/profile">Profile and data</Link>
       </nav>
       <p>

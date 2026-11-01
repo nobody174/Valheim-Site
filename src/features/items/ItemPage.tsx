@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { GameCheckPanel } from '../spotcheck/GameCheckPanel';
+import { ReportLink } from '../../components/ReportLink';
 import { GuideTag, HoardBadge, VerifiedBadge } from '../../components/Badges';
 import { EntityIcon } from '../../components/EntityIcon';
 import { QuickCard } from '../../components/QuickCard';
@@ -289,6 +290,9 @@ export function ItemPage() {
         </p>
 
         {item.note && <p className={styles.dim}>{item.note}</p>}
+        <p className={styles.dim}>
+          <ReportLink id={item.id} />
+        </p>
 
         {item.description && <p className={styles.dim}>{item.description}</p>}
         {item.use && (
