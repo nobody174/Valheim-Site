@@ -81,3 +81,5 @@ Top menu (2026-11-01, from the 4ever60 comparison): the left sidebar is replaced
 Home sections (2026-11-01): hero buttons (Open my world, What should I do next?), "What do you want to do?" task cards, zones, a boss icon row, three tool cards and the latest data update. Handy tools that are not on the first screen stay folded under More shortcuts.
 
 Trust pages (2026-11-01): a Report a wrong value page (a note to copy and send, since there is no server) linked from item, creature, boss and station pages and the footer; Data trust has a short How we check it; Update log is now labelled What's new.
+
+What can I make? (2026-11-01): a page under Gear and Tools where you type what you carry and see recipes you can make now and those one or two things away; it shares the Build planner's stock.
