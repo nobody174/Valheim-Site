@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import { Intro } from '../../components/Intro';
-import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
@@ -14,7 +13,7 @@ function Row({ c }: { c: Craftable }) {
   const out = c.recipe.output;
   return (
     <li>
-      <EntityIcon id={out.item} size={22} /> <EntityLink id={out.item} />
+      <EntityLink id={out.item} />
       {out.qty > 1 && ` x${out.qty}`}
       {c.missing.length === 0 ? (
         <span className={styles.dimNote}>

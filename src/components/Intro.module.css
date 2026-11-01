@@ -5,33 +5,31 @@
 .intro summary {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.25rem 0.8rem 0.25rem 0.3rem;
-  color: var(--parchment);
+  gap: 0.4rem;
+  min-height: 44px;
+  color: var(--gold);
   font-size: 0.9rem;
-  background: var(--wood-dark);
-  border: 2px solid var(--wood-light);
-  border-radius: 999px;
+  text-decoration: underline;
   cursor: pointer;
   list-style: none;
-  box-shadow: var(--shadow-chunk);
 }
 .intro summary::-webkit-details-marker {
   display: none;
 }
 .intro summary:hover {
-  background: var(--wood);
+  color: var(--parchment);
 }
 .mark {
   display: inline-grid;
   place-items: center;
-  width: 1.4rem;
-  height: 1.4rem;
-  font-family: var(--font-heading);
+  width: 1.15rem;
+  height: 1.15rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  color: var(--ink);
-  background: var(--gold);
+  color: var(--gold);
+  border: 1px solid var(--gold);
   border-radius: 50%;
+  text-decoration: none;
 }
 .body {
   margin-top: 0.6rem;

@@ -38,6 +38,7 @@ const RAW_GROUPS: { id: string; title: string; routes: RouteDef[] }[] = [
     id: 'plan',
     title: 'Plan & compare',
     routes: [
+      { path: '/guides', label: 'Guides', phase: 5, icon: 'Raspberry' },
       { path: '/finder', label: 'What can I make?', phase: 5, icon: 'Hammer' },
       { path: '/planner', label: 'Build planner', phase: 3, icon: 'Hammer' },
       { path: '/comfort', label: 'Comfort', phase: 3, icon: 'piece_bed02' },
