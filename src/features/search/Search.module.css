@@ -346,3 +346,65 @@
 .zones .zoneCard {
   padding: 2.6rem 0.6rem 0.6rem;
 }
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 1.2rem;
+  font-family: var(--font-heading);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.primary {
+  color: var(--ink);
+  background: linear-gradient(180deg, #f1cf6a, #c79a2c);
+  border: 2px solid #fff3cf;
+  box-shadow: var(--shadow-chunk);
+}
+.secondary {
+  color: var(--parchment);
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid var(--wood-light);
+}
+.primary:hover,
+.secondary:hover {
+  filter: brightness(1.1);
+  text-decoration: none;
+}
+.bossRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+.bossLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 88px;
+  min-height: 44px;
+  padding: 0.5rem 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  text-align: center;
+  text-decoration: none;
+  background: var(--wood-dark);
+  border: 2px solid var(--wood-light);
+  border-radius: 14px;
+}
+.bossLink:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
