@@ -4,8 +4,6 @@ export interface RouteDef {
   phase: number;
   /** Id of the in-game icon shown beside the label (any item id with an exported icon). */
   icon: string;
-  /** Where the menu shows it: always, under "More pages", or under "My game and data". */
-  tier: 'main' | 'more' | 'owner';
 }
 
 export interface RouteGroup {
@@ -14,13 +12,8 @@ export interface RouteGroup {
   routes: RouteDef[];
 }
 
-/** The ten pages a player reaches for most. Everything else sits one click away. */
-const MAIN = new Set(['/', '/items', '/recipes', '/building', '/creatures', '/bosses', '/food', '/checklist', '/world']);
-/** Pages that read or hold the owner's own character, world and data. */
-const OWNER = new Set(['/character', '/spotcheck', '/portals', '/profile']);
-
-/** The sidebar, in the order a player reaches for things: look up, plan, track, reference. */
-const RAW_GROUPS: { id: string; title: string; routes: Omit<RouteDef, 'tier'>[] }[] = [
+/** Every page, in the order a player reaches for things. The top menu (menu.ts) arranges them by task. */
+const RAW_GROUPS: { id: string; title: string; routes: RouteDef[] }[] = [
   {
     id: 'start',
     title: '',
@@ -80,19 +73,6 @@ const RAW_GROUPS: { id: string; title: string; routes: Omit<RouteDef, 'tier'>[] 
   },
 ];
 
-export const ROUTE_GROUPS: RouteGroup[] = RAW_GROUPS.map((g) => ({
-  ...g,
-  routes: g.routes.map((r) => ({
-    ...r,
-    tier: MAIN.has(r.path) ? 'main' : OWNER.has(r.path) ? 'owner' : 'more',
-  })),
-}));
+export const ROUTE_GROUPS: RouteGroup[] = RAW_GROUPS;
 
 export const ROUTES: RouteDef[] = ROUTE_GROUPS.flatMap((g) => g.routes);
-
-/** The groups of one tier, leaving out groups with nothing in that tier. */
-export function groupsOfTier(tier: RouteDef['tier']): RouteGroup[] {
-  return ROUTE_GROUPS.map((g) => ({ ...g, routes: g.routes.filter((r) => r.tier === tier) })).filter(
-    (g) => g.routes.length > 0,
-  );
-}

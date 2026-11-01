@@ -75,3 +75,5 @@ Since v1.1: My portals page (per-profile list; items the game files mark as not 
 Review-5 pass: item, creature and boss pages have a one-tap 'Check this in game' panel; confirmations store the text that was confirmed and a test fails if it later changes; Recipes and Checklist draw in steps (about 3x faster at 6x CPU throttle); `npm run qa` (Playwright and axe, budget in `tools/qa/budget.json`) runs in CI as its own job.
 
 After review 3: phone bottom tab bar (Home, Search, Items, Planner, More) replaces the top tabs on narrow screens; new Check in game page (a per-zone list to take into the game, saved in the profile, with a Copy my results button) to earn the first in-game verifications.
+
+Top menu (2026-11-01, from the 4ever60 comparison): the left sidebar is replaced by a top bar with eight task dropdowns (Gear, Creatures, Building, Food, Progress, My game, Tools, About), a footer with data version and a fan-project notice, and the phone More sheet follows the same sections. Earlier notes above about ten sidebar pages are history.

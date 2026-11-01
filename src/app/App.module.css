@@ -1,8 +1,8 @@
 .shell {
   display: grid;
-  grid-template-columns: 216px minmax(0, 1fr);
-  grid-template-rows: auto 1fr;
-  grid-template-areas: 'header header' 'nav main';
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: 'header' 'topnav' 'main';
   height: 100%;
   height: 100dvh;
 }
@@ -58,71 +58,6 @@
 .search::placeholder {
   color: var(--text-dim);
 }
-.nav {
-  grid-area: nav;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  padding: 0.7rem 0.55rem;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0)),
-    var(--wood-dark);
-  border-right: 3px solid #120d09;
-  box-shadow: inset -2px 0 0 var(--wood);
-  overflow-y: auto;
-}
-.group {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-.groupTitle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0.55rem 0.4rem 0.25rem;
-  font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--bronze);
-}
-.groupTitle::after {
-  content: '';
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(90deg, var(--wood-light), transparent);
-}
-.nav a {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.32rem 0.6rem;
-  color: var(--text);
-  text-decoration: none;
-  border-radius: var(--radius);
-  border: 1px solid transparent;
-  transition:
-    transform var(--t-fast),
-    background var(--t-fast),
-    border-color var(--t-fast);
-}
-.nav a:hover {
-  color: var(--parchment);
-  background: var(--wood);
-  transform: translateX(2px);
-}
-.nav a.active {
-  color: var(--ink);
-  font-weight: 600;
-  background: linear-gradient(180deg, #ecdcb5, #cdb98a);
-  border-color: #fff3cf;
-  box-shadow: var(--shadow-chunk);
-}
-.nav a.active:hover {
-  color: var(--ink);
-  transform: none;
-}
 .main {
   grid-area: main;
   min-width: 0;
@@ -136,9 +71,6 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
-.dataInfoMobile {
-  display: none;
-}
 
 /* The right-hand strip only appears where there is room for it. */
 .side {
@@ -146,8 +78,8 @@
 }
 @media (min-width: 1100px) {
   .shell {
-    grid-template-columns: 216px minmax(0, 1fr) 240px;
-    grid-template-areas: 'header header header' 'nav main side';
+    grid-template-columns: minmax(0, 1fr) 240px;
+    grid-template-areas: 'header header' 'topnav topnav' 'main side';
   }
   .side {
     grid-area: side;
@@ -200,16 +132,6 @@
   .search {
     min-width: 0;
   }
-  .dataInfo {
-    display: none;
-  }
-  .dataInfoMobile {
-    display: block;
-    margin: 0;
-    padding: 0.5rem 0.75rem 1rem;
-    font-size: 0.75rem;
-    color: var(--text-dim);
-  }
   .main {
     padding: 1rem 0.75rem;
   }
@@ -218,24 +140,11 @@
     grid-template-rows: auto 1fr;
     grid-template-areas: 'header' 'main';
   }
-  /* The sidebar gives way to the bottom tab bar (MobileTabs). */
-  .nav {
-    display: none;
-  }
   .main {
-    padding-bottom: 5.5rem;
-  }
-  .dataInfoMobile {
     padding-bottom: 5.5rem;
   }
 }
 
-.dataInfo {
-  margin: auto 0 0;
-  padding: 0.75rem;
-  font-size: 0.75rem;
-  color: var(--text-dim);
-}
 
 .soon {
   margin-left: 0.4rem;
@@ -246,9 +155,6 @@
   color: var(--text-dim);
   border: 1px solid var(--border);
   border-radius: 999px;
-}
-.nav a.dimmed {
-  color: var(--text-dim);
 }
 .panel p {
   color: var(--text-dim);
@@ -340,26 +246,6 @@
   border-color: var(--amber);
 }
 
-.beta {
-  flex: none;
-  width: 0.55rem;
-  height: 0.55rem;
-  margin-left: auto;
-  background: var(--ember);
-  border-radius: 50%;
-  box-shadow: 0 0 6px var(--ember);
-}
-.betaText {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-.nav a.active .beta {
-  background: var(--ink);
-  box-shadow: none;
-}
 
 @media (pointer: coarse) {
   .profile a {
@@ -371,25 +257,3 @@
   }
 }
 
-.fold {
-  margin-top: 0.2rem;
-}
-.fold > summary {
-  cursor: pointer;
-  list-style: none;
-  min-height: 32px;
-}
-.fold > summary::-webkit-details-marker {
-  display: none;
-}
-.fold > summary::before {
-  content: '+';
-}
-.fold[open] > summary::before {
-  content: '−';
-}
-.subTitle {
-  margin: 0.3rem 0.6rem 0.1rem;
-  font-size: 0.7rem;
-  color: var(--text-dim);
-}
