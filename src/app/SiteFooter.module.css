@@ -17,3 +17,8 @@
 .dim {
   font-size: 0.8rem;
 }
+.links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
