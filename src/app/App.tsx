@@ -18,6 +18,7 @@ import { UpdateLogPage } from '../features/updates/UpdateLogPage';
 import { PlacesPage } from '../features/places/PlacesPage';
 import { CorrectionsPage } from '../features/corrections/CorrectionsPage';
 import { FinderPage } from '../features/finder/FinderPage';
+import { GuidesPage } from '../features/guides/GuidesPage';
 import { TrustPage } from '../features/trust/TrustPage';
 import { PortalsPage } from '../features/portals/PortalsPage';
 import { WorldPage } from '../features/world/WorldPage';
@@ -101,6 +102,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/commands': <CommandsPage />,
   '/spotcheck': <SpotCheckPage />,
   '/trust': <TrustPage />,
+  '/guides': <GuidesPage />,
   '/finder': <FinderPage />,
   '/corrections': <CorrectionsPage />,
   '/updates': <UpdateLogPage />,

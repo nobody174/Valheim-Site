@@ -33,7 +33,7 @@ export const MENU: MenuSection[] = [
   {
     id: 'progress',
     label: 'Progress',
-    paths: ['/progression', '/next', '/checklist', '/favorites'],
+    paths: ['/progression', '/guides', '/next', '/checklist', '/favorites'],
   },
   {
     id: 'game',

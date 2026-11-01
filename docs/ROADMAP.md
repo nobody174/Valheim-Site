@@ -83,3 +83,5 @@ Home sections (2026-11-01): hero buttons (Open my world, What should I do next?)
 Trust pages (2026-11-01): a Report a wrong value page (a note to copy and send, since there is no server) linked from item, creature, boss and station pages and the footer; Data trust has a short How we check it; Update log is now labelled What's new.
 
 What can I make? (2026-11-01): a page under Gear and Tools where you type what you carry and see recipes you can make now and those one or two things away; it shares the Build planner's stock.
+
+Guides (2026-11-01): a Guides page under Progress, built from the data only: per boss what to summon with and where each item is found, and per zone the recipes that first become possible there. About this page is now a quiet gold link, not a button.
