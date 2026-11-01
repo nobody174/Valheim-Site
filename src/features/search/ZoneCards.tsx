@@ -6,11 +6,8 @@ import { useProfile } from '../../state/store';
 import styles from './Search.module.css';
 
 const TOOLS = [
-  { to: '/planner', label: 'Build planner', hint: 'What do I need?', icon: 'Hammer' },
   { to: '/next', label: 'Next steps', hint: 'What now?', icon: 'Wishbone' },
-  { to: '/graph', label: 'Crafting graph', hint: 'What goes into what', icon: 'Amber' },
   { to: '/compare', label: 'Compare', hint: 'Which is better?', icon: 'ShieldBronzeBuckler' },
-  { to: '/optimizer', label: 'Food optimizer', hint: 'The best three foods', icon: 'MeadHealthMinor' },
   { to: '/rankings', label: 'Rankings', hint: 'Best weapon and armor', icon: 'SwordIron' },
   { to: '/character', label: 'My character', hint: 'Read my save', icon: 'ArmorBronzeChest' },
   { to: '/places', label: 'Dungeons', hint: 'Where to explore', icon: 'CryptKey' },

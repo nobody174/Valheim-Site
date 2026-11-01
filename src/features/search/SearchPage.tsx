@@ -8,6 +8,7 @@ import { getRecent } from '../../state/recent';
 import { search } from './instance';
 import { NoResults } from './NoResults';
 import { Hero } from './Hero';
+import { BossRow, LatestUpdate, TaskCards, ToolPreview } from './HomeSections';
 import { ZoneCards, ZoneTools } from './ZoneCards';
 import { SearchResults } from './SearchResults';
 import { useHitKeys } from './useHitKeys';
@@ -57,6 +58,14 @@ export function SearchPage() {
         <p className={styles.hint}>
           Press <kbd>/</kbd> on any page to search.
         </p>
+        <div className={styles.heroActions}>
+          <Link to="/world" className={styles.primary}>
+            Open my world
+          </Link>
+          <Link to="/next" className={styles.secondary}>
+            What should I do next?
+          </Link>
+        </div>
       </Hero>
 
       {searching ? (
@@ -73,7 +82,11 @@ export function SearchPage() {
         </>
       ) : (
         <>
+          <TaskCards />
           <ZoneCards />
+          <BossRow />
+          <ToolPreview />
+          <LatestUpdate />
           <details className={styles.more}>
             <summary>More shortcuts</summary>
             <ZoneTools />
