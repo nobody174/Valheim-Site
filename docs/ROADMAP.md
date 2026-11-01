@@ -85,3 +85,5 @@ Trust pages (2026-11-01): a Report a wrong value page (a note to copy and send, 
 What can I make? (2026-11-01): a page under Gear and Tools where you type what you carry and see recipes you can make now and those one or two things away; it shares the Build planner's stock.
 
 Guides (2026-11-01): a Guides page under Progress, built from the data only: per boss what to summon with and where each item is found, and per zone the recipes that first become possible there. About this page is now a quiet gold link, not a button.
+
+Filter-first lists, part 1 (2026-11-01, review package 4): Recipes opens on the recipes whose materials are found up to the zone you have reached (from your boss trophies), with a one-click Show all zones; a search shows everything. First view went from about 12,300 page elements to about 1,500. Items, Checklist, Building and Food are next.

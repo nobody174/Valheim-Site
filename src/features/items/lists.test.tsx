@@ -12,7 +12,7 @@ describe('recipes page', () => {
   it('lists recipes grouped by station and filters by ingredient', async () => {
     const user = userEvent.setup();
     render(
-      <MemoryRouter initialEntries={['/recipes']}>
+      <MemoryRouter initialEntries={['/recipes?zone=all']}>
         <RecipesPage />
       </MemoryRouter>,
     );
@@ -22,9 +22,21 @@ describe('recipes page', () => {
     const link = within(screen.getByRole('heading', { name: /^Forge/ })).getByRole('link');
     expect(link.getAttribute('href')).toBe('/station/forge');
     await user.type(screen.getByLabelText('Search'), 'carrot');
-    expect(screen.getByText(/recipes?$/).textContent).toMatch(/^\d+ recipes?$/);
+    expect(screen.getByText(/^\d+ recipes?/).textContent).toMatch(/^\d+ recipes?/);
     expect(screen.getAllByRole('link', { name: 'Carrot Soup' }).length).toBeGreaterThan(0);
     expect(screen.queryByRole('link', { name: 'Bronze Sword' })).toBeNull();
+  });
+
+  it('opens on the zones reached so far, with one click to everything', async () => {
+    const user = userEvent.setup();
+    render(
+      <MemoryRouter initialEntries={['/recipes']}>
+        <RecipesPage />
+      </MemoryRouter>,
+    );
+    expect(screen.queryByRole('heading', { name: /^Forge/ })).toBeNull();
+    await user.click(screen.getByRole('button', { name: 'Show all zones' }));
+    expect(screen.getByRole('heading', { name: /^Forge/ })).toBeTruthy();
   });
 
   it('shows an empty state', async () => {

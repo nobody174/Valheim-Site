@@ -3,12 +3,22 @@ import { useProgressive } from '../../components/useProgressive';
 import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
+import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
 import type { Recipe } from '../../data/schemas';
+import { useAdvice } from '../advisor/useAdvice';
+import { unlocksByZone } from '../guides/guides';
 import { RecipeBlock } from './RecipeBlock';
 import styles from './Items.module.css';
 
 const NO_STATION = '_none';
+
+/** For each recipe, the order of the first zone where everything it needs can be had. */
+const UNLOCK_ORDER = new Map(
+  unlocksByZone(lookup.allBiomes(), lookup.allItems(), gameData.recipes).flatMap((u) =>
+    u.recipes.map((r) => [r.id, u.zone.order] as const),
+  ),
+);
 
 function stationLabel(id: string): string {
   return id === NO_STATION ? 'No station (hand-crafted)' : (lookup.station(id)?.name ?? id);
@@ -19,6 +29,10 @@ export function RecipesPage() {
   const [params, setParams] = useSearchParams();
   const text = params.get('q') ?? '';
   const station = params.get('station') ?? '';
+  // Open on the recipes of the zones you have reached; a search or "All zones" shows everything.
+  const reached = useAdvice().openZone;
+  const allZones = params.get('zone') === 'all' || text.trim() !== '';
+  const zoneName = lookup.allBiomes().find((b) => b.order === reached)?.name;
 
   const set = (key: string, value: string) => {
     const next = new URLSearchParams(params);
@@ -36,6 +50,7 @@ export function RecipesPage() {
     for (const r of lookup.allRecipes()) {
       const key = r.station?.id ?? NO_STATION;
       if ((station && key !== station) || !match(r)) continue;
+      if (!allZones && (UNLOCK_ORDER.get(r.id) ?? Infinity) > reached) continue;
       byStation.set(key, [...(byStation.get(key) ?? []), r]);
     }
     return [...byStation.entries()]
@@ -45,7 +60,7 @@ export function RecipesPage() {
         recipes: recipes.sort((a, b) => nameOf(a.output.item).localeCompare(nameOf(b.output.item))),
       }))
       .sort((a, b) => a.label.localeCompare(b.label));
-  }, [text, station]);
+  }, [text, station, allZones, reached]);
 
   const total = groups.reduce((n, g) => n + g.recipes.length, 0);
   const stationIds = [...new Set(lookup.allRecipes().map((r) => r.station?.id ?? NO_STATION))].sort(
@@ -85,11 +100,28 @@ export function RecipesPage() {
       </div>
       <p className={styles.dim} aria-live="polite">
         {total} {total === 1 ? 'recipe' : 'recipes'}
+        {!allZones && zoneName && (
+          <>
+            {' '}
+            from materials up to {zoneName}.{' '}
+            <button type="button" className={styles.linkButton} onClick={() => set('zone', 'all')}>
+              Show all zones
+            </button>
+          </>
+        )}
+        {params.get('zone') === 'all' && (
+          <>
+            {' '}
+            <button type="button" className={styles.linkButton} onClick={() => set('zone', '')}>
+              Only up to my zone
+            </button>
+          </>
+        )}
       </p>
       {groups.length === 0 && (
         <p className={styles.empty}>No recipes match. Try a shorter search.</p>
       )}
-      <RecipeGroups key={`${text}|${station}`} groups={groups} total={total} />
+      <RecipeGroups key={`${text}|${station}|${allZones}`} groups={groups} total={total} />
     </section>
   );
 }
