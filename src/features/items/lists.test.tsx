@@ -39,6 +39,20 @@ describe('recipes page', () => {
     expect(screen.getByRole('heading', { name: /^Forge/ })).toBeTruthy();
   });
 
+  it('collapses and expands a single recipe', async () => {
+    const user = userEvent.setup();
+    render(
+      <MemoryRouter initialEntries={['/recipes?q=carrot&zone=all']}>
+        <RecipesPage />
+      </MemoryRouter>,
+    );
+    const toggle = screen.getAllByRole('button', { name: /^Collapse recipe/ })[0]!;
+    const before = document.querySelectorAll('li').length;
+    await user.click(toggle);
+    expect(document.querySelectorAll('li').length).toBeLessThan(before);
+    expect(screen.getAllByRole('button', { name: /^Expand recipe/ }).length).toBe(1);
+  });
+
   it('shows an empty state', async () => {
     const user = userEvent.setup();
     render(

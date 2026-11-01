@@ -3,12 +3,17 @@ import { useProgressive } from '../../components/useProgressive';
 import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
+import { gameData } from '../../data/load';
 import { graph, lookup } from '../../data/lookup';
+import { useAdvice } from '../advisor/useAdvice';
+import { itemZoneOrder } from '../guides/guides';
 import { CATEGORY_LABELS } from '../items/ItemsPage';
 import type { Item } from '../../data/schemas';
 import { hasFlag, PROGRESS_FLAGS, type ProgressFlag, type Profile } from '../../state/model';
 import { useApp, useProfile } from '../../state/store';
 import styles from '../items/Items.module.css';
+
+const ITEM_ZONE = itemZoneOrder(lookup.allBiomes(), lookup.allItems(), gameData.recipes);
 
 const FLAG_LABEL: Record<ProgressFlag, string> = {
   collected: 'Collected',
@@ -31,6 +36,9 @@ export function ChecklistPage() {
   const biome = params.get('biome') ?? '';
   const category = params.get('category') ?? '';
   const status = params.get('status') ?? '';
+  const reached = useAdvice().openZone;
+  const zoneName = lookup.allBiomes().find((b) => b.order === reached)?.name;
+  const showAll = params.get('zone') === 'all';
 
   const set = (key: string, value: string) => {
     const next = new URLSearchParams(params);
@@ -60,14 +68,16 @@ export function ChecklistPage() {
     };
   });
 
+  const filtered = Boolean(biome || category || status);
+  const limited = !filtered && !showAll;
   const rows = items
+    .filter((i) => !limited || (ITEM_ZONE.get(i.id) ?? Infinity) <= reached)
     .filter((i) => !biome || i.biome === biome)
     .filter((i) => !category || i.category === category)
     .filter((i) => matchesStatus(status, (f) => hasFlag(profile, i.id, f)))
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const present = [...new Set(items.map((i) => i.category))];
-  const filtered = Boolean(biome || category || status);
 
   return (
     <section>
@@ -171,12 +181,29 @@ export function ChecklistPage() {
       </div>
       <p className={styles.dim} aria-live="polite">
         {rows.length} {rows.length === 1 ? 'item' : 'items'}
+        {limited && zoneName && (
+          <>
+            {' '}
+            found or made up to {zoneName}.{' '}
+            <button type="button" className={styles.linkButton} onClick={() => set('zone', 'all')}>
+              Show all items
+            </button>
+          </>
+        )}
+        {showAll && !filtered && (
+          <>
+            {' '}
+            <button type="button" className={styles.linkButton} onClick={() => set('zone', '')}>
+              Only up to my zone
+            </button>
+          </>
+        )}
       </p>
 
       {rows.length === 0 ? (
         <p className={styles.empty}>Nothing matches these filters.</p>
       ) : (
-        <ChecklistTable key={`${biome}|${category}|${status}`} rows={rows} profile={profile} toggle={toggle} />
+        <ChecklistTable key={`${biome}|${category}|${status}|${limited}`} rows={rows} profile={profile} toggle={toggle} />
       )}
     </section>
   );

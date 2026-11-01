@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { EntityLink } from '../../components/EntityLink';
 import type { Recipe } from '../../data/schemas';
 import { requiredStationLevel } from '../../data/stationLevels';
@@ -31,10 +32,20 @@ function duration(sec: number): string {
 
 export function RecipeBlock({ recipe }: { recipe: Recipe }) {
   const station = recipe.station;
+  const [open, setOpen] = useState(true);
   return (
     <div className={styles.recipe}>
       <div className={styles.recipeHead}>
         <span>
+          <button
+            type="button"
+            className={styles.recipeToggle}
+            aria-expanded={open}
+            aria-label={`${open ? 'Collapse' : 'Expand'} recipe for ${recipe.output.item}`}
+            onClick={() => setOpen(!open)}
+          >
+            {open ? '▾' : '▸'}
+          </button>
           <FavoriteStar kind="recipes" id={recipe.id} label={`recipe for ${recipe.output.item}`} />
           {KIND_VERB[recipe.kind]} {recipe.output.qty} × <EntityLink id={recipe.output.item} />
           {recipe.timeSec ? (
@@ -51,8 +62,8 @@ export function RecipeBlock({ recipe }: { recipe: Recipe }) {
           )}
         </span>
       </div>
-      <Ingredients list={recipe.inputs} />
-      {recipe.upgrades.length > 0 && (
+      {open && <Ingredients list={recipe.inputs} />}
+      {open && recipe.upgrades.length > 0 && (
         <details>
           <summary>Upgrade costs</summary>
           <dl className={styles.upgrades}>

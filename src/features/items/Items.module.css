@@ -639,3 +639,14 @@
   border: 0;
   cursor: pointer;
 }
+
+.recipeToggle {
+  min-width: 44px;
+  min-height: 44px;
+  margin: -0.5rem 0.1rem -0.5rem -0.5rem;
+  font: inherit;
+  color: var(--gold);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
