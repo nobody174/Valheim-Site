@@ -39,8 +39,9 @@ more than anything else.** Hosted on GitHub Pages. No backend, no paid services.
 
 ## Menu and Home rules
 
-- The default side menu shows **at most 10 pages** (`tier: 'main'` in `src/app/routes.ts`). A new page
-  goes under "More pages" or "My game and data" unless it replaces one of the ten.
+- The top menu (`src/app/menu.ts`) has **at most 8 dropdowns**, each named for a task. Every page in
+  `src/app/routes.ts` must be in one; a page may repeat only inside Tools. Phones use the bottom bar and its
+  More sheet, which follow the same sections.
 - Home answers "what now?": one search box, zones in one compact row, the portals strip
   from 1100 px. New shortcuts go inside the folded "More shortcuts", not onto the first screen.
 

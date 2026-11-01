@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { EntityIcon } from '../components/EntityIcon';
-import { groupsOfTier, type RouteDef } from './routes';
+import { MENU, pagesOf } from './menu';
+import type { RouteDef } from './routes';
 import styles from './MobileTabs.module.css';
 
 const TABS = [
@@ -11,7 +12,12 @@ const TABS = [
 ];
 
 const link = (r: RouteDef) => (
-  <NavLink key={r.path} to={r.path} end className={({ isActive }) => (isActive ? styles.active : '')}>
+  <NavLink
+    key={r.path}
+    to={r.path}
+    end
+    className={({ isActive }) => (isActive ? styles.active : '')}
+  >
     <EntityIcon id={r.icon} size={22} />
     {r.label}
   </NavLink>
@@ -38,15 +44,14 @@ export function MobileTabs({ onSearch }: { onSearch: () => void }) {
     <>
       {open && (
         <div id="more-sheet" className={styles.sheet} role="region" aria-label="All pages">
-          <div className={styles.group}>
-            <div className={styles.links}>{groupsOfTier('main').flatMap((g) => g.routes).map(link)}</div>
-          </div>
-          {(['more', 'owner'] as const).map((tier) => (
-            <details key={tier} className={styles.group}>
-              <summary className={styles.groupTitle}>
-                {tier === 'more' ? 'More pages' : 'My game and data'}
-              </summary>
-              <div className={styles.links}>{groupsOfTier(tier).flatMap((g) => g.routes).map(link)}</div>
+          {MENU.map((s) => (
+            <details
+              key={s.id}
+              className={styles.group}
+              open={s.paths.includes(pathname) || undefined}
+            >
+              <summary className={styles.groupTitle}>{s.label}</summary>
+              <div className={styles.links}>{pagesOf(s).map(link)}</div>
             </details>
           ))}
         </div>
@@ -61,12 +66,22 @@ export function MobileTabs({ onSearch }: { onSearch: () => void }) {
           Search
         </button>
         {TABS.slice(1).map((t) => (
-          <NavLink key={t.to} to={t.to} end className={({ isActive }) => (isActive ? styles.active : '')}>
+          <NavLink
+            key={t.to}
+            to={t.to}
+            end
+            className={({ isActive }) => (isActive ? styles.active : '')}
+          >
             <EntityIcon id={t.icon} size={26} />
             {t.label}
           </NavLink>
         ))}
-        <button type="button" aria-expanded={open} aria-controls="more-sheet" onClick={() => setOpen(!open)}>
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-controls="more-sheet"
+          onClick={() => setOpen(!open)}
+        >
           <EntityIcon id="Coins" size={26} />
           More
         </button>

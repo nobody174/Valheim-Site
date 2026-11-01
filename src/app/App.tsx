@@ -1,6 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { HashRouter, Link, NavLink, Route, Routes, useLocation } from 'react-router';
-import { gameData } from '../data/load';
+import { HashRouter, Link, Route, Routes, useLocation } from 'react-router';
 import { ChecklistPage } from '../features/checklist/ChecklistPage';
 import { FavoritesPage } from '../features/checklist/FavoritesPage';
 import { BuildingPage } from '../features/browse/BuildingPage';
@@ -32,12 +31,13 @@ import { ItemsPage } from '../features/items/ItemsPage';
 import { RecipesPage } from '../features/items/RecipesPage';
 import { CommandPalette } from '../features/search/CommandPalette';
 import { SearchPage } from '../features/search/SearchPage';
-import { EntityIcon } from '../components/EntityIcon';
 import { QuickInfo } from './QuickInfo';
 import { BackupNudge } from './BackupNudge';
 import { RescueBanner } from './RescueBanner';
 import { MobileTabs } from './MobileTabs';
-import { groupsOfTier, ROUTES, type RouteDef } from './routes';
+import { ROUTES } from './routes';
+import { TopNav } from './TopNav';
+import { SiteFooter } from './SiteFooter';
 import styles from './App.module.css';
 
 function ComingSoon({ label, phase }: { label: string; phase: number }) {
@@ -140,35 +140,6 @@ function isTyping(target: EventTarget | null): boolean {
   return target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
 }
 
-function MenuLink({ route: r }: { route: RouteDef }) {
-  return (
-    <NavLink to={r.path} end className={({ isActive }) => (isActive ? styles.active : undefined)}>
-      <EntityIcon id={r.icon} size={22} />
-      <span>{r.label}</span>
-    </NavLink>
-  );
-}
-
-/** A folded part of the menu. It starts open when the page you are on lives inside it. */
-function MenuFold({ label, tier }: { label: string; tier: RouteDef['tier'] }) {
-  const { pathname } = useLocation();
-  const groups = groupsOfTier(tier);
-  const here = groups.some((g) => g.routes.some((r) => r.path === pathname));
-  return (
-    <details className={styles.fold} open={here || undefined}>
-      <summary className={styles.groupTitle}>{label}</summary>
-      {groups.map((g) => (
-        <div key={g.id} className={styles.group} role="group" aria-label={g.title}>
-          {groups.length > 1 && <span className={styles.subTitle}>{g.title}</span>}
-          {g.routes.map((r) => (
-            <MenuLink key={r.path} route={r} />
-          ))}
-        </div>
-      ))}
-    </details>
-  );
-}
-
 function Shell() {
   const { pathname } = useLocation();
   const [paletteOpen, setPaletteOpen] = useState(false);
@@ -216,20 +187,7 @@ function Shell() {
         <SecondScreenToggle />
         <ProfileSwitcher />
       </header>
-      <nav className={styles.nav} aria-label="Main">
-        <div className={styles.group} role="group" aria-label="Main pages">
-          {groupsOfTier('main').flatMap((g) => g.routes).map((r) => (
-            <MenuLink key={r.path} route={r} />
-          ))}
-        </div>
-        <MenuFold label="More pages" tier="more" />
-        <MenuFold label="My game and data" tier="owner" />
-        <p className={styles.dataInfo}>
-          Data: {gameData.meta.gameVersion}
-          <br />
-          Reviewed {gameData.meta.lastReviewed}
-        </p>
-      </nav>
+      <TopNav />
       <main id="main" className={styles.main}>
         <RescueBanner />
         <BackupNudge />
@@ -249,11 +207,9 @@ function Shell() {
           <Route path="/piece/:id" element={<PiecePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <SiteFooter />
       </main>
       <QuickInfo />
-      <footer className={styles.dataInfoMobile}>
-        Data: {gameData.meta.gameVersion}, reviewed {gameData.meta.lastReviewed}
-      </footer>
       <MobileTabs onSearch={() => setPaletteOpen(true)} />
       {paletteOpen && <CommandPalette onClose={() => setPaletteOpen(false)} />}
     </div>

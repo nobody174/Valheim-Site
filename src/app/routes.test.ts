@@ -1,22 +1,40 @@
 import { describe, expect, it } from 'vitest';
 import { iconUrl } from '../data/icons';
-import { groupsOfTier, ROUTE_GROUPS, ROUTES } from './routes';
+import { MENU, pagesOf } from './menu';
+import { ROUTES } from './routes';
 
-describe('sidebar groups', () => {
+describe('pages', () => {
   it('lists every page once, with a real game icon', () => {
     const paths = ROUTES.map((r) => r.path);
     expect(new Set(paths).size).toBe(paths.length);
     for (const r of ROUTES) expect(iconUrl(r.icon), `${r.path}: ${r.icon}`).toBeTruthy();
   });
+});
 
-  it('has a short title for every group but the first, and keeps Home on top', () => {
-    expect(ROUTE_GROUPS[0]!.routes[0]!.path).toBe('/');
-    for (const g of ROUTE_GROUPS.slice(1)) expect(g.title.length).toBeGreaterThan(0);
-    expect(ROUTE_GROUPS.length).toBeLessThanOrEqual(6);
+describe('top menu', () => {
+  it('has at most eight sections and only real pages', () => {
+    expect(MENU.length).toBeLessThanOrEqual(8);
+    const known = new Set(ROUTES.map((r) => r.path));
+    for (const s of MENU) {
+      expect(s.paths.length).toBeGreaterThan(0);
+      for (const p of s.paths) expect(known.has(p), `${s.id}: ${p}`).toBe(true);
+      expect(pagesOf(s)).toHaveLength(s.paths.length);
+    }
   });
 
-  it('shows ten pages or fewer in the default menu, and every page is in exactly one tier', () => {
-    expect(ROUTES.filter((r) => r.tier === 'main').length).toBeLessThanOrEqual(10);
-    expect(['main', 'more', 'owner'].flatMap((t) => groupsOfTier(t as 'main').flatMap((g) => g.routes))).toHaveLength(ROUTES.length);
+  it('reaches every page except Home, which is the logo', () => {
+    const inMenu = new Set(MENU.flatMap((s) => s.paths));
+    for (const r of ROUTES) if (r.path !== '/') expect(inMenu.has(r.path), r.path).toBe(true);
+  });
+
+  it('repeats a page only inside Tools', () => {
+    const seen = new Map<string, string>();
+    for (const s of MENU) {
+      for (const p of s.paths) {
+        const first = seen.get(p);
+        if (first) expect(s.id, `${p} also in ${first}`).toBe('tools');
+        else seen.set(p, s.id);
+      }
+    }
   });
 });
