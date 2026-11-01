@@ -144,6 +144,22 @@ export function withToggledFlag(profile: Profile, itemId: string, flag: Progress
   return { ...profile, progress };
 }
 
+/** Set one progress flag on many items at once (for "mark them all"). */
+export function withFlags(
+  profile: Profile,
+  itemIds: readonly string[],
+  flag: ProgressFlag,
+  value: boolean,
+): Profile {
+  const progress = { ...profile.progress };
+  for (const id of itemIds) {
+    const entry = { ...progress[id], [flag]: value };
+    if (PROGRESS_FLAGS.some((f) => entry[f])) progress[id] = entry;
+    else delete progress[id];
+  }
+  return { ...profile, progress };
+}
+
 export function withToggledFavorite(profile: Profile, kind: FavoriteKind, id: string): Profile {
   const list = profile.favorites[kind];
   const next = list.includes(id) ? list.filter((x) => x !== id) : [...list, id];

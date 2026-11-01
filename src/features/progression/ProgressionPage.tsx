@@ -6,7 +6,7 @@ import { QuickLineView } from '../../components/QuickCard';
 import { quickCard } from '../../data/quick';
 import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
-import { useProfile } from '../../state/store';
+import { useApp, useProfile } from '../../state/store';
 import { trustReport } from '../trust/trust';
 import { buildGuide } from './guide';
 import styles from '../items/Items.module.css';
@@ -15,12 +15,21 @@ const num = (n: number) => String(Math.round(n * 100) / 100);
 const label = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 /** One item with where to farm it here and what it is for. */
-function QuickRow({ id, mark = '' }: { id: string; mark?: string }) {
+function QuickRow({ id }: { id: string }) {
   const card = quickCard(id, { biome: false });
+  const collected = useProfile().progress[id]?.collected === true;
+  const toggle = useApp((s) => s.toggleFlag);
   return (
     <li className={styles.quickRow}>
-      <span>
-        {mark}
+      <span className={styles.rowHead}>
+        <label className={styles.checkTap}>
+          <input
+            type="checkbox"
+            checked={collected}
+            aria-label={`Collected: ${lookup.item(id)?.name ?? id}`}
+            onChange={() => toggle(id, 'collected')}
+          />
+        </label>
         <EntityLink id={id} />
       </span>
       <span>
@@ -33,6 +42,27 @@ function QuickRow({ id, mark = '' }: { id: string; mark?: string }) {
   );
 }
 
+/** Tick or untick "collected" for a whole list at once. */
+function CollectAll({ ids }: { ids: readonly string[] }) {
+  const profile = useProfile();
+  const setFlags = useApp((s) => s.setFlags);
+  const have = ids.filter((id) => profile.progress[id]?.collected === true).length;
+  if (ids.length === 0) return null;
+  const all = have === ids.length;
+  return (
+    <p className={styles.dim}>
+      Collected {have} of {ids.length}.{' '}
+      <button
+        type="button"
+        className={styles.linkButton}
+        onClick={() => setFlags(ids, 'collected', !all)}
+      >
+        {all ? 'Untick all' : 'Mark all as collected'}
+      </button>
+    </p>
+  );
+}
+
 /** Per-biome guide built from the data files. The ranked picks are simple measures, not advice. */
 export function ProgressionPage() {
   const biomes = [...lookup.allBiomes()].sort((a, b) => a.order - b.order);
@@ -42,9 +72,7 @@ export function ProgressionPage() {
   if (!biome) return <p className={styles.empty}>No biome data.</p>;
 
   const guide = buildGuide(gameData, biome.id);
-  const owned = (id: string) => profile.progress[id]?.collected === true;
   const inGame = trustReport(gameData).zones.find((z) => z.id === biome.id)?.inGame ?? 0;
-  const mustKeepMissing = guide.mustKeep.filter((id) => !owned(id)).length;
 
   return (
     <section>
@@ -151,19 +179,19 @@ export function ProgressionPage() {
       <section className={styles.section}>
         <h2>Must keep</h2>
         <p className={styles.dim}>
-          Hard to replace or needed soon.{' '}
-          {guide.mustKeep.length > 0 &&
-            `You have collected ${guide.mustKeep.length - mustKeepMissing} of ${guide.mustKeep.length} (profile ${profile.name}).`}
+          Hard to replace or needed soon. Ticks are saved for profile {profile.name}.
         </p>
+        <CollectAll ids={guide.mustKeep} />
         <ul className={styles.quickRows}>
           {guide.mustKeep.map((id) => (
-            <QuickRow key={id} id={id} mark={owned(id) ? '✓ ' : ''} />
+            <QuickRow key={id} id={id} />
           ))}
         </ul>
       </section>
 
       <section className={styles.section}>
         <h2>Other materials</h2>
+        <CollectAll ids={guide.materials} />
         <ul className={styles.quickRows}>
           {guide.materials.map((id) => (
             <QuickRow key={id} id={id} />
