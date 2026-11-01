@@ -3,6 +3,7 @@ import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
 import { HOARD_OPTIONS, HoardBadge, VerifiedBadge } from '../../components/Badges';
+import { gameData } from '../../data/load';
 import { lookup } from '../../data/lookup';
 import { effectiveHoard } from '../../state/model';
 import { useProfile } from '../../state/store';
@@ -11,7 +12,11 @@ import { QuickSummary } from '../../components/QuickCard';
 import { summaryLine } from '../../data/quick';
 import cards from '../../components/Cards.module.css';
 import { useListView, ViewToggle } from '../../components/ViewToggle';
+import { useAdvice } from '../advisor/useAdvice';
+import { itemZoneOrder } from '../guides/guides';
 import styles from './Items.module.css';
+
+const ITEM_ZONE = itemZoneOrder(lookup.allBiomes(), lookup.allItems(), gameData.recipes);
 
 export const CATEGORY_LABELS: Record<string, string> = {
   weapon: 'Weapons',
@@ -35,6 +40,10 @@ export function ItemsPage() {
   const hoard = params.get('hoard') ?? '';
   const biome = params.get('biome') ?? '';
   const category = params.get('category') ?? '';
+  // With no filter set the list opens on what the zones reached so far can give; any filter shows everything.
+  const reached = useAdvice().openZone;
+  const zoneName = lookup.allBiomes().find((b) => b.order === reached)?.name;
+  const showAll = params.get('zone') === 'all';
 
   const set = (key: string, value: string) => {
     const next = new URLSearchParams(params);
@@ -45,16 +54,19 @@ export function ItemsPage() {
 
   const rows = useMemo(() => {
     const t = text.trim().toLowerCase();
+    const narrow = Boolean(text || hoard || biome || category) || showAll;
     return lookup
       .allItems()
       .filter((i) => !hoard || effectiveHoard(i, profile) === hoard)
       .filter((i) => !biome || i.biome === biome)
       .filter((i) => !category || i.category === category)
+      .filter((i) => narrow || (ITEM_ZONE.get(i.id) ?? Infinity) <= reached)
       .filter((i) => !t || i.name.toLowerCase().includes(t))
       .sort((a, b) => a.name.localeCompare(b.name));
-  }, [hoard, biome, category, text, profile]);
+  }, [hoard, biome, category, text, profile, reached, showAll]);
 
   const filtered = Boolean(text || hoard || biome || category);
+  const limited = !filtered && !showAll;
   const present = [...new Set(lookup.allItems().map((i) => i.category))];
 
   return (
@@ -123,6 +135,23 @@ export function ItemsPage() {
         <ViewToggle view={view} onChange={setView} />
         <p className={styles.dim} aria-live="polite">
           {rows.length} {rows.length === 1 ? 'item' : 'items'}
+          {limited && zoneName && (
+            <>
+              {' '}
+              found or made up to {zoneName}.{' '}
+              <button type="button" className={styles.linkButton} onClick={() => set('zone', 'all')}>
+                Show all items
+              </button>
+            </>
+          )}
+          {showAll && !filtered && (
+            <>
+              {' '}
+              <button type="button" className={styles.linkButton} onClick={() => set('zone', '')}>
+                Only up to my zone
+              </button>
+            </>
+          )}
         </p>
       </div>
       {rows.length === 0 ? (

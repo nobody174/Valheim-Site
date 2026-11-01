@@ -87,3 +87,5 @@ What can I make? (2026-11-01): a page under Gear and Tools where you type what y
 Guides (2026-11-01): a Guides page under Progress, built from the data only: per boss what to summon with and where each item is found, and per zone the recipes that first become possible there. About this page is now a quiet gold link, not a button.
 
 Filter-first lists, part 1 (2026-11-01, review package 4): Recipes opens on the recipes whose materials are found up to the zone you have reached (from your boss trophies), with a one-click Show all zones; a search shows everything. First view went from about 12,300 page elements to about 1,500. Items, Checklist, Building and Food are next.
+
+Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached so far can give (found there or crafted from what is), 70 items for a fresh profile instead of 446, with Show all items; any filter or search shows everything. Checklist, Building and Food are still full lists.

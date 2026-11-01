@@ -45,3 +45,27 @@ export function unlocksByZone(
   }
   return out;
 }
+
+/**
+ * The first zone (by order) where each item can be had: the zone it is found in, or the first zone where
+ * a recipe that makes it becomes possible. Items nothing in the data places are left out.
+ */
+export function itemZoneOrder(
+  zones: readonly Biome[],
+  items: readonly Item[],
+  recipes: readonly Recipe[],
+): Map<string, number> {
+  const order = new Map<string, number>();
+  const keep = (id: string, n: number) => order.set(id, Math.min(order.get(id) ?? Infinity, n));
+  const zoneOf = new Map(zones.map((z) => [z.id, z.order]));
+  for (const i of items)
+    if (i.biome !== null && zoneOf.has(i.biome)) keep(i.id, zoneOf.get(i.biome)!);
+  const byRecipe = new Map(recipes.map((r) => [r.id, r]));
+  for (const u of unlocksByZone(zones, items, recipes)) {
+    for (const r of u.recipes) {
+      const made = byRecipe.get(r.id)?.output.item;
+      if (made) keep(made, u.zone.order);
+    }
+  }
+  return order;
+}
