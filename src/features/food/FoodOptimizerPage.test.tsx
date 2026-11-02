@@ -26,9 +26,14 @@ describe('food optimizer page', () => {
     expect(screen.getByText(/Rule: Highest total health/)).toBeTruthy();
   });
 
+  it('starts at the zone you have reached', () => {
+    renderPage();
+    expect((screen.getByLabelText('Foods up to') as HTMLSelectElement).value).toBe('meadows');
+  });
+
   it('changes the rule with the goal and limits foods by zone', async () => {
     const user = userEvent.setup();
-    renderPage();
+    renderPage('/optimizer?zone=all');
     const all = Number(screen.getByText(/foods considered/).textContent!.match(/(\d+) foods/)![1]);
     await user.selectOptions(screen.getByLabelText('Goal'), 'balanced');
     expect(screen.getByText(/Rule: The smaller of/)).toBeTruthy();

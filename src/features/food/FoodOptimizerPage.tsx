@@ -3,6 +3,7 @@ import { Intro } from '../../components/Intro';
 import { EntityIcon } from '../../components/EntityIcon';
 import { EntityLink } from '../../components/EntityLink';
 import { lookup } from '../../data/lookup';
+import { useAdvice } from '../advisor/useAdvice';
 import styles from '../items/Items.module.css';
 import { bestCombos, GOALS, rawFoodIds, type FoodEntry, type Goal } from './foodOptimizer';
 
@@ -30,7 +31,15 @@ function foodsUpTo(zone: string): FoodEntry[] {
 export function FoodOptimizerPage() {
   const [params, setParams] = useSearchParams();
   const goal = GOALS.find((g) => g.key === params.get('goal'))?.key ?? 'health';
-  const zone = lookup.allBiomes().find((b) => b.id === params.get('zone'))?.id ?? '';
+  // With no zone chosen it starts at the zone you have reached; "All zones" lifts the limit.
+  const reached = useAdvice().openZone;
+  const zoneParam = params.get('zone');
+  const zone =
+    zoneParam === 'all'
+      ? ''
+      : (lookup.allBiomes().find((b) => b.id === (zoneParam ?? ''))?.id ??
+        lookup.allBiomes().find((b) => b.order === reached)?.id ??
+        '');
   const minMin = Math.max(0, Math.min(40, Number(params.get('min')) || 0));
 
   const set = (changes: Record<string, string>) => {
@@ -72,7 +81,7 @@ export function FoodOptimizerPage() {
         <label>
           Foods up to
           <select value={zone} onChange={(e) => set({ zone: e.target.value })}>
-            <option value="">All zones</option>
+            <option value="all">All zones</option>
             {lookup.allBiomes().map((b) => (
               <option key={b.id} value={b.id}>
                 {b.name}
