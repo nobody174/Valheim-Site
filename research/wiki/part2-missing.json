@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Ectoplasm",
+    "url": "https://valheim.fandom.com/wiki/Ectoplasm",
+    "description": "Material dropped by Ghosts. Internal ID Ectoplasm, stack 50, weight 2.0.",
+    "usedFor": [
+      "Building: T.W.I.G. (listed by that name on the page; amounts not stated)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Ghosts (biome not stated on this page)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Nimble Anklet",
+    "url": "https://valheim.fandom.com/wiki/Nimble_Anklet",
+    "description": "Swamp-tier trinket. Internal ID TrinketIronStamina. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 60 Adrenaline it triggers for 50 stamina at once and +15% movement speed for 30 s"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Iron x5, Withered bone x5, Surtling trophy x1 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Fins of Destiny",
+    "url": "https://valheim.fandom.com/wiki/Fins_of_Destiny",
+    "description": "Ocean-tier trinket. Internal ID TrinketChitinSwim. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at only 10 Adrenaline it triggers for 120 s of +50% swim speed and -80% swim stamina usage"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Chitin x5, Serpent scale x5, Serpent trophy x1 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Jörmundling",
+    "url": "https://valheim.fandom.com/wiki/J%C3%B6rmundling",
+    "description": "Ashlands-tier trinket. Internal ID TrinketFlametalEitr. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 70 Adrenaline it triggers for 100 eitr at once and +20 Elemental Magic and +20 Blood Magic skill for 60 s",
+      "Trivia on the page: with the Staff of Frost and a high enough skill, the trinket can be spammed for effectively infinite eitr"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Black forge (level 1); the page names no other source"
+    ],
+    "recipe": "Flametal x5, Refined eitr x5, Bloodstone x1, Fallen Valkyrie trophy x1 at Black forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Trollfish",
+    "url": "https://valheim.fandom.com/wiki/Trollfish",
+    "description": "Fish. Internal ID fish5, weight 2.0 (infobox shows 2.0 x Quality 10).",
+    "usedFor": [
+      "Cooking and crafting: Raw fish (no cooked result named on the page)",
+      "Crafting: Fishing hat",
+      "Crafting: Mead base: Troll endurance",
+      "Decoration (item stand)"
+    ],
+    "obtainedFrom": [
+      "Fishing: found in the waters just offshore of the Black Forest, caught with Mossy fishing bait (20 Fishing bait + Troll trophy at the Food preparation table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Giant Herring",
+    "url": "https://valheim.fandom.com/wiki/Giant_Herring",
+    "description": "Fish. Internal ID fish6, weight 2.0 (infobox shows 2.0 x Quality 10).",
+    "usedFor": [
+      "Crafting: Raw fish (Giant herring x1 at the Food preparation table, per this page)",
+      "Crafting: Fishing hat",
+      "Decoration; cooking is listed under usage but no cooked result is named"
+    ],
+    "obtainedFrom": [
+      "Fishing: found just offshore of the Swamp, caught with Sticky fishing bait (20 Fishing bait + Abomination trophy at the Food preparation table)",
+      "When caught it has a chance to also give Iron Ore"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. The crafting station for Raw fish differs between fish pages (Food preparation table here, Cauldron on the Tuna page).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Grouper",
+    "url": "https://valheim.fandom.com/wiki/Grouper",
+    "description": "Fish. Internal ID fish7, weight 2.0 (infobox shows 2.0 x Quality 10).",
+    "usedFor": [
+      "Crafting: Raw fish (the page lists Food preparation table and Workbench in a muddled layout, so the station is unclear)",
+      "Crafting: Fishing hat",
+      "Crafting: Mead ketill and Mead base: Anti-sting (listed on the page, amounts not stated)",
+      "Decoration (item stand)"
+    ],
+    "obtainedFrom": [
+      "Fishing: found just offshore of the Plains, caught with Stingy fishing bait (20 Fishing bait + Fuling trophy at the Food preparation table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. Station for Raw fish is unclear on this page.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Tuna",
+    "url": "https://valheim.fandom.com/wiki/Tuna",
+    "description": "Fish. Internal ID fish3, weight 2.0 (infobox shows 2.0 x Quality 10).",
+    "usedFor": [
+      "Crafting: Raw fish (Tuna x1 at a Cauldron, per this page)",
+      "Crafting: Fishing hat",
+      "Decoration; cooking is listed under usage"
+    ],
+    "obtainedFrom": [
+      "Fishing: found in the Ocean biome, caught with Heavy fishing bait (Fishing bait + Serpent trophy at a Food preparation table; the Bait page says 20 bait per batch)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. The station for Raw fish differs between fish pages (Cauldron here, Food preparation table on the Giant herring page).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Coral Cod",
+    "url": "https://valheim.fandom.com/wiki/Coral_Cod",
+    "description": "Fish. Internal ID fish8, weight 2.0 (infobox shows 2.0 x Quality 10).",
+    "usedFor": [
+      "Crafting: Fishing hat",
+      "Decoration and cooking are listed under usage; no cooked result is named"
+    ],
+    "obtainedFrom": [
+      "Fishing: found in the Ocean biome, in schools in open ocean or sometimes near other biomes' shores, caught with Heavy fishing bait (20 Fishing bait + Serpent trophy)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Pufferfish",
+    "url": "https://valheim.fandom.com/wiki/Pufferfish",
+    "description": "Fish. Internal ID fish12, weight 2.0 (infobox shows 2.0 x Quality 10).",
+    "usedFor": [
+      "Crafting: Fishing hat",
+      "Decoration; cooking is listed under usage but no cooked result is named",
+      "Warning from the page: it poisons the player who gets too close; once picked up into the inventory it can no longer poison you"
+    ],
+    "obtainedFrom": [
+      "Fishing: found just offshore of the Mistlands, caught with Misty fishing bait (20 Fishing bait + Lox trophy)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. The Bait page also lists the Ocean as a biome for Pufferfish with Misty bait; this page names only the Mistlands coast.",
+    "confidence": "unclear"
+  }
+]
