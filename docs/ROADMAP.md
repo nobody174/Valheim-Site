@@ -92,3 +92,4 @@ Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached s
 
 - Package 4 part 3: Checklist and Building open on your zone ("Show all" link; any filter shows everything); each recipe on the Recipes page collapses with its arrow.
 - Progression guide: tick each item as collected, or mark a whole list (Must keep, Other materials) at once.
+- Food optimizer starts at the zone you have reached (All zones in the dropdown lifts it).
