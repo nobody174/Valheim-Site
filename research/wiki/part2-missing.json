@@ -693,5 +693,213 @@
     "recipe": "",
     "gameVersionNote": "Version history calls the item Molds & Casts; the Future content and Deep North pages say Mould or Moulds. The Deep North pages still call the biome incomplete.",
     "confidence": "unclear"
+  },
+  {
+    "name": "Serpent Scale",
+    "url": "https://valheim.fandom.com/wiki/Serpent_Scale",
+    "description": "Material (internal ID SerpentScale), stack 50, weight 2.0.",
+    "usedFor": [
+      "Crafting: Fins of Destiny, Serpent scale shield (amounts not stated on this page; Fins of Destiny needs Serpent scale x5 per the Trinkets page)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Serpents in the Ocean",
+      "Scales sink in deep water, so kill Serpents in shallow water, for example by dragging them to shore with an Abyssal harpoon"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Charcoal Resin",
+    "url": "https://valheim.fandom.com/wiki/Charcoal_Resin",
+    "description": "Material (internal ID CharcoalResin), stack 50, weight 0.3.",
+    "usedFor": [
+      "Building: Small green pot, Medium green pot, Large green pot (amounts not stated)"
+    ],
+    "obtainedFrom": [
+      "Has a chance to drop from Scorched Trees"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Iron Pit",
+    "url": "https://valheim.fandom.com/wiki/Iron_Pit",
+    "description": "Material (internal ID Ironpit), stack 10, weight 10.0; cannot be teleported without a Portal stone.",
+    "usedFor": [
+      "Building: Iron Fire Pit"
+    ],
+    "obtainedFrom": [
+      "Bought from the trader Hildir for 75 Coins each"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Introduced in the Hildir's Request update.",
+    "confidence": "stated"
+  },
+  {
+    "name": "Grausten",
+    "url": "https://valheim.fandom.com/wiki/Grausten",
+    "description": "Ashlands building material (internal ID Grausten), stack 50, weight 2.0.",
+    "usedFor": [
+      "Building (amounts not stated): Bone throne, Grausten arched roof and corner, Grausten floor 1x1 / 2x2 / 4x4, medium arch, medium beam, medium pillar, Grausten pile, Grausten roof and corner, small arch, small beam, small pillar, stairs, steep stairs, tapered pillar (and inverted), wall arch (and inverted), wall 1x2 / 2x2 / 4x2, window 2x2 / 4x2, Portal stone",
+      "Crafting: Grausten payload"
+    ],
+    "obtainedFrom": [
+      "Destroying ruins or rock formations in the Ashlands",
+      "Magmafish bonus drop (Fish page table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Introduced with the Ashlands biome.",
+    "confidence": "stated"
+  },
+  {
+    "name": "Bloodgold",
+    "url": "https://valheim.fandom.com/wiki/Bloodgold",
+    "description": "Deep North metal (internal ID Gold on this page), stack 30, weight 14.0; cannot be teleported without a Portal stone. The page is marked as a stub.",
+    "usedFor": [
+      "Page lists usage as Building and Crafting but names no recipes (stub)",
+      "Future content page: Frostfire and Thunderblood weapons are crafted from Bloodgold using moulds found in the Winding Tunnels"
+    ],
+    "obtainedFrom": [
+      "Smelted from Petrified Tissue x1 in a Blast furnace using Coal as fuel"
+    ],
+    "recipe": "Petrified Tissue x1 at a Blast furnace (Coal fuel)",
+    "gameVersionNote": "Version history lists Bloodgold in 1.0.00 (9 September 2026) but the Deep North and Future content pages still call the biome incomplete (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Blue Jute",
+    "url": "https://valheim.fandom.com/wiki/Blue_Jute",
+    "description": "Material (internal ID JuteBlue), stack 50, weight 2.0.",
+    "usedFor": [
+      "Building: Blue jute carpet, Blue jute curtain, Blue jute drapes (amounts not stated)",
+      "Anglerfish bonus drop (Fish page table)"
+    ],
+    "obtainedFrom": [
+      "Destroying the curtains and drapes on Dvergr-made Black marble structures in the Mistlands"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Red Jute",
+    "url": "https://valheim.fandom.com/wiki/Red_Jute",
+    "description": "Material (internal ID JuteRed), stack 50, weight 2.0.",
+    "usedFor": [
+      "Building: Mistletoe, Red jute carpet, Red jute curtain, Yule wreath (amounts not stated)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Cultists",
+      "Destroyed curtains in Frost Caves in the Mountain biome"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Copper Scrap",
+    "url": "https://valheim.fandom.com/wiki/Copper_Scrap",
+    "description": "Ore (internal ID CopperScrap), stack 30, weight 10.0; cannot be teleported without a Portal stone.",
+    "usedFor": [
+      "Smelting: refined into Copper in a Smelter"
+    ],
+    "obtainedFrom": [
+      "Mistlands only: destroying Dvergr wall lanterns, Dvergr barrels, and Ancient swords and armor",
+      "Mining an Ancient sword or armor node gives a 50% chance of Copper scrap (the other drop is Scrap iron)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Scrap Bronze",
+    "url": "https://valheim.fandom.com/wiki/Scrap_Bronze",
+    "description": "Ore (internal ID BronzeScrap), stack 30, weight 10.0; cannot be teleported without a Portal stone.",
+    "usedFor": [
+      "Smelting: turned into Bronze in a Smelter with Coal as fuel; the page says this is the only way to get Bronze from a Smelter (Bronze is otherwise made at a Forge)"
+    ],
+    "obtainedFrom": [
+      "Destroying the defensive spikes on Charred Fortresses (Ashlands)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Frostfire Weapons",
+    "url": "https://valheim.fandom.com/wiki/Version_history",
+    "description": "Weapon family listed in the 1.0.00 version history: Frostfire Sword, Greatsword, Atgeir, Mace, Sledge, Axe, Greataxe, Spear, Dagger, Knucklechains, Bow, Crossbow. No page exists for any of them.",
+    "usedFor": [
+      "Weapons; no stats on the wiki",
+      "Version history also lists Frostfire Essence and Thunderblood Essence as materials (no details)"
+    ],
+    "obtainedFrom": [
+      "Future content page: crafted from Bloodgold using moulds found in the Winding Tunnels; it says the Nord weapons are upgraded using two gemstones into the two variants, Frostfire and Thunderblood (https://valheim.fandom.com/wiki/Future_content)"
+    ],
+    "recipe": "not stated",
+    "gameVersionNote": "Version history lists them in 1.0.00 (9 September 2026); the Future content page still presents them as teasers, so the exact recipe is not on the wiki.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Thunderblood Weapons",
+    "url": "https://valheim.fandom.com/wiki/Version_history",
+    "description": "Weapon family listed in the 1.0.00 version history: Thunderblood Sword, Greatsword, Atgeir, Mace, Sledge, Axe, Greataxe, Spear, Dagger, Knucklechains, Bow, Crossbow. No page exists for any of them.",
+    "usedFor": [
+      "Weapons; no stats on the wiki"
+    ],
+    "obtainedFrom": [
+      "Future content page: crafted from Bloodgold using moulds found in the Winding Tunnels; it ties the two variants (Frostfire and Thunderblood) to upgrading with two gemstones (https://valheim.fandom.com/wiki/Future_content)"
+    ],
+    "recipe": "not stated",
+    "gameVersionNote": "Version history lists them in 1.0.00 (9 September 2026); the Future content page still presents them as teasers, so the exact recipe is not on the wiki.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Nord Weapons",
+    "url": "https://valheim.fandom.com/wiki/Version_history",
+    "description": "Weapon family listed in the 1.0.00 version history: Nord Sword, Greatsword, Atgeir, Mace, Sledge, Axe, Greataxe, Spear, Dagger, Knucklechains, Bow, Crossbow; plus shields Nord Buckler, Nord Shield, Nord Greatshield. No page exists for any of them.",
+    "usedFor": [
+      "Weapons and shields; no stats on the wiki"
+    ],
+    "obtainedFrom": [
+      "Future content page: Mould is used to craft Nord weapons; Nord is described as a tier with one weapon per class (https://valheim.fandom.com/wiki/Future_content)"
+    ],
+    "recipe": "not stated",
+    "gameVersionNote": "Version history lists them in 1.0.00 (9 September 2026); the Future content page still presents them as teasers, so the exact recipes are not on the wiki.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Dyrnwyn",
+    "url": "https://valheim.fandom.com/wiki/Dyrnwyn",
+    "description": "One-handed fire sword (internal ID SwordDyrnwyn), the seventh sword, gives orange light; made at the Black forge.",
+    "usedFor": [
+      "Weapon: first quality primary slash 145 fire damage, secondary 435; upgrade tiers listed up to 7 (6 and 7 marked not yet available)",
+      "Blocking and parry values are listed on the page"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Black forge from three unique fragments, one found in each of the three Mysterious Locations; the fragments are not renewable so only one Dyrnwyn can be crafted (the page text I captured does not say which location holds which fragment)"
+    ],
+    "recipe": "Dyrnwyn hilt fragment x1, Dyrnwyn blade fragment x1, Dyrnwyn tip fragment x1, Flametal x20, Bloodstone x1 at Black forge level 4; the next upgrade tier is shown as Flametal x10, Bloodstone x1 at crafting level 5",
+    "gameVersionNote": "The page marks upgrade tiers 6 and 7 as not yet available.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Hildir's Chests",
+    "url": "https://valheim.fandom.com/wiki/Hildir's_Chests",
+    "description": "Three quest items (Brass chest_hildir1, Silver chest_hildir2, Bronze chest_hildir3), weight 200, stack 1, cannot go through a wood portal but can through a stone portal.",
+    "usedFor": [
+      "Returning one of each to Hildir unlocks trades: Brass: simple dresses and tunics, three headgear, Harvest clothes; Silver: shawl dresses, cape tunics and three headgear; Bronze: beaded dresses and tunics, three headgear and Basic fireworks",
+      "Returning a chest also enables new events in which that miniboss and minions invade your base"
+    ],
+    "obtainedFrom": [
+      "Brass: Brenna, miniboss of the Smouldering Tombs (Black Forest)",
+      "Silver: Geirrhafa, miniboss of the Howling Caverns (Mountains)",
+      "Bronze: Zil, one of the two minibosses of the Sealed Tower (Plains)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Hildir's keys: no page or item with that name was found on the wiki (a search for it returns only Hildir's Chests). Hildir was released in version 0.217.4.",
+    "confidence": "stated"
   }
 ]
