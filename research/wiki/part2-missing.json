@@ -515,5 +515,183 @@
     "recipe": "Egg x1 at a Cauldron",
     "gameVersionNote": "not stated",
     "confidence": "stated"
+  },
+  {
+    "name": "Moose Meat",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North meat. No own page (404). The Moose creature page lists its drops as Moose meat, Moose pelt and Moose trophy.",
+    "usedFor": [
+      "Ingredient in: Meatballs and Poteitr (x1), Meat In Bread x2 (x1), Oven Pancake Batter (x1), Oven Pancake (x1), Smoked Moose Meat (x1 with Kale x2) per the Food table",
+      "Smoked Moose Meat: Health 105, Stamina 35, total 140; heals 7 hp per tick; lasts 25:00"
+    ],
+    "obtainedFrom": [
+      "Dropped by Moose (Deep North): https://valheim.fandom.com/wiki/Moose and https://valheim.fandom.com/wiki/Future_content"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Version history lists Moose Meat under 1.0.00 (9 September 2026) but the Deep North and Future content pages still call the biome incomplete (contradiction, not resolved). A separate Cooked Moose Meat is named in Version history; it has no page and no stats.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Seal Meat",
+    "url": "https://valheim.fandom.com/wiki/Future_content",
+    "description": "No item called Seal Meat was found on the wiki (404). The wiki lists Seal Pelt and Seal Blubber as seal drops, and a dish named Seal Meat Soup made from Seal Blubber.",
+    "usedFor": [
+      "Seal Meat Soup (Food table): Seal Blubber x2, Kale x2, Ice x2; Health 110, Stamina 37, total 147; heals 7 hp per tick; lasts 30:00"
+    ],
+    "obtainedFrom": [
+      "not stated (Seals drop Seal Pelts and Seal Blubbers per the Future content page)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Version history 1.0.00 also names Cooked Seal Blubber and Seal Meat Soup but no Seal meat item. The Seal creature page loads with an empty body.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Serpent Meat",
+    "url": "https://valheim.fandom.com/wiki/Serpent_Meat",
+    "description": "Raw material (internal ID SerpentMeat), weight 10.0, stack 50. It floats.",
+    "usedFor": [
+      "Cook on an Iron cooking station to get Cooked serpent meat (it turns to Coal if left too long)",
+      "It must be cooked on an Iron cooking station before it can be used in other foods"
+    ],
+    "obtainedFrom": [
+      "Guaranteed drop from Serpents (Ocean), 6-7 per kill",
+      "The page notes it can float for a long time, so it may still be recoverable after a storm"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Cooked Serpent Meat",
+    "url": "https://valheim.fandom.com/wiki/Serpent_Meat",
+    "description": "Food (internal ID SerpentMeatCooked). Shares the Serpent Meat page; the wiki has no separate page for it.",
+    "usedFor": [
+      "Eating: Max Health 70, Max Stamina 23, lasts 25 min, heals 3 hp per tick",
+      "Crafting: Serpent stew, Sailor's bounty"
+    ],
+    "obtainedFrom": [
+      "Cooked on an Iron cooking station from Serpent meat x1"
+    ],
+    "recipe": "Serpent meat x1 at an Iron cooking station",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Chicken Meat",
+    "url": "https://valheim.fandom.com/wiki/Chicken_Meat",
+    "description": "Raw material (internal ID ChickenMeat), stack 20, weight 1.0.",
+    "usedFor": [
+      "Cook at a Cooking station or Iron cooking station into Cooked chicken meat (it turns to Coal if left to burn)",
+      "Listed as used at the Food preparation table too (recipes not named on this page)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Hens and Chickens when killed, for example with a Butcher knife or after enabling PVP; the drop table shows Chicken 25% and Hen 1 (column meaning not clear)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Cooked Chicken Meat",
+    "url": "https://valheim.fandom.com/wiki/Chicken_Meat",
+    "description": "Food (internal ID CookedChickenMeat), stack 20, weight 1.0. Shares the Chicken Meat page.",
+    "usedFor": [
+      "Eating: Max Health 60, Max Stamina 20, lasts 20 min, heals 5 hp per tick",
+      "The page also lists Honey glazed chicken (from Uncooked honey glazed chicken) under usage; it says cooked chicken meat cannot be used in recipes that call for Chicken meat"
+    ],
+    "obtainedFrom": [
+      "Cooked at a Cooking station from Chicken meat x1"
+    ],
+    "recipe": "Chicken meat x1 at a Cooking station",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Moose Hide",
+    "url": "https://valheim.fandom.com/wiki/Moose_Hide",
+    "description": "Material (internal ID MooseHide), stack 50, weight 1.0.",
+    "usedFor": [
+      "Building: Antler Throne, Carved Bench, Moose Hide Carpet, Smith's Aprons",
+      "Crafting: Breastplate of the Protector, Helmet of the Protector, Trousers of the Protector, Robes of the Caller, Hood of the Vanguard, Moose Hide Cape (amounts not stated on this page)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Moose",
+      "Looted from Mörkhalla by breaking bedrolls"
+    ],
+    "recipe": "",
+    "gameVersionNote": "The Moose creature page calls the drop Moose pelt, while this page, Future content and Version history call it Moose Hide. Version history places it in 1.0.00 (9 September 2026) but the Deep North and Future content pages still call that biome incomplete.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Moose Sinew",
+    "url": "https://valheim.fandom.com/wiki/Future_content",
+    "description": "Deep North material. No own page (404).",
+    "usedFor": [
+      "not stated"
+    ],
+    "obtainedFrom": [
+      "Dropped from Moose (Future content page)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Named in the 1.0.00 (9 September 2026) crafting-material list in Version history; the Deep North and Future content pages still call the biome incomplete.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Seal Pelt",
+    "url": "https://valheim.fandom.com/wiki/Future_content",
+    "description": "Deep North material. No own page (404).",
+    "usedFor": [
+      "not stated (Version history lists a Sealskin Rug furniture piece but does not say it uses this item)"
+    ],
+    "obtainedFrom": [
+      "Dropped from adult Seals, which appear mostly at the shore; baby Seals drop nothing (Future content page)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Named in the 1.0.00 (9 September 2026) material list in Version history; the Deep North and Future content pages still call the biome incomplete.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Seal Blubber",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North material and cooking ingredient. No own page (404).",
+    "usedFor": [
+      "Ingredient in: Unbaked Poteitr (x1), Baked Poteitr (x1), Seal Meat Soup (x2) per the Food table",
+      "Version history also names a Cooked Seal Blubber food (no page, no stats)"
+    ],
+    "obtainedFrom": [
+      "Dropped from adult Seals (Future content page); the Deep North page lists Seal Blubber as a unique resource"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Named in 1.0.00 (9 September 2026) per Version history; the Deep North and Future content pages still call the biome incomplete.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Frostcore",
+    "url": "https://valheim.fandom.com/wiki/Future_content",
+    "description": "Deep North material. No own page (404).",
+    "usedFor": [
+      "Used to build the Frost Foundry (Future content page)"
+    ],
+    "obtainedFrom": [
+      "Found in the Winding Tunnels (Future content page); Frostcores, Luminous Larvae and Moulds can be found within the Gates of Mörkhalla, which need an Intricate Key to enter"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Named in the 1.0.00 (9 September 2026) material list in Version history; the Deep North and Future content pages still call the biome incomplete.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Mould",
+    "url": "https://valheim.fandom.com/wiki/Mould",
+    "description": "Deep North material; the page is nearly empty (only says the source is the Winding Tunnels).",
+    "usedFor": [
+      "Used to craft Nord weapons and the Intricate Key (Future content page)",
+      "Frostfire and Thunderblood weapons are crafted from Bloodgold using moulds found in the Winding Tunnels (Future content page)"
+    ],
+    "obtainedFrom": [
+      "Winding Tunnels (Deep North)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Version history calls the item Molds & Casts; the Future content and Deep North pages say Mould or Moulds. The Deep North pages still call the biome incomplete.",
+    "confidence": "unclear"
   }
 ]
