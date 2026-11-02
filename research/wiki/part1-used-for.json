@@ -154,5 +154,164 @@
     "recipe": "",
     "gameVersionNote": "not stated",
     "confidence": "stated"
+  },
+  {
+    "name": "Fir Cone",
+    "url": "https://valheim.fandom.com/wiki/Fir_Cone",
+    "description": "Seed that grows a Fir tree when planted. Internal ID FirCone, stack 100.",
+    "usedFor": [
+      "Farming: plant with the Cultivator to farm Fir trees as a Wood source; grow time 3000-5000 s; needs 4 m of space; no cultivated ground needed",
+      "Grows in Meadows, Black Forest, Mountain and Plains",
+      "Building: Yule tree"
+    ],
+    "obtainedFrom": [
+      "Picked up from felled Fir trees"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Pine Cone",
+    "url": "https://valheim.fandom.com/wiki/Pine_Cone",
+    "description": "Seed that grows a Pine tree when planted. Internal ID PineCone, stack 100.",
+    "usedFor": [
+      "Farming: plant with the Cultivator to grow Pine trees; grow time 3000-5000 s; needs a fair amount of open space; no cultivated ground needed",
+      "Grows in Meadows, Black Forest and Plains",
+      "Building: Yule garland, Yule wreath"
+    ],
+    "obtainedFrom": [
+      "Dropped when cutting down Pines"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Carrot Seeds",
+    "url": "https://valheim.fandom.com/wiki/Carrot_Seeds",
+    "description": "Seed for growing Carrots. Internal ID CarrotSeeds, stack 100.",
+    "usedFor": [
+      "Farming: plant with the Cultivator on cultivated ground; grow time 4000-5000 s; needs 1 m of space",
+      "Grows in Meadows, Black Forest and Plains",
+      "Planting a grown Carrot with the Cultivator option \"Seed-carrot\" gives three seeds"
+    ],
+    "obtainedFrom": [
+      "Found on the ground in the Black Forest (picked seeds do not respawn)",
+      "Three seeds from using the Seed-carrot option on a Carrot"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. Page is inconsistent about yield: the infobox says it produces 3 Carrots, the text says planting grows 1x Carrot.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Turnip Seeds",
+    "url": "https://valheim.fandom.com/wiki/Turnip_Seeds",
+    "description": "Seed for growing Turnips. Internal ID TurnipSeeds, stack 100.",
+    "usedFor": [
+      "Farming: plant with the Cultivator on cultivated ground; grow time 4000-5000 s; needs 1 m of space",
+      "Grows in Meadows, Black Forest, Swamp, Plains and Mistlands",
+      "Planting a grown Turnip with the Cultivator option \"Seed-turnip\" gives three seeds"
+    ],
+    "obtainedFrom": [
+      "Harvest the flowers of Turnip plants in the Swamp (picked seeds do not respawn; the page says they are harder to find than carrot seeds)",
+      "Three seeds from using the Seed-turnip option on a Turnip"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. Page is inconsistent about yield: the infobox says it produces 3 Turnips, the text says planting grows 1x Turnip.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Dragon Egg",
+    "url": "https://valheim.fandom.com/wiki/Dragon_Egg",
+    "description": "Misc item, very heavy (200.0), stack 1, cannot go through a portal. Internal ID DragonEgg.",
+    "usedFor": [
+      "Boss summon: three Dragon Eggs summon the fourth boss, Moder (Forsaken altar)"
+    ],
+    "obtainedFrom": [
+      "Drake nests in the Mountains; up to 3 Drakes guard each egg",
+      "Tip on the page: collect them in the same Mountain biome as the Moder altar, no need to haul them far"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. Page contradicts itself on respawn: one note says eggs do not respawn, another says they respawn after 8 h. A separate item, Powdered dragon eggshells, is sold by the Bog Witch (not covered here).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Dragon Tear",
+    "url": "https://valheim.fandom.com/wiki/Dragon_Tear",
+    "description": "Material, the last frozen tear of a dragon. Internal ID DragonTear, stack 50.",
+    "usedFor": [
+      "Building: Artisan table",
+      "Can be placed on an item stand; emits light and fog particles"
+    ],
+    "obtainedFrom": [
+      "Moder drops 10 when defeated"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Celestial Feather",
+    "url": "https://valheim.fandom.com/wiki/Celestial_Feather",
+    "description": "Material from the Ashlands, a remnant of a fallen valkyrie. Internal ID CelestialFeather, stack 50.",
+    "usedFor": [
+      "Building: Feathery wreath",
+      "Crafting: Staff of the Wild Dundr (amount and station not stated on this page)"
+    ],
+    "obtainedFrom": [
+      "Fallen Valkyries drop 2 to 3 on death (Ashlands)",
+      "Charred chests inside Charred Fortresses"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Wisplight",
+    "url": "https://valheim.fandom.com/wiki/Wisplight",
+    "description": "Accessory (internal ID Demister) that clears the Mistlands mist around you.",
+    "usedFor": [
+      "Clears Mist in a 10 m radius; the orb loosely follows the player",
+      "Takes the accessory slot, so full armor can still be worn; conflicts with the Megingjord and the Wishbone (same slot)"
+    ],
+    "obtainedFrom": [
+      "Crafted at a Workbench (level 1); unlocked after getting a Wisp for the first time"
+    ],
+    "recipe": "Silver x1, Wisp x1 at Workbench level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Majestic Carapace",
+    "url": "https://valheim.fandom.com/wiki/Majestic_Carapace",
+    "description": "Material dropped by The Queen. Internal ID QueenDrop, stack 30.",
+    "usedFor": [
+      "Building: required to build the Artisan press"
+    ],
+    "obtainedFrom": [
+      "The Queen drops 5 on defeat, unaffected by the resource rate"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Before the Ashlands update this item was named \"Queen drop\" and was a placeholder.",
+    "confidence": "stated"
+  },
+  {
+    "name": "Fuling Totem",
+    "url": "https://valheim.fandom.com/wiki/Fuling_Totem",
+    "description": "Rare Plains item that channels the power of Yagluth. Internal ID GoblinTotem, stack 30.",
+    "usedFor": [
+      "Boss summon: five Fuling Totems summon Yagluth, the fifth boss (Forsaken altar)"
+    ],
+    "obtainedFrom": [
+      "Fuling Villages: 50% chance next to each Bonfire",
+      "Guaranteed inside some variants of Fuling Outposts",
+      "10% drop from Fuling Berserkers",
+      "2.8% drop from chests in Stonehenges",
+      "If the pedestal holding the totem is destroyed before you interact with it, no totem drops"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
   }
 ]
