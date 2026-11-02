@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Tar",
+    "url": "https://valheim.fandom.com/wiki/Tar",
+    "description": "Material (internal ID Tar), stack 50, weight 2.0. The Tar page lists pieces but gives no amounts.",
+    "usedFor": [
+      "Building: Black metal chest, Carved darkwood divider, Darkwood arch, Darkwood beam 2m, Darkwood beam 4m, Darkwood beam 26°, Darkwood beam 45°, Darkwood chair, Darkwood gate, Darkwood pole 2m, Darkwood pole 4m, Hot tub, Long heavy table, Raven adornment, Round table, Wolf adornment",
+      "Building (roofs): Shingle roof 26°, ridge 26°, o-corner 26°, i-corner 26°; Shingle roof 45°, ridge 45°, o-corner 45°, i-corner 45°",
+      "Crafting: Blob bomb"
+    ],
+    "obtainedFrom": [
+      "Dropped by Growths; found in and around Tar pits in the Plains"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Resin",
+    "url": "https://valheim.fandom.com/wiki/Resin",
+    "description": "Material (internal ID Resin), stack 50, weight 0.3. The page lists pieces and recipes without amounts.",
+    "usedFor": [
+      "Building: Fermenter, Jack-o-turnip, Karve, Raft, Resin candle, Sconce, Standing iron torch, Standing wood torch, Unfading candles",
+      "Crafting: Torch, Bile bomb, Fire arrow, Ooze bomb, Mead horn of Odin, Tankard, Wood shield, Blob bomb, Poison Blob bomb, Elite poison Blob bomb, Frost",
+      "Refueling: Sconce, Standing iron torch, Standing wood torch, Jack-o-turnip",
+      "Upgrading: Wood shield"
+    ],
+    "obtainedFrom": [
+      "Dropped by Greyling, Greydwarf, Greydwarf shaman, Greydwarf brute and Kvastur",
+      "Chance to drop from all trees except Ancient Trees and Scorched Trees (the source line names Birch, Beech, Fir, Pine and Oak trees and Yggdrasil shoots)",
+      "Occasionally in chests in the Meadows; barrels next to Greydwarf buildings in the Black Forest"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Sharpening Stone",
+    "url": "https://valheim.fandom.com/wiki/Sharpening_Stone",
+    "description": "Material (internal ID SharpeningStone), stack 20, weight 6.0. Made at the Stonecutter from Stone x5.",
+    "usedFor": [
+      "Building: Grinding wheel (the only piece listed on the page)"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Stonecutter (Stone x5)",
+      "Rarely found in Plains chests in Fuling Villages, Fuling Outposts and Fuling Ruins"
+    ],
+    "recipe": "Stone x5 at the Stonecutter",
+    "gameVersionNote": "not stated. The Stone page also lists Sharpening stone under crafting, which agrees.",
+    "confidence": "stated"
+  },
+  {
+    "name": "Iron Nails",
+    "url": "https://valheim.fandom.com/wiki/Iron_Nails",
+    "description": "Material (internal ID IronNails), stack 100, weight 0.5; can go through portals. One Iron makes 10 nails at a Forge.",
+    "usedFor": [
+      "Building: Armor stand, Darkwood chair, Dragon bed, Drakkar, Long heavy table, Longship, Raven throne, Round table, Spinning wheel, Windmill (amounts not stated)"
+    ],
+    "obtainedFrom": [
+      "Crafted at a Forge: Iron x1 gives 10 Iron nails"
+    ],
+    "recipe": "Iron x1 at the Forge makes 10 Iron nails",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Chain",
+    "url": "https://valheim.fandom.com/wiki/Chain",
+    "description": "Material (internal ID Chain), stack 50, weight 2.0. Cannot be crafted.",
+    "usedFor": [
+      "Building: Forge bellows, Hanging brazier, Iron cooking station, Dvergr lantern pole, Dvergr wall lantern",
+      "Crafting: Black metal shield, Black metal tower shield, Wolf armor chest",
+      "Upgrading: Black metal shield, Black metal tower shield"
+    ],
+    "obtainedFrom": [
+      "Dropped by Wraiths",
+      "Loot in Sunken Crypts chests, Swamp chests at points of interest, and a chest in the Sealed Tower",
+      "Deconstructing hook and chains in Dvergr Harbors and Dvergr Excavation Sites",
+      "Giant herring bonus drop (Fish page table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Stone",
+    "url": "https://valheim.fandom.com/wiki/Stone",
+    "description": "Basic material (internal ID Stone), stack 50, weight 2.0. The page groups building pieces by biome and gives no amounts.",
+    "usedFor": [
+      "Building, Meadows: Campfire, Stone pile",
+      "Building, Black Forest: Charcoal kiln, Forge, Smelter",
+      "Building, Swamp: Hearth, Stone arch, Stone floor 2x2, Stone pillar, Stone stair, Stone throne, Stone wall 1x1, Stone wall 2x1, Stone wall 4x2, Stonecutter",
+      "Building, Plains: Hot tub, Blast furnace, Stone oven, Windmill",
+      "Building, Mistlands: Wisp fountain",
+      "Crafting: Hammer, Hoe, Sharpening stone, Stone axe",
+      "Terraforming: laying Paved road with a Hoe; raising the ground level with a Hoe"
+    ],
+    "obtainedFrom": [
+      "Loose stones on the ground (they do not respawn)",
+      "Mining larger stone chunks, Copper deposits and Silver veins with a pickaxe",
+      "Dropped by Greydwarf, Greydwarf brute and Stone Golem",
+      "Perch bonus drop (Fish page table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Flint",
+    "url": "https://valheim.fandom.com/wiki/Flint",
+    "description": "Material (internal ID Flint), stack 30, weight 2.0.",
+    "usedFor": [
+      "Building: Chopping block, Tanning rack",
+      "Crafting: Flint axe, Flint knife, Flint spear, Flinthead arrow (amounts not stated on this page)"
+    ],
+    "obtainedFrom": [
+      "Found on shorelines of rivers and oceans in the Meadows only; picked flint respawns after 4 hours",
+      "Dropped when destroying Tanning racks in Fuling Villages",
+      "Pike bonus drop (Fish page table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Rock",
+    "url": "https://valheim.fandom.com/wiki/Mysterious_Rock",
+    "description": "The wiki's Rock title leads to Mysterious Rock, a placeable pet rock (internal IDs Placeable_HardRock and Stonerock), not a building material. No separate Rock material page was found.",
+    "usedFor": [
+      "Not an ingredient in any building piece or recipe on its page",
+      "Placed as a structure at the cost of Mysterious Rock x1 and Coal x1; it holds one displayed item and two placed close together can produce Stone"
+    ],
+    "obtainedFrom": [
+      "not stated on the page"
+    ],
+    "recipe": "Mysterious Rock x1, Coal x1 to place it (the infobox lists Workbench as source)",
+    "gameVersionNote": "Unclear what the request meant by Rock; if it meant plain stone, see the Stone entry.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Chitin",
+    "url": "https://valheim.fandom.com/wiki/Chitin",
+    "description": "Material (internal ID Chitin), stack 50, weight 2.0, found in the Ocean.",
+    "usedFor": [
+      "Crafting: Abyssal harpoon, Abyssal razor, Fins of Destiny (amounts not stated on this page; Fins of Destiny needs Chitin x5 per the Trinkets page)"
+    ],
+    "obtainedFrom": [
+      "Mining Abyssal barnacles on Leviathans in the Ocean",
+      "Coral cod: 13.33% chance of 1-2 chitin per catch (needs Heavy fishing bait)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  }
+]
