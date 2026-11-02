@@ -465,5 +465,147 @@
     "recipe": "",
     "gameVersionNote": "not stated",
     "confidence": "stated"
+  },
+  {
+    "name": "Bracelets of the Brave",
+    "url": "https://valheim.fandom.com/wiki/Bracelets_of_the_Brave",
+    "description": "Plains-tier trinket. Internal ID TrinketBlackDamageHealth. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket (only one trinket at a time): at 85 Adrenaline it triggers automatically for 100 health at once, +20 Clubs skill and +10% Blunt damage for 60 s"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Black metal x5, Lox pelt x5, Lox trophy x1 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Evasion Mantle",
+    "url": "https://valheim.fandom.com/wiki/Evasion_Mantle",
+    "description": "Plains-tier trinket. Internal ID TrinketBlackStamina. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 60 Adrenaline it triggers for 120 s: -50% Block stamina usage, +50% Parry bonus, +20 Dodge skill",
+      "The parry bonus raises block armor when parrying and multiplies with the item's regular parry bonus"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Black metal x5, Fuling berserker trophy x1, Linen thread x10 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Heart of the Forest",
+    "url": "https://valheim.fandom.com/wiki/Heart_of_the_Forest",
+    "description": "Black Forest-tier trinket, one of the first available. Internal ID TrinketBronzeHealth. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 50 Adrenaline it triggers for 60 s of +25% health regeneration"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Bronze x5, Ancient seed x5, Greydwarf Shaman trophy x1 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Bronze Pendant",
+    "url": "https://valheim.fandom.com/wiki/Bronze_Pendant",
+    "description": "Black Forest-tier trinket, one of the first available. Internal ID TrinketBronzeStamina. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 50 Adrenaline it triggers for 60 s of +25% stamina regeneration"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Bronze x5, Bear trophy x1, Ruby x3 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Pulsating Earrings",
+    "url": "https://valheim.fandom.com/wiki/Pulsating_Earrings",
+    "description": "Mistlands-tier trinket. Internal ID TrinketCarapaceEitr. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 65 Adrenaline it triggers for 60 s of +25% eitr regeneration"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Black forge (level 1); the page names no other source"
+    ],
+    "recipe": "Carapace x5, Refined eitr x5, Gjall trophy x1 at Black forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Brimstone",
+    "url": "https://valheim.fandom.com/wiki/Brimstone",
+    "description": "Ashlands-tier trinket. Internal ID TrinketFlametalStaminaHealth. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 100 Adrenaline it triggers for 100 health and 100 stamina immediately (no duration; the list page shows N/A)"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Black forge (level 1); the page names no other source"
+    ],
+    "recipe": "Flametal x5, Sulfur x5, Molten core x1, Morgen trophy x1 at Black forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Iron Brooch",
+    "url": "https://valheim.fandom.com/wiki/Iron_Brooch",
+    "description": "Swamp-tier trinket. Internal ID TrinketIronHealth. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 65 Adrenaline it triggers for 50 health at once and +20 armor for 30 s"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Iron x5, Ancient bark x5, Leech trophy x1 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Resounding Shackle",
+    "url": "https://valheim.fandom.com/wiki/Resounding_Shackle",
+    "description": "Mistlands-tier trinket. Internal ID TrinketScaleStaminaDamage. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 75 Adrenaline it triggers for 100 stamina at once and +10% Slash damage for 60 s"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Black forge (level 1); the page names no other source"
+    ],
+    "recipe": "Refined eitr x5, Scale hide x5, Mandible x1, Seeker trophy x1 at Black forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Wolf Sight",
+    "url": "https://valheim.fandom.com/wiki/Wolf_Sight",
+    "description": "Mountain-tier trinket. Internal ID TrinketSilverDamage. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 55 Adrenaline it triggers for 30 s of +20 Bows skill, +20 Spears skill and +10% Pierce damage"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Silver x5, Wolf fang x5, Fenring trophy x1 at Forge level 1",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Crystal Heart",
+    "url": "https://valheim.fandom.com/wiki/Crystal_Heart",
+    "description": "Mountain-tier trinket. Internal ID TrinketSilverResist. Weight 2.0.",
+    "usedFor": [
+      "Equip as a trinket: at 80 Adrenaline it triggers for 50 s of slight (25%) resistance to Blunt, Slash and Pierce damage",
+      "The page says its effect does not stack with Bonemass' forsaken power"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Forge (level 1); the page names no other source"
+    ],
+    "recipe": "Silver x5, Crystal x5, Stone Golem trophy x1 at Forge level 1",
+    "gameVersionNote": "not stated. The Trinkets list shows the same effect as \"75% damage taken\" while the item page says 25% resistance (same value stated two ways).",
+    "confidence": "stated"
   }
 ]
