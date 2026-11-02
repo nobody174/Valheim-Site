@@ -265,5 +265,255 @@
     "recipe": "Cooked fish x2, Barley flour x4 at Cauldron level 4",
     "gameVersionNote": "not stated",
     "confidence": "stated"
+  },
+  {
+    "name": "Oats",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North crop ingredient. The wiki has no page for it (Oats returns 404); facts come from the Food table and the Version history list.",
+    "usedFor": [
+      "Ingredient: Oatmeal (Oats x2), per the Food page table",
+      "Listed under Plantable: Oats in the 1.0.00 version history (so it appears to be a plantable crop; no growing details given)"
+    ],
+    "obtainedFrom": [
+      "not stated"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Version history (https://valheim.fandom.com/wiki/Version_history) lists it in 1.0.00 - Valheim 1.0, release date 9 September 2026. The Deep North page still says that biome's content is incomplete and may not be playable (https://valheim.fandom.com/wiki/Deep_North), so the wiki disagrees with itself; not resolved here.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Oat Flour",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North cooking ingredient. No wiki page (404); only appears in the Food table and in the 1.0.00 Food list in Version history.",
+    "usedFor": [
+      "Ingredient in: Unbaked Poteitr (x2), Baked Poteitr (x2), Meat In Bread x2 (x1), Oven Pancake Batter (x2), Oven Pancake (x2), Pancakes x3 (x2) per the Food table"
+    ],
+    "obtainedFrom": [
+      "not stated (no crafting recipe for the flour itself found on the wiki)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Oat Milk",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North cooking ingredient. No wiki page (404).",
+    "usedFor": [
+      "Ingredient in: Oatmeal (x1) and Pancakes x3 (x1) per the Food table"
+    ],
+    "obtainedFrom": [
+      "not stated (no recipe for the milk itself found)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Oatmeal",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North dish (Food table row; no own page).",
+    "usedFor": [
+      "Eating: Health 39, Stamina 115, Eitr 85, total 239; heals 5 hp per tick; lasts 30:00; weight 1.0"
+    ],
+    "obtainedFrom": [
+      "Cooked from the listed ingredients; crafting station not stated in the table"
+    ],
+    "recipe": "Oats x2, Lingonberries x2, Oat Milk x1",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Kale",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North plant and cooking ingredient. No wiki page (404 for Kale, Kale Seeds).",
+    "usedFor": [
+      "Ingredient in: Unbaked Poteitr (x2), Baked Poteitr (x2), Meat In Bread x2 (x2), Seal Meat Soup (x2), Smoked Fish (x1), Smoked Moose Meat (x2) per the Food table",
+      "Listed under Plantable: Kale in the 1.0.00 version history"
+    ],
+    "obtainedFrom": [
+      "Future content page: Kale and Kale Seeds are found growing in the wild, likely plantable (https://valheim.fandom.com/wiki/Future_content)",
+      "Deep North page lists Kale Seeds as a unique resource and Kale as a food of that biome (https://valheim.fandom.com/wiki/Deep_North)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North and Future content pages still describe it as incomplete or upcoming (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Kale Chips",
+    "url": "https://valheim.fandom.com/wiki/Version_history",
+    "description": "Food item named in the 1.0.00 version history food list. No page and no recipe or stats found on the wiki.",
+    "usedFor": [
+      "not stated"
+    ],
+    "obtainedFrom": [
+      "not stated"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Only mentioned in the 1.0.00 (9 September 2026) Food list in Version history; it is not in the Food page dish table.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Onion Seeds",
+    "url": "https://valheim.fandom.com/wiki/Onion_Seeds",
+    "description": "Seed for growing Onions. Internal ID OnionSeeds, stack 100.",
+    "usedFor": [
+      "Farming: plant with the Cultivator on cultivated ground; grow time 4000-5000 s; needs 1 m of space; grows in Meadows, Black Forest and Plains",
+      "Planting an Onion with the Cultivator option Seed-onion gives three seeds"
+    ],
+    "obtainedFrom": [
+      "Found in the Mountain tower and in Abandoned Cabins in the Mountain (picked seeds do not respawn)",
+      "Coral Cod have a chance to drop 1-2 seeds when caught (also in the Fish page bonus table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. Page is inconsistent about yield: the infobox says it produces 3 Onions, the text says planting grows 1x Onion.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Pancakes",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North dish (Food table row named Pancakes x3; no own page). Related rows: Oven Pancake Batter and Oven Pancake.",
+    "usedFor": [
+      "Eating: Health 39, Stamina 115, total 154; heals 5 hp per tick; lasts 30:00; weight 1.0",
+      "Related: Oven Pancake Batter (Health 75, Stamina 24, total 99, heals 4, 30:00) and Oven Pancake (Health 37, Stamina 18, Eitr 105, total 160, heals 5, 30:00)"
+    ],
+    "obtainedFrom": [
+      "Cooked from the listed ingredients; station not stated in the table"
+    ],
+    "recipe": "Pancakes x3: Oat Milk x1, Oat Flour x2, Egg x2, Blueberries x2. Oven Pancake Batter: Moose Meat x1, Poteitr x2, Lingonberries x2, Oat Flour x2. Oven Pancake: Moose Meat x1, Poteitr x2, Lingonberries x2, Oat Flour x2",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved). Oven Pancake and its Batter have the same listed ingredients in the table, which looks odd but is what the page shows.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Poteitr",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North plant ingredient (no page, 404).",
+    "usedFor": [
+      "Ingredient in: Unbaked Poteitr (x1), Baked Poteitr (x1), Meatballs and Poteitr (x2), Smoked Fish (x1), Oven Pancake Batter (x2), Oven Pancake (x2) per the Food table",
+      "Listed under Plantable: Poteitr in the 1.0.00 version history"
+    ],
+    "obtainedFrom": [
+      "not stated"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Unbaked Poteitr",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North dish (Food table row; no own page).",
+    "usedFor": [
+      "Eating: Health 75, Stamina 24, total 99; heals 4 hp per tick; lasts 30:00; weight 1.0"
+    ],
+    "obtainedFrom": [
+      "Cooked from the listed ingredients; station not stated in the table"
+    ],
+    "recipe": "Seal Blubber x1, Kale x2, Poteitr x1, Oat Flour x2",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved). The Baked Poteitr row shows the same ingredients.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Baked Poteitr",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North dish (Food table row; no own page).",
+    "usedFor": [
+      "Eating: Health 34, Stamina 17, Eitr 100, total 151; heals 5 hp per tick; lasts 25:00; weight 1.0"
+    ],
+    "obtainedFrom": [
+      "Cooked from the listed ingredients; station not stated in the table"
+    ],
+    "recipe": "Seal Blubber x1, Kale x2, Poteitr x1, Oat Flour x2",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved). The Unbaked Poteitr row shows the same ingredients.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Meatballs and Poteitr",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North dish (Food table row; no own page).",
+    "usedFor": [
+      "Eating: Health 35, Stamina 18, Eitr 105, total 158; heals 5 hp per tick; lasts 25:00; weight 1.0"
+    ],
+    "obtainedFrom": [
+      "Cooked from the listed ingredients; station not stated in the table"
+    ],
+    "recipe": "Moose Meat x1, Lingonberries x2, Poteitr x2",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Lingonberries",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North berry. No own page (404 for Lingonberries, Lingon Berries, Lingonberry).",
+    "usedFor": [
+      "Ingredient in: Lingonberry Juice (x5 with Ice x5), Meatballs and Poteitr (x2), Meat In Bread x2 (x2), Oatmeal (x2), Oven Pancake Batter (x2), Oven Pancake (x2) per the Food table",
+      "Lingonberry Juice: Health 35, Stamina 105, total 140; heals 5 hp per tick; lasts 25:00"
+    ],
+    "obtainedFrom": [
+      "Found on Lingonberry bushes (Future content page: https://valheim.fandom.com/wiki/Future_content)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; Deep North and Future content pages still describe it as incomplete or upcoming (contradiction, not resolved). The Deep North page spells it Lingon Berries.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Smoked Fish",
+    "url": "https://valheim.fandom.com/wiki/Food",
+    "description": "Deep North dish (Food table row; no own page). The wiki's Cooked fish item text also says smoked fish, but that is a different item (see Cooked Fish).",
+    "usedFor": [
+      "Eating: Health 30, Stamina 16, Eitr 95, total 141; heals 5 hp per tick; lasts 25:00; weight 1.0"
+    ],
+    "obtainedFrom": [
+      "Cooked from the listed ingredients; station not stated in the table"
+    ],
+    "recipe": "Raw Fish x1, Kale x1, Poteitr x1",
+    "gameVersionNote": "Listed in 1.0.00 (9 September 2026) per Version history; the Deep North page still calls the biome incomplete (contradiction, not resolved).",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Fish Soup",
+    "url": "https://valheim.fandom.com/wiki/Version_history",
+    "description": "Named only in the 1.0.00 version history Food list. No page, recipe or stats found on the wiki (a search for fish soup returns Fish Wraps, Raw Fish, Carrot Soup, Black Soup, Onion Soup and Fish 'n' Bread).",
+    "usedFor": [
+      "not stated"
+    ],
+    "obtainedFrom": [
+      "not stated"
+    ],
+    "recipe": "",
+    "gameVersionNote": "Only mentioned in the 1.0.00 (9 September 2026) Food list in Version history; it is not in the Food page dish table.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Egg",
+    "url": "https://valheim.fandom.com/wiki/Egg",
+    "description": "Material (internal ID ChickenEgg), stack 20, weight 1.0; the egg laid by Hens (not the Volture egg, Asksvin egg or Dragon egg).",
+    "usedFor": [
+      "Cauldron ingredient: cooked into Cooked egg",
+      "Needed to start a chicken farm (two eggs are required)",
+      "Ingredient in the Pancakes x3 row on the Food page (Egg x2)"
+    ],
+    "obtainedFrom": [
+      "Bought from Haldor for 1,500 Coins after defeating Yagluth",
+      "A chest on the bottom floor of the Sealed Tower in the Plains",
+      "Laid naturally by Hens when two are well-fed, sheltered and near each other (the page text was cut off after this point, so further conditions are not captured)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Cooked Egg",
+    "url": "https://valheim.fandom.com/wiki/Egg",
+    "description": "Food (internal ID CookedEgg), stack 20, weight 1.0. Shares the Egg page.",
+    "usedFor": [
+      "Eating: Max Health 35, Max Stamina 12, lasts 20 min, heals 2 hp per tick"
+    ],
+    "obtainedFrom": [
+      "Cooked in a Cauldron from Egg x1"
+    ],
+    "recipe": "Egg x1 at a Cauldron",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
   }
 ]
