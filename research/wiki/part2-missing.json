@@ -153,5 +153,117 @@
     "recipe": "",
     "gameVersionNote": "not stated. The Bait page also lists the Ocean as a biome for Pufferfish with Misty bait; this page names only the Mistlands coast.",
     "confidence": "unclear"
+  },
+  {
+    "name": "Anglerfish",
+    "url": "https://valheim.fandom.com/wiki/Anglerfish",
+    "description": "Fish. Internal ID fish9, weight 2.0 (infobox shows 2.0 x Quality 10).",
+    "usedFor": [
+      "Crafting: Uncooked fish n' bread (1 Anglerfish + 2 Bread dough at the Food preparation table); the page calls Fish 'n' bread the third-best stamina food after the Ashlands release",
+      "Crafting: Raw fish (1 Anglerfish at a Cauldron, per this page)",
+      "Crafting: Fishing hat (needs one of each fish type)",
+      "Higher-level Anglerfish do not raise the number of Uncooked fish n' bread made; the page calls Raw fish for Fish wraps from Anglerfish wasteful",
+      "Bonus drop when caught (Fish page table cell text): Soft tissue 1-2, Blue jute"
+    ],
+    "obtainedFrom": [
+      "Fishing: Mistlands shores (very deep), caught with Misty fishing bait (20 Fishing bait + Lox trophy at the Food preparation table)"
+    ],
+    "recipe": "Uncooked fish n' bread: 1 Anglerfish + 2 Bread dough at the Food preparation table",
+    "gameVersionNote": "The station for Raw fish differs between pages: this page and the Tuna page say Cauldron, the Raw fish and Fish pages say Food preparation table.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Magmafish",
+    "url": "https://valheim.fandom.com/wiki/Magmafish",
+    "description": "Fish. Internal ID fish11, weight 2.0.",
+    "usedFor": [
+      "Crafting: Fishing hat",
+      "Decoration; cooking is listed under usage but no cooked result is named",
+      "Bonus drop when caught (Fish page table cell text): Flametal ore 1, Surtling core 1, Grausten"
+    ],
+    "obtainedFrom": [
+      "Fishing: found in the waters of the Ashlands (Ashlands shores), caught with Hot fishing bait (20 Fishing bait + Warrior trophy)",
+      "Level-up chance at spawn is 15% in the Ashlands (20% elsewhere)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Northern Salmon",
+    "url": "https://valheim.fandom.com/wiki/Northern_Salmon",
+    "description": "Fish. Internal ID fish10, weight 2.0.",
+    "usedFor": [
+      "Crafting: Fishing hat",
+      "Decoration; cooking is listed under usage but no cooked result is named",
+      "Bonus drop when caught (Fish page table cell text): Carrot seeds 1, Silver"
+    ],
+    "obtainedFrom": [
+      "Fishing: found in the waters of the Deep North, caught with Frosty fishing bait (20 Fishing bait + Drake trophy)",
+      "Level-up chance at spawn is 15% in the Deep North (20% elsewhere)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Tetra",
+    "url": "https://valheim.fandom.com/wiki/Tetra",
+    "description": "Fish. Internal ID fish4_cave, weight 2.0.",
+    "usedFor": [
+      "Crafting: Fishing hat",
+      "Decoration; cooking is listed under usage but no cooked result is named",
+      "Bonus drop when caught (Fish page table cell text): Obsidian 1-15 Coins (the cell is ambiguous, the quantity split between Obsidian and Coins is not clear)"
+    ],
+    "obtainedFrom": [
+      "Fishing: only in the very rare lakes at the bottom of Frost Caves in the Mountain biome, caught with Cold fishing bait (20 Fishing bait + Fenring trophy); once such a lake is found, Tetra spawn there reliably"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Raw Fish",
+    "url": "https://valheim.fandom.com/wiki/Raw_Fish",
+    "description": "Material (internal ID FishRaw), stack 20, weight 1.0. Made from any caught fish.",
+    "usedFor": [
+      "Cooking: cook at a Cooking station into Cooked fish"
+    ],
+    "obtainedFrom": [
+      "Made from any caught fish at a Food preparation table (this page and the Fish page); the Anglerfish and Tuna pages instead say Cauldron",
+      "Amount per fish by quality (the Fish page; flat bonus already included, e.g. a quality 3 Tuna gives 8): Perch, Pike, Tetra, Trollfish: 1/4/7/10/13 for quality 1-5; Tuna, Coral cod, Giant herring, Grouper: 2/5/8/11/14; Pufferfish, Anglerfish, Magmafish, Northern salmon: 3/6/9/12/15"
+    ],
+    "recipe": "1 fish at the Food preparation table",
+    "gameVersionNote": "Contradiction between pages on the crafting station (Food preparation table vs Cauldron). Not resolved here.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Cooked Fish",
+    "url": "https://valheim.fandom.com/wiki/Raw_Fish",
+    "description": "Food (internal ID FishCooked), stack 20, weight 0.5; the item text calls it a tasty side of smoked fish. It shares the Raw fish page. The wiki has no page named Smoked fish.",
+    "usedFor": [
+      "Eating: Max Health 45, Max Stamina 15, lasts 20 min, heals 2 hp per tick",
+      "Crafting: Fish wraps (2 Cooked fish + 4 Barley flour in a level 4 Cauldron)"
+    ],
+    "obtainedFrom": [
+      "Cooked at a Cooking station from Raw fish x1"
+    ],
+    "recipe": "Raw fish x1 at a Cooking station",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Fish Wraps",
+    "url": "https://valheim.fandom.com/wiki/Fish_Wraps",
+    "description": "Plains-tier food (internal ID FishWraps), stack 10.",
+    "usedFor": [
+      "Eating: Max Health 70, Max Stamina 23, lasts 25 min, heals 4 hp per tick"
+    ],
+    "obtainedFrom": [
+      "Cooked in a level 4 Cauldron"
+    ],
+    "recipe": "Cooked fish x2, Barley flour x4 at Cauldron level 4",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
   }
 ]
