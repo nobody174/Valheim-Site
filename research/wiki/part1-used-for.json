@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Withered Bone",
+    "url": "https://valheim.fandom.com/wiki/Withered_Bone",
+    "description": "Misc item, a giant bone knotted like old wood. Internal ID WitheredBone, stack 30, weight 1.0.",
+    "usedFor": [
+      "Crafting: listed as an ingredient in the Nimble Anklet (amount and station not stated on this page)",
+      "Boss summon: ten Withered Bones are needed to summon the third boss, Bonemass, at the Forsaken altar"
+    ],
+    "obtainedFrom": [
+      "Muddy scrap piles in Sunken Crypts",
+      "Chests in the Swamp biome"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Tar",
+    "url": "https://valheim.fandom.com/wiki/Tar",
+    "description": "Material, a sticky lump of tar. Internal ID Tar, stack 50, weight 2.0.",
+    "usedFor": [
+      "Building (page lists pieces but gives no amounts): Black metal chest, Carved darkwood divider, Darkwood arch, Darkwood beam 2m, Darkwood beam 4m, Darkwood beam 26°, Darkwood beam 45°, Darkwood chair, Darkwood gate, Darkwood pole 2m, Darkwood pole 4m, Hot tub, Long heavy table, Raven adornment, Round table, Wolf adornment",
+      "Building, roofs (no amounts): Shingle roof 26°, ridge 26°, o-corner 26°, i-corner 26°, Shingle roof 45°, ridge 45°, o-corner 45°, i-corner 45°",
+      "Crafting: Blob bomb (amount not stated on the Tar page)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Growths",
+      "Found in and around Tar pits in the Plains biome"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Sharpening Stone",
+    "url": "https://valheim.fandom.com/wiki/Sharpening_Stone",
+    "description": "Material, a whetstone wheel. Internal ID SharpeningStone, stack 20, weight 6.0.",
+    "usedFor": [
+      "Building: Grinding wheel (the only piece the page lists)"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Stonecutter",
+      "Rarely found in Plains chests in Fuling Villages, Fuling Outposts and Fuling Ruins"
+    ],
+    "recipe": "Stone x5 at the Stonecutter",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Bell",
+    "url": "https://valheim.fandom.com/wiki/Bell",
+    "description": "Misc item used to summon the Ashlands boss Fader. Internal ID Bell, stack 9, weight 0.5.",
+    "usedFor": [
+      "Boss summon: three Bells summon Fader (9 Bell fragments in total)"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Black forge from Bell fragments",
+      "Bell fragments come from Charred Fortresses (Ashlands)"
+    ],
+    "recipe": "Bell fragment x3 at the Black forge",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Torch",
+    "url": "https://valheim.fandom.com/wiki/Torch",
+    "description": "Club-type utility weapon and light source. Internal ID Torch.",
+    "usedFor": [
+      "Light source; when equipped it acts like a fire and scares off Necks, untamed Boars, Greylings and Greydwarfs",
+      "Weapon: blunt 4 plus fire 15 damage, 3-hit combo",
+      "Can be held in main or off hand"
+    ],
+    "obtainedFrom": [
+      "The player starts the game with one",
+      "Craftable (see recipe)"
+    ],
+    "recipe": "Wood x1, Resin x1",
+    "gameVersionNote": "not stated. Contradiction on the page: the infobox says Source is the player crafting menu, while the upgrade table says Workbench level 1. It loses durability while equipped and lasts at most 10 minutes; it cannot be repaired.",
+    "confidence": "unclear"
+  },
+  {
+    "name": "Hammer",
+    "url": "https://valheim.fandom.com/wiki/Hammer",
+    "description": "Tool used to build fires, workbenches, buildings and furniture. Internal ID Hammer.",
+    "usedFor": [
+      "Building: opens the build menu with right click (you cannot block while holding it)"
+    ],
+    "obtainedFrom": [
+      "Recipe unlocked from the start of the game; no crafting station needed"
+    ],
+    "recipe": "Quality 1: Wood x3, Stone x2 (no station). Upgrades: quality 2 Wood x1 Stone x1 (workbench level 2), quality 3 Wood x2 Stone x2 (workbench level 3)",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Hoe",
+    "url": "https://valheim.fandom.com/wiki/Hoe",
+    "description": "Tool for levelling or raising ground and laying paths. Internal ID Hoe.",
+    "usedFor": [
+      "Levelling, raising and slightly lowering ground; raising ground costs 2 Stone per operation and needs a workbench nearby",
+      "Applying Pathen and Paved Road ground decorations"
+    ],
+    "obtainedFrom": [
+      "Crafted at the Workbench"
+    ],
+    "recipe": "Wood x5, Stone x2 at Workbench level 1. Upgrades: quality 2 Wood x1 Stone x1 (workbench level 2), quality 3 Wood x2 Stone x2 (workbench level 3)",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Cultivator",
+    "url": "https://valheim.fandom.com/wiki/Cultivator",
+    "description": "Farming tool for tilling soil, planting seeds and trees, and restoring grass. Internal ID Cultivator.",
+    "usedFor": [
+      "Preparing cultivated soil for food crops",
+      "Planting trees (needs cleared space, not cultivated ground)",
+      "Grass mode: regrow grass, lily pads, create sand on shoreline, regrow cattails in some shore areas",
+      "Uses stamina; the page says Hildir's clothing helps on large farms"
+    ],
+    "obtainedFrom": [
+      "Crafted at a Forge; becomes available once you have Bronze and Corewood"
+    ],
+    "recipe": "Corewood x5, Bronze x5 at the Forge. Upgrades: quality 2 Corewood x1 Bronze x1, quality 3 Corewood x2 Bronze x2",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Beech Seeds",
+    "url": "https://valheim.fandom.com/wiki/Beech_Seeds",
+    "description": "Seed that grows a Beech tree when planted with the Cultivator. Internal ID BeechSeeds, stack 100.",
+    "usedFor": [
+      "Farming: plant with the Cultivator to grow a Beech tree; grow time 3000-5000 s; no cultivated ground needed; needs 4 m of space",
+      "Grows in Meadows, Black Forest and Plains; cannot grow in the Swamp"
+    ],
+    "obtainedFrom": [
+      "Beech trees"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Birch Seeds",
+    "url": "https://valheim.fandom.com/wiki/Birch_Seeds",
+    "description": "Seed that grows a Birch tree when planted with the Cultivator. Internal ID BirchSeeds, stack 100.",
+    "usedFor": [
+      "Farming: plant with the Cultivator to grow a Birch tree; grow time 5000-7000 s; no cultivated ground needed; needs 4 m of space",
+      "Grows in Meadows, Black Forest and Plains"
+    ],
+    "obtainedFrom": [
+      "Birch trees; the drop rate depends on whether the tree was planted and which biome it came from (details are on another page)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  }
+]
