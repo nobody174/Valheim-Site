@@ -313,5 +313,157 @@
     "recipe": "",
     "gameVersionNote": "not stated",
     "confidence": "stated"
+  },
+  {
+    "name": "Fishing Rod",
+    "url": "https://valheim.fandom.com/wiki/Fishing_Rod",
+    "description": "Two-handed tool for fishing. Internal ID FishingRod, weight 1.5.",
+    "usedFor": [
+      "Fishing: primary attack casts the line (needs bait in inventory; hold longer to cast up to 30 m); block reels in the bobber and any caught fish",
+      "One bait is used per cast",
+      "Weak melee: blunt 5"
+    ],
+    "obtainedFrom": [
+      "Bought from Haldor for 350 Coins",
+      "Found at the edge of large frozen lakes in rare Frost Caves; picking it up there also drops 2-4 Fishing bait",
+      "Cannot be crafted"
+    ],
+    "recipe": "",
+    "gameVersionNote": "As of patch 0.213.4, bait is returned if the line is pulled in without catching a fish or when recasting. The Fishing overview page describes the Frost Cave rod as near a rare runestone, the rod page says at the edge of large frozen lakes.",
+    "confidence": "stated"
+  },
+  {
+    "name": "Fishing Bait",
+    "url": "https://valheim.fandom.com/wiki/Bait",
+    "description": "Basic fishing bait (the wiki's \"Fishing bait\" redirects to the Bait page, which covers all bait types). All baits weigh 0.1 and stack to 100.",
+    "usedFor": [
+      "Fishing: attach to the Fishing Rod by equipping it and right-clicking the bait in the inventory; the bait type decides which fish bite",
+      "Basic Fishing bait attracts Perch and Pike (Meadows, Black Forest)",
+      "Crafting ingredient for advanced baits at the Food preparation table: 20 Fishing bait plus 1 trophy gives 20 advanced bait"
+    ],
+    "obtainedFrom": [
+      "Sold by Haldor: 10 Coins per 20 bait",
+      "2-4 bait drop when picking up the Fishing Rod found in a Frost Cave"
+    ],
+    "recipe": "Advanced bait types (20 basic bait + trophy -> 20 bait): Mossy (Troll trophy) attracts Trollfish, Black Forest; Sticky (Abomination trophy) attracts Giant herring, Swamp; Stingy (Fuling trophy) attracts Grouper, Plains; Heavy (Serpent trophy) attracts Tuna and Coral cod, Ocean; Misty (Lox trophy) attracts Pufferfish and Anglerfish, Mistlands (both) and Ocean (Pufferfish); Hot (Warrior trophy) attracts Magmafish, Ashlands; Frosty (Drake trophy) attracts Northern salmon, Deep North; Cold (Fenring trophy) attracts Pike (Meadows and Black Forest) and Tetra (Frost Caves)",
+    "gameVersionNote": "The Fishing page says the different fish and bait types were introduced in the Mistlands update.",
+    "confidence": "stated"
+  },
+  {
+    "name": "Perch",
+    "url": "https://valheim.fandom.com/wiki/Perch",
+    "description": "Fish, a tasty whitemeat fish. Internal ID fish1.",
+    "usedFor": [
+      "Crafting: Fishing hat",
+      "Cooking: Raw fish (the page lists \"Raw fish\" under usage and gives no cooked result)",
+      "Crafting: Mead base: Vananidir",
+      "Decoration: can be mounted on an item stand",
+      "Catching a Perch can give a bonus Amber drop (per the Amber page)"
+    ],
+    "obtainedFrom": [
+      "Fishing: coastal fish found offshore in the Meadows and Black Forest, caught with the basic Fishing bait sold by Haldor"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Pike",
+    "url": "https://valheim.fandom.com/wiki/Pike",
+    "description": "Fish, a freshwater fish. Internal ID fish2.",
+    "usedFor": [
+      "Crafting: Fishing hat",
+      "Cooking: Raw fish (the page lists \"Raw fish\" under usage and gives no cooked result)",
+      "Decoration",
+      "Catching a Pike can give a bonus Amber pearl drop (per the Amber pearl page)"
+    ],
+    "obtainedFrom": [
+      "Fishing: found offshore in the Meadows and Black Forest, caught with Fishing bait from Haldor or Cold fishing bait (20 Fishing bait + Fenring trophy at the Food preparation table)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated. Wording quirk: the flavour text calls it freshwater while the body calls it a coastal fish found offshore.",
+    "confidence": "stated"
+  },
+  {
+    "name": "Bukeperries",
+    "url": "https://valheim.fandom.com/wiki/Bukeperries",
+    "description": "Consumable berry that makes you sick, used to clear active food buffs. Internal ID Pukeberries, stack 50.",
+    "usedFor": [
+      "Clearing active Food buffs: gives the Feeling sick effect for 15 s (no health or stamina regen, -50% movement speed, 1 damage every 2 s, and each tick removes one consumed food)",
+      "Lets you swap foods without waiting for them to expire; the removed foods are wasted",
+      "The page says eating Rotten meat has the same effect (a late-game alternative)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Fuling shamans",
+      "Dropped by Greydwarf shamans"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Amber",
+    "url": "https://valheim.fandom.com/wiki/Amber",
+    "description": "Valuable item. Internal ID Amber, stack 20.",
+    "usedFor": [
+      "Selling: any trader buys it for 5 Coins"
+    ],
+    "obtainedFrom": [
+      "Stone Graves and Viking Graveyards in the Meadows",
+      "Burial Chambers in the Black Forest",
+      "Sunken Crypts in the Swamp",
+      "Fishing: bonus drop when catching Perch"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Amber Pearl",
+    "url": "https://valheim.fandom.com/wiki/Amber_pearl",
+    "description": "Valuable item. Internal ID AmberPearl, stack 50.",
+    "usedFor": [
+      "Selling: any trader buys it for 10 Coins",
+      "Crafting: Celebratory cap (amount not stated on this page)"
+    ],
+    "obtainedFrom": [
+      "Stone Graves and Viking Graveyards in the Meadows",
+      "Burial Chambers and Troll Caves in the Black Forest",
+      "Sunken Crypts in the Swamp",
+      "Fishing: bonus drop when catching Pike"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Swamp Key",
+    "url": "https://valheim.fandom.com/wiki/Swamp_Key",
+    "description": "Misc key item. Internal ID CryptKey, stack 1.",
+    "usedFor": [
+      "Unlocks the gates of Sunken Crypts in the Swamp; must be in your inventory the first time each crypt gate is opened, not needed to re-enter the same crypt; not consumed (unlimited uses)"
+    ],
+    "obtainedFrom": [
+      "Dropped by The Elder when defeated (Black Forest)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
+  },
+  {
+    "name": "Wishbone",
+    "url": "https://valheim.fandom.com/wiki/Wishbone",
+    "description": "Accessory that helps find buried secrets. Internal ID Wishbone.",
+    "usedFor": [
+      "When equipped, green particles and a ding sound appear within about 20 m of a buried secret; the ding speeds up and rises in pitch as you get closer, and the wishbone pulses directly above it",
+      "Digging reveals Muddy scrap piles (Swamp), Silver veins (Mountain) or Buried Treasure (Meadows); once interacted with, it stops detecting that object",
+      "Conflicts with the Megingjord and the Wisplight (same equipment slot)"
+    ],
+    "obtainedFrom": [
+      "Dropped by Bonemass (Swamp)"
+    ],
+    "recipe": "",
+    "gameVersionNote": "not stated",
+    "confidence": "stated"
   }
 ]
