@@ -79,6 +79,18 @@ function usedForLine(item: Item): QuickLine | undefined {
     return { parts, guide: false };
   }
 
+  const built = lookup.builtWith(item.id);
+  const builds: QuickPart[] = [
+    ...built.stations.map((s) => ({ id: s.id })),
+    ...built.pieces.map((p) => p.name),
+  ];
+  if (builds.length > 0) {
+    const parts: QuickPart[] = ['Builds '];
+    builds.slice(0, MAX_CRAFTED).forEach((part, i) => parts.push(...(i ? [', '] : []), part));
+    if (builds.length > MAX_CRAFTED) parts.push(' ', { more: builds.length - MAX_CRAFTED });
+    return { parts, guide: false };
+  }
+
   const summons = lookup.summonsFor(item.id);
   if (summons.length > 0) {
     const parts: QuickPart[] = ['Summons '];

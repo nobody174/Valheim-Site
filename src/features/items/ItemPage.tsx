@@ -254,6 +254,19 @@ export function ItemPage() {
 
   const craftedFrom = graph.recipesFor(id);
   const usedIn = graph.usedIn(id);
+  const built = lookup.builtWith(id);
+  const buildRows = [
+    ...built.stations.map((s) => ({
+      id: s.id,
+      name: null as string | null,
+      qty: s.buildRequirements.find((g) => g.item === id)?.qty,
+    })),
+    ...built.pieces.map((p) => ({
+      id: p.id,
+      name: p.name as string | null,
+      qty: p.requirements.find((g) => g.item === id)?.qty,
+    })),
+  ];
   const canCraft = [...new Set(usedIn.map((r) => r.output.item))];
   const biome = lookup.biomeName(item.biome);
 
@@ -331,6 +344,24 @@ export function ItemPage() {
             {usedIn.map((r) => (
               <RecipeBlock key={r.id} recipe={r} />
             ))}
+          </section>
+        )}
+
+        {buildRows.length > 0 && (
+          <section className={styles.section}>
+            <h2>Used to build</h2>
+            <ul className={styles.inline}>
+              {buildRows.map((b) => (
+                <li key={b.id}>
+                  {b.name === null ? (
+                    <EntityLink id={b.id} />
+                  ) : (
+                    <Link to={`/building?q=${encodeURIComponent(b.name)}&zone=all`}>{b.name}</Link>
+                  )}
+                  <span className={styles.dim}> ({b.qty})</span>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 

@@ -31,6 +31,12 @@ describe('item page', () => {
     expect(screen.getByRole('heading', { name: 'Used in' })).toBeTruthy();
   });
 
+  it('lists the building pieces and stations an item is used for', () => {
+    renderAt('/item/Tar');
+    expect(screen.getByRole('heading', { name: 'Used to build' })).toBeTruthy();
+    expect(screen.getAllByRole('link', { name: /Darkwood/ }).length).toBeGreaterThan(0);
+  });
+
   it('warns that ore cannot go through a portal, and says nothing for ordinary items', () => {
     renderAt('/item/CopperOre');
     expect(screen.getByText(/portal will not let you through/)).toBeTruthy();
@@ -123,7 +129,7 @@ describe('link integrity', () => {
     const broken: string[] = [];
     for (const a of container.querySelectorAll('a')) {
       const href = a.getAttribute('href') ?? '';
-      if (href.startsWith('/planner') || href.startsWith('/upgrades') || href.startsWith('/compare') || href.startsWith('/graph') || href.startsWith('/skills') || href.startsWith('/portals') || href.startsWith('/corrections')) continue; // tool pages
+      if (href.startsWith('/planner') || href.startsWith('/upgrades') || href.startsWith('/compare') || href.startsWith('/graph') || href.startsWith('/skills') || href.startsWith('/portals') || href.startsWith('/corrections') || href.startsWith('/building')) continue; // tool pages
       const [, kind, id] = href.split('/');
       if (!targets[kind]?.(decodeURIComponent(id)))
         broken.push(`${path} -> ${a.getAttribute('href')}`);

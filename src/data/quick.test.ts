@@ -25,6 +25,11 @@ describe('quickCard', () => {
     expect(text('SpearFlint').usedFor).toMatch(/^Damage /);
   });
 
+  it('materials that only build things say what they build', () => {
+    expect(text('Tar').usedFor).toMatch(/^Builds .*Darkwood/);
+    expect(lookup.builtWith('Tar').pieces.length).toBeGreaterThan(10);
+  });
+
   it('Iron: made at a station', () => {
     expect(quickCard('Iron').make).toBeDefined();
   });
@@ -41,7 +46,7 @@ describe('quickCard', () => {
       .filter((i) => labels.has(text(i.id).usedFor ?? ''))
       .map((i) => i.id);
     expect(bad).toEqual([]);
-    expect(quickCard('Acorn').usedFor).toBeUndefined();
+    expect(quickCard('Amber').usedFor?.parts[0]).not.toBe('Valuable');
   });
 
   it('a summon item says what it summons', () => {
