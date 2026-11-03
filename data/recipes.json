@@ -29,6 +29,35 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.TrinketChitinSwim",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketChitinSwim",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Chitin",
+        "qty": 5
+      },
+      {
+        "item": "SerpentScale",
+        "qty": 5
+      },
+      {
+        "item": "TrophySerpent",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.MeadBaseEitrMinor",
     "kind": "craft",
     "output": {
@@ -55,6 +84,31 @@
       {
         "item": "MushroomMagecap",
         "qty": 5
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FishingBaitCave",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitCave",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophyFenring",
+        "qty": 1
       }
     ],
     "upgrades": [],
@@ -143,6 +197,39 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.VikingCupcake",
+    "kind": "craft",
+    "output": {
+      "item": "VikingCupcakeUncooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Cloudberry",
+        "qty": 2
+      },
+      {
+        "item": "ChickenEgg",
+        "qty": 1
+      },
+      {
+        "item": "BarleyFlour",
+        "qty": 1
+      },
+      {
+        "item": "Honey",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -2191,6 +2278,31 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.FishingBaitPlains",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitPlains",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophyGoblin",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.ArmorTrollLeatherChest",
     "kind": "craft",
     "output": {
@@ -2283,6 +2395,31 @@
       {
         "item": "Wood",
         "qty": 8
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.MushroomOmelette",
+    "kind": "craft",
+    "output": {
+      "item": "MushroomOmelette",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 5
+    },
+    "inputs": [
+      {
+        "item": "ChickenEgg",
+        "qty": 3
+      },
+      {
+        "item": "MushroomJotunPuffs",
+        "qty": 3
       }
     ],
     "upgrades": [],
@@ -3505,6 +3642,31 @@
     "verified": "in-game"
   },
   {
+    "id": "recipe.FishingBaitOcean",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitOcean",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophySerpent",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.MechanicalSpring",
     "kind": "craft",
     "output": {
@@ -3523,6 +3685,31 @@
       {
         "item": "Iron",
         "qty": 3
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FishingBaitSwamp",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitSwamp",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophyAbomination",
+        "qty": 1
       }
     ],
     "upgrades": [],
@@ -3591,6 +3778,35 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.HoneyGlazedChicken",
+    "kind": "craft",
+    "output": {
+      "item": "HoneyGlazedChickenUncooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "ChickenMeat",
+        "qty": 1
+      },
+      {
+        "item": "Honey",
+        "qty": 3
+      },
+      {
+        "item": "MushroomJotunPuffs",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -4262,6 +4478,231 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.HelmetFishingHat",
+    "kind": "craft",
+    "output": {
+      "item": "HelmetFishingHat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_workbench",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Fish1",
+        "qty": 1
+      },
+      {
+        "item": "Fish2",
+        "qty": 1
+      },
+      {
+        "item": "Fish3",
+        "qty": 1
+      },
+      {
+        "item": "Fish4_cave",
+        "qty": 1
+      },
+      {
+        "item": "Fish5",
+        "qty": 1
+      },
+      {
+        "item": "Fish6",
+        "qty": 1
+      },
+      {
+        "item": "Fish7",
+        "qty": 1
+      },
+      {
+        "item": "Fish8",
+        "qty": 1
+      },
+      {
+        "item": "Fish9",
+        "qty": 1
+      },
+      {
+        "item": "Fish10",
+        "qty": 1
+      },
+      {
+        "item": "Fish11",
+        "qty": 1
+      },
+      {
+        "item": "Fish12",
+        "qty": 1
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "Fish1",
+            "qty": 2
+          },
+          {
+            "item": "Fish2",
+            "qty": 2
+          },
+          {
+            "item": "Fish3",
+            "qty": 2
+          },
+          {
+            "item": "Fish4_cave",
+            "qty": 2
+          },
+          {
+            "item": "Fish5",
+            "qty": 2
+          },
+          {
+            "item": "Fish6",
+            "qty": 2
+          },
+          {
+            "item": "Fish7",
+            "qty": 2
+          },
+          {
+            "item": "Fish8",
+            "qty": 2
+          },
+          {
+            "item": "Fish9",
+            "qty": 2
+          },
+          {
+            "item": "Fish10",
+            "qty": 2
+          },
+          {
+            "item": "Fish11",
+            "qty": 2
+          },
+          {
+            "item": "Fish12",
+            "qty": 2
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "Fish1",
+            "qty": 3
+          },
+          {
+            "item": "Fish2",
+            "qty": 3
+          },
+          {
+            "item": "Fish3",
+            "qty": 3
+          },
+          {
+            "item": "Fish4_cave",
+            "qty": 3
+          },
+          {
+            "item": "Fish5",
+            "qty": 3
+          },
+          {
+            "item": "Fish6",
+            "qty": 3
+          },
+          {
+            "item": "Fish7",
+            "qty": 3
+          },
+          {
+            "item": "Fish8",
+            "qty": 3
+          },
+          {
+            "item": "Fish9",
+            "qty": 3
+          },
+          {
+            "item": "Fish10",
+            "qty": 3
+          },
+          {
+            "item": "Fish11",
+            "qty": 3
+          },
+          {
+            "item": "Fish12",
+            "qty": 3
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "inputs": [
+          {
+            "item": "Fish1",
+            "qty": 4
+          },
+          {
+            "item": "Fish2",
+            "qty": 4
+          },
+          {
+            "item": "Fish3",
+            "qty": 4
+          },
+          {
+            "item": "Fish4_cave",
+            "qty": 4
+          },
+          {
+            "item": "Fish5",
+            "qty": 4
+          },
+          {
+            "item": "Fish6",
+            "qty": 4
+          },
+          {
+            "item": "Fish7",
+            "qty": 4
+          },
+          {
+            "item": "Fish8",
+            "qty": 4
+          },
+          {
+            "item": "Fish9",
+            "qty": 4
+          },
+          {
+            "item": "Fish10",
+            "qty": 4
+          },
+          {
+            "item": "Fish11",
+            "qty": 4
+          },
+          {
+            "item": "Fish12",
+            "qty": 4
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SwordSilver",
     "kind": "craft",
     "output": {
@@ -4870,6 +5311,31 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FishingBaitAshlands",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitAshlands",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophyCharredMelee",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -5830,6 +6296,31 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.FishAndBread",
+    "kind": "craft",
+    "output": {
+      "item": "FishAndBreadUncooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Fish9",
+        "qty": 1
+      },
+      {
+        "item": "BreadDough",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.BoltBone",
     "kind": "craft",
     "output": {
@@ -5936,6 +6427,31 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FishingBaitForest",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitForest",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophyFrostTroll",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -6457,6 +6973,70 @@
           {
             "item": "MorgenSinew",
             "qty": 12
+          }
+        ]
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.ShieldSerpentscale",
+    "kind": "craft",
+    "output": {
+      "item": "ShieldSerpentscale",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 3
+    },
+    "inputs": [
+      {
+        "item": "FineWood",
+        "qty": 10
+      },
+      {
+        "item": "Iron",
+        "qty": 4
+      },
+      {
+        "item": "SerpentScale",
+        "qty": 8
+      }
+    ],
+    "upgrades": [
+      {
+        "quality": 2,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 20
+          },
+          {
+            "item": "Iron",
+            "qty": 6
+          },
+          {
+            "item": "SerpentScale",
+            "qty": 12
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "inputs": [
+          {
+            "item": "FineWood",
+            "qty": 30
+          },
+          {
+            "item": "Iron",
+            "qty": 8
+          },
+          {
+            "item": "SerpentScale",
+            "qty": 16
           }
         ]
       }
@@ -9546,6 +10126,27 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.CookedEgg",
+    "kind": "craft",
+    "output": {
+      "item": "CookedEgg",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "ChickenEgg",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.CarrotSoup",
     "kind": "craft",
     "output": {
@@ -9913,6 +10514,35 @@
         ]
       }
     ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.SerpentStew",
+    "kind": "craft",
+    "output": {
+      "item": "SerpentStew",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cauldron",
+      "minLevel": 2
+    },
+    "inputs": [
+      {
+        "item": "Mushroom",
+        "qty": 1
+      },
+      {
+        "item": "SerpentMeatCooked",
+        "qty": 1
+      },
+      {
+        "item": "Honey",
+        "qty": 2
+      }
+    ],
+    "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
   },
@@ -10813,6 +11443,31 @@
       },
       {
         "item": "Fiddleheadfern",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "recipe.FishingBaitMistlands",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitMistlands",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophyLox",
         "qty": 1
       }
     ],
@@ -12105,6 +12760,31 @@
     "verified": "cross-checked"
   },
   {
+    "id": "recipe.FishingBaitDeepNorth",
+    "kind": "craft",
+    "output": {
+      "item": "FishingBaitDeepNorth",
+      "qty": 20
+    },
+    "station": {
+      "id": "piece_preptable",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishingBait",
+        "qty": 20
+      },
+      {
+        "item": "TrophyHatchling",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "conv.fermenter.MeadBaseHealthMinor",
     "kind": "ferment",
     "output": {
@@ -12712,6 +13392,28 @@
     "timeSec": 25.0
   },
   {
+    "id": "conv.piece_cookingstation.ChickenMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedChickenMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "ChickenMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
+  },
+  {
     "id": "conv.piece_cookingstation.HareMeat",
     "kind": "cook",
     "output": {
@@ -12796,6 +13498,28 @@
     "upgrades": [],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.SerpentMeat",
+    "kind": "cook",
+    "output": {
+      "item": "SerpentMeatCooked",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "SerpentMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 60.0
   },
   {
     "id": "conv.piece_cookingstation_iron.LoxMeat",
@@ -12950,6 +13674,28 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "timeSec": 60.0
+  },
+  {
+    "id": "conv.piece_cookingstation_iron.ChickenMeat",
+    "kind": "cook",
+    "output": {
+      "item": "CookedChickenMeat",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_cookingstation_iron",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "ChickenMeat",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 25.0
   },
   {
     "id": "conv.piece_cookingstation_iron.HareMeat",
@@ -13148,6 +13894,28 @@
     "timeSec": 50.0
   },
   {
+    "id": "conv.piece_oven.FishAndBreadUncooked",
+    "kind": "smelt",
+    "output": {
+      "item": "FishAndBread",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_oven",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "FishAndBreadUncooked",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 50.0
+  },
+  {
     "id": "conv.piece_oven.MeatPlatterUncooked",
     "kind": "smelt",
     "output": {
@@ -13161,6 +13929,28 @@
     "inputs": [
       {
         "item": "MeatPlatterUncooked",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 50.0
+  },
+  {
+    "id": "conv.piece_oven.HoneyGlazedChickenUncooked",
+    "kind": "smelt",
+    "output": {
+      "item": "HoneyGlazedChicken",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_oven",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "HoneyGlazedChickenUncooked",
         "qty": 1
       }
     ],
@@ -13249,6 +14039,28 @@
     "inputs": [
       {
         "item": "PiquantPieUncooked",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "timeSec": 50.0
+  },
+  {
+    "id": "conv.piece_oven.VikingCupcakeUncooked",
+    "kind": "smelt",
+    "output": {
+      "item": "VikingCupcake",
+      "qty": 1
+    },
+    "station": {
+      "id": "piece_oven",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "VikingCupcakeUncooked",
         "qty": 1
       }
     ],

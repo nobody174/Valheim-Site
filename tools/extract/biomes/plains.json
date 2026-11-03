@@ -18,7 +18,12 @@
     "Needle",
     "BreadDough",
     "YagluthDrop",
-    "LoxPieUncooked"
+    "LoxPieUncooked",
+    "Fish7",
+    "ChickenMeat",
+    "ChickenEgg",
+    "FishingBaitPlains",
+    "VikingCupcakeUncooked"
   ],
   "tools": [],
   "weapons": [
@@ -49,7 +54,10 @@
     "LoxPie",
     "BloodPudding",
     "FishWraps",
-    "WolfMeatSkewer"
+    "WolfMeatSkewer",
+    "CookedChickenMeat",
+    "CookedEgg",
+    "VikingCupcake"
   ],
   "meads": [
     "MeadBaseStaminaMedium",
@@ -86,6 +94,30 @@
   },
   "bossSummonFromFiles": ["GoblinKing"],
   "gather": {
+    "Fish7": [
+      [
+        "other",
+        "Fish just off the Plains coast with Stingy Fishing Bait (guide, not checked in game)."
+      ]
+    ],
+    "ChickenMeat": [
+      [
+        "other",
+        "Dropped by Hens and Chickens (guide, not checked in game)."
+      ]
+    ],
+    "ChickenEgg": [
+      [
+        "other",
+        "Laid by Hens, or found in a chest in the Sealed Tower on the Plains (guide, not checked in game)."
+      ]
+    ],
+    "FishingBaitPlains": [
+      [
+        "other",
+        "Made at the Food Preparation Table from 20 Fishing Bait and a Fuling Trophy (game files)."
+      ]
+    ],
     "Barley": [
       [
         "gather",

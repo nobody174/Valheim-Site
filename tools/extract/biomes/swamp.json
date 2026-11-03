@@ -19,10 +19,17 @@
     "WrithanRoots",
     "Wishbone",
     "SharpeningStone",
-    "Ectoplasm"
+    "Ectoplasm",
+    "Fish6",
+    "Fish3",
+    "Fish8",
+    "SerpentMeat",
+    "SerpentScale"
   ],
   "tools": [
-    "PickaxeIron"
+    "PickaxeIron",
+    "FishingBaitSwamp",
+    "FishingBaitOcean"
   ],
   "weapons": [
     "SwordIron",
@@ -38,7 +45,8 @@
     "ShieldBanded",
     "ShieldIronBuckler",
     "ShieldIronTower",
-    "ShieldRoots"
+    "ShieldRoots",
+    "ShieldSerpentscale"
   ],
   "armor": {
     "ArmorIronChest": "chest",
@@ -52,7 +60,9 @@
     "Sausages",
     "TurnipStew",
     "BlackSoup",
-    "ShocklateSmoothie"
+    "ShocklateSmoothie",
+    "SerpentMeatCooked",
+    "SerpentStew"
   ],
   "meads": [
     "MeadBaseHealthMedium",
@@ -71,7 +81,8 @@
     "TrophyAbomination",
     "TrophyWrithan",
     "TrophyBonemass",
-    "TrophySurtling"
+    "TrophySurtling",
+    "TrophySerpent"
   ],
   "creatures": [
     "Draugr",
@@ -99,6 +110,54 @@
     "Bonemass"
   ],
   "gather": {
+    "Fish6": [
+      [
+        "other",
+        "Fish just off the Swamp coast with Sticky Fishing Bait (guide, not checked in game)."
+      ]
+    ],
+    "Fish3": [
+      [
+        "other",
+        "Fish in the ocean with Heavy Fishing Bait. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      ]
+    ],
+    "Fish8": [
+      [
+        "other",
+        "Fish in the ocean with Heavy Fishing Bait. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      ]
+    ],
+    "SerpentMeat": [
+      [
+        "other",
+        "Dropped by Serpents at sea. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      ]
+    ],
+    "SerpentScale": [
+      [
+        "other",
+        "Dropped by Serpents at sea. Scales sink in deep water, so kill them in shallow water. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      ]
+    ],
+    "TrophySerpent": [
+      [
+        "other",
+        "Dropped by Serpents at sea. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      ]
+    ],
+    "FishingBaitSwamp": [
+      [
+        "other",
+        "Made at the Food Preparation Table from 20 Fishing Bait and an Abomination Trophy (game files)."
+      ]
+    ],
+    "FishingBaitOcean": [
+      [
+        "other",
+        "Made at the Food Preparation Table from 20 Fishing Bait and a Serpent Trophy (game files)."
+      ]
+    ],
     "IronScrap": [
       [
         "gather",
