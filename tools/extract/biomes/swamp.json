@@ -18,7 +18,8 @@
     "YmirRemains",
     "WrithanRoots",
     "Wishbone",
-    "SharpeningStone"
+    "SharpeningStone",
+    "Ectoplasm"
   ],
   "tools": [
     "PickaxeIron"
@@ -69,7 +70,8 @@
     "TrophyWraith",
     "TrophyAbomination",
     "TrophyWrithan",
-    "TrophyBonemass"
+    "TrophyBonemass",
+    "TrophySurtling"
   ],
   "creatures": [
     "Draugr",
@@ -93,7 +95,9 @@
       ]
     ]
   },
-  "bossSummonFromFiles": ["Bonemass"],
+  "bossSummonFromFiles": [
+    "Bonemass"
+  ],
   "gather": {
     "IronScrap": [
       [
@@ -124,6 +128,12 @@
         "other",
         "Source not confirmed: not a creature drop in the game files. Check in game."
       ]
+    ],
+    "Ectoplasm": [
+      [
+        "gather",
+        "Dropped by Ghosts, which haunt crypts (wiki and guides; the zone is not confirmed)."
+      ]
     ]
   },
   "hoard": {
@@ -142,6 +152,7 @@
     "notes": []
   },
   "trinkets": [
-    "TrinketIronHealth"
+    "TrinketIronHealth",
+    "TrinketIronStamina"
   ]
 }

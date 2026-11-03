@@ -1201,6 +1201,35 @@
     "verified": "in-game"
   },
   {
+    "id": "recipe.TrinketIronStamina",
+    "kind": "craft",
+    "output": {
+      "item": "TrinketIronStamina",
+      "qty": 1
+    },
+    "station": {
+      "id": "forge",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "Iron",
+        "qty": 5
+      },
+      {
+        "item": "WitheredBone",
+        "qty": 5
+      },
+      {
+        "item": "TrophySurtling",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "recipe.SwordKrom",
     "kind": "craft",
     "output": {
@@ -12426,6 +12455,27 @@
     "verified": "cross-checked"
   },
   {
+    "id": "conv.smelter.BronzeScrap",
+    "kind": "smelt",
+    "output": {
+      "item": "Bronze",
+      "qty": 1
+    },
+    "station": {
+      "id": "smelter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "BronzeScrap",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "conv.smelter.TinOre",
     "kind": "smelt",
     "output": {
@@ -12460,6 +12510,27 @@
     "inputs": [
       {
         "item": "SilverOre",
+        "qty": 1
+      }
+    ],
+    "upgrades": [],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
+    "id": "conv.smelter.CopperScrap",
+    "kind": "smelt",
+    "output": {
+      "item": "Copper",
+      "qty": 1
+    },
+    "station": {
+      "id": "smelter",
+      "minLevel": 1
+    },
+    "inputs": [
+      {
+        "item": "CopperScrap",
         "qty": 1
       }
     ],

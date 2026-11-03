@@ -76,6 +76,11 @@ function usedForLine(item: Item): QuickLine | undefined {
     const parts: QuickPart[] = [];
     crafted.slice(0, MAX_CRAFTED).forEach((id, i) => parts.push(...(i ? [', '] : []), { id }));
     if (crafted.length > MAX_CRAFTED) parts.push(' ', { more: crafted.length - MAX_CRAFTED });
+    const summoned = lookup.summonsFor(item.id);
+    if (summoned.length > 0) {
+      parts.push('; summons ');
+      summoned.forEach((b, i) => parts.push(...(i ? [', '] : []), { id: b.id }));
+    }
     return { parts, guide: false };
   }
 

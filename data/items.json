@@ -2230,6 +2230,10 @@
       {
         "type": "recipe",
         "recipe": "recipe.Bronze5"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.smelter.BronzeScrap"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -2255,6 +2259,29 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Used in construction of ships and furniture."
+  },
+  {
+    "id": "BronzeScrap",
+    "name": "Scrap Bronze",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 10.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Bronze. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Destroy the defensive spikes on Charred Fortresses in the Ashlands. Smelt it into Bronze (wiki)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "It's old and oxidized but can be smelted and used again.",
+    "portalBlocked": true,
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "BugMeat",
@@ -2578,6 +2605,26 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "A link of iron chain."
+  },
+  {
+    "id": "CharcoalResin",
+    "name": "Charcoal Resin",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 0.30000001192092896,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Can drop from Scorched Trees in the Ashlands (wiki)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "The resin from a tree that was set ablaze a long time ago. It's still ready to burn some more.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "CharredBone",
@@ -2991,6 +3038,10 @@
       {
         "type": "recipe",
         "recipe": "conv.smelter.CopperOre"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.smelter.CopperScrap"
       }
     ],
     "source": "game-files:steam-build-25909357",
@@ -3017,6 +3068,29 @@
     "verified": "in-game",
     "description": "Unrefined copper. Needs to be refined in a smelter.",
     "portalBlocked": true
+  },
+  {
+    "id": "CopperScrap",
+    "name": "Copper Scrap",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 10.0,
+    "stackSize": 30,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Copper. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Break Dvergr lanterns and barrels and Ancient swords and armor in the Mistlands, then smelt it into Copper (wiki)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "One person's scrap is another person's treasure.",
+    "portalBlocked": true,
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "CrossbowArbalest",
@@ -3268,6 +3342,26 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "The last frozen tear of a dragon, pulsating with mysterious energy.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Ectoplasm",
+    "name": "Ectoplasm",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Dropped by Ghosts, which haunt crypts (wiki and guides; the zone is not confirmed)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "A restless essence of a once living thing...",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -3808,6 +3902,26 @@
     "description": "Channels the ancient power of Yagluth."
   },
   {
+    "id": "Grausten",
+    "name": "Grausten",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Destroy ruins and rock formations in the Ashlands (wiki)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Porous yet sturdy.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "GreydwarfEye",
     "name": "Greydwarf Eye",
     "category": "material",
@@ -4308,6 +4422,50 @@
     "verified": "unverified",
     "description": "It's old and rusty but can be smelted and used again.",
     "portalBlocked": true,
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "JuteBlue",
+    "name": "Blue Jute",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Tear down the curtains and drapes on Dvergr buildings of black marble (wiki)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Made from natural fibers and dvergr hair.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "JuteRed",
+    "name": "Red Jute",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "gather",
+        "node": "Dropped by Cultists, and found by tearing down curtains in Frost Caves (wiki)."
+      },
+      {
+        "type": "drop",
+        "creature": "Fenring_Cultist"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "A sturdy, rough fabric.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
@@ -7578,6 +7736,25 @@
     "use": "A trinket (one at a time). It charges as you fight; when full it heals you at once and adds armor for half a minute."
   },
   {
+    "id": "TrinketIronStamina",
+    "name": "Nimble Anklet",
+    "category": "trinket",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketIronStamina"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Puts a spring in your step!"
+  },
+  {
     "id": "TrinketScaleStaminaDamage",
     "name": "Resounding Shackle",
     "category": "trinket",
@@ -8519,6 +8696,27 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "The expressionless grin of this skull reminds you of the inevitability of death."
+  },
+  {
+    "id": "TrophySurtling",
+    "name": "Surtling Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Nimble Anklet. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "drop",
+        "creature": "Surtling"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Wreathed in pale flame, it still smoulders like an ember."
   },
   {
     "id": "TrophyTheElder",

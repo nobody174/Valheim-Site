@@ -45,26 +45,6 @@
     ]
   },
   {
-    "piece": "jute_carpet",
-    "name": "Red Jute Carpet",
-    "comfort": 1,
-    "group": "Carpet",
-    "blocker": "itemsNotInData",
-    "needs": [
-      "Red Jute"
-    ]
-  },
-  {
-    "piece": "jute_carpet_blue",
-    "name": "Blue Jute Carpet",
-    "comfort": 1,
-    "group": "Carpet",
-    "blocker": "itemsNotInData",
-    "needs": [
-      "Blue Jute"
-    ]
-  },
-  {
     "piece": "piece_asksvinskeleton",
     "name": "Asksvin Skeleton",
     "comfort": 1,
@@ -112,7 +92,6 @@
     "group": "Chair",
     "blocker": "itemsNotInData",
     "needs": [
-      "Grausten",
       "Charred Skull"
     ]
   },
@@ -125,36 +104,6 @@
     "needs": [
       "Timberwood",
       "Moose Sinew"
-    ]
-  },
-  {
-    "piece": "piece_cloth_hanging_door",
-    "name": "Red Jute Curtain",
-    "comfort": 2,
-    "group": "Banner",
-    "blocker": "itemsNotInData",
-    "needs": [
-      "Red Jute"
-    ]
-  },
-  {
-    "piece": "piece_cloth_hanging_door_blue",
-    "name": "Blue Jute Drapes",
-    "comfort": 2,
-    "group": "Banner",
-    "blocker": "itemsNotInData",
-    "needs": [
-      "Blue Jute"
-    ]
-  },
-  {
-    "piece": "piece_cloth_hanging_door_blue2",
-    "name": "Blue Jute Curtain",
-    "comfort": 2,
-    "group": "Banner",
-    "blocker": "itemsNotInData",
-    "needs": [
-      "Blue Jute"
     ]
   },
   {
@@ -197,8 +146,7 @@
     "group": "Decor",
     "blocker": "itemsNotInData",
     "needs": [
-      "Pot Shard",
-      "Charcoal Resin"
+      "Pot Shard"
     ]
   },
   {
@@ -208,8 +156,7 @@
     "group": "Decor",
     "blocker": "itemsNotInData",
     "needs": [
-      "Pot Shard",
-      "Charcoal Resin"
+      "Pot Shard"
     ]
   },
   {
@@ -219,8 +166,7 @@
     "group": "Decor",
     "blocker": "itemsNotInData",
     "needs": [
-      "Pot Shard",
-      "Charcoal Resin"
+      "Pot Shard"
     ]
   },
   {

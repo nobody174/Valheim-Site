@@ -10,6 +10,14 @@
       ]
     },
     {
+      "recipe": "Recipe_CatapultPayload_Grausten",
+      "output": "Catapult_ammo",
+      "station": "piece_workbench",
+      "inputs": [
+        "Grausten"
+      ]
+    },
+    {
       "recipe": "Recipe_FishingBaitAshlands",
       "output": "FishingBaitAshlands",
       "station": "piece_preptable",

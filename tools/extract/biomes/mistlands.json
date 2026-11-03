@@ -30,7 +30,9 @@
     "MushroomSmokePuff",
     "Vineberry",
     "Fiddleheadfern",
-    "RoyalJelly"
+    "RoyalJelly",
+    "JuteBlue",
+    "CopperScrap"
   ],
   "tools": [
     "PickaxeBlackMetal",
@@ -138,7 +140,9 @@
       ]
     ]
   },
-  "bossSummonFromFiles": ["SeekerQueen"],
+  "bossSummonFromFiles": [
+    "SeekerQueen"
+  ],
   "creatureNotes": {
     "Dverger": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",
     "DvergerMage": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked.",
@@ -223,6 +227,18 @@
       [
         "other",
         "Dropped by Seeker Broods."
+      ]
+    ],
+    "JuteBlue": [
+      [
+        "gather",
+        "Tear down the curtains and drapes on Dvergr buildings of black marble (wiki)."
+      ]
+    ],
+    "CopperScrap": [
+      [
+        "gather",
+        "Break Dvergr lanterns and barrels and Ancient swords and armor in the Mistlands, then smelt it into Copper (wiki)."
       ]
     ]
   },

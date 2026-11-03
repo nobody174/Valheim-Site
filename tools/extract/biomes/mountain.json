@@ -14,7 +14,8 @@
     "WolfHairBundle",
     "WolfClaw",
     "DragonEgg",
-    "DragonTear"
+    "DragonTear",
+    "JuteRed"
   ],
   "tools": [],
   "weapons": [
@@ -72,7 +73,9 @@
       ]
     ]
   },
-  "bossSummonFromFiles": ["Dragon"],
+  "bossSummonFromFiles": [
+    "Dragon"
+  ],
   "gather": {
     "SilverOre": [
       [
@@ -108,6 +111,12 @@
       [
         "other",
         "Source not confirmed: no creature drops it in the game files. Check in game."
+      ]
+    ],
+    "JuteRed": [
+      [
+        "gather",
+        "Dropped by Cultists, and found by tearing down curtains in Frost Caves (wiki)."
       ]
     ]
   },
