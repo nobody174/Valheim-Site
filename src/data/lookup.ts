@@ -84,6 +84,11 @@ export function createLookup(data: GameData) {
       [...data.creatures, ...data.bosses].filter((m) => m.drops.some((d) => d.item === itemId)),
     /** Recipes crafted at a station. */
     recipesAt: (stationId: string) => data.recipes.filter((r) => r.station?.id === stationId),
+    /** Stations and building pieces whose build cost includes this item. */
+    builtWith: (itemId: string) => ({
+      stations: data.stations.filter((s) => s.buildRequirements.some((g) => g.item === itemId)),
+      pieces: data.pieces.filter((p) => p.requirements.some((g) => g.item === itemId)),
+    }),
     /** Bosses that need this item to be summoned. */
     summonsFor: (itemId: string) =>
       data.bosses.filter((b) => b.summonItems.some((s) => s.item === itemId)),

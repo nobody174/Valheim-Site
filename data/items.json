@@ -6338,7 +6338,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A whetstone wheel ready to spin."
+    "description": "A whetstone wheel ready to spin.",
+    "use": "Used to build the Grinding Wheel. Made from Stone at the Stonecutter."
   },
   {
     "id": "ShieldBanded",
