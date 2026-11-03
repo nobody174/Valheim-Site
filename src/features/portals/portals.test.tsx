@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
@@ -81,6 +81,26 @@ describe('PortalsPage', () => {
     });
     expect(screen.getByText(/No other portal has this exact name/)).toBeTruthy();
     expect(gameData.items.some((i) => i.portalBlocked)).toBe(true);
+  });
+
+  it('opens the edit form under the portal being edited', async () => {
+    const user = userEvent.setup();
+    render(
+      <MemoryRouter>
+        <PortalsPage />
+      </MemoryRouter>,
+    );
+    for (const name of ['alpha', 'beta']) {
+      await user.type(screen.getByLabelText(/Name on the portal/), name);
+      await user.click(screen.getByRole('button', { name: 'Add portal' }));
+    }
+    await user.click(screen.getAllByRole('button', { name: 'Edit' })[0]!);
+    const forms = screen.getAllByRole('form');
+    expect(forms).toHaveLength(1);
+    const item = forms[0]!.closest('li')!;
+    expect(within(item).getByText('alpha')).toBeTruthy();
+    await user.click(screen.getByRole('button', { name: 'Cancel' }));
+    expect(screen.getByRole('form').closest('li')).toBeNull();
   });
 });
 
