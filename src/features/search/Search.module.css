@@ -242,7 +242,12 @@
   gap: 0.25rem;
   padding: 3.6rem 1rem 0.9rem;
   overflow: hidden;
-  background: linear-gradient(180deg, color-mix(in srgb, var(--zone) 32%, #1a1511) 0, color-mix(in srgb, var(--zone) 10%, #1a1511) 52px, #1a1511 53px);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--zone) 32%, #1a1511) 0,
+    color-mix(in srgb, var(--zone) 10%, #1a1511) 52px,
+    #1a1511 53px
+  );
   border: 2px solid var(--wood-light);
   border-top: 5px solid var(--zone);
   border-radius: 14px;

@@ -12,9 +12,12 @@ const KIND_OF_GROUP: Record<SearchGroupKey, EntityKind> = {
   bosses: 'boss',
   stations: 'station',
   pieces: 'piece',
+  places: 'item',
+  pages: 'item',
+  commands: 'item',
 };
 
-export const hitPath = (hit: SearchDoc) => entityPath(KIND_OF_GROUP[hit.group], hit.id);
+export const hitPath = (hit: SearchDoc) => hit.path ?? entityPath(KIND_OF_GROUP[hit.group], hit.id);
 
 /** Grouped result list. `activeKey` highlights one hit for keyboard navigation. */
 export function SearchResults({
@@ -41,7 +44,7 @@ export function SearchResults({
               onClick={onPick}
             >
               <span className={styles.hitName}>
-                <EntityIcon id={h.id} size={24} />
+                {!h.path && <EntityIcon id={h.id} size={24} />}
                 {h.name}
               </span>
               <span className={styles.id}>{h.detail}</span>

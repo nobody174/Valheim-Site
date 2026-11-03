@@ -26,7 +26,12 @@ export function ZoneCards() {
           const got = inZone.filter((i) => hasFlag(profile, i.id, 'collected')).length;
           const boss = lookup.allBosses().find((x) => x.biome === b.id);
           return (
-            <Link key={b.id} to={`/progression/${b.id}`} className={styles.zoneCard} data-zone={b.id}>
+            <Link
+              key={b.id}
+              to={`/progression/${b.id}`}
+              className={styles.zoneCard}
+              data-zone={b.id}
+            >
               <span className={styles.zoneArt} aria-hidden="true">
                 {boss && <EntityIcon id={boss.id} size={52} />}
               </span>
