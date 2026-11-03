@@ -35,5 +35,16 @@
   "TrinketIronHealth": "A trinket (one at a time). It charges as you fight; when full it heals you at once and adds armor for half a minute.",
   "TrinketScaleStaminaDamage": "A trinket (one at a time). It charges as you fight; when full it restores stamina at once and boosts slash damage for a minute.",
   "TrinketSilverDamage": "A trinket (one at a time). It charges as you fight; when full it raises your Bows and Spears skills and pierce damage for half a minute.",
-  "TrinketSilverResist": "A trinket (one at a time). It charges as you fight; when full it gives slight resistance to blunt, slash and pierce damage for under a minute."
+  "TrinketSilverResist": "A trinket (one at a time). It charges as you fight; when full it gives slight resistance to blunt, slash and pierce damage for under a minute.",
+  "FishingBaitForest": "Load it on the Fishing Rod (right-click it in your inventory) to catch Trollfish. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "FishingBaitSwamp": "Load it on the Fishing Rod (right-click it in your inventory) to catch Giant Herring. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "FishingBaitCave": "Load it on the Fishing Rod (right-click it in your inventory) to catch Tetra. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "FishingBaitPlains": "Load it on the Fishing Rod (right-click it in your inventory) to catch Grouper. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "FishingBaitMistlands": "Load it on the Fishing Rod (right-click it in your inventory) to catch Pufferfish and Anglerfish. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "FishingBaitAshlands": "Load it on the Fishing Rod (right-click it in your inventory) to catch Magmafish. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "FishingBaitDeepNorth": "Load it on the Fishing Rod (right-click it in your inventory) to catch Northern Salmon. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "FishingBaitOcean": "Load it on the Fishing Rod (right-click it in your inventory) to catch Tuna and Coral Cod. Made from 20 Fishing Bait and one trophy at the Food Preparation Table.",
+  "CharcoalResin": "Used to build the green pots (guide, not checked in game); the site does not list those pieces yet.",
+  "TrinketChitinSwim": "A trinket (one at a time). It charges as you fight; when full it makes you swim faster for two minutes at a much lower stamina cost.",
+  "TrinketIronStamina": "A trinket (one at a time). The game describes it as putting a spring in your step; its exact effect has not been checked."
 }
