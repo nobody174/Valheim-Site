@@ -598,6 +598,28 @@
     "station": "blackforge"
   },
   {
+    "id": "piece_chest_grausten",
+    "name": "Grausten Chest",
+    "category": "Building",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 10
+      },
+      {
+        "item": "TrophyCharredMelee",
+        "qty": 5
+      },
+      {
+        "item": "FlametalNew",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
+  },
+  {
     "id": "piece_hexagonal_door",
     "name": "Hexagonal Gate",
     "category": "Building",
@@ -1904,6 +1926,370 @@
     "station": "blackforge"
   },
   {
+    "id": "piece_grausten_roof_45_arch",
+    "name": "Grausten Arched Roof",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "piece_grausten_roof_45_arch_corner",
+    "name": "Grausten Arched Roof Corner",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "piece_grausten_roof_45_arch_corner2",
+    "name": "Grausten Arched Roof Corner",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_floor_1x1",
+    "name": "Grausten Floor 1x1",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_floor_2x2",
+    "name": "Grausten Floor 2x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_floor_4x4",
+    "name": "Grausten Floor 4x4",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillar_arch",
+    "name": "Grausten Medium Arch",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillarbeam_medium",
+    "name": "Grausten Medium Beam",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillarbase_medium",
+    "name": "Grausten Medium Pillar",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 3
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "piece_grausten_roof_45",
+    "name": "Grausten Roof",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "piece_grausten_roof_45_corner",
+    "name": "Grausten Roof Corner",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "piece_grausten_roof_45_corner2",
+    "name": "Grausten Roof Corner",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillar_arch_small",
+    "name": "Grausten Small Arch",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillarbeam_small",
+    "name": "Grausten Small Beam",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillarbase_small",
+    "name": "Grausten Small Pillar",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "piece_grausten_stonestair",
+    "name": "Grausten Stairs",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 8
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_stone_ladder",
+    "name": "Grausten Steep Stairs",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillarbase_tapered",
+    "name": "Grausten Tapered Pillar",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_pillarbase_tapered_inverted",
+    "name": "Grausten Tapered Pillar (Inverted)",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_wall_1x2",
+    "name": "Grausten Wall 1x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_wall_2x2",
+    "name": "Grausten Wall 2x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 6
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_wall_4x2",
+    "name": "Grausten Wall 4x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 12
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_wall_arch",
+    "name": "Grausten Wall Arch",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_wall_arch_inverted",
+    "name": "Grausten Wall Arch (Inverted)",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_window_2x2",
+    "name": "Grausten Window 2x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
+    "id": "Piece_grausten_window_4x2",
+    "name": "Grausten Window 4x2",
+    "category": "Building (stone)",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 10
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
+  },
+  {
     "id": "iron_grate",
     "name": "Iron Gate",
     "category": "Building (stone)",
@@ -2351,6 +2737,62 @@
     "verified": "cross-checked",
     "station": "piece_workbench",
     "comfort": 1,
+    "comfortGroup": "Banner"
+  },
+  {
+    "id": "jute_carpet_blue",
+    "name": "Blue Jute Carpet",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "JuteBlue",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1,
+    "comfortGroup": "Carpet"
+  },
+  {
+    "id": "piece_cloth_hanging_door_blue2",
+    "name": "Blue Jute Curtain",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "JuteBlue",
+        "qty": 4
+      },
+      {
+        "item": "FineWood",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2,
+    "comfortGroup": "Banner"
+  },
+  {
+    "id": "piece_cloth_hanging_door_blue",
+    "name": "Blue Jute Drapes",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "JuteBlue",
+        "qty": 4
+      },
+      {
+        "item": "FineWood",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2,
     "comfortGroup": "Banner"
   },
   {
@@ -2899,6 +3341,42 @@
     "verified": "cross-checked",
     "station": "piece_workbench",
     "comfort": 1,
+    "comfortGroup": "Banner"
+  },
+  {
+    "id": "jute_carpet",
+    "name": "Red Jute Carpet",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "JuteRed",
+        "qty": 4
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 1,
+    "comfortGroup": "Carpet"
+  },
+  {
+    "id": "piece_cloth_hanging_door",
+    "name": "Red Jute Curtain",
+    "category": "Furniture",
+    "requirements": [
+      {
+        "item": "JuteRed",
+        "qty": 4
+      },
+      {
+        "item": "FineWood",
+        "qty": 1
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench",
+    "comfort": 2,
     "comfortGroup": "Banner"
   },
   {
@@ -3744,6 +4222,19 @@
     "verified": "cross-checked"
   },
   {
+    "id": "grausten_pile",
+    "name": "Grausten Pile",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "Grausten",
+        "qty": 50
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked"
+  },
+  {
     "id": "hearth",
     "name": "Hearth",
     "category": "Misc",
@@ -3845,6 +4336,28 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "station": "piece_workbench"
+  },
+  {
+    "id": "portal_stone",
+    "name": "Portal – Stone",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "GreydwarfEye",
+        "qty": 10
+      },
+      {
+        "item": "Grausten",
+        "qty": 30
+      },
+      {
+        "item": "MoltenCore",
+        "qty": 2
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_stonecutter"
   },
   {
     "id": "Raft",
@@ -4007,6 +4520,28 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked"
+  },
+  {
+    "id": "piece_TrainingDummy",
+    "name": "T.W.I.G.",
+    "category": "Misc",
+    "requirements": [
+      {
+        "item": "FineWood",
+        "qty": 5
+      },
+      {
+        "item": "BronzeNails",
+        "qty": 10
+      },
+      {
+        "item": "Ectoplasm",
+        "qty": 5
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "station": "piece_workbench"
   },
   {
     "id": "bar_tin_stack",

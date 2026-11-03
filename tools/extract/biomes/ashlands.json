@@ -23,7 +23,10 @@
     "RoastedCrustPieUncooked",
     "BonemawSerpentTooth",
     "BoneMawSerpentMeat",
-    "CelestialFeather"
+    "CelestialFeather",
+    "Grausten",
+    "BronzeScrap",
+    "CharcoalResin"
   ],
   "tools": [
     "Bell"
@@ -106,7 +109,9 @@
       ]
     ]
   },
-  "bossSummonFromFiles": ["Fader"],
+  "bossSummonFromFiles": [
+    "Fader"
+  ],
   "creatureNotes": {
     "Charred_Mage": "Health, drops and attacks come from the game files. The game files do not list where it spawns; the Ashlands zone is from guides and not checked."
   },
@@ -133,6 +138,24 @@
       [
         "gather",
         "Found in the Ashlands (guides; the game files list no creature drop)."
+      ]
+    ],
+    "Grausten": [
+      [
+        "gather",
+        "Destroy ruins and rock formations in the Ashlands (wiki)."
+      ]
+    ],
+    "BronzeScrap": [
+      [
+        "gather",
+        "Destroy the defensive spikes on Charred Fortresses in the Ashlands. Smelt it into Bronze (wiki)."
+      ]
+    ],
+    "CharcoalResin": [
+      [
+        "gather",
+        "Can drop from Scorched Trees in the Ashlands (wiki)."
       ]
     ]
   },

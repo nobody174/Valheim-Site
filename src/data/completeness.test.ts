@@ -41,7 +41,6 @@ describe('item sources', () => {
       .map((i) => i.id);
     expect(none).toEqual([]);
   });
-
 });
 
 describe('station build costs', () => {
@@ -61,7 +60,10 @@ describe('station build costs', () => {
     for (const [id, reason] of Object.entries(NO_COST)) {
       const station = stations.get(id);
       expect(station, `${id} is not a station`).toBeDefined();
-      expect(station?.buildRequirements, `${id} has a cost now; remove it from NO_COST`).toHaveLength(0);
+      expect(
+        station?.buildRequirements,
+        `${id} has a cost now; remove it from NO_COST`,
+      ).toHaveLength(0);
       expect(reason.length).toBeGreaterThan(10);
     }
   });
@@ -86,9 +88,12 @@ describe('player-facing text', () => {
   it('contains no internal prefab ids in notes, hoard notes or use lines', () => {
     const bad: string[] = [];
     for (const i of lookup.allItems()) {
-      const texts = [i.hoardNote, i.note, i.use, ...i.obtainedFrom.flatMap((o) =>
-        'note' in o ? [o.note] : 'node' in o ? [o.node] : [],
-      )];
+      const texts = [
+        i.hoardNote,
+        i.note,
+        i.use,
+        ...i.obtainedFrom.flatMap((o) => ('note' in o ? [o.note] : 'node' in o ? [o.node] : [])),
+      ];
       for (const t of texts) if (t && PREFAB.test(t)) bad.push(`${i.id}: ${t}`);
     }
     expect(bad).toEqual([]);
@@ -122,7 +127,9 @@ describe('armor sets', () => {
       s.count += 1;
       sets.set(a.setName, s);
     }
-    const wrong = [...sets].filter(([, s]) => s.size !== s.count).map(([n, s]) => `${n}: ${s.count}/${s.size}`);
+    const wrong = [...sets]
+      .filter(([, s]) => s.size !== s.count)
+      .map(([n, s]) => `${n}: ${s.count}/${s.size}`);
     expect(wrong).toEqual([]);
   });
 });
@@ -149,10 +156,13 @@ describe('item zones', () => {
   it('no crafted item is placed in an earlier zone than the latest zone of its ingredients', () => {
     const order = new Map(lookup.allBiomes().map((b) => [b.id, b.order]));
     const zone = (id: string) => order.get(lookup.item(id)?.biome ?? '') ?? 0;
-    const early = lookup
-      .allRecipes()
-      .filter((r) => zone(r.output.item) < Math.max(0, ...r.inputs.map((g) => zone(g.item))))
-      .map((r) => r.output.item);
+    // An item with an alternative recipe (for example Copper from Copper Scrap) only needs one way that fits its zone.
+    const fits = (r: typeof lookup.allRecipes extends () => (infer R)[] ? R : never) =>
+      zone(r.output.item) >= Math.max(0, ...r.inputs.map((g) => zone(g.item)));
+    const byOutput = new Map<string, boolean>();
+    for (const r of lookup.allRecipes())
+      byOutput.set(r.output.item, (byOutput.get(r.output.item) ?? false) || fits(r));
+    const early = [...byOutput].filter(([, ok]) => !ok).map(([id]) => id);
     expect([...new Set(early)]).toEqual([]);
   });
 });

@@ -50,7 +50,8 @@ describe('quickCard', () => {
   });
 
   it('a summon item says what it summons', () => {
-    expect(text('WitheredBone').usedFor).toMatch(/^Summons /);
+    expect(text('WitheredBone').usedFor).toMatch(/summons /);
+    expect(text('DragonEgg').usedFor).toMatch(/^Summons /);
   });
 
   it('no player-facing line contains a CamelCase prefab id', () => {
