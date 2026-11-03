@@ -1418,7 +1418,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant them to grow a beech tree."
+    "description": "Plant them to grow a beech tree.",
+    "use": "Plant it with the Cultivator to grow a Beech tree for wood. It does not need tilled soil, only open space, and it grows in the Meadows, Black Forest and Plains."
   },
   {
     "id": "Bell",
@@ -1498,7 +1499,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant them to grow a birch tree."
+    "description": "Plant them to grow a birch tree.",
+    "use": "Plant it with the Cultivator to grow a Birch tree for wood. It does not need tilled soil, only open space, and it grows in the Meadows, Black Forest and Plains."
   },
   {
     "id": "BjornHide",
@@ -2493,7 +2495,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant these if you like carrots..."
+    "description": "Plant these if you like carrots...",
+    "use": "Plant with the Cultivator on tilled soil to grow carrots. Replanting a grown carrot as a seed carrot gives more seeds."
   },
   {
     "id": "CarrotSoup",
@@ -2533,7 +2536,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "The only remnant of the fallen valkyrie's former self."
+    "description": "The only remnant of the fallen valkyrie's former self.",
+    "use": "Used to build the Feathery Wreath decoration and to craft the Staff of the Wild Dundr."
   },
   {
     "id": "CeramicPlate",
@@ -3109,7 +3113,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A farming tool for tilling soil."
+    "description": "A farming tool for tilling soil.",
+    "use": "A farming tool. Use it to till soil for crops, to plant seeds and cones, and to regrow grass. Made at the Forge."
   },
   {
     "id": "Dandelion",
@@ -3217,7 +3222,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A bound wisp to guide you through the thickest of mists."
+    "description": "A bound wisp to guide you through the thickest of mists.",
+    "use": "A Wisplight clears the mist around you in a small radius and follows you. It takes the accessory slot, so it cannot be worn together with the Megingjord or the Wishbone."
   },
   {
     "id": "DragonEgg",
@@ -3468,7 +3474,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant it to grow a fir tree."
+    "description": "Plant it to grow a fir tree.",
+    "use": "Plant it with the Cultivator to grow a Fir tree as a wood supply. It does not need tilled soil, only open space. Also used for the Yule tree decoration."
   },
   {
     "id": "Fish1",
@@ -3488,7 +3495,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "A tasty whitemeat fish.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Used for the Fishing Hat, for Raw Fish, and for a mead base. A catch can also give a bonus Amber."
   },
   {
     "id": "Fish2",
@@ -3508,7 +3516,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "A freshwater fish that needs a lot of seasoning.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Used for the Fishing Hat and for Raw Fish. A catch can also give a bonus Amber Pearl."
   },
   {
     "id": "FishCooked",
@@ -3594,7 +3603,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Common dvergr fishing bait. Fishing rod sold separately.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Equip the Fishing Rod, then right-click the bait in your inventory to load it. The bait decides which fish bite: this basic bait attracts Perch and Pike. Better baits are made from it at the Food Preparation Table."
   },
   {
     "id": "FishingRod",
@@ -3615,7 +3625,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Standard issue dvergr fishing rod.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "The fishing tool. Equip it, have bait in your inventory, cast with the attack button and reel in with block. One bait is used per cast."
   },
   {
     "id": "FistBjornClaw",
@@ -3862,7 +3873,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "With this to your hand, you can raise high halls and mighty fortifications."
+    "description": "With this to your hand, you can raise high halls and mighty fortifications.",
+    "use": "The building tool: right-click to open the build menu and place pieces, stations and furniture. You cannot block while holding it."
   },
   {
     "id": "HardAntler",
@@ -4207,7 +4219,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A farmer's tool for working the earth."
+    "description": "A farmer's tool for working the earth.",
+    "use": "Levels and raises the ground, and lowers it a little, for foundations and paths. Raising ground costs Stone and needs a Workbench nearby."
   },
   {
     "id": "Honey",
@@ -5768,7 +5781,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A good strong pick of glistening dark metal."
+    "description": "A good strong pick of glistening dark metal.",
+    "use": "A mining tool for breaking ore and rock, made at the Forge from Black Metal."
   },
   {
     "id": "PickaxeBronze",
@@ -5807,7 +5821,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A sturdy tool of hardened iron."
+    "description": "A sturdy tool of hardened iron.",
+    "use": "A mining tool for breaking ore and rock. Made at the Forge."
   },
   {
     "id": "PickaxeStone",
@@ -5846,7 +5861,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
-    "description": "Plant it to grow a pine tree."
+    "description": "Plant it to grow a pine tree.",
+    "use": "Plant it with the Cultivator to grow a Pine tree. It does not need tilled soil, only open space. Also used for the Yule garland and Yule wreath decorations."
   },
   {
     "id": "PiquantPie",
@@ -5934,7 +5950,8 @@
     "aliases": [
       "Puke berries",
       "Pukeberry"
-    ]
+    ],
+    "use": "Eating them makes you sick for a few seconds and clears every food you have eaten, so you can swap foods before they run out. The cleared foods are wasted."
   },
   {
     "id": "PulledBear",
@@ -5974,7 +5991,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "Her majesty's will was hard and unrelenting, but this piece of carapace is perhaps even more so."
+    "description": "Her majesty's will was hard and unrelenting, but this piece of carapace is perhaps even more so.",
+    "use": "Needed to build the Artisan Press."
   },
   {
     "id": "QueensJam",
@@ -7416,7 +7434,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "It brings light and warmth, drives back the darkness."
+    "description": "It brings light and warmth, drives back the darkness.",
+    "use": "Held in your hand as a light source that keeps some enemies away, and it works as a weak fire weapon. Made from Wood and Resin."
   },
   {
     "id": "TrinketBlackDamageHealth",
@@ -7435,7 +7454,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "Your mind hardens, as do your blows."
+    "description": "Your mind hardens, as do your blows.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it heals you at once and boosts your Clubs skill and blunt damage for a minute."
   },
   {
     "id": "TrinketBlackStamina",
@@ -7454,7 +7474,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "Dance with death as you dodge your enemies' strikes."
+    "description": "Dance with death as you dodge your enemies' strikes.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it makes blocking cheaper in stamina, strengthens parries and raises your Dodge skill for two minutes."
   },
   {
     "id": "TrinketBronzeHealth",
@@ -7473,7 +7494,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "It pulsates with fragments of ancient life."
+    "description": "It pulsates with fragments of ancient life.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it boosts your health regeneration by a quarter for a minute."
   },
   {
     "id": "TrinketBronzeStamina",
@@ -7492,7 +7514,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A beautiful pendant, harbouring the endurance of a bear."
+    "description": "A beautiful pendant, harbouring the endurance of a bear.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it boosts your stamina regeneration by a quarter for a minute."
   },
   {
     "id": "TrinketCarapaceEitr",
@@ -7511,7 +7534,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "If you listen carefully, you can hear the faint echoes of lost souls..."
+    "description": "If you listen carefully, you can hear the faint echoes of lost souls...",
+    "use": "A trinket (one at a time). It charges as you fight; when full it boosts your Eitr regeneration by a quarter for a minute."
   },
   {
     "id": "TrinketFlametalStaminaHealth",
@@ -7530,7 +7554,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "It's warm, as if filled with a lifesblood of its own."
+    "description": "It's warm, as if filled with a lifesblood of its own.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it instantly restores health and stamina."
   },
   {
     "id": "TrinketIronHealth",
@@ -7549,7 +7574,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A delicate yet defensive accessory."
+    "description": "A delicate yet defensive accessory.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it heals you at once and adds armor for half a minute."
   },
   {
     "id": "TrinketScaleStaminaDamage",
@@ -7568,7 +7594,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A razor-sharp ankle chain. Can it truly be comfortable?"
+    "description": "A razor-sharp ankle chain. Can it truly be comfortable?",
+    "use": "A trinket (one at a time). It charges as you fight; when full it restores stamina at once and boosts slash damage for a minute."
   },
   {
     "id": "TrinketSilverDamage",
@@ -7587,7 +7614,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "Assume the sharp and furious mind of a wolf."
+    "description": "Assume the sharp and furious mind of a wolf.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it raises your Bows and Spears skills and pierce damage for half a minute."
   },
   {
     "id": "TrinketSilverResist",
@@ -7606,7 +7634,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "A shard of frozen sorrow. Touching it makes you feel almost numb."
+    "description": "A shard of frozen sorrow. Touching it makes you feel almost numb.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it gives slight resistance to blunt, slash and pierce damage for under a minute."
   },
   {
     "id": "TrollHide",
@@ -8647,7 +8676,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "These can be planted in cultivated soil.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Plant with the Cultivator on tilled soil to grow turnips. Replanting a grown turnip as a seed turnip gives more seeds."
   },
   {
     "id": "TurnipStew",
