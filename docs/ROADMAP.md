@@ -94,3 +94,4 @@ Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached s
 - Progression guide: tick each item as collected, or mark a whole list (Must keep, Other materials) at once.
 - Food optimizer starts at the zone you have reached (All zones in the dropdown lifts it).
 - Item pages and quick cards show what an item builds (stations and building pieces), so Tar, Sharpening Stone and similar are no longer blank.
+- Hand-written 'what to do with it' lines (tagged guide, not checked in game) for seeds and cones, tools, fishing gear, Pukeberries, Wisplight and the ten trinkets.
