@@ -2624,7 +2624,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "The resin from a tree that was set ablaze a long time ago. It's still ready to burn some more.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Used to build the green pots (guide, not checked in game); the site does not list those pieces yet."
   },
   {
     "id": "CharredBone",
@@ -4074,7 +4075,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Some fish already like it where the waters are warm, and this bait brings the temperature close to boiling.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Magmafish. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingBaitCave",
@@ -4098,7 +4100,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "This bait doesn't look like much, but it's a treat to fish that live where it's cold and dark.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Tetra. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingBaitDeepNorth",
@@ -4122,7 +4125,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "It's not very nutritious, so the only fish that'll take this bait are the ones that are used to just eating ice.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Northern Salmon. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingBaitForest",
@@ -4146,7 +4150,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "Dead trolls in the forest often attract a fish or two, speed up the process with this bait!",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Trollfish. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingBaitMistlands",
@@ -4170,7 +4175,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "A bait to guide the fish to you through shrouded waters.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Pufferfish and Anglerfish. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingBaitOcean",
@@ -4194,7 +4200,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "This bait sinks deep, deep enough to lure the fish swimming along the very bottom of the sea.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Tuna and Coral Cod. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingBaitPlains",
@@ -4218,7 +4225,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "You're not immune to deathsquito bites, and the fish here aren't immune to this snack!",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Grouper. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingBaitSwamp",
@@ -4242,7 +4250,8 @@
     "source": "game-files:steam-build-25909357",
     "verified": "unverified",
     "description": "It might smell foul, but the fish drawn to this bait are used to so much worse.",
-    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
+    "use": "Load it on the Fishing Rod (right-click it in your inventory) to catch Giant Herring. Made from 20 Fishing Bait and one trophy at the Food Preparation Table."
   },
   {
     "id": "FishingRod",
@@ -8437,7 +8446,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "Empty your mind as you become shapeless and one with the water."
+    "description": "Empty your mind as you become shapeless and one with the water.",
+    "use": "A trinket (one at a time). It charges as you fight; when full it makes you swim faster for two minutes at a much lower stamina cost."
   },
   {
     "id": "TrinketFlametalStaminaHealth",
@@ -8496,7 +8506,8 @@
     ],
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
-    "description": "Puts a spring in your step!"
+    "description": "Puts a spring in your step!",
+    "use": "A trinket (one at a time). The game describes it as putting a spring in your step; its exact effect has not been checked."
   },
   {
     "id": "TrinketScaleStaminaDamage",
