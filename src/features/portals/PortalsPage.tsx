@@ -38,6 +38,65 @@ export function PortalsPage() {
     setDraft(BLANK);
   };
 
+  const portalForm = (
+    <form className={styles.form} onSubmit={save} aria-label="Add or edit a portal">
+      <label>
+        Name on the portal (10 letters at most)
+        <input
+          value={draft.name}
+          maxLength={10}
+          onChange={(e) => set('name', e.target.value)}
+          placeholder="portal 2"
+        />
+      </label>
+      <label>
+        From
+        <input
+          value={draft.from}
+          maxLength={60}
+          onChange={(e) => set('from', e.target.value)}
+          placeholder="Home base"
+        />
+      </label>
+      <label>
+        To
+        <input
+          value={draft.to}
+          maxLength={60}
+          onChange={(e) => set('to', e.target.value)}
+          placeholder="Mountain"
+        />
+      </label>
+      <label className={styles.wide}>
+        Note
+        <input
+          value={draft.note}
+          maxLength={300}
+          onChange={(e) => set('note', e.target.value)}
+          placeholder="Next to the swamp, reached by boat"
+        />
+      </label>
+      <div className={`${styles.actions} ${styles.wide}`}>
+        <label>
+          <input
+            type="checkbox"
+            checked={draft.down}
+            onChange={(e) => set('down', e.target.checked)}
+          />{' '}
+          Taken down for now
+        </label>
+        <button type="submit" disabled={!draft.name.trim()}>
+          {draft.id ? 'Save changes' : 'Add portal'}
+        </button>
+        {draft.id && (
+          <button type="button" onClick={() => setDraft(BLANK)}>
+            Cancel
+          </button>
+        )}
+      </div>
+    </form>
+  );
+
   return (
     <div>
       <h1>My portals</h1>
@@ -49,62 +108,7 @@ export function PortalsPage() {
         </p>
       </Intro>
 
-      <form className={styles.form} onSubmit={save} aria-label="Add or edit a portal">
-        <label>
-          Name on the portal (10 letters at most)
-          <input
-            value={draft.name}
-            maxLength={10}
-            onChange={(e) => set('name', e.target.value)}
-            placeholder="portal 2"
-          />
-        </label>
-        <label>
-          From
-          <input
-            value={draft.from}
-            maxLength={60}
-            onChange={(e) => set('from', e.target.value)}
-            placeholder="Home base"
-          />
-        </label>
-        <label>
-          To
-          <input
-            value={draft.to}
-            maxLength={60}
-            onChange={(e) => set('to', e.target.value)}
-            placeholder="Mountain"
-          />
-        </label>
-        <label className={styles.wide}>
-          Note
-          <input
-            value={draft.note}
-            maxLength={300}
-            onChange={(e) => set('note', e.target.value)}
-            placeholder="Next to the swamp, reached by boat"
-          />
-        </label>
-        <div className={`${styles.actions} ${styles.wide}`}>
-          <label>
-            <input
-              type="checkbox"
-              checked={draft.down}
-              onChange={(e) => set('down', e.target.checked)}
-            />{' '}
-            Taken down for now
-          </label>
-          <button type="submit" disabled={!draft.name.trim()}>
-            {draft.id ? 'Save changes' : 'Add portal'}
-          </button>
-          {draft.id && (
-            <button type="button" onClick={() => setDraft(BLANK)}>
-              Cancel
-            </button>
-          )}
-        </div>
-      </form>
+      {!draft.id && portalForm}
 
       {clashes.length > 0 && (
         <p role="status">
@@ -134,20 +138,24 @@ export function PortalsPage() {
                     On the map: east {Math.round(p.x)}, north {Math.round(p.z)}.
                   </p>
                 )}
-                <div className={styles.actions}>
-                  <button type="button" onClick={() => setDraft(p)}>
-                    Edit
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => appStore.getState().savePortal({ ...p, down: !p.down })}
-                  >
-                    {p.down ? 'Mark as standing' : 'Mark as taken down'}
-                  </button>
-                  <button type="button" onClick={() => appStore.getState().removePortal(p.id)}>
-                    Delete
-                  </button>
-                </div>
+                {draft.id === p.id ? (
+                  portalForm
+                ) : (
+                  <div className={styles.actions}>
+                    <button type="button" onClick={() => setDraft(p)}>
+                      Edit
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => appStore.getState().savePortal({ ...p, down: !p.down })}
+                    >
+                      {p.down ? 'Mark as standing' : 'Mark as taken down'}
+                    </button>
+                    <button type="button" onClick={() => appStore.getState().removePortal(p.id)}>
+                      Delete
+                    </button>
+                  </div>
+                )}
               </li>
             );
           })}
