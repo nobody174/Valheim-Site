@@ -99,3 +99,4 @@ Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached s
 - Fishing and ocean items: 12 fish, 8 bait types (with the trophy each is made from), the Fishing Hat, Serpent items, Fins of Destiny, eggs, chicken, Fish 'n' Bread, Honey Glazed Chicken, Mushroom Omelette, Viking Cupcake (+25 items, 17 recipes).
 - Use-gap test: the build fails if any item except a trophy has no 'what it is for' line; use lines added for the eight baits, Charcoal Resin and two trinkets.
 - My portals: Edit opens the form right under the portal you clicked, so there is no scrolling to the top.
+- Armor sets page: each set with every piece's recipe and the whole set's raw materials and stations, optionally at an upgrade level.

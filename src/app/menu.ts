@@ -13,7 +13,7 @@ export const MENU: MenuSection[] = [
   {
     id: 'gear',
     label: 'Gear',
-    paths: ['/items', '/finder', '/recipes', '/rankings', '/compare', '/upgrades', '/skills'],
+    paths: ['/items', '/finder', '/recipes', '/armor-sets', '/rankings', '/compare', '/upgrades', '/skills'],
   },
   {
     id: 'creatures',

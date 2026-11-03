@@ -25,6 +25,7 @@ const RAW_GROUPS: { id: string; title: string; routes: RouteDef[] }[] = [
     routes: [
       { path: '/items', label: 'Items', phase: 2, icon: 'Wood' },
       { path: '/recipes', label: 'Recipes', phase: 1, icon: 'Flint' },
+      { path: '/armor-sets', label: 'Armor sets', phase: 5, icon: 'ArmorIronChest' },
       { path: '/building', label: 'Building', phase: 2, icon: 'Stone' },
       { path: '/creatures', label: 'Creatures', phase: 2, icon: 'TrophyBoar' },
       { path: '/bosses', label: 'Bosses', phase: 2, icon: 'TrophyEikthyr' },
