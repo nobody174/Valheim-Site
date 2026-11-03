@@ -13,6 +13,7 @@ import { AdvisorPage } from '../features/advisor/AdvisorPage';
 import { RankingsPage } from '../features/rankings/RankingsPage';
 import { CharacterPage } from '../features/save/CharacterPage';
 import { CommandsPage } from '../features/commands/CommandsPage';
+import { ArmorSetsPage } from '../features/armor/ArmorSetsPage';
 import { SkillsPage } from '../features/skills/SkillsPage';
 import { UpdateLogPage } from '../features/updates/UpdateLogPage';
 import { PlacesPage } from '../features/places/PlacesPage';
@@ -99,6 +100,7 @@ const PAGES: Record<string, React.ReactElement> = {
   '/character': <CharacterPage />,
   '/places': <PlacesPage />,
   '/skills': <SkillsPage />,
+  '/armor-sets': <ArmorSetsPage />,
   '/commands': <CommandsPage />,
   '/spotcheck': <SpotCheckPage />,
   '/trust': <TrustPage />,
