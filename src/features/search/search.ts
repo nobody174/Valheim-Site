@@ -1,7 +1,23 @@
 import MiniSearch from 'minisearch';
-import type { GameData } from '../../data/schemas';
+import type { Command, GameData, Place } from '../../data/schemas';
 
-export type SearchGroupKey = 'items' | 'trophies' | 'creatures' | 'bosses' | 'stations' | 'pieces';
+export type SearchGroupKey =
+  | 'items'
+  | 'trophies'
+  | 'creatures'
+  | 'bosses'
+  | 'stations'
+  | 'pieces'
+  | 'places'
+  | 'pages'
+  | 'commands';
+
+/** What the search also covers besides game entities: pages of the site, dungeons and camps, console commands. */
+export interface SearchExtras {
+  pages: { path: string; label: string }[];
+  places: Place[];
+  commands: Command[];
+}
 
 export const GROUP_LABELS: Record<SearchGroupKey, string> = {
   items: 'Items',
@@ -10,6 +26,9 @@ export const GROUP_LABELS: Record<SearchGroupKey, string> = {
   bosses: 'Bosses',
   stations: 'Stations',
   pieces: 'Building pieces',
+  places: 'Places',
+  pages: 'Pages',
+  commands: 'Console commands',
 };
 
 export interface SearchDoc {
@@ -21,6 +40,8 @@ export interface SearchDoc {
   tags: string;
   /** A short line shown beside the name, e.g. what a building piece is made at and what it adds. */
   detail?: string;
+  /** Where the hit leads when it is not a game entity. */
+  path?: string;
 }
 
 export interface SearchGroup {
@@ -31,8 +52,12 @@ export interface SearchGroup {
 
 const capital = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
-export function buildDocs(data: GameData): SearchDoc[] {
-  const biomeName = (id: string | null | undefined) => data.biomes.find((b) => b.id === id)?.name ?? '';
+export function buildDocs(
+  data: GameData,
+  extras: SearchExtras = { pages: [], places: [], commands: [] },
+): SearchDoc[] {
+  const biomeName = (id: string | null | undefined) =>
+    data.biomes.find((b) => b.id === id)?.name ?? '';
   const doc = (
     group: SearchGroupKey,
     id: string,
@@ -40,6 +65,7 @@ export function buildDocs(data: GameData): SearchDoc[] {
     aliases: string[] = [],
     tags: string[] = [],
     detail = '',
+    path?: string,
   ): SearchDoc => ({
     key: `${group}:${id}`,
     id,
@@ -48,6 +74,7 @@ export function buildDocs(data: GameData): SearchDoc[] {
     aliases: aliases.join(' '),
     tags: tags.join(' '),
     detail,
+    ...(path ? { path } : {}),
   });
   return [
     ...data.items.map((i) =>
@@ -62,7 +89,9 @@ export function buildDocs(data: GameData): SearchDoc[] {
     ),
     ...data.creatures.map((c) => doc('creatures', c.id, c.name, c.aliases, [], 'Creature')),
     ...data.bosses.map((b) => doc('bosses', b.id, b.name, b.aliases, [], 'Boss')),
-    ...data.stations.map((s) => doc('stations', s.id, s.name, [], ['level', 'upgrade', 'extension'], 'Crafting station')),
+    ...data.stations.map((s) =>
+      doc('stations', s.id, s.name, [], ['level', 'upgrade', 'extension'], 'Crafting station'),
+    ),
     ...data.pieces.map((p) =>
       doc(
         'pieces',
@@ -77,6 +106,13 @@ export function buildDocs(data: GameData): SearchDoc[] {
           .filter(Boolean)
           .join(' · '),
       ),
+    ),
+    ...extras.places.map((p) =>
+      doc('places', p.id, p.name, [], [p.kind], capital(p.kind), '/places'),
+    ),
+    ...extras.pages.map((p) => doc('pages', p.path, p.label, [], [], 'Page', p.path)),
+    ...extras.commands.map((c) =>
+      doc('commands', c.name, c.name, [], [], c.description.slice(0, 80), '/commands'),
     ),
   ];
 }
@@ -119,12 +155,12 @@ const suggestFuzzy = (term: string) => (term.length > 2 ? 0.34 : false);
  * Every word must match; if that finds nothing, any word may match, best score first.
  * `search.suggest(query)` gives up to three names to offer when both found nothing.
  */
-export function createSearch(data: GameData) {
-  const docs = buildDocs(data);
+export function createSearch(data: GameData, extras?: SearchExtras) {
+  const docs = buildDocs(data, extras);
   const index = new MiniSearch<SearchDoc>({
     idField: 'key',
     fields: ['name', 'aliases', 'tags'],
-    storeFields: ['key', 'id', 'name', 'group', 'aliases', 'tags', 'detail'],
+    storeFields: ['key', 'id', 'name', 'group', 'aliases', 'tags', 'detail', 'path'],
     searchOptions: {
       boost: { name: 3 },
       weights: { fuzzy: 0.3, prefix: 0.9 },

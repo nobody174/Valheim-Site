@@ -115,4 +115,12 @@ describe('building pieces in search', () => {
   it('shows the station and the comfort beside the piece', () => {
     expect(hit('dragon bed', 'piece_bed02')?.detail).toMatch(/Workbench.*comfort 2 · Bed/);
   });
+
+  it('also finds pages, places and console commands', async () => {
+    const { search: full } = await import('./instance');
+    const top = (q: string, group: string) => full(q, 20).find((g) => g.group === group)?.hits[0];
+    expect(top('portals', 'pages')?.path).toBe('/portals');
+    expect(top('crypt', 'places')?.path).toBe('/places');
+    expect(top('spawn', 'commands')?.path).toBe('/commands');
+  });
 });

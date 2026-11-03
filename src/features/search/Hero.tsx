@@ -35,7 +35,10 @@ export function Hero({ children }: { children: ReactNode }) {
           </pattern>
         </defs>
         <rect width="1200" height="300" fill="url(#sky)" />
-        <path d="M0 90 C200 40 360 130 560 70 C760 10 900 100 1200 50 L1200 120 C900 150 760 70 560 130 C360 190 200 100 0 150 Z" fill="url(#aurora)" />
+        <path
+          d="M0 90 C200 40 360 130 560 70 C760 10 900 100 1200 50 L1200 120 C900 150 760 70 560 130 C360 190 200 100 0 150 Z"
+          fill="url(#aurora)"
+        />
         <circle cx="930" cy="70" r="26" fill="#f1e6c4" />
         <circle cx="942" cy="64" r="24" fill="#23303a" opacity="0.55" />
         {[
@@ -50,10 +53,19 @@ export function Hero({ children }: { children: ReactNode }) {
         ].map(([x, y]) => (
           <circle key={`${x}-${y}`} cx={x} cy={y} r="1.6" fill="#fff6dc" opacity="0.8" />
         ))}
-        <path d="M0 220 L120 130 L200 180 L330 90 L450 190 L560 120 L700 200 L840 110 L980 190 L1100 140 L1200 200 L1200 300 L0 300 Z" fill="#2b3640" />
-        <path d="M0 240 L90 190 L180 225 L300 160 L420 235 L540 185 L660 245 L800 175 L930 240 L1050 190 L1200 245 L1200 300 L0 300 Z" fill="#1d2a30" />
+        <path
+          d="M0 220 L120 130 L200 180 L330 90 L450 190 L560 120 L700 200 L840 110 L980 190 L1100 140 L1200 200 L1200 300 L0 300 Z"
+          fill="#2b3640"
+        />
+        <path
+          d="M0 240 L90 190 L180 225 L300 160 L420 235 L540 185 L660 245 L800 175 L930 240 L1050 190 L1200 245 L1200 300 L0 300 Z"
+          fill="#1d2a30"
+        />
         <rect x="0" y="236" width="1200" height="40" fill="url(#pines)" />
-        <path d="M0 262 C200 244 380 276 600 258 C820 240 1000 276 1200 256 L1200 300 L0 300 Z" fill="#101a14" />
+        <path
+          d="M0 262 C200 244 380 276 600 258 C820 240 1000 276 1200 256 L1200 300 L0 300 Z"
+          fill="#101a14"
+        />
       </svg>
       <div className={styles.content}>{children}</div>
     </div>
