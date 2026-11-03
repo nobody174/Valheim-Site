@@ -15,7 +15,9 @@
     "WolfClaw",
     "DragonEgg",
     "DragonTear",
-    "JuteRed"
+    "JuteRed",
+    "Fish4_cave",
+    "FishingBaitCave"
   ],
   "tools": [],
   "weapons": [
@@ -77,6 +79,18 @@
     "Dragon"
   ],
   "gather": {
+    "Fish4_cave": [
+      [
+        "other",
+        "Only in the rare lakes at the bottom of Frost Caves, with Cold Fishing Bait (guide, not checked in game)."
+      ]
+    ],
+    "FishingBaitCave": [
+      [
+        "other",
+        "Made at the Food Preparation Table from 20 Fishing Bait and a Fenring Trophy (game files)."
+      ]
+    ],
     "SilverOre": [
       [
         "gather",

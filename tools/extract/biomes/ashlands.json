@@ -26,10 +26,14 @@
     "CelestialFeather",
     "Grausten",
     "BronzeScrap",
-    "CharcoalResin"
+    "CharcoalResin",
+    "Fish11",
+    "Fish10"
   ],
   "tools": [
-    "Bell"
+    "Bell",
+    "FishingBaitAshlands",
+    "FishingBaitDeepNorth"
   ],
   "weapons": [
     "SwordNiedhogg",
@@ -59,7 +63,8 @@
     "ArmorMageLegs_Ashlands": "legs",
     "HelmetMage_Ashlands": "helmet",
     "CapeAsh": "cape",
-    "CapeAsksvin": "cape"
+    "CapeAsksvin": "cape",
+    "HelmetFishingHat": "helmet"
   },
   "foods": [
     "CookedAsksvinMeat",
@@ -116,6 +121,30 @@
     "Charred_Mage": "Health, drops and attacks come from the game files. The game files do not list where it spawns; the Ashlands zone is from guides and not checked."
   },
   "gather": {
+    "Fish10": [
+      [
+        "other",
+        "Fish in the Deep North with Frosty Fishing Bait. Needed for the Fishing Hat. Deep North waters, which the site does not cover; filed under Ashlands for ordering only (guide, not checked in game)."
+      ]
+    ],
+    "FishingBaitDeepNorth": [
+      [
+        "other",
+        "Made at the Food Preparation Table from 20 Fishing Bait and a Drake Trophy (game files). Used for Northern Salmon in the Deep North."
+      ]
+    ],
+    "Fish11": [
+      [
+        "other",
+        "Fish in Ashlands waters with Hot Fishing Bait (guide, not checked in game)."
+      ]
+    ],
+    "FishingBaitAshlands": [
+      [
+        "other",
+        "Made at the Food Preparation Table from 20 Fishing Bait and a Charred Warrior Trophy (game files)."
+      ]
+    ],
     "FlametalOreNew": [
       [
         "gather",

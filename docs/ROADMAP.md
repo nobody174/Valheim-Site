@@ -96,3 +96,4 @@ Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached s
 - Item pages and quick cards show what an item builds (stations and building pieces), so Tar, Sharpening Stone and similar are no longer blank.
 - Hand-written 'what to do with it' lines (tagged guide, not checked in game) for seeds and cones, tools, fishing gear, Pukeberries, Wisplight and the ten trinkets.
 - Missing items part 1: Ectoplasm, Nimble Anklet, Surtling trophy, jute, scrap and Grausten materials added (9 items, 3 recipes, 35 building pieces).
+- Fishing and ocean items: 12 fish, 8 bait types (with the trophy each is made from), the Fishing Hat, Serpent items, Fins of Destiny, eggs, chicken, Fish 'n' Bread, Honey Glazed Chicken, Mushroom Omelette, Viking Cupcake (+25 items, 17 recipes).

@@ -18,69 +18,6 @@
       ]
     },
     {
-      "recipe": "Recipe_FishingBaitAshlands",
-      "output": "FishingBaitAshlands",
-      "station": "piece_preptable",
-      "inputs": [
-        "FishingBait",
-        "TrophyCharredMelee"
-      ]
-    },
-    {
-      "recipe": "Recipe_FishingBaitCave",
-      "output": "FishingBaitCave",
-      "station": "piece_preptable",
-      "inputs": [
-        "FishingBait",
-        "TrophyFenring"
-      ]
-    },
-    {
-      "recipe": "Recipe_FishingBaitDeepNorth",
-      "output": "FishingBaitDeepNorth",
-      "station": "piece_preptable",
-      "inputs": [
-        "FishingBait",
-        "TrophyHatchling"
-      ]
-    },
-    {
-      "recipe": "Recipe_FishingBaitForest",
-      "output": "FishingBaitForest",
-      "station": "piece_preptable",
-      "inputs": [
-        "FishingBait",
-        "TrophyFrostTroll"
-      ]
-    },
-    {
-      "recipe": "Recipe_FishingBaitMistlands",
-      "output": "FishingBaitMistlands",
-      "station": "piece_preptable",
-      "inputs": [
-        "FishingBait",
-        "TrophyLox"
-      ]
-    },
-    {
-      "recipe": "Recipe_FishingBaitPlains",
-      "output": "FishingBaitPlains",
-      "station": "piece_preptable",
-      "inputs": [
-        "FishingBait",
-        "TrophyGoblin"
-      ]
-    },
-    {
-      "recipe": "Recipe_FishingBaitSwamp",
-      "output": "FishingBaitSwamp",
-      "station": "piece_preptable",
-      "inputs": [
-        "FishingBait",
-        "TrophyAbomination"
-      ]
-    },
-    {
       "recipe": "Recipe_HelmetCelebration",
       "output": "HelmetCelebration",
       "station": "piece_workbench",

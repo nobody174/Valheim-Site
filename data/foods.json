@@ -126,6 +126,16 @@
     "regen": 5.0
   },
   {
+    "item": "CookedChickenMeat",
+    "kind": "food",
+    "health": 60.0,
+    "stamina": 20.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "regen": 5.0
+  },
+  {
     "item": "CookedDeerMeat",
     "kind": "food",
     "health": 35.0,
@@ -133,6 +143,16 @@
     "durationSec": 1200.0,
     "source": "game-files:steam-build-25909357",
     "verified": "in-game",
+    "regen": 2.0
+  },
+  {
+    "item": "CookedEgg",
+    "kind": "food",
+    "health": 35.0,
+    "stamina": 12.0,
+    "durationSec": 1200.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
     "regen": 2.0
   },
   {
@@ -226,6 +246,16 @@
     "regen": 6.0
   },
   {
+    "item": "FishAndBread",
+    "kind": "food",
+    "health": 30.0,
+    "stamina": 90.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "regen": 3.0
+  },
+  {
     "item": "FishCooked",
     "kind": "food",
     "health": 45.0,
@@ -254,6 +284,16 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "regen": 1.0
+  },
+  {
+    "item": "HoneyGlazedChicken",
+    "kind": "food",
+    "health": 80.0,
+    "stamina": 26.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "regen": 5.0
   },
   {
     "item": "LoxPie",
@@ -447,6 +487,16 @@
     "regen": 1.0
   },
   {
+    "item": "MushroomOmelette",
+    "kind": "food",
+    "health": 28.0,
+    "stamina": 85.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "regen": 3.0
+  },
+  {
     "item": "MushroomYellow",
     "kind": "food",
     "health": 10.0,
@@ -578,6 +628,26 @@
     "regen": 3.0
   },
   {
+    "item": "SerpentMeatCooked",
+    "kind": "food",
+    "health": 70.0,
+    "stamina": 23.0,
+    "durationSec": 1500.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "regen": 3.0
+  },
+  {
+    "item": "SerpentStew",
+    "kind": "food",
+    "health": 80.0,
+    "stamina": 26.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "regen": 4.0
+  },
+  {
     "item": "ShocklateSmoothie",
     "kind": "food",
     "health": 16.0,
@@ -628,6 +698,16 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "regen": 2.0
+  },
+  {
+    "item": "VikingCupcake",
+    "kind": "food",
+    "health": 43.0,
+    "stamina": 43.0,
+    "durationSec": 1800.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "regen": 4.0
   },
   {
     "item": "WolfJerky",

@@ -32,12 +32,17 @@
     "Fiddleheadfern",
     "RoyalJelly",
     "JuteBlue",
-    "CopperScrap"
+    "CopperScrap",
+    "Fish9",
+    "Fish12",
+    "FishAndBreadUncooked",
+    "HoneyGlazedChickenUncooked"
   ],
   "tools": [
     "PickaxeBlackMetal",
     "Lantern",
-    "Demister"
+    "Demister",
+    "FishingBaitMistlands"
   ],
   "weapons": [
     "SwordMistwalker",
@@ -87,7 +92,10 @@
     "SizzlingBerryBroth",
     "SparklingShroomshake",
     "SpicyMarmalade",
-    "YggdrasilPorridge"
+    "YggdrasilPorridge",
+    "FishAndBread",
+    "HoneyGlazedChicken",
+    "MushroomOmelette"
   ],
   "meads": [
     "MeadBaseEitrMinor",
@@ -114,7 +122,8 @@
   ],
   "trinkets": [
     "TrinketCarapaceEitr",
-    "TrinketScaleStaminaDamage"
+    "TrinketScaleStaminaDamage",
+    "TrinketChitinSwim"
   ],
   "creatures": [
     "Seeker",
@@ -151,6 +160,24 @@
     "DvergerMageSupport": "Health, drops and attacks come from the game files. Where the Dvergr appear (camps and ruins in the Mistlands) is from guides and not checked."
   },
   "gather": {
+    "Fish9": [
+      [
+        "other",
+        "Deep water off the Mistlands coast with Misty Fishing Bait (guide, not checked in game)."
+      ]
+    ],
+    "Fish12": [
+      [
+        "other",
+        "Fish off the Mistlands coast with Misty Fishing Bait. It poisons you if you stand too close until it is picked up (guide, not checked in game)."
+      ]
+    ],
+    "FishingBaitMistlands": [
+      [
+        "other",
+        "Made at the Food Preparation Table from 20 Fishing Bait and a Lox Trophy (game files)."
+      ]
+    ],
     "YggdrasilWood": [
       [
         "gather",

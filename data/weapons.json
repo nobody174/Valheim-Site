@@ -2929,6 +2929,20 @@
     "maxQuality": 3
   },
   {
+    "item": "ShieldSerpentscale",
+    "skill": "Blocking",
+    "damage": {
+      "blunt": 10.0
+    },
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "blockPower": 60.0,
+    "parryForce": 100.0,
+    "knockback": 50.0,
+    "durability": 250.0,
+    "maxQuality": 3
+  },
+  {
     "item": "ShieldSilver",
     "skill": "Blocking",
     "damage": {

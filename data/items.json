@@ -1274,7 +1274,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Blood Pudding, crafting Bread Dough, crafting Fish Wraps and 3 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Blood Pudding, crafting Bread Dough, crafting Fish Wraps and 4 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2201,8 +2201,8 @@
     "stackSize": 20,
     "tags": [],
     "hoard": "keep_some",
-    "recommendedQty": 1,
-    "hoardNote": "Used for crafting Bread. Quantity is the largest single need.",
+    "recommendedQty": 2,
+    "hoardNote": "Used for crafting Bread, crafting Uncooked Fish 'n' Bread. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "recipe",
@@ -2658,6 +2658,50 @@
     "description": "Followed by the distinct smell of burnt meat."
   },
   {
+    "id": "ChickenEgg",
+    "name": "Egg",
+    "category": "material",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 3,
+    "hoardNote": "Used for crafting Cooked Egg, crafting Mushroom Omelette, crafting Unbaked Sweetbread. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Laid by Hens, or found in a chest in the Sealed Tower on the Plains (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Keep it warm to see what comes out.. but what came first, really?",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "ChickenMeat",
+    "name": "Chicken Meat",
+    "category": "material",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Cooked Chicken Meat, crafting Uncooked Honey Glazed Chicken. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Hens and Chickens (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "All chickens bear the ancestral curse of being delicious.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Chitin",
     "name": "Chitin",
     "category": "material",
@@ -2667,7 +2711,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 50,
-    "hoardNote": "Used for crafting Abyssal Harpoon, crafting Abyssal Razor, upgrading Abyssal Razor. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Abyssal Harpoon, crafting Abyssal Razor, crafting Fins of Destiny and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -2689,7 +2733,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Barley Wine Base: Fire Resistance, crafting Mead Base: Lingering Stamina, crafting Mead Base: Medium Stamina and 2 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Barley Wine Base: Fire Resistance, crafting Mead Base: Lingering Stamina, crafting Mead Base: Medium Stamina and 3 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -2894,6 +2938,29 @@
     "description": "Succulent white meat. A true delicacy."
   },
   {
+    "id": "CookedChickenMeat",
+    "name": "Cooked Chicken Meat",
+    "category": "food",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "consumable",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation.ChickenMeat"
+      },
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.ChickenMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "It tastes like chicken."
+  },
+  {
     "id": "CookedDeerMeat",
     "name": "Cooked Deer Meat",
     "category": "food",
@@ -2917,6 +2984,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "All that running paid off."
+  },
+  {
+    "id": "CookedEgg",
+    "name": "Cooked Egg",
+    "category": "food",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "consumable",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.CookedEgg"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Sunny side up!"
   },
   {
     "id": "CookedHareMeat",
@@ -3579,7 +3665,9 @@
     "weight": 2.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -3593,6 +3681,72 @@
     "use": "Used for the Fishing Hat, for Raw Fish, and for a mead base. A catch can also give a bonus Amber."
   },
   {
+    "id": "Fish10",
+    "name": "Northern Salmon",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish in the Deep North with Frosty Fishing Bait. Needed for the Fishing Hat. Deep North waters, which the site does not cover; filed under Ashlands for ordering only (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "This fish likes the water to be almost freezing cold.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish11",
+    "name": "Magmafish",
+    "category": "material",
+    "biome": "ashlands",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish in Ashlands waters with Hot Fishing Bait (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Some say this fish lays its eggs directly in molten lava!",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish12",
+    "name": "Pufferfish",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish off the Mistlands coast with Misty Fishing Bait. It poisons you if you stand too close until it is picked up (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Tasty when cooked right, but the flavour has a bit of a sting.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
     "id": "Fish2",
     "name": "Pike",
     "category": "material",
@@ -3600,7 +3754,9 @@
     "weight": 2.0,
     "stackSize": 10,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -3612,6 +3768,200 @@
     "description": "A freshwater fish that needs a lot of seasoning.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "use": "Used for the Fishing Hat and for Raw Fish. A catch can also give a bonus Amber Pearl."
+  },
+  {
+    "id": "Fish3",
+    "name": "Tuna",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish in the ocean with Heavy Fishing Bait. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Chicken of the sea...",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish4_cave",
+    "name": "Tetra",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Only in the rare lakes at the bottom of Frost Caves, with Cold Fishing Bait (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Spending its whole life in the dark, it has no need for eyes.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish5",
+    "name": "Trollfish",
+    "category": "material",
+    "biome": "blackforest",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish just off the Black Forest coast with Mossy Fishing Bait (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "This fish is a nuisance in the local streams.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish6",
+    "name": "Giant Herring",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish just off the Swamp coast with Sticky Fishing Bait (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Fermented, this fish will smell worse than the swamp it came from.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish7",
+    "name": "Grouper",
+    "category": "material",
+    "biome": "plains",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish just off the Plains coast with Stingy Fishing Bait (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Best served with lots of carbs!",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish8",
+    "name": "Coral Cod",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Fish in the ocean with Heavy Fishing Bait. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "It has seen some things... Some very haunting things...",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "Fish9",
+    "name": "Anglerfish",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 4,
+    "hoardNote": "Used for crafting Fishing Hat, crafting Uncooked Fish 'n' Bread, upgrading Fishing Hat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Deep water off the Mistlands coast with Misty Fishing Bait (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "The dangling light makes it easier to see that pretty little face!",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishAndBread",
+    "name": "Fish 'n' Bread",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "consumable",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.FishAndBreadUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Bounty from both land and sea."
+  },
+  {
+    "id": "FishAndBreadUncooked",
+    "name": "Uncooked Fish 'n' Bread",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Fish 'n' Bread. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishAndBread"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
   },
   {
     "id": "FishCooked",
@@ -3687,7 +4037,9 @@
     "weight": 0.10000000149011612,
     "stackSize": 100,
     "tags": [],
-    "hoard": "safe_discard",
+    "hoard": "keep_some",
+    "recommendedQty": 20,
+    "hoardNote": "Used for crafting Cold Fishing Bait, crafting Frosty Fishing Bait, crafting Heavy Fishing Bait and 5 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "trader",
@@ -3699,6 +4051,198 @@
     "description": "Common dvergr fishing bait. Fishing rod sold separately.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked.",
     "use": "Equip the Fishing Rod, then right-click the bait in your inventory to load it. The bait decides which fish bite: this basic bait attracts Perch and Pike. Better baits are made from it at the Food Preparation Table."
+  },
+  {
+    "id": "FishingBaitAshlands",
+    "name": "Hot Fishing Bait",
+    "category": "tool",
+    "biome": "ashlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and a Charred Warrior Trophy (game files)."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitAshlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Some fish already like it where the waters are warm, and this bait brings the temperature close to boiling.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishingBaitCave",
+    "name": "Cold Fishing Bait",
+    "category": "material",
+    "biome": "mountain",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and a Fenring Trophy (game files)."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitCave"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "This bait doesn't look like much, but it's a treat to fish that live where it's cold and dark.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishingBaitDeepNorth",
+    "name": "Frosty Fishing Bait",
+    "category": "tool",
+    "biome": "ashlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and a Drake Trophy (game files). Used for Northern Salmon in the Deep North."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitDeepNorth"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "It's not very nutritious, so the only fish that'll take this bait are the ones that are used to just eating ice.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishingBaitForest",
+    "name": "Mossy Fishing Bait",
+    "category": "tool",
+    "biome": "blackforest",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and a Frost Troll Trophy (game files)."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitForest"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "Dead trolls in the forest often attract a fish or two, speed up the process with this bait!",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishingBaitMistlands",
+    "name": "Misty Fishing Bait",
+    "category": "tool",
+    "biome": "mistlands",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and a Lox Trophy (game files)."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitMistlands"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "A bait to guide the fish to you through shrouded waters.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishingBaitOcean",
+    "name": "Heavy Fishing Bait",
+    "category": "tool",
+    "biome": "swamp",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and a Serpent Trophy (game files)."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitOcean"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "This bait sinks deep, deep enough to lure the fish swimming along the very bottom of the sea.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishingBaitPlains",
+    "name": "Stingy Fishing Bait",
+    "category": "material",
+    "biome": "plains",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and a Fuling Trophy (game files)."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitPlains"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "You're not immune to deathsquito bites, and the fish here aren't immune to this snack!",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "FishingBaitSwamp",
+    "name": "Sticky Fishing Bait",
+    "category": "tool",
+    "biome": "swamp",
+    "weight": 0.10000000149011612,
+    "stackSize": 100,
+    "tags": [],
+    "hoard": "safe_discard",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Made at the Food Preparation Table from 20 Fishing Bait and an Abomination Trophy (game files)."
+      },
+      {
+        "type": "recipe",
+        "recipe": "recipe.FishingBaitSwamp"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "It might smell foul, but the fish drawn to this bait are used to so much worse.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "FishingRod",
@@ -4145,6 +4689,25 @@
     "description": "The eyes of the beast were wise and knowing, so that it could measure the strength of a warrior in one glance."
   },
   {
+    "id": "HelmetFishingHat",
+    "name": "Fishing Hat",
+    "category": "armor",
+    "biome": "ashlands",
+    "weight": 3.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HelmetFishingHat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "This catchy hat may only be reeled in by the most seasoned adventurers."
+  },
+  {
     "id": "HelmetFlametal",
     "name": "Flametal Helmet",
     "category": "armor",
@@ -4346,7 +4909,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Black Soup, crafting Boar Jerky, crafting Mead Base: Frost Resistance and 10 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Black Soup, crafting Boar Jerky, crafting Mead Base: Frost Resistance and 13 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "other",
@@ -4357,6 +4920,46 @@
     "verified": "unverified",
     "description": "Sweet and tasty.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "HoneyGlazedChicken",
+    "name": "Honey Glazed Chicken",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "consumable",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.HoneyGlazedChickenUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Grilled to perfection. Makes both eyes and mouths water."
+  },
+  {
+    "id": "HoneyGlazedChickenUncooked",
+    "name": "Uncooked Honey Glazed Chicken",
+    "category": "material",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Honey Glazed Chicken. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.HoneyGlazedChicken"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
   },
   {
     "id": "Iron",
@@ -5649,7 +6252,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 5,
-    "hoardNote": "Used for building Spice Rack, crafting Carrot Soup, crafting Wolf Skewer. Quantity is the largest single need.",
+    "hoardNote": "Used for building Spice Rack, crafting Carrot Soup, crafting Serpent Stew and 1 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -5671,7 +6274,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 10,
-    "hoardNote": "Used for crafting Mead Base: Lingering Stamina, crafting Mead Base: Minor Eitr, crafting Salad and 2 more. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Mead Base: Lingering Stamina, crafting Mead Base: Minor Eitr, crafting Mushroom Omelette and 4 more. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "gather",
@@ -5704,6 +6307,25 @@
     "verified": "unverified",
     "description": "The delicate blue magecaps crackle like nerve-endings with sorcerous vitality.",
     "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "MushroomOmelette",
+    "name": "Mushroom Omelette",
+    "category": "food",
+    "biome": "mistlands",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "consumable",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.MushroomOmelette"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A delicious omelette with an earthy aftertaste."
   },
   {
     "id": "MushroomSmokePuff",
@@ -6496,6 +7118,90 @@
     "description": "A quivering jelly with a taste like gentle electricity."
   },
   {
+    "id": "SerpentMeat",
+    "name": "Serpent Meat",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 10.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Cooked Serpent Meat. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Serpents at sea. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "A slice of sea serpent. Smells fishy.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "SerpentMeatCooked",
+    "name": "Cooked Serpent Meat",
+    "category": "food",
+    "biome": "swamp",
+    "weight": 10.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Serpent Stew. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_cookingstation_iron.SerpentMeat"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A cooked slice of sea serpent. Smells good."
+  },
+  {
+    "id": "SerpentScale",
+    "name": "Serpent Scale",
+    "category": "material",
+    "biome": "swamp",
+    "weight": 2.0,
+    "stackSize": 50,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 16,
+    "hoardNote": "Used for crafting Fins of Destiny, crafting Serpent Scale Shield, upgrading Serpent Scale Shield. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Serpents at sea. Scales sink in deep water, so kill them in shallow water. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "The shiny metal-like scale from a sea serpent.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
+  },
+  {
+    "id": "SerpentStew",
+    "name": "Serpent Stew",
+    "category": "food",
+    "biome": "swamp",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "consumable",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.SerpentStew"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Smells of honey and serpent..."
+  },
+  {
     "id": "SharpeningStone",
     "name": "Sharpening Stone",
     "category": "material",
@@ -6763,6 +7469,25 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Malleable roots have been twisted into a surprisingly sturdy shield."
+  },
+  {
+    "id": "ShieldSerpentscale",
+    "name": "Serpent Scale Shield",
+    "category": "weapon",
+    "biome": "swamp",
+    "weight": 5.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.ShieldSerpentscale"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A sturdy shield of overlapping scales."
   },
   {
     "id": "ShieldSilver",
@@ -7696,6 +8421,25 @@
     "use": "A trinket (one at a time). It charges as you fight; when full it boosts your Eitr regeneration by a quarter for a minute."
   },
   {
+    "id": "TrinketChitinSwim",
+    "name": "Fins of Destiny",
+    "category": "trinket",
+    "biome": "mistlands",
+    "weight": 2.0,
+    "stackSize": 1,
+    "tags": [],
+    "hoard": "gear",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.TrinketChitinSwim"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Empty your mind as you become shapeless and one with the water."
+  },
+  {
     "id": "TrinketFlametalStaminaHealth",
     "name": "Brimstone",
     "category": "trinket",
@@ -7841,7 +8585,9 @@
     "weight": 4.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Sticky Fishing Bait. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -8039,7 +8785,9 @@
     "weight": 0.5,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Hot Fishing Bait. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -8271,7 +9019,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 1,
-    "hoardNote": "Used for crafting Wolf Sight. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Cold Fishing Bait, crafting Wolf Sight. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -8290,7 +9038,9 @@
     "weight": 4.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Mossy Fishing Bait. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -8330,7 +9080,9 @@
     "weight": 1.0,
     "stackSize": 20,
     "tags": [],
-    "hoard": "decorative",
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Stingy Fishing Bait. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -8502,7 +9254,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 2,
-    "hoardNote": "Used for crafting Drake Helmet. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Drake Helmet, crafting Frosty Fishing Bait. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -8544,7 +9296,7 @@
     "tags": [],
     "hoard": "keep_some",
     "recommendedQty": 1,
-    "hoardNote": "Used for crafting Bracelets of the Brave. Quantity is the largest single need.",
+    "hoardNote": "Used for crafting Bracelets of the Brave, crafting Misty Fishing Bait. Quantity is the largest single need.",
     "obtainedFrom": [
       {
         "type": "drop",
@@ -8675,6 +9427,28 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "She has seen enough.\r\n\r\nOffer it to the Sacrificial Stones."
+  },
+  {
+    "id": "TrophySerpent",
+    "name": "Serpent Trophy",
+    "category": "trophy",
+    "biome": "swamp",
+    "weight": 25.0,
+    "stackSize": 20,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Fins of Destiny, crafting Heavy Fishing Bait. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "other",
+        "note": "Dropped by Serpents at sea. Found at sea. The site has no ocean zone, so it is filed under the Swamp for ordering only (guide, not checked in game)."
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "unverified",
+    "description": "The scales have dulled but the eyes are still bright.",
+    "note": "Weight and stack size come from the game files. Where to find it was written by hand and not checked."
   },
   {
     "id": "TrophySkeleton",
@@ -8895,6 +9669,46 @@
     "source": "game-files:steam-build-25909357",
     "verified": "cross-checked",
     "description": "Nutritious and restorative."
+  },
+  {
+    "id": "VikingCupcake",
+    "name": "Frosted Sweetbread",
+    "category": "food",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "consumable",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "conv.piece_oven.VikingCupcakeUncooked"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "A sweet and tasty treat, to celebrate a feat!"
+  },
+  {
+    "id": "VikingCupcakeUncooked",
+    "name": "Unbaked Sweetbread",
+    "category": "material",
+    "biome": "plains",
+    "weight": 1.0,
+    "stackSize": 10,
+    "tags": [],
+    "hoard": "keep_some",
+    "recommendedQty": 1,
+    "hoardNote": "Used for crafting Frosted Sweetbread. Quantity is the largest single need.",
+    "obtainedFrom": [
+      {
+        "type": "recipe",
+        "recipe": "recipe.VikingCupcake"
+      }
+    ],
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "description": "Ready for the oven."
   },
   {
     "id": "Vineberry",

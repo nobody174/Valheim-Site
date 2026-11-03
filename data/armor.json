@@ -529,6 +529,16 @@
     "maxQuality": 4
   },
   {
+    "item": "HelmetFishingHat",
+    "slot": "helmet",
+    "armor": 8.0,
+    "source": "game-files:steam-build-25909357",
+    "verified": "cross-checked",
+    "durability": 1000.0,
+    "armorPerLevel": 4.0,
+    "maxQuality": 4
+  },
+  {
     "item": "HelmetFlametal",
     "slot": "helmet",
     "armor": 38.0,
