@@ -30,4 +30,19 @@ describe('second screen toggle', () => {
     expect(screen.getByRole('button', { name: 'Big text' }).getAttribute('aria-pressed')).toBe('true');
     expect(document.documentElement.dataset.screen).toBe('second');
   });
+
+  it('offers a bigger step only while Big text is on', async () => {
+    const user = userEvent.setup();
+    render(<SecondScreenToggle />);
+    expect(screen.queryByRole('button', { name: 'Bigger' })).toBeNull();
+    await user.click(screen.getByRole('button', { name: 'Big text' }));
+    await user.click(screen.getByRole('button', { name: 'Bigger' }));
+    expect(document.documentElement.dataset.screen).toBe('bigger');
+    await user.click(screen.getByRole('button', { name: 'Bigger' }));
+    expect(document.documentElement.dataset.screen).toBe('second');
+    await user.click(screen.getByRole('button', { name: 'Bigger' }));
+    await user.click(screen.getByRole('button', { name: 'Big text' }));
+    expect(document.documentElement.dataset.screen).toBe('normal');
+    expect(screen.queryByRole('button', { name: 'Bigger' })).toBeNull();
+  });
 });
