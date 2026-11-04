@@ -18,8 +18,8 @@ import { caseClashes, linkStates, sortPortals } from './portals';
 const portal = (id: string, name: string, down = false): Portal => ({
   id,
   name,
-  from: 'A',
-  to: 'B',
+  from: '',
+  to: '',
   note: '',
   down,
 });
@@ -40,6 +40,17 @@ describe('linkStates', () => {
     expect(down.get('2')).toBe('down');
   });
 
+  it('treats one entry with From and To as both ends of a pair', () => {
+    const both = { id: 'a', name: 'portal 2', from: 'Home', to: 'Mountain', note: '', down: false };
+    const half = { id: 'b', name: 'boat', from: 'Home', to: '', note: '', down: false };
+    const states = linkStates([both, half]);
+    expect(states.get('a')).toBe('pair');
+    expect(states.get('b')).toBe('alone');
+    // A partner that is taken down leaves the other end with nobody, even with From and To filled in.
+    const gone = linkStates([both, { ...both, id: 'c', down: true }]);
+    expect(gone.get('a')).toBe('alone');
+  });
+
   it('finds names that differ only in capitals', () => {
     expect(caseClashes([portal('1', 'Home'), portal('2', 'home'), portal('3', 'boat')])).toEqual([
       'Home / home',
@@ -54,7 +65,7 @@ describe('portal edits', () => {
     p = withPortal(p, { ...portal('1', 'boat'), to: 'Island base' });
     p = withPortal(p, portal('2', '   '));
     expect(p.portals).toEqual([
-      { id: '1', name: 'boat', from: 'A', to: 'Island base', note: '', down: false },
+      { id: '1', name: 'boat', from: '', to: 'Island base', note: '', down: false },
     ]);
     expect(withoutPortal(p, '1').portals).toEqual([]);
   });

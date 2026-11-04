@@ -36,7 +36,8 @@
   border: 2px solid var(--wood-light);
   border-radius: 12px;
 }
-.portal[data-state='linked'] {
+.portal[data-state='linked'],
+.portal[data-state='pair'] {
   border-color: #4f9170;
 }
 .portal[data-state='alone'],

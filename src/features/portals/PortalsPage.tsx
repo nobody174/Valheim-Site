@@ -9,6 +9,7 @@ import styles from './Portals.module.css';
 
 const STATUS: Record<LinkState, string> = {
   linked: 'Connected to the other portal with this name',
+  pair: '',
   alone: 'No other portal has this exact name, so it goes nowhere',
   crowded:
     'More than two portals share this name: the game pairs two of them and the rest go nowhere',
@@ -103,8 +104,8 @@ export function PortalsPage() {
       <Intro>
         <p>
           Your own list of portals for <strong>{profile.name}</strong>: the name on each one and
-          where it leads. The game does not keep such a list, so this is just your notes. Each
-          profile has its own.
+          where it leads. Fill in From and To and one entry stands for both ends of a pair. The game
+          does not keep such a list, so this is just your notes. Each profile has its own.
         </p>
       </Intro>
 
@@ -130,7 +131,11 @@ export function PortalsPage() {
                   <span className={styles.route}>
                     {p.from || '?'} → {p.to || '?'}
                   </span>
-                  <span className={styles.status}>{STATUS[state]}</span>
+                  <span className={styles.status}>
+                    {state === 'pair'
+                      ? `One entry for both ends: both portals are named "${p.name}" and connect ${p.from} and ${p.to}`
+                      : STATUS[state]}
+                  </span>
                 </div>
                 {p.note && <p className={styles.note}>{p.note}</p>}
                 {p.x !== undefined && p.z !== undefined && (

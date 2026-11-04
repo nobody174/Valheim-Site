@@ -1,10 +1,11 @@
 import type { Portal } from '../../state/model';
 
-export type LinkState = 'linked' | 'alone' | 'crowded' | 'down';
+export type LinkState = 'linked' | 'pair' | 'alone' | 'crowded' | 'down';
 
 /**
  * A portal connects to the other portal that carries exactly the same name. Exactly two standing
  * portals with one name work; one has nobody to go to, and three or more switch each other off.
+ * One entry with both From and To filled in stands for both ends of a pair ('pair'), so it is not alone.
  */
 export function linkStates(portals: Portal[]): Map<string, LinkState> {
   const standing = portals.filter((p) => !p.down);
@@ -13,7 +14,10 @@ export function linkStates(portals: Portal[]): Map<string, LinkState> {
     portals.map((p): [string, LinkState] => {
       if (p.down) return [p.id, 'down'];
       const n = count(p.name);
-      return [p.id, n === 2 ? 'linked' : n > 2 ? 'crowded' : 'alone'];
+      if (n === 2) return [p.id, 'linked'];
+      if (n > 2) return [p.id, 'crowded'];
+      const sole = portals.filter((q) => q.name === p.name).length === 1;
+      return [p.id, sole && p.from.trim() && p.to.trim() ? 'pair' : 'alone'];
     }),
   );
 }
