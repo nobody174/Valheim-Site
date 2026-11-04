@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { Intro } from '../../components/Intro';
 import { GuideTag } from '../../components/Badges';
 import { commands } from '../../data/load';
@@ -75,7 +76,7 @@ export function CommandsPage() {
           </tbody>
         </table>
       </div>
-      {shown.length === 0 && <p className={styles.empty}>No command matches that.</p>}
+      {shown.length === 0 && <NoMatches message="No command matches that." />}
     </div>
   );
 }

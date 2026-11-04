@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { Link } from 'react-router';
 import { Intro } from '../../components/Intro';
 import { GuideTag } from '../../components/Badges';
@@ -125,7 +126,7 @@ export function PlacesPage() {
           </tbody>
         </table>
       </div>
-      {shown.length === 0 && <p className={styles.empty}>No place matches that.</p>}
+      {shown.length === 0 && <NoMatches message="No place matches that." />}
     </div>
   );
 }
