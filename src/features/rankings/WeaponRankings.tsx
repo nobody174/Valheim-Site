@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { useSearchParams } from 'react-router';
 import { Intro } from '../../components/Intro';
 import { EntityLink } from '../../components/EntityLink';
@@ -280,7 +281,12 @@ export function WeaponRankings() {
         {rows.length} {rows.length === 1 ? 'weapon' : 'weapons'}
         {quality > 1 && `, at upgrade level ${quality} (items that cannot reach it show their maximum)`}
       </p>
-      {rows.length === 0 && <p className={itemStyles.empty}>No weapons match these filters.</p>}
+      {rows.length === 0 && (
+        <NoMatches
+          message="No weapons match these filters."
+          onClear={() => setParams({}, { replace: true })}
+        />
+      )}
       {view === 'list' && rows.length > 0 && (
         <WeaponTable rows={rows} sort={sort} dir={dir} onSort={onSort} />
       )}

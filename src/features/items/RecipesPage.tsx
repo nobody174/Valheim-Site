@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { useProgressive } from '../../components/useProgressive';
 import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
@@ -119,7 +120,7 @@ export function RecipesPage() {
         )}
       </p>
       {groups.length === 0 && (
-        <p className={styles.empty}>No recipes match. Try a shorter search.</p>
+        <NoMatches message="No recipes match." />
       )}
       <RecipeGroups key={`${text}|${station}|${allZones}`} groups={groups} total={total} />
     </section>

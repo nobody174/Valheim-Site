@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { Intro } from '../../components/Intro';
 import { useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
@@ -155,7 +156,10 @@ export function ItemsPage() {
         </p>
       </div>
       {rows.length === 0 ? (
-        <p className={styles.empty}>No items match these filters.</p>
+        <NoMatches
+          message="No items match these filters."
+          onClear={() => setParams({}, { replace: true })}
+        />
       ) : view === 'cards' ? (
         <ul className={cards.grid}>
           {rows.map((i) => (

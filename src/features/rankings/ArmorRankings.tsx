@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { useSearchParams } from 'react-router';
 import { Intro } from '../../components/Intro';
 import { EntityLink } from '../../components/EntityLink';
@@ -157,7 +158,10 @@ export function ArmorRankings() {
         {quality > 1 && `, at upgrade level ${quality} (items that cannot reach it show their maximum)`}
       </p>
       {rows.length === 0 ? (
-        <p className={itemStyles.empty}>No armor matches these filters.</p>
+        <NoMatches
+          message="No armor matches these filters."
+          onClear={() => setParams({ tab: 'armor' }, { replace: true })}
+        />
       ) : (
         <div className={itemStyles.tableWrap}>
           <table className={itemStyles.table}>

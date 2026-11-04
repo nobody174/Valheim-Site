@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { Intro } from '../../components/Intro';
 import { Link, useSearchParams } from 'react-router';
 import { EntityLink } from '../../components/EntityLink';
@@ -118,7 +119,10 @@ export function BuildingPage() {
         )}
       </p>
       {rows.length === 0 ? (
-        <p className={styles.empty}>No pieces match these filters.</p>
+        <NoMatches
+          message="No pieces match these filters."
+          onClear={() => setParams({}, { replace: true })}
+        />
       ) : (
         <div className={styles.tableWrap}>
           <table className={styles.table}>

@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { NoMatches } from '../../components/NoMatches';
 import { Intro } from '../../components/Intro';
 import { Link, useSearchParams } from 'react-router';
 import { HoardBadge, VerifiedBadge } from '../../components/Badges';
@@ -126,7 +127,7 @@ export function TrophiesPage() {
         {rows.length} {rows.length === 1 ? 'trophy' : 'trophies'}
       </p>
       {rows.length === 0 ? (
-        <p className={styles.empty}>No trophies match these filters.</p>
+        <NoMatches message="No trophies match these filters." onClear={clear} />
       ) : (
         <div className={styles.tableWrap}>
           <table className={styles.table}>
@@ -205,7 +206,7 @@ export function BossesPage() {
       </Intro>
       <Filters text={text} biome={biome} set={set} clear={clear} />
       {rows.length === 0 ? (
-        <p className={styles.empty}>No bosses match these filters.</p>
+        <NoMatches message="No bosses match these filters." onClear={clear} />
       ) : (
         <ul className={cards.grid}>
           {rows.map((b) => (
@@ -285,7 +286,7 @@ export function CreaturesPage() {
         </p>
       </div>
       {rows.length === 0 ? (
-        <p className={styles.empty}>No creatures match these filters.</p>
+        <NoMatches message="No creatures match these filters." onClear={clear} />
       ) : view === 'cards' ? (
         <ul className={`${gridCards.grid} ${gridCards.wide}`}>
           {rows.map((c) => (
@@ -431,7 +432,7 @@ export function FoodPage() {
         </p>
       </div>
       {rows.length === 0 ? (
-        <p className={styles.empty}>No food matches these filters.</p>
+        <NoMatches message="No food matches these filters." onClear={clear} />
       ) : view === 'cards' ? (
         <ul className={gridCards.grid}>
           {rows.map(({ f, item }) => (
