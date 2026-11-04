@@ -103,3 +103,4 @@ Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached s
 - Search also finds pages of the site, dungeons and camps (Places) and console commands.
 - One shared 'nothing matches' message on every list (items, recipes, building, trophies, bosses, creatures, food, rankings, places, commands) with a tip and one click to clear the filters.
 - Big text has a second step, Bigger (125%), shown beside it while Big text is on.
+- My portals: one entry with From and To filled in counts as both ends of a pair, so it no longer says it goes nowhere.
