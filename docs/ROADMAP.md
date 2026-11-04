@@ -102,3 +102,4 @@ Filter-first lists, part 2 (2026-11-01): Items opens on what the zones reached s
 - Armor sets page: each set with every piece's recipe and the whole set's raw materials and stations, optionally at an upgrade level.
 - Search also finds pages of the site, dungeons and camps (Places) and console commands.
 - One shared 'nothing matches' message on every list (items, recipes, building, trophies, bosses, creatures, food, rankings, places, commands) with a tip and one click to clear the filters.
+- Big text has a second step, Bigger (125%), shown beside it while Big text is on.

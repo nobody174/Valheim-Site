@@ -9,6 +9,8 @@ export type ListView = 'cards' | 'list';
 
 export interface Display {
   secondScreen: boolean;
+  /** A further step up (125%) while second-screen mode is on. */
+  bigger?: boolean;
   view: ListView;
 }
 
@@ -18,8 +20,13 @@ export function loadDisplay(): Display {
   try {
     const raw = localStorage.getItem(KEY);
     if (!raw) return DEFAULT;
-    const parsed = JSON.parse(raw) as { secondScreen?: unknown; view?: unknown };
-    return { secondScreen: parsed.secondScreen === true, view: parsed.view === 'list' ? 'list' : 'cards' };
+    const parsed = JSON.parse(raw) as { secondScreen?: unknown; bigger?: unknown; view?: unknown };
+    const secondScreen = parsed.secondScreen === true;
+    return {
+      secondScreen,
+      ...(secondScreen && parsed.bigger === true ? { bigger: true } : {}),
+      view: parsed.view === 'list' ? 'list' : 'cards',
+    };
   } catch {
     return DEFAULT;
   }
@@ -35,5 +42,9 @@ export function saveDisplay(display: Display): void {
 
 /** Put the setting on the page, where the stylesheet reads it. */
 export function applyDisplay(display: Display): void {
-  document.documentElement.dataset.screen = display.secondScreen ? 'second' : 'normal';
+  document.documentElement.dataset.screen = !display.secondScreen
+    ? 'normal'
+    : display.bigger
+      ? 'bigger'
+      : 'second';
 }
